@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from cryptobot.config.constants import BB_STOP_MULT, RSI_OVERBOUGHT, RSI_OVERSOLD
+from cryptobot.config.constants import BB_STOP_MULT, RSI_OVERBOUGHT, RSI_OVERSOLD, TAKE_PROFIT_MULT
 from cryptobot.data.schemas import Direction, Regime, Signal
 from cryptobot.indicators.oscillators import rsi
 from cryptobot.indicators.volatility import bollinger_bands
@@ -35,24 +35,28 @@ def mean_reversion_signal(df: pd.DataFrame, pair: str) -> Signal | None:
 
     if last_close <= last_lower and last_rsi < RSI_OVERSOLD:
         stop = last_lower - BB_STOP_MULT * band_width
+        stop_dist = last_close - stop
+        tp = last_close + TAKE_PROFIT_MULT * stop_dist
         return Signal(
             pair=pair,
             direction=Direction.LONG,
             entry_price=last_close,
             stop_price=stop,
-            take_profit_price=last_mid,
+            take_profit_price=tp,
             regime=Regime.RANGING,
             timestamp=datetime.now(tz=timezone.utc),
         )
 
     if last_close >= last_upper and last_rsi > RSI_OVERBOUGHT:
         stop = last_upper + BB_STOP_MULT * band_width
+        stop_dist = stop - last_close
+        tp = last_close - TAKE_PROFIT_MULT * stop_dist
         return Signal(
             pair=pair,
             direction=Direction.SHORT,
             entry_price=last_close,
             stop_price=stop,
-            take_profit_price=last_mid,
+            take_profit_price=tp,
             regime=Regime.RANGING,
             timestamp=datetime.now(tz=timezone.utc),
         )

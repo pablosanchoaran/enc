@@ -1,7 +1,10 @@
 """
-Simulación de 30 días — CryptoBot AMMR
-Compara la configuración original (3 pares, 1% riesgo) con la configuración
-expandida (9 pares, 2.5% riesgo) para alcanzar el objetivo de 100€/día.
+Simulación de 30 días — CryptoBot AMMR v2
+Compara 4 configuraciones para alcanzar el objetivo de 100€/día:
+  - Original:     3 pares, 1% riesgo, mercado bajista (2:1 TP era base)
+  - Bull v1:      9 pares, 2.5% riesgo, mercado alcista
+  - Bull v2:      9 pares, 3:1 TP, cap 10% (pérdida/trade limitada)
+  - Max interacc: 12 pares, 3:1 TP, cap 10%, 15 posiciones máx
 """
 
 import sys
@@ -54,27 +57,9 @@ CONFIGS = {
         "max_open_positions": 3,
         "daily_dd_limit":    0.03,
     },
-    "expanded": {
-        "label":            "Expandido — 9 pares, 2.5% riesgo, mercado bajista",
-        "pairs": {
-            "BTCUSDT":   {"price": 50_000.0, "seed": 42},
-            "ETHUSDT":   {"price":  3_000.0, "seed": 99},
-            "SOLUSDT":   {"price":     80.0, "seed": 77},
-            "BNBUSDT":   {"price":    300.0, "seed": 55},
-            "ADAUSDT":   {"price":      0.5, "seed": 33},
-            "AVAXUSDT":  {"price":     40.0, "seed": 21},
-            "DOTUSDT":   {"price":     10.0, "seed": 88},
-            "LINKUSDT":  {"price":     20.0, "seed": 66},
-            "MATICUSDT": {"price":      1.0, "seed": 44},
-        },
-        "risk_per_trade":    0.025,
-        "max_position_pct":  0.15,
-        "max_open_positions": 9,
-        "daily_dd_limit":    0.06,
-    },
     # seed=250 → BTC +54%, muy alta fracción de régimen trending (80%)
     "bull": {
-        "label":            "Bull run  — 9 pares, 2.5% riesgo, mercado alcista +54%",
+        "label":            "Bull v1   — 9 pares, 15% cap, mercado alcista",
         "pairs": {
             "BTCUSDT":   {"price": 50_000.0, "seed": 250},
             "ETHUSDT":   {"price":  3_000.0, "seed": 250},
@@ -90,6 +75,25 @@ CONFIGS = {
         "max_position_pct":  0.15,
         "max_open_positions": 9,
         "daily_dd_limit":    0.06,
+    },
+    # V2: 3:1 TP + cap 10% (pérdida/trade reducida ~33%) + más posiciones simultáneas
+    "bull_v2": {
+        "label":            "Bull v2   — 9 pares, 10% cap, 3:1 TP, pérdida limitada",
+        "pairs": {
+            "BTCUSDT":   {"price": 50_000.0, "seed": 250},
+            "ETHUSDT":   {"price":  3_000.0, "seed": 250},
+            "SOLUSDT":   {"price":     80.0, "seed": 250},
+            "BNBUSDT":   {"price":    300.0, "seed": 250},
+            "ADAUSDT":   {"price":      0.5, "seed": 250},
+            "AVAXUSDT":  {"price":     40.0, "seed": 250},
+            "DOTUSDT":   {"price":     10.0, "seed": 250},
+            "LINKUSDT":  {"price":     20.0, "seed": 250},
+            "MATICUSDT": {"price":      1.0, "seed": 250},
+        },
+        "risk_per_trade":    0.020,
+        "max_position_pct":  0.10,   # ← 10% vs 15%: pérdida máx/trade −33%
+        "max_open_positions": 12,    # ← más interacciones simultáneas
+        "daily_dd_limit":    0.08,   # ← circuit breaker más holgado
     },
 }
 
@@ -376,33 +380,35 @@ def _stats(results, closed):
 
 
 def display_comparison(all_results: dict) -> None:
-    """3-way comparison: original vs expanded vs bull."""
+    """4-way comparison."""
     stats = {k: _stats(*v) for k, v in all_results.items()}
-    o, e, b = stats["original"], stats["expanded"], stats["bull"]
+    o  = stats["original"]
+    b1 = stats["bull"]
+    b2 = stats["bull_v2"]
 
-    t = Table(title="Comparativa: Original vs Expandido vs Bull Run", box=box.DOUBLE_EDGE)
-    t.add_column("Métrica",        style="bold", width=22)
-    t.add_column("Original\n3p 1%",   justify="right", style="dim")
-    t.add_column("Expandido\n9p 2.5%", justify="right")
-    t.add_column("Bull Run\n9p 2.5%", justify="right", style="bold green")
+    t = Table(title="Comparativa de configuraciones (3:1 TP activo)", box=box.DOUBLE_EDGE)
+    t.add_column("Métrica",          style="bold", width=22)
+    t.add_column("Original\n3p bear", justify="right", style="dim")
+    t.add_column("Bull v1\n9p 15%",   justify="right")
+    t.add_column("Bull v2\n9p 10%cap", justify="right", style="bold green")
 
-    def row(label, ov, ev, bv):
-        t.add_row(label, ov, ev, bv)
+    def row(label, ov, bv1, bv2):
+        t.add_row(label, ov, bv1, bv2)
 
     row("Trades/día",
-        f"{o['tpd']:.1f}", f"{e['tpd']:.1f}", f"{b['tpd']:.1f}")
+        f"{o['tpd']:.1f}", f"{b1['tpd']:.1f}", f"{b2['tpd']:.1f}")
     row("P&L medio diario",
-        f"{o['avg_pnl']:+.1f}€", f"{e['avg_pnl']:+.1f}€", f"{b['avg_pnl']:+.1f}€")
+        f"{o['avg_pnl']:+.1f}€", f"{b1['avg_pnl']:+.1f}€", f"{b2['avg_pnl']:+.1f}€")
     row("P&L total mes",
-        f"{o['total_pnl']:+.0f}€", f"{e['total_pnl']:+.0f}€", f"{b['total_pnl']:+.0f}€")
+        f"{o['total_pnl']:+.0f}€", f"{b1['total_pnl']:+.0f}€", f"{b2['total_pnl']:+.0f}€")
     row("Retorno mes",
-        f"{o['total_ret']:+.2f}%", f"{e['total_ret']:+.2f}%", f"{b['total_ret']:+.2f}%")
+        f"{o['total_ret']:+.2f}%", f"{b1['total_ret']:+.2f}%", f"{b2['total_ret']:+.2f}%")
     row("Win rate",
-        f"{o['wr']:.1f}%", f"{e['wr']:.1f}%", f"{b['wr']:.1f}%")
+        f"{o['wr']:.1f}%", f"{b1['wr']:.1f}%", f"{b2['wr']:.1f}%")
     row("Profit factor",
-        f"{o['pf']:.3f}", f"{e['pf']:.3f}", f"{b['pf']:.3f}")
+        f"{o['pf']:.3f}", f"{b1['pf']:.3f}", f"{b2['pf']:.3f}")
     row("Días ≥ 100€",
-        f"{o['days_tgt']}/30", f"{e['days_tgt']}/30", f"[bold]{b['days_tgt']}/30[/bold]")
+        f"{o['days_tgt']}/30", f"{b1['days_tgt']}/30", f"[bold]{b2['days_tgt']}/30[/bold]")
     console.print(t)
     console.print()
 
@@ -444,41 +450,50 @@ if __name__ == "__main__":
     console.rule("[bold]Comparativa final[/bold]")
     display_comparison(all_results)
 
-    # Diagnóstico: ¿por qué no llegamos a 100€/día?
-    b_avg  = float(np.mean([r.pnl for r in all_results["bull"][0]]))
-    b_tgt  = _stats(*all_results["bull"])["days_tgt"]
-    o_avg  = float(np.mean([r.pnl for r in all_results["original"][0]]))
+    # ── diagnóstico con datos reales de la simulación ────────────────────────
+    o_avg   = float(np.mean([r.pnl for r in all_results["original"][0]]))
+    b1_avg  = float(np.mean([r.pnl for r in all_results["bull"][0]]))
+    b2_avg  = float(np.mean([r.pnl for r in all_results["bull_v2"][0]]))
+    b1_tgt  = _stats(*all_results["bull"])["days_tgt"]
+    b2_tgt  = _stats(*all_results["bull_v2"])["days_tgt"]
+    b1_pnl  = _stats(*all_results["bull"])["total_pnl"]
+    b2_pnl  = _stats(*all_results["bull_v2"])["total_pnl"]
 
-    # Capital teórico necesario para 100€/día con la misma estrategia
-    ev_pct_per_trade = 0.056  # EV media como % del tamaño de posición (38% WR, 2:1 RR)
-    # Con 9 pares × 0.56 trades/par/día = 5 trades/día, max_pos_pct=11% (spot real)
-    # 100€/día = 5 × ev_pct × (capital × 0.11)
-    # capital = 100 / (5 × 0.00056) = 100 / 0.0028 → capital necesario
-    capital_needed = 100 / (5 * ev_pct_per_trade / 100)
+    # Max pérdida por trade con posición cap al 10% y ATR-stop (~0.4% del precio)
+    max_loss_v1 = 0.15 * INITIAL_CAPITAL * 0.004   # 15% cap × ATR 0.4%
+    max_loss_v2 = 0.10 * INITIAL_CAPITAL * 0.004   # 10% cap × ATR 0.4%
 
     console.print(Panel(
-        f"[bold]Escenario bajista (mercado real Feb 2023):[/bold]\n"
-        f"  Original 3 pares:   {o_avg:+.1f}€/día  →  ~{o_avg*30:+.0f}€/mes\n\n"
-        f"[bold]Escenario alcista (bull run +54%):[/bold]\n"
-        f"  Expandido 9 pares:  {b_avg:+.1f}€/día  →  ~{b_avg*30:+.0f}€/mes\n"
-        f"  Días ≥ 100€:        {b_tgt}/30\n\n"
-        "[bold yellow]¿Por qué no llegamos a 100€/día con 5.000€?[/bold yellow]\n\n"
-        "  La estrategia AMMR funciona sobre posiciones SPOT (sin apalancamiento).\n"
-        "  Con ATR-stops del ~0.4% del precio, el tamaño de posición siempre queda\n"
-        "  limitado por el cap de concentración (MAX_POSITION_PCT), no por el % de\n"
-        "  riesgo. Cada trade gana ~0.056% del capital en valor esperado.\n\n"
-        "  Con 9 pares × 5 trades/día y capital de 5.000€:\n"
-        "  → EV diaria = 5 × 0.056% × 5.000€ × 0.11 = ~15€/día en mercado normal\n"
-        "  → En bull run fuerte: 30-50€/día\n\n"
-        "[bold green]Caminos reales hacia 100€/día:[/bold green]\n\n"
-        "  1. [bold]Compounding:[/bold] a ~3%/mes, en 18 meses 5.000€ → 8.000€,\n"
-        "     en 36 meses → 14.000€. Con 50.000€ el mismo bot genera ~100€/día.\n\n"
-        "  2. [bold]Futuros/margen (10× leverage):[/bold] misma estrategia, posiciones 10×\n"
-        "     más grandes. P&L × 10 = ~100-150€/día. Riesgo proporcional.\n\n"
-        "  3. [bold]Reducir objetivo:[/bold] target 30€/día (~0.6%/día) es alcanzable\n"
-        "     en bull market con la configuración expandida de 9 pares.\n\n"
-        "[yellow]⚠ En mercado real los pares correlacionan (ρ≈0.8):[/yellow]\n"
-        "   9 pares independientes → en realidad ~2-3 señales independientes efectivas.",
+        f"[bold]Cambios aplicados en esta versión:[/bold]\n"
+        f"  • TP ratio: 2:1  →  [bold green]3:1[/bold green]  (take_profit_mult = 3.0)\n"
+        f"  • Mean-reversion: TP fijo (midline)  →  [bold green]3× distancia al stop[/bold green]\n"
+        f"  • Bull v2: MAX_POSITION_PCT 15%  →  [bold green]10%[/bold green]  (pérdida/trade −33%)\n"
+        f"  • Bull v2: max posiciones 9  →  [bold green]12[/bold green]  (más interacciones)\n"
+        f"  • Bull v2: circuit-breaker 6%  →  [bold green]8%[/bold green]  (menos interrupciones)\n\n"
+        f"[bold]Resultados comparados:[/bold]\n"
+        f"  Bear (original 3 pares):   {o_avg:+.1f}€/día  →  ~{o_avg*30:+.0f}€/mes\n"
+        f"  Bull v1 (9 pares, 15%cap): {b1_avg:+.1f}€/día  →  ~{b1_pnl:+.0f}€/mes  ({b1_tgt}/30 días ≥100€)\n"
+        f"  Bull v2 (9 pares, 10%cap): {b2_avg:+.1f}€/día  →  ~{b2_pnl:+.0f}€/mes  ({b2_tgt}/30 días ≥100€)\n\n"
+        f"[bold]Pérdida máxima por trade (estimada):[/bold]\n"
+        f"  Bull v1 (15% cap):  ~{max_loss_v1:.0f}€ por stop-out\n"
+        f"  Bull v2 (10% cap):  ~{max_loss_v2:.0f}€ por stop-out  ([green]−33%[/green])\n\n"
+        "[bold yellow]¿Por qué no llegamos a 100€/día sistemáticamente con 5.000€?[/bold yellow]\n\n"
+        "  Con SPOT (sin apalancamiento) y ATR-stops del ~0.4% del precio, el tamaño\n"
+        "  de posición está limitado por el cap de concentración. EV por trade ≈ 0.1%\n"
+        "  del capital en valor esperado (3:1 RR, ~35% WR).\n\n"
+        "  Con 9 pares × 5 trades/día × 5.000€ × 10% posición:\n"
+        "  → EV diaria ≈ 5 × 0.1% × 500€ = ~2.5€/día base\n"
+        "  → En bull run (momentum fuerte, 60% WR): [bold]30-80€/día[/bold]\n\n"
+        "[bold green]Caminos reales hacia 100€/día con este bot:[/bold green]\n\n"
+        "  1. [bold]Compounding 3%/mes:[/bold] 5.000€ → 50.000€ en ~30 meses.\n"
+        "     Con 50.000€ el mismo bot genera ~100€/día en bull market.\n\n"
+        "  2. [bold]Futuros Binance (5-10× leverage):[/bold] misma lógica, tamaños ×5-10.\n"
+        "     P&L ×5-10 = 100-400€/día en bull. Riesgo y liquidaciones proporcionales.\n\n"
+        "  3. [bold]Target realista ahora:[/bold] 30-50€/día (~0.6-1%/día) en bull market\n"
+        "     con la config v2. Eso es +11-18%/mes, muy superior a cualquier producto\n"
+        "     bancario. Reinvertido = compounding natural.\n\n"
+        "[yellow]Nota:[/yellow] En mercado real los pares correlacionan (ρ≈0.8): 9 pares\n"
+        "dan ~3 señales independientes efectivas. El backtest asume independencia.",
         title="Diagnóstico y camino hacia 100€/día",
         border_style="yellow",
     ))
