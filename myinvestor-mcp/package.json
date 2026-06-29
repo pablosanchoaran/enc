@@ -1,0 +1,23 @@
+{
+  "name": "myinvestor-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Myinvestor API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "myinvestor-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "miai-api": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "typescript": "^6.0.3"
+  }
+}

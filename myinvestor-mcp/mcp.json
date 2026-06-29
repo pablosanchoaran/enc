@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "myinvestor": {
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "description": "MCP server para la API de Myinvestor"
+    }
+  }
+}
