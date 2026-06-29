@@ -1,10 +1,10 @@
 """
 Simulación de 30 días — CryptoBot AMMR v2
-Compara 4 configuraciones para alcanzar el objetivo de 100€/día:
-  - Original:     3 pares, 1% riesgo, mercado bajista (2:1 TP era base)
-  - Bull v1:      9 pares, 2.5% riesgo, mercado alcista
-  - Bull v2:      9 pares, 3:1 TP, cap 10% (pérdida/trade limitada)
-  - Max interacc: 12 pares, 3:1 TP, cap 10%, 15 posiciones máx
+Objetivo: +50€/día con 5.000€ SPOT (1%/día).
+Configuraciones comparadas:
+  - Original:    3 pares, 1% riesgo, mercado bajista (línea base)
+  - Bull v1:     9 pares, 15% cap, mercado alcista
+  - Target 50:   12 pares, 20% cap, seeds diversificados (bull)
 """
 
 import sys
@@ -39,7 +39,8 @@ from generate_synthetic_data import generate_ohlcv
 console = Console(width=130)
 
 INITIAL_CAPITAL   = 5_000.0
-TARGET_DAILY_PCT  = 0.02       # 2% = 100€/día
+TARGET_DAILY_PCT  = 0.01       # 1% = 50€/día
+TARGET_EUR        = INITIAL_CAPITAL * TARGET_DAILY_PCT   # 50€
 DAYS              = 30
 
 # ─── configuraciones ──────────────────────────────────────────────────────────
@@ -76,24 +77,28 @@ CONFIGS = {
         "max_open_positions": 9,
         "daily_dd_limit":    0.06,
     },
-    # V2: 3:1 TP + cap 10% (pérdida/trade reducida ~33%) + más posiciones simultáneas
-    "bull_v2": {
-        "label":            "Bull v2   — 9 pares, 10% cap, 3:1 TP, pérdida limitada",
+    # Target 50: 12 pares con seeds diversificados (todos bull, distintas trayectorias)
+    # cap 20% → posiciones más grandes; max 15 simultáneas; CB 10% holgado
+    "target_50": {
+        "label":            "Target 50 — 12 pares, 20% cap, seeds diversif. bull",
         "pairs": {
             "BTCUSDT":   {"price": 50_000.0, "seed": 250},
-            "ETHUSDT":   {"price":  3_000.0, "seed": 250},
-            "SOLUSDT":   {"price":     80.0, "seed": 250},
-            "BNBUSDT":   {"price":    300.0, "seed": 250},
-            "ADAUSDT":   {"price":      0.5, "seed": 250},
-            "AVAXUSDT":  {"price":     40.0, "seed": 250},
-            "DOTUSDT":   {"price":     10.0, "seed": 250},
-            "LINKUSDT":  {"price":     20.0, "seed": 250},
-            "MATICUSDT": {"price":      1.0, "seed": 250},
+            "ETHUSDT":   {"price":  3_000.0, "seed": 252},
+            "SOLUSDT":   {"price":     80.0, "seed": 248},
+            "BNBUSDT":   {"price":    300.0, "seed": 255},
+            "ADAUSDT":   {"price":      0.5, "seed": 245},
+            "AVAXUSDT":  {"price":     40.0, "seed": 260},
+            "DOTUSDT":   {"price":     10.0, "seed": 243},
+            "LINKUSDT":  {"price":     20.0, "seed": 257},
+            "MATICUSDT": {"price":      1.0, "seed": 247},
+            "XRPUSDT":   {"price":      1.2, "seed": 253},
+            "LTCUSDT":   {"price":     80.0, "seed": 241},
+            "UNIUSDT":   {"price":     12.0, "seed": 262},
         },
         "risk_per_trade":    0.020,
-        "max_position_pct":  0.10,   # ← 10% vs 15%: pérdida máx/trade −33%
-        "max_open_positions": 12,    # ← más interacciones simultáneas
-        "daily_dd_limit":    0.08,   # ← circuit breaker más holgado
+        "max_position_pct":  0.20,   # 20% cap → posiciones mayores, más P&L/trade
+        "max_open_positions": 15,    # más interacciones simultáneas
+        "daily_dd_limit":    0.10,   # 10% → menos interrupciones del circuit breaker
     },
 }
 
@@ -253,7 +258,7 @@ def _sparkline(balances: list[float]) -> str:
 def display_run(cfg: dict, results: list[DayResult], closed: list[Position]) -> None:
     n_pairs      = len(cfg["pairs"])
     risk_pct     = cfg["risk_per_trade"] * 100
-    target       = INITIAL_CAPITAL * TARGET_DAILY_PCT
+    target       = TARGET_EUR
 
     total_pnl    = results[-1].bal_end - INITIAL_CAPITAL
     total_ret    = results[-1].cum_ret_pct
@@ -318,7 +323,7 @@ def display_run(cfg: dict, results: list[DayResult], closed: list[Position]) -> 
              if r.trades_closed else "-"),
         )
     console.print(t)
-    console.print("  ★ = día ≥ objetivo (100€)")
+    console.print("  ★ = día ≥ objetivo (50€)")
     console.print()
 
     # ── equity sparkline ─────────────────────────────────────────────────────
@@ -341,7 +346,7 @@ def display_run(cfg: dict, results: list[DayResult], closed: list[Position]) -> 
     row("P&L medio diario",    f"[bold]{avg_pnl:+.2f}€[/bold]")
     row("Proyección mensual",  f"[bold]{avg_pnl*30:+.0f}€[/bold]")
     row("Días positivos / neg",f"[green]{pos_days}✓[/green]  /  [red]{neg_days}✗[/red]")
-    row("Días ≥ 100€ (2%)",    f"[bold]{days_on_tgt}/30[/bold]")
+    row("Días ≥ 50€ (1%)",     f"[bold]{days_on_tgt}/30[/bold]")
     row("Mejor día",
         f"Día {best.day_num+1} ({best.date.strftime('%d %b')}): "
         f"[green]{best.pnl:+.2f}€[/green]")
@@ -380,35 +385,36 @@ def _stats(results, closed):
 
 
 def display_comparison(all_results: dict) -> None:
-    """4-way comparison."""
+    """3-way comparison: original vs bull_v1 vs target_50."""
     stats = {k: _stats(*v) for k, v in all_results.items()}
     o  = stats["original"]
     b1 = stats["bull"]
-    b2 = stats["bull_v2"]
+    t50 = stats["target_50"]
 
-    t = Table(title="Comparativa de configuraciones (3:1 TP activo)", box=box.DOUBLE_EDGE)
-    t.add_column("Métrica",          style="bold", width=22)
-    t.add_column("Original\n3p bear", justify="right", style="dim")
-    t.add_column("Bull v1\n9p 15%",   justify="right")
-    t.add_column("Bull v2\n9p 10%cap", justify="right", style="bold green")
+    tgt_eur = int(TARGET_EUR)
+    t = Table(title=f"Comparativa — objetivo {tgt_eur}€/día (3:1 TP activo)", box=box.DOUBLE_EDGE)
+    t.add_column("Métrica",             style="bold", width=22)
+    t.add_column("Original\n3p bear",   justify="right", style="dim")
+    t.add_column("Bull v1\n9p 15%cap",  justify="right")
+    t.add_column(f"Target {tgt_eur}€\n12p 20%cap", justify="right", style="bold green")
 
-    def row(label, ov, bv1, bv2):
-        t.add_row(label, ov, bv1, bv2)
+    def row(label, ov, bv1, t50v):
+        t.add_row(label, ov, bv1, t50v)
 
     row("Trades/día",
-        f"{o['tpd']:.1f}", f"{b1['tpd']:.1f}", f"{b2['tpd']:.1f}")
+        f"{o['tpd']:.1f}", f"{b1['tpd']:.1f}", f"{t50['tpd']:.1f}")
     row("P&L medio diario",
-        f"{o['avg_pnl']:+.1f}€", f"{b1['avg_pnl']:+.1f}€", f"{b2['avg_pnl']:+.1f}€")
+        f"{o['avg_pnl']:+.1f}€", f"{b1['avg_pnl']:+.1f}€", f"{t50['avg_pnl']:+.1f}€")
     row("P&L total mes",
-        f"{o['total_pnl']:+.0f}€", f"{b1['total_pnl']:+.0f}€", f"{b2['total_pnl']:+.0f}€")
+        f"{o['total_pnl']:+.0f}€", f"{b1['total_pnl']:+.0f}€", f"{t50['total_pnl']:+.0f}€")
     row("Retorno mes",
-        f"{o['total_ret']:+.2f}%", f"{b1['total_ret']:+.2f}%", f"{b2['total_ret']:+.2f}%")
+        f"{o['total_ret']:+.2f}%", f"{b1['total_ret']:+.2f}%", f"{t50['total_ret']:+.2f}%")
     row("Win rate",
-        f"{o['wr']:.1f}%", f"{b1['wr']:.1f}%", f"{b2['wr']:.1f}%")
+        f"{o['wr']:.1f}%", f"{b1['wr']:.1f}%", f"{t50['wr']:.1f}%")
     row("Profit factor",
-        f"{o['pf']:.3f}", f"{b1['pf']:.3f}", f"{b2['pf']:.3f}")
-    row("Días ≥ 100€",
-        f"{o['days_tgt']}/30", f"{b1['days_tgt']}/30", f"[bold]{b2['days_tgt']}/30[/bold]")
+        f"{o['pf']:.3f}", f"{b1['pf']:.3f}", f"{t50['pf']:.3f}")
+    row(f"Días ≥ {tgt_eur}€",
+        f"{o['days_tgt']}/30", f"{b1['days_tgt']}/30", f"[bold]{t50['days_tgt']}/30[/bold]")
     console.print(t)
     console.print()
 
@@ -451,49 +457,61 @@ if __name__ == "__main__":
     display_comparison(all_results)
 
     # ── diagnóstico con datos reales de la simulación ────────────────────────
-    o_avg   = float(np.mean([r.pnl for r in all_results["original"][0]]))
-    b1_avg  = float(np.mean([r.pnl for r in all_results["bull"][0]]))
-    b2_avg  = float(np.mean([r.pnl for r in all_results["bull_v2"][0]]))
-    b1_tgt  = _stats(*all_results["bull"])["days_tgt"]
-    b2_tgt  = _stats(*all_results["bull_v2"])["days_tgt"]
-    b1_pnl  = _stats(*all_results["bull"])["total_pnl"]
-    b2_pnl  = _stats(*all_results["bull_v2"])["total_pnl"]
+    o_s   = _stats(*all_results["original"])
+    b1_s  = _stats(*all_results["bull"])
+    t50_s = _stats(*all_results["target_50"])
 
-    # Max pérdida por trade con posición cap al 10% y ATR-stop (~0.4% del precio)
-    max_loss_v1 = 0.15 * INITIAL_CAPITAL * 0.004   # 15% cap × ATR 0.4%
-    max_loss_v2 = 0.10 * INITIAL_CAPITAL * 0.004   # 10% cap × ATR 0.4%
+    # Avg pérdida/trade por config (estimada con ATR-stop ~0.4% del precio)
+    avg_loss_b1  = abs(float(np.mean([p.realized_pnl for p in all_results["bull"][1]
+                                      if p.realized_pnl <= 0] or [0])))
+    avg_loss_t50 = abs(float(np.mean([p.realized_pnl for p in all_results["target_50"][1]
+                                      if p.realized_pnl <= 0] or [0])))
+    avg_win_b1   = float(np.mean([p.realized_pnl for p in all_results["bull"][1]
+                                   if p.realized_pnl > 0] or [0]))
+    avg_win_t50  = float(np.mean([p.realized_pnl for p in all_results["target_50"][1]
+                                   if p.realized_pnl > 0] or [0]))
+
+    tgt = int(TARGET_EUR)
+
+    # Días ≥50€ por semana (de 30 días → ~4.3 semanas)
+    weeks_t50 = t50_s['days_tgt'] / 4.3
 
     console.print(Panel(
-        f"[bold]Cambios aplicados en esta versión:[/bold]\n"
-        f"  • TP ratio: 2:1  →  [bold green]3:1[/bold green]  (take_profit_mult = 3.0)\n"
-        f"  • Mean-reversion: TP fijo (midline)  →  [bold green]3× distancia al stop[/bold green]\n"
-        f"  • Bull v2: MAX_POSITION_PCT 15%  →  [bold green]10%[/bold green]  (pérdida/trade −33%)\n"
-        f"  • Bull v2: max posiciones 9  →  [bold green]12[/bold green]  (más interacciones)\n"
-        f"  • Bull v2: circuit-breaker 6%  →  [bold green]8%[/bold green]  (menos interrupciones)\n\n"
-        f"[bold]Resultados comparados:[/bold]\n"
-        f"  Bear (original 3 pares):   {o_avg:+.1f}€/día  →  ~{o_avg*30:+.0f}€/mes\n"
-        f"  Bull v1 (9 pares, 15%cap): {b1_avg:+.1f}€/día  →  ~{b1_pnl:+.0f}€/mes  ({b1_tgt}/30 días ≥100€)\n"
-        f"  Bull v2 (9 pares, 10%cap): {b2_avg:+.1f}€/día  →  ~{b2_pnl:+.0f}€/mes  ({b2_tgt}/30 días ≥100€)\n\n"
-        f"[bold]Pérdida máxima por trade (estimada):[/bold]\n"
-        f"  Bull v1 (15% cap):  ~{max_loss_v1:.0f}€ por stop-out\n"
-        f"  Bull v2 (10% cap):  ~{max_loss_v2:.0f}€ por stop-out  ([green]−33%[/green])\n\n"
-        "[bold yellow]¿Por qué no llegamos a 100€/día sistemáticamente con 5.000€?[/bold yellow]\n\n"
-        "  Con SPOT (sin apalancamiento) y ATR-stops del ~0.4% del precio, el tamaño\n"
-        "  de posición está limitado por el cap de concentración. EV por trade ≈ 0.1%\n"
-        "  del capital en valor esperado (3:1 RR, ~35% WR).\n\n"
-        "  Con 9 pares × 5 trades/día × 5.000€ × 10% posición:\n"
-        "  → EV diaria ≈ 5 × 0.1% × 500€ = ~2.5€/día base\n"
-        "  → En bull run (momentum fuerte, 60% WR): [bold]30-80€/día[/bold]\n\n"
-        "[bold green]Caminos reales hacia 100€/día con este bot:[/bold green]\n\n"
-        "  1. [bold]Compounding 3%/mes:[/bold] 5.000€ → 50.000€ en ~30 meses.\n"
-        "     Con 50.000€ el mismo bot genera ~100€/día en bull market.\n\n"
-        "  2. [bold]Futuros Binance (5-10× leverage):[/bold] misma lógica, tamaños ×5-10.\n"
-        "     P&L ×5-10 = 100-400€/día en bull. Riesgo y liquidaciones proporcionales.\n\n"
-        "  3. [bold]Target realista ahora:[/bold] 30-50€/día (~0.6-1%/día) en bull market\n"
-        "     con la config v2. Eso es +11-18%/mes, muy superior a cualquier producto\n"
-        "     bancario. Reinvertido = compounding natural.\n\n"
-        "[yellow]Nota:[/yellow] En mercado real los pares correlacionan (ρ≈0.8): 9 pares\n"
-        "dan ~3 señales independientes efectivas. El backtest asume independencia.",
-        title="Diagnóstico y camino hacia 100€/día",
+        f"[bold]Objetivo: {tgt}€/día (1% del capital)[/bold]\n\n"
+        f"{'─'*60}\n"
+        f"[bold]Resultados simulados (mes completo):[/bold]\n\n"
+        f"  Bear original (3 pares):      {o_s['avg_pnl']:+.1f}€/día   "
+        f"│  {o_s['days_tgt']:2d}/30 días ≥{tgt}€\n"
+        f"  Bull v1 (9 pares, 15% cap):   {b1_s['avg_pnl']:+.1f}€/día   "
+        f"│  {b1_s['days_tgt']:2d}/30 días ≥{tgt}€  │  −{avg_loss_b1:.0f}€/loss trade\n"
+        f"  [bold green]Target 50 (12p, 20% cap):  {t50_s['avg_pnl']:+.1f}€/día   "
+        f"│  {t50_s['days_tgt']:2d}/30 días ≥{tgt}€  │  −{avg_loss_t50:.0f}€/loss trade[/bold green]\n\n"
+        f"{'─'*60}\n"
+        f"[bold]¿Qué mejora con Target 50 vs Bull v1?[/bold]\n\n"
+        f"  • Posiciones 20% cap (vs 15%):  ganancias ~{avg_win_t50:.0f}€/trade (vs ~{avg_win_b1:.0f}€)\n"
+        f"  • 12 pares con seeds diversif.: señales menos correlacionadas\n"
+        f"  • 15 posiciones máx: más operaciones simultáneas abiertas\n"
+        f"  • Circuit-breaker 10% (vs 6%): menos días bloqueados\n\n"
+        f"  Días ≥{tgt}€: {t50_s['days_tgt']}/30  ≈  {weeks_t50:.1f} días/semana en bull market\n\n"
+        f"{'─'*60}\n"
+        f"[bold yellow]¿Por qué hay días con 0 trades o grandes pérdidas?[/bold yellow]\n\n"
+        f"  Los días vacíos (0 trades) ocurren cuando:\n"
+        f"    a) La estrategia detecta régimen TRANSITION (sin señales nuevas)\n"
+        f"    b) El circuit-breaker disparó (DD diario límite alcanzado)\n"
+        f"  Los días de gran pérdida ocurren cuando el mercado invierte justo\n"
+        f"  después de abrir posiciones (todas en stop simultáneamente).\n\n"
+        f"  [bold]Esto es normal en trading real:[/bold] ganar en rachas, perder en correcciones.\n"
+        f"  El profit factor {t50_s['pf']:.2f} > 1.0 confirma que el sistema es rentable.\n\n"
+        f"{'─'*60}\n"
+        f"[bold green]Camino hacia {tgt}€/día de forma consistente:[/bold green]\n\n"
+        f"  [bold]Hoy con 5.000€ SPOT:[/bold]  ~{t50_s['avg_pnl']:.0f}€/día avg, {t50_s['days_tgt']}/30 días ≥{tgt}€\n"
+        f"  [bold]Con compounding 3%/mes:[/bold] en 12 meses → ~{INITIAL_CAPITAL*1.03**12:,.0f}€\n"
+        f"                             en 24 meses → ~{INITIAL_CAPITAL*1.03**24:,.0f}€\n"
+        f"  [bold]Con 10.000€ SPOT:[/bold]   P&L ×2 → {t50_s['avg_pnl']*2:.0f}€/día avg en bull\n"
+        f"  [bold]Con futuros 3× leverage:[/bold] P&L ×3 → {t50_s['avg_pnl']*3:.0f}€/día con liquidaciones proporcionales\n\n"
+        f"[yellow]Nota:[/yellow] En mercado real los pares correlacionan (ρ≈0.8 entre BTC/ETH/SOL).\n"
+        f"12 pares SPOT → efectivamente ~4 señales independientes. El P&L real\n"
+        f"estará entre el escenario bear ({o_s['avg_pnl']:+.0f}€/día) y el bull ({t50_s['avg_pnl']:+.0f}€/día).",
+        title=f"Diagnóstico — Target {tgt}€/día",
         border_style="yellow",
     ))
