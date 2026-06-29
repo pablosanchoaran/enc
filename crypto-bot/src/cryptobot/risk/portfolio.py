@@ -75,11 +75,18 @@ class PortfolioRiskManager:
             return True
         return False
 
-    def record_fill(self, position: Position, fill_cost: float) -> None:
-        self.state.balance -= fill_cost
+    def record_fill(self, position: Position, fee_cost: float) -> None:
+        """Deduct only the trading fee. balance represents total equity, not free cash."""
+        self.state.balance -= fee_cost
         self.state.open_positions.append(position)
 
     def record_close(self, position: Position, pnl: float) -> None:
+        """Add realized PnL (already net of price movement). Remove from open list."""
         self.state.balance += pnl
         position.status = PositionStatus.CLOSED_TP if pnl > 0 else PositionStatus.CLOSED_STOP
+        # Remove from open_positions so open_pairs() and open_count stay accurate
+        try:
+            self.state.open_positions.remove(position)
+        except ValueError:
+            pass
         self.check_circuit_breaker()

@@ -81,20 +81,21 @@ class BacktestEngine:
 
             size = calculate_size(signal, self.state.balance)
             position = self.executor.open_position(signal, size)
-            fill_cost = position.fill_price * position.size * (1 + BINANCE_FEE)
-            self.risk.record_fill(position, fill_cost)
+            # Only deduct fee (balance = total equity; position cost is a conversion, not a loss)
+            fee_cost = position.fill_price * position.size * BINANCE_FEE
+            self.risk.record_fill(position, fee_cost)
 
         # Close any remaining open positions at last price
         last_price = df["close"].iloc[-1]
         for pos in list(self.state.open_positions):
             if pos.status == PositionStatus.OPEN:
                 pnl = self.executor.close_position(pos, last_price, "MANUAL")
-                self.risk.record_close(pos, pnl)
                 self.closed_positions.append(pos)
+                self.risk.record_close(pos, pnl)
 
         trading_days = (df["timestamp"].iloc[-1] - df["timestamp"].iloc[0]).days or 1
         metrics = compute_metrics(
-            self.state.open_positions + self.closed_positions,
+            self.closed_positions,
             self.config.initial_capital,
             trading_days,
         )
@@ -120,9 +121,9 @@ class BacktestEngine:
 
             if hit_stop:
                 pnl = self.executor.close_position(pos, pos.stop_price, "STOP")
-                self.risk.record_close(pos, pnl)
                 self.closed_positions.append(pos)
+                self.risk.record_close(pos, pnl)
             elif hit_tp:
                 pnl = self.executor.close_position(pos, pos.take_profit_price, "TP")
-                self.risk.record_close(pos, pnl)
                 self.closed_positions.append(pos)
+                self.risk.record_close(pos, pnl)
