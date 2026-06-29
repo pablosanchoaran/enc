@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptobot"
+version = "0.1.0"
+description = "Automated crypto trading bot — AMMR strategy on Binance SPOT"
+requires-python = ">=3.11"
+dependencies = [
+    # Exchange
+    "python-binance==1.0.19",
+    # Data
+    "pandas==2.2.2",
+    "numpy==1.26.4",
+    "SQLAlchemy==2.0.30",
+    "aiohttp==3.9.5",
+    # Indicators
+    "ta-lib>=0.4.0",
+    # Config
+    "pydantic==2.7.1",
+    "pydantic-settings==2.2.1",
+    "python-dotenv==1.0.1",
+    # CLI
+    "click==8.1.7",
+    "rich==13.7.1",
+    # Logging
+    "structlog==24.1.0",
+    # Monitoring
+    "python-telegram-bot==21.3",
+    "prometheus-client==0.20.0",
+    # Optimization
+    "scipy>=1.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.2.0",
+    "pytest-asyncio==0.23.6",
+    "pytest-bdd==7.1.2",
+    "pytest-cov==5.0.0",
+    "responses==0.25.3",
+    "freezegun==1.5.0",
+]
+
+[project.scripts]
+cryptobot = "cryptobot.cli.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=src/cryptobot --cov-report=term-missing --cov-fail-under=80"
+
+[tool.coverage.run]
+source = ["src/cryptobot"]
+omit = ["*/cli/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
