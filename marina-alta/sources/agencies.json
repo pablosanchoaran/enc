@@ -1,0 +1,62 @@
+{
+  "$comment": "Catálogo de fuentes. 'adapter' elige el parser; 'enabled' permite desactivar una fuente sin borrarla. Para dar de alta una agencia nueva basta con añadir una entrada aquí.",
+  "sources": [
+    {
+      "id": "thinkspain",
+      "adapter": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "origin": "https://www.thinkspain.com",
+      "enabled": true,
+      "notes": "Feed de últimas altas de toda España + barrido por municipio de la comarca."
+    },
+    {
+      "id": "ferrando-moraira",
+      "adapter": "sooprema",
+      "agency": "Ferrando Inmobiliaria",
+      "origin": "https://www.ferrando-moraira.com",
+      "enabled": true
+    },
+    {
+      "id": "mlsdenia",
+      "adapter": "sooprema",
+      "agency": "MLS Dénia",
+      "origin": "https://www.mlsdenia.com",
+      "enabled": true
+    },
+    {
+      "id": "denialara",
+      "adapter": "sooprema",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "origin": "https://www.denialara.com",
+      "enabled": true
+    },
+    {
+      "id": "inmoxara",
+      "adapter": "sooprema",
+      "agency": "InmoXara",
+      "origin": "https://www.inmoxara.es",
+      "enabled": true
+    },
+    {
+      "id": "daniamed",
+      "adapter": "sooprema",
+      "agency": "Daniamed",
+      "origin": "https://www.daniamed.net",
+      "enabled": true
+    },
+    {
+      "id": "benimo-villas",
+      "adapter": "sooprema",
+      "agency": "Benimo Villas",
+      "origin": "https://www.benimo-villas.com",
+      "enabled": true
+    },
+    {
+      "id": "calablanca",
+      "adapter": "sooprema",
+      "agency": "Inmobiliaria Calablanca",
+      "origin": "https://www.calablanca.com",
+      "enabled": true
+    }
+  ]
+}

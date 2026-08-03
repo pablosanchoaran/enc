@@ -1,0 +1,67 @@
+name: Novedades inmobiliarias Marina Alta
+
+on:
+  schedule:
+    # 05:00 UTC = 07:00 en horario de verano peninsular, 06:00 en invierno.
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marina-alta
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: marina-alta
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/marina-alta-real-estate-extractor-pa8ja0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: marina-alta/package-lock.json
+
+      - run: npm ci
+
+      - run: npm test
+
+      - name: Extraer novedades
+        run: npm run extract
+
+      - name: Publicar el informe como artifact del run
+        uses: actions/upload-artifact@v4
+        with:
+          name: informe-${{ github.run_number }}
+          path: |
+            marina-alta/report/index.html
+            marina-alta/data/daily
+          retention-days: 30
+
+      - name: Guardar datos e informe
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data report
+          if git diff --staged --quiet; then
+            echo 'Sin cambios que guardar.'
+            exit 0
+          fi
+          git commit -m "datos: novedades del $(date -u +%Y-%m-%d)"
+          # El cron y una ejecución manual pueden solaparse con un push propio.
+          for intento in 1 2 3 4; do
+            git push && exit 0
+            sleep $((2 ** intento))
+            git pull --rebase origin claude/marina-alta-real-estate-extractor-pa8ja0
+          done
+          exit 1

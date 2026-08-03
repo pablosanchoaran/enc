@@ -1,0 +1,19 @@
+{
+  "name": "marina-alta-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Extractor diario de novedades inmobiliarias de la Marina Alta",
+  "scripts": {
+    "extract": "NODE_USE_ENV_PROXY=1 node src/index.mjs",
+    "dry-run": "NODE_USE_ENV_PROXY=1 node src/index.mjs --dry-run --limit 20",
+    "report": "node src/index.mjs --report-only",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
