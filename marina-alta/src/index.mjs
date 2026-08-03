@@ -29,13 +29,19 @@ const REPORT_FILE = join(ROOT, 'report', 'index.html')
 const ADAPTERS = { thinkspain, sooprema }
 
 function parseArgs(argv) {
-  const args = { dryRun: false, source: null, limit: Infinity, reportOnly: false }
+  const args = { dryRun: false, source: null, limit: Infinity, feedLimit: 250, reportOnly: false }
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i]
     if (arg === '--dry-run') args.dryRun = true
     else if (arg === '--report-only') args.reportOnly = true
     else if (arg === '--source') args.source = argv[++i]
-    else if (arg === '--limit') args.limit = Number.parseInt(argv[++i], 10) || Infinity
+    else if (arg === '--limit') {
+      const value = Number.parseInt(argv[++i], 10)
+      args.limit = Number.isFinite(value) ? value : Infinity
+    } else if (arg === '--feed-limit') {
+      const value = Number.parseInt(argv[++i], 10)
+      args.feedLimit = Number.isFinite(value) ? value : 250
+    }
   }
   return args
 }
@@ -109,7 +115,14 @@ async function run() {
 
     let raws = []
     try {
-      raws = await adapter.collect({ fetcher, source, known, log, limit: args.limit })
+      raws = await adapter.collect({
+        fetcher,
+        source,
+        known,
+        log,
+        limit: args.limit,
+        feedLimit: args.feedLimit,
+      })
     } catch (error) {
       log(`  ✖ error del adaptador: ${error.message}`)
       sourceReports.push({
@@ -171,21 +184,48 @@ async function run() {
   const result = diffInventory(comparable, deduped, today)
   const listings = [...result.inventory, ...untouched]
 
+  // La primera vez que se rastrea una fuente, su catálogo entero aparecería
+  // como "altas de hoy". Eso no es novedad, es la carga inicial.
+  const bootstrapped = new Set(
+    sources
+      .filter((source) => !previousListings.some((item) => item.source === source.id))
+      .map((source) => source.id),
+  )
+  const additions = result.additions.filter((item) => !bootstrapped.has(item.source))
+  if (bootstrapped.size > 0) {
+    const loaded = result.additions.length - additions.length
+    log(`  (carga inicial de ${[...bootstrapped].join(', ')}: ${loaded} anuncios, no son altas)`)
+  }
+
+  // Varias ejecuciones parciales el mismo día se suman en el informe del día
+  // en vez de pisarse.
+  const dailyFile = join(DATA_DIR, 'daily', `${today}.json`)
+  const previousDaily = await readJson(dailyFile, null)
+  const merge = (before = [], after = []) => [
+    ...new Map([...before, ...after].map((item) => [item.id, item])).values(),
+  ]
+
   const daily = {
     date: today,
     generatedAt: new Date().toISOString(),
-    totals: {
-      inventory: listings.length,
-      additions: result.additions.length,
-      priceDrops: result.priceDrops.length,
-      priceRises: result.priceRises.length,
-      removals: result.removals.length,
-    },
-    additions: result.additions,
-    priceDrops: result.priceDrops,
-    priceRises: result.priceRises,
-    removals: result.removals,
-    sources: sourceReports,
+    totals: {},
+    additions: merge(previousDaily?.additions, additions),
+    priceDrops: merge(previousDaily?.priceDrops, result.priceDrops),
+    priceRises: merge(previousDaily?.priceRises, result.priceRises),
+    removals: merge(previousDaily?.removals, result.removals),
+    sources: [
+      ...new Map(
+        [...(previousDaily?.sources ?? []), ...sourceReports].map((item) => [item.id, item]),
+      ).values(),
+    ],
+    bootstrap: Boolean(previousDaily?.bootstrap) || bootstrapped.size > 0,
+  }
+  daily.totals = {
+    inventory: listings.length,
+    additions: daily.additions.length,
+    priceDrops: daily.priceDrops.length,
+    priceRises: daily.priceRises.length,
+    removals: daily.removals.length,
   }
 
   log(
@@ -206,7 +246,7 @@ async function run() {
   }
 
   await writeJson(INVENTORY_FILE, { updatedAt: daily.generatedAt, listings })
-  await writeJson(join(DATA_DIR, 'daily', `${today}.json`), daily)
+  await writeJson(dailyFile, daily)
   await mkdir(dirname(REPORT_FILE), { recursive: true })
   await writeFile(REPORT_FILE, renderReport({ daily, listings }))
   log(`\nDatos en ${INVENTORY_FILE}\nInforme en ${REPORT_FILE}`)

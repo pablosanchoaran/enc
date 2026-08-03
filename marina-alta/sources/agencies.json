@@ -28,7 +28,8 @@
       "adapter": "sooprema",
       "agency": "Denialara Servicios Inmobiliarios",
       "origin": "https://www.denialara.com",
-      "enabled": true
+      "enabled": false,
+      "notes": "No publica sitemap.xml y su robots.txt prohíbe la paginación de los listados: necesita un adaptador que recorra la primera página de cada listado."
     },
     {
       "id": "inmoxara",
@@ -56,7 +57,8 @@
       "adapter": "sooprema",
       "agency": "Inmobiliaria Calablanca",
       "origin": "https://www.calablanca.com",
-      "enabled": true
+      "enabled": false,
+      "notes": "Mismo caso que Denialara: sin sitemap.xml y con la paginación prohibida en su robots.txt."
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-03",
+  "generatedAt": "2026-08-03T21:06:45.378Z",
+  "totals": {
+    "inventory": 1296,
+    "additions": 0,
+    "priceDrops": 0,
+    "priceRises": 0,
+    "removals": 0
+  },
+  "additions": [],
+  "priceDrops": [],
+  "priceRises": [],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 978,
+      "status": "ok"
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 180,
+      "status": "ok"
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 23,
+      "status": "ok"
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 66,
+      "status": "ok"
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 49,
+      "status": "ok"
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 0,
+      "status": "vacío"
+    }
+  ],
+  "bootstrap": true
+}

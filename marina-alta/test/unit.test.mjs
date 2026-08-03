@@ -33,6 +33,12 @@ test('el geo-filtro acepta la comarca y rechaza el resto', () => {
   assert.equal(detectMunicipality('Cumbre del Sol, Benitachell'), 'El Poble Nou de Benitatxell')
   assert.equal(detectMunicipality('Chalet en Estepona en venta'), null)
   assert.equal(detectMunicipality('Piso en Valencia'), null)
+  assert.equal(
+    detectMunicipality('Finca en El Cabo de Gata, Almería'),
+    null,
+    'Cabo de Gata no es Gata de Gorgos',
+  )
+  assert.equal(detectMunicipality('Casa en Gata de Gorgos'), 'Gata de Gorgos')
 })
 
 test('en un slug de zona manda el municipio del final', () => {

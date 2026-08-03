@@ -36,7 +36,10 @@ export function diffInventory(previousList, currentList, today) {
 
     if (fresh.price !== old.price) {
       const delta = fresh.price - old.price
-      merged.priceHistory = [...merged.priceHistory, { date: today, price: fresh.price }]
+      const last = merged.priceHistory.at(-1)
+      if (last?.price !== fresh.price) {
+        merged.priceHistory = [...merged.priceHistory, { date: today, price: fresh.price }]
+      }
       priceChanges.push({
         ...merged,
         previousPrice: old.price,

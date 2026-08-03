@@ -16,7 +16,8 @@ export const MUNICIPALITIES = [
   { name: 'El Verger', aliases: ['el verger', 'verger', 'vergel'] },
   { name: 'Pedreguer', aliases: ['pedreguer', 'la sella', 'monte solana'] },
   { name: 'Ondara', aliases: ['ondara'] },
-  { name: 'Gata de Gorgos', aliases: ['gata de gorgos', 'gata', 'gata gorgos'] },
+  // "gata" a secas no vale: hay un Cabo de Gata en Almería.
+  { name: 'Gata de Gorgos', aliases: ['gata de gorgos', 'gata gorgos'] },
   { name: 'Beniarbeig', aliases: ['beniarbeig'] },
   { name: 'Xaló / Jalón', aliases: ['jalon', 'jalón', 'xalo', 'xaló', 'valle del pop', 'vall del pop'] },
   { name: 'Llíber', aliases: ['lliber', 'llíber'] },

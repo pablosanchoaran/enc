@@ -155,7 +155,7 @@ function parsePropertyPage(html, url) {
   }
 }
 
-export async function collect({ fetcher, known, log, limit = Infinity }) {
+export async function collect({ fetcher, known, log, limit = Infinity, feedLimit = 250 }) {
   const found = []
   const seen = new Set()
 
@@ -178,6 +178,7 @@ export async function collect({ fetcher, known, log, limit = Infinity }) {
   const beforeLatest = found.length
   const index = await fetcher.get(LATEST_SITEMAP, { accept: 'application/xml' })
   const spanishFeed = parseSitemap(index ?? '').find((entry) => entry.loc.includes('/es/'))
+  if (!spanishFeed) log('  ⚠ no se ha podido leer el feed de últimas altas')
 
   if (spanishFeed) {
     const feed = await fetcher.get(spanishFeed.loc, { accept: 'application/xml' })
@@ -188,7 +189,11 @@ export async function collect({ fetcher, known, log, limit = Infinity }) {
         return !seen.has(ref) && !known.ids.has(`thinkspain:${ref}`)
       })
 
-    for (const propertyUrl of candidates.slice(0, limit)) {
+    // `limit` acota el barrido de zonas; el feed tiene su propio tope.
+    const queue = candidates.slice(0, feedLimit)
+    log(`  feed de altas: ${candidates.length} sin conocer, se abren ${queue.length} fichas`)
+
+    for (const propertyUrl of queue) {
       const html = await fetcher.get(propertyUrl)
       if (!html) continue
       const item = parsePropertyPage(html, propertyUrl)

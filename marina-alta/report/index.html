@@ -1,163 +1,4 @@
-/**
- * Genera el informe diario como una página HTML autocontenida: sin peticiones
- * externas, porque el artefacto publicado bloquea cualquier host de fuera.
- */
-
-const TYPE_LABELS = {
-  villa: 'Villa / chalet',
-  house: 'Casa',
-  townhouse: 'Adosado / bungaló',
-  apartment: 'Piso',
-  penthouse: 'Ático',
-  plot: 'Parcela',
-  other: 'Otro',
-}
-
-const escape = (value) =>
-  String(value ?? '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-
-const euros = (value) =>
-  value == null ? '—' : `${new Intl.NumberFormat('es-ES').format(value)} €`
-
-const LONG_DATE = new Intl.DateTimeFormat('es-ES', {
-  weekday: 'long',
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-})
-
-/** Precio medio por m² construido de cada municipio, con al menos 3 muestras. */
-function pricePerM2ByMunicipality(listings) {
-  const groups = new Map()
-  for (const item of listings) {
-    if (!item.pricePerM2 || item.type === 'plot' || item.status === 'removed') continue
-    if (!groups.has(item.municipality)) groups.set(item.municipality, [])
-    groups.get(item.municipality).push(item.pricePerM2)
-  }
-
-  return [...groups]
-    .filter(([, values]) => values.length >= 5)
-    .map(([municipality, values]) => {
-      const sorted = [...values].sort((a, b) => a - b)
-      const middle = Math.floor(sorted.length / 2)
-      return {
-        municipality,
-        median:
-          sorted.length % 2 === 0
-            ? Math.round((sorted[middle - 1] + sorted[middle]) / 2)
-            : sorted[middle],
-        count: values.length,
-      }
-    })
-    .sort((a, b) => b.median - a.median)
-}
-
-function renderCard(item) {
-  const facts = [
-    item.beds ? `${item.beds} hab.` : null,
-    item.baths ? `${item.baths} baños` : null,
-    item.builtM2 ? `${item.builtM2} m² const.` : null,
-    item.plotM2 ? `${item.plotM2} m² parcela` : null,
-  ].filter(Boolean)
-
-  return `
-    <article class="card" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}">
-      <div class="card__head">
-        <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
-        <span class="card__place">${escape(item.municipality)}</span>
-      </div>
-      <p class="card__price">${euros(item.price)}</p>
-      ${item.pricePerM2 ? `<p class="card__unit">${new Intl.NumberFormat('es-ES').format(item.pricePerM2)} €/m²</p>` : ''}
-      <h3 class="card__title">${escape(item.title ?? 'Sin título')}</h3>
-      ${facts.length ? `<ul class="card__facts">${facts.map((fact) => `<li>${escape(fact)}</li>`).join('')}</ul>` : ''}
-      <footer class="card__foot">
-        <span class="card__agency">${escape(item.agency)}</span>
-        <a class="card__link" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>`
-}
-
-function renderPriceRow(item) {
-  const isDrop = item.direction === 'drop'
-  return `
-    <li class="movement ${isDrop ? 'movement--drop' : 'movement--rise'}">
-      <div class="movement__main">
-        <span class="movement__place">${escape(item.municipality)}</span>
-        <a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${escape(item.title ?? item.url)}</a>
-      </div>
-      <div class="movement__numbers">
-        <span class="movement__was">${euros(item.previousPrice)}</span>
-        <span class="movement__now">${euros(item.price)}</span>
-        <span class="movement__delta">${isDrop ? '▼' : '▲'} ${Math.abs(item.deltaPct)} %</span>
-      </div>
-    </li>`
-}
-
-function renderChart(rows) {
-  if (rows.length === 0) {
-    return '<p class="empty">Aún no hay muestras suficientes para calcular precios medios por municipio.</p>'
-  }
-  const max = Math.max(...rows.map((row) => row.median))
-
-  return `
-    <div class="chart" role="img" aria-label="Precio mediano por metro cuadrado construido en cada municipio">
-      ${rows
-        .map(
-          (row) => `
-        <div class="chart__row" tabindex="0" title="${escape(row.municipality)}: ${new Intl.NumberFormat('es-ES').format(row.median)} €/m² · ${row.count} anuncios">
-          <span class="chart__label">${escape(row.municipality)}</span>
-          <span class="chart__track"><span class="chart__bar" style="width:${Math.max(2, (row.median / max) * 100)}%"></span></span>
-          <span class="chart__value">${new Intl.NumberFormat('es-ES').format(row.median)}<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">${row.count}</span>
-        </div>`,
-        )
-        .join('')}
-    </div>`
-}
-
-function renderSources(sources) {
-  const label = {
-    ok: 'Correcto',
-    'vacío': 'Sin resultados',
-    error: 'Error',
-    robots: 'Bloqueado por robots.txt',
-  }
-  return `
-    <table class="sources">
-      <thead><tr><th>Fuente</th><th>Anuncios</th><th>Peticiones</th><th>Estado</th></tr></thead>
-      <tbody>
-        ${sources
-          .map(
-            (source) => `
-          <tr class="${source.status === 'ok' ? '' : 'sources__warn'}">
-            <td>${escape(source.agency)}</td>
-            <td class="num">${source.listings}</td>
-            <td class="num">${source.requests ?? '—'}</td>
-            <td>${escape(label[source.status] ?? source.status)}${source.error ? `: ${escape(source.error)}` : ''}</td>
-          </tr>`,
-          )
-          .join('')}
-      </tbody>
-    </table>`
-}
-
-export function renderReport({ daily, listings }) {
-  const active = listings.filter((item) => item.status !== 'removed')
-  const additions = [...daily.additions].sort((a, b) => b.price - a.price)
-  const municipalities = [...new Set(active.map((item) => item.municipality))].sort((a, b) =>
-    a.localeCompare(b, 'es'),
-  )
-  const agencies = [...new Set(additions.map((item) => item.agency))].sort((a, b) =>
-    a.localeCompare(b, 'es'),
-  )
-  const chartRows = pricePerM2ByMunicipality(active)
-  const readableDate = LONG_DATE.format(new Date(`${daily.date}T12:00:00`))
-
-  return `<title>Novedades inmobiliarias · Marina Alta</title>
+<title>Novedades inmobiliarias · Marina Alta</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
@@ -311,38 +152,23 @@ export function renderReport({ daily, listings }) {
   <header class="masthead">
     <span class="masthead__eyebrow">Marina Alta · venta</span>
     <h1>Novedades inmobiliarias</h1>
-    <p class="masthead__date">${escape(readableDate)}</p>
+    <p class="masthead__date">lunes, 3 de agosto de 2026</p>
   </header>
 
   <div class="tiles">
-    <div class="tile tile--accent"><span class="tile__value">${daily.totals.additions}</span><span class="tile__label">altas nuevas</span></div>
-    <div class="tile tile--drop"><span class="tile__value">${daily.totals.priceDrops}</span><span class="tile__label">bajadas de precio</span></div>
-    <div class="tile tile--rise"><span class="tile__value">${daily.totals.priceRises}</span><span class="tile__label">subidas de precio</span></div>
-    <div class="tile"><span class="tile__value">${daily.totals.removals}</span><span class="tile__label">retiradas</span></div>
-    <div class="tile"><span class="tile__value">${active.length}</span><span class="tile__label">en seguimiento</span></div>
+    <div class="tile tile--accent"><span class="tile__value">0</span><span class="tile__label">altas nuevas</span></div>
+    <div class="tile tile--drop"><span class="tile__value">0</span><span class="tile__label">bajadas de precio</span></div>
+    <div class="tile tile--rise"><span class="tile__value">0</span><span class="tile__label">subidas de precio</span></div>
+    <div class="tile"><span class="tile__value">0</span><span class="tile__label">retiradas</span></div>
+    <div class="tile"><span class="tile__value">1296</span><span class="tile__label">en seguimiento</span></div>
   </div>
 
   <section>
     <div class="section__head">
       <h2>Altas de hoy</h2>
-      <span class="section__note" id="count">${additions.length} anuncios</span>
+      <span class="section__note" id="count">0 anuncios</span>
     </div>
-    ${
-      additions.length === 0
-        ? `<p class="empty">${
-            daily.bootstrap
-              ? 'Primera carga: se ha registrado el inventario de partida, así que hoy no hay altas que comparar. A partir de mañana aparecerá aquí lo que se publique cada día.'
-              : 'Hoy no ha aparecido ningún anuncio nuevo en las fuentes vigiladas.'
-          }</p>`
-        : `<div class="filters">
-      <label>Municipio<select id="f-municipality"><option value="">Todos</option>${municipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Tipo<select id="f-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
-      <label>Agencia<select id="f-agency"><option value="">Todas</option>${agencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
-    </div>
-    <div class="grid" id="grid">${additions.map(renderCard).join('')}</div>
-    <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p>`
-    }
+    <p class="empty">Primera carga: se ha registrado el inventario de partida, así que hoy no hay altas que comparar. A partir de mañana aparecerá aquí lo que se publique cada día.</p>
   </section>
 
   <section>
@@ -350,11 +176,7 @@ export function renderReport({ daily, listings }) {
       <h2>Cambios de precio</h2>
       <span class="section__note">frente al último rastreo</span>
     </div>
-    ${
-      daily.priceDrops.length + daily.priceRises.length === 0
-        ? '<p class="empty">Ningún anuncio en seguimiento ha cambiado de precio.</p>'
-        : `<ul class="movements">${[...daily.priceDrops, ...daily.priceRises].map(renderPriceRow).join('')}</ul>`
-    }
+    <p class="empty">Ningún anuncio en seguimiento ha cambiado de precio.</p>
   </section>
 
   <section>
@@ -362,7 +184,124 @@ export function renderReport({ daily, listings }) {
       <h2>Precio por metro cuadrado</h2>
       <span class="section__note">mediana del inventario en seguimiento, obra construida</span>
     </div>
-    ${renderChart(chartRows)}
+    
+    <div class="chart" role="img" aria-label="Precio mediano por metro cuadrado construido en cada municipio">
+      
+        <div class="chart__row" tabindex="0" title="Llíber: 4812 €/m² · 16 anuncios">
+          <span class="chart__label">Llíber</span>
+          <span class="chart__track"><span class="chart__bar" style="width:100%"></span></span>
+          <span class="chart__value">4812<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">16</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Xàbia / Jávea: 4630 €/m² · 149 anuncios">
+          <span class="chart__label">Xàbia / Jávea</span>
+          <span class="chart__track"><span class="chart__bar" style="width:96.21778886118038%"></span></span>
+          <span class="chart__value">4630<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">149</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Teulada-Moraira: 4485 €/m² · 195 anuncios">
+          <span class="chart__label">Teulada-Moraira</span>
+          <span class="chart__track"><span class="chart__bar" style="width:93.20448877805487%"></span></span>
+          <span class="chart__value">4485<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">195</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Calp / Calpe: 4260 €/m² · 166 anuncios">
+          <span class="chart__label">Calp / Calpe</span>
+          <span class="chart__track"><span class="chart__bar" style="width:88.5286783042394%"></span></span>
+          <span class="chart__value">4260<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">166</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Benissa: 4128 €/m² · 34 anuncios">
+          <span class="chart__label">Benissa</span>
+          <span class="chart__track"><span class="chart__bar" style="width:85.785536159601%"></span></span>
+          <span class="chart__value">4128<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">34</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="El Poble Nou de Benitatxell: 4044 €/m² · 49 anuncios">
+          <span class="chart__label">El Poble Nou de Benitatxell</span>
+          <span class="chart__track"><span class="chart__bar" style="width:84.03990024937656%"></span></span>
+          <span class="chart__value">4044<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">49</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Pedreguer: 3824 €/m² · 52 anuncios">
+          <span class="chart__label">Pedreguer</span>
+          <span class="chart__track"><span class="chart__bar" style="width:79.46799667497922%"></span></span>
+          <span class="chart__value">3824<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">52</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Dénia: 3489 €/m² · 314 anuncios">
+          <span class="chart__label">Dénia</span>
+          <span class="chart__track"><span class="chart__bar" style="width:72.50623441396509%"></span></span>
+          <span class="chart__value">3489<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">314</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Els Poblets: 3405 €/m² · 21 anuncios">
+          <span class="chart__label">Els Poblets</span>
+          <span class="chart__track"><span class="chart__bar" style="width:70.76059850374065%"></span></span>
+          <span class="chart__value">3405<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">21</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="El Verger: 3196 €/m² · 28 anuncios">
+          <span class="chart__label">El Verger</span>
+          <span class="chart__track"><span class="chart__bar" style="width:66.41729010806317%"></span></span>
+          <span class="chart__value">3196<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">28</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Sanet y Negrals: 3059 €/m² · 13 anuncios">
+          <span class="chart__label">Sanet y Negrals</span>
+          <span class="chart__track"><span class="chart__bar" style="width:63.57024106400665%"></span></span>
+          <span class="chart__value">3059<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">13</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Orba: 2783 €/m² · 16 anuncios">
+          <span class="chart__label">Orba</span>
+          <span class="chart__track"><span class="chart__bar" style="width:57.834580216126355%"></span></span>
+          <span class="chart__value">2783<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">16</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Benidoleig: 2778 €/m² · 16 anuncios">
+          <span class="chart__label">Benidoleig</span>
+          <span class="chart__track"><span class="chart__bar" style="width:57.73067331670823%"></span></span>
+          <span class="chart__value">2778<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">16</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Alcalalí: 2631 €/m² · 16 anuncios">
+          <span class="chart__label">Alcalalí</span>
+          <span class="chart__track"><span class="chart__bar" style="width:54.67581047381545%"></span></span>
+          <span class="chart__value">2631<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">16</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Gata de Gorgos: 2492 €/m² · 15 anuncios">
+          <span class="chart__label">Gata de Gorgos</span>
+          <span class="chart__track"><span class="chart__bar" style="width:51.78719866999168%"></span></span>
+          <span class="chart__value">2492<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">15</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Xaló / Jalón: 2150 €/m² · 15 anuncios">
+          <span class="chart__label">Xaló / Jalón</span>
+          <span class="chart__track"><span class="chart__bar" style="width:44.679966749792186%"></span></span>
+          <span class="chart__value">2150<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">15</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Pego: 2137 €/m² · 36 anuncios">
+          <span class="chart__label">Pego</span>
+          <span class="chart__track"><span class="chart__bar" style="width:44.40980881130507%"></span></span>
+          <span class="chart__value">2137<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">36</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Ondara: 1814 €/m² · 19 anuncios">
+          <span class="chart__label">Ondara</span>
+          <span class="chart__track"><span class="chart__bar" style="width:37.69742310889443%"></span></span>
+          <span class="chart__value">1814<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">19</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Beniarbeig: 1811 €/m² · 21 anuncios">
+          <span class="chart__label">Beniarbeig</span>
+          <span class="chart__track"><span class="chart__bar" style="width:37.63507896924356%"></span></span>
+          <span class="chart__value">1811<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">21</span>
+        </div>
+    </div>
   </section>
 
   <section>
@@ -370,15 +309,7 @@ export function renderReport({ daily, listings }) {
       <h2>Anuncios retirados</h2>
       <span class="section__note">sin aparecer en tres rastreos seguidos</span>
     </div>
-    ${
-      daily.removals.length === 0
-        ? '<p class="empty">Ningún anuncio ha desaparecido de las fuentes.</p>'
-        : `<ul class="movements">${daily.removals
-            .map(
-              (item) => `<li class="movement"><div class="movement__main"><span class="movement__place">${escape(item.municipality)}</span><a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${escape(item.title ?? item.url)}</a></div><div class="movement__numbers"><span class="movement__now">${euros(item.price)}</span></div></li>`,
-            )
-            .join('')}</ul>`
-    }
+    <p class="empty">Ningún anuncio ha desaparecido de las fuentes.</p>
   </section>
 
   <section>
@@ -386,12 +317,54 @@ export function renderReport({ daily, listings }) {
       <h2>Estado del rastreo</h2>
       <span class="section__note">una fuente en cero suele significar que ha cambiado su web</span>
     </div>
-    <div class="table-scroll">${renderSources(daily.sources)}</div>
+    <div class="table-scroll">
+    <table class="sources">
+      <thead><tr><th>Fuente</th><th>Anuncios</th><th>Peticiones</th><th>Estado</th></tr></thead>
+      <tbody>
+        
+          <tr class="">
+            <td>ThinkSpain (portal)</td>
+            <td class="num">978</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>Ferrando Inmobiliaria</td>
+            <td class="num">180</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>MLS Dénia</td>
+            <td class="num">23</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>InmoXara</td>
+            <td class="num">66</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>Daniamed</td>
+            <td class="num">49</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="sources__warn">
+            <td>Benimo Villas</td>
+            <td class="num">0</td>
+            <td class="num">—</td>
+            <td>Sin resultados</td>
+          </tr>
+      </tbody>
+    </table></div>
   </section>
 
   <footer class="page">
     <span>Datos recogidos de las webs públicas de las agencias y del portal ThinkSpain, respetando su robots.txt. Cada anuncio enlaza a su ficha original.</span>
-    <span>Generado el ${escape(new Date(daily.generatedAt ?? Date.now()).toLocaleString('es-ES'))}.</span>
+    <span>Generado el 3/8/2026, 21:06:45.</span>
   </footer>
 </div>
 
@@ -433,5 +406,3 @@ export function renderReport({ daily, listings }) {
     });
   })();
 </script>
-`
-}
