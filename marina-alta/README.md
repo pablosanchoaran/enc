@@ -59,8 +59,11 @@ robots.txt bloquea explícitamente a los agentes de Anthropic).
 
 `.github/workflows/marina-alta.yml` lo ejecuta a diario (05:00 UTC), guarda los
 datos y el informe en el repositorio y sube el informe como artifact del run.
-La publicación del artefacto en claude.ai la hace una Routine, porque GitHub
-Actions no puede publicar allí.
+
+La publicación en claude.ai la hace una Routine diaria (06:00 UTC), porque
+GitHub Actions no puede publicar allí: hace `git pull` y republica
+`report/index.html` en la misma dirección,
+<https://claude.ai/code/artifact/7e585a86-317f-4fc0-83f7-abee9d9ee347>.
 
 ## Añadir un adaptador
 
