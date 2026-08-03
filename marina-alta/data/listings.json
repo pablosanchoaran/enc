@@ -1,6 +1,1842 @@
 {
-  "updatedAt": "2026-08-03T21:06:45.378Z",
+  "updatedAt": "2026-08-03T21:26:44.801Z",
   "listings": [
+    {
+      "id": "inmoxara:02ccaa137b",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-les-gavines-les-gavines/",
+      "title": "Apartamento en venta Dénia - Urb. Les Gavines",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 68,
+      "plotM2": null,
+      "pricePerM2": 3147,
+      "image": "https://www.inmoxara.es/opi/360569",
+      "lastmod": "2026-07-28",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:e08f94ce8d",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-olas-lasolas/",
+      "title": "Apartamento en venta Dénia - Urb. Las Olas",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 319000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 3798,
+      "image": "https://www.inmoxara.es/opi/354474",
+      "lastmod": "2026-06-09",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:d57a6cad92",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-retiro-park-ii-marinasundenia/",
+      "title": "Apartamento en venta Denia - Urb. Retiro Park II",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 2762,
+      "image": "https://www.inmoxara.es/opi/348894",
+      "lastmod": "2026-04-01",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:de278e37ef",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-parking-y-trastero-en-venta-denia-urb-aguablanca-ap0350m/",
+      "title": "Apartamento con parking y trastero en venta Dénia - Urb. Aguablanca",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 3014,
+      "image": "https://www.inmoxara.es/opi/345034",
+      "lastmod": "2026-05-20",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:034cd98e06",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-en-venta-denia-ch0650m/",
+      "title": "Chalet con piscina privada en venta Dénia",
+      "price": 560000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 560000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 6,
+      "baths": 3,
+      "builtM2": 220,
+      "plotM2": 634,
+      "pricePerM2": 2545,
+      "image": "https://www.inmoxara.es/opi/344429",
+      "lastmod": "2026-06-09",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:2bc6938e27",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-de-la-playa-de-las-marinas-urb-nereidas-mynereidas/",
+      "title": "Apartamento en venta primera línea de la playa de Las Marinas - Urb. Nereidas",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 2493,
+      "image": "https://www.inmoxara.es/opi/340876",
+      "lastmod": "2026-06-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b8ce422921",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-ii-ap9068m/",
+      "title": "Apartamento en venta Dénia - Urb. Playasol II",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 4070,
+      "image": "https://www.inmoxara.es/opi/338943",
+      "lastmod": "2026-01-12",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:44f862ac43",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-puerto-romano-las-marinas-ap2020m/",
+      "title": "Apartamento en venta Dénia - Urb. Puerto Romano Las Marinas",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 350000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.inmoxara.es/opi/338828",
+      "lastmod": "2026-01-16",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a2ee9b5ded",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-y-trastero-en-venta-denia-urb-marina-real-ii-marinainlove/",
+      "title": "Apartamento con garaje y trastero en venta Dénia - Urb. Marina Real II",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 3322,
+      "image": "https://www.inmoxara.es/opi/336953",
+      "lastmod": "2025-11-17",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:cde84df2cc",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap6598m/",
+      "title": "Apartamento en venta Dénia - Urb. Las Perlas",
+      "price": 149500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 149500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 1993,
+      "image": "https://www.inmoxara.es/opi/335556",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a34e455e12",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-elegance-AP1032M/",
+      "title": "Apartamento en venta Dénia - Urb. Elegance",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 57,
+      "plotM2": null,
+      "pricePerM2": 3754,
+      "image": "https://www.inmoxara.es/opi/333338",
+      "lastmod": "2025-06-04",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:dba5ab7614",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-royal-playa-ap904m/",
+      "title": "Apartamento en venta Dénia - Urb. Royal Playa",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 60,
+      "plotM2": null,
+      "pricePerM2": 2992,
+      "image": "https://www.inmoxara.es/opi/329036",
+      "lastmod": "2025-07-15",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b6bdd13ec0",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-estrella-de-mar-iamstar/",
+      "title": "Apartamento en venta Dénia - Urb. Estrella de Mar",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 2500,
+      "image": "https://www.inmoxara.es/opi/326470",
+      "lastmod": "2025-02-11",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a8ac7ef78e",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-en-venta-denia-la-pedrera-lacasita/",
+      "title": "Chalet en venta Dénia - La Pedrera",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 330000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 149,
+      "plotM2": 1300,
+      "pricePerM2": 2215,
+      "image": "https://www.inmoxara.es/opi/325591",
+      "lastmod": "2025-05-05",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:2570fec326",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-park-ap0515m/",
+      "title": "Apartamento en venta Dénia - Urb. Marina Park",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 73,
+      "plotM2": null,
+      "pricePerM2": 3151,
+      "image": "https://www.inmoxara.es/opi/318658",
+      "lastmod": "2026-01-09",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a472297c16",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-alberca-livinglaalberca/",
+      "title": "Apartamento en venta Dénia - Urb. La Alberca",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 67,
+      "plotM2": null,
+      "pricePerM2": 3194,
+      "image": "https://www.inmoxara.es/opi/312977",
+      "lastmod": "2024-12-04",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:083debd62e",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-nereidas-ap9030m/",
+      "title": "Apartamento en venta Dénia - Urb. Nereidas",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 78,
+      "plotM2": null,
+      "pricePerM2": 2301,
+      "image": "https://www.inmoxara.es/opi/310479",
+      "lastmod": "2024-01-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:630e487132",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-mar-de-denia-ap510m/",
+      "title": "Apartamento en venta Dénia - Urb. Mar de Dénia",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 60,
+      "plotM2": null,
+      "pricePerM2": 3567,
+      "image": "https://www.inmoxara.es/opi/308787",
+      "lastmod": "2024-01-23",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b9a2bde46a",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-urb-mirador-al-mar-maremeua/",
+      "title": "Apartamento frontal al mar en Dénia - Urb. Mirador al Mar",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2726,
+      "image": "https://www.inmoxara.es/opi/299181",
+      "lastmod": "2023-09-18",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:516850e549",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urbanizacion-jardines-de-les-deveses-summerdream/",
+      "title": "Apartamento en venta Dénia - Urbanización Jardines de Les Deveses",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 124,
+      "plotM2": null,
+      "pricePerM2": 2331,
+      "image": "https://www.inmoxara.es/opi/294746",
+      "lastmod": "2023-09-20",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:1d761dde82",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-urb-la-alberca-ap1370m/",
+      "title": "Apartamento frontal al mar en Dénia - Urb. La Alberca",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 319000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 3,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2658,
+      "image": "https://www.inmoxara.es/opi/293546",
+      "lastmod": "2023-06-08",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:8094a13037",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-denia-urb-las-nereidas-ap0201m/",
+      "title": "Apartamento frontal al mar Dénia - Urb. Las Nereidas",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 103,
+      "plotM2": null,
+      "pricePerM2": 2078,
+      "image": "https://www.inmoxara.es/opi/269953",
+      "lastmod": "2023-06-08",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:30e455b120",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-goleta-ap20962m/",
+      "title": "Apartamento en venta Dénia - urb. La Goleta",
+      "price": 149500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 149500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 40,
+      "plotM2": null,
+      "pricePerM2": 3738,
+      "image": "https://www.inmoxara.es/opi/362560",
+      "lastmod": "2026-08-03",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:7c8bbe4876",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-al-mar-y-garaje-en-venta-denia-urb-la-caleta-caleta/",
+      "title": "Apartamento con vistas al mar y garaje en venta Dénia - Urb. La Caleta",
+      "price": 390000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 390000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 93,
+      "plotM2": null,
+      "pricePerM2": 4194,
+      "image": "https://www.inmoxara.es/opi/361754",
+      "lastmod": "2026-07-23",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:5428bc337f",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-en-venta-pedreguer-living321/",
+      "title": "Apartamento con garaje en venta Pedreguer",
+      "price": 208500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 208500
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 2044,
+      "image": "https://www.inmoxara.es/opi/361477",
+      "lastmod": "2026-07-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:df5018315b",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-y-piscina-en-venta-denia-zona-montgo-ch3384m/",
+      "title": "Chalet con vistas al mar y piscina en venta Dénia - Zona Montgó",
+      "price": 570000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 570000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 127,
+      "plotM2": 840,
+      "pricePerM2": 4488,
+      "image": "https://www.inmoxara.es/opi/360823",
+      "lastmod": "2026-07-03",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:6106d7cc49",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/atico-con-vistas-al-castillo-en-venta-denia-avda-miguel-hernandez-at7456m/",
+      "title": "Ático con vistas al castillo en venta Dénia - Avda. Miguel Hernández",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 350000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 115,
+      "plotM2": null,
+      "pricePerM2": 3043,
+      "image": "https://www.inmoxara.es/opi/360709",
+      "lastmod": "2026-07-02",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:2a11d90acf",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-en-venta-denia-urb-marquesa-vi-ch945m/",
+      "title": "Chalet con vistas al mar en venta Dénia - Urb. Marquesa VI",
+      "price": 890000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 890000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 6,
+      "baths": 5,
+      "builtM2": 390,
+      "plotM2": 1200,
+      "pricePerM2": 2282,
+      "image": "https://www.inmoxara.es/opi/360634",
+      "lastmod": "2026-07-23",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b0c7e7159d",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-en-venta-denia-playa-de-las-marinas-ch0343m/",
+      "title": "Chalet en venta Dénia - Playa de Las Marinas",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 330000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 88,
+      "plotM2": 278,
+      "pricePerM2": 3750,
+      "image": "https://www.inmoxara.es/opi/360601",
+      "lastmod": "2026-06-30",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:10e27fae22",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap5187m/",
+      "title": "Apartamento en venta Dénia playa de Les Deveses",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 215000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 58,
+      "plotM2": null,
+      "pricePerM2": 3707,
+      "image": "https://www.inmoxara.es/opi/360595",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:bf22837a99",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-playa-ap5198m/",
+      "title": "Apartamento en venta Dénia - Urb. Marina Playa",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 330000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 78,
+      "plotM2": null,
+      "pricePerM2": 4231,
+      "image": "https://www.inmoxara.es/opi/360590",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:32b26aca9f",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-en-denia-urb-meridiano-cero-ap5153m/",
+      "title": "Apartamento en venta primera línea en Dénia - Urb. Meridiano Cero",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 319000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 111,
+      "plotM2": null,
+      "pricePerM2": 2874,
+      "image": "https://www.inmoxara.es/opi/360582",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a8774a7e25",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-frontales-al-mar-en-venta-denia-urb-las-olas-lasolas2/",
+      "title": "Apartamento con vistas frontales al mar en venta Dénia - Urb. Las Olas",
+      "price": 395000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 395000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 4759,
+      "image": "https://www.inmoxara.es/opi/360390",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:42defc53c5",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-suertes-de-mar-ap3069m/",
+      "title": "Apartamento en venta Dénia - Urb. Suertes de Mar",
+      "price": 360000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 360000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 122,
+      "plotM2": null,
+      "pricePerM2": 2951,
+      "image": "https://www.inmoxara.es/opi/359529",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:bb897b43c9",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap2757m/",
+      "title": "Apartamento en venta Dénia - Urb. Las Perlas",
+      "price": 155000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 155000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 40,
+      "plotM2": null,
+      "pricePerM2": 3875,
+      "image": "https://www.inmoxara.es/opi/359499",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:f01753ad5c",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-el-palmeral-elpalmeral/",
+      "title": "Apartamento en venta Dénia - Urb. El Palmeral",
+      "price": 449000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 449000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 5345,
+      "image": "https://www.inmoxara.es/opi/359496",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:c0f2a4ad07",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/atico-en-venta-denia-urbanizacion-ronda-mar-ap2027m/",
+      "title": "Ático en venta Dénia - Urbanización Ronda Mar",
+      "price": 360000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 360000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 3600,
+      "image": "https://www.inmoxara.es/opi/358749",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:781287cbbc",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-mediterranea-ii-ap5994m/",
+      "title": "Apartamento en venta Dénia - Urb. Playasol Mediterránea II",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 325000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 4514,
+      "image": "https://www.inmoxara.es/opi/358746",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:335a9f7cab",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-golden-park-ap0366m/",
+      "title": "Apartamento en venta Dénia - Urb. Golden Park",
+      "price": 219000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 219000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 69,
+      "plotM2": null,
+      "pricePerM2": 3174,
+      "image": "https://www.inmoxara.es/opi/358562",
+      "lastmod": "2026-07-09",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:d7e05e8440",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-son-de-mar-ap5000m/",
+      "title": "Apartamento en venta Dénia - Urb. Son de Mar",
+      "price": 450000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 450000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 99,
+      "plotM2": null,
+      "pricePerM2": 4545,
+      "image": "https://www.inmoxara.es/opi/358502",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:3f52a9877a",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-son-de-mar-ap8613m/",
+      "title": "Apartamento en venta Dénia - Urb. Son de Mar",
+      "price": 510000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 510000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 95,
+      "plotM2": null,
+      "pricePerM2": 5368,
+      "image": "https://www.inmoxara.es/opi/358493",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:96aaa28ecd",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-primera-linea-de-playa-en-denia-con-vistas-frontales-al-mar-urb-jardines-de-denia-vii-ap0525m/",
+      "title": "Apartamento en primera línea de playa en Dénia con vistas frontales al mar – Urb. Jardines de Dénia VII",
+      "price": 480000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 480000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 4800,
+      "image": "https://www.inmoxara.es/opi/357862",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:537c4d65de",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap0044m/",
+      "title": "Apartamento en venta Denia - Playa de Les Deveses",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 2911,
+      "image": "https://www.inmoxara.es/opi/356131",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:198c33c57b",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-vilamar-vilamar/",
+      "title": "Apartamento en venta Dénia - Urb. Vilamar",
+      "price": 399000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 399000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 122,
+      "plotM2": null,
+      "pricePerM2": 3270,
+      "image": "https://www.inmoxara.es/opi/356009",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:57faf450e2",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-plaza-de-garaje-en-venta-denia-zona-club-nautico-ap2026m/",
+      "title": "Apartamento con plaza de garaje en venta Dénia - Zona Club Náutico",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 350000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 95,
+      "plotM2": null,
+      "pricePerM2": 3684,
+      "image": "https://www.inmoxara.es/opi/355213",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:4361bff66e",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-pedreguer-urb-la-sella-ap2727m/",
+      "title": "Apartamento en venta Pedreguer - Urb. La Sella",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 220000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 89,
+      "plotM2": null,
+      "pricePerM2": 2472,
+      "image": "https://www.inmoxara.es/opi/349561",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:f26c427031",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/casa-de-pueblo-con-gran-patio-en-venta-pedreguer-cp2626m/",
+      "title": "Casa de pueblo con gran patio en venta Pedreguer",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 320000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "house",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": null,
+      "pricePerM2": 2560,
+      "image": "https://www.inmoxara.es/opi/349487",
+      "lastmod": "2026-06-05",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b151ab4e7f",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-venta-denia-urb-nereidas-ap3707m/",
+      "title": "Apartamento frontal al mar en venta Dénia - Urb. Nereidas",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 320000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 70,
+      "plotM2": null,
+      "pricePerM2": 4571,
+      "image": "https://www.inmoxara.es/opi/349260",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:f23c6646b9",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/villa-con-vistas-al-mar-y-piscina-privada-en-venta-monte-pego-ch9072m/",
+      "title": "Villa con vistas al mar y piscina privada en venta Monte Pego",
+      "price": 400000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 400000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 188,
+      "plotM2": 1000,
+      "pricePerM2": 2128,
+      "image": "https://www.inmoxara.es/opi/349093",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:b180623b23",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-al-mar-en-venta-denia-ap25954m/",
+      "title": "Apartamento con vistas al mar en venta Dénia",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 82,
+      "plotM2": null,
+      "pricePerM2": 2189,
+      "image": "https://www.inmoxara.es/opi/349079",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:72cb8e3abe",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-privado-en-venta-denia-urb-l-escala-ap2581m/",
+      "title": "Apartamento con garaje privado en venta Dénia - Urb. L´Escala",
+      "price": 475000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 475000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 130,
+      "plotM2": null,
+      "pricePerM2": 3654,
+      "image": "https://www.inmoxara.es/opi/347683",
+      "lastmod": "2026-07-09",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:39280d272b",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/vivienda-duplex-en-venta-denia-centro-cp3363m/",
+      "title": "Vivienda dúplex en venta Dénia - Centro",
+      "price": 456000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 456000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 186,
+      "plotM2": null,
+      "pricePerM2": 2452,
+      "image": "https://www.inmoxara.es/opi/347676",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:edaa5601f6",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/atico-con-garaje-en-venta-denia-urb-el-patio-ap2092m/",
+      "title": "Ático con garaje en venta Dénia - Urb. El Patio",
+      "price": 770000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 770000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 168,
+      "plotM2": null,
+      "pricePerM2": 4583,
+      "image": "https://www.inmoxara.es/opi/345265",
+      "lastmod": "2026-05-21",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:3f22b38b06",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-obra-nueva-en-venta-el-verger-ch0992m/",
+      "title": "Chalet con piscina obra nueva en venta El Verger",
+      "price": 745000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 745000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "villa",
+      "beds": 3,
+      "baths": 4,
+      "builtM2": 160,
+      "plotM2": 400,
+      "pricePerM2": 4656,
+      "image": "https://www.inmoxara.es/opi/345182",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:8ed5c01f9c",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/casa-con-piscina-privada-en-venta-ca-la-xara-calaxara/",
+      "title": "Casa con piscina privada en venta Ca La Xara",
+      "price": 595000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 595000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "house",
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 291,
+      "plotM2": null,
+      "pricePerM2": 2045,
+      "image": "https://www.inmoxara.es/opi/343849",
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:452932e144",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-victoria-playa-i-ap9595m/",
+      "title": "Apartamento en venta Dénia - Urb. Victoria Playa I",
+      "price": 389000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 389000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 81,
+      "plotM2": null,
+      "pricePerM2": 4802,
+      "image": "https://www.inmoxara.es/opi/342076",
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:e7a1a083eb",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-venta-denia-urb-la-alberca-ap0101m/",
+      "title": "Apartamento frontal al mar en venta Dénia - Urb. La Alberca",
+      "price": 450000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 450000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 5114,
+      "image": "https://www.inmoxara.es/opi/337497",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:a356455f7c",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-y-piscina-privada-en-venta-rafol-almunia-urb-monte-pego-ii-ch0933m/",
+      "title": "Chalet con vistas al mar y piscina privada en venta Ráfol Almunia - Urb. Monte Pego II",
+      "price": 495000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 495000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 170,
+      "plotM2": 1600,
+      "pricePerM2": 2912,
+      "image": "https://www.inmoxara.es/opi/336020",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:9987b7e565",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-sueno-de-denia-i-ap5062m/",
+      "title": "Apartamento en venta Dénia - Urb. Sueño de Dénia I",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 80,
+      "plotM2": null,
+      "pricePerM2": 3613,
+      "image": "https://www.inmoxara.es/opi/336019",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:e74c339550",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-obra-nueva-en-venta-els-poblets-ch0585m/",
+      "title": "Chalet con piscina privada obra nueva en venta Els Poblets",
+      "price": 625000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 625000
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "plot",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": 500,
+      "pricePerM2": 5000,
+      "image": "https://www.inmoxara.es/opi/335514",
+      "lastmod": "2026-05-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:c14b0968c9",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-en-venta-denia-playa-de-las-marinas-ch25935m/",
+      "title": "Chalet con piscina privada en venta Dénia - Playa de Las Marinas",
+      "price": 749000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 749000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 121,
+      "plotM2": 623,
+      "pricePerM2": 6190,
+      "image": "https://www.inmoxara.es/opi/334398",
+      "lastmod": "2026-01-12",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:40ed97e606",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-zona-puerto-ap0396m/",
+      "title": "Apartamento frontal al mar en Dénia - Zona puerto",
+      "price": 590000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 590000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 159,
+      "plotM2": null,
+      "pricePerM2": 3711,
+      "image": "https://www.inmoxara.es/opi/333981",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "inmoxara:025c8cd2df",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/villa-con-piscina-privada-en-venta-ondara-ch105m/",
+      "title": "Villa con piscina privada en venta Ondara",
+      "price": 1400000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 1400000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "villa",
+      "beds": 5,
+      "baths": 4,
+      "builtM2": 362,
+      "plotM2": 12500,
+      "pricePerM2": 3867,
+      "image": "https://www.inmoxara.es/opi/331180",
+      "lastmod": "2025-03-14",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
+    {
+      "id": "inmoxara:7f4bc4093d",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/villa-moderna-con-vistas-al-mar-en-venta-denia-las-rotas-ch1975m/",
+      "title": "Villa Moderna con vistas al mar en venta Dénia - Las Rotas",
+      "price": 3950000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 3950000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 5,
+      "baths": 5,
+      "builtM2": 587,
+      "plotM2": 3248,
+      "pricePerM2": 6729,
+      "image": "https://www.inmoxara.es/opi/329770",
+      "lastmod": "2026-04-16",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
+    {
+      "id": "inmoxara:61e33b011c",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-zona-las-troyas-villagladiol/",
+      "title": "Chalet con piscina en venta Dénia - Zona Las Troyas",
+      "price": 1395000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 1395000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 215,
+      "plotM2": 800,
+      "pricePerM2": 6488,
+      "image": "https://www.inmoxara.es/opi/329769",
+      "lastmod": "2026-07-23",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
+    {
+      "id": "inmoxara:907bb51264",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-playa-de-las-marinas-ch2035m/",
+      "title": "Chalet con piscina en venta Dénia - Playa de Las Marinas",
+      "price": 637000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 637000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 189,
+      "plotM2": 604,
+      "pricePerM2": 3370,
+      "image": "https://www.inmoxara.es/opi/329673",
+      "lastmod": "2026-04-16",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
+    {
+      "id": "inmoxara:5956b9e343",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-zona-la-pedrera-ch2080m/",
+      "title": "Chalet con piscina en venta Dénia - Zona La Pedrera",
+      "price": 575000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 575000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 357,
+      "plotM2": 844,
+      "pricePerM2": 1611,
+      "image": "https://www.inmoxara.es/opi/321854",
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
+    {
+      "id": "inmoxara:0434573508",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/villa-con-vistas-al-mar-en-venta-en-las-rotas-denia-ch0298m/",
+      "title": "Villa con vistas al mar en venta en Las Rotas Dénia",
+      "price": 775000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 775000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "villa",
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 270,
+      "plotM2": 839,
+      "pricePerM2": 2870,
+      "image": "https://www.inmoxara.es/opi/314114",
+      "lastmod": "2026-04-16",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-03",
+      "missingRuns": 2,
+      "status": "stale"
+    },
     {
       "id": "thinkspain:1acb0b5484",
       "source": "thinkspain",
@@ -3019,438 +4855,6 @@
       "plotM2": null,
       "pricePerM2": 508,
       "image": "https://cdn.thinkwebcontent.com/property/28788/9002259/20250521160615/w1440h1080/s640x480/x-253728617.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:7744629031",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9989754",
-      "title": "Apartamento de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 425.000 € (Ref: 9989754)",
-      "price": 425000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 425000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 114,
-      "plotM2": null,
-      "pricePerM2": 3728,
-      "image": "https://cdn.thinkwebcontent.com/property/32280/9989754/20260730132836/w800h640/s640x480/x-286395520.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:d526c68781",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9711849",
-      "title": "Apartamento de 1 habitación en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 127.000 € (Ref: 9711849)",
-      "price": 127000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 127000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": null,
-      "builtM2": 55,
-      "plotM2": null,
-      "pricePerM2": 2309,
-      "image": "https://cdn.thinkwebcontent.com/property/27037/9711849/20260324040848/w800h600/s640x480/x-276361607.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:01bf5d8292",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9914116",
-      "title": "Apartamento de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina garaje - 425.000 € (Ref: 9914116)",
-      "price": 425000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 425000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 114,
-      "plotM2": null,
-      "pricePerM2": 3728,
-      "image": "https://cdn.thinkwebcontent.com/property/29226/9914116/20260619110252/w1200h898/s640x480/x-283881589.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:3b70200cc2",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9783236",
-      "title": "Apartamento de 2 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 265.000 € (Ref: 9783236)",
-      "price": 265000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 265000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": null,
-      "builtM2": 113,
-      "plotM2": null,
-      "pricePerM2": 2345,
-      "image": "https://cdn.thinkwebcontent.com/property/27037/9783236/20260418050941/w800h600/s640x480/x-279066484.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:a8f93327af",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9460747",
-      "title": "Casa de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 185.000 € (Ref: 9460747)",
-      "price": 185000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 185000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 90,
-      "plotM2": null,
-      "pricePerM2": 2056,
-      "image": "https://cdn.thinkwebcontent.com/property/28964/9460747/20251219182221/w1600h1200/s640x480/x-269381488.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:ccb81c42c1",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9758358",
-      "title": "Piso de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 274.900 € (Ref: 9758358)",
-      "price": 274900,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 274900
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 95,
-      "plotM2": null,
-      "pricePerM2": 2894,
-      "image": "https://cdn.thinkwebcontent.com/property/28964/9758358/20260409212646/w1500h1125/s640x480/x-278153009.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:482076f43f",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9419861",
-      "title": "Apartamento de 1 habitación en Las Marinas - Pueblo Laguna, Vera en venta con piscina garaje - 144.900 € (Ref: 9419861)",
-      "price": 144900,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 144900
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": null,
-      "builtM2": 55,
-      "plotM2": null,
-      "pricePerM2": 2635,
-      "image": "https://cdn.thinkwebcontent.com/property/36961/9419861/20251128062842/w1500h1000/s640x480/x-267843328.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:02c5a2a32c",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9516472",
-      "title": "Chalet de 5 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina garaje - 650.000 € (Ref: 9516472)",
-      "price": 650000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 650000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 5,
-      "baths": null,
-      "builtM2": 440,
-      "plotM2": null,
-      "pricePerM2": 1477,
-      "image": "https://cdn.thinkwebcontent.com/property/24294/9516472/20260116140559/w1280h960/s640x480/x-270785370.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:42217aaf41",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9861684",
-      "title": "Apartamento de 1 habitación en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 130.000 € (Ref: 9861684)",
-      "price": 130000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 130000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": null,
-      "builtM2": 48,
-      "plotM2": null,
-      "pricePerM2": 2708,
-      "image": "https://cdn.thinkwebcontent.com/property/26055/9861684/20260527012241/w1280h854/s640x480/x-281810235.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:545a20b7b0",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/8423016",
-      "title": "Apartamento de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 430.000 € (Ref: 8423016)",
-      "price": 430000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 430000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 113,
-      "plotM2": null,
-      "pricePerM2": 3805,
-      "image": "https://cdn.thinkwebcontent.com/property/26055/8423016/20240713010753/w1280h720/s640x480/x-235535206.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:4ffe6a8675",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/8425447",
-      "title": "Apartamento Playa de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina garaje - 430.000 € (Ref: 8425447)",
-      "price": 430000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 430000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 112,
-      "plotM2": null,
-      "pricePerM2": 3839,
-      "image": "https://cdn.thinkwebcontent.com/property/23916/8425447/20240715114959/w1000h750/s640x480/x-235618326.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:305a5f2077",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9891531",
-      "title": "Apartamento de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 425.000 € (Ref: 9891531)",
-      "price": 425000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 425000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 114,
-      "plotM2": null,
-      "pricePerM2": 3728,
-      "image": "https://cdn.thinkwebcontent.com/property/35468/9891531/20260609213744/w3840h2877/s640x480/x-283134872.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:ca26e662c8",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/5933992",
-      "title": "Chalet de 4 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con garaje - 630.000 € (Ref: 5933992)",
-      "price": 630000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 630000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 4,
-      "baths": null,
-      "builtM2": 300,
-      "plotM2": null,
-      "pricePerM2": 2100,
-      "image": "https://cdn.thinkwebcontent.com/property/4061/5933992/20240815170234/w1200h675/s640x480/x-237243153.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:5897e8b379",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9690393",
-      "title": "Apartamento de 2 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 169.000 € (Ref: 9690393)",
-      "price": 169000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 169000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": null,
-      "builtM2": 66,
-      "plotM2": null,
-      "pricePerM2": 2561,
-      "image": "https://cdn.thinkwebcontent.com/property/27037/9690393/20260318040923/w800h600/s640x480/x-275794055.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:0b216d69e1",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9909719",
-      "title": "Piso de 5 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con garaje - 275.000 € (Ref: 9909719)",
-      "price": 275000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 275000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 5,
-      "baths": null,
-      "builtM2": 123,
-      "plotM2": null,
-      "pricePerM2": 2236,
-      "image": "https://cdn.thinkwebcontent.com/property/24294/9909719/20260617170337/w1440h646/s640x480/x-283740794.jpg",
-      "lastmod": null,
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "thinkspain:1639dd7a0f",
-      "source": "thinkspain",
-      "agency": "ThinkSpain (portal)",
-      "url": "https://www.thinkspain.com/es/venta-viviendas/9160839",
-      "title": "Piso de 3 habitaciones en Las Marinas - Pueblo Laguna, Vera en venta con piscina - 274.900 € (Ref: 9160839)",
-      "price": 274900,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 274900
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": null,
-      "builtM2": 95,
-      "plotM2": null,
-      "pricePerM2": 2894,
-      "image": "https://cdn.thinkwebcontent.com/property/16694/9160839/20250806010414/w1280h960/s640x480/x-259764735.jpg",
       "lastmod": null,
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-03",
@@ -27027,1788 +28431,6 @@
       "lastSeen": "2026-08-03",
       "missingRuns": 0,
       "status": "active"
-    },
-    {
-      "id": "inmoxara:30e455b120",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-goleta-ap20962m/",
-      "title": "Apartamento en venta Dénia - urb. La Goleta",
-      "price": 149500,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 149500
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": 1,
-      "builtM2": 40,
-      "plotM2": null,
-      "pricePerM2": 3738,
-      "image": "https://www.inmoxara.es/opi/362560",
-      "lastmod": "2026-08-03",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:7c8bbe4876",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-al-mar-y-garaje-en-venta-denia-urb-la-caleta-caleta/",
-      "title": "Apartamento con vistas al mar y garaje en venta Dénia - Urb. La Caleta",
-      "price": 390000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 390000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 93,
-      "plotM2": null,
-      "pricePerM2": 4194,
-      "image": "https://www.inmoxara.es/opi/361754",
-      "lastmod": "2026-07-23",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:5428bc337f",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-en-venta-pedreguer-living321/",
-      "title": "Apartamento con garaje en venta Pedreguer",
-      "price": 208500,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 208500
-        }
-      ],
-      "municipality": "Pedreguer",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 102,
-      "plotM2": null,
-      "pricePerM2": 2044,
-      "image": "https://www.inmoxara.es/opi/361477",
-      "lastmod": "2026-07-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:df5018315b",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-y-piscina-en-venta-denia-zona-montgo-ch3384m/",
-      "title": "Chalet con vistas al mar y piscina en venta Dénia - Zona Montgó",
-      "price": 570000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 570000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 127,
-      "plotM2": 840,
-      "pricePerM2": 4488,
-      "image": "https://www.inmoxara.es/opi/360823",
-      "lastmod": "2026-07-03",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:6106d7cc49",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/atico-con-vistas-al-castillo-en-venta-denia-avda-miguel-hernandez-at7456m/",
-      "title": "Ático con vistas al castillo en venta Dénia - Avda. Miguel Hernández",
-      "price": 350000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 350000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "penthouse",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 115,
-      "plotM2": null,
-      "pricePerM2": 3043,
-      "image": "https://www.inmoxara.es/opi/360709",
-      "lastmod": "2026-07-02",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:2a11d90acf",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-en-venta-denia-urb-marquesa-vi-ch945m/",
-      "title": "Chalet con vistas al mar en venta Dénia - Urb. Marquesa VI",
-      "price": 890000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 890000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 6,
-      "baths": 5,
-      "builtM2": 390,
-      "plotM2": 1200,
-      "pricePerM2": 2282,
-      "image": "https://www.inmoxara.es/opi/360634",
-      "lastmod": "2026-07-23",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:b0c7e7159d",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-en-venta-denia-playa-de-las-marinas-ch0343m/",
-      "title": "Chalet en venta Dénia - Playa de Las Marinas",
-      "price": 330000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 330000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 88,
-      "plotM2": 278,
-      "pricePerM2": 3750,
-      "image": "https://www.inmoxara.es/opi/360601",
-      "lastmod": "2026-06-30",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:10e27fae22",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap5187m/",
-      "title": "Apartamento en venta Dénia playa de Les Deveses",
-      "price": 215000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 215000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": 1,
-      "builtM2": 58,
-      "plotM2": null,
-      "pricePerM2": 3707,
-      "image": "https://www.inmoxara.es/opi/360595",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:bf22837a99",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-playa-ap5198m/",
-      "title": "Apartamento en venta Dénia - Urb. Marina Playa",
-      "price": 330000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 330000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 78,
-      "plotM2": null,
-      "pricePerM2": 4231,
-      "image": "https://www.inmoxara.es/opi/360590",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:32b26aca9f",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-en-denia-urb-meridiano-cero-ap5153m/",
-      "title": "Apartamento en venta primera línea en Dénia - Urb. Meridiano Cero",
-      "price": 319000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 319000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 111,
-      "plotM2": null,
-      "pricePerM2": 2874,
-      "image": "https://www.inmoxara.es/opi/360582",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:02ccaa137b",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-les-gavines-les-gavines/",
-      "title": "Apartamento en venta Dénia - Urb. Les Gavines",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 68,
-      "plotM2": null,
-      "pricePerM2": 1471,
-      "image": "https://www.inmoxara.es/opi/360569",
-      "lastmod": "2026-07-28",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:a8774a7e25",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-frontales-al-mar-en-venta-denia-urb-las-olas-lasolas2/",
-      "title": "Apartamento con vistas frontales al mar en venta Dénia - Urb. Las Olas",
-      "price": 395000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 395000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 83,
-      "plotM2": null,
-      "pricePerM2": 4759,
-      "image": "https://www.inmoxara.es/opi/360390",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:42defc53c5",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-suertes-de-mar-ap3069m/",
-      "title": "Apartamento en venta Dénia - Urb. Suertes de Mar",
-      "price": 360000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 360000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 122,
-      "plotM2": null,
-      "pricePerM2": 2951,
-      "image": "https://www.inmoxara.es/opi/359529",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:bb897b43c9",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap2757m/",
-      "title": "Apartamento en venta Dénia - Urb. Las Perlas",
-      "price": 155000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 155000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": 1,
-      "builtM2": 40,
-      "plotM2": null,
-      "pricePerM2": 3875,
-      "image": "https://www.inmoxara.es/opi/359499",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:f01753ad5c",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-el-palmeral-elpalmeral/",
-      "title": "Apartamento en venta Dénia - Urb. El Palmeral",
-      "price": 449000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 449000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 84,
-      "plotM2": null,
-      "pricePerM2": 5345,
-      "image": "https://www.inmoxara.es/opi/359496",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:c0f2a4ad07",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/atico-en-venta-denia-urbanizacion-ronda-mar-ap2027m/",
-      "title": "Ático en venta Dénia - Urbanización Ronda Mar",
-      "price": 360000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 360000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "penthouse",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 100,
-      "plotM2": null,
-      "pricePerM2": 3600,
-      "image": "https://www.inmoxara.es/opi/358749",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:781287cbbc",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-mediterranea-ii-ap5994m/",
-      "title": "Apartamento en venta Dénia - Urb. Playasol Mediterránea II",
-      "price": 325000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 325000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 72,
-      "plotM2": null,
-      "pricePerM2": 4514,
-      "image": "https://www.inmoxara.es/opi/358746",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:335a9f7cab",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-golden-park-ap0366m/",
-      "title": "Apartamento en venta Dénia - Urb. Golden Park",
-      "price": 219000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 219000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 69,
-      "plotM2": null,
-      "pricePerM2": 3174,
-      "image": "https://www.inmoxara.es/opi/358562",
-      "lastmod": "2026-07-09",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:d7e05e8440",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-son-de-mar-ap5000m/",
-      "title": "Apartamento en venta Dénia - Urb. Son de Mar",
-      "price": 450000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 450000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 99,
-      "plotM2": null,
-      "pricePerM2": 4545,
-      "image": "https://www.inmoxara.es/opi/358502",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:3f52a9877a",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-son-de-mar-ap8613m/",
-      "title": "Apartamento en venta Dénia - Urb. Son de Mar",
-      "price": 510000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 510000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 95,
-      "plotM2": null,
-      "pricePerM2": 5368,
-      "image": "https://www.inmoxara.es/opi/358493",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:96aaa28ecd",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-primera-linea-de-playa-en-denia-con-vistas-frontales-al-mar-urb-jardines-de-denia-vii-ap0525m/",
-      "title": "Apartamento en primera línea de playa en Dénia con vistas frontales al mar – Urb. Jardines de Dénia VII",
-      "price": 480000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 480000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 100,
-      "plotM2": null,
-      "pricePerM2": 4800,
-      "image": "https://www.inmoxara.es/opi/357862",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:001abad1e3",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/piso-en-venta-en-beniarbeig-retrostyle/",
-      "title": "Piso en venta en Beniarbeig",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 91,
-      "plotM2": null,
-      "pricePerM2": 1099,
-      "image": "https://www.inmoxara.es/opi/357146",
-      "lastmod": "2026-06-17",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:537c4d65de",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap0044m/",
-      "title": "Apartamento en venta Denia - Playa de Les Deveses",
-      "price": 230000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 230000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 79,
-      "plotM2": null,
-      "pricePerM2": 2911,
-      "image": "https://www.inmoxara.es/opi/356131",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:198c33c57b",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-vilamar-vilamar/",
-      "title": "Apartamento en venta Dénia - Urb. Vilamar",
-      "price": 399000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 399000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 122,
-      "plotM2": null,
-      "pricePerM2": 3270,
-      "image": "https://www.inmoxara.es/opi/356009",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:57faf450e2",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-plaza-de-garaje-en-venta-denia-zona-club-nautico-ap2026m/",
-      "title": "Apartamento con plaza de garaje en venta Dénia - Zona Club Náutico",
-      "price": 350000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 350000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 95,
-      "plotM2": null,
-      "pricePerM2": 3684,
-      "image": "https://www.inmoxara.es/opi/355213",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:4361bff66e",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-pedreguer-urb-la-sella-ap2727m/",
-      "title": "Apartamento en venta Pedreguer - Urb. La Sella",
-      "price": 220000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 220000
-        }
-      ],
-      "municipality": "Pedreguer",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 89,
-      "plotM2": null,
-      "pricePerM2": 2472,
-      "image": "https://www.inmoxara.es/opi/349561",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:f26c427031",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/casa-de-pueblo-con-gran-patio-en-venta-pedreguer-cp2626m/",
-      "title": "Casa de pueblo con gran patio en venta Pedreguer",
-      "price": 320000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 320000
-        }
-      ],
-      "municipality": "Pedreguer",
-      "type": "house",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 125,
-      "plotM2": null,
-      "pricePerM2": 2560,
-      "image": "https://www.inmoxara.es/opi/349487",
-      "lastmod": "2026-06-05",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:b151ab4e7f",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-venta-denia-urb-nereidas-ap3707m/",
-      "title": "Apartamento frontal al mar en venta Dénia - Urb. Nereidas",
-      "price": 320000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 320000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 70,
-      "plotM2": null,
-      "pricePerM2": 4571,
-      "image": "https://www.inmoxara.es/opi/349260",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:f23c6646b9",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/villa-con-vistas-al-mar-y-piscina-privada-en-venta-monte-pego-ch9072m/",
-      "title": "Villa con vistas al mar y piscina privada en venta Monte Pego",
-      "price": 400000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 400000
-        }
-      ],
-      "municipality": "Pego",
-      "type": "villa",
-      "beds": 3,
-      "baths": 3,
-      "builtM2": 188,
-      "plotM2": 1000,
-      "pricePerM2": 2128,
-      "image": "https://www.inmoxara.es/opi/349093",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:b180623b23",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-vistas-al-mar-en-venta-denia-ap25954m/",
-      "title": "Apartamento con vistas al mar en venta Dénia",
-      "price": 179500,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 179500
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 82,
-      "plotM2": null,
-      "pricePerM2": 2189,
-      "image": "https://www.inmoxara.es/opi/349079",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:72cb8e3abe",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-privado-en-venta-denia-urb-l-escala-ap2581m/",
-      "title": "Apartamento con garaje privado en venta Dénia - Urb. L´Escala",
-      "price": 475000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 475000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 4,
-      "baths": 2,
-      "builtM2": 130,
-      "plotM2": null,
-      "pricePerM2": 3654,
-      "image": "https://www.inmoxara.es/opi/347683",
-      "lastmod": "2026-07-09",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:39280d272b",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/vivienda-duplex-en-venta-denia-centro-cp3363m/",
-      "title": "Vivienda dúplex en venta Dénia - Centro",
-      "price": 456000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 456000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 4,
-      "baths": 2,
-      "builtM2": 186,
-      "plotM2": null,
-      "pricePerM2": 2452,
-      "image": "https://www.inmoxara.es/opi/347676",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:edaa5601f6",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/atico-con-garaje-en-venta-denia-urb-el-patio-ap2092m/",
-      "title": "Ático con garaje en venta Dénia - Urb. El Patio",
-      "price": 770000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 770000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "penthouse",
-      "beds": 4,
-      "baths": 3,
-      "builtM2": 168,
-      "plotM2": null,
-      "pricePerM2": 4583,
-      "image": "https://www.inmoxara.es/opi/345265",
-      "lastmod": "2026-05-21",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:3f22b38b06",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-obra-nueva-en-venta-el-verger-ch0992m/",
-      "title": "Chalet con piscina obra nueva en venta El Verger",
-      "price": 745000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 745000
-        }
-      ],
-      "municipality": "El Verger",
-      "type": "villa",
-      "beds": 3,
-      "baths": 4,
-      "builtM2": 160,
-      "plotM2": 400,
-      "pricePerM2": 4656,
-      "image": "https://www.inmoxara.es/opi/345182",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:034cd98e06",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-en-venta-denia-ch0650m/",
-      "title": "Chalet con piscina privada en venta Dénia",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 6,
-      "baths": 3,
-      "builtM2": 220,
-      "plotM2": 634,
-      "pricePerM2": 455,
-      "image": "https://www.inmoxara.es/opi/344429",
-      "lastmod": "2026-06-09",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:8ed5c01f9c",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/casa-con-piscina-privada-en-venta-ca-la-xara-calaxara/",
-      "title": "Casa con piscina privada en venta Ca La Xara",
-      "price": 595000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 595000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "house",
-      "beds": 4,
-      "baths": 4,
-      "builtM2": 291,
-      "plotM2": null,
-      "pricePerM2": 2045,
-      "image": "https://www.inmoxara.es/opi/343849",
-      "lastmod": "2026-07-01",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:452932e144",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-victoria-playa-i-ap9595m/",
-      "title": "Apartamento en venta Dénia - Urb. Victoria Playa I",
-      "price": 389000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 389000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 81,
-      "plotM2": null,
-      "pricePerM2": 4802,
-      "image": "https://www.inmoxara.es/opi/342076",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:48eb2d3579",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/casa-adosada-en-venta-en-la-sella-urbanizacion-los-almendros-greenlife/",
-      "title": "Casa adosada en venta en La Sella – Urbanización Los Almendros",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Pedreguer",
-      "type": "townhouse",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 83,
-      "plotM2": null,
-      "pricePerM2": 1205,
-      "image": "https://www.inmoxara.es/opi/339372",
-      "lastmod": "2025-11-10",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:b8ce422921",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-ii-ap9068m/",
-      "title": "Apartamento en venta Dénia - Urb. Playasol II",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 71,
-      "plotM2": null,
-      "pricePerM2": 1408,
-      "image": "https://www.inmoxara.es/opi/338943",
-      "lastmod": "2026-01-12",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:44f862ac43",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-puerto-romano-las-marinas-ap2020m/",
-      "title": "Apartamento en venta Dénia - Urb. Puerto Romano Las Marinas",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.inmoxara.es/opi/338828",
-      "lastmod": "2026-01-16",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "inmoxara:f7b128396b",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-beniarbeig-aitanasflat/",
-      "title": "Apartamento en venta Beniarbeig",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 75,
-      "plotM2": null,
-      "pricePerM2": 1333,
-      "image": "https://www.inmoxara.es/opi/338376",
-      "lastmod": "2026-06-09",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:e7a1a083eb",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-venta-denia-urb-la-alberca-ap0101m/",
-      "title": "Apartamento frontal al mar en venta Dénia - Urb. La Alberca",
-      "price": 450000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 450000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 88,
-      "plotM2": null,
-      "pricePerM2": 5114,
-      "image": "https://www.inmoxara.es/opi/337497",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:9f68b677b9",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/casa-semiadosada-en-venta-beniarbeig-whatapato/",
-      "title": "Casa semiadosada en venta Beniarbeig",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "house",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 109,
-      "plotM2": null,
-      "pricePerM2": 917,
-      "image": "https://www.inmoxara.es/opi/336889",
-      "lastmod": "2025-07-24",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:a356455f7c",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-vistas-al-mar-y-piscina-privada-en-venta-rafol-almunia-urb-monte-pego-ii-ch0933m/",
-      "title": "Chalet con vistas al mar y piscina privada en venta Ráfol Almunia - Urb. Monte Pego II",
-      "price": 495000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 495000
-        }
-      ],
-      "municipality": "Pego",
-      "type": "villa",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 170,
-      "plotM2": 1600,
-      "pricePerM2": 2912,
-      "image": "https://www.inmoxara.es/opi/336020",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:9987b7e565",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-sueno-de-denia-i-ap5062m/",
-      "title": "Apartamento en venta Dénia - Urb. Sueño de Dénia I",
-      "price": 289000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 289000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 80,
-      "plotM2": null,
-      "pricePerM2": 3613,
-      "image": "https://www.inmoxara.es/opi/336019",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:cde84df2cc",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap6598m/",
-      "title": "Apartamento en venta Dénia - Urb. Las Perlas",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 75,
-      "plotM2": null,
-      "pricePerM2": 1333,
-      "image": "https://www.inmoxara.es/opi/335556",
-      "lastmod": "2026-07-22",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:e74c339550",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-obra-nueva-en-venta-els-poblets-ch0585m/",
-      "title": "Chalet con piscina privada obra nueva en venta Els Poblets",
-      "price": 625000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 625000
-        }
-      ],
-      "municipality": "Els Poblets",
-      "type": "plot",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 125,
-      "plotM2": 500,
-      "pricePerM2": 5000,
-      "image": "https://www.inmoxara.es/opi/335514",
-      "lastmod": "2026-05-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:af577cbc2a",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-y-trastero-en-venta-ondara-ap2025m/",
-      "title": "Apartamento con garaje y trastero en venta Ondara",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Ondara",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 97,
-      "plotM2": null,
-      "pricePerM2": 1031,
-      "image": "https://www.inmoxara.es/opi/335093",
-      "lastmod": "2026-05-21",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:c14b0968c9",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-en-venta-denia-playa-de-las-marinas-ch25935m/",
-      "title": "Chalet con piscina privada en venta Dénia - Playa de Las Marinas",
-      "price": 749000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 749000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 4,
-      "baths": 2,
-      "builtM2": 121,
-      "plotM2": 623,
-      "pricePerM2": 6190,
-      "image": "https://www.inmoxara.es/opi/334398",
-      "lastmod": "2026-01-12",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:40ed97e606",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-zona-puerto-ap0396m/",
-      "title": "Apartamento frontal al mar en Dénia - Zona puerto",
-      "price": 590000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 590000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "townhouse",
-      "beds": 4,
-      "baths": 2,
-      "builtM2": 159,
-      "plotM2": null,
-      "pricePerM2": 3711,
-      "image": "https://www.inmoxara.es/opi/333981",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:a34e455e12",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-elegance-AP1032M/",
-      "title": "Apartamento en venta Dénia - Urb. Elegance",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 57,
-      "plotM2": null,
-      "pricePerM2": 1754,
-      "image": "https://www.inmoxara.es/opi/333338",
-      "lastmod": "2025-06-04",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:025c8cd2df",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/villa-con-piscina-privada-en-venta-ondara-ch105m/",
-      "title": "Villa con piscina privada en venta Ondara",
-      "price": 1400000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 1400000
-        }
-      ],
-      "municipality": "Ondara",
-      "type": "villa",
-      "beds": 5,
-      "baths": 4,
-      "builtM2": 362,
-      "plotM2": 12500,
-      "pricePerM2": 3867,
-      "image": "https://www.inmoxara.es/opi/331180",
-      "lastmod": "2025-03-14",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:7f4bc4093d",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/villa-moderna-con-vistas-al-mar-en-venta-denia-las-rotas-ch1975m/",
-      "title": "Villa Moderna con vistas al mar en venta Dénia - Las Rotas",
-      "price": 3950000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 3950000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 5,
-      "baths": 5,
-      "builtM2": 587,
-      "plotM2": 3248,
-      "pricePerM2": 6729,
-      "image": "https://www.inmoxara.es/opi/329770",
-      "lastmod": "2026-04-16",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:61e33b011c",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-zona-las-troyas-villagladiol/",
-      "title": "Chalet con piscina en venta Dénia - Zona Las Troyas",
-      "price": 1395000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 1395000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 4,
-      "baths": 3,
-      "builtM2": 215,
-      "plotM2": 800,
-      "pricePerM2": 6488,
-      "image": "https://www.inmoxara.es/opi/329769",
-      "lastmod": "2026-07-23",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:907bb51264",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-playa-de-las-marinas-ch2035m/",
-      "title": "Chalet con piscina en venta Dénia - Playa de Las Marinas",
-      "price": 637000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 637000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 189,
-      "plotM2": 604,
-      "pricePerM2": 3370,
-      "image": "https://www.inmoxara.es/opi/329673",
-      "lastmod": "2026-04-16",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:dba5ab7614",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-royal-playa-ap904m/",
-      "title": "Apartamento en venta Dénia - Urb. Royal Playa",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 60,
-      "plotM2": null,
-      "pricePerM2": 1667,
-      "image": "https://www.inmoxara.es/opi/329036",
-      "lastmod": "2025-07-15",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:1beaeb4caf",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/casa-de-campo-con-piscina-en-venta-beniarbeig-trillets/",
-      "title": "Casa de campo con piscina en venta Beniarbeig",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "villa",
-      "beds": 4,
-      "baths": 2,
-      "builtM2": 221,
-      "plotM2": 900,
-      "pricePerM2": 452,
-      "image": "https://www.inmoxara.es/opi/327808",
-      "lastmod": "2025-03-17",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:b6bdd13ec0",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-estrella-de-mar-iamstar/",
-      "title": "Apartamento en venta Dénia - Urb. Estrella de Mar",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": 92,
-      "plotM2": null,
-      "pricePerM2": 1087,
-      "image": "https://www.inmoxara.es/opi/326470",
-      "lastmod": "2025-02-11",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:a8ac7ef78e",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-en-venta-denia-la-pedrera-lacasita/",
-      "title": "Chalet en venta Dénia - La Pedrera",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 149,
-      "plotM2": 1300,
-      "pricePerM2": 671,
-      "image": "https://www.inmoxara.es/opi/325591",
-      "lastmod": "2025-05-05",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:5956b9e343",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-en-venta-denia-zona-la-pedrera-ch2080m/",
-      "title": "Chalet con piscina en venta Dénia - Zona La Pedrera",
-      "price": 575000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 575000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 4,
-      "baths": 4,
-      "builtM2": 357,
-      "plotM2": 844,
-      "pricePerM2": 1611,
-      "image": "https://www.inmoxara.es/opi/321854",
-      "lastmod": "2026-06-29",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:e69729921e",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-con-parking-en-venta-en-beniarbeig-americanflat/",
-      "title": "Apartamento con parking en venta en Beniarbeig",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": 71,
-      "plotM2": null,
-      "pricePerM2": 1408,
-      "image": "https://www.inmoxara.es/opi/318382",
-      "lastmod": "2025-06-12",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:87387fa5ef",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/parcela-en-venta-en-beniarbeig-urb-benicadim-benicadimstyle/",
-      "title": "Parcela en venta en Beniarbeig - Urb. Benicadim",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Beniarbeig",
-      "type": "plot",
-      "beds": 0,
-      "baths": 0,
-      "builtM2": null,
-      "plotM2": 942,
-      "pricePerM2": null,
-      "image": "https://www.inmoxara.es/opi/317417",
-      "lastmod": "2025-08-01",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:0434573508",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/villa-con-vistas-al-mar-en-venta-en-las-rotas-denia-ch0298m/",
-      "title": "Villa con vistas al mar en venta en Las Rotas Dénia",
-      "price": 775000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 775000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "villa",
-      "beds": 4,
-      "baths": 4,
-      "builtM2": 270,
-      "plotM2": 839,
-      "pricePerM2": 2870,
-      "image": "https://www.inmoxara.es/opi/314114",
-      "lastmod": "2026-04-16",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:630e487132",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-mar-de-denia-ap510m/",
-      "title": "Apartamento en venta Dénia - Urb. Mar de Dénia",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 1,
-      "baths": 1,
-      "builtM2": 60,
-      "plotM2": null,
-      "pricePerM2": 1667,
-      "image": "https://www.inmoxara.es/opi/308787",
-      "lastmod": "2024-01-23",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:516850e549",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urbanizacion-jardines-de-les-deveses-summerdream/",
-      "title": "Apartamento en venta Dénia - Urbanización Jardines de Les Deveses",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": 124,
-      "plotM2": null,
-      "pricePerM2": 806,
-      "image": "https://www.inmoxara.es/opi/294746",
-      "lastmod": "2023-09-20",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "inmoxara:1d761dde82",
-      "source": "inmoxara",
-      "agency": "InmoXara",
-      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-urb-la-alberca-ap1370m/",
-      "title": "Apartamento frontal al mar en Dénia - Urb. La Alberca",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-03",
-          "price": 100000
-        }
-      ],
-      "municipality": "Dénia",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 3,
-      "builtM2": 120,
-      "plotM2": null,
-      "pricePerM2": 833,
-      "image": "https://www.inmoxara.es/opi/293546",
-      "lastmod": "2023-06-08",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03",
-      "missingRuns": 1,
-      "status": "stale"
     },
     {
       "id": "daniamed:62c2a5d897",

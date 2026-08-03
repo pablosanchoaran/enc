@@ -1,8 +1,8 @@
 {
   "date": "2026-08-03",
-  "generatedAt": "2026-08-03T21:06:45.378Z",
+  "generatedAt": "2026-08-03T21:26:44.801Z",
   "totals": {
-    "inventory": 1296,
+    "inventory": 1298,
     "additions": 0,
     "priceDrops": 0,
     "priceRises": 0,
@@ -34,8 +34,11 @@
     {
       "id": "inmoxara",
       "agency": "InmoXara",
-      "listings": 66,
-      "status": "ok"
+      "listings": 62,
+      "status": "ok",
+      "requests": 77,
+      "blocked": 0,
+      "errors": 0
     },
     {
       "id": "daniamed",

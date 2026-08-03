@@ -47,6 +47,18 @@ test('en un slug de zona manda el municipio del final', () => {
   assert.equal(detectMunicipalityFromSlug('pego'), 'Pego')
 })
 
+test('anclado al final, un barrio homónimo de otra provincia no cuela', () => {
+  const anchored = { anchored: true }
+  assert.equal(
+    detectMunicipalityFromSlug('las-marinas-pueblo-laguna-vera', anchored),
+    null,
+    'Las Marinas de Vera (Almería) no es Dénia',
+  )
+  assert.equal(detectMunicipalityFromSlug('las-marinas-les-marines-denia', anchored), 'Dénia')
+  assert.equal(detectMunicipalityFromSlug('el-cabo-de-gata-almeria', anchored), null)
+  assert.equal(detectMunicipalityFromSlug('centro-ciudad-javea-xabia', anchored), 'Xàbia / Jávea')
+})
+
 test('parseSitemap lee entradas y su lastmod', () => {
   const xml = `<urlset><url><loc>https://a.test/x/</loc><lastmod>2026-08-01</lastmod></url>
     <url><loc>https://a.test/y/</loc></url></urlset>`

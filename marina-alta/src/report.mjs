@@ -3,6 +3,9 @@
  * externas, porque el artefacto publicado bloquea cualquier host de fuera.
  */
 
+/** Umbral de la sección de vivienda asequible del informe. */
+const BUDGET = 260_000
+
 const TYPE_LABELS = {
   villa: 'Villa / chalet',
   house: 'Casa',
@@ -156,6 +159,17 @@ export function renderReport({ daily, listings }) {
   )
   const chartRows = pricePerM2ByMunicipality(active)
   const readableDate = LONG_DATE.format(new Date(`${daily.date}T12:00:00`))
+
+  // Vivienda por debajo del presupuesto: el suelo sin construir se queda fuera.
+  const budget = active
+    .filter((item) => item.price <= BUDGET && item.type !== 'plot')
+    .sort((a, b) => a.price - b.price)
+  const budgetMunicipalities = [...new Set(budget.map((item) => item.municipality))].sort((a, b) =>
+    a.localeCompare(b, 'es'),
+  )
+  const budgetAgencies = [...new Set(budget.map((item) => item.agency))].sort((a, b) =>
+    a.localeCompare(b, 'es'),
+  )
 
   return `<title>Novedades inmobiliarias · Marina Alta</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -347,6 +361,25 @@ export function renderReport({ daily, listings }) {
 
   <section>
     <div class="section__head">
+      <h2>Por debajo de ${euros(BUDGET)}</h2>
+      <span class="section__note" id="b-count">${budget.length} viviendas</span>
+    </div>
+    ${
+      budget.length === 0
+        ? `<p class="empty">Ahora mismo no hay ninguna vivienda por debajo de ${euros(BUDGET)} en el inventario.</p>`
+        : `<div class="filters">
+      <label>Municipio<select id="b-municipality"><option value="">Todos</option>${budgetMunicipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
+      <label>Tipo<select id="b-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).filter(([value]) => budget.some((item) => item.type === value)).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
+      <label>Agencia<select id="b-agency"><option value="">Todas</option>${budgetAgencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
+      <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
+    </div>
+    <div class="grid" id="b-grid">${budget.map(renderCard).join('')}</div>
+    <p class="empty" id="b-no-match" hidden>Ninguna vivienda encaja con estos filtros.</p>`
+    }
+  </section>
+
+  <section>
+    <div class="section__head">
       <h2>Cambios de precio</h2>
       <span class="section__note">frente al último rastreo</span>
     </div>
@@ -397,40 +430,46 @@ export function renderReport({ daily, listings }) {
 
 <script>
   (function () {
-    var grid = document.getElementById('grid');
-    if (!grid) return;
-    var cards = Array.prototype.slice.call(grid.children);
-    var count = document.getElementById('count');
-    var empty = document.getElementById('no-match');
-    var controls = ['f-municipality', 'f-type', 'f-agency', 'f-max'].map(function (id) {
-      return document.getElementById(id);
-    });
+    function wire(prefix, gridId, countId, emptyId, singular, plural) {
+      var grid = document.getElementById(gridId);
+      if (!grid) return;
 
-    function apply() {
-      var municipality = controls[0].value;
-      var type = controls[1].value;
-      var agency = controls[2].value;
-      var max = parseInt(controls[3].value, 10);
-      var visible = 0;
-
-      cards.forEach(function (card) {
-        var ok =
-          (!municipality || card.dataset.municipality === municipality) &&
-          (!type || card.dataset.type === type) &&
-          (!agency || card.dataset.agency === agency) &&
-          (!max || parseInt(card.dataset.price, 10) <= max);
-        card.hidden = !ok;
-        if (ok) visible += 1;
+      var cards = Array.prototype.slice.call(grid.children);
+      var count = document.getElementById(countId);
+      var empty = document.getElementById(emptyId);
+      var controls = ['municipality', 'type', 'agency', 'max'].map(function (name) {
+        return document.getElementById(prefix + name);
       });
 
-      count.textContent = visible + (visible === 1 ? ' anuncio' : ' anuncios');
-      empty.hidden = visible !== 0;
+      function apply() {
+        var municipality = controls[0].value;
+        var type = controls[1].value;
+        var agency = controls[2].value;
+        var max = parseInt(controls[3].value, 10);
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var ok =
+            (!municipality || card.dataset.municipality === municipality) &&
+            (!type || card.dataset.type === type) &&
+            (!agency || card.dataset.agency === agency) &&
+            (!max || parseInt(card.dataset.price, 10) <= max);
+          card.hidden = !ok;
+          if (ok) visible += 1;
+        });
+
+        count.textContent = visible + ' ' + (visible === 1 ? singular : plural);
+        empty.hidden = visible !== 0;
+      }
+
+      controls.forEach(function (control) {
+        control.addEventListener('input', apply);
+        control.addEventListener('change', apply);
+      });
     }
 
-    controls.forEach(function (control) {
-      control.addEventListener('input', apply);
-      control.addEventListener('change', apply);
-    });
+    wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');
+    wire('b-', 'b-grid', 'b-count', 'b-no-match', 'vivienda', 'viviendas');
   })();
 </script>
 `

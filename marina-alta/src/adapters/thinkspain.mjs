@@ -42,7 +42,7 @@ async function discoverZoneListings(fetcher, log) {
       const slug = loc.slice(LISTING_PREFIX.length)
       // Solo la URL de la zona, sin subtipo: ya incluye todos los inmuebles.
       if (slug.includes('/') || !slug || EXCLUDED_SEGMENTS.test(slug)) continue
-      if (!detectMunicipality(slug.replace(/-/g, ' '))) continue
+      if (!detectMunicipalityFromSlug(slug, { anchored: true })) continue
       zones.set(slug, loc)
     }
   }
@@ -89,8 +89,10 @@ function parseListingCards(html, zoneSlug) {
       plotM2: null,
       type: facts.type ? normalizeType(facts.type) : detectType(title ?? ''),
       image: image ?? null,
-      // El slug de zona es la ubicación fiable; el título solo desempata.
-      municipality: detectMunicipalityFromSlug(locationId ?? zoneSlug),
+      // El slug de zona es la ubicación fiable, y solo cuando cierra el slug.
+      municipality:
+        detectMunicipalityFromSlug(locationId ?? '', { anchored: true }) ??
+        detectMunicipalityFromSlug(zoneSlug, { anchored: true }),
       locationHint: [locationId?.replace(/-/g, ' '), title].filter(Boolean).join(' | '),
     })
   }

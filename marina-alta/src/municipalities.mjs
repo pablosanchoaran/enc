@@ -61,13 +61,15 @@ export function detectMunicipality(...texts) {
  * `devessa-monte-pego-denia` es Dénia, no Pego. Gana la coincidencia más a la
  * derecha y, a igualdad de posición, la más específica.
  */
-export function detectMunicipalityFromSlug(slug) {
+export function detectMunicipalityFromSlug(slug, { anchored = false } = {}) {
   const haystack = fold(slug)
   if (!haystack) return null
 
   let best = null
   for (const { name, alias } of INDEX) {
-    const match = haystack.match(new RegExp(`(^| )(${alias})( |$)`))
+    // Con `anchored`, el municipio tiene que cerrar el slug: "las-marinas-...-vera"
+    // es Vera (Almería), no Dénia, por mucho que también tenga unas Marinas.
+    const match = haystack.match(new RegExp(`(^| )(${alias})${anchored ? '$' : '( |$)'}`))
     if (!match) continue
     const position = match.index + match[1].length
     if (!best || position > best.position) best = { name, position }

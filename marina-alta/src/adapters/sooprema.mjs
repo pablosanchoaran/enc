@@ -73,8 +73,15 @@ function parsePropertyPage(html, url) {
 
   const title =
     $('h1').first().text().trim() || metaContent(html, 'og:title') || null
-  const priceText = $('[class*="__price"]').first().text().trim()
-  const price = parsePrice(priceText) ?? parsePrice($('body').text().match(/[\d.,]+\s*€/)?.[0])
+
+  // Solo vale un importe que esté en un elemento de precio de la ficha. Nada de
+  // rebuscar por la página: los desplegables del buscador llevan importes como
+  // "100.000 €" y colarían un precio inventado en un anuncio "a consultar".
+  let price = null
+  $('[class*="__price"]').each((_, element) => {
+    if (price != null) return
+    price = parsePrice($(element).text().trim())
+  })
 
   const reference =
     $('[class*="__ref"] span, [class*="__reference"] span').first().text().trim() ||
