@@ -1,0 +1,2410 @@
+{
+  "updatedAt": "2026-08-04T18:41:16.805Z",
+  "entries": [
+    {
+      "id": "ferrando-moraira:62c2f3cc71",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-moraira-town-centre-overlooking-the-square-with-sunny-terrace-a0877/",
+      "title": "Apartment for sale in Moraira town centre overlooking the square with sunny terrace",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 325000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 4333,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:ec9f6a4b4c",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-moraira-400-meters-from-the-town-center-with-swimming-pool-sea-views-and-5-bedrooms-ch3408/",
+      "title": "Villa in Moraira, 400 meters from the town center, with swimming pool, sea views and 5 bedrooms",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 899000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 899000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 216,
+      "plotM2": 991,
+      "pricePerM2": 4162,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:359f46cadb",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-benissa-costa-with-pool-in-quiet-montemar-area-ch3382/",
+      "title": "Villa for Sale in Benissa Costa with Pool in Quiet Montemar Area",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 525000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 525000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 131,
+      "plotM2": 658,
+      "pricePerM2": 4008,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:06fb4d9457",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/renovation-villa-for-sale-in-benissa-montemar-south-facing-sea-glimpses-great-potential-ch3410/",
+      "title": "Renovation Villa for Sale in Benissa – Montemar | South Facing, Sea Glimpses & Great Potential",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 549000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 549000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 156,
+      "plotM2": 624,
+      "pricePerM2": 3519,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:a24987c594",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/4-bedroom-villa-for-sale-in-benissa-costa-baladrar-near-the-sea-ch3404/",
+      "title": "4-bedroom villa for sale in Benissa Costa, Baladrar, near the sea",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 590000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 590000
+        }
+      ],
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 208,
+      "plotM2": 900,
+      "pricePerM2": 2837,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:2cfa7cce86",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/2-bedroom-apartment-for-sale-in-teulada-near-moraira-sea-views-pool-a0872/",
+      "title": "2 Bedroom Apartment for Sale in Teulada near Moraira – Sea Views & Pool",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 249000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 249000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 76,
+      "plotM2": null,
+      "pricePerM2": 3276,
+      "photo": {
+        "file": "ferrando-moraira-2cfa7cce86.webp",
+        "thumb": "ferrando-moraira-2cfa7cce86.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/e0/019f4206-e067-74bd-a572-599751dd3ae0.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:76810ab77b",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-prime-location-close-to-town-centre-beach-and-amenities-ch3407/",
+      "title": "Villa for sale in Moraira – prime location close to town centre, beach and amenities",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 600000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 600000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 162,
+      "plotM2": 1305,
+      "pricePerM2": 3704,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:c2f1cfd4d2",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/penthouse-apartment-for-sale-in-benitachell-village-with-3-bedrooms-and-large-sun-terrace-a0876/",
+      "title": "Penthouse apartment for sale in Benitachell Village with 3 bedrooms and large sun terrace",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 318000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 318000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 150,
+      "plotM2": null,
+      "pricePerM2": 2120,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:05f5335e40",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/bungalow-for-sale-in-moraira-communal-pool-open-views-walking-distance-to-town-b1490/",
+      "title": "Bungalow for sale in Moraira | Communal pool, open views, walking distance to town",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 330000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 106,
+      "plotM2": 65,
+      "pricePerM2": 3113,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:6dd751b357",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/2-homes-in-1-sea-view-villa-in-benissa-costa-ch3374/",
+      "title": "2 Homes in 1 – Sea View Villa in Benissa-Costa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 550000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 550000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 175,
+      "plotM2": 825,
+      "pricePerM2": 3143,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:2d3822f94b",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-single-level-private-pool-close-to-the-beach-cometa-ch3405/",
+      "title": "Villa for sale in Moraira | Single level, private pool, close to the beach (Cometa)",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 549999,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 549999
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 114,
+      "plotM2": 806,
+      "pricePerM2": 4825,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:66c8a601f2",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/detached-villa-with-guest-apartment-beautifully-renovated-design-and-communal-pool-in-moraira-b1498/",
+      "title": "Detached villa with guest apartment, beautifully renovated design and communal pool in Moraira",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 510000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 510000
+        }
+      ],
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 160,
+      "plotM2": 298,
+      "pricePerM2": 3188,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:406c2ea79f",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-benissa-costa-with-beautiful-sea-views-and-700-m-from-cala-baladrar-ch3363/",
+      "title": "Villa in Benissa-Costa with beautiful sea views and 700 m from Cala Baladrar",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 475000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 475000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 267,
+      "plotM2": 698,
+      "pricePerM2": 1779,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:c04c4bf114",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/terraced-house-for-sale-in-moraira-with-2-communal-pools-in-residential-area-b1489/",
+      "title": "Terraced house for sale in Moraira with 2 communal pools in residential area",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 275000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 123,
+      "plotM2": 132,
+      "pricePerM2": 2236,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:407e7b79bf",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/semi-detached-bungalow-for-sale-in-moraira-with-communal-pool-step-free-access-near-beach-services-and-golf-b1497/",
+      "title": "Semi-detached bungalow for sale in Moraira with communal pool, step-free access, near beach, services and golf",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 329000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 329000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 76,
+      "plotM2": 72,
+      "pricePerM2": 4329,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:b5817b2e6d",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/detached-villa-for-sale-in-moraira-villotel-south-facing-with-panoramic-views-b1492/",
+      "title": "Detached Villa for Sale in Moraira – Villotel, South-Facing with Panoramic Views",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 335000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 335000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 82,
+      "plotM2": 230,
+      "pricePerM2": 4085,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:8757568893",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/mediterranean-villa-with-pool-and-unique-sea-views-in-cumbre-del-sol-ch3406/",
+      "title": "Mediterranean villa with pool and unique sea views in Cumbre del Sol",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 580000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 580000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 179,
+      "plotM2": 874,
+      "pricePerM2": 3240,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:6656d56bc4",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-teulada-with-lift-terrace-and-open-views-a0874/",
+      "title": "Apartment for Sale in Teulada with Lift, Terrace and Open Views",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 220000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 2651,
+      "photo": {
+        "file": "ferrando-moraira-6656d56bc4.webp",
+        "thumb": "ferrando-moraira-6656d56bc4.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/76/019ec6d5-0995-73db-83e6-c33257c98376.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:62e63bb43f",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-benissa-costa-with-sea-views-pool-and-independent-guest-apartment-ch3403/",
+      "title": "Villa for Sale in Benissa Costa with Sea Views, Pool and Independent Guest Apartment",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 580000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 580000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 210,
+      "plotM2": 851,
+      "pricePerM2": 2762,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:6ad388d58a",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/3-bedroom-villa-between-moraira-and-benissa-with-sea-views-for-renovation-ch3392/",
+      "title": "3-Bedroom Villa between Moraira and Benissa with Sea Views for Renovation",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 465000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 465000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 135,
+      "plotM2": 1010,
+      "pricePerM2": 3444,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:ae57de712e",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-benitachell-les-fonts-3-bedrooms-and-private-pool-ch3389/",
+      "title": "Villa for sale in Benitachell, Les Fonts: 3 bedrooms and private pool.",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 525000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 525000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 134,
+      "plotM2": 786,
+      "pricePerM2": 3918,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:d16f5832dd",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-with-pool-open-views-and-privacy-ch3390/",
+      "title": "Villa for sale in Moraira with pool, open views and privacy",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 510000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 510000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 146,
+      "plotM2": 843,
+      "pricePerM2": 3493,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:6814601c0e",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/exclusive-plot-in-cumbre-del-sol-sea-views-and-maximum-privacy-p0351/",
+      "title": "Exclusive Plot in Cumbre del Sol | Sea Views and Maximum Privacy",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 120000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1164,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:f9b4b948ae",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/plot-with-magnificent-sea-views-overlooking-cap-d-or-and-moraira-p0346/",
+      "title": "Plot with magnificent sea views, overlooking Cap d'Or and Moraira.",
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "price": 390000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 390000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 900,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:36840152aa",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-villotel-close-to-moraira-with-pool-and-parking-a0868/",
+      "title": "Apartment for sale in Villotel, close to Moraira, with pool and parking",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 260000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 93,
+      "plotM2": null,
+      "pricePerM2": 2796,
+      "photo": {
+        "file": "ferrando-moraira-36840152aa.webp",
+        "thumb": "ferrando-moraira-36840152aa.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/7e/019c0549-3bde-72fd-9287-b36a1107027e.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:1213422254",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/moraira-charming-bungalow-within-walking-distance-to-the-village-b1491/",
+      "title": "Moraira, Charming bungalow within walking distance to the village",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 310000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4769,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:649afe49b4",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-moraira-with-sea-views-swimming-pool-and-independent-apartments-near-the-golf-course-ch3158/",
+      "title": "Villa in Moraira with sea views, swimming pool and independent apartments near the golf course",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 980000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 980000
+        }
+      ],
+      "beds": 7,
+      "baths": 5,
+      "builtM2": 315,
+      "plotM2": 1000,
+      "pricePerM2": 3111,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:2a90fb1ada",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-the-benissa-costa-area-700-m-from-cala-baladrar-ch3364/",
+      "title": "Villa in the Benissa-Costa area 700 m from Cala Baladrar",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 448900,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 448900
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 80,
+      "plotM2": 685,
+      "pricePerM2": 5611,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:ea7c82e3ef",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/new-villa-in-the-sought-after-el-portet-area-of-moraira-with-flat-plot-views-and-walking-distance-to-the-beach-ch3324/",
+      "title": "New villa in the sought-after El Portet area of Moraira, with flat plot, views and walking distance to the beach",
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "price": 1175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 1175000
+        }
+      ],
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 160,
+      "plotM2": 465,
+      "pricePerM2": 7344,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:02adde520d",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/semi-detached-villa-in-moraira-in-the-exclusive-area-of-pla-del-mar-sea-views-ch3334/",
+      "title": "Semi-detached villa in Moraira, in the exclusive area of Pla del Mar, sea views",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 780000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 780000
+        }
+      ],
+      "beds": 5,
+      "baths": 4,
+      "builtM2": 185,
+      "plotM2": 331,
+      "pricePerM2": 4216,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:fbc94ee8b1",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-near-town-center-with-pool-and-panoramic-views-ready-to-move-in-ch3383/",
+      "title": "Villa for Sale in Moraira, Near Town Center, with Pool and Panoramic Views – Ready to Move In",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 695000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 695000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 220,
+      "plotM2": 1000,
+      "pricePerM2": 3159,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:51b9c1058d",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-cumbre-del-sol-private-pool-sea-views-ch3351/",
+      "title": "Villa for Sale in Cumbre del Sol – Private Pool & Sea Views",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 585000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 585000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 268,
+      "plotM2": 1030,
+      "pricePerM2": 2183,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:6dfc01095a",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-benissa-costa-with-2-independent-apartments-ch3367/",
+      "title": "Villa for sale in Benissa-Costa with 2 independent apartments.",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 615000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 615000
+        }
+      ],
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 184,
+      "plotM2": 820,
+      "pricePerM2": 3342,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:0be58a4d32",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-with-heated-pool-ready-to-move-in-ch3384/",
+      "title": "Villa for sale in Moraira with heated pool, ready to move in",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 550000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 550000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 275,
+      "plotM2": 800,
+      "pricePerM2": 2000,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:15d813435b",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-in-castellons-vida-with-sea-views-and-communal-pool-a0862/",
+      "title": "Apartment in Castellons vida with sea views and communal pool",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 220000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 2245,
+      "photo": {
+        "file": "ferrando-moraira-15d813435b.webp",
+        "thumb": "ferrando-moraira-15d813435b.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/22/019b2bf6-d4c3-775f-bdcd-d18e91c5bd22.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:4224c74bca",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/country-house-in-teulada-with-panoramic-views-private-pool-well-kept-garden-f0208/",
+      "title": "Country House in Teulada with Panoramic Views, Private Pool & Well-Kept Garden",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 550000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 550000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 250,
+      "plotM2": 2000,
+      "pricePerM2": 2200,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:f9d720720c",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-with-artistic-style-and-open-views-in-moraira-ch3387/",
+      "title": "Villa with artistic style and open views in Moraira",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 479000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 479000
+        }
+      ],
+      "beds": 5,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": 282,
+      "pricePerM2": 3832,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:29898eee1e",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/house-in-moraira-small-plot-communal-pool-near-downtown-bungalows-costera-b1463/",
+      "title": "House in Moraira – Small Plot, Communal Pool, Near Downtown | Bungalows Costera",
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "price": 290000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 290000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 84,
+      "plotM2": 182,
+      "pricePerM2": 3452,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:ae45141959",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-cumbre-del-sol-with-beautiful-sea-views-ch3358/",
+      "title": "Villa in Cumbre del Sol with beautiful sea views",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 575000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 575000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 191,
+      "plotM2": 856,
+      "pricePerM2": 3010,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:56746b7b68",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/townhouse-duplex-in-peaceful-community-with-pool-and-private-terrace-in-moraira-b1439/",
+      "title": "Townhouse Duplex in Peaceful Community with Pool and Private Terrace in Moraira",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 349000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 103,
+      "plotM2": 290,
+      "pricePerM2": 3388,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:18c527eb87",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-in-teulada-with-nice-open-panoramic-views-a0859/",
+      "title": "Apartment in Teulada with nice open panoramic views",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 190000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 96,
+      "plotM2": null,
+      "pricePerM2": 1979,
+      "photo": {
+        "file": "ferrando-moraira-18c527eb87.webp",
+        "thumb": "ferrando-moraira-18c527eb87.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/38/019b2bf6-d4c4-71aa-bce9-c8f61b45a838.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:eccb39c411",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-moraira-located-in-a-beautiful-residential-area-b1486/",
+      "title": "Villa in Moraira located in a beautiful residential area.",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 375000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 375000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 4076,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:046a206408",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-el-portet-moraira-with-sea-views-and-expansion-potential-ch3373/",
+      "title": "Villa in El Portet, Moraira with sea views and expansion potential",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 675000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 675000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": 840,
+      "pricePerM2": 5400,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:855ac56ebe",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-teulada-a0852/",
+      "title": "Apartment for sale in Teulada",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 180000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 86,
+      "plotM2": null,
+      "pricePerM2": 2093,
+      "photo": {
+        "file": "ferrando-moraira-855ac56ebe.webp",
+        "thumb": "ferrando-moraira-855ac56ebe.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/ee/019b2bf8-39d8-7159-a390-806d5383f6ee.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:55cd5fc166",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/house-in-moraira-in-a-beautiful-complex-of-22-houses-b1483/",
+      "title": "House in Moraira, in a beautiful complex of 22 houses.",
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 320000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 114,
+      "plotM2": 144,
+      "pricePerM2": 2807,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:b02e7fec30",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-moraira-with-restaurant-license-ch3286a/",
+      "title": "Villa in Moraira with restaurant license",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 780000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 780000
+        }
+      ],
+      "beds": 2,
+      "baths": 3,
+      "builtM2": 233,
+      "plotM2": 1334,
+      "pricePerM2": 3348,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:99be0305ee",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-in-el-portet-with-magnificent-sea-views-a0857/",
+      "title": "Apartment in El Portet with magnificent sea views.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 385000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 385000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 3969,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:14efb99432",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/semi-detached-house-in-a-popular-urbanization-with-communal-pool-b1458/",
+      "title": "Semi-detached house in a popular urbanization with communal pool",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 275000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 130,
+      "plotM2": 195,
+      "pricePerM2": 2115,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:cd4c94ec2e",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/bungalow-for-sale-in-moraira-cometa-2-bedrooms-and-community-pool-b1479/",
+      "title": "Bungalow for sale in Moraira, Cometa: 2 bedrooms and community pool.",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 329000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 329000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 85,
+      "plotM2": 280,
+      "pricePerM2": 3871,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:c9619ebe4c",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/semi-detached-property-in-a-lovely-urbanization-in-benitachell-b1484/",
+      "title": "Semi-detached property in a lovely urbanization in Benitachell.",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "price": 349900,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 349900
+        }
+      ],
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 190,
+      "plotM2": 105,
+      "pricePerM2": 1842,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:2a14c6e75f",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/apartment-in-the-popular-development-of-castellon-vida-a0860/",
+      "title": "Apartment in the popular development of Castellon Vida.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 205000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 205000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 61,
+      "plotM2": null,
+      "pricePerM2": 3361,
+      "photo": {
+        "file": "ferrando-moraira-2a14c6e75f.webp",
+        "thumb": "ferrando-moraira-2a14c6e75f.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/a0/019b2bf6-d4c4-71aa-bce9-b64ba2e011a0.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:45e107c877",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/property-with-conversion-potential-into-a-villa-near-shops-golf-and-coves-in-moraira-benissa-costa-ch3372/",
+      "title": "Property with conversion potential into a villa near shops, golf, and coves in Moraira – Benissa Costa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 575000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 575000
+        }
+      ],
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 213,
+      "plotM2": 650,
+      "pricePerM2": 2700,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:2bbf812ad8",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-in-moraira-with-spectacular-sea-views-b1476/",
+      "title": "Villa in Moraira with spectacular sea views",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 375000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 375000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 225,
+      "plotM2": 293,
+      "pricePerM2": 1667,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:0170553680",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/rustic-finca-in-teulada-with-sea-views-f0204/",
+      "title": "Rustic finca in Teulada with sea views",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 420000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 420000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 146,
+      "plotM2": 4830,
+      "pricePerM2": 2877,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:55406783e1",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-built-in-2000-ch3341/",
+      "title": "Villa for sale in Moraira, built in 2000",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 469000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 469000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 109,
+      "plotM2": 866,
+      "pricePerM2": 4303,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:95afc50af7",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/very-well-located-villa-above-the-exclusive-area-of-el-portet-ch3289/",
+      "title": "Very well located villa above the exclusive area of El Portet",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 583275,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 583275
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 91,
+      "plotM2": 852,
+      "pricePerM2": 6410,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "ferrando-moraira:d68bba344c",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/project-modern-luxury-villa-in-moraira-ch3130/",
+      "title": "Project: Modern luxury villa in Moraira",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 299000
+        }
+      ],
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 493,
+      "plotM2": 1520,
+      "pricePerM2": 606,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "calablanca:d0fc0ab4cd",
+      "source": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "url": "https://www.calablanca.com/propiedad/se-vende-apartamento-con-vistas-al-mar-en-la-sella-a-3490rl/",
+      "title": "Se vende apartamento con vistas al mar en La Sella",
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "price": 189950,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 189950
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 3799,
+      "photo": {
+        "file": "calablanca-d0fc0ab4cd.webp",
+        "thumb": "calablanca-d0fc0ab4cd.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.calablanca.com/objetos/temp/source/calablanca/320632/Jacaranda1.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "calablanca:732f95a3af",
+      "source": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "url": "https://www.calablanca.com/propiedad/chalet-de-2-dormitorios-en-venta-en-la-sella-c-3457bl/",
+      "title": "Chalet de 2 dormitorios en venta en La Sella",
+      "municipality": "Pedreguer",
+      "type": "villa",
+      "price": 445000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 445000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 8900,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "daniamed:7900f54826",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/apartamento-en-les-deveses-oportunidad-inversores-marysa/",
+      "title": "Apartamento en Les Deveses  ¡Oportunidad Inversores!",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 169000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 169000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "daniamed-7900f54826.webp",
+        "thumb": "daniamed-7900f54826.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/11/019f8f72-ecad-70b6-af3a-babdd975b811.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "daniamed:51e75fcde0",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/atico-en-el-vergel-con-vistas-al-mar-superatico4/",
+      "title": "¡Ático en El Vergel con Vistas al Mar!",
+      "municipality": "El Verger",
+      "type": "penthouse",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 269000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 99,
+      "plotM2": null,
+      "pricePerM2": 2717,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "daniamed:a49110a45a",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/apartamento-en-denia-a-300-m-de-playa-deveses-agata/",
+      "title": "Apartamento en , Dénia, a 300 m de  Playa Deveses",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 165000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 1833,
+      "photo": {
+        "file": "daniamed-a49110a45a.webp",
+        "thumb": "daniamed-a49110a45a.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/89/019eb782-33e3-76b9-abf3-c63401153689.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "daniamed:f056924fc9",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/adosado-en-el-verger-a-solo-400-m-de-la-playa-de-les-deveses-adomar2/",
+      "title": "Adosado en El Verger a solo 400 m de la Playa de Les Deveses",
+      "municipality": "El Verger",
+      "type": "townhouse",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 295000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 196,
+      "plotM2": null,
+      "pricePerM2": 1505,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "mlsdenia:bdbaa5426b",
+      "source": "mlsdenia",
+      "agency": "MLS Dénia",
+      "url": "https://www.mlsdenia.com/en-venta/adosado-xxl-con-vistas-al-mar-y-cocina-de-verano-chemenea-a-50m-de-la-playa-de-arena-fina-deveses-denia-3512-hd/",
+      "title": "Adosado XXL con vistas al mar y cocina de verano, chemenea a 50m de la playa de arena fina Deveses (Denia)",
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 349000
+        }
+      ],
+      "beds": 5,
+      "baths": 2,
+      "builtM2": 144,
+      "plotM2": 124,
+      "pricePerM2": 2424,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:b8ce422921",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-ii-ap9068m/",
+      "title": "Apartamento en venta Dénia - Urb. Playasol II",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 4070,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:44f862ac43",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-puerto-romano-las-marinas-ap2020m/",
+      "title": "Apartamento en venta Dénia - Urb. Puerto Romano Las Marinas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 350000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:a2ee9b5ded",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-garaje-y-trastero-en-venta-denia-urb-marina-real-ii-marinainlove/",
+      "title": "Apartamento con garaje y trastero en venta Dénia - Urb. Marina Real II",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 3322,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:cde84df2cc",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap6598m/",
+      "title": "Apartamento en venta Dénia - Urb. Las Perlas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 149500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 149500
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 1993,
+      "photo": {
+        "file": "inmoxara-cde84df2cc.webp",
+        "thumb": "inmoxara-cde84df2cc.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/335556"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:a34e455e12",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-elegance-AP1032M/",
+      "title": "Apartamento en venta Dénia - Urb. Elegance",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 57,
+      "plotM2": null,
+      "pricePerM2": 3754,
+      "photo": {
+        "file": "inmoxara-a34e455e12.webp",
+        "thumb": "inmoxara-a34e455e12.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/333338"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:dba5ab7614",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-royal-playa-ap904m/",
+      "title": "Apartamento en venta Dénia - Urb. Royal Playa",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 60,
+      "plotM2": null,
+      "pricePerM2": 2992,
+      "photo": {
+        "file": "inmoxara-dba5ab7614.webp",
+        "thumb": "inmoxara-dba5ab7614.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/329036"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:b6bdd13ec0",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-estrella-de-mar-iamstar/",
+      "title": "Apartamento en venta Dénia - Urb. Estrella de Mar",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 2500,
+      "photo": {
+        "file": "inmoxara-b6bdd13ec0.webp",
+        "thumb": "inmoxara-b6bdd13ec0.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/326470"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:a8ac7ef78e",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-en-venta-denia-la-pedrera-lacasita/",
+      "title": "Chalet en venta Dénia - La Pedrera",
+      "municipality": "Dénia",
+      "type": "villa",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 330000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 149,
+      "plotM2": 1300,
+      "pricePerM2": 2215,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:2570fec326",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-park-ap0515m/",
+      "title": "Apartamento en venta Dénia - Urb. Marina Park",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 73,
+      "plotM2": null,
+      "pricePerM2": 3151,
+      "photo": {
+        "file": "inmoxara-2570fec326.webp",
+        "thumb": "inmoxara-2570fec326.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/318658"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:a472297c16",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-alberca-livinglaalberca/",
+      "title": "Apartamento en venta Dénia - Urb. La Alberca",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 67,
+      "plotM2": null,
+      "pricePerM2": 3194,
+      "photo": {
+        "file": "inmoxara-a472297c16.webp",
+        "thumb": "inmoxara-a472297c16.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/312977"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:083debd62e",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-nereidas-ap9030m/",
+      "title": "Apartamento en venta Dénia - Urb. Nereidas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 78,
+      "plotM2": null,
+      "pricePerM2": 2301,
+      "photo": {
+        "file": "inmoxara-083debd62e.webp",
+        "thumb": "inmoxara-083debd62e.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/310479"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:630e487132",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-mar-de-denia-ap510m/",
+      "title": "Apartamento en venta Dénia - Urb. Mar de Dénia",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 60,
+      "plotM2": null,
+      "pricePerM2": 3567,
+      "photo": {
+        "file": "inmoxara-630e487132.webp",
+        "thumb": "inmoxara-630e487132.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/308787"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:b9a2bde46a",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-urb-mirador-al-mar-maremeua/",
+      "title": "Apartamento frontal al mar en Dénia - Urb. Mirador al Mar",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2726,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:516850e549",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urbanizacion-jardines-de-les-deveses-summerdream/",
+      "title": "Apartamento en venta Dénia - Urbanización Jardines de Les Deveses",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 289000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 124,
+      "plotM2": null,
+      "pricePerM2": 2331,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:1d761dde82",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-denia-urb-la-alberca-ap1370m/",
+      "title": "Apartamento frontal al mar en Dénia - Urb. La Alberca",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 319000
+        }
+      ],
+      "beds": 2,
+      "baths": 3,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2658,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:8094a13037",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-denia-urb-las-nereidas-ap0201m/",
+      "title": "Apartamento frontal al mar Dénia - Urb. Las Nereidas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 103,
+      "plotM2": null,
+      "pricePerM2": 2078,
+      "photo": {
+        "file": "inmoxara-8094a13037.webp",
+        "thumb": "inmoxara-8094a13037.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/269953"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:e08f94ce8d",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-olas-lasolas/",
+      "title": "Apartamento en venta Dénia - Urb. Las Olas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 319000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 3798,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:d57a6cad92",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-retiro-park-ii-marinasundenia/",
+      "title": "Apartamento en venta Denia - Urb. Retiro Park II",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 2762,
+      "photo": {
+        "file": "inmoxara-d57a6cad92.webp",
+        "thumb": "inmoxara-d57a6cad92.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/348894"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:de278e37ef",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-con-parking-y-trastero-en-venta-denia-urb-aguablanca-ap0350m/",
+      "title": "Apartamento con parking y trastero en venta Dénia - Urb. Aguablanca",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 214000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 214000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 3014,
+      "photo": {
+        "file": "inmoxara-de278e37ef.webp",
+        "thumb": "inmoxara-de278e37ef.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/345034"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:034cd98e06",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/chalet-con-piscina-privada-en-venta-denia-ch0650m/",
+      "title": "Chalet con piscina privada en venta Dénia",
+      "municipality": "Dénia",
+      "type": "villa",
+      "price": 560000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 560000
+        }
+      ],
+      "beds": 6,
+      "baths": 3,
+      "builtM2": 220,
+      "plotM2": 634,
+      "pricePerM2": 2545,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "inmoxara:2bc6938e27",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-de-la-playa-de-las-marinas-urb-nereidas-mynereidas/",
+      "title": "Apartamento en venta primera línea de la playa de Las Marinas - Urb. Nereidas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 179500
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 2493,
+      "photo": {
+        "file": "inmoxara-2bc6938e27.webp",
+        "thumb": "inmoxara-2bc6938e27.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/340876"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    }
+  ]
+}

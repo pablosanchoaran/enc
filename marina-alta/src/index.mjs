@@ -16,6 +16,8 @@ import { fileURLToPath } from 'node:url'
 
 import { Fetcher } from './fetcher.mjs'
 import { diffInventory } from './diff.mjs'
+import { updateArchive } from './archive.mjs'
+import { capturePhotos, loadThumbnails } from './photos.mjs'
 import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
 import * as ego from './adapters/ego.mjs'
@@ -26,6 +28,10 @@ import * as thinkspain from './adapters/thinkspain.mjs'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
 const INVENTORY_FILE = join(DATA_DIR, 'listings.json')
+const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
+const PHOTOS_DIR = join(DATA_DIR, 'photos')
+/** Se guarda la foto de los anuncios hasta este precio (el resto son muchos). */
+const PHOTO_PRICE_LIMIT = 260_000
 const REPORT_FILE = join(ROOT, 'report', 'index.html')
 
 const ADAPTERS = { thinkspain, sooprema, ego, listado }
@@ -87,7 +93,8 @@ async function run() {
       removals: [],
       sources: [],
     })
-    await writeFile(REPORT_FILE, renderReport({ daily, listings: previousListings }))
+    const thumbnails = await loadThumbnails(previousListings, PHOTOS_DIR)
+    await writeFile(REPORT_FILE, renderReport({ daily, listings: previousListings, thumbnails }))
     log(`Informe regenerado en ${REPORT_FILE}`)
     return
   }
@@ -262,6 +269,15 @@ async function run() {
       ` · ${daily.totals.inventory} en inventario`,
   )
 
+  // Fotos de los anuncios asequibles: cuando se vendan, la agencia retirará
+  // el anuncio y la imagen dejará de existir, así que hay que tenerla copiada.
+  if (!args.dryRun) {
+    const candidates = listings.filter(
+      (item) => item.price <= PHOTO_PRICE_LIMIT && item.type !== 'plot',
+    )
+    await capturePhotos(candidates, { photosDir: PHOTOS_DIR, log })
+  }
+
   if (args.dryRun) {
     log('\n(--dry-run: no se ha escrito nada)')
     for (const item of deduped.slice(0, 20)) {
@@ -273,10 +289,25 @@ async function run() {
     return
   }
 
+  // Lo vendido y lo retirado pasa al archivo histórico, con su marca temporal
+  // y su foto: el inventario vivo es el mercado de hoy, el archivo es la memoria.
+  const previousArchive = await readJson(ARCHIVE_FILE, { updatedAt: null, entries: [] })
+  const archive = updateArchive(previousArchive.entries ?? [], {
+    removals: result.removals,
+    listings,
+    runAt: daily.generatedAt,
+  })
+  log(
+    `   archivo histórico: ${archive.entries.length} anuncios` +
+      ` (${archive.added} nuevos, ${archive.updated} actualizados)`,
+  )
+
   await writeJson(INVENTORY_FILE, { updatedAt: daily.generatedAt, listings })
+  await writeJson(ARCHIVE_FILE, { updatedAt: daily.generatedAt, entries: archive.entries })
   await writeJson(dailyFile, daily)
   await mkdir(dirname(REPORT_FILE), { recursive: true })
-  await writeFile(REPORT_FILE, renderReport({ daily, listings }))
+  const thumbnails = await loadThumbnails(listings, PHOTOS_DIR)
+  await writeFile(REPORT_FILE, renderReport({ daily, listings, thumbnails }))
   log(`\nDatos en ${INVENTORY_FILE}\nInforme en ${REPORT_FILE}`)
 }
 

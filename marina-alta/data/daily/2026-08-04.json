@@ -1,6 +1,6 @@
 {
   "date": "2026-08-04",
-  "generatedAt": "2026-08-04T06:11:48.336Z",
+  "generatedAt": "2026-08-04T18:41:16.805Z",
   "totals": {
     "inventory": 1780,
     "additions": 0,
@@ -47,7 +47,10 @@
       "id": "lyt",
       "agency": "LYT Properties",
       "listings": 61,
-      "status": "ok"
+      "status": "ok",
+      "requests": 73,
+      "blocked": 0,
+      "errors": 0
     },
     {
       "id": "inmoxara",

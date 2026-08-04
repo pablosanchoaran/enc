@@ -86,8 +86,9 @@ function statusOptions(items) {
     .join('')
 }
 
-function renderCard(item) {
+function renderCard(item, thumbnails) {
   const status = item.saleStatus ?? 'available'
+  const thumb = thumbnails?.get(item.id)
   const facts = [
     item.beds ? `${item.beds} hab.` : null,
     item.baths ? `${item.baths} baños` : null,
@@ -97,6 +98,7 @@ function renderCard(item) {
 
   return `
     <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}">
+      ${thumb ? `<a class="card__photo" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="" loading="lazy" width="320" height="214"></a>` : ''}
       <div class="card__head">
         <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
         ${status === 'available' ? '' : `<span class="chip chip--${status}">${STATUS_LABELS[status]}</span>`}
@@ -177,7 +179,7 @@ function renderSources(sources) {
     </table>`
 }
 
-export function renderReport({ daily, listings }) {
+export function renderReport({ daily, listings, thumbnails }) {
   const active = listings.filter((item) => item.status !== 'removed')
   const additions = [...daily.additions].sort((a, b) => b.price - a.price)
   const municipalities = [...new Set(active.map((item) => item.municipality))].sort((a, b) =>
@@ -312,7 +314,12 @@ export function renderReport({ daily, listings }) {
 
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 14px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
-  .card__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .card { padding-top: 0; overflow: hidden; }
+  .card__photo { display: block; margin: 0 -16px 4px; background: var(--surface-sunk); }
+  .card__photo img { display: block; width: 100%; height: 168px; object-fit: cover; }
+  .card--sold .card__photo img { filter: saturate(0.45); }
+  .card__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 16px; }
+  .card__photo + .card__head { padding-top: 0; }
   .chip { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
   .chip--reserved { color: var(--rise); background: var(--rise-soft); }
   .chip--sold { color: var(--sold); background: var(--sold-soft); }
@@ -400,7 +407,7 @@ export function renderReport({ daily, listings }) {
       <label>Estado<select id="f-status">${statusOptions(additions)}</select></label>
       <label>Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
     </div>
-    <div class="grid" id="grid">${additions.map(renderCard).join('')}</div>
+    <div class="grid" id="grid">${additions.map((item) => renderCard(item, thumbnails)).join('')}</div>
     <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p>`
     }
   </section>
@@ -420,7 +427,7 @@ export function renderReport({ daily, listings }) {
       <label>Estado<select id="b-status">${statusOptions(budget)}</select></label>
       <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
     </div>
-    <div class="grid" id="b-grid">${budget.map(renderCard).join('')}</div>
+    <div class="grid" id="b-grid">${budget.map((item) => renderCard(item, thumbnails)).join('')}</div>
     <p class="empty" id="b-no-match" hidden>Ninguna vivienda encaja con estos filtros.</p>`
     }
   </section>

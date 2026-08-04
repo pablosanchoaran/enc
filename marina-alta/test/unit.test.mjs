@@ -4,6 +4,7 @@ import test from 'node:test'
 import * as cheerio from 'cheerio'
 
 import { diffInventory } from '../src/diff.mjs'
+import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
 import {
   detectSaleStatus,
@@ -138,4 +139,36 @@ test('una baja solo se anota tras una semana sin verla', () => {
   const final = diffInventory(inventory, [], '2026-08-08')
   assert.equal(final.removals.length, 1)
   assert.equal(final.inventory.length, 0)
+})
+
+test('un robots.txt que no se puede leer decide si se rastrea o no', async () => {
+  const respond = (status, body = '') => async () => ({
+    status,
+    ok: status >= 200 && status < 300,
+    text: async () => body,
+  })
+
+  // RFC 9309: un 4xx significa que no hay restricciones.
+  const forbidden = await loadRobots('https://cdn.test', {
+    userAgent: 'test',
+    fetchImpl: respond(403),
+  })
+  assert.equal(forbidden.reachable, true)
+  assert.equal(isAllowed(forbidden, '/foto.jpg'), true)
+
+  // Un 5xx deja el dominio sin rastrear: no sabemos qué permite.
+  const broken = await loadRobots('https://roto.test', {
+    userAgent: 'test',
+    fetchImpl: respond(503),
+  })
+  assert.equal(broken.reachable, false)
+  assert.equal(isAllowed(broken, '/loquesea'), false)
+
+  const rules = await loadRobots('https://reglas.test', {
+    userAgent: 'test',
+    fetchImpl: respond(200, 'User-agent: *\nDisallow: /privado/\nCrawl-delay: 2'),
+  })
+  assert.equal(isAllowed(rules, '/publico/casa'), true)
+  assert.equal(isAllowed(rules, '/privado/casa'), false)
+  assert.equal(crawlDelay(rules), 2000)
 })

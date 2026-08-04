@@ -27,8 +27,23 @@ Donde no hay proxy, la variable no tiene efecto.
 | Ruta | Contenido |
 |---|---|
 | `data/listings.json` | Inventario vivo: todo lo que se sigue, con su histórico de precios |
+| `data/archive.json` | Memoria: todo lo vendido o retirado, con la fecha en que se archivó |
+| `data/photos/` | Foto de portada de cada vivienda asequible, en WebP |
 | `data/daily/YYYY-MM-DD.json` | Novedades de ese día |
 | `report/index.html` | Informe autocontenido, que es lo que se publica como artefacto |
+
+### Fotos y archivo histórico
+
+Cuando una vivienda se vende, la agencia retira el anuncio y la foto desaparece
+de internet. Por eso, de cada vivienda de **hasta 260.000 €** se guarda su foto
+de portada en el repositorio, con la marca temporal de la captura: una copia de
+640 px para consultar y una miniatura de 320 px, que es la que se empotra en el
+informe. Son unos 50 KB por anuncio.
+
+Todo lo que se vende o desaparece pasa a `data/archive.json` y **no se borra
+nunca**: conserva precio, histórico de precios, fechas de primera y última vez
+que se vio, la fecha de archivo y su foto. De ahí saldrán las comparaciones
+entre meses y años, que están pendientes.
 
 ## Fuentes
 

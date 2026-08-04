@@ -57,9 +57,11 @@ function selectGroup(groups, userAgent) {
 }
 
 /**
- * Descarga y cachea el robots.txt de un origen. Si no se puede leer se aplica
- * la política conservadora habitual: 404 significa "sin restricciones", pero
- * cualquier otro fallo bloquea el dominio para no crawlear a ciegas.
+ * Descarga y cachea el robots.txt de un origen, siguiendo el RFC 9309: un
+ * 4xx (no existe, prohibido…) significa que no hay restricciones, mientras que
+ * un 5xx o un fallo de red dejan el dominio sin rastrear, porque no sabemos
+ * qué permite. El 429 se trata como fallo: es "vuelve más tarde", no barra
+ * libre.
  */
 export async function loadRobots(origin, { userAgent, fetchImpl = fetch } = {}) {
   if (CACHE.has(origin)) return CACHE.get(origin)
@@ -70,7 +72,7 @@ export async function loadRobots(origin, { userAgent, fetchImpl = fetch } = {}) 
       headers: { 'user-agent': userAgent, accept: 'text/plain' },
       redirect: 'follow',
     })
-    if (response.status === 404 || response.status === 410) {
+    if (response.status >= 400 && response.status < 500 && response.status !== 429) {
       entry.reachable = true
     } else if (response.ok) {
       entry.groups = parseRobots(await response.text())
