@@ -15,7 +15,7 @@ import {
   metaContent,
   parseArea,
   parseCount,
-  parsePrice,
+  readPrice,
 } from '../parse.mjs'
 
 /** Enlaces a ficha dentro de una página de listado. */
@@ -54,29 +54,7 @@ function parsePropertyPage(html, url) {
 
   const title = $('h1').first().text().trim() || metaContent(html, 'og:title') || null
 
-  // El precio solo se acepta desde el elemento donde la ficha lo muestra. Un
-  // `[class*="precio"]` a secas también casa con `selectPrecios`, el
-  // desplegable de "precio hasta" del buscador, y acaba dando por precio del
-  // anuncio un importe del filtro — justo lo que pasa en las fichas que ponen
-  // "CONSULTAR".
-  const PRICE_SELECTORS = ['.iconprecio', '.precio', '[class*="__price"]', '.price']
-  const isFilterWidget = (className) => /select|filtr|search|buscad|form|slider|range/i.test(className)
-
-  let price = null
-  for (const selector of PRICE_SELECTORS) {
-    const candidates = $(selector).filter((_, element) => {
-      const node = $(element)
-      return !isFilterWidget(node.attr('class') ?? '') && node.find('select, option, input, li').length === 0
-    })
-    if (candidates.length === 0) continue
-
-    candidates.each((_, element) => {
-      if (price == null) price = parsePrice($(element).text().trim())
-    })
-    // El selector más fiable de la página manda: si está y dice "CONSULTAR",
-    // el anuncio no tiene precio público y no se busca en ningún otro sitio.
-    break
-  }
+  const price = readPrice($)
 
   if (!title || !price) return null
 

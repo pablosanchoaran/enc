@@ -15,8 +15,8 @@ import {
   metaContent,
   parseArea,
   parseCount,
-  parsePrice,
   parseSitemap,
+  readPrice,
 } from '../parse.mjs'
 
 /** Segmentos de URL que Sooprema usa para las fichas, según el idioma del sitio. */
@@ -24,15 +24,23 @@ const PROPERTY_SEGMENTS = [
   'for-sale',
   'en-venta',
   'venta',
+  'propiedad',
+  'property',
+  'properties',
+  'inmueble',
   'te-koop',
   'zu-verkaufen',
   'a-vendre',
   'in-vendita',
 ]
 
+/** Prefijo de idioma que algunas webs anteponen: `/es/propiedad/...`. */
+const LANGUAGE_PREFIX = /^[a-z]{2}(-[a-z]{2})?$/i
+
 function isPropertyUrl(url) {
   try {
-    const segments = new URL(url).pathname.split('/').filter(Boolean)
+    let segments = new URL(url).pathname.split('/').filter(Boolean)
+    if (segments.length > 2 && LANGUAGE_PREFIX.test(segments[0])) segments = segments.slice(1)
     // Una ficha es `/<segmento>/<slug-ref>/`; `/for-sale/` a secas es el listado.
     return segments.length >= 2 && PROPERTY_SEGMENTS.includes(segments[0])
   } catch {
@@ -82,14 +90,7 @@ function parsePropertyPage(html, url) {
   const title =
     $('h1').first().text().trim() || metaContent(html, 'og:title') || null
 
-  // Solo vale un importe que esté en un elemento de precio de la ficha. Nada de
-  // rebuscar por la página: los desplegables del buscador llevan importes como
-  // "100.000 €" y colarían un precio inventado en un anuncio "a consultar".
-  let price = null
-  $('[class*="__price"]').each((_, element) => {
-    if (price != null) return
-    price = parsePrice($(element).text().trim())
-  })
+  const price = readPrice($)
 
   const reference =
     $('[class*="__ref"] span, [class*="__reference"] span').first().text().trim() ||

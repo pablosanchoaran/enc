@@ -187,3 +187,43 @@ export function metaContent(html, property) {
   const match = html.match(pattern) ?? html.match(alt)
   return match ? decodeEntities(match[1]) : null
 }
+
+/**
+ * Lee el precio de una ficha. Solo vale el importe que esté en un elemento de
+ * precio del anuncio: los desplegables de "precio hasta" del buscador llevan
+ * importes redondos que, si se aceptan, acaban publicándose como si fueran el
+ * precio de la casa — sobre todo en las fichas que ponen "consultar".
+ *
+ * Los selectores van del más específico al más genérico y **manda el primero
+ * que exista en la página**: si la ficha muestra su precio ahí y dice
+ * "CONSULTAR", el anuncio no tiene precio público y no se busca en otro sitio.
+ */
+const PRICE_SELECTORS = [
+  '.iconprecio',
+  '[class*="__price"]',
+  '[class*="property-price"]',
+  '[class*="property1-price"]',
+  '.precio',
+  '[class*="price"]',
+]
+const FILTER_WIDGET = /select|filtr|search|buscad|\bform\b|slider|range|min|max/i
+
+export function readPrice($) {
+  for (const selector of PRICE_SELECTORS) {
+    const candidates = $(selector).filter((_, element) => {
+      const node = $(element)
+      return (
+        !FILTER_WIDGET.test(node.attr('class') ?? '') &&
+        node.find('select, option, input, li').length === 0
+      )
+    })
+    if (candidates.length === 0) continue
+
+    let price = null
+    candidates.each((_, element) => {
+      if (price == null) price = parsePrice($(element).text().trim())
+    })
+    return price
+  }
+  return null
+}
