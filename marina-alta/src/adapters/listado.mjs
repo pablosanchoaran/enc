@@ -18,18 +18,31 @@ import {
   readPrice,
 } from '../parse.mjs'
 
-/** Enlaces a ficha dentro de una página de listado. */
-function extractPropertyLinks(html, origin, propertyPath) {
+/**
+ * Enlaces a ficha dentro de una página de listado. La fuente declara o bien un
+ * `propertyPath` (`/propiedad/`), o bien un `propertyPattern` para las webs
+ * cuyas fichas no viven bajo un prefijo común — Renvida las publica como
+ * `/1506702/7-bedroom-villa-in-denia`.
+ */
+function extractPropertyLinks(html, origin, { propertyPath, propertyPattern }) {
+  const pattern = propertyPattern ? new RegExp(propertyPattern) : null
   const links = new Set()
+
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
     const href = match[1]
-    if (!href.includes(propertyPath)) continue
+    if (!pattern && !href.includes(propertyPath)) continue
     try {
       const url = new URL(href, origin)
       if (url.origin !== new URL(origin).origin) continue
-      // `/propiedad/` a secas es la plantilla vacía, no una ficha.
-      const tail = url.pathname.split(propertyPath)[1]
-      if (!tail || tail.replace(/\//g, '').length < 3) continue
+
+      if (pattern) {
+        if (!pattern.test(url.pathname)) continue
+      } else {
+        // `/propiedad/` a secas es la plantilla vacía, no una ficha.
+        const tail = url.pathname.split(propertyPath)[1]
+        if (!tail || tail.replace(/\//g, '').length < 3) continue
+      }
+
       url.hash = ''
       url.search = ''
       links.add(url.toString())
@@ -80,6 +93,7 @@ function parsePropertyPage(html, url) {
 }
 
 export async function collect({ fetcher, source, known, log, limit = Infinity, refreshBudget = 40 }) {
+  const { propertyPattern } = source
   const propertyPath = source.propertyPath ?? '/propiedad/'
   const listingUrls = source.listingUrls ?? []
   if (listingUrls.length === 0) {
@@ -91,7 +105,9 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   for (const listingUrl of listingUrls) {
     const html = await fetcher.get(listingUrl)
     if (!html) continue
-    for (const link of extractPropertyLinks(html, source.origin, propertyPath)) urls.add(link)
+    for (const link of extractPropertyLinks(html, source.origin, { propertyPath, propertyPattern })) {
+      urls.add(link)
+    }
   }
   log(`  fichas encontradas en los listados: ${urls.size}`)
 

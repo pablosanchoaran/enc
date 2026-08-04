@@ -45,6 +45,16 @@ test('manda el término que abre el anuncio, no el que aparezca después', () =>
   assert.equal(detectType('Se vende plaza de garaje'), 'commercial')
 })
 
+test('el plural no se escribe con una "s" opcional pegada a la raíz', () => {
+  // `locales?` significa "locale" más una "s", no "local" más "es": el bug
+  // dejaba pasar locales comerciales y solares como si fueran vivienda.
+  assert.equal(detectType('SE VENDE LOCAL EN DENIA'), 'commercial')
+  assert.equal(detectType('Locales comerciales en Pego'), 'commercial')
+  assert.equal(detectType('Almacén en Ondara'), 'commercial')
+  assert.equal(detectType('Solar urbano en Gata de Gorgos'), 'plot')
+  assert.equal(detectType('Solares en Benissa'), 'plot')
+})
+
 test('el estado comercial se lee de las etiquetas, no del texto suelto', () => {
   const sold = cheerio.load('<div><span class="tag">Vendido</span><p>Chalet en Calpe</p></div>')
   const footer = cheerio.load('<footer><p>Todos los derechos reservados Inmobiliaria X</p></footer>')

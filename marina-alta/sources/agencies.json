@@ -95,6 +95,144 @@
       ],
       "enabled": true,
       "notes": "Mismo caso que Denialara."
+    },
+    {
+      "id": "catorceinmo",
+      "adapter": "listado",
+      "agency": "Catorce Inmobiliaria",
+      "origin": "https://www.catorceinmo.com",
+      "listingUrls": [
+        "https://www.catorceinmo.com/propiedades/venta/todas/"
+      ],
+      "enabled": true,
+      "notes": "Dénia, Jávea y La Sella. Segunda mano: la que más vivienda por debajo de 260.000 € tiene."
+    },
+    {
+      "id": "tododenia",
+      "adapter": "sooprema",
+      "agency": "Tododenia-inmo",
+      "origin": "https://www.tododenia-inmo.com",
+      "enabled": true,
+      "notes": "Dénia."
+    },
+    {
+      "id": "inmovidal",
+      "adapter": "sooprema",
+      "agency": "Inmovidal",
+      "origin": "https://www.inmovidal.com",
+      "enabled": true,
+      "notes": "Pego, Dénia y Jávea. Mucha vivienda barata de interior."
+    },
+    {
+      "id": "ortola",
+      "adapter": "sooprema",
+      "agency": "Ortolá Inmobiliaria",
+      "origin": "https://www.ortolainmobiliaria.com",
+      "enabled": true,
+      "notes": "Pego, El Verger, Beniarbeig y Dénia."
+    },
+    {
+      "id": "inmodemar",
+      "adapter": "sooprema",
+      "agency": "Inmodemar",
+      "origin": "https://www.inmodemar.com",
+      "enabled": true,
+      "notes": "Dénia y Pedreguer."
+    },
+    {
+      "id": "albadomus",
+      "adapter": "sooprema",
+      "agency": "Albadomus",
+      "origin": "https://www.albadomus.com",
+      "enabled": true,
+      "notes": "Dénia."
+    },
+    {
+      "id": "gpereto",
+      "adapter": "listado",
+      "agency": "Grupo Peretó",
+      "origin": "https://www.gpereto.co.uk",
+      "listingUrls": [
+        "https://www.gpereto.co.uk/propiedades/"
+      ],
+      "propertyPath": "/property/",
+      "enabled": true,
+      "notes": "Orba, Jalón y Dénia."
+    },
+    {
+      "id": "agenciamorato",
+      "adapter": "sooprema",
+      "agency": "Agencia Inmobiliaria Morató",
+      "origin": "https://www.agenciamorato.com",
+      "enabled": true,
+      "notes": "Calpe."
+    },
+    {
+      "id": "deseohomes",
+      "adapter": "sooprema",
+      "agency": "Deseo Homes",
+      "origin": "https://www.deseohomes.com",
+      "enabled": true,
+      "notes": "Jávea."
+    },
+    {
+      "id": "renvida",
+      "adapter": "listado",
+      "agency": "Renvida",
+      "origin": "https://www.renvida.com",
+      "listingUrls": [
+        "https://www.renvida.com/LP100/villas-for-sale-in-denia",
+        "https://www.renvida.com/LP101/plots-for-sale-in-pedreguer"
+      ],
+      "propertyPattern": "^/[0-9]{6,8}/",
+      "enabled": true,
+      "notes": "Ondara. Publica las fichas como /<id>/<slug>, sin prefijo común, y solo tiene dos páginas de venta."
+    },
+    {
+      "id": "thepropertyshop",
+      "adapter": "listado",
+      "agency": "The Property Shop",
+      "origin": "https://www.thepropertyshop.es",
+      "listingUrls": [
+        "https://www.thepropertyshop.es/for-sale/"
+      ],
+      "propertyPath": "/property/",
+      "enabled": false,
+      "notes": "Els Poblets. Su ficha no trae el precio en el HTML servido (lo pinta el JavaScript); los únicos importes presentes son los del bloque 'te puede interesar', o sea de otras propiedades. Necesitaría un navegador."
+    },
+    {
+      "id": "vistamarinahome",
+      "adapter": "listado",
+      "agency": "Vista Marina Home",
+      "origin": "https://www.vistamarinahome.com",
+      "listingUrls": [
+        "https://www.vistamarinahome.com/propiedades-en-venta-en-la-costa-blanca/"
+      ],
+      "propertyPath": "/propiedad/",
+      "enabled": false,
+      "notes": "Dénia. El precio aparece en el HTML pero sin ninguna clase ni JSON-LD que lo identifique, así que no hay forma fiable de distinguirlo de otros importes de la página."
+    },
+    {
+      "id": "oleahome",
+      "adapter": "listado",
+      "agency": "Olea Home",
+      "origin": "https://www.olea-home.com",
+      "listingUrls": [
+        "https://www.olea-home.com/venta/"
+      ],
+      "enabled": false,
+      "notes": "Orba y Moraira. Sin sitemap y con el listado cargado por JavaScript: el HTML servido son 6 KB sin fichas."
+    },
+    {
+      "id": "costahouses",
+      "adapter": "listado",
+      "agency": "Costa Houses Luxury Villas",
+      "origin": "https://www.costa-houses.com",
+      "listingUrls": [
+        "https://www.costa-houses.com/apartamentos-en-venta-en-javea/"
+      ],
+      "enabled": false,
+      "notes": "Jávea, gama alta. 2.755 URLs en el sitemap pero sin prefijo que distinga las fichas de las páginas de contenido, y sin JSON-LD."
     }
   ]
 }

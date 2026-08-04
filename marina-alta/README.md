@@ -54,13 +54,20 @@ para desactivarla temporalmente, `"enabled": false`.
 | Adaptador | Cubre |
 |---|---|
 | `thinkspain` | Portal ThinkSpain: barrido por zonas de la comarca + feed de altas del día |
-| `sooprema` | Webs sobre el CMS Sooprema con sitemap: Ferrando, MLS Dénia, InmoXara, Daniamed, Benimo Villas |
-| `listado` | Agencias sin sitemap, partiendo de las URLs de listado que declare la fuente: Llobell, Denialara, Calablanca |
+| `sooprema` | Webs sobre el CMS Sooprema con sitemap: Ferrando, MLS Dénia, InmoXara, Daniamed, Benimo, Tododenia, Inmovidal, Ortolá, Inmodemar, Albadomus, Morató, Deseo Homes |
+| `listado` | Agencias sin sitemap, partiendo de las URLs de listado que declare la fuente: Llobell, Denialara, Calablanca, Catorce, Grupo Peretó, Renvida |
 | `ego` | Webs sobre eGO Real Estate, con JSON-LD en cada ficha: LYT Properties |
 
 Cada anuncio lleva su estado comercial (`disponible`, `reservado`, `vendido`), leído de
 la etiqueta que pone la propia agencia. Importa: las agencias dejan publicado meses lo
-que ya han vendido — hay 85 anuncios vendidos ahora mismo en el inventario.
+que ya han vendido.
+
+Las fuentes desactivadas siguen en el catálogo con el motivo escrito en `notes`, para
+no volver a investigarlas desde cero: sin sitemap y con el listado en JavaScript
+(Olea Home), precio ausente del HTML servido (The Property Shop), precio sin ninguna
+clase ni JSON-LD que lo identifique (Vista Marina Home), fichas indistinguibles de las
+páginas de contenido (Costa Houses) o servidor que rechaza a los rastreadores
+identificados (InmoDalal).
 
 Quedan deliberadamente fuera: **Idealista** y **Fotocasa** (sus condiciones de
 uso prohíben el rastreo y bloquean por IP), **Kyero** (Cloudflare responde 403

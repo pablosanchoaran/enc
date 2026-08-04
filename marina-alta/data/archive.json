@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:41:16.805Z",
+  "updatedAt": "2026-08-04T21:00:15.185Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -2404,6 +2404,763 @@
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-04",
       "archivedOn": "2026-08-04T18:41:16.805Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:8ca598b8f6",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-con-piscina-para-comprar-cerca-del-mar-en-denia-14C0063/",
+      "title": "Apartamento con piscina para comprar cerca del mar en Dénia",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 179000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 3580,
+      "photo": {
+        "file": "catorceinmo-8ca598b8f6.webp",
+        "thumb": "catorceinmo-8ca598b8f6.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/333561/Imagen2.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:30:43.271Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:24eac36f0e",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/piso-centrico-en-venta-en-denia-03d0237/",
+      "title": "Piso céntrico en venta en Dénia",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 185000
+        }
+      ],
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 3700,
+      "photo": {
+        "file": "catorceinmo-24eac36f0e.webp",
+        "thumb": "catorceinmo-24eac36f0e.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2025/09/19/339365/imagen2.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:30:43.271Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:cc262cd45d",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/casa-de-pueblo-en-venta-en-ondara-casco-urbano-amplia-terraza-solarium-14d0062/",
+      "title": "Casa de pueblo en venta en Ondara - casco urbano - amplia terraza solarium",
+      "municipality": "Ondara",
+      "type": "house",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 195000
+        }
+      ],
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 3900,
+      "photo": {
+        "file": "catorceinmo-cc262cd45d.webp",
+        "thumb": "catorceinmo-cc262cd45d.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/329034/20250128_114318-copia.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:30:43.271Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:446e4d7eaf",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/local-comercial-en-venta-en-javea-playa-arenal-amplios-escaparates-14d0054/",
+      "title": "Local comercial en venta en Jávea - Playa Arenal - amplios escaparates",
+      "municipality": "Xàbia / Jávea",
+      "type": "other",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 215000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 4300,
+      "photo": {
+        "file": "catorceinmo-446e4d7eaf.webp",
+        "thumb": "catorceinmo-446e4d7eaf.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/302070/Image16.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:30:43.271Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:a52f81f8ce",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/casa-adosada-con-piscina-soleada-y-en-entorno-natural-en-venta-en-benitachell-14d0074/",
+      "title": "Casa adosada con piscina, soleada y en entorno natural en venta en Benitachell",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "house",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 320000
+        }
+      ],
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 6400,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:30:43.271Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:1fc8f40a8d",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/apartamento-en-venta-de-1-dormitorio-en-las-marinas-denia-td-paraiso-elis/",
+      "title": "Apartamento en venta de 1 dormitorio en Las Marinas, Denia",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 174000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 174000
+        }
+      ],
+      "beds": null,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "tododenia-1fc8f40a8d.webp",
+        "thumb": "tododenia-1fc8f40a8d.thumb.webp",
+        "capturedAt": "2026-08-04T20:32:06.915Z",
+        "sourceUrl": "https://www.tododenia-inmo.com/opi/338414"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:a14493a44d",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/se-vende-piso-en-denia-td-ap-reg/",
+      "title": "SE VENDE PISO EN DENIA",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 240000
+        }
+      ],
+      "beds": null,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "tododenia-a14493a44d.webp",
+        "thumb": "tododenia-a14493a44d.thumb.webp",
+        "capturedAt": "2026-08-04T20:32:06.915Z",
+        "sourceUrl": "https://www.tododenia-inmo.com/opi/332382"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:860616fa1d",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/apartamento-en-denia-td-ap-sar/",
+      "title": "APARTAMENTO EN DENIA",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 140000
+        }
+      ],
+      "beds": null,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "tododenia-860616fa1d.webp",
+        "thumb": "tododenia-860616fa1d.thumb.webp",
+        "capturedAt": "2026-08-04T20:32:06.915Z",
+        "sourceUrl": "https://www.tododenia-inmo.com/opi/330569"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:07b36e4a2d",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/casa-de-pueblo-en-denia-td-cp-saul/",
+      "title": "CASA DE PUEBLO EN DENIA",
+      "municipality": "Dénia",
+      "type": "house",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 325000
+        }
+      ],
+      "beds": null,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:7fcca11fea",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/local-comercial-en-denia-td-loc-yolan/",
+      "title": "LOCAL COMERCIAL EN DÉNIA",
+      "municipality": "Dénia",
+      "type": "other",
+      "price": 210000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 210000
+        }
+      ],
+      "beds": null,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "tododenia-7fcca11fea.webp",
+        "thumb": "tododenia-7fcca11fea.thumb.webp",
+        "capturedAt": "2026-08-04T20:32:06.915Z",
+        "sourceUrl": "https://www.tododenia-inmo.com/opi/313771"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "tododenia:0b56689b2e",
+      "source": "tododenia",
+      "agency": "Tododenia-inmo",
+      "url": "https://www.tododenia-inmo.com/en-venta/venta-parcela-cerca-playa-de-denia-td-pa-560/",
+      "title": "VENTA PARCELA CERCA PLAYA DE  DÉNIA",
+      "municipality": "Dénia",
+      "type": "plot",
+      "price": 3150000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 3150000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 4000,
+      "plotM2": null,
+      "pricePerM2": 788,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:32:06.914Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "albadomus:80c199b2b5",
+      "source": "albadomus",
+      "agency": "Albadomus",
+      "url": "https://www.albadomus.com/venta/se-vende-chalet-mas-parcela-urbana-montesano/",
+      "title": "SE VENDE CHALET MAS PARCELA URBANA",
+      "municipality": "Sanet y Negrals",
+      "type": "villa",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 320000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 123,
+      "plotM2": 1086,
+      "pricePerM2": 2602,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:35:55.509Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:3711af5526",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-mediterranea-de-una-sola-planta-con-piscina-privada-cerca-del-centro-de-calpe-c430/",
+      "title": "Villa mediterránea de una sola planta con piscina privada cerca del centro de Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 750000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 750000
+        }
+      ],
+      "beds": 5,
+      "baths": 2,
+      "builtM2": 157,
+      "plotM2": null,
+      "pricePerM2": 4777,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:1f45e351a8",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-con-jardin-vistas-abiertas-piscina-y-tenis-comunitaria-a-1-km-del-centro-y-del-mar-a435/",
+      "title": "Apartamento con jardín, vistas abiertas, piscina y tenis comunitaria a 1 km del centro y del mar",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 285000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": 183,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:d45f1457fa",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-cerca-del-mar-en-calpe-c382/",
+      "title": "Villa cerca del mar en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 740000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 740000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 375,
+      "plotM2": 393,
+      "pricePerM2": 1973,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:87146a3c59",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-vista-al-penon-sobre-puerto-blanco-c372/",
+      "title": "VILLA VISTA AL PEÑÓN SOBRE PUERTO BLANCO",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 900000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 900000
+        }
+      ],
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 229,
+      "plotM2": 624,
+      "pricePerM2": 3930,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:bce706fb85",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-situada-a-un-paso-de-la-playa-arenal-con-jardin-c413/",
+      "title": "Villa situada a un paso de la playa Arenal con jardín",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 448000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 448000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 164,
+      "plotM2": 821,
+      "pricePerM2": 2732,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:4c8f16fdc1",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/ubicacion-inmejorable-gran-apartamento-centrico-en-calpe-a442/",
+      "title": "Ubicación inmejorable: gran apartamento céntrico en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 352000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 352000
+        }
+      ],
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3911,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:39258d5956",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/espectacular-atico-de-una-sola-planta-con-vistas-de-240deg-en-el-corazon-de-calpe-a446/",
+      "title": "Espectacular Ático de una Sola Planta con Vistas de 240° en el Corazón de Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "price": 410000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 410000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 81,
+      "plotM2": 68,
+      "pricePerM2": 5062,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:20a41e6dac",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-una-zona-privilegiada-de-calpe-a448/",
+      "title": "Apartamento en una zona privilegiada de Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 290000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 290000
+        }
+      ],
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 117,
+      "plotM2": 117,
+      "pricePerM2": 2479,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:6acba3bd47",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/vive-junto-al-mediterraneo-en-este-acogedor-apartamento-en-calpe-a449/",
+      "title": "Vive junto al Mediterráneo en este acogedor apartamento en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 190000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 64,
+      "plotM2": 64,
+      "pricePerM2": 2969,
+      "photo": {
+        "file": "agenciamorato-6acba3bd47.webp",
+        "thumb": "agenciamorato-6acba3bd47.thumb.webp",
+        "capturedAt": "2026-08-04T20:58:56.396Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/1b/019e25b4-f75a-739e-ae2b-b976ec6d101b.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:08159c6852",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/refugio-de-elegancia-y-serenidad-en-calpe-c426/",
+      "title": "Refugio de Elegancia y Serenidad en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 895000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 895000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 190,
+      "plotM2": 880,
+      "pricePerM2": 4711,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:4b82cd9209",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/vive-en-calpe-apartamento-con-terraza-y-piscina-cerca-del-mar-a456c/",
+      "title": "Vive en Calpe: apartamento con terraza y piscina cerca del mar",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 359000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 359000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:7a19e2507a",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/vive-en-el-corazon-de-calpe-apartamento-de-2-dormitorios-con-terraza-y-todos-los-servicios-a-un-paso-a457c/",
+      "title": "Vive en el corazón de Calpe: apartamento de 2 dormitorios con terraza y todos los servicios a un paso",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 199000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "agenciamorato-7a19e2507a.webp",
+        "thumb": "agenciamorato-7a19e2507a.thumb.webp",
+        "capturedAt": "2026-08-04T20:58:56.396Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/b4/019f191d-fb04-7772-80ec-ed3c09ca7fb4.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:42a5a6666a",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-estado-impecable-con-vistas-al-mar-arenal-a413/",
+      "title": "Apartamento en estado impecable con vistas al mar-Arenal",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 230000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 55,
+      "plotM2": 55,
+      "pricePerM2": 4182,
+      "photo": {
+        "file": "agenciamorato-42a5a6666a.webp",
+        "thumb": "agenciamorato-42a5a6666a.thumb.webp",
+        "capturedAt": "2026-08-04T20:58:56.396Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/2b/019c4217-beb6-772c-8970-82fb8d52342b.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:6f7d3f20bc",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-situado-a-100-metros-de-la-playa-a404c/",
+      "title": "APARTAMENTO SITUADO A 100 METROS DE LA PLAYA",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 310000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3444,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     }
   ]

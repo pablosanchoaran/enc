@@ -1,8 +1,8 @@
 {
   "date": "2026-08-04",
-  "generatedAt": "2026-08-04T18:41:16.805Z",
+  "generatedAt": "2026-08-04T21:00:15.185Z",
   "totals": {
-    "inventory": 1780,
+    "inventory": 2032,
     "additions": 0,
     "priceDrops": 0,
     "priceRises": 0,
@@ -22,7 +22,7 @@
     {
       "id": "ferrando-moraira",
       "agency": "Ferrando Inmobiliaria",
-      "listings": 180,
+      "listings": 179,
       "status": "ok"
     },
     {
@@ -47,10 +47,7 @@
       "id": "lyt",
       "agency": "LYT Properties",
       "listings": 61,
-      "status": "ok",
-      "requests": 73,
-      "blocked": 0,
-      "errors": 0
+      "status": "ok"
     },
     {
       "id": "inmoxara",
@@ -74,6 +71,66 @@
       "id": "calablanca",
       "agency": "Inmobiliaria Calablanca",
       "listings": 3,
+      "status": "ok"
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 16,
+      "status": "ok"
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 39,
+      "status": "ok"
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 44,
+      "status": "ok"
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 36,
+      "status": "ok"
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 34,
+      "status": "ok"
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 12,
+      "status": "ok"
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 8,
+      "status": "ok"
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 31,
+      "status": "ok"
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 29,
+      "status": "ok"
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 4,
       "status": "ok"
     }
   ],

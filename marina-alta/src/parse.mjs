@@ -85,14 +85,14 @@ const WORD_END = '(?![\\p{L}\\p{N}])'
 const word = (alternatives) => new RegExp(`${WORD_START}(?:${alternatives})`, 'iu')
 
 const TYPE_PATTERNS = [
-  [word('parcelas?|solares?|terrenos?|plots?|land|building plot|grundst'), 'plot'],
+  [word('parcelas?|solar(?:es)?|terrenos?|plots?|land|building plot|grundst'), 'plot'],
   [word('villas?|chalets?|chalé|casa de campo|fincas?|country house|detached'), 'villa'],
   [word('adosad|paread|townhouses?|terraced|bungalows?|d[úu]plex'), 'townhouse'],
   [word('[áa]ticos?|penthouses?'), 'penthouse'],
   [word('pisos?|apartamentos?|apartments?|flats?|estudios?|studios?'), 'apartment'],
   [
     new RegExp(
-      `${WORD_START}(?:locales?|oficinas?|naves?|negocios?|traspasos?|almacenes?|commercial|business|shops?|offices?|bar|restaurantes?|hotel|hostal|garajes?|garages?|parking)${WORD_END}`,
+      `${WORD_START}(?:local(?:es)?|oficinas?|naves?|negocios?|traspasos?|almac[eé]n(?:es)?|commercial|business|shops?|offices?|bar|restaurantes?|hotel|hostal|garajes?|garages?|parking)${WORD_END}`,
       'iu',
     ),
     'commercial',
