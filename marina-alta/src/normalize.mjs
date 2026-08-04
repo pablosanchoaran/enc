@@ -25,7 +25,14 @@ export function normalize(raw, source, today) {
   if (!municipality) return { listing: null, reason: 'fuera de la comarca' }
   if (NON_RESIDENTIAL.has(raw.type)) return { listing: null, reason: 'no residencial' }
 
-  const pricePerM2 = raw.builtM2 ? Math.round(raw.price / raw.builtM2) : null
+  // Una parcela no tiene dormitorios ni superficie construida: si un adaptador
+  // los trae, son de otra parte de la página.
+  const isPlot = raw.type === 'plot'
+  const beds = isPlot ? null : (raw.beds ?? null)
+  const baths = isPlot ? null : (raw.baths ?? null)
+  const builtM2 = isPlot ? null : (raw.builtM2 ?? null)
+
+  const pricePerM2 = builtM2 ? Math.round(raw.price / builtM2) : null
 
   return {
     listing: {
@@ -38,9 +45,9 @@ export function normalize(raw, source, today) {
       priceHistory: [{ date: today, price: raw.price }],
       municipality,
       type: raw.type ?? 'other',
-      beds: raw.beds ?? null,
-      baths: raw.baths ?? null,
-      builtM2: raw.builtM2 ?? null,
+      beds,
+      baths,
+      builtM2,
       plotM2: raw.plotM2 ?? null,
       pricePerM2,
       image: raw.image ?? null,

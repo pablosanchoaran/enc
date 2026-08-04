@@ -272,9 +272,7 @@ async function run() {
   // Fotos de los anuncios asequibles: cuando se vendan, la agencia retirará
   // el anuncio y la imagen dejará de existir, así que hay que tenerla copiada.
   if (!args.dryRun) {
-    const candidates = listings.filter(
-      (item) => item.price <= PHOTO_PRICE_LIMIT && item.type !== 'plot',
-    )
+    const candidates = listings.filter((item) => item.price <= PHOTO_PRICE_LIMIT)
     await capturePhotos(candidates, { photosDir: PHOTOS_DIR, log })
   }
 

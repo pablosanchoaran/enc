@@ -9,6 +9,7 @@
  */
 
 import * as cheerio from 'cheerio'
+import { detectMunicipality } from '../municipalities.mjs'
 import {
   detectSaleStatus,
   detectType,
@@ -53,13 +54,42 @@ function extractPropertyLinks(html, origin, { propertyPath, propertyPattern }) {
   return [...links]
 }
 
-/** Valor de una característica escrita como "Dormitorios 3" o "Baños: 2". */
+/**
+ * Valor de una característica de la ficha, escrita como "Dormitorios: 3". Los
+ * dos puntos son obligatorios por el mismo motivo que en la localidad: el
+ * formulario de búsqueda de estas webs lista "Dormitorios 1+ 2+ 3+" y "Baños 1
+ * 2 3", y sin exigirlos toda parcela acababa con "1 habitación y 50 m²".
+ */
 function readLabelled(text, ...labels) {
   for (const label of labels) {
-    const match = text.match(new RegExp(`${label}[^\\d]{0,25}(\\d[\\d.,]*)`, 'i'))
+    const match = text.match(new RegExp(`${label}\\s*:\\s*(\\d[\\d.,]*)`, 'iu'))
     if (match) return match[1]
   }
   return null
+}
+
+/**
+ * Municipio declarado en la ficha ("Localidad: Teulada"). Se exigen los dos
+ * puntos a propósito: el formulario de búsqueda de estas webs lleva un
+ * desplegable "Localidad" con todos los pueblos de la comarca, y sin esa
+ * exigencia el primero de la lista se colaría como ubicación del anuncio.
+ */
+function readLocality(text) {
+  const match = text.match(
+    /(?:localidad|poblaci[óo]n|municipio|ciudad)\s*:\s*([^:|]{3,40}?)\s*(?:[\p{Lu}][\p{Ll}]+\s*:|$)/iu,
+  )
+  return match?.[1]?.trim() ?? null
+}
+
+/**
+ * Algunas webs concatenan su propia ruta con la URL del CDN y dejan un
+ * `og:image` como `/objetos/temp/source/lemon/https://cdn.../foto.jpg`. La
+ * dirección buena es la que empieza en el último `https://`.
+ */
+function cleanImageUrl(raw) {
+  if (!raw) return null
+  const embedded = raw.lastIndexOf('https://')
+  return embedded > 0 ? raw.slice(embedded) : raw
 }
 
 function parsePropertyPage(html, url) {
@@ -75,6 +105,8 @@ function parsePropertyPage(html, url) {
     $('[class*="ref"]').first().text().replace(/ref\.?/i, '').trim().split(/\s/)[0] || null
   const body = $('body').text().replace(/\s+/g, ' ')
   const slug = new URL(url).pathname
+  const description = metaContent(html, 'og:description') ?? ''
+  const locality = readLocality(body)
 
   return {
     sourceRef: reference || slug.split('/').filter(Boolean).pop(),
@@ -83,12 +115,22 @@ function parsePropertyPage(html, url) {
     price,
     beds: parseCount(readLabelled(body, 'dormitorios', 'habitaciones', 'bedrooms')),
     baths: parseCount(readLabelled(body, 'baños', 'banos', 'bathrooms')),
-    builtM2: parseArea(readLabelled(body, 'superficie construida', 'construidos', 'superficie')),
+    // "Construido en: 1920" es el año, no la superficie: por eso no vale
+    // cualquier etiqueta que empiece por "construido".
+    builtM2: parseArea(
+      readLabelled(body, 'superficie construida', 'm2 construidos', 'construidos', 'edificado'),
+    ),
     plotM2: parseArea(readLabelled(body, 'parcela', 'terreno', 'solar')),
     type: detectType(title, slug.replace(/-/g, ' ')),
-    image: metaContent(html, 'og:image'),
+    image: cleanImageUrl(metaContent(html, 'og:image')),
     saleStatus: detectSaleStatus($),
-    locationHint: [title, slug.replace(/-/g, ' ')].filter(Boolean).join(' | '),
+    // Cuando la ficha declara su localidad, esa manda y no se mezcla con nada
+    // más: una descripción que diga "a diez minutos de Dénia" no debe mover la
+    // casa de pueblo a Dénia.
+    municipality: locality ? detectMunicipality(locality) : null,
+    locationHint: [locality, title, slug.replace(/-/g, ' '), description]
+      .filter(Boolean)
+      .join(' | '),
   }
 }
 

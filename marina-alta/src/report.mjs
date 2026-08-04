@@ -191,10 +191,10 @@ export function renderReport({ daily, listings, thumbnails }) {
   const chartRows = pricePerM2ByMunicipality(active)
   const readableDate = LONG_DATE.format(new Date(`${daily.date}T12:00:00`))
 
-  // Vivienda por debajo del presupuesto: el suelo sin construir se queda fuera.
-  const budget = active
-    .filter((item) => item.price <= BUDGET && item.type !== 'plot')
-    .sort((a, b) => a.price - b.price)
+  // Todo lo que esté por debajo del presupuesto, parcelas incluidas: quien
+  // busca barato en la comarca también mira solares. El filtro de tipo permite
+  // dejarlas fuera de un vistazo.
+  const budget = active.filter((item) => item.price <= BUDGET).sort((a, b) => a.price - b.price)
   const budgetMunicipalities = [...new Set(budget.map((item) => item.municipality))].sort((a, b) =>
     a.localeCompare(b, 'es'),
   )
@@ -415,11 +415,11 @@ export function renderReport({ daily, listings, thumbnails }) {
   <section>
     <div class="section__head">
       <h2>Por debajo de ${euros(BUDGET)}</h2>
-      <span class="section__note" id="b-count">${budget.length} viviendas</span>
+      <span class="section__note" id="b-count">${budget.length} inmuebles</span>
     </div>
     ${
       budget.length === 0
-        ? `<p class="empty">Ahora mismo no hay ninguna vivienda por debajo de ${euros(BUDGET)} en el inventario.</p>`
+        ? `<p class="empty">Ahora mismo no hay nada por debajo de ${euros(BUDGET)} en el inventario.</p>`
         : `<div class="filters">
       <label>Municipio<select id="b-municipality"><option value="">Todos</option>${budgetMunicipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
       <label>Tipo<select id="b-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).filter(([value]) => budget.some((item) => item.type === value)).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
@@ -428,7 +428,7 @@ export function renderReport({ daily, listings, thumbnails }) {
       <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
     </div>
     <div class="grid" id="b-grid">${budget.map((item) => renderCard(item, thumbnails)).join('')}</div>
-    <p class="empty" id="b-no-match" hidden>Ninguna vivienda encaja con estos filtros.</p>`
+    <p class="empty" id="b-no-match" hidden>Ningún inmueble encaja con estos filtros.</p>`
     }
   </section>
 
@@ -527,7 +527,7 @@ export function renderReport({ daily, listings, thumbnails }) {
     }
 
     wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');
-    wire('b-', 'b-grid', 'b-count', 'b-no-match', 'vivienda', 'viviendas');
+    wire('b-', 'b-grid', 'b-count', 'b-no-match', 'inmueble', 'inmuebles');
   })();
 </script>
 `

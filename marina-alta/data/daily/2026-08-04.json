@@ -1,8 +1,8 @@
 {
   "date": "2026-08-04",
-  "generatedAt": "2026-08-04T21:00:15.185Z",
+  "generatedAt": "2026-08-04T21:39:21.672Z",
   "totals": {
-    "inventory": 2032,
+    "inventory": 2050,
     "additions": 0,
     "priceDrops": 0,
     "priceRises": 0,
@@ -34,13 +34,13 @@
     {
       "id": "denialara",
       "agency": "Denialara Servicios Inmobiliarios",
-      "listings": 20,
+      "listings": 25,
       "status": "ok"
     },
     {
       "id": "llobell",
       "agency": "Llobell Inmobiliaris",
-      "listings": 29,
+      "listings": 39,
       "status": "ok"
     },
     {
@@ -112,7 +112,7 @@
     {
       "id": "gpereto",
       "agency": "Grupo Peretó",
-      "listings": 8,
+      "listings": 11,
       "status": "ok"
     },
     {

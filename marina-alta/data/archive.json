@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:00:15.185Z",
+  "updatedAt": "2026-08-04T21:39:21.672Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -202,7 +202,7 @@
       "url": "https://www.ferrando-moraira.com/for-sale/penthouse-apartment-for-sale-in-benitachell-village-with-3-bedrooms-and-large-sun-terrace-a0876/",
       "title": "Penthouse apartment for sale in Benitachell Village with 3 bedrooms and large sun terrace",
       "municipality": "El Poble Nou de Benitatxell",
-      "type": "villa",
+      "type": "penthouse",
       "price": 318000,
       "priceHistory": [
         {
@@ -256,7 +256,7 @@
       "url": "https://www.ferrando-moraira.com/for-sale/2-homes-in-1-sea-view-villa-in-benissa-costa-ch3374/",
       "title": "2 Homes in 1 – Sea View Villa in Benissa-Costa",
       "municipality": "Benissa",
-      "type": "villa",
+      "type": "house",
       "price": 550000,
       "priceHistory": [
         {
@@ -625,7 +625,12 @@
       "builtM2": null,
       "plotM2": 1164,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-6814601c0e.webp",
+        "thumb": "ferrando-moraira-6814601c0e.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/0a/019d9b11-85e9-70c8-8cbc-80921494d00a.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-04",
@@ -698,7 +703,7 @@
       "url": "https://www.ferrando-moraira.com/for-sale/moraira-charming-bungalow-within-walking-distance-to-the-village-b1491/",
       "title": "Moraira, Charming bungalow within walking distance to the village",
       "municipality": "Teulada-Moraira",
-      "type": "villa",
+      "type": "townhouse",
       "price": 310000,
       "priceHistory": [
         {
@@ -779,7 +784,7 @@
       "url": "https://www.ferrando-moraira.com/for-sale/new-villa-in-the-sought-after-el-portet-area-of-moraira-with-flat-plot-views-and-walking-distance-to-the-beach-ch3324/",
       "title": "New villa in the sought-after El Portet area of Moraira, with flat plot, views and walking distance to the beach",
       "municipality": "Teulada-Moraira",
-      "type": "plot",
+      "type": "villa",
       "price": 1175000,
       "priceHistory": [
         {
@@ -1027,7 +1032,7 @@
       "url": "https://www.ferrando-moraira.com/for-sale/house-in-moraira-small-plot-communal-pool-near-downtown-bungalows-costera-b1463/",
       "title": "House in Moraira – Small Plot, Communal Pool, Near Downtown | Bungalows Costera",
       "municipality": "Teulada-Moraira",
-      "type": "plot",
+      "type": "house",
       "price": 290000,
       "priceHistory": [
         {
@@ -1592,9 +1597,9 @@
       ],
       "beds": 2,
       "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 3799,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
       "photo": {
         "file": "calablanca-d0fc0ab4cd.webp",
         "thumb": "calablanca-d0fc0ab4cd.thumb.webp",
@@ -1624,9 +1629,9 @@
       ],
       "beds": 2,
       "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 8900,
+      "builtM2": null,
+      "plotM2": 420,
+      "pricePerM2": null,
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
@@ -2421,11 +2426,11 @@
           "price": 179000
         }
       ],
-      "beds": 1,
+      "beds": 2,
       "baths": 1,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 3580,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
       "photo": {
         "file": "catorceinmo-8ca598b8f6.webp",
         "thumb": "catorceinmo-8ca598b8f6.thumb.webp",
@@ -2453,11 +2458,11 @@
           "price": 185000
         }
       ],
-      "beds": 1,
+      "beds": 4,
       "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 3700,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
       "photo": {
         "file": "catorceinmo-24eac36f0e.webp",
         "thumb": "catorceinmo-24eac36f0e.thumb.webp",
@@ -2485,11 +2490,11 @@
           "price": 195000
         }
       ],
-      "beds": 1,
+      "beds": 4,
       "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 3900,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
       "photo": {
         "file": "catorceinmo-cc262cd45d.webp",
         "thumb": "catorceinmo-cc262cd45d.thumb.webp",
@@ -2549,11 +2554,11 @@
           "price": 320000
         }
       ],
-      "beds": 1,
+      "beds": 2,
       "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 6400,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
