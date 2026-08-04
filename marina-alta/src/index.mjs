@@ -18,6 +18,8 @@ import { Fetcher } from './fetcher.mjs'
 import { diffInventory } from './diff.mjs'
 import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
+import * as ego from './adapters/ego.mjs'
+import * as listado from './adapters/listado.mjs'
 import * as sooprema from './adapters/sooprema.mjs'
 import * as thinkspain from './adapters/thinkspain.mjs'
 
@@ -26,15 +28,24 @@ const DATA_DIR = join(ROOT, 'data')
 const INVENTORY_FILE = join(DATA_DIR, 'listings.json')
 const REPORT_FILE = join(ROOT, 'report', 'index.html')
 
-const ADAPTERS = { thinkspain, sooprema }
+const ADAPTERS = { thinkspain, sooprema, ego, listado }
 
 function parseArgs(argv) {
-  const args = { dryRun: false, source: null, limit: Infinity, feedLimit: 250, reportOnly: false }
+  const args = {
+    dryRun: false,
+    source: null,
+    limit: Infinity,
+    feedLimit: 250,
+    refreshBudget: 40,
+    reportOnly: false,
+  }
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i]
     if (arg === '--dry-run') args.dryRun = true
     else if (arg === '--report-only') args.reportOnly = true
     else if (arg === '--source') args.source = argv[++i]
+    // Vuelve a descargar todas las fichas conocidas, sin fiarse del lastmod.
+    else if (arg === '--refresh') args.refreshBudget = Infinity
     else if (arg === '--limit') {
       const value = Number.parseInt(argv[++i], 10)
       args.limit = Number.isFinite(value) ? value : Infinity
@@ -122,6 +133,7 @@ async function run() {
         log,
         limit: args.limit,
         feedLimit: args.feedLimit,
+        refreshBudget: args.refreshBudget,
       })
     } catch (error) {
       log(`  ✖ error del adaptador: ${error.message}`)
@@ -191,10 +203,26 @@ async function run() {
       .filter((source) => !previousListings.some((item) => item.source === source.id))
       .map((source) => source.id),
   )
-  const additions = result.additions.filter((item) => !bootstrapped.has(item.source))
-  if (bootstrapped.size > 0) {
-    const loaded = result.additions.length - additions.length
-    log(`  (carga inicial de ${[...bootstrapped].join(', ')}: ${loaded} anuncios, no son altas)`)
+  // El barrido de ThinkSpain solo ve los primeros resultados de cada zona y
+  // esa selección rota entre peticiones, así que "no estaba ayer" no significa
+  // "se ha publicado hoy". En esas fuentes las altas salen solo de su feed de
+  // novedades, que sí va por fecha.
+  const sweepOnly = new Set(
+    sources.filter((source) => source.sweepOnly).map((source) => source.id),
+  )
+  const initialLoad = result.additions.filter((item) => bootstrapped.has(item.source))
+  const swept = result.additions.filter(
+    (item) => !bootstrapped.has(item.source) && sweepOnly.has(item.source) && !item.fromFeed,
+  )
+  const additions = result.additions.filter(
+    (item) => !initialLoad.includes(item) && !swept.includes(item),
+  )
+
+  if (initialLoad.length > 0) {
+    log(`  (carga inicial de ${[...bootstrapped].join(', ')}: ${initialLoad.length} anuncios)`)
+  }
+  if (swept.length > 0) {
+    log(`  (${swept.length} hallazgos del barrido, no publicaciones de hoy)`)
   }
 
   // Varias ejecuciones parciales el mismo día se suman en el informe del día

@@ -1,9 +1,17 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 
+import * as cheerio from 'cheerio'
+
 import { diffInventory } from '../src/diff.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
-import { detectType, parseArea, parsePrice, parseSitemap } from '../src/parse.mjs'
+import {
+  detectSaleStatus,
+  detectType,
+  parseArea,
+  parsePrice,
+  parseSitemap,
+} from '../src/parse.mjs'
 
 test('parsePrice entiende los formatos que usan las agencias', () => {
   assert.equal(parsePrice('235.000 €'), 235000)
@@ -26,6 +34,24 @@ test('detectType clasifica por el texto del anuncio', () => {
   assert.equal(detectType('Parcela urbana en Els Poblets'), 'plot')
   assert.equal(detectType('Apartamento de 2 habitaciones'), 'apartment')
   assert.equal(detectType('Freehold Bar-Restaurant for Sale'), 'commercial')
+})
+
+test('manda el término que abre el anuncio, no el que aparezca después', () => {
+  assert.equal(detectType('Ático con garaje en venta en Dénia'), 'penthouse', 'la tilde cuenta')
+  assert.equal(detectType('Casa de 3 habitaciones con garaje'), 'house')
+  assert.equal(detectType('Chalet para reformar con parcela de 800 m²'), 'villa')
+  assert.equal(detectType('En venta dos locales comerciales en Pego'), 'commercial')
+  assert.equal(detectType('Se vende plaza de garaje'), 'commercial')
+})
+
+test('el estado comercial se lee de las etiquetas, no del texto suelto', () => {
+  const sold = cheerio.load('<div><span class="tag">Vendido</span><p>Chalet en Calpe</p></div>')
+  const footer = cheerio.load('<footer><p>Todos los derechos reservados Inmobiliaria X</p></footer>')
+  const reserved = cheerio.load('<div class="tags-listado"><span>Reservado</span></div>')
+
+  assert.equal(detectSaleStatus(sold), 'sold')
+  assert.equal(detectSaleStatus(reserved), 'reserved')
+  assert.equal(detectSaleStatus(footer), 'available', 'el pie de página no marca nada')
 })
 
 test('el geo-filtro acepta la comarca y rechaza el resto', () => {
@@ -101,15 +127,15 @@ test('un precio menor se registra como bajada y guarda el histórico', () => {
   assert.equal(result.inventory[0].firstSeen, '2026-08-01', 'la fecha de alta no se pisa')
 })
 
-test('una baja solo se anota tras tres rastreos sin verla', () => {
+test('una baja solo se anota tras una semana sin verla', () => {
   let inventory = [base]
-  for (const day of ['2026-08-02', '2026-08-03']) {
-    const result = diffInventory(inventory, [], day)
-    assert.equal(result.removals.length, 0, `no debería darse de baja el ${day}`)
+  for (let day = 2; day <= 7; day += 1) {
+    const result = diffInventory(inventory, [], `2026-08-0${day}`)
+    assert.equal(result.removals.length, 0, `no debería darse de baja el día ${day}`)
     inventory = result.inventory
   }
 
-  const final = diffInventory(inventory, [], '2026-08-04')
+  const final = diffInventory(inventory, [], '2026-08-08')
   assert.equal(final.removals.length, 1)
   assert.equal(final.inventory.length, 0)
 })

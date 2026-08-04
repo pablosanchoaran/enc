@@ -7,7 +7,8 @@
       "agency": "ThinkSpain (portal)",
       "origin": "https://www.thinkspain.com",
       "enabled": true,
-      "notes": "Feed de últimas altas de toda España + barrido por municipio de la comarca."
+      "notes": "Feed de últimas altas de toda España + barrido por municipio de la comarca. sweepOnly: el barrido solo ve los primeros resultados de cada zona y rotan, así que las altas se cuentan solo desde el feed.",
+      "sweepOnly": true
     },
     {
       "id": "ferrando-moraira",
@@ -25,11 +26,43 @@
     },
     {
       "id": "denialara",
-      "adapter": "sooprema",
+      "adapter": "listado",
       "agency": "Denialara Servicios Inmobiliarios",
       "origin": "https://www.denialara.com",
+      "listingUrls": [
+        "https://www.denialara.com/propiedades/venta/todas/"
+      ],
+      "enabled": true,
+      "notes": "Sin sitemap.xml y con la paginación prohibida en su robots.txt: se recoge la primera página del listado de venta."
+    },
+    {
+      "id": "llobell",
+      "adapter": "listado",
+      "agency": "Llobell Inmobiliaris",
+      "origin": "https://www.llobellinmobiliaris.com",
+      "listingUrls": [
+        "https://www.llobellinmobiliaris.com/propiedades/venta/todas/"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "lyt",
+      "adapter": "ego",
+      "agency": "LYT Properties",
+      "origin": "https://www.lytproperties.com",
+      "enabled": true,
+      "notes": "Web sobre eGO Real Estate; oficina en Gata de Gorgos, cubre Jávea y alrededores."
+    },
+    {
+      "id": "inmodalal",
+      "adapter": "listado",
+      "agency": "InmoDalal",
+      "origin": "https://inmodalal.es",
+      "listingUrls": [
+        "https://inmodalal.es/propiedades/"
+      ],
       "enabled": false,
-      "notes": "No publica sitemap.xml y su robots.txt prohíbe la paginación de los listados: necesita un adaptador que recorra la primera página de cada listado."
+      "notes": "Benissa (la agencia de Dalal Ayoubi). Su servidor responde 403 a cualquier User-Agent que no sea un navegador, incluido el nuestro y su propio robots.txt: entrar exigiría hacerse pasar por un navegador, cosa que este extractor no hace. Además su listado pagina por JavaScript."
     },
     {
       "id": "inmoxara",
@@ -54,11 +87,14 @@
     },
     {
       "id": "calablanca",
-      "adapter": "sooprema",
+      "adapter": "listado",
       "agency": "Inmobiliaria Calablanca",
       "origin": "https://www.calablanca.com",
-      "enabled": false,
-      "notes": "Mismo caso que Denialara: sin sitemap.xml y con la paginación prohibida en su robots.txt."
+      "listingUrls": [
+        "https://www.calablanca.com/propiedades/venta/todas/"
+      ],
+      "enabled": true,
+      "notes": "Mismo caso que Denialara."
     }
   ]
 }

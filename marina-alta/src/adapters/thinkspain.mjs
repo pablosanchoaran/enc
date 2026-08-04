@@ -200,7 +200,7 @@ export async function collect({ fetcher, known, log, limit = Infinity, feedLimit
       if (!html) continue
       const item = parsePropertyPage(html, propertyUrl)
       // El feed es nacional: la mayoría de fichas caen fuera de la comarca.
-      if (item && detectMunicipality(item.locationHint)) push(item)
+      if (item && detectMunicipality(item.locationHint)) push({ ...item, fromFeed: true })
     }
   }
   log(`  altas del feed nacional dentro de la comarca: ${found.length - beforeLatest}`)

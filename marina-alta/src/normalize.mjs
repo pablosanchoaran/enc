@@ -44,6 +44,12 @@ export function normalize(raw, source, today) {
       plotM2: raw.plotM2 ?? null,
       pricePerM2,
       image: raw.image ?? null,
+      // Disponible, reservado o vendido: las agencias dejan publicado lo que ya
+      // no está en el mercado, y conviene distinguirlo.
+      saleStatus: raw.saleStatus ?? 'available',
+      // Si la fuente garantiza que esto es una publicación reciente y no un
+      // hallazgo del barrido. Ver `sweepOnly` en sources/agencies.json.
+      fromFeed: raw.fromFeed ?? false,
       lastmod: raw.lastmod ?? null,
       firstSeen: today,
       lastSeen: today,

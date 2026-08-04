@@ -9,7 +9,15 @@
  */
 
 import * as cheerio from 'cheerio'
-import { detectType, metaContent, parseArea, parseCount, parsePrice, parseSitemap } from '../parse.mjs'
+import {
+  detectSaleStatus,
+  detectType,
+  metaContent,
+  parseArea,
+  parseCount,
+  parsePrice,
+  parseSitemap,
+} from '../parse.mjs'
 
 /** Segmentos de URL que Sooprema usa para las fichas, según el idioma del sitio. */
 const PROPERTY_SEGMENTS = [
@@ -104,7 +112,10 @@ function parsePropertyPage(html, url) {
     title,
     price,
     ...facts,
-    type: detectType(title, description, slug.replace(/-/g, ' ')),
+    // La descripción queda fuera a propósito: "con terreno de 800 m²"
+    // convertiría un chalet en una parcela.
+    type: detectType(title, slug.replace(/-/g, ' ')),
+    saleStatus: detectSaleStatus($),
     image: image ?? null,
     locationHint: [city, title, description, slug.replace(/-/g, ' ')].filter(Boolean).join(' | '),
   }

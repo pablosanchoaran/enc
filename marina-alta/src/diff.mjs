@@ -3,8 +3,12 @@
  * altas, cambios de precio y anuncios retirados.
  */
 
-/** Un anuncio se da por retirado tras no verse en 3 ejecuciones seguidas. */
-const MISSING_RUNS_BEFORE_REMOVED = 3
+/**
+ * Un anuncio se da por retirado tras no verse en 7 ejecuciones seguidas, casi
+ * una semana. Con tres bastaba para inventar bajas: los listados de ThinkSpain
+ * rotan qué anuncios enseñan, así que faltar un par de días no significa nada.
+ */
+const MISSING_RUNS_BEFORE_REMOVED = 7
 
 export function diffInventory(previousList, currentList, today) {
   const previous = new Map(previousList.map((item) => [item.id, item]))

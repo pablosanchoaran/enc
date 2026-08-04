@@ -14,6 +14,7 @@ npm run dry-run                        # no escribe nada, muestra una muestra
 node src/index.mjs --source sooprema   # solo un adaptador...
 node src/index.mjs --source ferrando-moraira   # ...o una sola agencia
 node src/index.mjs --limit 20          # acota las peticiones (pruebas)
+node src/index.mjs --refresh           # re-descarga todo, sin fiarse del lastmod
 node src/index.mjs --report-only       # regenera el informe con lo ya guardado
 ```
 
@@ -38,12 +39,20 @@ para desactivarla temporalmente, `"enabled": false`.
 | Adaptador | Cubre |
 |---|---|
 | `thinkspain` | Portal ThinkSpain: barrido por zonas de la comarca + feed de altas del día |
-| `sooprema` | Webs sobre el CMS Sooprema: Ferrando, MLS Dénia, Denialara, InmoXara, Daniamed, Benimo Villas, Calablanca |
+| `sooprema` | Webs sobre el CMS Sooprema con sitemap: Ferrando, MLS Dénia, InmoXara, Daniamed, Benimo Villas |
+| `listado` | Agencias sin sitemap, partiendo de las URLs de listado que declare la fuente: Llobell, Denialara, Calablanca |
+| `ego` | Webs sobre eGO Real Estate, con JSON-LD en cada ficha: LYT Properties |
+
+Cada anuncio lleva su estado comercial (`disponible`, `reservado`, `vendido`), leído de
+la etiqueta que pone la propia agencia. Importa: las agencias dejan publicado meses lo
+que ya han vendido — hay 85 anuncios vendidos ahora mismo en el inventario.
 
 Quedan deliberadamente fuera: **Idealista** y **Fotocasa** (sus condiciones de
 uso prohíben el rastreo y bloquean por IP), **Kyero** (Cloudflare responde 403
-incluso al sitemap que su propio robots.txt anuncia) y **Green-Acres** (su
-robots.txt bloquea explícitamente a los agentes de Anthropic).
+incluso al sitemap que su propio robots.txt anuncia), **Green-Acres** (su
+robots.txt bloquea explícitamente a los agentes de Anthropic) e **InmoDalal**
+(su servidor responde 403 a todo User-Agent que no sea un navegador, y este
+extractor no se hace pasar por uno).
 
 ## Cómo se comporta el rastreador
 

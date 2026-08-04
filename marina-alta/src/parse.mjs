@@ -77,30 +77,87 @@ export function parseCount(text) {
   return value >= 0 && value <= 50 ? value : null
 }
 
+// `\b` no sirve aquí: para JavaScript "á" no es carácter de palabra, así que
+// `\bático` no casa con "Ático con garaje". Los límites van con propiedades
+// Unicode.
+const WORD_START = '(?<![\\p{L}\\p{N}])'
+const WORD_END = '(?![\\p{L}\\p{N}])'
+const word = (alternatives) => new RegExp(`${WORD_START}(?:${alternatives})`, 'iu')
+
 const TYPE_PATTERNS = [
-  [/\b(parcela|solar|terreno|plot|land|building plot|grundst)/i, 'plot'],
-  [/\b(villa|chalet|chalé|casa de campo|finca|country house|detached)/i, 'villa'],
-  [/\b(adosad|paread|townhouse|terraced|bungalow|duplex|dúplex)/i, 'townhouse'],
-  [/\b(ático|atico|penthouse)/i, 'penthouse'],
-  [/\b(piso|apartamento|apartment|flat|estudio|studio)/i, 'apartment'],
+  [word('parcelas?|solares?|terrenos?|plots?|land|building plot|grundst'), 'plot'],
+  [word('villas?|chalets?|chalé|casa de campo|fincas?|country house|detached'), 'villa'],
+  [word('adosad|paread|townhouses?|terraced|bungalows?|d[úu]plex'), 'townhouse'],
+  [word('[áa]ticos?|penthouses?'), 'penthouse'],
+  [word('pisos?|apartamentos?|apartments?|flats?|estudios?|studios?'), 'apartment'],
   [
-    /\b(local|oficina|nave|negocio|traspaso|commercial|business|shop|office|bar|restaurant|hotel|hostal|garaje|garage|parking)\b/i,
+    new RegExp(
+      `${WORD_START}(?:locales?|oficinas?|naves?|negocios?|traspasos?|almacenes?|commercial|business|shops?|offices?|bar|restaurantes?|hotel|hostal|garajes?|garages?|parking)${WORD_END}`,
+      'iu',
+    ),
     'commercial',
   ],
-  [/\b(casa|house|home)/i, 'house'],
+  [word('casas?|houses?|home'), 'house'],
 ]
 
-/** Clasifica el tipo de inmueble a partir del texto del anuncio. */
+/**
+ * Clasifica el inmueble por el término que aparece antes en el texto. En
+ * castellano el sustantivo principal abre el anuncio: "Ático con garaje" es un
+ * ático, "Casa con parcela" es una casa y "Locales comerciales" un local.
+ */
 export function detectType(...texts) {
   const haystack = texts.filter(Boolean).join(' ')
-  for (const [pattern, type] of TYPE_PATTERNS) {
-    if (pattern.test(haystack)) return type
+  if (!haystack) return 'other'
+
+  let best = null
+  for (const [index, [pattern, type]] of TYPE_PATTERNS.entries()) {
+    const match = haystack.match(pattern)
+    if (!match) continue
+    if (!best || match.index < best.position || (match.index === best.position && index < best.index)) {
+      best = { type, position: match.index, index }
+    }
   }
-  return 'other'
+  return best?.type ?? 'other'
 }
 
 /** Tipos que no son vivienda ni suelo residencial: se descartan del informe. */
 export const NON_RESIDENTIAL = new Set(['commercial'])
+
+/**
+ * Estado comercial del anuncio. Las agencias dejan publicado lo vendido y lo
+ * reservado durante meses, así que sin esto el informe enseña casas que ya no
+ * están a la venta.
+ */
+const STATUS_WORDS = [
+  [/^(vendido|vendida|vendu|verkauft|verkocht|sold|sold out)$/i, 'sold'],
+  [
+    /^(reservado|reservada|reserved|under offer|bajo oferta|réservé|reserviert|gereserveerd)$/i,
+    'reserved',
+  ],
+]
+
+/**
+ * Busca una etiqueta de estado entre los elementos de la página. Solo cuenta
+ * cuando el texto del elemento es exactamente la palabra: "Todos los derechos
+ * reservados" del pie no puede marcar una casa como reservada.
+ */
+export function detectSaleStatus($) {
+  let status = null
+  $('span, div, p, li, strong, em, b, h2, h3, h4').each((_, element) => {
+    if (status === 'sold') return
+    const node = $(element)
+    if (node.children().length > 0) return
+
+    const text = node.text().trim()
+    if (!text || text.length > 20) return
+    for (const [pattern, value] of STATUS_WORDS) {
+      if (!pattern.test(text)) continue
+      // "vendido" gana a "reservado" si aparecieran los dos.
+      if (value === 'sold' || status === null) status = value
+    }
+  })
+  return status ?? 'available'
+}
 
 /** Extrae todos los bloques JSON-LD de una página, ya parseados. */
 export function extractJsonLd(html) {

@@ -12,6 +12,9 @@
     --accent-soft: #e0efef;
     --drop: #2c7a57;
     --rise: #a9522a;
+    --rise-soft: #f6e9e2;
+    --sold: #6b7679;
+    --sold-soft: #ebefef;
     --radius: 10px;
     --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -29,6 +32,9 @@
       --accent-soft: #14292b;
       --drop: #56b184;
       --rise: #d08355;
+      --rise-soft: #2c1f18;
+      --sold: #8a9599;
+      --sold-soft: #1b2426;
     }
   }
   :root[data-theme="dark"] {
@@ -42,6 +48,9 @@
     --accent-soft: #14292b;
     --drop: #56b184;
     --rise: #d08355;
+    --rise-soft: #2c1f18;
+    --sold: #8a9599;
+    --sold-soft: #1b2426;
   }
   :root[data-theme="light"] {
     --bg: #f5f8f8;
@@ -54,6 +63,9 @@
     --accent-soft: #e0efef;
     --drop: #2c7a57;
     --rise: #a9522a;
+    --rise-soft: #f6e9e2;
+    --sold: #6b7679;
+    --sold-soft: #ebefef;
   }
 
   body {
@@ -100,7 +112,11 @@
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
   .card__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .chip { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
-  .card__place { font-size: 0.82rem; color: var(--ink-muted); text-align: right; }
+  .chip--reserved { color: var(--rise); background: var(--rise-soft); }
+  .chip--sold { color: var(--sold); background: var(--sold-soft); }
+  .card--sold { opacity: 0.72; }
+  .card--sold .card__price { text-decoration: line-through; text-decoration-thickness: 1px; }
+  .card__place { font-size: 0.82rem; color: var(--ink-muted); text-align: right; margin-left: auto; }
   .card__price { font-family: var(--display); font-size: 1.5rem; font-variant-numeric: tabular-nums; margin: 0; }
   .card__unit { font-family: var(--mono); font-size: 0.76rem; color: var(--ink-muted); margin: -6px 0 0; }
   .card__title { font-family: var(--body); font-size: 0.92rem; font-weight: 500; line-height: 1.35; }
@@ -152,7 +168,7 @@
   <header class="masthead">
     <span class="masthead__eyebrow">Marina Alta · venta</span>
     <h1>Novedades inmobiliarias</h1>
-    <p class="masthead__date">lunes, 3 de agosto de 2026</p>
+    <p class="masthead__date">martes, 4 de agosto de 2026</p>
   </header>
 
   <div class="tiles">
@@ -160,7 +176,7 @@
     <div class="tile tile--drop"><span class="tile__value">0</span><span class="tile__label">bajadas de precio</span></div>
     <div class="tile tile--rise"><span class="tile__value">0</span><span class="tile__label">subidas de precio</span></div>
     <div class="tile"><span class="tile__value">0</span><span class="tile__label">retiradas</span></div>
-    <div class="tile"><span class="tile__value">1282</span><span class="tile__label">en seguimiento</span></div>
+    <div class="tile"><span class="tile__value">1780</span><span class="tile__label">en seguimiento</span></div>
   </div>
 
   <section>
@@ -174,18 +190,65 @@
   <section>
     <div class="section__head">
       <h2>Por debajo de 260.000 €</h2>
-      <span class="section__note" id="b-count">125 viviendas</span>
+      <span class="section__note" id="b-count">170 viviendas</span>
     </div>
     <div class="filters">
-      <label>Municipio<select id="b-municipality"><option value="">Todos</option><option>Alcalalí</option><option>Beniarbeig</option><option>Benidoleig</option><option>Benissa</option><option>Calp / Calpe</option><option>Dénia</option><option>El Poble Nou de Benitatxell</option><option>El Verger</option><option>Els Poblets</option><option>Gata de Gorgos</option><option>Ondara</option><option>Orba</option><option>Pedreguer</option><option>Pego</option><option>Sanet y Negrals</option><option>Teulada-Moraira</option><option>Xaló / Jalón</option></select></label>
+      <label>Municipio<select id="b-municipality"><option value="">Todos</option><option>Alcalalí</option><option>Beniarbeig</option><option>Benidoleig</option><option>Benissa</option><option>Calp / Calpe</option><option>Dénia</option><option>El Poble Nou de Benitatxell</option><option>El Verger</option><option>Els Poblets</option><option>Gata de Gorgos</option><option>Llíber</option><option>Ondara</option><option>Orba</option><option>Pedreguer</option><option>Pego</option><option>Sanet y Negrals</option><option>Teulada-Moraira</option><option>Xaló / Jalón</option></select></label>
       <label>Tipo<select id="b-type"><option value="">Todos</option><option value="villa">Villa / chalet</option><option value="house">Casa</option><option value="townhouse">Adosado / bungaló</option><option value="apartment">Piso</option><option value="penthouse">Ático</option><option value="other">Otro</option></select></label>
-      <label>Agencia<select id="b-agency"><option value="">Todas</option><option>Daniamed</option><option>Ferrando Inmobiliaria</option><option>InmoXara</option><option>MLS Dénia</option><option>ThinkSpain (portal)</option></select></label>
+      <label>Agencia<select id="b-agency"><option value="">Todas</option><option>Daniamed</option><option>Denialara Servicios Inmobiliarios</option><option>Ferrando Inmobiliaria</option><option>Inmobiliaria Calablanca</option><option>InmoXara</option><option>Llobell Inmobiliaris</option><option>LYT Properties</option><option>MLS Dénia</option><option>ThinkSpain (portal)</option></select></label>
+      <label>Estado<select id="b-status"><option value="available">Solo disponibles (143)</option><option value="">Todos, incluidos vendidos (170)</option><option value="reserved">Solo reservados (5)</option><option value="sold">Solo vendidos (22)</option></select></label>
       <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="260000"></label>
     </div>
     <div class="grid" id="b-grid">
-    <article class="card" data-municipality="Orba" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="135000">
+    <article class="card card--available" data-municipality="Ondara" data-type="house" data-agency="LYT Properties" data-price="95000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">Ondara</span>
+      </div>
+      <p class="card__price">95.000 €</p>
+      
+      <h3 class="card__title">Casa de pueblo en Ondara de dos alturas a reformar por completo</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/casa-de-pueblo-en-ondara-de-dos-alturas-a-reformar-por-completo/21459989" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="house" data-agency="LYT Properties" data-price="109950" data-status="available">
+      <div class="card__head">
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">Gata de Gorgos</span>
+      </div>
+      <p class="card__price">109.950 €</p>
+      
+      <h3 class="card__title">Casa en ruinas, idealmente ubicada en una de las calles más céntricas de la localidad de Gata</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/casa-en-ruinas-idealmente-ubicada-en-una-de-las-calles-mas-centricas-de-la-localidad-de-gata/21303137" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Ondara" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="122000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Ondara</span>
+      </div>
+      <p class="card__price">122.000 €</p>
+      
+      <h3 class="card__title">Casa de 3 habitaciones en Ondara en venta - 122.000 € (Ref: 9877422)</h3>
+      <ul class="card__facts"><li>3 hab.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9877422" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Orba" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="135000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Orba</span>
       </div>
       <p class="card__price">135.000 €</p>
@@ -197,9 +260,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9566328" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="145000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="145000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Pedreguer</span>
       </div>
       <p class="card__price">145.000 €</p>
@@ -211,9 +275,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9991453" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="other" data-agency="ThinkSpain (portal)" data-price="145000">
+    <article class="card card--available" data-municipality="Dénia" data-type="other" data-agency="ThinkSpain (portal)" data-price="145000" data-status="available">
       <div class="card__head">
         <span class="chip">Otro</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">145.000 €</p>
@@ -225,9 +290,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9942606" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="148500">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="148500" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">148.500 €</p>
@@ -239,9 +305,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9489928" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="149500">
+    <article class="card card--available" data-municipality="Orba" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="149000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Orba</span>
+      </div>
+      <p class="card__price">149.000 €</p>
+      <p class="card__unit">1505 €/m²</p>
+      <h3 class="card__title">Piso de 3 habitaciones en Orba en venta - 149.000 € (Ref: 9925049)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>99 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9925049" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="149500" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">149.500 €</p>
@@ -253,9 +335,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap6598m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="149500">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="149500" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">149.500 €</p>
@@ -267,9 +350,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-goleta-ap20962m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="150000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="150000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">150.000 €</p>
@@ -281,9 +365,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9927945" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="155000">
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="house" data-agency="LYT Properties" data-price="150000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">Gata de Gorgos</span>
+      </div>
+      <p class="card__price">150.000 €</p>
+      
+      <h3 class="card__title">Casa de pueblo a reformar con patio en Gata de Gorgos</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/casa-de-pueblo-a-reformar-con-patio-en-gata-de-gorgos/26196103" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="Llobell Inmobiliaris" data-price="154900" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Ondara</span>
+      </div>
+      <p class="card__price">154.900 €</p>
+      <p class="card__unit">3098 €/m²</p>
+      <h3 class="card__title">Apartamento en Ondara con vista a plaza de los toros en venta.</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Llobell Inmobiliaris</span>
+        <a class="card__link" href="https://www.llobellinmobiliaris.com/propiedad/apartamento-en-ondara-con-vista-a-plaza-de-los-toros-en-venta-a463/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="155000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">155.000 €</p>
@@ -295,9 +410,25 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-las-perlas-ap2757m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="157000">
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="apartment" data-agency="LYT Properties" data-price="155000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Gata de Gorgos</span>
+      </div>
+      <p class="card__price">155.000 €</p>
+      
+      <h3 class="card__title">Oportunidad de inversión en Gata de Gorgos: Amplio piso de 124 metros cuadrados con ascensor</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/oportunidad-de-inversion-en-gata-de-gorgos-amplio-piso-de-124-metros-cuadrados-con-ascensor/25716409" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="157000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">157.000 €</p>
@@ -309,9 +440,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9985668" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="159000">
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="158000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Xaló / Jalón</span>
+      </div>
+      <p class="card__price">158.000 €</p>
+      <p class="card__unit">1663 €/m²</p>
+      <h3 class="card__title">Piso de 3 habitaciones en Jalón / Xaló en venta - 158.000 € (Ref: 9216175)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>95 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9216175" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Orba" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="159000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Orba</span>
+      </div>
+      <p class="card__price">159.000 €</p>
+      <p class="card__unit">520 €/m²</p>
+      <h3 class="card__title">Casa de 3 habitaciones en Orba en venta - 159.000 € (Ref: 9133595)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>306 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9133595" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="159000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">159.000 €</p>
@@ -323,9 +485,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8895057" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Gata de Gorgos" data-type="villa" data-agency="ThinkSpain (portal)" data-price="160000">
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="villa" data-agency="ThinkSpain (portal)" data-price="160000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Gata de Gorgos</span>
       </div>
       <p class="card__price">160.000 €</p>
@@ -337,23 +500,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8431971" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="165000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="165000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">165.000 €</p>
-      <p class="card__unit">3929 €/m²</p>
-      <h3 class="card__title">Piso de 1 habitación en El Puerto, Dénia en venta - 165.000 € (Ref: 9686503)</h3>
-      <ul class="card__facts"><li>1 hab.</li><li>42 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9686503" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="165000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">165.000 €</p>
@@ -365,9 +515,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9206770" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="165000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="165000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">165.000 €</p>
+      <p class="card__unit">3929 €/m²</p>
+      <h3 class="card__title">Piso de 1 habitación en El Puerto, Dénia en venta - 165.000 € (Ref: 9686503)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>42 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9686503" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Llobell Inmobiliaris" data-price="165000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Teulada-Moraira</span>
+      </div>
+      <p class="card__price">165.000 €</p>
+      <p class="card__unit">3300 €/m²</p>
+      <h3 class="card__title">Se vende apartamento en Teulada</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>2 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Llobell Inmobiliaris</span>
+        <a class="card__link" href="https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a466/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="165000" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">165.000 €</p>
@@ -379,9 +560,10 @@
         <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-denia-a-300-m-de-playa-deveses-agata/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="169000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="169000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">169.000 €</p>
@@ -393,9 +575,25 @@
         <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-les-deveses-oportunidad-inversores-marysa/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="170000">
+    <article class="card card--available" data-municipality="Pego" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="170000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Ático</span>
+        
+        <span class="card__place">Pego</span>
+      </div>
+      <p class="card__price">170.000 €</p>
+      <p class="card__unit">1910 €/m²</p>
+      <h3 class="card__title">Ático de 3 habitaciones en Pego en venta con garaje - 170.000 € (Ref: 9988937)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>89 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9988937" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="170000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">170.000 €</p>
@@ -407,9 +605,40 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/ground-floor-apartment-with-patio-and-2-bedrooms-near-benissa-c0107/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Benidoleig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="174000">
+    <article class="card card--reserved" data-municipality="Dénia" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="170000" data-status="reserved">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--reserved">Reservado</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">170.000 €</p>
+      <p class="card__unit">3400 €/m²</p>
+      <h3 class="card__title">Pisos en venta en el centro de Dénia – Ubicación inmejorable</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/pisos-en-venta-en-el-centro-de-denia-ubicacion-inmejorable-7637/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="173500" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">173.500 €</p>
+      <p class="card__unit">3470 €/m²</p>
+      <h3 class="card__title">Apartamento de 1 habitación en La Sella en venta con piscina - 173.500 € (Ref: 9495566)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>50 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9495566" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Benidoleig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="174000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Benidoleig</span>
       </div>
       <p class="card__price">174.000 €</p>
@@ -421,9 +650,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9622269" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="villa" data-agency="ThinkSpain (portal)" data-price="175000">
+    <article class="card card--available" data-municipality="Pego" data-type="villa" data-agency="ThinkSpain (portal)" data-price="175000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">175.000 €</p>
@@ -435,9 +665,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9988968" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="175000">
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="175000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Xaló / Jalón</span>
       </div>
       <p class="card__price">175.000 €</p>
@@ -449,9 +680,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9329497" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="178500">
+    <article class="card card--available" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="175000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">El Poble Nou de Benitatxell</span>
+      </div>
+      <p class="card__price">175.000 €</p>
+      <p class="card__unit">3500 €/m²</p>
+      <h3 class="card__title">Apartamento con piscina y vistas abiertas en Cumbres del Sol , a 500 metros del mar</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/apartamento-con-piscina-y-vistas-abiertas-en-cumbres-del-sol-a-500-metros-del-mar-9497/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="178500" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">178.500 €</p>
@@ -463,9 +710,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8609350" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="179000">
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="179000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Xaló / Jalón</span>
       </div>
       <p class="card__price">179.000 €</p>
@@ -477,37 +725,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9884002" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500">
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="179000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
+        
+        <span class="card__place">Pego</span>
       </div>
-      <p class="card__price">179.500 €</p>
-      <p class="card__unit">2762 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Denia - Urb. Retiro Park II</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>65 m² const.</li></ul>
+      <p class="card__price">179.000 €</p>
+      <p class="card__unit">3580 €/m²</p>
+      <h3 class="card__title">Piso en venta de 138 metros muy cercano al centro de Pego</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
       <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-retiro-park-ii-marinasundenia/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/piso-en-venta-de-138-metros-muy-cercano-al-centro-de-pego-9563/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">179.500 €</p>
-      <p class="card__unit">2493 €/m²</p>
-      <h3 class="card__title">Apartamento en venta primera línea de la playa de Las Marinas - Urb. Nereidas</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>72 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-de-la-playa-de-las-marinas-urb-nereidas-mynereidas/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">179.500 €</p>
@@ -519,9 +755,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-royal-playa-ap904m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">179.500 €</p>
@@ -533,9 +770,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-nereidas-ap9030m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">179.500 €</p>
@@ -547,9 +785,70 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-con-vistas-al-mar-en-venta-denia-ap25954m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="180000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">179.500 €</p>
+      <p class="card__unit">2762 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Denia - Urb. Retiro Park II</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>65 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-retiro-park-ii-marinasundenia/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="179500" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">179.500 €</p>
+      <p class="card__unit">2493 €/m²</p>
+      <h3 class="card__title">Apartamento en venta primera línea de la playa de Las Marinas - Urb. Nereidas</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>72 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-primera-linea-de-la-playa-de-las-marinas-urb-nereidas-mynereidas/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--reserved" data-municipality="Dénia" data-type="other" data-agency="Denialara Servicios Inmobiliarios" data-price="179999" data-status="reserved">
+      <div class="card__head">
+        <span class="chip">Otro</span>
+        <span class="chip chip--reserved">Reservado</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">179.999 €</p>
+      <p class="card__unit">3600 €/m²</p>
+      <h3 class="card__title">¡AMPLIA VIVIENDA EN PLENO CENTRO DE DENIA!</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>2 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/amplia-vivienda-en-pleno-centro-de-denia-6200/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="180000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Pego</span>
+      </div>
+      <p class="card__price">180.000 €</p>
+      <p class="card__unit">2000 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en Monte Pego, Pego en venta con piscina - 180.000 € (Ref: 9934900)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>90 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9934900" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="180000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">180.000 €</p>
@@ -561,9 +860,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9990947" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="180000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="180000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">180.000 €</p>
@@ -575,9 +875,25 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-teulada-a0852/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="185000">
+    <article class="card card--available" data-municipality="Dénia" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="185000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">185.000 €</p>
+      <p class="card__unit">2467 €/m²</p>
+      <h3 class="card__title">Casa de 2 habitaciones en El Puerto, Dénia en venta - 185.000 € (Ref: 8758652)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>75 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8758652" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="185000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">185.000 €</p>
@@ -589,23 +905,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9738454" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="186000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="185000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
-      <p class="card__price">186.000 €</p>
-      <p class="card__unit">1691 €/m²</p>
-      <h3 class="card__title">Apartamento de 3 habitaciones en Saladar, Dénia en venta - 186.000 € (Ref: 9984258)</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>110 m² const.</li></ul>
+      <p class="card__price">185.000 €</p>
+      <p class="card__unit">2102 €/m²</p>
+      <h3 class="card__title">Piso de 2 habitaciones en La Xara, Dénia en venta - 185.000 € (Ref: 9899283)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>88 m² const.</li></ul>
       <footer class="card__foot">
         <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9984258" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9899283" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="186000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="186000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">186.000 €</p>
@@ -617,9 +935,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9939229" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="189000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="186000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">186.000 €</p>
+      <p class="card__unit">1691 €/m²</p>
+      <h3 class="card__title">Apartamento de 3 habitaciones en Saladar, Dénia en venta - 186.000 € (Ref: 9984258)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>110 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9984258" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="189000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">189.000 €</p>
+      <p class="card__unit">1718 €/m²</p>
+      <h3 class="card__title">Casa de 2 habitaciones en El Puerto, Dénia en venta - 189.000 € (Ref: 8867307)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>110 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8867307" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="189000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">189.000 €</p>
@@ -631,9 +980,100 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9894444" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="villa" data-agency="ThinkSpain (portal)" data-price="190000">
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="189000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">189.000 €</p>
+      <p class="card__unit">3780 €/m²</p>
+      <h3 class="card__title">Piso seminuevo en el centro de Vergel</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>2 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/piso-seminuevo-en-el-centro-de-vergel-3801/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--reserved" data-municipality="Dénia" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="189000" data-status="reserved">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--reserved">Reservado</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">189.000 €</p>
+      <p class="card__unit">1989 €/m²</p>
+      <h3 class="card__title">Amplio piso de 4 dormitorios en el centro de Dénia – Gran oportunidad de reforma</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>95 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/amplio-piso-de-4-dormitorios-en-el-centro-de-denia-gran-oportunidad-de-reforma-8036/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Llíber" data-type="villa" data-agency="LYT Properties" data-price="189000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
+        <span class="card__place">Llíber</span>
+      </div>
+      <p class="card__price">189.000 €</p>
+      
+      <h3 class="card__title">Finca Rústica de 11.700 m² con acogedora casa de campo en Llíber</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/finca-rustica-de-11700-m-con-acogedora-casa-de-campo-en-lliber/24844347" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Pedreguer" data-type="apartment" data-agency="Inmobiliaria Calablanca" data-price="189950" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">189.950 €</p>
+      <p class="card__unit">3799 €/m²</p>
+      <h3 class="card__title">Se vende apartamento con vistas al mar en La Sella</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Inmobiliaria Calablanca</span>
+        <a class="card__link" href="https://www.calablanca.com/propiedad/se-vende-apartamento-con-vistas-al-mar-en-la-sella-a-3490rl/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--reserved" data-municipality="Dénia" data-type="apartment" data-agency="Denialara Servicios Inmobiliarios" data-price="189999" data-status="reserved">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--reserved">Reservado</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">189.999 €</p>
+      <p class="card__unit">3800 €/m²</p>
+      <h3 class="card__title">Piso reformado listo para entrar a vivir junto al puerto de Dénia</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/piso-reformado-listo-para-entrar-a-vivir-junto-al-puerto-de-denia-4656/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="190000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">El Poble Nou de Benitatxell</span>
+      </div>
+      <p class="card__price">190.000 €</p>
+      <p class="card__unit">2235 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en Cumbre del Sol, Benitachell / Benitatxell en venta con piscina garaje - 190.000 € (Ref: 9375578)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>85 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9375578" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="villa" data-agency="ThinkSpain (portal)" data-price="190000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">190.000 €</p>
@@ -645,9 +1085,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9637565" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="190000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="190000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">190.000 €</p>
@@ -659,9 +1100,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9694466" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="190000">
+    <article class="card card--available" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="190000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">El Poble Nou de Benitatxell</span>
       </div>
       <p class="card__price">190.000 €</p>
@@ -673,9 +1115,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-with-panoramic-views-in-montecala-cumbre-del-sol-benitachell-a0871/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="190000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="190000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">190.000 €</p>
@@ -687,9 +1130,25 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-in-teulada-with-nice-open-panoramic-views-a0859/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Orba" data-type="villa" data-agency="ThinkSpain (portal)" data-price="195000">
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="195000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Ondara</span>
+      </div>
+      <p class="card__price">195.000 €</p>
+      <p class="card__unit">1857 €/m²</p>
+      <h3 class="card__title">Piso de 3 habitaciones en Ondara en venta con garaje - 195.000 € (Ref: 9138286)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>105 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9138286" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Orba" data-type="villa" data-agency="ThinkSpain (portal)" data-price="195000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Orba</span>
       </div>
       <p class="card__price">195.000 €</p>
@@ -701,9 +1160,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/4349056" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="197000">
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="197000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Ondara</span>
       </div>
       <p class="card__price">197.000 €</p>
@@ -715,9 +1175,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8866838" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199000">
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">199.000 €</p>
@@ -729,9 +1190,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9891108" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199000">
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Ondara</span>
       </div>
       <p class="card__price">199.000 €</p>
@@ -743,9 +1205,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9739258" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Ondara" data-type="apartment" data-agency="Daniamed" data-price="199000">
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="Daniamed" data-price="199000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Ondara</span>
       </div>
       <p class="card__price">199.000 €</p>
@@ -757,9 +1220,40 @@
         <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-el-centro-de-ondara-nandocentro/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199999">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="house" data-agency="LYT Properties" data-price="199950" data-status="available">
+      <div class="card__head">
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">199.950 €</p>
+      
+      <h3 class="card__title">Casa de pueblo en Pedreguer con patio y terraza para reformar en plaza céntrica de Pedreguer</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/casa-de-pueblo-en-pedreguer-con-patio-y-terraza-para-reformar-en-plaza-centrica-de-pedreguer/20645300" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199995" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Teulada-Moraira</span>
+      </div>
+      <p class="card__price">199.995 €</p>
+      <p class="card__unit">3175 €/m²</p>
+      <h3 class="card__title">Apartamento de 1 habitación en Paichi, Teulada-Moraira en venta con piscina garaje - 199.995 € (Ref: 9964411)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>63 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9964411" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199999" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Beniarbeig</span>
       </div>
       <p class="card__price">199.999 €</p>
@@ -771,9 +1265,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9489913" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="villa" data-agency="ThinkSpain (portal)" data-price="200000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="199999" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Beniarbeig</span>
+      </div>
+      <p class="card__price">199.999 €</p>
+      <p class="card__unit">781 €/m²</p>
+      <h3 class="card__title">Apartamento de 5 habitaciones en Beniarbeig en venta - 199.999 € (Ref: 9022669)</h3>
+      <ul class="card__facts"><li>5 hab.</li><li>256 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9022669" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="El Verger" data-type="house" data-agency="Denialara Servicios Inmobiliarios" data-price="199999" data-status="available">
+      <div class="card__head">
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">199.999 €</p>
+      <p class="card__unit">526 €/m²</p>
+      <h3 class="card__title">Gran casa de pueblo en venta en el centro de Vergel</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>380 m² const.</li><li>500 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Denialara Servicios Inmobiliarios</span>
+        <a class="card__link" href="https://www.denialara.com/propiedad/gran-casa-de-pueblo-en-venta-en-el-centro-de-vergel-5960/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="villa" data-agency="ThinkSpain (portal)" data-price="200000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">200.000 €</p>
@@ -785,9 +1310,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9983985" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Verger" data-type="house" data-agency="Daniamed" data-price="200000">
+    <article class="card card--available" data-municipality="El Verger" data-type="house" data-agency="Daniamed" data-price="200000" data-status="available">
       <div class="card__head">
         <span class="chip">Casa</span>
+        
         <span class="card__place">El Verger</span>
       </div>
       <p class="card__price">200.000 €</p>
@@ -799,23 +1325,25 @@
         <a class="card__link" href="https://www.daniamed.net/venta/casa-de-pueblo-para-reformar-con-amplio-jardin-privado-en-el-verger-casajaime/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="204900">
-      <div class="card__head">
-        <span class="chip">Ático</span>
-        <span class="card__place">Pego</span>
-      </div>
-      <p class="card__price">204.900 €</p>
-      <p class="card__unit">1212 €/m²</p>
-      <h3 class="card__title">Ático de 2 habitaciones en Pego en venta con garaje - 204.900 € (Ref: 9109503)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>169 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9109503" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="205000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="LYT Properties" data-price="204000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">204.000 €</p>
+      
+      <h3 class="card__title">Apartamento de Diseño con Vistas a la Piscina en La Sella</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/apartamento-de-diseno-con-vistas-a-la-piscina-en-la-sella/25795412" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="205000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">205.000 €</p>
@@ -827,9 +1355,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/1-bedroom-apartment-in-the-center-of-moraira-a0861/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="205000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="205000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">205.000 €</p>
@@ -841,9 +1370,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-in-the-popular-development-of-castellon-vida-a0860/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="apartment" data-agency="InmoXara" data-price="208500">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="InmoXara" data-price="208500" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Pedreguer</span>
       </div>
       <p class="card__price">208.500 €</p>
@@ -855,23 +1385,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-con-garaje-en-venta-pedreguer-living321/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Poble Nou de Benitatxell" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="209000">
-      <div class="card__head">
-        <span class="chip">Ático</span>
-        <span class="card__place">El Poble Nou de Benitatxell</span>
-      </div>
-      <p class="card__price">209.000 €</p>
-      <p class="card__unit">2549 €/m²</p>
-      <h3 class="card__title">Ático de 2 habitaciones en Cumbre del Sol, Benitachell / Benitatxell en venta con piscina garaje - 209.000 € (Ref: 9342243)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>82 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9342243" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="210000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="210000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">210.000 €</p>
@@ -883,9 +1400,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9920075" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="212000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="212000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Pedreguer</span>
       </div>
       <p class="card__price">212.000 €</p>
@@ -897,9 +1415,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8982633" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="212500">
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="212500" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">212.500 €</p>
@@ -911,37 +1430,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9831917" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">214.000 €</p>
-      <p class="card__unit">3147 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Dénia - Urb. Les Gavines</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>68 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-les-gavines-les-gavines/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">214.000 €</p>
-      <p class="card__unit">3014 €/m²</p>
-      <h3 class="card__title">Apartamento con parking y trastero en venta Dénia - Urb. Aguablanca</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>71 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-con-parking-y-trastero-en-venta-denia-urb-aguablanca-ap0350m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">214.000 €</p>
@@ -953,9 +1445,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-elegance-AP1032M/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">214.000 €</p>
@@ -967,9 +1460,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-la-alberca-livinglaalberca/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">214.000 €</p>
@@ -981,9 +1475,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-mar-de-denia-ap510m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">214.000 €</p>
@@ -995,9 +1490,40 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-frontal-al-mar-denia-urb-las-nereidas-ap0201m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="214680">
+    <article class="card card--reserved" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="reserved">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--reserved">Reservado</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">214.000 €</p>
+      <p class="card__unit">3147 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Dénia - Urb. Les Gavines</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>68 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-les-gavines-les-gavines/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">214.000 €</p>
+      <p class="card__unit">3014 €/m²</p>
+      <h3 class="card__title">Apartamento con parking y trastero en venta Dénia - Urb. Aguablanca</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>71 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-con-parking-y-trastero-en-venta-denia-urb-aguablanca-ap0350m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="214680" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">214.680 €</p>
@@ -1009,23 +1535,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9879934" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="215000">
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">215.000 €</p>
-      <p class="card__unit">3707 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Dénia playa de Les Deveses</h3>
-      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>58 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap5187m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">215.000 €</p>
@@ -1037,9 +1550,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9731541" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Alcalalí" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="215000">
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Pego</span>
+      </div>
+      <p class="card__price">215.000 €</p>
+      <p class="card__unit">2529 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en Monte Pego, Pego en venta con piscina - 215.000 € (Ref: 9527428)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>85 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9527428" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Alcalalí" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Alcalalí</span>
       </div>
       <p class="card__price">215.000 €</p>
@@ -1051,23 +1580,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/247818" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Alcalalí" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="215000">
-      <div class="card__head">
-        <span class="chip">Adosado / bungaló</span>
-        <span class="card__place">Alcalalí</span>
-      </div>
-      <p class="card__price">215.000 €</p>
-      <p class="card__unit">1667 €/m²</p>
-      <h3 class="card__title">Casa de 3 habitaciones en Llosa de Camacho, Alcalalí / Alcanalí en venta con piscina garaje - 215.000 € (Ref: 9935962)</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>129 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9935962" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">215.000 €</p>
@@ -1079,9 +1595,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9379922" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000">
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Xaló / Jalón</span>
+      </div>
+      <p class="card__price">215.000 €</p>
+      <p class="card__unit">2150 €/m²</p>
+      <h3 class="card__title">Apartamento de 3 habitaciones en Jalón / Xaló en venta con garaje - 215.000 € (Ref: 9819144)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>100 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9819144" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Xaló / Jalón</span>
+      </div>
+      <p class="card__price">215.000 €</p>
+      <p class="card__unit">1955 €/m²</p>
+      <h3 class="card__title">Apartamento de 3 habitaciones en Jalón / Xaló en venta - 215.000 € (Ref: 9630317)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>110 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9630317" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="215000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Xaló / Jalón</span>
       </div>
       <p class="card__price">215.000 €</p>
@@ -1093,23 +1640,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9897511" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Verger" data-type="apartment" data-agency="MLS Dénia" data-price="215000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">El Verger</span>
-      </div>
-      <p class="card__price">215.000 €</p>
-      <p class="card__unit">3707 €/m²</p>
-      <h3 class="card__title">Soleado apartamento en Vergel</h3>
-      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>58 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">MLS Dénia</span>
-        <a class="card__link" href="https://www.mlsdenia.com/en-venta/soleado-apartamento-en-vergel-d5187/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Els Poblets" data-type="townhouse" data-agency="Daniamed" data-price="215000">
+    <article class="card card--available" data-municipality="Els Poblets" data-type="townhouse" data-agency="Daniamed" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Els Poblets</span>
       </div>
       <p class="card__price">215.000 €</p>
@@ -1121,9 +1655,40 @@
         <a class="card__link" href="https://www.daniamed.net/venta/adosado-en-els-poblets-a-1-km-de-la-playa-de-la-almadraba-mimo/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="219000">
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="MLS Dénia" data-price="215000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">215.000 €</p>
+      <p class="card__unit">3707 €/m²</p>
+      <h3 class="card__title">Soleado apartamento en Vergel</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>58 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">MLS Dénia</span>
+        <a class="card__link" href="https://www.mlsdenia.com/en-venta/soleado-apartamento-en-vergel-d5187/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="215000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">215.000 €</p>
+      <p class="card__unit">3707 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Dénia playa de Les Deveses</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>1 baños</li><li>58 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap5187m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="219000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">219.000 €</p>
@@ -1135,9 +1700,10 @@
         <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-golden-park-ap0366m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Gata de Gorgos" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="219900">
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="219900" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Gata de Gorgos</span>
       </div>
       <p class="card__price">219.900 €</p>
@@ -1149,23 +1715,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9988032" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="apartment" data-agency="InmoXara" data-price="220000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Pedreguer</span>
       </div>
       <p class="card__price">220.000 €</p>
-      <p class="card__unit">2472 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Pedreguer - Urb. La Sella</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>89 m² const.</li></ul>
+      <p class="card__unit">2973 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en La Sella en venta con piscina garaje - 220.000 € (Ref: 9819995)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>74 m² const.</li></ul>
       <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-pedreguer-urb-la-sella-ap2727m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9819995" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Verger" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">220.000 €</p>
+      <p class="card__unit">2095 €/m²</p>
+      <h3 class="card__title">Apartamento de 4 habitaciones en Saladar, Dénia en venta - 220.000 € (Ref: 9990945)</h3>
+      <ul class="card__facts"><li>4 hab.</li><li>105 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9990945" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">El Verger</span>
       </div>
       <p class="card__price">220.000 €</p>
@@ -1177,9 +1760,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9103659" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000">
+    <article class="card card--available" data-municipality="El Poble Nou de Benitatxell" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">El Poble Nou de Benitatxell</span>
       </div>
       <p class="card__price">220.000 €</p>
@@ -1191,9 +1775,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9841341" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Benissa" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000">
+    <article class="card card--available" data-municipality="Benissa" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="220000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Benissa</span>
       </div>
       <p class="card__price">220.000 €</p>
@@ -1205,23 +1790,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9614140" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="other" data-agency="MLS Dénia" data-price="220000">
-      <div class="card__head">
-        <span class="chip">Otro</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">220.000 €</p>
-      <p class="card__unit">2857 €/m²</p>
-      <h3 class="card__title">Amplia y céntrica vivienda en Denia</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>2 baños</li><li>77 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">MLS Dénia</span>
-        <a class="card__link" href="https://www.mlsdenia.com/en-venta/amplia-y-centrica-vivienda-en-denia-d5190/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="220000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="220000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">220.000 €</p>
@@ -1233,9 +1805,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-teulada-with-lift-terrace-and-open-views-a0874/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="220000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="220000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">220.000 €</p>
@@ -1247,23 +1820,70 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-in-castellons-vida-with-sea-views-and-communal-pool-a0862/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="225000">
+    <article class="card card--available" data-municipality="Dénia" data-type="other" data-agency="MLS Dénia" data-price="220000" data-status="available">
       <div class="card__head">
-        <span class="chip">Adosado / bungaló</span>
-        <span class="card__place">Beniarbeig</span>
+        <span class="chip">Otro</span>
+        
+        <span class="card__place">Dénia</span>
       </div>
-      <p class="card__price">225.000 €</p>
-      <p class="card__unit">2250 €/m²</p>
-      <h3 class="card__title">Casa de 2 habitaciones en Beniarbeig en venta con piscina - 225.000 € (Ref: 9516588)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>100 m² const.</li></ul>
+      <p class="card__price">220.000 €</p>
+      <p class="card__unit">2857 €/m²</p>
+      <h3 class="card__title">Amplia y céntrica vivienda en Denia</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>2 baños</li><li>77 m² const.</li></ul>
       <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9516588" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <span class="card__agency">MLS Dénia</span>
+        <a class="card__link" href="https://www.mlsdenia.com/en-venta/amplia-y-centrica-vivienda-en-denia-d5190/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="225000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="InmoXara" data-price="220000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">220.000 €</p>
+      <p class="card__unit">2472 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Pedreguer - Urb. La Sella</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>1 baños</li><li>89 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-pedreguer-urb-la-sella-ap2727m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="LYT Properties" data-price="220000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">220.000 €</p>
+      
+      <h3 class="card__title">En venta, precioso Piso en El Verger con Parking</h3>
+      
+      <footer class="card__foot">
+        <span class="card__agency">LYT Properties</span>
+        <a class="card__link" href="https://www.lytproperties.com/detalles-del-inmueble/en-venta-precioso-piso-en-el-verger-con-parking/22898676" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="225000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">225.000 €</p>
+      <p class="card__unit">2500 €/m²</p>
+      <h3 class="card__title">Apartamento Playa de 2 habitaciones en El Palmar - Los Molinos, Dénia en venta con garaje - 225.000 € (Ref: 9833139)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>90 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9833139" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="225000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">225.000 €</p>
@@ -1275,9 +1895,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9906737" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Ondara" data-type="villa" data-agency="ThinkSpain (portal)" data-price="225000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="225000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Beniarbeig</span>
+      </div>
+      <p class="card__price">225.000 €</p>
+      <p class="card__unit">2250 €/m²</p>
+      <h3 class="card__title">Casa de 2 habitaciones en Beniarbeig en venta con piscina - 225.000 € (Ref: 9516588)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>100 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9516588" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Ondara" data-type="villa" data-agency="ThinkSpain (portal)" data-price="225000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Ondara</span>
       </div>
       <p class="card__price">225.000 €</p>
@@ -1289,9 +1925,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8674952" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="225000">
+    <article class="card card--available" data-municipality="Xaló / Jalón" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="225000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Xaló / Jalón</span>
       </div>
       <p class="card__price">225.000 €</p>
@@ -1303,9 +1940,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9569589" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="225000">
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="225000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">225.000 €</p>
@@ -1317,9 +1955,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/apartment-for-sale-in-moraira-with-sea-views-in-paichi-area-a0873/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="house" data-agency="Ferrando Inmobiliaria" data-price="225000">
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="house" data-agency="Ferrando Inmobiliaria" data-price="225000" data-status="available">
       <div class="card__head">
         <span class="chip">Casa</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">225.000 €</p>
@@ -1331,9 +1970,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/manor-house-for-sale-in-pego-historic-centre-costa-blanca-c0105/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="229000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="229000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">229.000 €</p>
@@ -1345,9 +1985,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9916496" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="229000">
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="229000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Calp / Calpe</span>
       </div>
       <p class="card__price">229.000 €</p>
@@ -1359,9 +2000,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9926669" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="229000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="Daniamed" data-price="229000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">229.000 €</p>
@@ -1373,65 +2015,40 @@
         <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-la-playa-deveses-de-denia-a-tan-solo-70-m-del-mar-brisacuqui/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000">
+    <article class="card card--available" data-municipality="Benissa" data-type="house" data-agency="Llobell Inmobiliaris" data-price="229900" data-status="available">
       <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
+        <span class="chip">Casa</span>
+        
+        <span class="card__place">Benissa</span>
       </div>
-      <p class="card__price">230.000 €</p>
-      <p class="card__unit">2500 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Dénia - Urb. Estrella de Mar</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>92 m² const.</li></ul>
+      <p class="card__price">229.900 €</p>
+      <p class="card__unit">4598 €/m²</p>
+      <h3 class="card__title">Se Vende casa de pueblo para reformar en Benissa.</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>2 baños</li><li>50 m² const.</li><li>500 m² parcela</li></ul>
       <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-estrella-de-mar-iamstar/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <span class="card__agency">Llobell Inmobiliaris</span>
+        <a class="card__link" href="https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-para-reformar-en-benissa-c602/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">230.000 €</p>
-      <p class="card__unit">3151 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Dénia - Urb. Marina Park</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>73 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-park-ap0515m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">230.000 €</p>
-      <p class="card__unit">2911 €/m²</p>
-      <h3 class="card__title">Apartamento en venta Denia - Playa de Les Deveses</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>79 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">InmoXara</span>
-        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap0044m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000">
+    <article class="card card--available" data-municipality="Dénia" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
-        <span class="card__place">Beniarbeig</span>
+        
+        <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">230.000 €</p>
-      <p class="card__unit">1811 €/m²</p>
-      <h3 class="card__title">Casa de 4 habitaciones en Beniarbeig en venta - 230.000 € (Ref: 9890531)</h3>
-      <ul class="card__facts"><li>4 hab.</li><li>127 m² const.</li></ul>
+      <p class="card__unit">3286 €/m²</p>
+      <h3 class="card__title">Bungalow de 1 habitación en El Palmar - Los Molinos, Dénia en venta con piscina garaje - 230.000 € (Ref: 9239838)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>70 m² const.</li></ul>
       <footer class="card__foot">
         <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9890531" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9239838" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="230000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="230000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Beniarbeig</span>
       </div>
       <p class="card__price">230.000 €</p>
@@ -1443,9 +2060,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9996507" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
+        <span class="card__place">Beniarbeig</span>
+      </div>
+      <p class="card__price">230.000 €</p>
+      <p class="card__unit">1811 €/m²</p>
+      <h3 class="card__title">Casa de 4 habitaciones en Beniarbeig en venta - 230.000 € (Ref: 9890531)</h3>
+      <ul class="card__facts"><li>4 hab.</li><li>127 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9890531" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Beniarbeig</span>
       </div>
       <p class="card__price">230.000 €</p>
@@ -1457,9 +2090,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9596832" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="230000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Beniarbeig</span>
       </div>
       <p class="card__price">230.000 €</p>
@@ -1471,9 +2105,55 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9912363" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="235000">
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">230.000 €</p>
+      <p class="card__unit">2500 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Dénia - Urb. Estrella de Mar</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>92 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-estrella-de-mar-iamstar/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--sold" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000" data-status="sold">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">230.000 €</p>
+      <p class="card__unit">3151 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Dénia - Urb. Marina Park</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>73 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-marina-park-ap0515m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="230000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">230.000 €</p>
+      <p class="card__unit">2911 €/m²</p>
+      <h3 class="card__title">Apartamento en venta Denia - Playa de Les Deveses</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>79 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">InmoXara</span>
+        <a class="card__link" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap0044m/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="235000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">235.000 €</p>
@@ -1485,9 +2165,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9778365" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="238000">
+    <article class="card card--available" data-municipality="Ondara" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="235000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Ondara</span>
+      </div>
+      <p class="card__price">235.000 €</p>
+      <p class="card__unit">1567 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en Ondara en venta - 235.000 € (Ref: 9811425)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>150 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9811425" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="238000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">238.000 €</p>
@@ -1499,9 +2195,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9211636" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="239000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="239000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">239.000 €</p>
@@ -1513,9 +2210,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9024883" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="239000">
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="239000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Calp / Calpe</span>
       </div>
       <p class="card__price">239.000 €</p>
@@ -1527,9 +2225,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9984246" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="other" data-agency="Daniamed" data-price="239000">
+    <article class="card card--available" data-municipality="Dénia" data-type="other" data-agency="Daniamed" data-price="239000" data-status="available">
       <div class="card__head">
         <span class="chip">Otro</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">239.000 €</p>
@@ -1541,37 +2240,25 @@
         <a class="card__link" href="https://www.daniamed.net/venta/planta-baja-en-denia-a-200m-de-la-playa-deveses-pbana/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="240000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="240000" data-status="available">
       <div class="card__head">
-        <span class="chip">Ático</span>
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">240.000 €</p>
-      <p class="card__unit">3243 €/m²</p>
-      <h3 class="card__title">Ático de 2 habitaciones en La Xara - La Sella, Dénia en venta con piscina garaje - 240.000 € (Ref: 9832210)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>74 m² const.</li></ul>
+      <p class="card__unit">2667 €/m²</p>
+      <h3 class="card__title">Apartamento de 1 habitación en El Palmar - Los Molinos, Dénia en venta - 240.000 € (Ref: 8071524)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>90 m² const.</li></ul>
       <footer class="card__foot">
         <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9832210" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/8071524" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="240000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Pedreguer</span>
-      </div>
-      <p class="card__price">240.000 €</p>
-      <p class="card__unit">3243 €/m²</p>
-      <h3 class="card__title">Apartamento de 2 habitaciones en La Sella en venta con piscina garaje - 240.000 € (Ref: 9844646)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>74 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9844646" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Dénia" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="240000">
+    <article class="card card--available" data-municipality="Dénia" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="240000" data-status="available">
       <div class="card__head">
         <span class="chip">Ático</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">240.000 €</p>
@@ -1583,9 +2270,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9946259" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="240000">
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="240000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Calp / Calpe</span>
       </div>
       <p class="card__price">240.000 €</p>
@@ -1597,9 +2285,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9791543" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="245000">
+    <article class="card card--available" data-municipality="Pedreguer" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="240000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">240.000 €</p>
+      <p class="card__unit">3243 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en La Sella en venta con piscina garaje - 240.000 € (Ref: 9844646)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>74 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9844646" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="243000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Calp / Calpe</span>
+      </div>
+      <p class="card__price">243.000 €</p>
+      <p class="card__unit">4050 €/m²</p>
+      <h3 class="card__title">Apartamento de 1 habitación en Puerto, Calpe / Calp en venta - 243.000 € (Ref: 9844831)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>60 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9844831" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="245000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">245.000 €</p>
@@ -1611,9 +2330,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9452998" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="249000">
+    <article class="card card--available" data-municipality="El Verger" data-type="villa" data-agency="Daniamed" data-price="245000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Villa / chalet</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">245.000 €</p>
+      <p class="card__unit">3063 €/m²</p>
+      <h3 class="card__title">Precioso chalet pareado a tan solo 400 m de la Playa de Les Deveses</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>2 baños</li><li>80 m² const.</li><li>100 m² parcela</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">Daniamed</span>
+        <a class="card__link" href="https://www.daniamed.net/venta/precioso-chalet-pareado-a-tan-solo-400-m-de-la-playa-de-les-deveses-ola14/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pego" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="249000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">249.000 €</p>
@@ -1625,9 +2360,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9839738" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="249000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="249000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
         <span class="card__place">Dénia</span>
       </div>
       <p class="card__price">249.000 €</p>
@@ -1639,9 +2375,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9687588" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Gata de Gorgos" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="249000">
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="249000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">249.000 €</p>
+      <p class="card__unit">3074 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 249.000 € (Ref: 9739259)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>81 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9739259" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Gata de Gorgos" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="249000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Gata de Gorgos</span>
       </div>
       <p class="card__price">249.000 €</p>
@@ -1653,23 +2405,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9890081" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="El Verger" data-type="apartment" data-agency="Daniamed" data-price="249000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="249000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">El Verger</span>
-      </div>
-      <p class="card__price">249.000 €</p>
-      <p class="card__unit">3074 €/m²</p>
-      <h3 class="card__title">¡Apartamento en El Verger a solo 500 m de la playa!</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>81 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">Daniamed</span>
-        <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-el-verger-a-solo-500-m-de-la-playa-torre3/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="249000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">249.000 €</p>
@@ -1681,37 +2420,40 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/2-bedroom-apartment-for-sale-in-teulada-near-moraira-sea-views-pool-a0872/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="250000">
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="Daniamed" data-price="249000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">250.000 €</p>
-      <p class="card__unit">2000 €/m²</p>
-      <h3 class="card__title">Piso de 3 habitaciones en Saladar, Dénia en venta con garaje - 250.000 € (Ref: 9897701)</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>125 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9897701" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="El Verger" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="250000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
+        
         <span class="card__place">El Verger</span>
       </div>
-      <p class="card__price">250.000 €</p>
-      <p class="card__unit">3968 €/m²</p>
-      <h3 class="card__title">Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 250.000 € (Ref: 9849370)</h3>
-      <ul class="card__facts"><li>1 hab.</li><li>63 m² const.</li></ul>
+      <p class="card__price">249.000 €</p>
+      <p class="card__unit">3074 €/m²</p>
+      <h3 class="card__title">¡Apartamento en El Verger a solo 500 m de la playa!</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>2 baños</li><li>81 m² const.</li></ul>
       <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9849370" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+        <span class="card__agency">Daniamed</span>
+        <a class="card__link" href="https://www.daniamed.net/venta/apartamento-en-el-verger-a-solo-500-m-de-la-playa-torre3/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="250000">
+    <article class="card card--available" data-municipality="Dénia" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="249500" data-status="available">
+      <div class="card__head">
+        <span class="chip">Ático</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">249.500 €</p>
+      <p class="card__unit">4536 €/m²</p>
+      <h3 class="card__title">Ático de 2 habitaciones en Les Bassetes - El Marjal, Dénia en venta - 249.500 € (Ref: 9849552)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>55 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9849552" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">250.000 €</p>
@@ -1723,23 +2465,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9877274" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="villa" data-agency="ThinkSpain (portal)" data-price="250000">
-      <div class="card__head">
-        <span class="chip">Villa / chalet</span>
-        <span class="card__place">Teulada-Moraira</span>
-      </div>
-      <p class="card__price">250.000 €</p>
-      <p class="card__unit">3125 €/m²</p>
-      <h3 class="card__title">Chalet de 2 habitaciones en Teulada Pueblo, Teulada-Moraira en venta con garaje - 250.000 € (Ref: 9652852)</h3>
-      <ul class="card__facts"><li>2 hab.</li><li>80 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9652852" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Ondara" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="250000">
+    <article class="card card--available" data-municipality="Ondara" data-type="penthouse" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available">
       <div class="card__head">
         <span class="chip">Ático</span>
+        
         <span class="card__place">Ondara</span>
       </div>
       <p class="card__price">250.000 €</p>
@@ -1751,23 +2480,55 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9183193" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Xaló / Jalón" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="250000">
-      <div class="card__head">
-        <span class="chip">Adosado / bungaló</span>
-        <span class="card__place">Xaló / Jalón</span>
-      </div>
-      <p class="card__price">250.000 €</p>
-      <p class="card__unit">2083 €/m²</p>
-      <h3 class="card__title">Casa de 3 habitaciones en Jalón / Xaló en venta con piscina garaje - 250.000 € (Ref: 9782091)</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>120 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9782091" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="251000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">250.000 €</p>
+      <p class="card__unit">2000 €/m²</p>
+      <h3 class="card__title">Piso de 3 habitaciones en Saladar, Dénia en venta con garaje - 250.000 € (Ref: 9897701)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>125 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9897701" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="El Verger" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">El Verger</span>
+      </div>
+      <p class="card__price">250.000 €</p>
+      <p class="card__unit">3968 €/m²</p>
+      <h3 class="card__title">Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 250.000 € (Ref: 9849370)</h3>
+      <ul class="card__facts"><li>1 hab.</li><li>63 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9849370" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="villa" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Villa / chalet</span>
+        
+        <span class="card__place">Teulada-Moraira</span>
+      </div>
+      <p class="card__price">250.000 €</p>
+      <p class="card__unit">3125 €/m²</p>
+      <h3 class="card__title">Chalet de 2 habitaciones en Teulada Pueblo, Teulada-Moraira en venta con garaje - 250.000 € (Ref: 9652852)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>80 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9652852" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="251000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">251.000 €</p>
@@ -1779,9 +2540,10 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/luxury-apartment-in-a-paradisiacal-complex-close-to-beach-and-services-a0821/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Beniarbeig" data-type="villa" data-agency="ThinkSpain (portal)" data-price="255000">
+    <article class="card card--available" data-municipality="Beniarbeig" data-type="villa" data-agency="ThinkSpain (portal)" data-price="255000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Beniarbeig</span>
       </div>
       <p class="card__price">255.000 €</p>
@@ -1793,23 +2555,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9977675" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Dénia" data-type="apartment" data-agency="MLS Dénia" data-price="255000">
-      <div class="card__head">
-        <span class="chip">Piso</span>
-        <span class="card__place">Dénia</span>
-      </div>
-      <p class="card__price">255.000 €</p>
-      
-      <h3 class="card__title">Piso en venta en Denia: 3 dormitorios y 2 baños</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>2 baños</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">MLS Dénia</span>
-        <a class="card__link" href="https://www.mlsdenia.com/en-venta/piso-en-venta-en-denia-3-dormitorios-y-2-banos-p-572-j/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="villa" data-agency="Ferrando Inmobiliaria" data-price="255000">
+    <article class="card card--available" data-municipality="Teulada-Moraira" data-type="villa" data-agency="Ferrando Inmobiliaria" data-price="255000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">255.000 €</p>
@@ -1821,9 +2570,25 @@
         <a class="card__link" href="https://www.ferrando-moraira.com/for-sale/village-house-in-benissa-town-centre-for-renovation-with-sunny-terrace-c0106/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Els Poblets" data-type="villa" data-agency="ThinkSpain (portal)" data-price="257000">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="MLS Dénia" data-price="255000" data-status="available">
       <div class="card__head">
-        <span class="chip">Villa / chalet</span>
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">255.000 €</p>
+      
+      <h3 class="card__title">Piso en venta en Denia: 3 dormitorios y 2 baños</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>2 baños</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">MLS Dénia</span>
+        <a class="card__link" href="https://www.mlsdenia.com/en-venta/piso-en-venta-en-denia-3-dormitorios-y-2-banos-p-572-j/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Els Poblets" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="257000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Els Poblets</span>
       </div>
       <p class="card__price">257.000 €</p>
@@ -1835,9 +2600,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9860203" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pego" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="259000">
+    <article class="card card--available" data-municipality="Pego" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Pego</span>
       </div>
       <p class="card__price">259.000 €</p>
@@ -1849,23 +2615,25 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9988958" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Pedreguer" data-type="villa" data-agency="ThinkSpain (portal)" data-price="259000">
-      <div class="card__head">
-        <span class="chip">Villa / chalet</span>
-        <span class="card__place">Pedreguer</span>
-      </div>
-      <p class="card__price">259.000 €</p>
-      <p class="card__unit">2590 €/m²</p>
-      <h3 class="card__title">Adosado de 3 habitaciones en Monte Solana, Pedreguer en venta con piscina - 259.000 € (Ref: 9938987)</h3>
-      <ul class="card__facts"><li>3 hab.</li><li>100 m² const.</li></ul>
-      <footer class="card__foot">
-        <span class="card__agency">ThinkSpain (portal)</span>
-        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9938987" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
-      </footer>
-    </article>
-    <article class="card" data-municipality="Els Poblets" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="259000">
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
       <div class="card__head">
         <span class="chip">Piso</span>
+        
+        <span class="card__place">Calp / Calpe</span>
+      </div>
+      <p class="card__price">259.000 €</p>
+      <p class="card__unit">2313 €/m²</p>
+      <h3 class="card__title">Apartamento de 3 habitaciones en Manzanera - Tosal, Calpe / Calp en venta - 259.000 € (Ref: 9850039)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>112 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9850039" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Els Poblets" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
         <span class="card__place">Els Poblets</span>
       </div>
       <p class="card__price">259.000 €</p>
@@ -1877,9 +2645,10 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9793363" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Orba" data-type="villa" data-agency="ThinkSpain (portal)" data-price="259000">
+    <article class="card card--available" data-municipality="Orba" data-type="villa" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
       <div class="card__head">
         <span class="chip">Villa / chalet</span>
+        
         <span class="card__place">Orba</span>
       </div>
       <p class="card__price">259.000 €</p>
@@ -1891,9 +2660,40 @@
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9944880" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Els Poblets" data-type="townhouse" data-agency="Daniamed" data-price="259000">
+    <article class="card card--available" data-municipality="Calp / Calpe" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Calp / Calpe</span>
+      </div>
+      <p class="card__price">259.000 €</p>
+      <p class="card__unit">2616 €/m²</p>
+      <h3 class="card__title">Apartamento de 3 habitaciones en Pueblo, Calpe / Calp en venta - 259.000 € (Ref: 9658338)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>99 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9658338" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Pedreguer" data-type="villa" data-agency="ThinkSpain (portal)" data-price="259000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Villa / chalet</span>
+        
+        <span class="card__place">Pedreguer</span>
+      </div>
+      <p class="card__price">259.000 €</p>
+      <p class="card__unit">2590 €/m²</p>
+      <h3 class="card__title">Adosado de 3 habitaciones en Monte Solana, Pedreguer en venta con piscina - 259.000 € (Ref: 9938987)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>100 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9938987" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Els Poblets" data-type="townhouse" data-agency="Daniamed" data-price="259000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Els Poblets</span>
       </div>
       <p class="card__price">259.000 €</p>
@@ -1905,23 +2705,40 @@
         <a class="card__link" href="https://www.daniamed.net/venta/adosado-moderno-en-els-poblets-adofrancisco/" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Sanet y Negrals" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="260000">
+    <article class="card card--available" data-municipality="Dénia" data-type="villa" data-agency="ThinkSpain (portal)" data-price="260000" data-status="available">
+      <div class="card__head">
+        <span class="chip">Villa / chalet</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">260.000 €</p>
+      <p class="card__unit">3023 €/m²</p>
+      <h3 class="card__title">Chalet de 3 habitaciones en El Puerto, Dénia en venta - 260.000 € (Ref: 9637591)</h3>
+      <ul class="card__facts"><li>3 hab.</li><li>86 m² const.</li></ul>
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/9637591" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Sanet y Negrals" data-type="townhouse" data-agency="ThinkSpain (portal)" data-price="260000" data-status="available">
       <div class="card__head">
         <span class="chip">Adosado / bungaló</span>
+        
         <span class="card__place">Sanet y Negrals</span>
       </div>
       <p class="card__price">260.000 €</p>
       <p class="card__unit">3059 €/m²</p>
-      <h3 class="card__title">Disponible en Google Play</h3>
+      <h3 class="card__title">Sin título</h3>
       <ul class="card__facts"><li>3 hab.</li><li>85 m² const.</li></ul>
       <footer class="card__foot">
         <span class="card__agency">ThinkSpain (portal)</span>
         <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/251516" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>
-    <article class="card" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="260000">
+    <article class="card card--sold" data-municipality="Teulada-Moraira" data-type="apartment" data-agency="Ferrando Inmobiliaria" data-price="260000" data-status="sold">
       <div class="card__head">
         <span class="chip">Piso</span>
+        <span class="chip chip--sold">Vendido</span>
         <span class="card__place">Teulada-Moraira</span>
       </div>
       <p class="card__price">260.000 €</p>
@@ -1952,119 +2769,119 @@
     
     <div class="chart" role="img" aria-label="Precio mediano por metro cuadrado construido en cada municipio">
       
-        <div class="chart__row" tabindex="0" title="Llíber: 4812 €/m² · 16 anuncios">
+        <div class="chart__row" tabindex="0" title="Llíber: 6115 €/m² · 24 anuncios">
           <span class="chart__label">Llíber</span>
           <span class="chart__track"><span class="chart__bar" style="width:100%"></span></span>
-          <span class="chart__value">4812<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">16</span>
+          <span class="chart__value">6115<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">24</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Xàbia / Jávea: 4630 €/m² · 149 anuncios">
-          <span class="chart__label">Xàbia / Jávea</span>
-          <span class="chart__track"><span class="chart__bar" style="width:96.21778886118038%"></span></span>
-          <span class="chart__value">4630<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">149</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Teulada-Moraira: 4485 €/m² · 195 anuncios">
+        <div class="chart__row" tabindex="0" title="Teulada-Moraira: 4651 €/m² · 218 anuncios">
           <span class="chart__label">Teulada-Moraira</span>
-          <span class="chart__track"><span class="chart__bar" style="width:93.20448877805487%"></span></span>
-          <span class="chart__value">4485<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">195</span>
+          <span class="chart__track"><span class="chart__bar" style="width:76.05887162714636%"></span></span>
+          <span class="chart__value">4651<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">218</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Calp / Calpe: 4260 €/m² · 166 anuncios">
-          <span class="chart__label">Calp / Calpe</span>
-          <span class="chart__track"><span class="chart__bar" style="width:88.5286783042394%"></span></span>
-          <span class="chart__value">4260<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">166</span>
+        <div class="chart__row" tabindex="0" title="Xàbia / Jávea: 4600 €/m² · 201 anuncios">
+          <span class="chart__label">Xàbia / Jávea</span>
+          <span class="chart__track"><span class="chart__bar" style="width:75.22485690923958%"></span></span>
+          <span class="chart__value">4600<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">201</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Benissa: 4128 €/m² · 34 anuncios">
-          <span class="chart__label">Benissa</span>
-          <span class="chart__track"><span class="chart__bar" style="width:85.785536159601%"></span></span>
-          <span class="chart__value">4128<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">34</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="El Poble Nou de Benitatxell: 4044 €/m² · 49 anuncios">
+        <div class="chart__row" tabindex="0" title="El Poble Nou de Benitatxell: 4579 €/m² · 73 anuncios">
           <span class="chart__label">El Poble Nou de Benitatxell</span>
-          <span class="chart__track"><span class="chart__bar" style="width:84.03990024937656%"></span></span>
-          <span class="chart__value">4044<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">49</span>
+          <span class="chart__track"><span class="chart__bar" style="width:74.88143908421914%"></span></span>
+          <span class="chart__value">4579<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">73</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Pedreguer: 3824 €/m² · 51 anuncios">
+        <div class="chart__row" tabindex="0" title="Benissa: 4545 €/m² · 42 anuncios">
+          <span class="chart__label">Benissa</span>
+          <span class="chart__track"><span class="chart__bar" style="width:74.32542927228127%"></span></span>
+          <span class="chart__value">4545<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">42</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Calp / Calpe: 4196 €/m² · 252 anuncios">
+          <span class="chart__label">Calp / Calpe</span>
+          <span class="chart__track"><span class="chart__bar" style="width:68.6181520850368%"></span></span>
+          <span class="chart__value">4196<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">252</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Pedreguer: 3739 €/m² · 69 anuncios">
           <span class="chart__label">Pedreguer</span>
-          <span class="chart__track"><span class="chart__bar" style="width:79.46799667497922%"></span></span>
-          <span class="chart__value">3824<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">51</span>
+          <span class="chart__track"><span class="chart__bar" style="width:61.144726083401466%"></span></span>
+          <span class="chart__value">3739<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">69</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Dénia: 3531 €/m² · 308 anuncios">
+        <div class="chart__row" tabindex="0" title="Dénia: 3600 €/m² · 370 anuncios">
           <span class="chart__label">Dénia</span>
-          <span class="chart__track"><span class="chart__bar" style="width:73.3790523690773%"></span></span>
-          <span class="chart__value">3531<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">308</span>
+          <span class="chart__track"><span class="chart__bar" style="width:58.871627146361405%"></span></span>
+          <span class="chart__value">3600<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">370</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Els Poblets: 3405 €/m² · 21 anuncios">
+        <div class="chart__row" tabindex="0" title="Els Poblets: 3527 €/m² · 28 anuncios">
           <span class="chart__label">Els Poblets</span>
-          <span class="chart__track"><span class="chart__bar" style="width:70.76059850374065%"></span></span>
-          <span class="chart__value">3405<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">21</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="El Verger: 3196 €/m² · 28 anuncios">
-          <span class="chart__label">El Verger</span>
-          <span class="chart__track"><span class="chart__bar" style="width:66.41729010806317%"></span></span>
-          <span class="chart__value">3196<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__track"><span class="chart__bar" style="width:57.6778413736713%"></span></span>
+          <span class="chart__value">3527<span class="chart__unit"> €/m²</span></span>
           <span class="chart__count">28</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="El Verger: 3288 €/m² · 36 anuncios">
+          <span class="chart__label">El Verger</span>
+          <span class="chart__track"><span class="chart__bar" style="width:53.769419460343414%"></span></span>
+          <span class="chart__value">3288<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">36</span>
         </div>
         <div class="chart__row" tabindex="0" title="Sanet y Negrals: 3059 €/m² · 13 anuncios">
           <span class="chart__label">Sanet y Negrals</span>
-          <span class="chart__track"><span class="chart__bar" style="width:63.57024106400665%"></span></span>
+          <span class="chart__track"><span class="chart__bar" style="width:50.02452984464432%"></span></span>
           <span class="chart__value">3059<span class="chart__unit"> €/m²</span></span>
           <span class="chart__count">13</span>
         </div>
-        <div class="chart__row" tabindex="0" title="Orba: 2783 €/m² · 16 anuncios">
-          <span class="chart__label">Orba</span>
-          <span class="chart__track"><span class="chart__bar" style="width:57.834580216126355%"></span></span>
-          <span class="chart__value">2783<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">16</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Benidoleig: 2778 €/m² · 16 anuncios">
+        <div class="chart__row" tabindex="0" title="Benidoleig: 2778 €/m² · 18 anuncios">
           <span class="chart__label">Benidoleig</span>
-          <span class="chart__track"><span class="chart__bar" style="width:57.73067331670823%"></span></span>
+          <span class="chart__track"><span class="chart__bar" style="width:45.42927228127555%"></span></span>
           <span class="chart__value">2778<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">16</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Alcalalí: 2631 €/m² · 16 anuncios">
-          <span class="chart__label">Alcalalí</span>
-          <span class="chart__track"><span class="chart__bar" style="width:54.67581047381545%"></span></span>
-          <span class="chart__value">2631<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">16</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Gata de Gorgos: 2492 €/m² · 15 anuncios">
-          <span class="chart__label">Gata de Gorgos</span>
-          <span class="chart__track"><span class="chart__bar" style="width:51.78719866999168%"></span></span>
-          <span class="chart__value">2492<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">15</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Beniarbeig: 2249 €/m² · 16 anuncios">
-          <span class="chart__label">Beniarbeig</span>
-          <span class="chart__track"><span class="chart__bar" style="width:46.737323358270984%"></span></span>
-          <span class="chart__value">2249<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">16</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Xaló / Jalón: 2150 €/m² · 15 anuncios">
-          <span class="chart__label">Xaló / Jalón</span>
-          <span class="chart__track"><span class="chart__bar" style="width:44.679966749792186%"></span></span>
-          <span class="chart__value">2150<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">15</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Pego: 2137 €/m² · 36 anuncios">
-          <span class="chart__label">Pego</span>
-          <span class="chart__track"><span class="chart__bar" style="width:44.40980881130507%"></span></span>
-          <span class="chart__value">2137<span class="chart__unit"> €/m²</span></span>
-          <span class="chart__count">36</span>
-        </div>
-        <div class="chart__row" tabindex="0" title="Ondara: 1861 €/m² · 18 anuncios">
-          <span class="chart__label">Ondara</span>
-          <span class="chart__track"><span class="chart__bar" style="width:38.67414796342477%"></span></span>
-          <span class="chart__value">1861<span class="chart__unit"> €/m²</span></span>
           <span class="chart__count">18</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Alcalalí: 2742 €/m² · 26 anuncios">
+          <span class="chart__label">Alcalalí</span>
+          <span class="chart__track"><span class="chart__bar" style="width:44.84055600981194%"></span></span>
+          <span class="chart__value">2742<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">26</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Orba: 2608 €/m² · 22 anuncios">
+          <span class="chart__label">Orba</span>
+          <span class="chart__track"><span class="chart__bar" style="width:42.64922322158626%"></span></span>
+          <span class="chart__value">2608<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">22</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Gata de Gorgos: 2420 €/m² · 23 anuncios">
+          <span class="chart__label">Gata de Gorgos</span>
+          <span class="chart__track"><span class="chart__bar" style="width:39.574816026165166%"></span></span>
+          <span class="chart__value">2420<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">23</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Beniarbeig: 2350 €/m² · 26 anuncios">
+          <span class="chart__label">Beniarbeig</span>
+          <span class="chart__track"><span class="chart__bar" style="width:38.43008994276369%"></span></span>
+          <span class="chart__value">2350<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">26</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Pego: 2199 €/m² · 46 anuncios">
+          <span class="chart__label">Pego</span>
+          <span class="chart__track"><span class="chart__bar" style="width:35.960752248569094%"></span></span>
+          <span class="chart__value">2199<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">46</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Xaló / Jalón: 2150 €/m² · 23 anuncios">
+          <span class="chart__label">Xaló / Jalón</span>
+          <span class="chart__track"><span class="chart__bar" style="width:35.15944399018806%"></span></span>
+          <span class="chart__value">2150<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">23</span>
+        </div>
+        <div class="chart__row" tabindex="0" title="Ondara: 1836 €/m² · 30 anuncios">
+          <span class="chart__label">Ondara</span>
+          <span class="chart__track"><span class="chart__bar" style="width:30.024529844644317%"></span></span>
+          <span class="chart__value">1836<span class="chart__unit"> €/m²</span></span>
+          <span class="chart__count">30</span>
         </div>
     </div>
   </section>
@@ -2089,7 +2906,7 @@
         
           <tr class="">
             <td>ThinkSpain (portal)</td>
-            <td class="num">978</td>
+            <td class="num">1348</td>
             <td class="num">—</td>
             <td>Correcto</td>
           </tr>
@@ -2106,9 +2923,27 @@
             <td>Correcto</td>
           </tr>
           <tr class="">
+            <td>Denialara Servicios Inmobiliarios</td>
+            <td class="num">20</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>Llobell Inmobiliaris</td>
+            <td class="num">29</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
+            <td>LYT Properties</td>
+            <td class="num">61</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
+          <tr class="">
             <td>InmoXara</td>
-            <td class="num">62</td>
-            <td class="num">77</td>
+            <td class="num">67</td>
+            <td class="num">—</td>
             <td>Correcto</td>
           </tr>
           <tr class="">
@@ -2123,13 +2958,19 @@
             <td class="num">—</td>
             <td>Sin resultados</td>
           </tr>
+          <tr class="">
+            <td>Inmobiliaria Calablanca</td>
+            <td class="num">3</td>
+            <td class="num">—</td>
+            <td>Correcto</td>
+          </tr>
       </tbody>
     </table></div>
   </section>
 
   <footer class="page">
     <span>Datos recogidos de las webs públicas de las agencias y del portal ThinkSpain, respetando su robots.txt. Cada anuncio enlaza a su ficha original.</span>
-    <span>Generado el 3/8/2026, 21:26:44.</span>
+    <span>Generado el 4/8/2026, 6:11:48.</span>
   </footer>
 </div>
 
@@ -2142,7 +2983,7 @@
       var cards = Array.prototype.slice.call(grid.children);
       var count = document.getElementById(countId);
       var empty = document.getElementById(emptyId);
-      var controls = ['municipality', 'type', 'agency', 'max'].map(function (name) {
+      var controls = ['municipality', 'type', 'agency', 'status', 'max'].map(function (name) {
         return document.getElementById(prefix + name);
       });
 
@@ -2150,7 +2991,8 @@
         var municipality = controls[0].value;
         var type = controls[1].value;
         var agency = controls[2].value;
-        var max = parseInt(controls[3].value, 10);
+        var status = controls[3].value;
+        var max = parseInt(controls[4].value, 10);
         var visible = 0;
 
         cards.forEach(function (card) {
@@ -2158,6 +3000,7 @@
             (!municipality || card.dataset.municipality === municipality) &&
             (!type || card.dataset.type === type) &&
             (!agency || card.dataset.agency === agency) &&
+            (!status || card.dataset.status === status) &&
             (!max || parseInt(card.dataset.price, 10) <= max);
           card.hidden = !ok;
           if (ok) visible += 1;
@@ -2171,6 +3014,8 @@
         control.addEventListener('input', apply);
         control.addEventListener('change', apply);
       });
+
+      apply();
     }
 
     wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');

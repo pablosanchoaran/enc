@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-04T06:11:48.336Z",
+  "totals": {
+    "inventory": 1780,
+    "additions": 0,
+    "priceDrops": 0,
+    "priceRises": 0,
+    "removals": 0
+  },
+  "additions": [],
+  "priceDrops": [],
+  "priceRises": [],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 1348,
+      "status": "ok"
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 180,
+      "status": "ok"
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 23,
+      "status": "ok"
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 20,
+      "status": "ok"
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 29,
+      "status": "ok"
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 61,
+      "status": "ok"
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 67,
+      "status": "ok"
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 49,
+      "status": "ok"
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 0,
+      "status": "vacío"
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 3,
+      "status": "ok"
+    }
+  ],
+  "bootstrap": true
+}

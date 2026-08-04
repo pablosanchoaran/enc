@@ -37,7 +37,9 @@ const LONG_DATE = new Intl.DateTimeFormat('es-ES', {
 function pricePerM2ByMunicipality(listings) {
   const groups = new Map()
   for (const item of listings) {
+    // Lo vendido no es oferta: distorsionaría la mediana del mercado actual.
     if (!item.pricePerM2 || item.type === 'plot' || item.status === 'removed') continue
+    if (item.saleStatus === 'sold') continue
     if (!groups.has(item.municipality)) groups.set(item.municipality, [])
     groups.get(item.municipality).push(item.pricePerM2)
   }
@@ -59,7 +61,33 @@ function pricePerM2ByMunicipality(listings) {
     .sort((a, b) => b.median - a.median)
 }
 
+const STATUS_LABELS = { available: 'Disponible', reserved: 'Reservado', sold: 'Vendido' }
+
+/**
+ * Opciones del filtro de estado. Arranca en "solo disponibles": una casa
+ * vendida sigue publicada meses y no debería contar como oferta.
+ */
+function statusOptions(items) {
+  const counts = items.reduce((tally, item) => {
+    const status = item.saleStatus ?? 'available'
+    tally[status] = (tally[status] ?? 0) + 1
+    return tally
+  }, {})
+
+  const options = [
+    ['available', `Solo disponibles (${counts.available ?? 0})`],
+    ['', `Todos, incluidos vendidos (${items.length})`],
+    ['reserved', `Solo reservados (${counts.reserved ?? 0})`],
+    ['sold', `Solo vendidos (${counts.sold ?? 0})`],
+  ]
+  return options
+    .filter(([value]) => value === '' || value === 'available' || counts[value] > 0)
+    .map(([value, label]) => `<option value="${value}">${label}</option>`)
+    .join('')
+}
+
 function renderCard(item) {
+  const status = item.saleStatus ?? 'available'
   const facts = [
     item.beds ? `${item.beds} hab.` : null,
     item.baths ? `${item.baths} baños` : null,
@@ -68,9 +96,10 @@ function renderCard(item) {
   ].filter(Boolean)
 
   return `
-    <article class="card" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}">
+    <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}">
       <div class="card__head">
         <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
+        ${status === 'available' ? '' : `<span class="chip chip--${status}">${STATUS_LABELS[status]}</span>`}
         <span class="card__place">${escape(item.municipality)}</span>
       </div>
       <p class="card__price">${euros(item.price)}</p>
@@ -185,6 +214,9 @@ export function renderReport({ daily, listings }) {
     --accent-soft: #e0efef;
     --drop: #2c7a57;
     --rise: #a9522a;
+    --rise-soft: #f6e9e2;
+    --sold: #6b7679;
+    --sold-soft: #ebefef;
     --radius: 10px;
     --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -202,6 +234,9 @@ export function renderReport({ daily, listings }) {
       --accent-soft: #14292b;
       --drop: #56b184;
       --rise: #d08355;
+      --rise-soft: #2c1f18;
+      --sold: #8a9599;
+      --sold-soft: #1b2426;
     }
   }
   :root[data-theme="dark"] {
@@ -215,6 +250,9 @@ export function renderReport({ daily, listings }) {
     --accent-soft: #14292b;
     --drop: #56b184;
     --rise: #d08355;
+    --rise-soft: #2c1f18;
+    --sold: #8a9599;
+    --sold-soft: #1b2426;
   }
   :root[data-theme="light"] {
     --bg: #f5f8f8;
@@ -227,6 +265,9 @@ export function renderReport({ daily, listings }) {
     --accent-soft: #e0efef;
     --drop: #2c7a57;
     --rise: #a9522a;
+    --rise-soft: #f6e9e2;
+    --sold: #6b7679;
+    --sold-soft: #ebefef;
   }
 
   body {
@@ -273,7 +314,11 @@ export function renderReport({ daily, listings }) {
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
   .card__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .chip { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
-  .card__place { font-size: 0.82rem; color: var(--ink-muted); text-align: right; }
+  .chip--reserved { color: var(--rise); background: var(--rise-soft); }
+  .chip--sold { color: var(--sold); background: var(--sold-soft); }
+  .card--sold { opacity: 0.72; }
+  .card--sold .card__price { text-decoration: line-through; text-decoration-thickness: 1px; }
+  .card__place { font-size: 0.82rem; color: var(--ink-muted); text-align: right; margin-left: auto; }
   .card__price { font-family: var(--display); font-size: 1.5rem; font-variant-numeric: tabular-nums; margin: 0; }
   .card__unit { font-family: var(--mono); font-size: 0.76rem; color: var(--ink-muted); margin: -6px 0 0; }
   .card__title { font-family: var(--body); font-size: 0.92rem; font-weight: 500; line-height: 1.35; }
@@ -352,6 +397,7 @@ export function renderReport({ daily, listings }) {
       <label>Municipio<select id="f-municipality"><option value="">Todos</option>${municipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
       <label>Tipo<select id="f-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
       <label>Agencia<select id="f-agency"><option value="">Todas</option>${agencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
+      <label>Estado<select id="f-status">${statusOptions(additions)}</select></label>
       <label>Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
     </div>
     <div class="grid" id="grid">${additions.map(renderCard).join('')}</div>
@@ -371,6 +417,7 @@ export function renderReport({ daily, listings }) {
       <label>Municipio<select id="b-municipality"><option value="">Todos</option>${budgetMunicipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
       <label>Tipo<select id="b-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).filter(([value]) => budget.some((item) => item.type === value)).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
       <label>Agencia<select id="b-agency"><option value="">Todas</option>${budgetAgencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
+      <label>Estado<select id="b-status">${statusOptions(budget)}</select></label>
       <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
     </div>
     <div class="grid" id="b-grid">${budget.map(renderCard).join('')}</div>
@@ -437,7 +484,7 @@ export function renderReport({ daily, listings }) {
       var cards = Array.prototype.slice.call(grid.children);
       var count = document.getElementById(countId);
       var empty = document.getElementById(emptyId);
-      var controls = ['municipality', 'type', 'agency', 'max'].map(function (name) {
+      var controls = ['municipality', 'type', 'agency', 'status', 'max'].map(function (name) {
         return document.getElementById(prefix + name);
       });
 
@@ -445,7 +492,8 @@ export function renderReport({ daily, listings }) {
         var municipality = controls[0].value;
         var type = controls[1].value;
         var agency = controls[2].value;
-        var max = parseInt(controls[3].value, 10);
+        var status = controls[3].value;
+        var max = parseInt(controls[4].value, 10);
         var visible = 0;
 
         cards.forEach(function (card) {
@@ -453,6 +501,7 @@ export function renderReport({ daily, listings }) {
             (!municipality || card.dataset.municipality === municipality) &&
             (!type || card.dataset.type === type) &&
             (!agency || card.dataset.agency === agency) &&
+            (!status || card.dataset.status === status) &&
             (!max || parseInt(card.dataset.price, 10) <= max);
           card.hidden = !ok;
           if (ok) visible += 1;
@@ -466,6 +515,8 @@ export function renderReport({ daily, listings }) {
         control.addEventListener('input', apply);
         control.addEventListener('change', apply);
       });
+
+      apply();
     }
 
     wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');
