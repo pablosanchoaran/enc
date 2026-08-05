@@ -72,12 +72,14 @@ Cómo la tecnología cambió la naturaleza de la decisión directiva.
 | Tesis, arquitectura y guía de estilo | ✅ Cerrado |
 | Introducción | ✅ Escrita |
 | Capítulo 1 (capítulo modelo, fija el estándar) | ✅ Escrito |
-| Capítulos 2–16 | 🟡 Esqueleto detallado listo para redacción |
+| **Parte II completa — capítulos 5, 6, 7 y 8** | ✅ **Escrita** |
+| Capítulos 2–4 (resto de la Parte I) | 🟡 Esqueleto detallado listo para redacción |
+| Capítulos 9–16 (Partes III y IV) | 🟡 Esqueleto detallado listo para redacción |
 | Guía docente de la asignatura (6 ECTS) | ✅ Completa |
 | Plan de 15 sesiones | ✅ Completo |
 | Evaluación y rúbricas | ✅ Completo |
 | Proyecto integrador | ✅ Completo |
-| Plantillas y lienzos | ✅ 8 de ~16 |
+| Plantillas y lienzos | ✅ 9 de 16 |
 | Casos | 🟡 Guía de redacción + 1 caso modelo |
 
 ## 5. Mapa del repositorio
@@ -87,9 +89,10 @@ libro/
 ├── README.md                  ← este documento: tesis, arquitectura, estado
 ├── GUIA-DE-ESTILO.md          ← voz, anatomía de capítulo, reglas de rigor
 ├── manuscrito/                ← el libro
-│   ├── 00-introduccion.md
+│   ├── 00-introduccion.md             (completa)
 │   ├── 01-de-coste-a-estructura.md    (capítulo modelo, completo)
-│   └── 02..16-*.md                    (esqueletos detallados)
+│   ├── 05..08-*.md                    (Parte II completa)
+│   └── 02-04, 09-16-*.md              (esqueletos detallados)
 ├── docencia/                  ← la asignatura derivada del libro
 │   ├── guia-docente.md
 │   ├── plan-de-sesiones.md
@@ -123,7 +126,10 @@ exigen (`base` / `[+ Máster]` / `[+ Dirección]`). Ver [`docencia/guia-docente.
 
 ## 8. Próximos pasos
 
-1. Cerrar el capítulo 2 con el mismo estándar que el 1 (validar que la plantilla escala).
-2. Redactar la Parte II completa: es el núcleo diferencial frente a manuales de estrategia clásicos.
-3. Escribir 4 casos largos (uno por parte) con datos anonimizados y guía docente propia.
-4. Piloto: impartir las sesiones 1–5 y medir con la encuesta del propio repositorio.
+1. **Cerrar los capítulos 2, 3 y 4** para completar la Parte I. El 4 —alfabetización— es el
+   más delicado: hay que escribirlo sobre conceptos y no sobre productos, o caduca en un año.
+2. **Redactar la Parte III** (caps. 9–12). Es la que sostiene la tesis de que la mitad del
+   problema tecnológico es un problema de personas y estructura.
+3. Escribir las **7 plantillas** que faltan (03, 04, 09, 10, 12, 13, 16).
+4. Escribir **3 casos largos** más, uno por parte, con nota docente propia.
+5. **Piloto:** impartir las sesiones 1 y 5–8 —las que ya tienen capítulo completo— y medir.

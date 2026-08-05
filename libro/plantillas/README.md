@@ -15,7 +15,7 @@ se puede rellenar en una sesión de trabajo con datos imperfectos, está mal dis
 | 05 | [Núcleo estratégico](05-nucleo-estrategico.md) | 5 | E5 | ✅ |
 | 06 | [Test de foso](06-test-de-foso.md) | 6 | E6 | ✅ |
 | 07 | [Ficha de apuesta y presupuesto de riesgo](07-ficha-de-apuesta.md) | 7 | E7 | ✅ |
-| 08 | Mapa de dependencias | 8 | E8 | 🟡 |
+| 08 | [Mapa de dependencias de iniciativa](08-mapa-de-dependencias.md) | 8 | E8 | ✅ |
 | 09 | Las diez preguntas del directivo no técnico | 9 | E9 | 🟡 |
 | 10 | Lienzo de equipo | 10 | E10 | 🟡 |
 | 11 | [Protocolo de decisión de comité](11-protocolo-de-comite.md) | 11 | S11 | ✅ |
@@ -27,12 +27,13 @@ se puede rellenar en una sesión de trabajo con datos imperfectos, está mal dis
 
 ## Criterios de diseño
 
-Las ocho plantillas escritas comparten cuatro decisiones que conviene mantener en las
+Las nueve plantillas escritas comparten cuatro decisiones que conviene mantener en las
 restantes:
 
 1. **Un campo incómodo por plantilla.** El que la gente no quiere rellenar es casi siempre el
    que aporta el valor: las renuncias explícitas (05), el criterio de parada firmado (07),
-   cómo manipularía yo este indicador (14), quién da la cara ante la prensa (15).
+   quién resuelve el conflicto entre dos equipos (08), cómo manipularía yo este indicador (14),
+   quién da la cara ante la prensa (15).
 2. **Números donde se suelen poner adjetivos.** «Riesgo bajo» no es una respuesta; «3 % de
    error» sí. Las plantillas rechazan explícitamente los adjetivos en los campos críticos.
 3. **Una regla de invalidez.** Cada plantilla dice en qué caso el resultado no vale: un
