@@ -122,11 +122,43 @@ function parsePropertyPage(html, url) {
   }
 }
 
+/**
+ * Las webs multiidioma publican la misma ficha una vez por idioma
+ * (`/es/property/x`, `/en/property/x`, `/de/property/x`…). Sin esto se
+ * descargaría cuatro veces lo mismo y el inventario tendría cuatro anuncios
+ * por casa, porque la referencia sale del slug.
+ */
+function preferOneLanguage(entries) {
+  const languageOf = (loc) => {
+    const segments = new URL(loc).pathname.split('/').filter(Boolean)
+    return segments.length > 2 && LANGUAGE_PREFIX.test(segments[0])
+      ? segments[0].toLowerCase()
+      : null
+  }
+
+  const languages = new Set(entries.map((entry) => languageOf(entry.loc)).filter(Boolean))
+  if (languages.size < 2) return entries
+
+  // No se puede agrupar por la ruta porque el slug también va traducido
+  // (`/es/propiedad/villa-en-javea` frente a `/en/property/villa-in-javea`),
+  // así que se elige un idioma y se descarta el resto.
+  const preferred = ['es', 'en'].find((code) => languages.has(code)) ?? [...languages][0]
+  return entries.filter((entry) => {
+    const language = languageOf(entry.loc)
+    return language === null || language === preferred
+  })
+}
+
 export async function collect({ fetcher, source, known, log, limit = Infinity, refreshBudget = 40 }) {
-  const entries = (await collectSitemapEntries(fetcher, source.origin)).filter((entry) =>
+  const all = (await collectSitemapEntries(fetcher, source.origin)).filter((entry) =>
     isPropertyUrl(entry.loc),
   )
-  log(`  fichas en el sitemap: ${entries.length}`)
+  const entries = preferOneLanguage(all)
+  const duplicates = all.length - entries.length
+  log(
+    `  fichas en el sitemap: ${entries.length}` +
+      (duplicates > 0 ? ` (${duplicates} son la misma ficha en otro idioma)` : ''),
+  )
 
   // Las fichas ya vistas solo se vuelven a abrir si su lastmod cambió; se
   // reserva un presupuesto para refrescar las más antiguas por rotación, que

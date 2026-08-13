@@ -2,7 +2,7 @@
   "date": "2026-08-04",
   "generatedAt": "2026-08-04T21:39:21.672Z",
   "totals": {
-    "inventory": 2050,
+    "inventory": 2743,
     "additions": 0,
     "priceDrops": 0,
     "priceRises": 0,
@@ -64,8 +64,8 @@
     {
       "id": "benimo-villas",
       "agency": "Benimo Villas",
-      "listings": 0,
-      "status": "vacío"
+      "listings": 363,
+      "status": "ok"
     },
     {
       "id": "calablanca",
@@ -94,7 +94,7 @@
     {
       "id": "ortola",
       "agency": "Ortolá Inmobiliaria",
-      "listings": 36,
+      "listings": 223,
       "status": "ok"
     },
     {
@@ -118,13 +118,13 @@
     {
       "id": "agenciamorato",
       "agency": "Agencia Inmobiliaria Morató",
-      "listings": 31,
+      "listings": 97,
       "status": "ok"
     },
     {
       "id": "deseohomes",
       "agency": "Deseo Homes",
-      "listings": 29,
+      "listings": 106,
       "status": "ok"
     },
     {

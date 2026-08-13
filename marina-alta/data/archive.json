@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:39:21.672Z",
+  "updatedAt": "2026-08-13T22:04:04.548Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -2738,9 +2738,9 @@
       ],
       "beds": null,
       "baths": null,
-      "builtM2": 4000,
+      "builtM2": null,
       "plotM2": null,
-      "pricePerM2": 788,
+      "pricePerM2": null,
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
@@ -2798,7 +2798,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3007,9 +3007,9 @@
         }
       ],
       "beds": 2,
-      "baths": null,
+      "baths": 1,
       "builtM2": 64,
-      "plotM2": 64,
+      "plotM2": null,
       "pricePerM2": 2969,
       "photo": {
         "file": "agenciamorato-6acba3bd47.webp",
@@ -3019,7 +3019,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3046,7 +3046,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3105,7 +3105,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3137,7 +3137,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3166,6 +3166,711 @@
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04",
       "archivedOn": "2026-08-04T20:58:56.395Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:2aaae17c34",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/oportunidad-en-el-corazon-de-calpe-a462c/",
+      "title": "Oportunidad en el corazón de Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 220000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 51,
+      "plotM2": null,
+      "pricePerM2": 4314,
+      "photo": {
+        "file": "agenciamorato-2aaae17c34.webp",
+        "thumb": "agenciamorato-2aaae17c34.thumb.webp",
+        "capturedAt": "2026-08-13T21:34:03.852Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/6d/019ffa30-38c2-73ad-9781-ab0fbe80386d.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:5bf90343ba",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/oportunidad-en-pleno-centro-de-calpe-cerca-de-la-playa-arenal-y-con-todos-los-servicios-a-tu-alcance-a433c/",
+      "title": "Oportunidad en pleno centro de Calpe: cerca de la playa Arenal y con todos los servicios a tu alcance",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 145000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 145000
+        }
+      ],
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 45,
+      "plotM2": null,
+      "pricePerM2": 3222,
+      "photo": {
+        "file": "agenciamorato-5bf90343ba.webp",
+        "thumb": "agenciamorato-5bf90343ba.thumb.webp",
+        "capturedAt": "2026-08-13T21:34:03.852Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/63/019c4216-026e-7421-bcf1-5a97f308cc63.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:05a1913577",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/tu-rincon-frente-al-mediterraneo-luz-mar-y-tranquilidad-en-calpe-a425c/",
+      "title": "Tu rincón frente al Mediterráneo: luz, mar y tranquilidad en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 560000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 560000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 96,
+      "plotM2": 96,
+      "pricePerM2": 5833,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:4bae070629",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/atico-duplex-de-ensueno-en-calpe-un-balcon-privado-al-mediterraneo-a447/",
+      "title": "Ático Dúplex de Ensueño en Calpe: Un Balcón Privado al Mediterráneo",
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "price": 675000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 675000
+        }
+      ],
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 135,
+      "plotM2": 230,
+      "pricePerM2": 5000,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:ef445638fb",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-de-altas-calidades-con-vistas-panoramicas-al-mar-c198/",
+      "title": "Villa de altas calidades con vistas panorámicas al mar",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 999900,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 999900
+        }
+      ],
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 412,
+      "plotM2": 1466,
+      "pricePerM2": 2427,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:1694365b9f",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/espectacular-atico-de-125-m2-con-3-dormitorios-vistas-al-mar-y-piscina-en-el-centro-de-calpe-a460/",
+      "title": "Espectacular ático de 125 m² con 3 dormitorios, vistas al mar y piscina en el centro de Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "price": 404000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 404000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": null,
+      "pricePerM2": 3232,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:47adf178c3",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/vive-el-mediterraneo-en-pleno-centro-de-calpe-a-pocos-pasos-de-la-playa-og1m1wked/",
+      "title": "Vive el Mediterráneo en pleno centro de Calpe a pocos pasos de la playa.",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 199000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 70,
+      "plotM2": null,
+      "pricePerM2": 2843,
+      "photo": {
+        "file": "agenciamorato-47adf178c3.webp",
+        "thumb": "agenciamorato-47adf178c3.thumb.webp",
+        "capturedAt": "2026-08-13T21:34:03.852Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/d7/019eff25-e161-70ee-aa47-0c56974416d7.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:4f7eaea4b0",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-venta-en-calpe-jv-692039/",
+      "title": "Apartamento en venta en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 425000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 425000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 101,
+      "plotM2": null,
+      "pricePerM2": 4208,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:b0dfbfb7e0",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-venta-en-calpe-calp-ogu98jlv/",
+      "title": "Apartamento en venta en Calpe / Calp",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 225000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2123,
+      "photo": {
+        "file": "agenciamorato-b0dfbfb7e0.webp",
+        "thumb": "agenciamorato-b0dfbfb7e0.thumb.webp",
+        "capturedAt": "2026-08-13T21:34:03.852Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/2a/019eff25-e161-70ee-aa47-170f4ed2fe2a.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:34:03.851Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:d8c19ca65d",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-calpe-pluiwee6/",
+      "title": "Chalet/Villa en venta en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 790000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 790000
+        }
+      ],
+      "beds": 5,
+      "baths": 5,
+      "builtM2": 300,
+      "plotM2": 1200,
+      "pricePerM2": 2633,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:1aa58176c1",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-calpe-plr0qmyr/",
+      "title": "Chalet/Villa en venta en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 1200000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 1200000
+        }
+      ],
+      "beds": 6,
+      "baths": 5,
+      "builtM2": 360,
+      "plotM2": 1200,
+      "pricePerM2": 3333,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:0a42128dbe",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-benissa-pl1i9auz4/",
+      "title": "Chalet/Villa en venta en Benissa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 954000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 954000
+        }
+      ],
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 352,
+      "plotM2": 1070,
+      "pricePerM2": 2710,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:00360e9893",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-calpe-pl1e6ks45/",
+      "title": "Chalet/Villa en venta en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 665000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 665000
+        }
+      ],
+      "beds": 4,
+      "baths": 3,
+      "builtM2": 300,
+      "plotM2": 1600,
+      "pricePerM2": 2217,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:e764bf22b5",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-calpe-pl1mjymc3/",
+      "title": "Chalet/Villa en venta en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 720000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 720000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 370,
+      "plotM2": 869,
+      "pricePerM2": 1946,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:6e9a8dcda6",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/gran-oportunidad-junto-a-la-playa-del-arenal-bol-2-habitaciones-y-excelente-ubicacion-a443/",
+      "title": "Gran oportunidad junto a la Playa del Arenal-Bol – 2 habitaciones y excelente ubicación",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 165000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 64,
+      "plotM2": 64,
+      "pricePerM2": 2578,
+      "photo": {
+        "file": "agenciamorato-6e9a8dcda6.webp",
+        "thumb": "agenciamorato-6e9a8dcda6.thumb.webp",
+        "capturedAt": "2026-08-13T21:39:41.464Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/62/019d6ce1-0903-734a-abba-006127a78862.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:2ad05ed00d",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/chalet-villa-en-venta-en-benissa-pl1wq5z50/",
+      "title": "Chalet/Villa en venta en Benissa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 1700000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 1700000
+        }
+      ],
+      "beds": 4,
+      "baths": 4,
+      "builtM2": 500,
+      "plotM2": 1350,
+      "pricePerM2": 3400,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:dc72448297",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/joya-mediterranea-con-vistas-infinitas-un-refugio-impecable-en-calpe-c423/",
+      "title": "Joya Mediterránea con Vistas Infinitas: Un Refugio Impecable en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 640000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 640000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 187,
+      "plotM2": 825,
+      "pricePerM2": 3422,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:afa218c386",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/villa-con-vistas-magnificas-al-mar-a-100-metros-del-mar-c401c/",
+      "title": "Villa con vistas magnificas al mar a 100 metros del mar",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 850000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 850000
+        }
+      ],
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 251,
+      "plotM2": 786,
+      "pricePerM2": 3386,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:39:41.463Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:b2b5f0f98c",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/villa-en-venta-en-pinosol-javea-ja-h-103/",
+      "title": "Villa en venta en Pinosol, Jávea",
+      "municipality": "Xàbia / Jávea",
+      "type": "villa",
+      "price": 450000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 450000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 756,
+      "plotM2": null,
+      "pricePerM2": 595,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:42:35.084Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:4380b6205e",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/villa-para-renovar-en-venta-en-empedrola-calpe-ca-h-473/",
+      "title": "Villa para renovar en venta en Empedrola, Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 350000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 1469,
+      "plotM2": null,
+      "pricePerM2": 238,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:42:35.084Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:1abea6a84d",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/villa-tradicional-espanola-en-venta-en-la-costa-de-benissa-be-h-939/",
+      "title": "Villa tradicional española en venta en la costa de Benissa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 420000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 420000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 894,
+      "plotM2": null,
+      "pricePerM2": 470,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:42:35.084Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:e57c5221ef",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/chalet-villa-en-venta-en-benissa-tb1lwltrt/",
+      "title": "Chalet/Villa en venta en Benissa",
+      "municipality": "Benissa",
+      "type": "villa",
+      "price": 425000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 425000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 1500,
+      "plotM2": null,
+      "pricePerM2": 283,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:47:19.384Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:cd6d2d4d59",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/chalet-villa-en-venta-en-calpe-calp-vdx1130/",
+      "title": "Chalet/Villa en venta en Calpe / Calp",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 425000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 425000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 300,
+      "plotM2": null,
+      "pricePerM2": 1417,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:47:19.384Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:6a10c1ddf9",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/bungalow-con-vistas-al-mar-en-maryvilla-calpe-ms6h9z6g/",
+      "title": "BUNGALOW CON VISTAS AL MAR EN MARYVILLA - CALPE",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 355000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 355000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": 1469,
+      "plotM2": null,
+      "pricePerM2": 242,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:49:51.145Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "benimo-villas:8f7d00e5f7",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/en-venta-bungalow-en-moraira-park-moraira-mt-h-813/",
+      "title": "En venta: bungalow en Moraira Park, Moraira",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 249500
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "benimo-villas-8f7d00e5f7.webp",
+        "thumb": "benimo-villas-8f7d00e5f7.thumb.webp",
+        "capturedAt": "2026-08-13T21:49:51.146Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/ba/019a971c-4caf-767f-9c8c-6a2dfcece6ba.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-13",
+      "archivedOn": "2026-08-13T21:49:51.145Z",
       "reason": "vendido"
     }
   ]
