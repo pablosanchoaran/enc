@@ -14,10 +14,15 @@ export function listingId(sourceId, sourceRef) {
 /**
  * @returns {{ listing: object|null, reason: string|null }} `reason` explica por
  * qué se ha descartado, para poder mostrarlo en el resumen de la ejecución.
+ * `maxPrice` es el techo de precio del extractor (ver config en
+ * sources/agencies.json).
  */
-export function normalize(raw, source, today) {
+export function normalize(raw, source, today, { maxPrice = Infinity } = {}) {
   if (!raw?.url) return { listing: null, reason: 'sin url' }
   if (!raw.price) return { listing: null, reason: 'sin precio' }
+  // Por encima del techo no se guarda, pero sí se anota el precio: así una
+  // bajada que lo cruce hacia abajo se detecta en la siguiente pasada.
+  if (raw.price > maxPrice) return { listing: null, reason: 'por encima del techo' }
 
   // Los adaptadores que conocen la zona con certeza la traen ya resuelta.
   const municipality =

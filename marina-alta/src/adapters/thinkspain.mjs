@@ -157,7 +157,14 @@ function parsePropertyPage(html, url) {
   }
 }
 
-export async function collect({ fetcher, known, log, limit = Infinity, feedLimit = 250 }) {
+export async function collect({
+  fetcher,
+  known,
+  log,
+  limit = Infinity,
+  feedLimit = 250,
+  maxPrice = Infinity,
+}) {
   const found = []
   const seen = new Set()
 
@@ -172,7 +179,11 @@ export async function collect({ fetcher, known, log, limit = Infinity, feedLimit
   for (const zoneUrl of zoneUrls.slice(0, limit)) {
     const html = await fetcher.get(zoneUrl)
     if (!html) continue
-    parseListingCards(html, zoneUrl.slice(LISTING_PREFIX.length)).forEach(push)
+    // El precio viene en la propia tarjeta del listado, así que lo caro se
+    // descarta aquí sin gastar una sola petición más.
+    parseListingCards(html, zoneUrl.slice(LISTING_PREFIX.length))
+      .filter((item) => item.price <= maxPrice)
+      .forEach(push)
   }
   log(`  barrido por zonas: ${found.length} anuncios`)
 
@@ -188,7 +199,9 @@ export async function collect({ fetcher, known, log, limit = Infinity, feedLimit
       .map((entry) => entry.loc)
       .filter((loc) => {
         const ref = loc.split('/').pop()
-        return !seen.has(ref) && !known.ids.has(`thinkspain:${ref}`)
+        if (seen.has(ref) || known.ids.has(`thinkspain:${ref}`)) return false
+        // Las del feed que ya se sabe que son caras tampoco se reabren.
+        return !known.overBudget?.has(loc)
       })
 
     // `limit` acota el barrido de zonas; el feed tiene su propio tope.

@@ -1,0 +1,209 @@
+{
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-21T21:16:18.971Z",
+  "totals": {
+    "inventory": 657,
+    "additions": 2,
+    "priceDrops": 0,
+    "priceRises": 0,
+    "removals": 0
+  },
+  "additions": [
+    {
+      "id": "catorceinmo:200b0a3f10",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-con-piscina-cerca-del-golf-en-denia-15d0194/",
+      "title": "Apartamento con piscina cerca del golf en Dénia",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 220000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/05/13/358117/vente_appartement_tage_suprieur_la_sella_golf_terrasse_cellier_parking_ls01591.jpeg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "catorceinmo-200b0a3f10.webp",
+        "thumb": "catorceinmo-200b0a3f10.thumb.webp",
+        "capturedAt": "2026-08-21T21:16:18.972Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/05/13/358117/vente_appartement_tage_suprieur_la_sella_golf_terrasse_cellier_parking_ls01591.jpeg"
+      }
+    },
+    {
+      "id": "catorceinmo:b85a8c1a90",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-con-terraza-y-piscina-en-el-vergel-27d0021/",
+      "title": "Apartamento con terraza y piscina en El Vergel",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 230000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/04/24/357058/Image18.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "catorceinmo-b85a8c1a90.webp",
+        "thumb": "catorceinmo-b85a8c1a90.thumb.webp",
+        "capturedAt": "2026-08-21T21:16:18.972Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/04/24/357058/Image18.jpeg"
+      }
+    }
+  ],
+  "priceDrops": [],
+  "priceRises": [],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 244,
+      "status": "ok"
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 49,
+      "status": "ok"
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 13,
+      "status": "ok"
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 24,
+      "status": "ok"
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 32,
+      "status": "ok"
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 27,
+      "status": "ok"
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 38,
+      "status": "ok"
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 30,
+      "status": "ok"
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 49,
+      "status": "ok"
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok"
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 13,
+      "status": "ok"
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok"
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 18,
+      "status": "ok"
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 39,
+      "status": "ok"
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 6,
+      "status": "ok"
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok"
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 4,
+      "status": "ok"
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 34,
+      "status": "ok"
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 9,
+      "status": "ok"
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío"
+    }
+  ],
+  "bootstrap": true
+}

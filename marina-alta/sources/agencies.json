@@ -1,5 +1,9 @@
 {
   "$comment": "Catálogo de fuentes. 'adapter' elige el parser; 'enabled' permite desactivar una fuente sin borrarla. Para dar de alta una agencia nueva basta con añadir una entrada aquí.",
+  "config": {
+    "maxPrice": 350000,
+    "$maxPrice": "Techo de precio del extractor. Lo que esté por encima no entra en el inventario, y en las webs con sitemap tampoco se vuelve a descargar mientras su lastmod no cambie. Los descartados quedan anotados en data/over-budget.json con su precio, para que una bajada por debajo del techo se detecte igualmente."
+  },
   "sources": [
     {
       "id": "thinkspain",

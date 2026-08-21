@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T22:04:04.548Z",
+  "updatedAt": "2026-08-21T21:16:18.971Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -2439,7 +2439,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-21",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2471,7 +2471,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-21",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2503,7 +2503,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-21",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2562,7 +2562,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-21",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -3871,6 +3871,38 @@
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-08-13",
       "archivedOn": "2026-08-13T21:49:51.145Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "catorceinmo:200b0a3f10",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-con-piscina-cerca-del-golf-en-denia-15d0194/",
+      "title": "Apartamento con piscina cerca del golf en Dénia",
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 220000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "catorceinmo-200b0a3f10.webp",
+        "thumb": "catorceinmo-200b0a3f10.thumb.webp",
+        "capturedAt": "2026-08-21T21:16:18.972Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/05/13/358117/vente_appartement_tage_suprieur_la_sella_golf_terrasse_cellier_parking_ls01591.jpeg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     }
   ]

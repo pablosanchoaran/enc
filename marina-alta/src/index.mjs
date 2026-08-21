@@ -29,6 +29,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
 const INVENTORY_FILE = join(DATA_DIR, 'listings.json')
 const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
+/** Lo que supera el techo de precio: solo url, precio y lastmod. */
+const OVER_BUDGET_FILE = join(DATA_DIR, 'over-budget.json')
 const PHOTOS_DIR = join(DATA_DIR, 'photos')
 /** Se guarda la foto de los anuncios hasta este precio (el resto son muchos). */
 const PHOTO_PRICE_LIMIT = 260_000
@@ -100,15 +102,22 @@ async function run() {
   }
 
   const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
+  const maxPrice = catalog.config?.maxPrice ?? Infinity
   const sources = catalog.sources.filter((source) => {
     if (!source.enabled) return false
     if (!args.source) return true
     return source.id === args.source || source.adapter === args.source
   })
 
+  // Lo que ya se sabe que está por encima del techo no hace falta volver a
+  // descargarlo mientras la web no toque su lastmod.
+  const overBudgetFile = await readJson(OVER_BUDGET_FILE, { updatedAt: null, entries: [] })
+  const overBudget = new Map((overBudgetFile.entries ?? []).map((item) => [item.url, item]))
+
   const known = {
     ids: new Set(previousListings.map((item) => item.id)),
     byUrl: new Map(previousListings.map((item) => [item.url, item])),
+    overBudget,
   }
 
   const collected = []
@@ -141,6 +150,7 @@ async function run() {
         limit: args.limit,
         feedLimit: args.feedLimit,
         refreshBudget: args.refreshBudget,
+        maxPrice,
       })
     } catch (error) {
       log(`  ✖ error del adaptador: ${error.message}`)
@@ -157,11 +167,22 @@ async function run() {
     const rejected = new Map()
     let accepted = 0
     for (const raw of raws) {
-      const { listing, reason } = normalize(raw, source, today)
+      const { listing, reason } = normalize(raw, source, today, { maxPrice })
       if (!listing) {
         rejected.set(reason, (rejected.get(reason) ?? 0) + 1)
+        if (reason === 'por encima del techo') {
+          overBudget.set(raw.url, {
+            url: raw.url,
+            source: source.id,
+            price: raw.price,
+            lastmod: raw.lastmod ?? null,
+            seenOn: today,
+          })
+        }
         continue
       }
+      // Si estaba anotado como caro y ahora entra, ha bajado de precio.
+      overBudget.delete(raw.url)
       collected.push(listing)
       accepted += 1
     }
@@ -301,6 +322,11 @@ async function run() {
   )
 
   await writeJson(INVENTORY_FILE, { updatedAt: daily.generatedAt, listings })
+  await writeJson(OVER_BUDGET_FILE, {
+    updatedAt: daily.generatedAt,
+    maxPrice,
+    entries: [...overBudget.values()],
+  })
   await writeJson(ARCHIVE_FILE, { updatedAt: daily.generatedAt, entries: archive.entries })
   await writeJson(dailyFile, daily)
   await mkdir(dirname(REPORT_FILE), { recursive: true })

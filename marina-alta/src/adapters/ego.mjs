@@ -70,13 +70,25 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   const entries = await collectPropertyUrls(fetcher, source.origin)
   log(`  fichas en el sitemap: ${entries.length}`)
 
+  // Lo que ya se sabe por encima del techo de precio no se vuelve a abrir
+  // mientras la web no toque su lastmod: es de donde sale casi todo el ahorro,
+  // porque tres de cada cuatro anuncios de la comarca pasan de ese techo.
   const fresh = []
   const stale = []
+  let skippedByPrice = 0
+
   for (const entry of entries) {
+    const expensive = known.overBudget?.get(entry.loc)
+    if (expensive && entry.lastmod && expensive.lastmod === entry.lastmod) {
+      skippedByPrice += 1
+      continue
+    }
+
     const previous = known.byUrl.get(entry.loc)
     if (!previous || !entry.lastmod || entry.lastmod !== previous.lastmod) fresh.push(entry)
     else stale.push({ entry, previous })
   }
+  if (skippedByPrice > 0) log(`  ${skippedByPrice} fichas ya conocidas por encima del techo: no se abren`)
 
   stale.sort((a, b) => (a.previous.lastSeen ?? '').localeCompare(b.previous.lastSeen ?? ''))
   const queue = [...fresh, ...stale.slice(0, refreshBudget).map((item) => item.entry)].slice(0, limit)

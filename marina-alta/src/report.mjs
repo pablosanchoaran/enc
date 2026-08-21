@@ -447,7 +447,7 @@ export function renderReport({ daily, listings, thumbnails }) {
   <section>
     <div class="section__head">
       <h2>Precio por metro cuadrado</h2>
-      <span class="section__note">mediana del inventario en seguimiento, obra construida</span>
+      <span class="section__note">mediana de lo que se sigue, que es el tramo bajo del mercado</span>
     </div>
     ${renderChart(chartRows)}
   </section>

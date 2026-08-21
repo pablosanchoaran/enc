@@ -45,6 +45,23 @@ nunca**: conserva precio, histórico de precios, fechas de primera y última vez
 que se vio, la fecha de archivo y su foto. De ahí saldrán las comparaciones
 entre meses y años, que están pendientes.
 
+## Techo de precio
+
+`config.maxPrice` en `sources/agencies.json` (350.000 € ahora mismo) marca hasta
+dónde llega el extractor. Tres de cada cuatro anuncios de la comarca lo superan,
+así que el ahorro es grande, y se aplica lo antes posible en cada fuente:
+
+- En ThinkSpain el precio viene en la propia tarjeta del listado, así que lo caro
+  se descarta sin gastar una petición más.
+- En las webs con sitemap no hay forma de saber el precio sin abrir la ficha, así
+  que se abre una vez y su precio queda anotado en `data/over-budget.json`. A
+  partir de ahí no se vuelve a abrir mientras la web no toque su `lastmod`.
+
+Ese índice es también la red de seguridad: guarda el precio de lo descartado, de
+modo que **una bajada que cruce el techo hacia abajo se detecta igual**. Lo que sí
+cambia es que las estadísticas de €/m² solo describen el tramo bajo del mercado,
+no la comarca entera.
+
 ## Fuentes
 
 Se configuran en `sources/agencies.json`. Para dar de alta una agencia nueva
