@@ -4,6 +4,7 @@ import test from 'node:test'
 import * as cheerio from 'cheerio'
 
 import { diffInventory } from '../src/diff.mjs'
+import { readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
 import {
@@ -197,4 +198,18 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
     <div class="features-2__price">235.000 €</div>
     <div class="property-3--landscape__price">890.000 €</div>`)
   assert.equal(readPrice(normal), 235000)
+})
+
+test('el icono se interpreta por su descripción, no por el nombre del fichero', () => {
+  // Benimo llama "area.svg" al icono de la parcela: sin mirar el alt, una
+  // parcela de 14.414 m² acababa contada como superficie construida.
+  const $ = cheerio.load(`
+    <ul class="features__list">
+      <li><img src="/assets/area.svg" alt="Icono de tamaño de parcela" title="Tamaño de parcela"> 14.414 m2</li>
+      <li><img src="/assets/house-soo.svg" alt="Construido"> 54 m2</li>
+    </ul>`)
+  const facts = { beds: null, baths: null, builtM2: null, plotM2: null }
+  readIconFeatures($, facts)
+  assert.equal(facts.plotM2, 14414)
+  assert.equal(facts.builtM2, 54)
 })

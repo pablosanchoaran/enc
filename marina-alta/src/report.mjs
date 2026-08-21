@@ -89,6 +89,28 @@ function statusOptions(items) {
  * sección; con un cero no lleva a ninguna parte y se marca como tal, para no
  * prometer un destino vacío.
  */
+/**
+ * Criterios de ordenación. El precio ascendente es el que interesa a quien
+ * busca algo asequible, así que manda por defecto; el €/m² es el que delata
+ * las gangas, y "novedad" sirve para ver primero lo último que ha aparecido.
+ */
+const SORTS = [
+  { value: 'price-asc', text: 'Precio: de menor a mayor' },
+  { value: 'price-desc', text: 'Precio: de mayor a menor' },
+  { value: 'unit-asc', text: 'Precio por m²: de menor a mayor' },
+  { value: 'built-desc', text: 'Superficie construida: de mayor a menor' },
+  { value: 'plot-desc', text: 'Parcela: de mayor a menor' },
+  { value: 'municipality-asc', text: 'Municipio: A–Z' },
+  { value: 'seen-desc', text: 'Novedad: visto por primera vez' },
+]
+
+function sortSelect(id) {
+  const options = SORTS.map(
+    ({ value, text }) => `<option value="${value}">${escape(text)}</option>`,
+  ).join('')
+  return `<label class="filters__sort">Ordenar por<select id="${id}">${options}</select></label>`
+}
+
 function tile({ value, label, target, variant, movement }) {
   const classes = ['tile', variant ? `tile--${variant}` : '', value > 0 ? '' : 'tile--empty']
     .filter(Boolean)
@@ -135,7 +157,7 @@ function renderCard(item, thumbnails) {
   ].filter(Boolean)
 
   return `
-    <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}">
+    <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}" data-unit="${item.pricePerM2 ?? ''}" data-built="${item.builtM2 ?? ''}" data-plot="${item.plotM2 ?? ''}" data-seen="${escape(item.firstSeen ?? '')}">
       ${thumb ? `<a class="card__photo" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="" loading="lazy" width="320" height="214"></a>` : ''}
       <div class="card__head">
         <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
@@ -374,6 +396,12 @@ export function renderReport({ daily, listings, thumbnails }) {
     font: inherit; font-size: 0.9rem; color: var(--ink); background: var(--surface);
     border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 150px;
   }
+  .filters__sort { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
+  .filters__sort select {
+    font: inherit; font-size: 0.9rem; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 200px;
+  }
+  .filters__sort select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .filters__clear {
     font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--accent);
     background: none; border: 1px solid var(--accent); border-radius: 8px; padding: 7px 12px;
@@ -472,6 +500,21 @@ export function renderReport({ daily, listings, thumbnails }) {
   footer.page { border-top: 1px solid var(--line); padding-top: 16px; color: var(--ink-muted); font-size: 0.8rem; display: flex; flex-direction: column; gap: 6px; }
   [hidden] { display: none !important; }
 
+  /* Volver arriba: flota sobre el contenido en cuanto se baja un poco. */
+  .to-top {
+    position: fixed; right: 20px; bottom: 20px; z-index: 40;
+    width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; line-height: 1;
+    color: var(--accent); background: var(--surface);
+    border: 1px solid var(--accent); box-shadow: 0 4px 16px rgb(0 0 0 / 0.16);
+  }
+  .to-top:hover { background: var(--accent-soft); }
+  .to-top:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .to-top { bottom: calc(20px + env(safe-area-inset-bottom)); }
+  }
+
   /* Aviso para cuando el visor del artefacto bloquea abrir pestañas nuevas. */
   .toast {
     position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
@@ -531,6 +574,7 @@ export function renderReport({ daily, listings, thumbnails }) {
       ${multiFilter({ id: 'f-agency', label: 'Agencia', options: toOptions(agencies), allLabel: 'Todas' })}
       ${multiFilter({ id: 'f-status', label: 'Estado', options: statusOptions(additions) })}
       <label class="filters__price">Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      ${sortSelect('f-sort')}
       <button type="button" class="filters__clear" id="f-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="grid">${additions.map((item) => renderCard(item, thumbnails)).join('')}</div>
@@ -552,6 +596,7 @@ export function renderReport({ daily, listings, thumbnails }) {
       ${multiFilter({ id: 'b-agency', label: 'Agencia', options: toOptions(budgetAgencies), allLabel: 'Todas' })}
       ${multiFilter({ id: 'b-status', label: 'Estado', options: statusOptions(budget) })}
       <label class="filters__price">Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
+      ${sortSelect('b-sort')}
       <button type="button" class="filters__clear" id="b-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="b-grid">${budget.map((item) => renderCard(item, thumbnails)).join('')}</div>
@@ -607,6 +652,10 @@ export function renderReport({ daily, listings, thumbnails }) {
     <div class="table-scroll">${renderSources(daily.sources)}</div>
   </section>
 
+  <button type="button" class="to-top" id="to-top" hidden aria-label="Volver arriba">
+    <span aria-hidden="true">↑</span>
+  </button>
+
   <div class="toast" id="toast" role="dialog" aria-live="polite" hidden>
     <span class="toast__title" id="toast-title">Este visor no deja abrir pestañas nuevas</span>
     <span class="toast__url" id="toast-url"></span>
@@ -633,6 +682,7 @@ export function renderReport({ daily, listings, thumbnails }) {
       var empty = document.getElementById(emptyId);
       var max = document.getElementById(prefix + 'max');
       var clear = document.getElementById(prefix + 'clear');
+      var sort = document.getElementById(prefix + 'sort');
       var filtros = ['municipality', 'type', 'agency', 'status'].map(function (name) {
         return document.getElementById(prefix + name);
       });
@@ -660,6 +710,35 @@ export function renderReport({ daily, listings, thumbnails }) {
         }
         filtro.classList.toggle('multi--active', elegidos.length > 0);
         return elegidos.length > 0;
+      }
+
+      // Lo que no tiene el dato (un piso sin m², una casa sin parcela) se va al
+      // final en vez de contar como cero, que lo pondría el primero.
+      function comparar(criterio) {
+        var campo = { 'price-asc': 'price', 'price-desc': 'price', 'unit-asc': 'unit',
+          'built-desc': 'built', 'plot-desc': 'plot', 'seen-desc': 'seen',
+          'municipality-asc': 'municipality' }[criterio];
+        var descendente = criterio.slice(-4) === 'desc';
+
+        return function (a, b) {
+          var x = a.dataset[campo];
+          var y = b.dataset[campo];
+          if (!x && !y) return 0;
+          if (!x) return 1;
+          if (!y) return -1;
+
+          if (campo === 'municipality' || campo === 'seen') {
+            var texto = String(x).localeCompare(String(y), 'es');
+            return descendente ? -texto : texto;
+          }
+          return descendente ? Number(y) - Number(x) : Number(x) - Number(y);
+        };
+      }
+
+      function ordenar() {
+        if (!sort) return;
+        var ordenadas = cards.slice().sort(comparar(sort.value));
+        ordenadas.forEach(function (card) { grid.appendChild(card); });
       }
 
       function apply() {
@@ -698,6 +777,12 @@ export function renderReport({ daily, listings, thumbnails }) {
         if (filtro) filtro.addEventListener('change', apply);
       });
       max.addEventListener('input', apply);
+      if (sort) {
+        sort.addEventListener('change', function () {
+          ordenar();
+          apply();
+        });
+      }
 
       if (clear) {
         clear.addEventListener('click', function () {
@@ -714,6 +799,25 @@ export function renderReport({ daily, listings, thumbnails }) {
 
       apply();
     }
+
+    // Volver arriba: aparece al bajar y se aparta cuando hay un aviso abajo,
+    // para no montarse encima.
+    var arriba = document.getElementById('to-top');
+    var toastAbierto = false;
+
+    function refrescarBotonArriba() {
+      var bajado = (window.scrollY || document.documentElement.scrollTop) > 600;
+      arriba.hidden = !bajado || toastAbierto;
+    }
+
+    arriba.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // En un visor que no soporte scroll suave, al menos que suba.
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+    window.addEventListener('scroll', refrescarBotonArriba, { passive: true });
+    refrescarBotonArriba();
 
     // Las cifras del resumen llevan a su sección; las de precio, además,
     // dejan a la vista solo las bajadas o solo las subidas.
@@ -791,6 +895,8 @@ export function renderReport({ daily, listings, thumbnails }) {
       toastUrl.textContent = url;
       toastTitle.textContent = 'Este visor no deja abrir pestañas nuevas';
       toast.hidden = false;
+      toastAbierto = true;
+      refrescarBotonArriba();
       copiar.focus();
     }
 
@@ -846,9 +952,14 @@ export function renderReport({ daily, listings, thumbnails }) {
 
     cerrar.addEventListener('click', function () {
       toast.hidden = true;
+      toastAbierto = false;
+      refrescarBotonArriba();
     });
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') toast.hidden = true;
+      if (event.key !== 'Escape') return;
+      toast.hidden = true;
+      toastAbierto = false;
+      refrescarBotonArriba();
     });
   })();
 </script>

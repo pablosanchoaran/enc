@@ -66,21 +66,26 @@ async function collectSitemapEntries(fetcher, origin) {
 }
 
 /**
- * Los datos numéricos van en una lista de iconos sin etiqueta textual: el
- * nombre del SVG (bedroom-soo, house-soo, plot-soo...) es lo que dice qué
- * significa cada número.
+ * Los datos numéricos van en una lista de iconos sin etiqueta textual, así que
+ * hay que deducir qué es cada número. El nombre del SVG solo no basta: Benimo
+ * llama `area.svg` al icono de la parcela, y por ahí se colaban parcelas de
+ * 14.000 m² como si fueran superficie construida. El `alt` y el `title` de la
+ * imagen sí lo dicen en palabras ("Tamaño de parcela"), y mandan sobre el
+ * nombre del fichero.
  */
-function readIconFeatures($, target) {
+export function readIconFeatures($, target) {
   $('[class*="__list"] li, [class*="__icons"] li, [class*="features"] li').each((_, element) => {
     const li = $(element)
-    const icon = li.find('img').attr('src') ?? ''
+    const img = li.find('img')
+    const described = `${img.attr('alt') ?? ''} ${img.attr('title') ?? ''}`.trim()
+    const hint = described || (img.attr('src') ?? '')
     const text = li.text().trim()
     if (!text) return
 
-    if (/bed|dormi|habitac|schlaf|slaap/i.test(icon)) target.beds ??= parseCount(text)
-    else if (/bath|bano|baño|wc|badkamer/i.test(icon)) target.baths ??= parseCount(text)
-    else if (/plot|parcela|terreno|land|big-area/i.test(icon)) target.plotM2 ??= parseArea(text)
-    else if (/house|built|home|area|surface|construi/i.test(icon)) target.builtM2 ??= parseArea(text)
+    if (/bed|dormi|habitac|schlaf|slaap/i.test(hint)) target.beds ??= parseCount(text)
+    else if (/bath|bano|baño|wc|badkamer/i.test(hint)) target.baths ??= parseCount(text)
+    else if (/plot|parcela|terreno|land|big-area/i.test(hint)) target.plotM2 ??= parseArea(text)
+    else if (/house|built|home|area|surface|construi/i.test(hint)) target.builtM2 ??= parseArea(text)
   })
 }
 

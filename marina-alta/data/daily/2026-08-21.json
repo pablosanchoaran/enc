@@ -1,6 +1,6 @@
 {
   "date": "2026-08-21",
-  "generatedAt": "2026-08-21T22:56:09.151Z",
+  "generatedAt": "2026-08-21T23:39:09.830Z",
   "totals": {
     "inventory": 755,
     "additions": 24,
@@ -1185,8 +1185,11 @@
     {
       "id": "benimo-villas",
       "agency": "Benimo Villas",
-      "listings": 52,
-      "status": "ok"
+      "listings": 0,
+      "status": "vacío",
+      "requests": 121,
+      "blocked": 0,
+      "errors": 0
     },
     {
       "id": "calablanca",
