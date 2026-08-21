@@ -84,6 +84,23 @@ function statusOptions(items) {
     }))
 }
 
+/**
+ * Una cifra del resumen. Cuando hay algo que enseñar es un enlace a su
+ * sección; con un cero no lleva a ninguna parte y se marca como tal, para no
+ * prometer un destino vacío.
+ */
+function tile({ value, label, target, variant, movement }) {
+  const classes = ['tile', variant ? `tile--${variant}` : '', value > 0 ? '' : 'tile--empty']
+    .filter(Boolean)
+    .join(' ')
+  const body = `<span class="tile__value">${value}</span><span class="tile__label">${escape(label)}</span>`
+
+  if (value > 0) {
+    return `<a class="${classes}" href="#${target}"${movement ? ` data-movement="${movement}"` : ''}>${body}</a>`
+  }
+  return `<div class="${classes}">${body}</div>`
+}
+
 function multiFilter({ id, label, options, allLabel = 'Todos' }) {
   const items = options
     .map(
@@ -139,7 +156,7 @@ function renderCard(item, thumbnails) {
 function renderPriceRow(item) {
   const isDrop = item.direction === 'drop'
   return `
-    <li class="movement ${isDrop ? 'movement--drop' : 'movement--rise'}">
+    <li class="movement ${isDrop ? 'movement--drop' : 'movement--rise'}" data-movement="${isDrop ? 'drop' : 'rise'}">
       <div class="movement__main">
         <span class="movement__place">${escape(item.municipality)}</span>
         <a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${escape(item.title ?? item.url)}</a>
@@ -316,7 +333,30 @@ export function renderReport({ daily, listings, thumbnails }) {
   .masthead__date { color: var(--ink-muted); font-size: 0.95rem; }
 
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  .tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+  .tile {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; display: flex; flex-direction: column; gap: 4px;
+    color: inherit; text-decoration: none; position: relative;
+  }
+  a.tile { cursor: pointer; }
+  a.tile:hover { border-color: var(--accent); }
+  a.tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* La flecha solo aparece donde se puede ir a algún sitio. */
+  a.tile::after {
+    content: "→"; position: absolute; top: 14px; right: 14px;
+    font-size: 0.85rem; color: var(--ink-muted); opacity: 0; transition: opacity 120ms ease;
+  }
+  a.tile:hover::after, a.tile:focus-visible::after { opacity: 1; }
+  .tile--empty { opacity: 0.6; }
+
+  /* Destello al llegar a la sección desde una cifra. */
+  section:target > .section__head, .section--jumped > .section__head {
+    box-shadow: inset 0 -2px 0 var(--accent);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+    a.tile { transition: border-color 120ms ease; }
+  }
   .tile__value { font-family: var(--display); font-size: 2rem; font-variant-numeric: tabular-nums; line-height: 1; }
   .tile__label { font-size: 0.8rem; color: var(--ink-muted); }
   .tile--accent { border-color: var(--accent); background: var(--accent-soft); }
@@ -393,6 +433,11 @@ export function renderReport({ daily, listings, thumbnails }) {
   .card__link:hover { text-decoration: underline; }
 
   .movements { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .movements__note { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 0.85rem; color: var(--ink-muted); }
+  .movements__note button {
+    font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--accent);
+    background: none; border: 1px solid var(--accent); border-radius: 8px; padding: 5px 10px;
+  }
   .movement { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--line); border-radius: var(--radius); padding: 12px 16px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .movement--drop { border-left-color: var(--drop); }
   .movement--rise { border-left-color: var(--rise); }
@@ -461,14 +506,14 @@ export function renderReport({ daily, listings, thumbnails }) {
   </header>
 
   <div class="tiles">
-    <div class="tile tile--accent"><span class="tile__value">${daily.totals.additions}</span><span class="tile__label">altas nuevas</span></div>
-    <div class="tile tile--drop"><span class="tile__value">${daily.totals.priceDrops}</span><span class="tile__label">bajadas de precio</span></div>
-    <div class="tile tile--rise"><span class="tile__value">${daily.totals.priceRises}</span><span class="tile__label">subidas de precio</span></div>
-    <div class="tile"><span class="tile__value">${daily.totals.removals}</span><span class="tile__label">retiradas</span></div>
-    <div class="tile"><span class="tile__value">${active.length}</span><span class="tile__label">en seguimiento</span></div>
+    ${tile({ value: daily.totals.additions, label: 'altas nuevas', target: 'altas', variant: 'accent' })}
+    ${tile({ value: daily.totals.priceDrops, label: 'bajadas de precio', target: 'cambios', variant: 'drop', movement: 'drop' })}
+    ${tile({ value: daily.totals.priceRises, label: 'subidas de precio', target: 'cambios', variant: 'rise', movement: 'rise' })}
+    ${tile({ value: daily.totals.removals, label: 'retiradas', target: 'retirados' })}
+    ${tile({ value: active.length, label: 'en seguimiento', target: 'fuentes' })}
   </div>
 
-  <section>
+  <section id="altas">
     <div class="section__head">
       <h2>Altas de hoy</h2>
       <span class="section__note" id="count">${additions.length} anuncios</span>
@@ -514,7 +559,7 @@ export function renderReport({ daily, listings, thumbnails }) {
     }
   </section>
 
-  <section>
+  <section id="cambios">
     <div class="section__head">
       <h2>Cambios de precio</h2>
       <span class="section__note">frente al último rastreo</span>
@@ -522,11 +567,15 @@ export function renderReport({ daily, listings, thumbnails }) {
     ${
       daily.priceDrops.length + daily.priceRises.length === 0
         ? '<p class="empty">Ningún anuncio en seguimiento ha cambiado de precio.</p>'
-        : `<ul class="movements">${[...daily.priceDrops, ...daily.priceRises].map(renderPriceRow).join('')}</ul>`
+        : `<p class="movements__note" id="movements-note" hidden>
+             <span id="movements-note-text"></span>
+             <button type="button" id="movements-all">Ver todos los cambios</button>
+           </p>
+           <ul class="movements" id="movements">${[...daily.priceDrops, ...daily.priceRises].map(renderPriceRow).join('')}</ul>`
     }
   </section>
 
-  <section>
+  <section id="preciom2">
     <div class="section__head">
       <h2>Precio por metro cuadrado</h2>
       <span class="section__note">mediana de lo que se sigue, que es el tramo bajo del mercado</span>
@@ -534,7 +583,7 @@ export function renderReport({ daily, listings, thumbnails }) {
     ${renderChart(chartRows)}
   </section>
 
-  <section>
+  <section id="retirados">
     <div class="section__head">
       <h2>Anuncios retirados</h2>
       <span class="section__note">sin aparecer en tres rastreos seguidos</span>
@@ -550,7 +599,7 @@ export function renderReport({ daily, listings, thumbnails }) {
     }
   </section>
 
-  <section>
+  <section id="fuentes">
     <div class="section__head">
       <h2>Estado del rastreo</h2>
       <span class="section__note">una fuente en cero suele significar que ha cambiado su web</span>
@@ -665,6 +714,49 @@ export function renderReport({ daily, listings, thumbnails }) {
 
       apply();
     }
+
+    // Las cifras del resumen llevan a su sección; las de precio, además,
+    // dejan a la vista solo las bajadas o solo las subidas.
+    var movimientos = document.getElementById('movements');
+    var nota = document.getElementById('movements-note');
+    var notaTexto = document.getElementById('movements-note-text');
+    var verTodos = document.getElementById('movements-all');
+
+    function filtrarMovimientos(tipo) {
+      if (!movimientos) return;
+      var filas = Array.prototype.slice.call(movimientos.children);
+      var visibles = 0;
+      filas.forEach(function (fila) {
+        var ok = !tipo || fila.dataset.movement === tipo;
+        fila.hidden = !ok;
+        if (ok) visibles += 1;
+      });
+      if (!nota) return;
+      nota.hidden = !tipo;
+      if (tipo) {
+        notaTexto.textContent =
+          'Mostrando ' + visibles + (tipo === 'drop' ? ' bajadas' : ' subidas') + ' de precio.';
+      }
+    }
+
+    if (verTodos) {
+      verTodos.addEventListener('click', function () {
+        filtrarMovimientos(null);
+      });
+    }
+
+    Array.prototype.slice.call(document.querySelectorAll('a.tile')).forEach(function (tile) {
+      tile.addEventListener('click', function () {
+        var destino = document.querySelector(tile.getAttribute('href'));
+        if (!destino) return;
+        filtrarMovimientos(tile.dataset.movement || null);
+        // El resaltado de :target no se dispara si ya estabas en esa sección.
+        Array.prototype.slice.call(document.querySelectorAll('.section--jumped')).forEach(
+          function (previa) { previa.classList.remove('section--jumped'); },
+        );
+        destino.classList.add('section--jumped');
+      });
+    });
 
     // Un desplegable abierto se cierra al abrir otro o al pulsar fuera.
     document.addEventListener('click', function (event) {

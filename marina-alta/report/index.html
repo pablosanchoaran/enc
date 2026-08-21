@@ -87,7 +87,30 @@
   .masthead__date { color: var(--ink-muted); font-size: 0.95rem; }
 
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  .tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+  .tile {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; display: flex; flex-direction: column; gap: 4px;
+    color: inherit; text-decoration: none; position: relative;
+  }
+  a.tile { cursor: pointer; }
+  a.tile:hover { border-color: var(--accent); }
+  a.tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* La flecha solo aparece donde se puede ir a algún sitio. */
+  a.tile::after {
+    content: "→"; position: absolute; top: 14px; right: 14px;
+    font-size: 0.85rem; color: var(--ink-muted); opacity: 0; transition: opacity 120ms ease;
+  }
+  a.tile:hover::after, a.tile:focus-visible::after { opacity: 1; }
+  .tile--empty { opacity: 0.6; }
+
+  /* Destello al llegar a la sección desde una cifra. */
+  section:target > .section__head, .section--jumped > .section__head {
+    box-shadow: inset 0 -2px 0 var(--accent);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+    a.tile { transition: border-color 120ms ease; }
+  }
   .tile__value { font-family: var(--display); font-size: 2rem; font-variant-numeric: tabular-nums; line-height: 1; }
   .tile__label { font-size: 0.8rem; color: var(--ink-muted); }
   .tile--accent { border-color: var(--accent); background: var(--accent-soft); }
@@ -164,6 +187,11 @@
   .card__link:hover { text-decoration: underline; }
 
   .movements { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .movements__note { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 0.85rem; color: var(--ink-muted); }
+  .movements__note button {
+    font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--accent);
+    background: none; border: 1px solid var(--accent); border-radius: 8px; padding: 5px 10px;
+  }
   .movement { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--line); border-radius: var(--radius); padding: 12px 16px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .movement--drop { border-left-color: var(--drop); }
   .movement--rise { border-left-color: var(--rise); }
@@ -232,14 +260,14 @@
   </header>
 
   <div class="tiles">
-    <div class="tile tile--accent"><span class="tile__value">24</span><span class="tile__label">altas nuevas</span></div>
-    <div class="tile tile--drop"><span class="tile__value">6</span><span class="tile__label">bajadas de precio</span></div>
-    <div class="tile tile--rise"><span class="tile__value">2</span><span class="tile__label">subidas de precio</span></div>
-    <div class="tile"><span class="tile__value">0</span><span class="tile__label">retiradas</span></div>
-    <div class="tile"><span class="tile__value">755</span><span class="tile__label">en seguimiento</span></div>
+    <a class="tile tile--accent" href="#altas"><span class="tile__value">24</span><span class="tile__label">altas nuevas</span></a>
+    <a class="tile tile--drop" href="#cambios" data-movement="drop"><span class="tile__value">6</span><span class="tile__label">bajadas de precio</span></a>
+    <a class="tile tile--rise" href="#cambios" data-movement="rise"><span class="tile__value">2</span><span class="tile__label">subidas de precio</span></a>
+    <div class="tile tile--empty"><span class="tile__value">0</span><span class="tile__label">retiradas</span></div>
+    <a class="tile" href="#fuentes"><span class="tile__value">755</span><span class="tile__label">en seguimiento</span></a>
   </div>
 
-  <section>
+  <section id="altas">
     <div class="section__head">
       <h2>Altas de hoy</h2>
       <span class="section__note" id="count">24 anuncios</span>
@@ -7565,13 +7593,17 @@
     <p class="empty" id="b-no-match" hidden>Ningún inmueble encaja con estos filtros.</p>
   </section>
 
-  <section>
+  <section id="cambios">
     <div class="section__head">
       <h2>Cambios de precio</h2>
       <span class="section__note">frente al último rastreo</span>
     </div>
-    <ul class="movements">
-    <li class="movement movement--drop">
+    <p class="movements__note" id="movements-note" hidden>
+             <span id="movements-note-text"></span>
+             <button type="button" id="movements-all">Ver todos los cambios</button>
+           </p>
+           <ul class="movements" id="movements">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">Pego</span>
         <a href="https://www.inmovidal.com/venta/casa-con-patio-en-pego-8568/" target="_blank" rel="noopener noreferrer">Casa con patio en Pego</a>
@@ -7582,7 +7614,7 @@
         <span class="movement__delta">▼ 26.3 %</span>
       </div>
     </li>
-    <li class="movement movement--drop">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">Teulada-Moraira</span>
         <a href="https://www.agenciamorato.com/venta/apartamento-en-venta-en-moraira-og12zv5p3/" target="_blank" rel="noopener noreferrer">Apartamento en venta en Moraira</a>
@@ -7593,7 +7625,7 @@
         <span class="movement__delta">▼ 4.8 %</span>
       </div>
     </li>
-    <li class="movement movement--drop">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">Teulada-Moraira</span>
         <a href="https://www.benimo-villas.com/venta/apartamento-en-venta-en-moraira-ca18jq91u/" target="_blank" rel="noopener noreferrer">Apartamento en venta en Moraira</a>
@@ -7604,7 +7636,7 @@
         <span class="movement__delta">▼ 2.9 %</span>
       </div>
     </li>
-    <li class="movement movement--drop">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">El Verger</span>
         <a href="https://www.thinkspain.com/es/venta-viviendas/9739259" target="_blank" rel="noopener noreferrer">Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 230.000 € (Ref: 9739259)</a>
@@ -7615,7 +7647,7 @@
         <span class="movement__delta">▼ 7.6 %</span>
       </div>
     </li>
-    <li class="movement movement--drop">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">Xaló / Jalón</span>
         <a href="https://www.thinkspain.com/es/venta-viviendas/9569589" target="_blank" rel="noopener noreferrer">Apartamento de 3 habitaciones en Jalón / Xaló en venta con piscina garaje - 199.990 € (Ref: 9569589)</a>
@@ -7626,7 +7658,7 @@
         <span class="movement__delta">▼ 11.1 %</span>
       </div>
     </li>
-    <li class="movement movement--drop">
+    <li class="movement movement--drop" data-movement="drop">
       <div class="movement__main">
         <span class="movement__place">Orba</span>
         <a href="https://www.thinkspain.com/es/venta-viviendas/9738469" target="_blank" rel="noopener noreferrer">Chalet de 2 habitaciones en Orba en venta con piscina garaje - 320.000 € (Ref: 9738469)</a>
@@ -7637,7 +7669,7 @@
         <span class="movement__delta">▼ 5.9 %</span>
       </div>
     </li>
-    <li class="movement movement--rise">
+    <li class="movement movement--rise" data-movement="rise">
       <div class="movement__main">
         <span class="movement__place">Benissa</span>
         <a href="https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p118/" target="_blank" rel="noopener noreferrer">Se vende parcela en Benissa</a>
@@ -7648,7 +7680,7 @@
         <span class="movement__delta">▲ 21.6 %</span>
       </div>
     </li>
-    <li class="movement movement--rise">
+    <li class="movement movement--rise" data-movement="rise">
       <div class="movement__main">
         <span class="movement__place">Pedreguer</span>
         <a href="https://www.denialara.com/propiedad/se-vende-parcela-de-11-750-metros-1490/" target="_blank" rel="noopener noreferrer">Se vende parcela de 11.750 metros</a>
@@ -7661,7 +7693,7 @@
     </li></ul>
   </section>
 
-  <section>
+  <section id="preciom2">
     <div class="section__head">
       <h2>Precio por metro cuadrado</h2>
       <span class="section__note">mediana de lo que se sigue, que es el tramo bajo del mercado</span>
@@ -7762,7 +7794,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="retirados">
     <div class="section__head">
       <h2>Anuncios retirados</h2>
       <span class="section__note">sin aparecer en tres rastreos seguidos</span>
@@ -7770,7 +7802,7 @@
     <p class="empty">Ningún anuncio ha desaparecido de las fuentes.</p>
   </section>
 
-  <section>
+  <section id="fuentes">
     <div class="section__head">
       <h2>Estado del rastreo</h2>
       <span class="section__note">una fuente en cero suele significar que ha cambiado su web</span>
@@ -8023,6 +8055,49 @@
 
       apply();
     }
+
+    // Las cifras del resumen llevan a su sección; las de precio, además,
+    // dejan a la vista solo las bajadas o solo las subidas.
+    var movimientos = document.getElementById('movements');
+    var nota = document.getElementById('movements-note');
+    var notaTexto = document.getElementById('movements-note-text');
+    var verTodos = document.getElementById('movements-all');
+
+    function filtrarMovimientos(tipo) {
+      if (!movimientos) return;
+      var filas = Array.prototype.slice.call(movimientos.children);
+      var visibles = 0;
+      filas.forEach(function (fila) {
+        var ok = !tipo || fila.dataset.movement === tipo;
+        fila.hidden = !ok;
+        if (ok) visibles += 1;
+      });
+      if (!nota) return;
+      nota.hidden = !tipo;
+      if (tipo) {
+        notaTexto.textContent =
+          'Mostrando ' + visibles + (tipo === 'drop' ? ' bajadas' : ' subidas') + ' de precio.';
+      }
+    }
+
+    if (verTodos) {
+      verTodos.addEventListener('click', function () {
+        filtrarMovimientos(null);
+      });
+    }
+
+    Array.prototype.slice.call(document.querySelectorAll('a.tile')).forEach(function (tile) {
+      tile.addEventListener('click', function () {
+        var destino = document.querySelector(tile.getAttribute('href'));
+        if (!destino) return;
+        filtrarMovimientos(tile.dataset.movement || null);
+        // El resaltado de :target no se dispara si ya estabas en esa sección.
+        Array.prototype.slice.call(document.querySelectorAll('.section--jumped')).forEach(
+          function (previa) { previa.classList.remove('section--jumped'); },
+        );
+        destino.classList.add('section--jumped');
+      });
+    });
 
     // Un desplegable abierto se cierra al abrir otro o al pulsar fuera.
     document.addEventListener('click', function (event) {
