@@ -12,6 +12,7 @@ import {
   parseArea,
   parsePrice,
   parseSitemap,
+  readPrice,
 } from '../src/parse.mjs'
 
 test('parsePrice entiende los formatos que usan las agencias', () => {
@@ -181,4 +182,19 @@ test('un robots.txt que no se puede leer decide si se rastrea o no', async () =>
   assert.equal(isAllowed(rules, '/publico/casa'), true)
   assert.equal(isAllowed(rules, '/privado/casa'), false)
   assert.equal(crawlDelay(rules), 2000)
+})
+
+test('el precio sale del anuncio, no de las propiedades similares del pie', () => {
+  // Caso real de InmoXara: la ficha está vendida, su precio dice "Consultar" y
+  // más abajo hay tarjetas de otras casas con el mismo prefijo de clase. Coger
+  // "el primer número que aparezca" publicaba el precio del vecino.
+  const vendida = cheerio.load(`
+    <div class="features-3__price-wrapper"><span class="features-3__price">Consultar</span></div>
+    <div class="property-3--landscape__price">214.000 €</div>`)
+  assert.equal(readPrice(vendida), null)
+
+  const normal = cheerio.load(`
+    <div class="features-2__price">235.000 €</div>
+    <div class="property-3--landscape__price">890.000 €</div>`)
+  assert.equal(readPrice(normal), 235000)
 })

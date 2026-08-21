@@ -3,6 +3,8 @@
  * peticiones con el Crawl-delay declarado y reintenta los fallos transitorios.
  */
 
+import { gunzipSync } from 'node:zlib'
+
 import { crawlDelay, isAllowed, loadRobots } from './robots.mjs'
 
 export const USER_AGENT =
@@ -65,7 +67,21 @@ export class Fetcher {
           this.stats.requests += 1
 
           if (response.status === 404 || response.status === 410) return null
-          if (response.ok) return await response.text()
+          if (response.ok) {
+            // El estándar de sitemaps admite servirlos comprimidos, y `fetch`
+            // solo descomprime lo que venga por Content-Encoding, no un fichero
+            // .gz servido como tal.
+            const type = response.headers.get('content-type') ?? ''
+            if (url.endsWith('.gz') || type.includes('gzip')) {
+              const body = Buffer.from(await response.arrayBuffer())
+              try {
+                return gunzipSync(body).toString('utf8')
+              } catch {
+                return body.toString('utf8')
+              }
+            }
+            return await response.text()
+          }
           if (!RETRYABLE.has(response.status) || attempt === MAX_ATTEMPTS) {
             this.stats.errors += 1
             return null

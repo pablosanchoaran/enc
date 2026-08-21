@@ -219,11 +219,11 @@ export function readPrice($) {
     })
     if (candidates.length === 0) continue
 
-    let price = null
-    candidates.each((_, element) => {
-      if (price == null) price = parsePrice($(element).text().trim())
-    })
-    return price
+    // Solo el primero: ese mismo selector casa también con las tarjetas de
+    // "propiedades similares" del pie, así que recorrerlos todos hasta dar con
+    // un número acaba publicando el precio de otra casa en las fichas que
+    // ponen "Consultar" — que suelen ser justo las ya vendidas.
+    return parsePrice(candidates.first().text().trim())
   }
   return null
 }

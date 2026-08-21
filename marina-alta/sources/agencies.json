@@ -237,6 +237,30 @@
       ],
       "enabled": false,
       "notes": "Jávea, gama alta. 2.755 URLs en el sitemap pero sin prefijo que distinga las fichas de las páginas de contenido, y sin JSON-LD."
+    },
+    {
+      "id": "bindley",
+      "adapter": "sooprema",
+      "agency": "Bindley Properties",
+      "origin": "https://www.bindleyproperties.com",
+      "enabled": true,
+      "notes": "Moraira, Benissa y Teulada. 205 fichas; gama media-alta, con algo por debajo de 260.000 €."
+    },
+    {
+      "id": "selectvillas",
+      "adapter": "sooprema",
+      "agency": "Select Villas of Moraira",
+      "origin": "https://select-villas.es",
+      "enabled": true,
+      "notes": "Moraira, Benissa Costa, Benitatxell, Jávea y el valle de Jalón. 518 fichas; sirve el sitemap comprimido en .gz, como admite el estándar."
+    },
+    {
+      "id": "hispaniahomes",
+      "adapter": "sooprema",
+      "agency": "Hispania Homes",
+      "origin": "https://hispaniahomesmoraira.com",
+      "enabled": false,
+      "notes": "Moraira. Su servidor responde 406 a nuestro User-Agent y 200 al de un navegador: entrar exigiría hacerse pasar por uno, cosa que este extractor no hace. Mismo caso que InmoDalal."
     }
   ]
 }
