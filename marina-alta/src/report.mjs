@@ -64,8 +64,9 @@ function pricePerM2ByMunicipality(listings) {
 const STATUS_LABELS = { available: 'Disponible', reserved: 'Reservado', sold: 'Vendido' }
 
 /**
- * Opciones del filtro de estado. Arranca en "solo disponibles": una casa
- * vendida sigue publicada meses y no debería contar como oferta.
+ * Estado como casillas. Arranca con "Disponible" marcado: una casa vendida
+ * sigue publicada meses y no debería contar como oferta, pero ahora se pueden
+ * añadir los reservados con un clic.
  */
 function statusOptions(items) {
   const counts = items.reduce((tally, item) => {
@@ -74,16 +75,36 @@ function statusOptions(items) {
     return tally
   }, {})
 
-  const options = [
-    ['available', `Solo disponibles (${counts.available ?? 0})`],
-    ['', `Todos, incluidos vendidos (${items.length})`],
-    ['reserved', `Solo reservados (${counts.reserved ?? 0})`],
-    ['sold', `Solo vendidos (${counts.sold ?? 0})`],
-  ]
-  return options
-    .filter(([value]) => value === '' || value === 'available' || counts[value] > 0)
-    .map(([value, label]) => `<option value="${value}">${label}</option>`)
+  return ['available', 'reserved', 'sold']
+    .filter((value) => counts[value] > 0)
+    .map((value) => ({
+      value,
+      text: `${STATUS_LABELS[value]} (${counts[value]})`,
+      checked: value === 'available',
+    }))
+}
+
+function multiFilter({ id, label, options, allLabel = 'Todos' }) {
+  const items = options
+    .map(
+      ({ value, text, checked }) => `
+        <label class="multi__option">
+          <input type="checkbox" value="${escape(value)}"${checked ? ' checked' : ''}>
+          <span>${escape(text)}</span>
+        </label>`,
+    )
     .join('')
+
+  return `
+    <details class="multi" id="${id}" data-all="${escape(allLabel)}">
+      <summary><span class="multi__label">${escape(label)}</span><span class="multi__value">${escape(allLabel)}</span></summary>
+      <div class="multi__panel">${items}</div>
+    </details>`
+}
+
+/** Municipios, tipos y agencias como opciones del filtro. */
+function toOptions(values, labels = null) {
+  return values.map((value) => ({ value, text: labels ? labels[value] : value }))
 }
 
 function renderCard(item, thumbnails) {
@@ -189,6 +210,9 @@ export function renderReport({ daily, listings, thumbnails }) {
     a.localeCompare(b, 'es'),
   )
   const chartRows = pricePerM2ByMunicipality(active)
+  const typesPresent = (items) =>
+    Object.keys(TYPE_LABELS).filter((type) => items.some((item) => item.type === type))
+  const additionTypes = typesPresent(additions)
   const readableDate = LONG_DATE.format(new Date(`${daily.date}T12:00:00`))
 
   // Todo lo que esté por debajo del presupuesto, parcelas incluidas: quien
@@ -201,6 +225,7 @@ export function renderReport({ daily, listings, thumbnails }) {
   const budgetAgencies = [...new Set(budget.map((item) => item.agency))].sort((a, b) =>
     a.localeCompare(b, 'es'),
   )
+  const budgetTypes = typesPresent(budget)
 
   return `<meta charset="utf-8">
 <title>Novedades inmobiliarias · Marina Alta</title>
@@ -303,13 +328,44 @@ export function renderReport({ daily, listings, thumbnails }) {
   .section__head h2 { font-size: 1.35rem; }
   .section__note { color: var(--ink-muted); font-size: 0.85rem; }
 
-  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
-  .filters select, .filters input {
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+  .filters__price { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
+  .filters input {
     font: inherit; font-size: 0.9rem; color: var(--ink); background: var(--surface);
     border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 150px;
   }
-  .filters select:focus-visible, .filters input:focus-visible, .chart__row:focus-visible, a:focus-visible {
+  .filters__clear {
+    font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--accent);
+    background: none; border: 1px solid var(--accent); border-radius: 8px; padding: 7px 12px;
+  }
+
+  /* Filtro de selección múltiple: desplegable con casillas. */
+  .multi { position: relative; }
+  .multi > summary {
+    list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 4px;
+    border: 1px solid var(--line); border-radius: 8px; padding: 6px 30px 6px 10px;
+    background: var(--surface); min-width: 158px; position: relative;
+  }
+  .multi > summary::-webkit-details-marker { display: none; }
+  .multi > summary::after {
+    content: ""; position: absolute; right: 12px; top: calc(50% - 2px);
+    border: 4px solid transparent; border-top-color: var(--ink-muted);
+  }
+  .multi[open] > summary { border-color: var(--accent); }
+  .multi--active > summary { border-color: var(--accent); background: var(--accent-soft); }
+  .multi__label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
+  .multi__value { font-size: 0.9rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 190px; }
+  .multi__panel {
+    position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 100%;
+    max-height: 280px; overflow-y: auto; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.14);
+    padding: 6px; display: flex; flex-direction: column;
+  }
+  .multi__option { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 0.88rem; white-space: nowrap; }
+  .multi__option:hover { background: var(--surface-sunk); }
+  .multi__option input { min-width: 0; accent-color: var(--accent); }
+  .filters input:focus-visible, .multi > summary:focus-visible, .multi__option input:focus-visible,
+  .filters__clear:focus-visible, .chart__row:focus-visible, a:focus-visible, .toast button:focus-visible {
     outline: 2px solid var(--accent); outline-offset: 2px;
   }
 
@@ -425,11 +481,12 @@ export function renderReport({ daily, listings, thumbnails }) {
               : 'Hoy no ha aparecido ningún anuncio nuevo en las fuentes vigiladas.'
           }</p>`
         : `<div class="filters">
-      <label>Municipio<select id="f-municipality"><option value="">Todos</option>${municipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Tipo<select id="f-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
-      <label>Agencia<select id="f-agency"><option value="">Todas</option>${agencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Estado<select id="f-status">${statusOptions(additions)}</select></label>
-      <label>Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      ${multiFilter({ id: 'f-municipality', label: 'Municipio', options: toOptions(municipalities) })}
+      ${multiFilter({ id: 'f-type', label: 'Tipo', options: toOptions(additionTypes, TYPE_LABELS) })}
+      ${multiFilter({ id: 'f-agency', label: 'Agencia', options: toOptions(agencies), allLabel: 'Todas' })}
+      ${multiFilter({ id: 'f-status', label: 'Estado', options: statusOptions(additions) })}
+      <label class="filters__price">Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      <button type="button" class="filters__clear" id="f-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="grid">${additions.map((item) => renderCard(item, thumbnails)).join('')}</div>
     <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p>`
@@ -445,11 +502,12 @@ export function renderReport({ daily, listings, thumbnails }) {
       budget.length === 0
         ? `<p class="empty">Ahora mismo no hay nada por debajo de ${euros(BUDGET)} en el inventario.</p>`
         : `<div class="filters">
-      <label>Municipio<select id="b-municipality"><option value="">Todos</option>${budgetMunicipalities.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Tipo<select id="b-type"><option value="">Todos</option>${Object.entries(TYPE_LABELS).filter(([value]) => budget.some((item) => item.type === value)).map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>
-      <label>Agencia<select id="b-agency"><option value="">Todas</option>${budgetAgencies.map((name) => `<option>${escape(name)}</option>`).join('')}</select></label>
-      <label>Estado<select id="b-status">${statusOptions(budget)}</select></label>
-      <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
+      ${multiFilter({ id: 'b-municipality', label: 'Municipio', options: toOptions(budgetMunicipalities) })}
+      ${multiFilter({ id: 'b-type', label: 'Tipo', options: toOptions(budgetTypes, TYPE_LABELS) })}
+      ${multiFilter({ id: 'b-agency', label: 'Agencia', options: toOptions(budgetAgencies), allLabel: 'Todas' })}
+      ${multiFilter({ id: 'b-status', label: 'Estado', options: statusOptions(budget) })}
+      <label class="filters__price">Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="${BUDGET}"></label>
+      <button type="button" class="filters__clear" id="b-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="b-grid">${budget.map((item) => renderCard(item, thumbnails)).join('')}</div>
     <p class="empty" id="b-no-match" hidden>Ningún inmueble encaja con estos filtros.</p>`
@@ -524,40 +582,104 @@ export function renderReport({ daily, listings, thumbnails }) {
       var cards = Array.prototype.slice.call(grid.children);
       var count = document.getElementById(countId);
       var empty = document.getElementById(emptyId);
-      var controls = ['municipality', 'type', 'agency', 'status', 'max'].map(function (name) {
+      var max = document.getElementById(prefix + 'max');
+      var clear = document.getElementById(prefix + 'clear');
+      var filtros = ['municipality', 'type', 'agency', 'status'].map(function (name) {
         return document.getElementById(prefix + name);
       });
 
+      function seleccionados(filtro) {
+        if (!filtro) return [];
+        return Array.prototype.slice
+          .call(filtro.querySelectorAll('input:checked'))
+          .map(function (input) { return input.value; });
+      }
+
+      // El resumen dice qué hay elegido: un nombre si es uno, "3 elegidos" si
+      // son varios, y el texto por defecto cuando no hay ninguno.
+      function refrescarResumen(filtro) {
+        if (!filtro) return false;
+        var elegidos = seleccionados(filtro);
+        var valor = filtro.querySelector('.multi__value');
+        if (elegidos.length === 0) {
+          valor.textContent = filtro.dataset.all;
+        } else if (elegidos.length === 1) {
+          var marcado = filtro.querySelector('input:checked');
+          valor.textContent = marcado.nextElementSibling.textContent;
+        } else {
+          valor.textContent = elegidos.length + ' elegidos';
+        }
+        filtro.classList.toggle('multi--active', elegidos.length > 0);
+        return elegidos.length > 0;
+      }
+
       function apply() {
-        var municipality = controls[0].value;
-        var type = controls[1].value;
-        var agency = controls[2].value;
-        var status = controls[3].value;
-        var max = parseInt(controls[4].value, 10);
+        var elegidos = filtros.map(seleccionados);
+        var tope = parseInt(max.value, 10);
         var visible = 0;
 
         cards.forEach(function (card) {
-          var ok =
-            (!municipality || card.dataset.municipality === municipality) &&
-            (!type || card.dataset.type === type) &&
-            (!agency || card.dataset.agency === agency) &&
-            (!status || card.dataset.status === status) &&
-            (!max || parseInt(card.dataset.price, 10) <= max);
+          var datos = [
+            card.dataset.municipality,
+            card.dataset.type,
+            card.dataset.agency,
+            card.dataset.status,
+          ];
+          // Sin nada marcado en un filtro, ese filtro no descarta nada.
+          var ok = elegidos.every(function (valores, i) {
+            return valores.length === 0 || valores.indexOf(datos[i]) !== -1;
+          });
+          if (ok && tope) ok = parseInt(card.dataset.price, 10) <= tope;
+
           card.hidden = !ok;
           if (ok) visible += 1;
         });
+
+        var alguno = false;
+        filtros.forEach(function (filtro) {
+          if (refrescarResumen(filtro)) alguno = true;
+        });
+        if (clear) clear.hidden = !alguno && !max.value;
 
         count.textContent = visible + ' ' + (visible === 1 ? singular : plural);
         empty.hidden = visible !== 0;
       }
 
-      controls.forEach(function (control) {
-        control.addEventListener('input', apply);
-        control.addEventListener('change', apply);
+      filtros.forEach(function (filtro) {
+        if (filtro) filtro.addEventListener('change', apply);
       });
+      max.addEventListener('input', apply);
+
+      if (clear) {
+        clear.addEventListener('click', function () {
+          filtros.forEach(function (filtro) {
+            if (!filtro) return;
+            Array.prototype.slice.call(filtro.querySelectorAll('input')).forEach(function (input) {
+              input.checked = false;
+            });
+          });
+          max.value = '';
+          apply();
+        });
+      }
 
       apply();
     }
+
+    // Un desplegable abierto se cierra al abrir otro o al pulsar fuera.
+    document.addEventListener('click', function (event) {
+      Array.prototype.slice.call(document.querySelectorAll('details.multi[open]')).forEach(
+        function (abierto) {
+          if (!abierto.contains(event.target)) abierto.open = false;
+        },
+      );
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      Array.prototype.slice.call(document.querySelectorAll('details.multi[open]')).forEach(
+        function (abierto) { abierto.open = false; },
+      );
+    });
 
     wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');
     wire('b-', 'b-grid', 'b-count', 'b-no-match', 'inmueble', 'inmuebles');

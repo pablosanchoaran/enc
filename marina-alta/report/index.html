@@ -99,13 +99,44 @@
   .section__head h2 { font-size: 1.35rem; }
   .section__note { color: var(--ink-muted); font-size: 0.85rem; }
 
-  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
-  .filters select, .filters input {
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+  .filters__price { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
+  .filters input {
     font: inherit; font-size: 0.9rem; color: var(--ink); background: var(--surface);
     border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 150px;
   }
-  .filters select:focus-visible, .filters input:focus-visible, .chart__row:focus-visible, a:focus-visible {
+  .filters__clear {
+    font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--accent);
+    background: none; border: 1px solid var(--accent); border-radius: 8px; padding: 7px 12px;
+  }
+
+  /* Filtro de selección múltiple: desplegable con casillas. */
+  .multi { position: relative; }
+  .multi > summary {
+    list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 4px;
+    border: 1px solid var(--line); border-radius: 8px; padding: 6px 30px 6px 10px;
+    background: var(--surface); min-width: 158px; position: relative;
+  }
+  .multi > summary::-webkit-details-marker { display: none; }
+  .multi > summary::after {
+    content: ""; position: absolute; right: 12px; top: calc(50% - 2px);
+    border: 4px solid transparent; border-top-color: var(--ink-muted);
+  }
+  .multi[open] > summary { border-color: var(--accent); }
+  .multi--active > summary { border-color: var(--accent); background: var(--accent-soft); }
+  .multi__label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
+  .multi__value { font-size: 0.9rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 190px; }
+  .multi__panel {
+    position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 100%;
+    max-height: 280px; overflow-y: auto; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.14);
+    padding: 6px; display: flex; flex-direction: column;
+  }
+  .multi__option { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 0.88rem; white-space: nowrap; }
+  .multi__option:hover { background: var(--surface-sunk); }
+  .multi__option input { min-width: 0; accent-color: var(--accent); }
+  .filters input:focus-visible, .multi > summary:focus-visible, .multi__option input:focus-visible,
+  .filters__clear:focus-visible, .chart__row:focus-visible, a:focus-visible, .toast button:focus-visible {
     outline: 2px solid var(--accent); outline-offset: 2px;
   }
 
@@ -214,11 +245,192 @@
       <span class="section__note" id="count">24 anuncios</span>
     </div>
     <div class="filters">
-      <label>Municipio<select id="f-municipality"><option value="">Todos</option><option>Alcalalí</option><option>Beniarbeig</option><option>Benidoleig</option><option>Benissa</option><option>Calp / Calpe</option><option>Dénia</option><option>El Poble Nou de Benitatxell</option><option>El Verger</option><option>Els Poblets</option><option>Gata de Gorgos</option><option>Llíber</option><option>Ondara</option><option>Orba</option><option>Pedreguer</option><option>Pego</option><option>Sanet y Negrals</option><option>Teulada-Moraira</option><option>Xàbia / Jávea</option><option>Xaló / Jalón</option></select></label>
-      <label>Tipo<select id="f-type"><option value="">Todos</option><option value="villa">Villa / chalet</option><option value="house">Casa</option><option value="townhouse">Adosado / bungaló</option><option value="apartment">Piso</option><option value="penthouse">Ático</option><option value="plot">Parcela</option><option value="other">Otro</option></select></label>
-      <label>Agencia<select id="f-agency"><option value="">Todas</option><option>Agencia Inmobiliaria Morató</option><option>Benimo Villas</option><option>Catorce Inmobiliaria</option><option>Daniamed</option><option>Denialara Servicios Inmobiliarios</option><option>Ferrando Inmobiliaria</option><option>Grupo Peretó</option><option>Inmodemar</option><option>Inmovidal</option><option>Llobell Inmobiliaris</option><option>LYT Properties</option><option>MLS Dénia</option><option>Ortolá Inmobiliaria</option></select></label>
-      <label>Estado<select id="f-status"><option value="available">Solo disponibles (22)</option><option value="">Todos, incluidos vendidos (24)</option><option value="sold">Solo vendidos (2)</option></select></label>
-      <label>Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      
+    <details class="multi" id="f-municipality" data-all="Todos">
+      <summary><span class="multi__label">Municipio</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="Alcalalí">
+          <span>Alcalalí</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Beniarbeig">
+          <span>Beniarbeig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benidoleig">
+          <span>Benidoleig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benissa">
+          <span>Benissa</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Calp / Calpe">
+          <span>Calp / Calpe</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Dénia">
+          <span>Dénia</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Poble Nou de Benitatxell">
+          <span>El Poble Nou de Benitatxell</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Verger">
+          <span>El Verger</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Els Poblets">
+          <span>Els Poblets</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Gata de Gorgos">
+          <span>Gata de Gorgos</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Llíber">
+          <span>Llíber</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ondara">
+          <span>Ondara</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Orba">
+          <span>Orba</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Pedreguer">
+          <span>Pedreguer</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Pego">
+          <span>Pego</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Sanet y Negrals">
+          <span>Sanet y Negrals</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Teulada-Moraira">
+          <span>Teulada-Moraira</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xàbia / Jávea">
+          <span>Xàbia / Jávea</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xaló / Jalón">
+          <span>Xaló / Jalón</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-type" data-all="Todos">
+      <summary><span class="multi__label">Tipo</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="villa">
+          <span>Villa / chalet</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="house">
+          <span>Casa</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="townhouse">
+          <span>Adosado / bungaló</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="apartment">
+          <span>Piso</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="penthouse">
+          <span>Ático</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="plot">
+          <span>Parcela</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="other">
+          <span>Otro</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-agency" data-all="Todas">
+      <summary><span class="multi__label">Agencia</span><span class="multi__value">Todas</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="Agencia Inmobiliaria Morató">
+          <span>Agencia Inmobiliaria Morató</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benimo Villas">
+          <span>Benimo Villas</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Catorce Inmobiliaria">
+          <span>Catorce Inmobiliaria</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Daniamed">
+          <span>Daniamed</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Denialara Servicios Inmobiliarios">
+          <span>Denialara Servicios Inmobiliarios</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ferrando Inmobiliaria">
+          <span>Ferrando Inmobiliaria</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Grupo Peretó">
+          <span>Grupo Peretó</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Inmodemar">
+          <span>Inmodemar</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Inmovidal">
+          <span>Inmovidal</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Llobell Inmobiliaris">
+          <span>Llobell Inmobiliaris</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="LYT Properties">
+          <span>LYT Properties</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="MLS Dénia">
+          <span>MLS Dénia</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ortolá Inmobiliaria">
+          <span>Ortolá Inmobiliaria</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-status" data-all="Todos">
+      <summary><span class="multi__label">Estado</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="available" checked>
+          <span>Disponible (22)</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="sold">
+          <span>Vendido (2)</span>
+        </label></div>
+    </details>
+      <label class="filters__price">Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      <button type="button" class="filters__clear" id="f-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="grid">
     <article class="card card--available" data-municipality="Dénia" data-type="penthouse" data-agency="MLS Dénia" data-price="349000" data-status="available">
@@ -614,11 +826,228 @@
       <span class="section__note" id="b-count">407 inmuebles</span>
     </div>
     <div class="filters">
-      <label>Municipio<select id="b-municipality"><option value="">Todos</option><option>Alcalalí</option><option>Beniarbeig</option><option>Benidoleig</option><option>Benissa</option><option>Calp / Calpe</option><option>Dénia</option><option>El Poble Nou de Benitatxell</option><option>El Verger</option><option>Els Poblets</option><option>Gata de Gorgos</option><option>Llíber</option><option>Ondara</option><option>Orba</option><option>Pedreguer</option><option>Pego</option><option>Sanet y Negrals</option><option>Teulada-Moraira</option><option>Xàbia / Jávea</option><option>Xaló / Jalón</option></select></label>
-      <label>Tipo<select id="b-type"><option value="">Todos</option><option value="villa">Villa / chalet</option><option value="house">Casa</option><option value="townhouse">Adosado / bungaló</option><option value="apartment">Piso</option><option value="penthouse">Ático</option><option value="plot">Parcela</option><option value="other">Otro</option></select></label>
-      <label>Agencia<select id="b-agency"><option value="">Todas</option><option>Agencia Inmobiliaria Morató</option><option>Albadomus</option><option>Benimo Villas</option><option>Bindley Properties</option><option>Catorce Inmobiliaria</option><option>Daniamed</option><option>Denialara Servicios Inmobiliarios</option><option>Deseo Homes</option><option>Ferrando Inmobiliaria</option><option>Grupo Peretó</option><option>Inmobiliaria Calablanca</option><option>Inmodemar</option><option>Inmovidal</option><option>InmoXara</option><option>Llobell Inmobiliaris</option><option>LYT Properties</option><option>MLS Dénia</option><option>Ortolá Inmobiliaria</option><option>Select Villas of Moraira</option><option>ThinkSpain (portal)</option><option>Tododenia-inmo</option></select></label>
-      <label>Estado<select id="b-status"><option value="available">Solo disponibles (359)</option><option value="">Todos, incluidos vendidos (407)</option><option value="reserved">Solo reservados (18)</option><option value="sold">Solo vendidos (30)</option></select></label>
-      <label>Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="260000"></label>
+      
+    <details class="multi" id="b-municipality" data-all="Todos">
+      <summary><span class="multi__label">Municipio</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="Alcalalí">
+          <span>Alcalalí</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Beniarbeig">
+          <span>Beniarbeig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benidoleig">
+          <span>Benidoleig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benissa">
+          <span>Benissa</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Calp / Calpe">
+          <span>Calp / Calpe</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Dénia">
+          <span>Dénia</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Poble Nou de Benitatxell">
+          <span>El Poble Nou de Benitatxell</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Verger">
+          <span>El Verger</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Els Poblets">
+          <span>Els Poblets</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Gata de Gorgos">
+          <span>Gata de Gorgos</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Llíber">
+          <span>Llíber</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ondara">
+          <span>Ondara</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Orba">
+          <span>Orba</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Pedreguer">
+          <span>Pedreguer</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Pego">
+          <span>Pego</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Sanet y Negrals">
+          <span>Sanet y Negrals</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Teulada-Moraira">
+          <span>Teulada-Moraira</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xàbia / Jávea">
+          <span>Xàbia / Jávea</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xaló / Jalón">
+          <span>Xaló / Jalón</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="b-type" data-all="Todos">
+      <summary><span class="multi__label">Tipo</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="villa">
+          <span>Villa / chalet</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="house">
+          <span>Casa</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="townhouse">
+          <span>Adosado / bungaló</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="apartment">
+          <span>Piso</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="penthouse">
+          <span>Ático</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="plot">
+          <span>Parcela</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="other">
+          <span>Otro</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="b-agency" data-all="Todas">
+      <summary><span class="multi__label">Agencia</span><span class="multi__value">Todas</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="Agencia Inmobiliaria Morató">
+          <span>Agencia Inmobiliaria Morató</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Albadomus">
+          <span>Albadomus</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benimo Villas">
+          <span>Benimo Villas</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Bindley Properties">
+          <span>Bindley Properties</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Catorce Inmobiliaria">
+          <span>Catorce Inmobiliaria</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Daniamed">
+          <span>Daniamed</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Denialara Servicios Inmobiliarios">
+          <span>Denialara Servicios Inmobiliarios</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Deseo Homes">
+          <span>Deseo Homes</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ferrando Inmobiliaria">
+          <span>Ferrando Inmobiliaria</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Grupo Peretó">
+          <span>Grupo Peretó</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Inmobiliaria Calablanca">
+          <span>Inmobiliaria Calablanca</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Inmodemar">
+          <span>Inmodemar</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Inmovidal">
+          <span>Inmovidal</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="InmoXara">
+          <span>InmoXara</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Llobell Inmobiliaris">
+          <span>Llobell Inmobiliaris</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="LYT Properties">
+          <span>LYT Properties</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="MLS Dénia">
+          <span>MLS Dénia</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ortolá Inmobiliaria">
+          <span>Ortolá Inmobiliaria</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Select Villas of Moraira">
+          <span>Select Villas of Moraira</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="ThinkSpain (portal)">
+          <span>ThinkSpain (portal)</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Tododenia-inmo">
+          <span>Tododenia-inmo</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="b-status" data-all="Todos">
+      <summary><span class="multi__label">Estado</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="available" checked>
+          <span>Disponible (359)</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="reserved">
+          <span>Reservado (18)</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="sold">
+          <span>Vendido (30)</span>
+        </label></div>
+    </details>
+      <label class="filters__price">Precio máximo<input id="b-max" type="number" inputmode="numeric" step="10000" placeholder="260000"></label>
+      <button type="button" class="filters__clear" id="b-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="b-grid">
     <article class="card card--available" data-municipality="Pego" data-type="plot" data-agency="Ortolá Inmobiliaria" data-price="14000" data-status="available">
@@ -7511,40 +7940,104 @@
       var cards = Array.prototype.slice.call(grid.children);
       var count = document.getElementById(countId);
       var empty = document.getElementById(emptyId);
-      var controls = ['municipality', 'type', 'agency', 'status', 'max'].map(function (name) {
+      var max = document.getElementById(prefix + 'max');
+      var clear = document.getElementById(prefix + 'clear');
+      var filtros = ['municipality', 'type', 'agency', 'status'].map(function (name) {
         return document.getElementById(prefix + name);
       });
 
+      function seleccionados(filtro) {
+        if (!filtro) return [];
+        return Array.prototype.slice
+          .call(filtro.querySelectorAll('input:checked'))
+          .map(function (input) { return input.value; });
+      }
+
+      // El resumen dice qué hay elegido: un nombre si es uno, "3 elegidos" si
+      // son varios, y el texto por defecto cuando no hay ninguno.
+      function refrescarResumen(filtro) {
+        if (!filtro) return false;
+        var elegidos = seleccionados(filtro);
+        var valor = filtro.querySelector('.multi__value');
+        if (elegidos.length === 0) {
+          valor.textContent = filtro.dataset.all;
+        } else if (elegidos.length === 1) {
+          var marcado = filtro.querySelector('input:checked');
+          valor.textContent = marcado.nextElementSibling.textContent;
+        } else {
+          valor.textContent = elegidos.length + ' elegidos';
+        }
+        filtro.classList.toggle('multi--active', elegidos.length > 0);
+        return elegidos.length > 0;
+      }
+
       function apply() {
-        var municipality = controls[0].value;
-        var type = controls[1].value;
-        var agency = controls[2].value;
-        var status = controls[3].value;
-        var max = parseInt(controls[4].value, 10);
+        var elegidos = filtros.map(seleccionados);
+        var tope = parseInt(max.value, 10);
         var visible = 0;
 
         cards.forEach(function (card) {
-          var ok =
-            (!municipality || card.dataset.municipality === municipality) &&
-            (!type || card.dataset.type === type) &&
-            (!agency || card.dataset.agency === agency) &&
-            (!status || card.dataset.status === status) &&
-            (!max || parseInt(card.dataset.price, 10) <= max);
+          var datos = [
+            card.dataset.municipality,
+            card.dataset.type,
+            card.dataset.agency,
+            card.dataset.status,
+          ];
+          // Sin nada marcado en un filtro, ese filtro no descarta nada.
+          var ok = elegidos.every(function (valores, i) {
+            return valores.length === 0 || valores.indexOf(datos[i]) !== -1;
+          });
+          if (ok && tope) ok = parseInt(card.dataset.price, 10) <= tope;
+
           card.hidden = !ok;
           if (ok) visible += 1;
         });
+
+        var alguno = false;
+        filtros.forEach(function (filtro) {
+          if (refrescarResumen(filtro)) alguno = true;
+        });
+        if (clear) clear.hidden = !alguno && !max.value;
 
         count.textContent = visible + ' ' + (visible === 1 ? singular : plural);
         empty.hidden = visible !== 0;
       }
 
-      controls.forEach(function (control) {
-        control.addEventListener('input', apply);
-        control.addEventListener('change', apply);
+      filtros.forEach(function (filtro) {
+        if (filtro) filtro.addEventListener('change', apply);
       });
+      max.addEventListener('input', apply);
+
+      if (clear) {
+        clear.addEventListener('click', function () {
+          filtros.forEach(function (filtro) {
+            if (!filtro) return;
+            Array.prototype.slice.call(filtro.querySelectorAll('input')).forEach(function (input) {
+              input.checked = false;
+            });
+          });
+          max.value = '';
+          apply();
+        });
+      }
 
       apply();
     }
+
+    // Un desplegable abierto se cierra al abrir otro o al pulsar fuera.
+    document.addEventListener('click', function (event) {
+      Array.prototype.slice.call(document.querySelectorAll('details.multi[open]')).forEach(
+        function (abierto) {
+          if (!abierto.contains(event.target)) abierto.open = false;
+        },
+      );
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      Array.prototype.slice.call(document.querySelectorAll('details.multi[open]')).forEach(
+        function (abierto) { abierto.open = false; },
+      );
+    });
 
     wire('f-', 'grid', 'count', 'no-match', 'anuncio', 'anuncios');
     wire('b-', 'b-grid', 'b-count', 'b-no-match', 'inmueble', 'inmuebles');
