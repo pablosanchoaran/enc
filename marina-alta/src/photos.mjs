@@ -11,7 +11,7 @@
  * publicado no puede cargar imágenes de otros servidores).
  */
 
-import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, readFile, stat, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 import sharp from 'sharp'
@@ -139,6 +139,39 @@ const THUMBNAIL_BYTES = 8 * 1024 * 1024
  *
  * @returns {Promise<Map<string, string>>} id del anuncio → data URI
  */
+/**
+ * Copia las fotos a la carpeta del sitio y devuelve la ruta de cada una, con
+ * la misma forma que `loadThumbnails` para que el generador no note la
+ * diferencia: ahí donde el artefacto pone un `data:` largísimo, la web pone
+ * `fotos/x.webp` y el navegador la pide solo cuando hace falta.
+ *
+ * Aquí no hay presupuesto que repartir. La página pesa lo que pesa su texto y
+ * las imágenes se cargan sobre la marcha, así que caben todas — incluidas las
+ * copias de 640 px, que en el artefacto estaban guardadas sin que nadie
+ * pudiera verlas.
+ *
+ * @returns {Promise<Map<string, {thumb: string, full: string}>>}
+ */
+export async function copyPhotosToSite(listings, photosDir, siteDir) {
+  const destino = join(siteDir, 'fotos')
+  await mkdir(destino, { recursive: true })
+
+  const rutas = new Map()
+  for (const item of listings) {
+    if (!item.photo?.thumb) continue
+    try {
+      const thumb = item.photo.thumb
+      const full = item.photo.file ?? thumb
+      await copyFile(join(photosDir, thumb), join(destino, thumb))
+      if (full !== thumb) await copyFile(join(photosDir, full), join(destino, full))
+      rutas.set(item.id, { thumb: `fotos/${thumb}`, full: `fotos/${full}` })
+    } catch {
+      // Una foto que ya no está en disco simplemente no se muestra.
+    }
+  }
+  return rutas
+}
+
 export async function loadThumbnails(listings, photosDir, { maxBytes = THUMBNAIL_BYTES } = {}) {
   const thumbnails = new Map()
   let used = 0

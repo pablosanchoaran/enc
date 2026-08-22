@@ -48,6 +48,16 @@ jobs:
             marina-alta/data/daily
           retention-days: 30
 
+      # El sitio se despliega solo cuando la cuenta de Cloudflare está
+      # configurada; sin los secretos, el resto del workflow sigue igual y el
+      # informe se queda en el artifact del run.
+      - name: Desplegar el sitio en Cloudflare Pages
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@3 pages deploy site --project-name marina-alta --branch main --commit-dirty=true
+
       - name: Guardar datos e informe
         run: |
           git config user.name 'github-actions[bot]'

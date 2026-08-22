@@ -165,7 +165,7 @@ function renderCard(item, thumbnails) {
 
   return `
     <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}" data-unit="${item.pricePerM2 ?? ''}" data-built="${item.builtM2 ?? ''}" data-plot="${item.plotM2 ?? ''}" data-seen="${escape(item.firstSeen ?? '')}">
-      ${thumb ? `<a class="card__photo" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="" loading="lazy" width="240" height="160"></a>` : ''}
+      ${renderPhoto(item, thumb)}
       <div class="card__head">
         <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
         ${status === 'available' ? '' : `<span class="chip chip--${status}">${STATUS_LABELS[status]}</span>`}
@@ -181,6 +181,23 @@ function renderCard(item, thumbnails) {
         <a class="card__link" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>`
+}
+
+/**
+ * La portada de la tarjeta. El generador no sabe si la foto le llega
+ * empotrada o como fichero, y no le hace falta: en el artefacto es un `data:`
+ * y en la web es `fotos/x.webp`, que el navegador pide solo al acercarse.
+ *
+ * Cuando hay copia de 640 px —solo en la web, porque empotrarlas no cabía— la
+ * miniatura lleva a ella en vez de a la ficha de la agencia: es la foto tal y
+ * como estaba el día que se guardó, y sigue ahí aunque el anuncio desaparezca.
+ */
+function renderPhoto(item, thumb) {
+  if (!thumb) return ''
+  const src = typeof thumb === 'string' ? thumb : thumb.thumb
+  const full = typeof thumb === 'string' ? null : thumb.full
+  const destino = full ?? item.url
+  return `<a class="card__photo" href="${escape(destino)}" target="_blank" rel="noopener noreferrer"><img src="${escape(src)}" alt="" loading="lazy" width="240" height="160"></a>`
 }
 
 /**

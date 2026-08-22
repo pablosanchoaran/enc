@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url'
 import { Fetcher } from './fetcher.mjs'
 import { diffInventory } from './diff.mjs'
 import { updateArchive } from './archive.mjs'
-import { capturePhotos, loadThumbnails } from './photos.mjs'
+import { capturePhotos, copyPhotosToSite, loadThumbnails } from './photos.mjs'
 import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
 import * as ego from './adapters/ego.mjs'
@@ -33,6 +33,8 @@ const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
 const OVER_BUDGET_FILE = join(DATA_DIR, 'over-budget.json')
 const PHOTOS_DIR = join(DATA_DIR, 'photos')
 const REPORT_FILE = join(ROOT, 'report', 'index.html')
+/** Salida como sitio web: la página y sus fotos como ficheros aparte. */
+const SITE_DIR = join(ROOT, 'site')
 /**
  * Tope del informe. El artefacto publicado rechaza lo que pase de 16 MB; se
  * deja margen porque el inventario crece a diario y quien regenera no siempre
@@ -73,6 +75,22 @@ function parseArgs(argv) {
     }
   }
   return args
+}
+
+/**
+ * Escribe el sitio web: la misma página, pero con las fotos como ficheros
+ * aparte que el navegador pide sobre la marcha. Sin el tope de 16 MB del
+ * artefacto caben todas las portadas y, al pulsarlas, la copia de 640 px.
+ */
+async function writeSite({ daily, listings, maxPrice, log }) {
+  await mkdir(SITE_DIR, { recursive: true })
+  const photos = await copyPhotosToSite(listings, PHOTOS_DIR, SITE_DIR)
+  const html = renderReport({ daily, listings, thumbnails: photos, maxPrice })
+  await writeFile(join(SITE_DIR, 'index.html'), html)
+  log(
+    `Sitio en ${SITE_DIR}` +
+      ` (página de ${(Buffer.byteLength(html) / 1024 / 1024).toFixed(1)} MB, ${photos.size} fotos aparte)`,
+  )
 }
 
 /**
@@ -138,7 +156,9 @@ async function run() {
       sources: [],
     })
     const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
-    await writeReport({ daily, listings: previousListings, maxPrice: catalog.config?.maxPrice, log })
+    const techo = catalog.config?.maxPrice
+    await writeReport({ daily, listings: previousListings, maxPrice: techo, log })
+    await writeSite({ daily, listings: previousListings, maxPrice: techo, log })
     return
   }
 
@@ -374,6 +394,7 @@ async function run() {
   await writeJson(dailyFile, daily)
   log(`\nDatos en ${INVENTORY_FILE}`)
   await writeReport({ daily, listings, maxPrice, log })
+  await writeSite({ daily, listings, maxPrice, log })
 }
 
 run().catch((error) => {
