@@ -114,18 +114,36 @@ export async function capturePhotos(listings, { photosDir, budget = 120, log = (
 }
 
 /**
+ * Presupuesto de miniaturas empotradas. El artefacto publicado no puede pasar
+ * de 16 MB y las fotos van en base64, que abulta un tercio más que el fichero;
+ * el resto de la página (HTML, estilos y guion) ronda 1 MB. Con 10 MB de fotos
+ * quedan unos 2 MB de margen sobre el límite.
+ */
+const THUMBNAIL_BYTES = 10 * 1024 * 1024
+
+/**
  * Carga las miniaturas como data URI para empotrarlas en el informe: el
  * artefacto publicado no puede pedir imágenes a ningún servidor externo.
  *
+ * Se recorren en el orden recibido y se paran al agotar el presupuesto, así
+ * que conviene pasarlas en el orden en que se publican. Un anuncio sin
+ * miniatura sale igual, con todos sus datos y su enlace, solo que sin portada.
+ *
  * @returns {Promise<Map<string, string>>} id del anuncio → data URI
  */
-export async function loadThumbnails(listings, photosDir) {
+export async function loadThumbnails(listings, photosDir, { maxBytes = THUMBNAIL_BYTES } = {}) {
   const thumbnails = new Map()
+  let used = 0
+
   for (const item of listings) {
     if (!item.photo?.thumb) continue
     try {
       const buffer = await readFile(join(photosDir, item.photo.thumb))
-      thumbnails.set(item.id, `data:image/webp;base64,${buffer.toString('base64')}`)
+      // Se cuenta lo que ocupa ya codificado, que es lo que acaba en la página.
+      const encoded = buffer.toString('base64')
+      if (used + encoded.length > maxBytes) break
+      used += encoded.length
+      thumbnails.set(item.id, `data:image/webp;base64,${encoded}`)
     } catch {
       // Una foto que ya no está en disco simplemente no se muestra.
     }

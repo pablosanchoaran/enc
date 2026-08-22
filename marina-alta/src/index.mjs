@@ -32,8 +32,6 @@ const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
 /** Lo que supera el techo de precio: solo url, precio y lastmod. */
 const OVER_BUDGET_FILE = join(DATA_DIR, 'over-budget.json')
 const PHOTOS_DIR = join(DATA_DIR, 'photos')
-/** Se guarda la foto de los anuncios hasta este precio (el resto son muchos). */
-const PHOTO_PRICE_LIMIT = 260_000
 const REPORT_FILE = join(ROOT, 'report', 'index.html')
 
 const ADAPTERS = { thinkspain, sooprema, ego, listado }
@@ -46,6 +44,9 @@ function parseArgs(argv) {
     feedLimit: 250,
     refreshBudget: 40,
     reportOnly: false,
+    // Fotos por ejecución. El diario va sobrado con esto; se sube a mano
+    // cuando hay que ponerse al día con un inventario recién ampliado.
+    photoBudget: 120,
   }
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i]
@@ -60,6 +61,9 @@ function parseArgs(argv) {
     } else if (arg === '--feed-limit') {
       const value = Number.parseInt(argv[++i], 10)
       args.feedLimit = Number.isFinite(value) ? value : 250
+    } else if (arg === '--photo-budget') {
+      const value = Number.parseInt(argv[++i], 10)
+      args.photoBudget = Number.isFinite(value) ? value : 120
     }
   }
   return args
@@ -290,11 +294,13 @@ async function run() {
       ` · ${daily.totals.inventory} en inventario`,
   )
 
-  // Fotos de los anuncios asequibles: cuando se vendan, la agencia retirará
-  // el anuncio y la imagen dejará de existir, así que hay que tenerla copiada.
+  // Fotos de los anuncios que se publican: cuando se vendan, la agencia
+  // retirará el anuncio y la imagen dejará de existir, así que hay que tenerla
+  // copiada. El criterio es el mismo techo con el que se extrae, para que no
+  // haya tarjeta publicada sin portada.
   if (!args.dryRun) {
-    const candidates = listings.filter((item) => item.price <= PHOTO_PRICE_LIMIT)
-    await capturePhotos(candidates, { photosDir: PHOTOS_DIR, log })
+    const candidates = listings.filter((item) => item.price <= maxPrice)
+    await capturePhotos(candidates, { photosDir: PHOTOS_DIR, budget: args.photoBudget, log })
   }
 
   if (args.dryRun) {
@@ -330,8 +336,11 @@ async function run() {
   await writeJson(ARCHIVE_FILE, { updatedAt: daily.generatedAt, entries: archive.entries })
   await writeJson(dailyFile, daily)
   await mkdir(dirname(REPORT_FILE), { recursive: true })
-  const thumbnails = await loadThumbnails(listings, PHOTOS_DIR)
-  await writeFile(REPORT_FILE, renderReport({ daily, listings, thumbnails }))
+  // Por precio ascendente: si las fotos no caben todas, las que se quedan sin
+  // portada son las más caras, que es donde menos se mira.
+  const byPrice = [...listings].sort((a, b) => a.price - b.price)
+  const thumbnails = await loadThumbnails(byPrice, PHOTOS_DIR)
+  await writeFile(REPORT_FILE, renderReport({ daily, listings, thumbnails, maxPrice }))
   log(`\nDatos en ${INVENTORY_FILE}\nInforme en ${REPORT_FILE}`)
 }
 

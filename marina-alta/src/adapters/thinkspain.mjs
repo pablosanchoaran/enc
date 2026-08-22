@@ -51,6 +51,42 @@ async function discoverZoneListings(fetcher, log) {
   return [...zones.values()]
 }
 
+/** Tarjetas que sirve cada página del listado. */
+const PAGE_SIZE = 16
+/** Tope de seguridad por zona: 80 páginas son 1.280 anuncios. */
+const MAX_PAGES = 80
+
+/**
+ * Recorre un listado de zona entero. La web solo pinta 16 tarjetas y el resto
+ * las carga el botón "Mostrar más", que pide la misma URL con `numpag`; sin
+ * esto se veían 16 de los 2.627 anuncios que Dénia tiene publicados.
+ *
+ * El corte necesita dos frenos, porque pasada la última página el servidor no
+ * devuelve una lista vacía: vuelve a servir la primera. Se para cuando llega
+ * una página incompleta (la última) o cuando lo que llega ya se conocía.
+ */
+export async function* zonePages(fetcher, zoneUrl, maxPrice) {
+  const url = new URL(zoneUrl)
+  // El filtro de precio es del servidor: recorta el listado antes de pedirlo y
+  // ahorra la mayoría de las páginas, porque casi todo pasa del techo.
+  if (Number.isFinite(maxPrice)) url.searchParams.set('maxprice', String(maxPrice))
+
+  const vistos = new Set()
+  for (let page = 1; page <= MAX_PAGES; page += 1) {
+    if (page > 1) url.searchParams.set('numpag', String(page))
+    const html = await fetcher.get(url.toString())
+    if (!html) return
+
+    const cards = parseListingCards(html, zoneUrl.slice(LISTING_PREFIX.length))
+    const nuevas = cards.filter((card) => !vistos.has(card.sourceRef))
+    if (nuevas.length === 0) return
+
+    nuevas.forEach((card) => vistos.add(card.sourceRef))
+    yield nuevas
+    if (cards.length < PAGE_SIZE) return
+  }
+}
+
 /**
  * Lee las tarjetas de un listado: cada una trae ya todos los datos. El bloque
  * de cada tarjeta va desde su `data-property-id` hasta el de la siguiente.
@@ -174,18 +210,18 @@ export async function collect({
     found.push(item)
   }
 
-  // 1) Barrido por zonas de la comarca.
+  // 1) Barrido por zonas de la comarca, listado completo página a página.
   const zoneUrls = await discoverZoneListings(fetcher, log)
+  let pages = 0
   for (const zoneUrl of zoneUrls.slice(0, limit)) {
-    const html = await fetcher.get(zoneUrl)
-    if (!html) continue
-    // El precio viene en la propia tarjeta del listado, así que lo caro se
-    // descarta aquí sin gastar una sola petición más.
-    parseListingCards(html, zoneUrl.slice(LISTING_PREFIX.length))
-      .filter((item) => item.price <= maxPrice)
-      .forEach(push)
+    for await (const cards of zonePages(fetcher, zoneUrl, maxPrice)) {
+      pages += 1
+      // El precio viene en la propia tarjeta, así que lo que se cuele por
+      // encima del techo se descarta sin gastar una petición más.
+      cards.filter((item) => item.price <= maxPrice).forEach(push)
+    }
   }
-  log(`  barrido por zonas: ${found.length} anuncios`)
+  log(`  barrido por zonas: ${found.length} anuncios en ${pages} páginas`)
 
   // 2) Altas del día en toda España: solo abrimos las fichas desconocidas.
   const beforeLatest = found.length

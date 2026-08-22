@@ -5,6 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { diffInventory } from '../src/diff.mjs'
 import { readIconFeatures } from '../src/adapters/sooprema.mjs'
+import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
 import {
@@ -198,6 +199,71 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
     <div class="features-2__price">235.000 €</div>
     <div class="property-3--landscape__price">890.000 €</div>`)
   assert.equal(readPrice(normal), 235000)
+})
+
+test('el barrido de zona recorre todas las páginas y para al dar la vuelta', async () => {
+  // ThinkSpain sirve 16 tarjetas por página y las siguientes van en `numpag`.
+  // Pasada la última no devuelve una página vacía: vuelve a servir la primera,
+  // así que sin el freno de "esto ya lo he visto" el bucle no terminaría.
+  const tarjeta = (id) =>
+    `<div data-property-id="${id}" data-base-twc-analytic-event-parameters='{"propertyID":"${id}","price":100000,"offer":"for-sale"}'>` +
+    `<img alt="Casa en venta en Dénia número ${id}"></div>`
+  const paginas = [
+    Array.from({ length: 16 }, (_, i) => tarjeta(1000 + i)).join(''),
+    Array.from({ length: 16 }, (_, i) => tarjeta(2000 + i)).join(''),
+    Array.from({ length: 5 }, (_, i) => tarjeta(3000 + i)).join(''),
+  ]
+
+  const pedidas = []
+  const fetcher = {
+    async get(url) {
+      pedidas.push(url)
+      const numpag = Number(new URL(url).searchParams.get('numpag') ?? 1)
+      // Más allá de la última, el servidor repite la primera página.
+      return paginas[numpag - 1] ?? paginas[0]
+    },
+  }
+
+  const recogidas = []
+  for await (const lote of zonePages(fetcher, 'https://www.thinkspain.com/es/venta-viviendas/denia', 350000)) {
+    recogidas.push(...lote)
+  }
+
+  assert.equal(recogidas.length, 37, 'las tres páginas, sin repetir')
+  assert.equal(new Set(recogidas.map((item) => item.sourceRef)).size, 37)
+  assert.equal(pedidas.length, 3, 'para en la página incompleta, sin pedir una cuarta')
+  assert.ok(
+    pedidas.every((url) => new URL(url).searchParams.get('maxprice') === '350000'),
+    'el techo de precio se aplica en el servidor',
+  )
+})
+
+test('sin página incompleta, el barrido para en cuanto se repiten las fichas', async () => {
+  // Una zona con exactamente 32 anuncios: la tercera petición devuelve otra vez
+  // la primera página, y ahí es donde tiene que cortar.
+  const tarjeta = (id) =>
+    `<div data-property-id="${id}" data-base-twc-analytic-event-parameters='{"propertyID":"${id}","price":90000,"offer":"for-sale"}'>` +
+    `<img alt="Piso en venta en Calpe número ${id}"></div>`
+  const paginas = [
+    Array.from({ length: 16 }, (_, i) => tarjeta(1000 + i)).join(''),
+    Array.from({ length: 16 }, (_, i) => tarjeta(2000 + i)).join(''),
+  ]
+  let peticiones = 0
+  const fetcher = {
+    async get(url) {
+      peticiones += 1
+      const numpag = Number(new URL(url).searchParams.get('numpag') ?? 1)
+      return paginas[numpag - 1] ?? paginas[0]
+    },
+  }
+
+  const recogidas = []
+  for await (const lote of zonePages(fetcher, 'https://www.thinkspain.com/es/venta-viviendas/calpe', Infinity)) {
+    recogidas.push(...lote)
+  }
+
+  assert.equal(recogidas.length, 32)
+  assert.equal(peticiones, 3, 'la tercera detecta la vuelta y corta')
 })
 
 test('el icono se interpreta por su descripción, no por el nombre del fichero', () => {

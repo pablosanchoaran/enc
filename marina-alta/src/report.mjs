@@ -3,8 +3,13 @@
  * externas, porque el artefacto publicado bloquea cualquier host de fuera.
  */
 
-/** Umbral de la sección de vivienda asequible del informe. */
-const BUDGET = 260_000
+/**
+ * Techo por defecto de la sección de vivienda del informe. Lo normal es que
+ * llegue el del catálogo (`config.maxPrice`), que es el mismo con el que se
+ * extrae: publicar por debajo de lo que se recoge dejaba fuera anuncios que ya
+ * estaban descargados.
+ */
+const DEFAULT_BUDGET = 350_000
 
 const TYPE_LABELS = {
   villa: 'Villa / chalet',
@@ -191,6 +196,32 @@ function renderPriceRow(item) {
     </li>`
 }
 
+/**
+ * Sección plegable. La cabecera entera es el botón, y el cuerpo va en su
+ * propio contenedor para poder ocultarlo; el estado de cada una se recuerda en
+ * el navegador de quien lo mira.
+ *
+ * @param {string} id       ancla de la sección (también la usa el resumen)
+ * @param {string} title    título visible
+ * @param {string} note     texto pequeño de la derecha, ya como HTML
+ * @param {string} body     contenido de la sección, ya como HTML
+ */
+function renderSection({ id, title, note, body }) {
+  return `
+  <section id="${id}">
+    <h2 class="section__head-wrap">
+      <button type="button" class="section__toggle" aria-expanded="true" aria-controls="${id}-body">
+        <span class="section__titles">
+          <span class="section__title">${title}</span>
+          ${note}
+        </span>
+        <span class="section__chevron" aria-hidden="true">▼</span>
+      </button>
+    </h2>
+    <div class="section__body" id="${id}-body">${body}</div>
+  </section>`
+}
+
 function renderChart(rows) {
   if (rows.length === 0) {
     return '<p class="empty">Aún no hay muestras suficientes para calcular precios medios por municipio.</p>'
@@ -239,7 +270,8 @@ function renderSources(sources) {
     </table>`
 }
 
-export function renderReport({ daily, listings, thumbnails }) {
+export function renderReport({ daily, listings, thumbnails, maxPrice }) {
+  const BUDGET = Number.isFinite(maxPrice) ? maxPrice : DEFAULT_BUDGET
   const active = listings.filter((item) => item.status !== 'removed')
   const additions = [...daily.additions].sort((a, b) => b.price - a.price)
   const municipalities = [...new Set(active.map((item) => item.municipality))].sort((a, b) =>
@@ -372,7 +404,7 @@ export function renderReport({ daily, listings, thumbnails }) {
   .tile--empty { opacity: 0.6; }
 
   /* Destello al llegar a la sección desde una cifra. */
-  section:target > .section__head, .section--jumped > .section__head {
+  section:target .section__toggle, .section--jumped .section__toggle {
     box-shadow: inset 0 -2px 0 var(--accent);
   }
   @media (prefers-reduced-motion: no-preference) {
@@ -389,6 +421,31 @@ export function renderReport({ daily, listings, thumbnails }) {
   .section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
   .section__head h2 { font-size: 1.35rem; }
   .section__note { color: var(--ink-muted); font-size: 0.85rem; }
+
+  /* La cabecera pliega su sección: los listados son largos y hay que poder
+     saltarlos para llegar al siguiente bloque. */
+  .section__toggle {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; width: 100%;
+    background: none; border: 0; padding: 0 0 8px; margin: 0;
+    color: inherit; font: inherit; text-align: left; cursor: pointer;
+    border-bottom: 1px solid var(--line);
+  }
+  .section__head-wrap { margin: 0; font-weight: inherit; }
+  .section__title { font-family: var(--display); font-size: 1.35rem; font-weight: 600; }
+  .section__toggle:hover .section__title { color: var(--accent); }
+  .section__toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .section__titles { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .section__chevron {
+    flex: none; color: var(--ink-muted); font-size: 0.8rem; line-height: 1;
+    transform: rotate(0deg);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .section__chevron { transition: transform 150ms ease; }
+  }
+  .section__toggle[aria-expanded="false"] .section__chevron { transform: rotate(-90deg); }
+  .section__body[hidden] { display: none; }
+  .section__body { display: flex; flex-direction: column; gap: 16px; }
 
   .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
   .filters__price { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); }
@@ -556,12 +613,11 @@ export function renderReport({ daily, listings, thumbnails }) {
     ${tile({ value: active.length, label: 'en seguimiento', target: 'fuentes' })}
   </div>
 
-  <section id="altas">
-    <div class="section__head">
-      <h2>Altas de hoy</h2>
-      <span class="section__note" id="count">${additions.length} anuncios</span>
-    </div>
-    ${
+  ${renderSection({
+    id: 'altas',
+    title: 'Altas de hoy',
+    note: `<span class="section__note" id="count">${additions.length} anuncios</span>`,
+    body:
       additions.length === 0
         ? `<p class="empty">${
             daily.bootstrap
@@ -578,16 +634,14 @@ export function renderReport({ daily, listings, thumbnails }) {
       <button type="button" class="filters__clear" id="f-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="grid">${additions.map((item) => renderCard(item, thumbnails)).join('')}</div>
-    <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p>`
-    }
-  </section>
+    <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p>`,
+  })}
 
-  <section>
-    <div class="section__head">
-      <h2>Por debajo de ${euros(BUDGET)}</h2>
-      <span class="section__note" id="b-count">${budget.length} inmuebles</span>
-    </div>
-    ${
+  ${renderSection({
+    id: 'inmuebles',
+    title: `Por debajo de ${euros(BUDGET)}`,
+    note: `<span class="section__note" id="b-count">${budget.length} inmuebles</span>`,
+    body:
       budget.length === 0
         ? `<p class="empty">Ahora mismo no hay nada por debajo de ${euros(BUDGET)} en el inventario.</p>`
         : `<div class="filters">
@@ -600,57 +654,50 @@ export function renderReport({ daily, listings, thumbnails }) {
       <button type="button" class="filters__clear" id="b-clear" hidden>Quitar filtros</button>
     </div>
     <div class="grid" id="b-grid">${budget.map((item) => renderCard(item, thumbnails)).join('')}</div>
-    <p class="empty" id="b-no-match" hidden>Ningún inmueble encaja con estos filtros.</p>`
-    }
-  </section>
+    <p class="empty" id="b-no-match" hidden>Ningún inmueble encaja con estos filtros.</p>`,
+  })}
 
-  <section id="cambios">
-    <div class="section__head">
-      <h2>Cambios de precio</h2>
-      <span class="section__note">frente al último rastreo</span>
-    </div>
-    ${
+  ${renderSection({
+    id: 'cambios',
+    title: 'Cambios de precio',
+    note: '<span class="section__note">frente al último rastreo</span>',
+    body:
       daily.priceDrops.length + daily.priceRises.length === 0
         ? '<p class="empty">Ningún anuncio en seguimiento ha cambiado de precio.</p>'
         : `<p class="movements__note" id="movements-note" hidden>
              <span id="movements-note-text"></span>
              <button type="button" id="movements-all">Ver todos los cambios</button>
            </p>
-           <ul class="movements" id="movements">${[...daily.priceDrops, ...daily.priceRises].map(renderPriceRow).join('')}</ul>`
-    }
-  </section>
+           <ul class="movements" id="movements">${[...daily.priceDrops, ...daily.priceRises].map(renderPriceRow).join('')}</ul>`,
+  })}
 
-  <section id="preciom2">
-    <div class="section__head">
-      <h2>Precio por metro cuadrado</h2>
-      <span class="section__note">mediana de lo que se sigue, que es el tramo bajo del mercado</span>
-    </div>
-    ${renderChart(chartRows)}
-  </section>
+  ${renderSection({
+    id: 'preciom2',
+    title: 'Precio por metro cuadrado',
+    note: '<span class="section__note">mediana de lo que se sigue, que es el tramo bajo del mercado</span>',
+    body: renderChart(chartRows),
+  })}
 
-  <section id="retirados">
-    <div class="section__head">
-      <h2>Anuncios retirados</h2>
-      <span class="section__note">sin aparecer en tres rastreos seguidos</span>
-    </div>
-    ${
+  ${renderSection({
+    id: 'retirados',
+    title: 'Anuncios retirados',
+    note: '<span class="section__note">sin aparecer en tres rastreos seguidos</span>',
+    body:
       daily.removals.length === 0
         ? '<p class="empty">Ningún anuncio ha desaparecido de las fuentes.</p>'
         : `<ul class="movements">${daily.removals
             .map(
               (item) => `<li class="movement"><div class="movement__main"><span class="movement__place">${escape(item.municipality)}</span><a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${escape(item.title ?? item.url)}</a></div><div class="movement__numbers"><span class="movement__now">${euros(item.price)}</span></div></li>`,
             )
-            .join('')}</ul>`
-    }
-  </section>
+            .join('')}</ul>`,
+  })}
 
-  <section id="fuentes">
-    <div class="section__head">
-      <h2>Estado del rastreo</h2>
-      <span class="section__note">una fuente en cero suele significar que ha cambiado su web</span>
-    </div>
-    <div class="table-scroll">${renderSources(daily.sources)}</div>
-  </section>
+  ${renderSection({
+    id: 'fuentes',
+    title: 'Estado del rastreo',
+    note: '<span class="section__note">una fuente en cero suele significar que ha cambiado su web</span>',
+    body: `<div class="table-scroll">${renderSources(daily.sources)}</div>`,
+  })}
 
   <button type="button" class="to-top" id="to-top" hidden aria-label="Volver arriba">
     <span aria-hidden="true">↑</span>
@@ -849,10 +896,60 @@ export function renderReport({ daily, listings, thumbnails }) {
       });
     }
 
+    // Secciones plegables. El listado de inmuebles ocupa cientos de tarjetas,
+    // así que hay que poder cerrarlo para llegar al bloque siguiente. Lo que
+    // cada quien deje plegado se recuerda en su propio navegador.
+    var PLEGADAS = 'marina-alta:plegadas';
+
+    function leerPlegadas() {
+      try {
+        return JSON.parse(window.localStorage.getItem(PLEGADAS)) || [];
+      } catch (error) {
+        // Ventana privada o almacenamiento bloqueado: se abre todo, sin más.
+        return [];
+      }
+    }
+
+    function guardarPlegadas(lista) {
+      try {
+        window.localStorage.setItem(PLEGADAS, JSON.stringify(lista));
+      } catch (error) {
+        // Que no se pueda recordar no impide plegar y desplegar ahora.
+      }
+    }
+
+    function plegar(seccion, cerrada) {
+      var boton = seccion.querySelector('.section__toggle');
+      var cuerpo = document.getElementById(seccion.id + '-body');
+      if (!boton || !cuerpo) return;
+      boton.setAttribute('aria-expanded', cerrada ? 'false' : 'true');
+      cuerpo.hidden = cerrada;
+
+      var lista = leerPlegadas().filter(function (id) { return id !== seccion.id; });
+      if (cerrada) lista.push(seccion.id);
+      guardarPlegadas(lista);
+      // Al cerrar una sección larga la página encoge de golpe y el botón de
+      // volver arriba puede sobrar.
+      refrescarBotonArriba();
+    }
+
+    var guardadas = leerPlegadas();
+    Array.prototype.slice.call(document.querySelectorAll('section[id]')).forEach(function (seccion) {
+      var boton = seccion.querySelector('.section__toggle');
+      if (!boton) return;
+      if (guardadas.indexOf(seccion.id) !== -1) plegar(seccion, true);
+      boton.addEventListener('click', function () {
+        plegar(seccion, boton.getAttribute('aria-expanded') === 'true');
+      });
+    });
+
     Array.prototype.slice.call(document.querySelectorAll('a.tile')).forEach(function (tile) {
       tile.addEventListener('click', function () {
         var destino = document.querySelector(tile.getAttribute('href'));
         if (!destino) return;
+        // Saltar a una sección plegada no puede dejarte mirando una cabecera
+        // cerrada: se abre antes de llevarte allí.
+        plegar(destino, false);
         filtrarMovimientos(tile.dataset.movement || null);
         // El resaltado de :target no se dispara si ya estabas en esa sección.
         Array.prototype.slice.call(document.querySelectorAll('.section--jumped')).forEach(
