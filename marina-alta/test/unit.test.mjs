@@ -3,6 +3,7 @@ import test from 'node:test'
 
 import * as cheerio from 'cheerio'
 
+import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
 import { readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
@@ -200,6 +201,104 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
     <div class="features-2__price">235.000 €</div>
     <div class="property-3--landscape__price">890.000 €</div>`)
   assert.equal(readPrice(normal), 235000)
+})
+
+test('la misma vivienda en varias agencias se enseña una sola vez', () => {
+  // Caso real: la casa de 7 dormitorios y 529 m² de El Verger sale cinco veces
+  // en el portal, cuatro a 190.000 € y una a 199.999 €. Las cuatro iguales son
+  // una tarjeta; la del precio distinto se queda, que es lo que se quiere ver.
+  const casa = (id, price, agency, extra = {}) => ({
+    id, price, agency, municipality: 'El Verger', beds: 7, builtM2: 529,
+    url: `https://${agency}.test/${id}`, source: agency, firstSeen: '2026-08-01', ...extra,
+  })
+  const entrada = [
+    casa('a', 190000, 'thinkspain', { source: 'thinkspain' }),
+    casa('b', 190000, 'daniamed'),
+    casa('c', 190000, 'denialara'),
+    casa('d', 199999, 'thinkspain', { source: 'thinkspain' }),
+  ]
+
+  const salida = dedupeForDisplay(entrada)
+  assert.equal(salida.length, 2, 'las tres de 190.000 colapsan; la de 199.999 no')
+  assert.equal(salida[0].price, 190000)
+  assert.equal(salida[0].agency, 'daniamed', 'manda la agencia directa sobre el portal')
+  assert.equal(salida[0].alsoAt.length, 2)
+  assert.equal(salida[1].price, 199999)
+  assert.equal(salida[1].alsoAt, undefined)
+})
+
+test('no se agrupa lo que no se puede comparar ni lo que solo se parece', () => {
+  const base = { municipality: 'Dénia', beds: 2, builtM2: 80, agency: 'x', source: 'x', firstSeen: '2026-08-01' }
+
+  // Sin superficie no hay con qué comparar: pasan las dos antes que esconder
+  // una casa distinta.
+  const sinDatos = dedupeForDisplay([
+    { ...base, id: '1', price: 200000, builtM2: null, url: 'https://a.test/1' },
+    { ...base, id: '2', price: 200000, builtM2: null, url: 'https://a.test/2' },
+  ])
+  assert.equal(sinDatos.length, 2)
+
+  // Mismo tamaño y municipio pero precios que no se rozan: son dos pisos.
+  const distintos = dedupeForDisplay([
+    { ...base, id: '3', price: 200000, url: 'https://a.test/3' },
+    { ...base, id: '4', price: 245000, url: 'https://a.test/4' },
+  ])
+  assert.equal(distintos.length, 2)
+
+  // 199.999 y 200.000 sí son el mismo precio.
+  const redondeo = dedupeForDisplay([
+    { ...base, id: '5', price: 199999, url: 'https://a.test/5' },
+    { ...base, id: '6', price: 200000, builtM2: 81, url: 'https://a.test/6' },
+  ])
+  assert.equal(redondeo.length, 1)
+
+  // Una cadena de saltos pequeños no puede acabar juntando los extremos: se
+  // compara contra el primero del grupo, no contra el anterior.
+  const cadena = dedupeForDisplay(
+    [200000, 201000, 202000, 203000].map((price, i) => ({
+      ...base, id: `c${i}`, price, url: `https://a.test/c${i}`,
+    })),
+  )
+  const tarjetaDe = (price) => cadena.find((c) => c.price === price || c.alsoAt?.some((o) => o.price === price))
+  assert.notEqual(
+    tarjetaDe(200000),
+    tarjetaDe(203000),
+    '200.000 y 203.000 no pueden acabar en la misma tarjeta',
+  )
+
+  // Una rebaja de verdad de otra agencia se sigue viendo.
+  const rebaja = dedupeForDisplay([
+    { ...base, id: '7', price: 194000, url: 'https://a.test/7' },
+    { ...base, id: '8', price: 200000, url: 'https://a.test/8' },
+  ])
+  assert.equal(rebaja.length, 2)
+})
+
+test('el dominio de la agencia no dice dónde está la casa', () => {
+  // `ferrando-moraira.com` colocaba en Teulada su catálogo entero, incluida
+  // una casa señorial de Pego.
+  const pego = normalize(
+    {
+      sourceRef: 'c0105',
+      url: 'https://www.ferrando-moraira.com/for-sale/manor-house-for-sale-in-pego-historic-centre-c0105/',
+      title: 'Manor House for Sale in Pego Historic Centre',
+      price: 295000,
+      type: 'house',
+      locationHint: 'Manor House for Sale in Pego Historic Centre',
+    },
+    { id: 'ferrando-moraira', agency: 'Ferrando' },
+    '2026-08-22',
+  )
+  assert.equal(pego.listing.municipality, 'Pego')
+})
+
+test('manda el municipio que aparece antes, no el alias más largo', () => {
+  // "moraira" tiene más letras que "pego", y por eso ganaba aunque estuviera
+  // al final de la descripción.
+  assert.equal(detectMunicipality('Casa en Pego cerca de Moraira'), 'Pego')
+  assert.equal(detectMunicipality('Casa en Moraira cerca de Pego'), 'Teulada-Moraira')
+  // A igualdad de posición sigue mandando el alias más específico.
+  assert.equal(detectMunicipality('Moraira Alto, chalet'), 'El Poble Nou de Benitatxell')
 })
 
 test('una superficie construida imposible se deja en blanco', () => {

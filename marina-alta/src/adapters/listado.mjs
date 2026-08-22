@@ -75,11 +75,22 @@ function readLabelled(text, ...labels) {
  * exigencia el primero de la lista se colaría como ubicación del anuncio.
  */
 function readLocality(text) {
-  const match = text.match(
-    /(?:localidad|poblaci[óo]n|municipio|ciudad)\s*:\s*([^:|]{3,40}?)\s*(?:[\p{Lu}][\p{Ll}]+\s*:|$)/iu,
-  )
+  const match = text.match(LOCALITY)
   return match?.[1]?.trim() ?? null
 }
+
+/**
+ * El valor termina donde empieza la siguiente etiqueta, que estas fichas pegan
+ * sin espacio: "Localidad: CalpeZona: Residencial". Por eso el corte busca una
+ * palabra Capitalizada seguida de dos puntos.
+ *
+ * Sin bandera `i` a propósito: con ella, `\p{Lu}` pasa a casar también
+ * minúsculas y el patrón cortaba en la tercera letra — "Calpe" se leía "Cal",
+ * que no es ningún municipio, y la ficha acababa ubicada por el texto libre.
+ * Las etiquetas llevan las dos grafías escritas a mano.
+ */
+const LOCALITY =
+  /(?:[Ll]ocalidad|[Pp]oblaci[óo]n|[Mm]unicipio|[Cc]iudad|LOCALIDAD|MUNICIPIO)\s*:\s*([^:|]{3,40}?)\s*(?:[\p{Lu}][\p{Ll}]+\s*:|$)/u
 
 /**
  * Algunas webs concatenan su propia ruta con la URL del CDN y dejan un

@@ -14,6 +14,19 @@ import { NON_RESIDENTIAL } from './parse.mjs'
  */
 const MAX_CREDIBLE_BUILT_M2 = 2000
 
+/**
+ * La ruta de la URL, sin el dominio. El dominio es la marca de la agencia, no
+ * dónde está la casa: con él, `ferrando-moraira.com` colocaba en Teulada todo
+ * su catálogo, incluida una casa señorial de Pego.
+ */
+function urlPath(url) {
+  try {
+    return new URL(url).pathname
+  } catch {
+    return url
+  }
+}
+
 export function listingId(sourceId, sourceRef) {
   return `${sourceId}:${createHash('sha1').update(String(sourceRef)).digest('hex').slice(0, 10)}`
 }
@@ -33,7 +46,7 @@ export function normalize(raw, source, today, { maxPrice = Infinity } = {}) {
 
   // Los adaptadores que conocen la zona con certeza la traen ya resuelta.
   const municipality =
-    raw.municipality ?? detectMunicipality(raw.locationHint, raw.title, raw.url)
+    raw.municipality ?? detectMunicipality(raw.locationHint, raw.title, urlPath(raw.url))
   if (!municipality) return { listing: null, reason: 'fuera de la comarca' }
   if (NON_RESIDENTIAL.has(raw.type)) return { listing: null, reason: 'no residencial' }
 

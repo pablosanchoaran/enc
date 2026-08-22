@@ -50,10 +50,20 @@ const INDEX = MUNICIPALITIES.flatMap(({ name, aliases }) =>
 export function detectMunicipality(...texts) {
   const haystack = fold(texts.filter(Boolean).join(' | '))
   if (!haystack) return null
+
+  // Gana el que aparece antes en el texto, no el alias más largo. Los textos
+  // llegan del más fiable al menos fiable (ciudad de la ficha, título,
+  // descripción, slug), así que "Manor House for Sale in Pego" es Pego aunque
+  // más abajo la descripción hable de Moraira. A igualdad de posición manda el
+  // alias más largo, que es lo que hace que "moraira alto" gane a "moraira".
+  let best = null
   for (const { name, alias } of INDEX) {
-    if (new RegExp(`(^| )${alias}( |$)`).test(haystack)) return name
+    const match = haystack.match(new RegExp(`(^| )(${alias})( |$)`))
+    if (!match) continue
+    const position = match.index + match[1].length
+    if (!best || position < best.position) best = { name, position }
   }
-  return null
+  return best?.name ?? null
 }
 
 /**

@@ -3,6 +3,8 @@
  * externas, porque el artefacto publicado bloquea cualquier host de fuera.
  */
 
+import { dedupeForDisplay } from './dedupe.mjs'
+
 /**
  * Techo por defecto de la sección de vivienda del informe. Lo normal es que
  * llegue el del catálogo (`config.maxPrice`), que es el mismo con el que se
@@ -173,11 +175,32 @@ function renderCard(item, thumbnails) {
       ${item.pricePerM2 ? `<p class="card__unit">${new Intl.NumberFormat('es-ES').format(item.pricePerM2)} €/m²</p>` : ''}
       <h3 class="card__title">${escape(item.title ?? 'Sin título')}</h3>
       ${facts.length ? `<ul class="card__facts">${facts.map((fact) => `<li>${escape(fact)}</li>`).join('')}</ul>` : ''}
+      ${renderAlsoAt(item.alsoAt)}
       <footer class="card__foot">
         <span class="card__agency">${escape(item.agency)}</span>
         <a class="card__link" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
       </footer>
     </article>`
+}
+
+/**
+ * Las otras agencias que anuncian la misma vivienda al mismo precio. Se
+ * despliegan porque lo normal es no querer verlas; están para poder llamar a
+ * otra si con una no hay suerte.
+ */
+function renderAlsoAt(alsoAt) {
+  if (!alsoAt?.length) return ''
+  const otras = alsoAt.length === 1 ? 'otra agencia' : `otras ${alsoAt.length} agencias`
+  return `
+      <details class="card__also">
+        <summary>También en ${otras}</summary>
+        <ul>${alsoAt
+          .map(
+            (item) =>
+              `<li><a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${escape(item.agency)}</a></li>`,
+          )
+          .join('')}</ul>
+      </details>`
 }
 
 function renderPriceRow(item) {
@@ -273,7 +296,7 @@ function renderSources(sources) {
 export function renderReport({ daily, listings, thumbnails, maxPrice }) {
   const BUDGET = Number.isFinite(maxPrice) ? maxPrice : DEFAULT_BUDGET
   const active = listings.filter((item) => item.status !== 'removed')
-  const additions = [...daily.additions].sort((a, b) => b.price - a.price)
+  const additions = dedupeForDisplay([...daily.additions].sort((a, b) => b.price - a.price))
   const municipalities = [...new Set(active.map((item) => item.municipality))].sort((a, b) =>
     a.localeCompare(b, 'es'),
   )
@@ -289,7 +312,9 @@ export function renderReport({ daily, listings, thumbnails, maxPrice }) {
   // Todo lo que esté por debajo del presupuesto, parcelas incluidas: quien
   // busca barato en la comarca también mira solares. El filtro de tipo permite
   // dejarlas fuera de un vistazo.
-  const budget = active.filter((item) => item.price <= BUDGET).sort((a, b) => a.price - b.price)
+  const budgetAll = active.filter((item) => item.price <= BUDGET).sort((a, b) => a.price - b.price)
+  const budget = dedupeForDisplay(budgetAll)
+  const budgetMerged = budgetAll.length - budget.length
   const budgetMunicipalities = [...new Set(budget.map((item) => item.municipality))].sort((a, b) =>
     a.localeCompare(b, 'es'),
   )
@@ -497,6 +522,11 @@ export function renderReport({ daily, listings, thumbnails, maxPrice }) {
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 14px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
   .card { padding-top: 0; overflow: hidden; }
+  .card__also { font-size: 0.78rem; color: var(--ink-muted); }
+  .card__also summary { cursor: pointer; }
+  .card__also summary:hover { color: var(--accent); }
+  .card__also ul { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+  .card__also a { color: var(--accent); }
   .card__photo { display: block; margin: 0 -16px 4px; background: var(--surface-sunk); }
   .card__photo img { display: block; width: 100%; height: 168px; object-fit: cover; }
   .card--sold .card__photo img { filter: saturate(0.45); }
@@ -640,7 +670,11 @@ export function renderReport({ daily, listings, thumbnails, maxPrice }) {
   ${renderSection({
     id: 'inmuebles',
     title: `Por debajo de ${euros(BUDGET)}`,
-    note: `<span class="section__note" id="b-count">${budget.length} inmuebles</span>`,
+    note:
+      `<span class="section__note" id="b-count">${budget.length} inmuebles</span>` +
+      (budgetMerged > 0
+        ? `<span class="section__note">${budgetMerged} fichas repetidas agrupadas en su vivienda</span>`
+        : ''),
     body:
       budget.length === 0
         ? `<p class="empty">Ahora mismo no hay nada por debajo de ${euros(BUDGET)} en el inventario.</p>`
