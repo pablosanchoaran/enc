@@ -7,6 +7,7 @@ import { diffInventory } from '../src/diff.mjs'
 import { readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
+import { normalize } from '../src/normalize.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
 import {
   detectSaleStatus,
@@ -199,6 +200,27 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
     <div class="features-2__price">235.000 €</div>
     <div class="property-3--landscape__price">890.000 €</div>`)
   assert.equal(readPrice(normal), 235000)
+})
+
+test('una superficie construida imposible se deja en blanco', () => {
+  // Caso real: ThinkSpain publica una finca de Pego de 100.000 € declarando
+  // 9.927 m² construidos — es la parcela puesta en la casilla equivocada. Sin
+  // esto encabeza la ordenación por €/m² como una ganga de 10 €/m².
+  const finca = normalize(
+    { sourceRef: '6358143', url: 'https://a.test/1', title: 'Finca en Pego', price: 100000, builtM2: 9927, type: 'villa', municipality: 'Pego' },
+    { id: 'thinkspain', agency: 'ThinkSpain' },
+    '2026-08-22',
+  )
+  assert.equal(finca.listing.builtM2, null)
+  assert.equal(finca.listing.pricePerM2, null)
+  assert.equal(finca.listing.price, 100000, 'el anuncio se publica igual')
+
+  const casona = normalize(
+    { sourceRef: 'x', url: 'https://a.test/2', title: 'Casa en Pego', price: 320000, builtM2: 840, type: 'house', municipality: 'Pego' },
+    { id: 'src', agency: 'Agencia' },
+    '2026-08-22',
+  )
+  assert.equal(casona.listing.builtM2, 840, 'una casa grande de verdad sí pasa')
 })
 
 test('un icono sin texto no cuenta como el precio de la ficha', () => {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T23:39:09.830Z",
+  "updatedAt": "2026-08-22T02:37:30.387Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -245,7 +245,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -434,7 +434,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -633,7 +633,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -719,7 +719,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1608,7 +1608,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1694,7 +1694,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1780,7 +1780,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -2455,7 +2455,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2487,7 +2487,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2519,7 +2519,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2610,7 +2610,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2674,7 +2674,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2701,7 +2701,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2787,7 +2787,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-04T20:35:55.509Z",
       "reason": "vendido"
     },
@@ -3610,7 +3610,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-13T21:39:41.463Z",
       "reason": "vendido"
     },
@@ -3737,15 +3737,20 @@
           "price": 350000
         }
       ],
-      "beds": null,
+      "beds": 2,
       "baths": null,
-      "builtM2": 1469,
-      "plotM2": null,
-      "pricePerM2": 238,
-      "photo": null,
+      "builtM2": 88,
+      "plotM2": 1469,
+      "pricePerM2": 3977,
+      "photo": {
+        "file": "benimo-villas-4380b6205e.webp",
+        "thumb": "benimo-villas-4380b6205e.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/c5/019ff0da-a223-73cc-88e8-9539ab66ecc5.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-13T21:42:35.084Z",
       "reason": "vendido"
     },
@@ -3917,7 +3922,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -3944,7 +3949,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:22:19.779Z",
       "reason": "vendido"
     },
@@ -3971,7 +3976,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:22:19.779Z",
       "reason": "vendido"
     },
@@ -3998,7 +4003,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:22:19.779Z",
       "reason": "vendido"
     },
@@ -4030,7 +4035,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:22:19.779Z",
       "reason": "vendido"
     },
@@ -4057,7 +4062,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:22:19.779Z",
       "reason": "vendido"
     },
@@ -4089,7 +4094,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-22",
       "archivedOn": "2026-08-21T22:29:41.489Z",
       "reason": "vendido"
     },
@@ -4150,6 +4155,87 @@
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-08-21",
       "archivedOn": "2026-08-21T22:48:17.700Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:3aa8cd2f62",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-calpe-p41/",
+      "title": "Parcela en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 125000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 853,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "archivedOn": "2026-08-22T02:24:46.295Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:92741c19f9",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-calpe-p40/",
+      "title": "Parcela en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 125000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 891,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "archivedOn": "2026-08-22T02:24:46.295Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:601ec56cff",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-con-vistas-al-mar-en-playa-la-fossa-calpe-a352/",
+      "title": "Apartamento con vistas al mar en playa La Fossa, Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 349000
+        }
+      ],
+      "beds": 4,
+      "baths": 1,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 4653,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "archivedOn": "2026-08-22T02:24:46.295Z",
       "reason": "vendido"
     }
   ]

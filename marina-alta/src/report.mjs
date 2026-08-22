@@ -163,7 +163,7 @@ function renderCard(item, thumbnails) {
 
   return `
     <article class="card card--${status}" data-municipality="${escape(item.municipality)}" data-type="${escape(item.type)}" data-agency="${escape(item.agency)}" data-price="${item.price}" data-status="${status}" data-unit="${item.pricePerM2 ?? ''}" data-built="${item.builtM2 ?? ''}" data-plot="${item.plotM2 ?? ''}" data-seen="${escape(item.firstSeen ?? '')}">
-      ${thumb ? `<a class="card__photo" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="" loading="lazy" width="320" height="214"></a>` : ''}
+      ${thumb ? `<a class="card__photo" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${thumb}" alt="" loading="lazy" width="240" height="160"></a>` : ''}
       <div class="card__head">
         <span class="chip">${escape(TYPE_LABELS[item.type] ?? item.type)}</span>
         ${status === 'available' ? '' : `<span class="chip chip--${status}">${STATUS_LABELS[status]}</span>`}

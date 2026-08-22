@@ -1,0 +1,5467 @@
+{
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-22T02:37:30.387Z",
+  "totals": {
+    "inventory": 3177,
+    "additions": 167,
+    "priceDrops": 2,
+    "priceRises": 1,
+    "removals": 0
+  },
+  "additions": [
+    {
+      "id": "ortola:6c09fa8a6d",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-en-venta-en-moraira-urbanizacion-estret-hd252099/",
+      "title": "Parcela edificable en venta en Moraira | urbanización Estret",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 340000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 901,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/de/019dde5b-4616-7039-b1c3-59ab298dc7de.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:dc9d0a1715",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-en-venta-para-construccion-de-pareados-en-empedrola-calpe-costa-blanca-hd803229/",
+      "title": "Parcela edificable en venta para construcción de pareados en Empedrola Calpe, Costa Blanca",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/87/019dde5b-4616-7039-b1c3-908437e67d87.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:192cb43443",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-en-venta-para-construccion-de-pareados-en-empedrola-calpe-costa-blanca-hd191663/",
+      "title": "Parcela edificable en venta para construcción de pareados en Empedrola Calpe, Costa Blanca",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/45/019dde5b-4616-7039-b1c3-94a4bd255445.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:7a7bacb37a",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-en-venta-en-benisol-moraira-costa-blanca-hd457056/",
+      "title": "Parcela edificable en venta en Benisol Moraira, Costa Blanca",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/09/019dde5c-88ec-775b-81a8-d76c7beed509.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:d37599d512",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-en-venta-en-benisol-moraira-costa-blanca-hd195700/",
+      "title": "Parcela edificable en venta en Benisol Moraira, Costa Blanca",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/fe/019dde5c-88ec-775b-81a8-d9bec60696fe.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:4d366a09ea",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-venta-en-costa-nova-la-marina-javea-hd639165/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 185760,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 185760
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1032,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/50/019dde5c-88ec-775b-81a8-e09e6c15cb50.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:c8844017a9",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-venta-en-costa-nova-la-marina-javea-hd559331/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 259600,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 259600
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1298,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/12/019dde66-09c9-767f-a0c9-72ea06aed512.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:0b128b36b5",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-venta-en-costa-nova-la-marina-javea-hd601713/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 220220,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220220
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1001,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/4f/019dde66-09c9-767f-a0c9-775c1bfc384f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19T04:42:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:185fc06fe0",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/piso-en-el-centro-de-denia-di177wy3q/",
+      "title": "Piso en el Centro de Denia",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 280000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 6,
+      "baths": 2,
+      "builtM2": 200,
+      "plotM2": null,
+      "pricePerM2": 1400,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/03/019c89e5-b734-773a-a6ef-b151de8be903.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18T14:44:26.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:c26d8b35c6",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-venta-en-jalon-pe1nj6dcc/",
+      "title": "Parcela en venta en Jalón",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 180000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 14502,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/da/019d1a43-e214-7068-b13a-3e8d3d1d39da.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13T08:03:53.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:e06f3c6c6f",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-venta-en-alcalali-pe22f7ur/",
+      "title": "Parcela en venta en Alcalalí",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 300000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/60/019c89cc-6e04-764a-a377-5b16d1cc8b60.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-09T11:35:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:95aa8e66dc",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-en-las-marinas-denia-di1ydr7q6/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 341000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4316,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/5b/019c8a16-22cd-73dc-a062-32154abcde5b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-06T11:04:08.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:696719cb4c",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-els-poblets-divlxl2z/",
+      "title": "Parcela en Els Poblets",
+      "price": 337000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 337000
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 2884,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/79/019c89e4-9222-71bb-878c-514512449179.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-20T16:51:30.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:7e79e03853",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-els-verger-dicrfrp0/",
+      "title": "Parcela en Els Verger",
+      "price": 198500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 198500
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5334,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/64/019c89e4-9222-71bb-878c-57cd442bed64.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-18T17:54:56.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:ab14193e0f",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-en-las-marinas-denia-diez8ep6/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 232000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 232000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 2275,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/c7/019c8a16-0ba8-7179-b879-94255ecbbfc7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-16T11:13:40.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:259a6a3b81",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-en-las-marinas-denia-di19i28d8/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 317000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 317000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 4803,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ef/019c8a16-22cd-73dc-a062-39594bbab4ef.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-09T13:03:43.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:366067b7d6",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-exclusivo-en-els-poblets-denia-scdbpps4/",
+      "title": "Apartamento exclusivo en Els Poblets, Denia",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4923,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/82/019c75fb-8045-7761-ad88-5b8cc2582082.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-03T10:52:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:395a2dc9a3",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamentos-de-obra-nueva-en-javea-di126ecp/",
+      "title": "Apartamentos de obra nueva en Jávea",
+      "price": 334000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 334000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 3839,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/b7/019c8a16-6b4d-710c-8916-e4a818b4b2b7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-26T14:23:10.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:99d6d5d2bd",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/casa-de-pueblo-de-estilo-tradicional-en-pego-v96714/",
+      "title": "Casa de pueblo de estilo tradicional en Pego",
+      "price": 249000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 249000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "house",
+      "beds": 4,
+      "baths": 2,
+      "builtM2": 280,
+      "plotM2": 104,
+      "pricePerM2": 889,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/29/019c7600-715a-759a-ac0c-780e3a769d29.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-20T10:33:43.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:5b4fae6570",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-con-terraza-y-vistas-al-mar-en-la-urb-monte-pego-nb-na2/",
+      "title": "Apartamento con terraza y vistas al mar en la Urb. Monte Pego",
+      "price": 245000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 245000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 130,
+      "plotM2": null,
+      "pricePerM2": 1885,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/07/019c89c6-57c0-70e2-a758-66381e862407.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-18T13:32:58.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:703e991e5d",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/piso-de-obra-nueva-con-3-dormitorios-a-200-m-de-la-playa-sc1i96ojw/",
+      "title": "Piso de obra nueva con 3 dormitorios a 200 m de la playa",
+      "price": 344000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 344000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 4845,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/8b/019c7606-68b6-730c-b48c-739e1b1b568b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-03T09:34:28.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:40fa51f8bf",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/piso-de-obra-nueva-con-1-dormitorio-a-200-m-de-la-playa-sc1hmoro6/",
+      "title": "Piso de obra nueva con 1 dormitorio a 200 m de la playa",
+      "price": 237000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 237000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 45,
+      "plotM2": 10,
+      "pricePerM2": 5267,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/69/019c7608-6e5b-726c-9862-741ad0a7f769.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-03T09:30:26.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:bcd8293add",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/piso-de-obra-nueva-con-2-dormitorios-a-200-m-de-la-playa-sc84nez6/",
+      "title": "Piso de obra nueva con 2 dormitorios a 200 m de la playa",
+      "price": 338000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 338000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 68,
+      "plotM2": 14,
+      "pricePerM2": 4971,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/07/019c7608-6e5b-726c-9862-7a66ec029707.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-03T09:29:28.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:578320ac81",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe100ovd7/",
+      "title": "Plot en venta en Orba",
+      "price": 115000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 115000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 600,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ba/019c7608-6e5b-726c-9862-9e1de87a29ba.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-27T12:25:02.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:f6119c353e",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-murla-pehmf38n/",
+      "title": "Plot en venta en Murla",
+      "price": 100000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 100000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 13502,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/34/019c7608-6e5b-726c-9862-a2a2147e2f34.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-27T10:07:34.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:386ddfdecf",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-llana-en-venta-en-moraira-bvjqhma8/",
+      "title": "Parcela llana en venta en Moraira",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 834,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/68/019ff014-14f2-7488-bc16-794a8bbbdd68.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-25T08:24:35.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:66ae0033b2",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1hnhpsn/",
+      "title": "Plot en venta en Orba",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 130000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 12323,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/95/019c89c4-cd64-750f-adb2-64e65ae1f195.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-15T10:45:56.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:bfbb0fa098",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-edificable-con-vistas-en-montemostalla-pego-v90114/",
+      "title": "Parcela edificable con vistas en MonteMostalla (Pego)",
+      "price": 39000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 39000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 840,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/1e/019c89ce-e79b-735c-9ee1-8894cf8a271e.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-28T12:27:13.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:bd2bcbf677",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pemkh4sp/",
+      "title": "Plot en venta en Orba",
+      "price": 70000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 70000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 753,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/af/019c89c6-57c0-70e2-a758-25de7db3c5af.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-27T09:31:57.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:ceb0cddd0b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/terreno-rustico-con-bonitas-vistas-en-venta-en-benissa-bv18lpwfg/",
+      "title": "Terreno rústico con bonitas vistas en venta en Benissa",
+      "price": 325035,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325035
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 21669,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/a4/019ff014-184f-77df-831e-50c37448bba4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-22T13:42:30.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:6e03b8102b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/exclusivo-atico-duplex-en-pego-v89814/",
+      "title": "Exclusivo ático duplex en Pego",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "penthouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 153,
+      "plotM2": null,
+      "pricePerM2": 2092,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/0d/019c89cf-d216-76d5-83c2-8c438ef4bd0d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-17T10:03:38.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:4b961b2114",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-llana-en-venta-en-moraira-bv1s9unov/",
+      "title": "Parcela llana en venta en Moraira",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/75/019ff014-184f-77df-831e-54dfa20e3b75.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-16T08:55:50.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:3364792c7e",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/villa-moderna-y-funcional-en-pego-nb-passivhausd/",
+      "title": "Villa moderna y funcional en Pego",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 315000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 133,
+      "plotM2": 400,
+      "pricePerM2": 2368,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/55/019c89cf-d216-76d5-83c2-eae70314ae55.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-09-18T10:50:30.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:54f507870b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-con-vistas-panoramicas-al-mar-en-monte-pego-sc15x6ft0/",
+      "title": "Parcela con vistas panorámicas al mar en Monte Pego",
+      "price": 65000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 65000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1603,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/c6/019c89c8-0f20-7320-8612-afa34fda15c6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-09-10T09:06:14.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:86b9553ee9",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/finca-rustica-con-buenas-vistas-en-pego-v91914/",
+      "title": "Finca rústica con buenas vistas en Pego",
+      "price": 290000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 290000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 83,
+      "plotM2": 7080,
+      "pricePerM2": 3494,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/de/019c89ce-e79b-735c-9ee1-6bde3397eede.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-09-02T11:42:42.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:8acb87e87b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-peyobql0/",
+      "title": "Plot en venta en Orba",
+      "price": 170000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 170000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10571,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/06/019c89c9-c86a-761a-88ea-765777c7bd06.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-08-28T15:20:03.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:ad08134f0f",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/dos-solares-contiguos-en-una-ubicacion-fantastica-en-maryvilla-scab4c9s/",
+      "title": "Dos solares contiguos en una ubicación fantástica en Maryvilla",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 130000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1062,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/37/019c89c9-c86a-761a-88ea-9681718ce837.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-08-08T07:19:21.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:5acc7c4ba2",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/dos-solares-contiguos-en-una-ubicacion-fantastica-en-maryvilla-sc1sggrrd/",
+      "title": "Dos solares contiguos en una ubicación fantástica en Maryvilla",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 130000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1186,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/5f/019c89c9-c86a-761a-88ea-9f9f6923785f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-08-04T14:22:17.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:a98d2bd93b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-de-ensueno-de-1000-m2-con-espectaculares-vistas-al-mar-sc1nih6hi/",
+      "title": "Parcela de Ensueño de 1000 m² con Espectaculares Vistas al Mar",
+      "price": 110000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 110000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/43/019c89c9-c86a-761a-88ea-a29f010ce943.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-07-31T11:47:29.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:74b9fe0f4b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-ondara-pe1gag447/",
+      "title": "Plot en venta en Ondara",
+      "price": 99000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 99000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/98/019c89cb-2fea-76b3-be9a-a1ab7b201398.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-07-28T10:23:38.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:9f04785309",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-comercial-junto-a-mercadona-en-pego-v94814/",
+      "title": "Parcela comercial junto a Mercadona en Pego",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 80000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 316,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/23/019c89cb-2fea-76b3-be9a-faf0ac17ef23.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-05-19T12:27:39.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:7213e4b662",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-pedreguer-pe1az4vyy/",
+      "title": "Plot en venta en Pedreguer",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 130000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1636,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/fa/019c89cc-6e04-764a-a377-5dbcb7cfe3fa.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-05-07T10:29:10.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:da9f98724b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe11k3w2l/",
+      "title": "Plot en venta en Orba",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 130000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11483,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/e5/019c89cc-6e04-764a-a377-65681e5efae5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-05-02T10:24:34.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:d873d8ed0d",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-jalon-pe15rwrmh/",
+      "title": "Plot en venta en Jalón",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 26590,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ef/019c89cc-6e04-764a-a377-953e6de6f0ef.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-04-08T13:26:44.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:4b75f5b244",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/fantastica-parcela-al-final-de-un-callejon-sin-salida-rodeado-de-villas-de-lujo-en-monte-pego-scjgf2kj/",
+      "title": "Fantástica parcela al final de un callejón sin salida rodeado de villas de lujo en Monte Pego.",
+      "price": 169000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 169000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1400,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/a6/019c89cd-729e-7697-bfa7-2a7f0d84d0a6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-01-22T10:47:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:a4dc6ec95b",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pey8nm3x/",
+      "title": "Plot en venta en Orba",
+      "price": 100000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 100000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11667,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/fd/019c89cd-729e-7697-bfa7-313f04af6efd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-01-09T11:11:25.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:5fe06e3683",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-con-amplia-terraza-a-2km-de-denia-nb-cuatro2d/",
+      "title": "Apartamento con amplia terraza a 2km de Denia",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4385,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/dd/019c89cf-d216-76d5-83c2-97931d3eafdd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-07-09T12:19:41.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:263a535929",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/apartamento-a-50m-de-la-playa-de-denia-nb-cuatro3d/",
+      "title": "Apartamento a 50m de la playa de Denia",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 3916,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/54/019c89cf-d216-76d5-83c2-90e97d222654.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-07-09T12:19:23.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:268155d3f0",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/casa-de-pueblo-de-estilo-senorial-en-pego-v80314d/",
+      "title": "Casa de pueblo de estilo señorial en Pego",
+      "price": 261000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 261000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "house",
+      "beds": 5,
+      "baths": 2,
+      "builtM2": 373,
+      "plotM2": 200,
+      "pricePerM2": 700,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ec/019c89d0-a93a-711e-996b-570909fbf6ec.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-07-04T10:22:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:9ed893f331",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-denia-pe195b2ug/",
+      "title": "Plot en venta en Denia",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 215000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5437,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/58/019c89ce-e79b-735c-9ee1-78ece907f858.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-22T08:06:21.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:7053f1266f",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1oivp8q/",
+      "title": "Plot en venta en Orba",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 80000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 860,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/27/019c89ce-e79b-735c-9ee1-8f2d5aa56327.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-06T07:52:35.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:cf2c192319",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pejre2h5/",
+      "title": "Plot en venta en Orba",
+      "price": 82000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 82000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 900,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/02/019c89ce-e79b-735c-9ee1-90b4cfbd5e02.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-06T07:51:26.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:87b4b6419a",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe69rl5a/",
+      "title": "Plot en venta en Orba",
+      "price": 95000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 95000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1300,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/57/019c89ce-e79b-735c-9ee1-9682a7708d57.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-02T15:04:05.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:9243ec22ec",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1e5f61e/",
+      "title": "Plot en venta en Orba",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 120000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1458,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ed/019c89ce-e79b-735c-9ee1-9829d3f266ed.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-02T14:48:01.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:d0602d89a8",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1sj14yx/",
+      "title": "Plot en venta en Orba",
+      "price": 95000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 95000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 648,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/f6/019c89ce-e79b-735c-9ee1-9daf4c53f5f6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-02T14:47:14.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:87beefa9c4",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1nedoc0/",
+      "title": "Plot en venta en Orba",
+      "price": 95000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 95000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 646,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/e4/019c89ce-e79b-735c-9ee1-a064ee4ee1e4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-02T14:46:32.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:41cd15516c",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1n7eyv4/",
+      "title": "Plot en venta en Orba",
+      "price": 95000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 95000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 675,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/3b/019eab85-4794-739b-9b69-565ccefc713b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-05-02T14:45:37.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:0063a80d10",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/terreno-rustico-de-22-000-metros-cuadrados-en-pego-v47014/",
+      "title": "Terreno rústico de 22.000 metros cuadrados en Pego",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 315000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 22224,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/d3/019c89d0-a93a-711e-996b-7c8e81aa83d3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-12-15T12:41:18.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:10695c5a99",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/espectacular-parcela-en-monte-pego-con-fantasticas-vistas-al-mar-y-la-marjal-v71014/",
+      "title": "Espectacular parcela en Monte Pego con fantásticas vistas al mar y la Marjal",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 135000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1108,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/1a/019c89d0-a93a-711e-996b-6bcf25bd3f1a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-10-20T10:24:40.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:b062c24bb8",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-de-500-m2-en-zona-residencial-de-pego-v17714/",
+      "title": "Parcela de 500 m2 en zona residencial de Pego",
+      "price": 119000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 119000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 500,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/2d/019c89d0-a93a-711e-996b-866e1242972d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-10-20T10:23:52.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:3554130077",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/casa-de-campo-en-xalo-con-35-000-m2-de-terreno-v52814/",
+      "title": "Casa de campo en Xaló con 35.000 m2 de terreno",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "villa",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 100,
+      "plotM2": 35000,
+      "pricePerM2": 2500,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/4d/019c89d0-a93a-711e-996b-7b40cd68c84d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-05-05T08:53:17.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:4e0687ddb9",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/terreno-edificable-para-su-villa-sonada-en-zona-urbana-con-los-beneficios-del-campo-scepf9q6/",
+      "title": "Terreno edificable para su Villa Soñada en zona urbana con los beneficios del campo.",
+      "price": 89000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 89000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1062,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/d7/019c89cf-d216-76d5-83c2-e1cdf035a4d7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-01-31T12:14:59.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:c7e6f38989",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-en-pego-monte-pego-sc1yzlpzp/",
+      "title": "Parcela en Pego-Monte Pego",
+      "price": 149000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 149000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1211,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/89/019c89cf-d216-76d5-83c2-e6e0bcceb589.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-01-31T12:05:40.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:4a44a3beeb",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe74dgyt/",
+      "title": "Plot en venta en Orba",
+      "price": 85000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 85000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 860,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/01/019c89d0-a93a-711e-996b-2e456c0ce101.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-11-16T12:02:21.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:a6a8726cbd",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/preciosa-parcela-con-impresionantes-vistas-a-la-montana-de-olta-sc1vlpvs/",
+      "title": "Preciosa parcela con impresionantes vistas a la montaña de Oltá",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 215000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1010,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/18/019c89d0-a93a-711e-996b-333c8dd2ca18.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-10-28T10:12:19.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:f2b26ad705",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-constructible-en-monte-pego-con-orientacion-suroeste-con-bonitas-vistas-al-mar-y-a-la-montana-sc12vx54u/",
+      "title": "Parcela constructible en Monte Pego con orientación suroeste con bonitas vistas al mar y a la montaña.",
+      "price": 75000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 75000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1190,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/75/019c89d0-a93a-711e-996b-35a526fcba75.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-10-26T13:41:33.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:dba5cf4051",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-para-construir-con-vistas-al-mar-en-monte-pego-la-mejor-ubicacion-sc1cesfhe/",
+      "title": "Parcela para construir con vistas al mar en Monte Pego. ¡La mejor ubicación",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 195000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1870,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/ec/019c89d0-a93a-711e-996b-424cfc96f7ec.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-08-23T11:49:06.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:ab39535df4",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/parcela-para-construir-con-vistas-al-mar-en-monte-pego-la-mejor-ubicacion-sc1x6bvgi/",
+      "title": "Parcela para construir con vistas al mar en Monte Pego. ¡La mejor ubicación!",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 230000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 2610,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/72/019c89d0-a93a-711e-996b-44b51c0d4072.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-08-23T11:48:36.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:3cf16b636f",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-orba-pe1wgc6op/",
+      "title": "Plot en venta en Orba",
+      "price": 200000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 200000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 13460,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/10/019c89d0-a93a-711e-996b-4aa2ef55b810.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-08-03T09:10:43.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "ortola:0e0340a275",
+      "source": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "url": "https://www.ortolainmobiliaria.com/venta/plot-en-venta-en-alcalali-pez3zgr3/",
+      "title": "Plot en venta en Alcalalí",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 120000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 795,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c75f9-a855-74e4-970d-15bbd42b5cbe/social-preview/b8/019c89d0-a93a-711e-996b-4def604861b8.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-08-02T22:21:13.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:3aa8cd2f62",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-calpe-p41/",
+      "title": "Parcela en Calpe",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 125000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 853,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/e1/019c421b-82a4-70a8-993f-502b7a3240e1.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-05-22T14:00:23.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:92741c19f9",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-calpe-p40/",
+      "title": "Parcela en Calpe",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 125000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 891,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/06/019c421b-82a4-70a8-993f-54e94a556f06.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-05-22T11:39:48.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:601ec56cff",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-con-vistas-al-mar-en-playa-la-fossa-calpe-a352/",
+      "title": "Apartamento con vistas al mar en playa La Fossa, Calpe",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 349000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 4,
+      "baths": 1,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 4653,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/57/019c421d-2c07-728b-8238-dbd0de8e7b57.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-03-30T07:50:04.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:a3f737b82a",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-a-la-venta-en-calpe-muy-cerca-del-centro-y-servicios-p108/",
+      "title": "Parcela a la venta en Calpe, muy cerca del centro y servicios.",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 295000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/dd/019c4221-3381-75fb-87a4-1898eadb47dd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-13T17:19:19.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:9b64d165ae",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/balcones-de-calpe-apartamento-de-nueva-promocion-en-pleno-centro-v-pb-f/",
+      "title": "Balcones de Calpe, apartamento de nueva promoción en pleno centro.",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 300000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/52/019c421b-82a4-70a8-993f-0bd3cbc83052.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2025-11-13T17:03:22.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:27b6c71d24",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/solar-para-construccion-de-pequeno-edificio-en-pleno-centro-almend/",
+      "title": "Solar para construcción de Pequeño edificio en pleno centro.",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 200,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/67/019c421f-a94e-734e-9fa4-c385b46ae367.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-10-08T09:01:08.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:f662ad2e54",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-javea-arenal-89934/",
+      "title": "Apartamento en Jávea | Arenal",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/08/appartement-javea-arenal-17605.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T15:44:57+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:75e9b3cabe",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/villa-en-moraira-moraira-park-89964/",
+      "title": "Villa en Moraira | Pinar de l'Advocat",
+      "price": 329000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 329000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/08/villa-moraira-park-83328-1024x683.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T15:39:06+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:90d17d462e",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-valsol-89918/",
+      "title": "Parcela en Jávea | Valsol",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/08/perceel-javea-valsol-91692.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T15:16:22+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:2779e0ed11",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-denia-89592/",
+      "title": "Apartamento en Dénia",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/08/apartment-denia-83483-1024x683.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:23:10+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:84f4c943e8",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/villa-en-calpe-89523/",
+      "title": "Villa en Calpe",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 340000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/08/villa-calpe-83176-1024x683.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:23:07+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:7f957ce5f8",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-la-cala-83727/",
+      "title": "Parcela en Jávea | La Cala",
+      "price": 302404,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 302404
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/06/land-javea-la-cala-72365.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:22:39+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:61caf33c55",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-moraira-pueblo-alcasar-63162/",
+      "title": "Apartamento en Moraira | Pueblo Alcasar",
+      "price": 199995,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 199995
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/04/apartment-moraira-pueblo-alcasar-66713.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:22:19+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:21f8ebb4f2",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-sol-del-este-61952/",
+      "title": "Parcela en Jávea | Sol del este",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 300000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/03/land-javea-sol-del-este-64931.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:22:13+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:90a3bca4e6",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-javea-centro-79234/",
+      "title": "Apartamento en Jávea | Centro",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 345000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/03/appartement-javea-centro-14460-10.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-22T08:56:10+00:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:0ce0610e08",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/house-for-sale-with-character-in-the-historic-center-of-teulada-bp3532/",
+      "title": "House for sale with character in the historic center of Teulada.",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 280000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 160,
+      "plotM2": 76,
+      "pricePerM2": 1750,
+      "image": "https://www.bindleyproperties.com/opi/334023",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-20",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:f01d9f6d9e",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/apartment-for-sale-in-la-fustera-benissa-costa-blanca-bp3516/",
+      "title": "Apartment for sale in la Fustera, Benissa, Costa Blanca.",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 330000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 3750,
+      "image": "https://www.bindleyproperties.com/opi/332150",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-12",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:c85ab2c974",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/aparment-for-sale-within-walking-distance-to-the-beach-of-la-fustera-benissa-costa-bp3515/",
+      "title": "Aparment for sale within walking distance to the beach of la Fustera, Benissa costa.",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 249500
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "other",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 81,
+      "plotM2": null,
+      "pricePerM2": 3080,
+      "image": "https://www.bindleyproperties.com/opi/332029",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:18ad606620",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/apartment-for-sale-in-la-fustera-benisa-costa-blanca-bp3514/",
+      "title": "Apartment for sale in la Fustera, Benisa, Costa Blanca.",
+      "price": 335000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 335000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 3641,
+      "image": "https://www.bindleyproperties.com/opi/332028",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:b675a3bf6b",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/plot-with-sea-views-for-sale-in-benissa-costa-blanca-bp3412/",
+      "title": "Plot with sea views for Sale in Benissa, Costa Blanca.",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 239000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/316279",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-13",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:67e955578a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/rustic-plot-for-sale-with-sea-views-in-benisa-costa-blanca-bp3338/",
+      "title": "Rustic plot for sale with sea views in Benisa, Costa Blanca.",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 225000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11989,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/309381",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-30",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:66ce1a18ce",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/plot-for-sale-in-benitachell-costa-blanca-bp3299/",
+      "title": "Plot for sale in Benitachell, Costa Blanca.",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 950,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/303832",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:8c7b8d5137",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/plot-with-open-views-in-benissa-costa-blanca-bp3260/",
+      "title": "Plot with open views in Benissa, Costa Blanca.",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 190000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10012,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/296370",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-14",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:276263320f",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/plot-for-sale-in-benissa-costa-blanca-bp2869/",
+      "title": "Plot for sale in Benissa, Costa Blanca.",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 280000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11179,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/236209",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:79e47e092a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/traditional-village-house-for-sale-in-teulada-bp2079/",
+      "title": "Traditional village house for sale in Teulada",
+      "price": 212500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 212500
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 348,
+      "plotM2": null,
+      "pricePerM2": 611,
+      "image": "https://www.bindleyproperties.com/opi/142792",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-12",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "bindley:c5e3c490cf",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/for-sale/plot-for-sale-in-moraira-open-views-bp2060/",
+      "title": "Plot for sale in Moraira, open views.",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://www.bindleyproperties.com/opi/142231",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:f33182ea08",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3386/building-plot-with-sea-view-for-sale-in-calpe/",
+      "title": "​  Building Plot With Sea Views",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 199000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/1ebbe68dd6478bebef6ccdc4ed3de645_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:03+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:c995d65f4d",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3642/large-building-plot-with-valley-views-for-sale-in-fanadix-benissa-costa/",
+      "title": "LARGE FLAT CORNER PLOT WITH VALLEY VIEWS IN SOUGHT AFTER FANADIX, BENISSA COSTA",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 185000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/5fd55b7ebdbd2fbaf144e689047d1cda_1024x800.JPG",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:03+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:21efd32acd",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3847/town-centre-apartments/",
+      "title": "New Build Apartments in Town Centre",
+      "price": 284000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 284000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/6541844422679f5d937d97fd358bf21b_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:1d010ae2d6",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3851/sea-view-plot/",
+      "title": "Rustic Sea View Building Plot",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/5445cb0c74842f4637f693ca4627a985_1024x800.JPG",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:ca3f973c0c",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3920/modern-apartment-in-denia-in-walking-distance-to-beach/",
+      "title": "Modern Apartment in Denia in Walking Distance to Beach.",
+      "price": 339000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 339000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/0fac07f3f5230c30f9c90acc2fafe2c3_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:3d060b837f",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/3944/plot-with-beautiful-mountain-views-for-sale-in-benissa/",
+      "title": "Plot with Stunning Mountain Views",
+      "price": 199500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 199500
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/3c1fa74b97a0ca4b01db395ecf8634cc_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:a8127f52d0",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4033/new-build-apartment-close-to-the-beach/",
+      "title": "New Build Apartment Close to the Beach",
+      "price": 329000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 329000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/3fe4ea7ba7215f7c4670cbe3be259a34_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:f668f72b3e",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4084/new-build-1-2-or-3-bedroom-apartment-in-the-centre-of-javea-in-walking-distance-to-the-beach/",
+      "title": "Modern Town Centre Apartment in Javea",
+      "price": 274000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 274000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/42986f84b086da1788d6d0eff6b035f9_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:1476b33aae",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4132/sea-view-bunglow-for-sale-in-calpe/",
+      "title": "Sea View Bungalow for Sale in Calpe",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 180000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/584962529262f918af06a28ef5efe68f_1024x800.png",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:d416350983",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4149/seaview-plot-in-excellent-location-close-to-town/",
+      "title": "Sea View Plot in sought after Location close to town",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/74fa1d0a8b571d7d1850fa034c5d66c3_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:c1ec2f13bb",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4940/villa/re-sale/spain//orba/orba/",
+      "title": "Orba\n\n        \n        \n            Villa ·\n            Re-sale",
+      "price": 338000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 338000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/b28c360540dd09a61fe44dc2361cb153_1024x800.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:6374d61dd8",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4868/modern-1-or-2-bedroom-apartments-in-the-centre-of-denia-in-walking-distance-to-amenities/",
+      "title": "Modern 1 Bedroom Apartments in the Centre of Denia in Walking Distance to Amenities",
+      "price": 244420,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 244420
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/20694ff8b1828b5076f1c80a80783129_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:74d70a4d96",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4873/sea-view-plot-for-sale-in-golden-valley-benitachell/",
+      "title": "Spacious Flat Plot for Sale with Sea Views",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/b4f41bf566868fe3116a8397549f9aa1_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:20abf3ec2d",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4893/apartment-in-playa-la-fossa-beach-calpe/",
+      "title": "Apartment in Playa la Fossa Beach Calpe",
+      "price": 210000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 210000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/0f94ca3a8923f4566e8e4520fb8a9c17_1024x800.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:666096f4be",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4912/reformed-apartment-with-beautiful-sea-and-valley-views-in-castellons-vida-teulada/",
+      "title": "Renovated Apartment with Beautiful Sea and Valley Views in Castellons Vida, Teulada.",
+      "price": 238000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 238000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/ccaaec15f7bd9ebe9dc308b24703b4c5_1024x800.JPEG",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:d989b56f4b",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4928/ready-to-move-into-two-bedroom-apartment-town-centre-apartment/",
+      "title": "Ready to move into Spacious Two Bedroom Town Centre Apartment",
+      "price": 245000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 245000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/977c53742b72a47b6fa2eb77b054fb3a_1024x800.JPEG",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:98b842afc8",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4934/villa/re-sale/spain//sanet-y-negrals/sanet-y-negrals/",
+      "title": "Sanet y Negrals\n\n        \n        \n            Villa ·\n            Re-sale",
+      "price": 170000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 170000
+        }
+      ],
+      "municipality": "Sanet y Negrals",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/70a4f82eef0d654a37c2a563910e75d6_1024x800.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:373ba83237",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4945/t/re-sale/spain//benidoleig/benidoleig/",
+      "title": "Benidoleig\n\n        \n        \n            T ·\n            Re-sale",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 185000
+        }
+      ],
+      "municipality": "Benidoleig",
+      "type": "other",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/72b58be4931a233148577b318979f112_1024x800.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:fe453718ee",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4968/one-bedroom-apartment-in-centre-of-moraira/",
+      "title": "One Bedroomed Apartment in Moraira",
+      "price": 170000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 170000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/1503d77acec1d44b63a3ae5253421497_1024x800.JPG",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:bd9b70f6ea",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4973/one-bedroom-apartment-for-sale-in-centre-of-calpe/",
+      "title": "▶ One Bedroom Apartment For Sale in centre of Calpe",
+      "price": 170000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 170000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/5541e938c9050a0cccbfb9e0908548c4_1024x800.JPG",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:cc5ef79093",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4977/apartment-with-beautiful-sea-and-valley-views-in-urbanisation-vistamar-cumbre-del-sol/",
+      "title": "Two Bedroom Apartment with Sea Views",
+      "price": 264000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 264000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/981646f3d4dc6ed91a502ebaad30c195_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "selectvillas:5d5a360189",
+      "source": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "url": "https://select-villas.es/property/4978/three-bedroom-apartment-with-amazing-views-for-sale-in-benitachell-costa-blanca/",
+      "title": "Three Bedroom Apartment for Sale  in Montecala, Benitachell, Enjoy Amazing Views and Sunsets from your Private Terrace",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://select-villas.es/media/images/properties/thumbnails/13263263d3e3e16037d52302a97cf0db_1024x800.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2024-12-09T06:01:04+01:00",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "benimo-villas:0693c5de06",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/adosado-esquinero-reformado-con-jardin-y-piscina-comunitaria-en-beniarbeig-cerca-de-denia-im-ri7ncu/",
+      "title": "Adosado esquinero reformado con jardín y piscina comunitaria en Beniarbeig, cerca de Denia",
+      "price": 255000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 255000
+        }
+      ],
+      "municipality": "Beniarbeig",
+      "type": "townhouse",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 3072,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/88/01a01944-f6fd-705e-bcce-9dbd35ef4688.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-25T09:26:50.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-0693c5de06.webp",
+        "thumb": "benimo-villas-0693c5de06.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/88/01a01944-f6fd-705e-bcce-9dbd35ef4688.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:855b86580d",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-en-venta-en-benissa-pvi-1taweyp/",
+      "title": "Parcela en venta en Benissa",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 325,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/08/01a0144d-befc-7390-b485-f9ca454ed308.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-855b86580d.webp",
+        "thumb": "benimo-villas-855b86580d.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/08/01a0144d-befc-7390-b485-f9ca454ed308.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:5a47e52d19",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-en-venta-en-teulada-la-sabatera-832-m2-pp479/",
+      "title": "Parcela en venta en Teulada, LA SABATERA - 832 m²",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 295000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 832,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/0d/019dd9fb-21fe-7089-a03a-988d3724200d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-06T08:30:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-5a47e52d19.webp",
+        "thumb": "benimo-villas-5a47e52d19.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/0d/019dd9fb-21fe-7089-a03a-988d3724200d.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:d85d23e514",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/venta-parcela-en-benissa-p45110e-3358/",
+      "title": "Venta. Parcela en Benissa",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 806,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/9b/019e168c-e979-774a-9ec2-bafd07ed199b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-06T08:30:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-d85d23e514.webp",
+        "thumb": "benimo-villas-d85d23e514.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/9b/019e168c-e979-774a-9ec2-bafd07ed199b.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:508cbfd145",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/oportunidad-en-benissa-conjunto-de-parcelas-con-14-187-m2-y-vistas-abiertas-ms1f4kdpc/",
+      "title": "¡Oportunidad en Benissa! Conjunto de parcelas con 14.187 m² y vistas abiertas",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 160000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 14187,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019f8f73-a765-766a-8eef-a91a18456fa3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-16T14:27:46.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-508cbfd145.webp",
+        "thumb": "benimo-villas-508cbfd145.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019f8f73-a765-766a-8eef-a91a18456fa3.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:6848ece58c",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/casa-de-campo-en-pego-totalmente-reformada-oi-1583w8t/",
+      "title": "Casa de campo en Pego totalmente reformada",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 225000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 56,
+      "plotM2": 3100,
+      "pricePerM2": 4018,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/63/019fec1c-2bd4-729b-9a0e-d4c3c44c1263.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-10T07:41:33.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-6848ece58c.webp",
+        "thumb": "benimo-villas-6848ece58c.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/63/019fec1c-2bd4-729b-9a0e-d4c3c44c1263.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:0b9826ee65",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-de-1-012-m2-en-zona-residencial-exclusiva-ms1dvb58u/",
+      "title": "Parcela de 1.012 m² en zona residencial exclusiva",
+      "price": 189000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 189000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1012,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/51/019f8f73-fb21-739c-81ab-e1ad88c5c251.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T12:41:12.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-0b9826ee65.webp",
+        "thumb": "benimo-villas-0b9826ee65.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/51/019f8f73-fb21-739c-81ab-e1ad88c5c251.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:b1077f4455",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/gran-oportunidad-parcela-de-999-m2-ideal-en-entorno-residencial-tranquilo-mswfpcf4/",
+      "title": "¡Gran oportunidad! Parcela de 999 m² ideal en entorno residencial tranquilo",
+      "price": 189000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 189000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 999,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/42/019f8f73-fb21-739c-81ab-e45c6ac4a242.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T12:36:47.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-b1077f4455.webp",
+        "thumb": "benimo-villas-b1077f4455.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/42/019f8f73-fb21-739c-81ab-e45c6ac4a242.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:b4b7b37ad7",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-de-1-000-m2-con-vistas-abiertas-en-la-urbanizacion-la-cala-javea-350-000-eu-msqpjyik/",
+      "title": "Parcela urbana de 1.000 m² con vistas abiertas en la urbanización La Cala, Jávea – 350.000 €",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/e2/019f8f73-fb21-739c-81ab-e9c1a6f779e2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T12:22:34.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-b4b7b37ad7.webp",
+        "thumb": "benimo-villas-b4b7b37ad7.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/e2/019f8f73-fb21-739c-81ab-e9c1a6f779e2.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:99c41742ea",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/atico-con-vistas-a-la-montana-en-pueblo-montecala-cdspr-2508/",
+      "title": "Ático con vistas a la montaña en Pueblo Montecala",
+      "price": 209000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 209000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 82,
+      "plotM2": null,
+      "pricePerM2": 2549,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/99/019fff47-4127-74d9-a236-d909575dfe99.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T11:18:50.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-99c41742ea.webp",
+        "thumb": "benimo-villas-99c41742ea.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/99/019fff47-4127-74d9-a236-d909575dfe99.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:d3c5529e15",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/cumbre-del-sol-apartamento-duplex-reformado-en-pueblo-de-la-paz-cdspr-2487/",
+      "title": "Cumbre del Sol apartamento dúplex reformado en Pueblo de la Paz",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 259000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 109,
+      "plotM2": null,
+      "pricePerM2": 2376,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/30/019fff47-4127-74d9-a236-de0d60e1ab30.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T10:54:35.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-d3c5529e15.webp",
+        "thumb": "benimo-villas-d3c5529e15.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/30/019fff47-4127-74d9-a236-de0d60e1ab30.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:c39f52a145",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/cumbre-del-sol-parcela-urbana-con-vistas-al-mar-cdspr-2525/",
+      "title": "Cumbre del Sol parcela urbana con vistas al mar",
+      "price": 175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 175000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 790,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/ed/019cdc26-c456-728a-a1e6-3c1897c371ed.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T10:42:28.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-c39f52a145.webp",
+        "thumb": "benimo-villas-c39f52a145.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/ed/019cdc26-c456-728a-a1e6-3c1897c371ed.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:90c7435c11",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-a-solo-10-km-de-denia-ms1ftg5dg/",
+      "title": "Parcela urbana a solo 10 km de Denia",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 120000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 648,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/ff/019cb3d3-25c4-762f-b437-9ff1406327ff.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-27T09:37:56.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-90c7435c11.webp",
+        "thumb": "benimo-villas-90c7435c11.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/ff/019cb3d3-25c4-762f-b437-9ff1406327ff.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:824975f316",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-rustica-de-14-000-m2-con-posibilidad-de-ampliacion-con-luz-y-agua-msbrvzse/",
+      "title": "Parcela rústica de 14.000 m² con Posibilidad de Ampliación – Con Luz y Agua",
+      "price": 196000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 196000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 14000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/44/019f8f73-fb21-739c-81ab-f1b74b987d44.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-26T08:43:27.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-824975f316.webp",
+        "thumb": "benimo-villas-824975f316.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/44/019f8f73-fb21-739c-81ab-f1b74b987d44.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:b8aaa32b35",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-con-proyecto-y-licencia-en-benissa-mssyhh5n/",
+      "title": "PARCELA CON PROYECTO Y LICENCIA EN BENISSA",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 199000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10173,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/cc/019f8f73-fb21-739c-81ab-f6af033df2cc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-26T08:40:49.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-b8aaa32b35.webp",
+        "thumb": "benimo-villas-b8aaa32b35.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/cc/019f8f73-fb21-739c-81ab-f6af033df2cc.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:9164a108eb",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/cumbre-del-sol-apartamento-reformado-con-vistas-al-mar-cdspr-2455/",
+      "title": "Cumbre del Sol apartamento reformado con vistas al mar",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 239000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 63,
+      "plotM2": null,
+      "pricePerM2": 3794,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/68/019fff47-4127-74d9-a236-e3f781dc7768.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-25T12:38:58.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-9164a108eb.webp",
+        "thumb": "benimo-villas-9164a108eb.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/68/019fff47-4127-74d9-a236-e3f781dc7768.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:bb793c4e10",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-brek2558q/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 279000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 279000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 2735,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/28/019d3e3b-8dc4-715a-a977-b9ca233f4428.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-24T17:21:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-bb793c4e10.webp",
+        "thumb": "benimo-villas-bb793c4e10.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/28/019d3e3b-8dc4-715a-a977-b9ca233f4428.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:5a99566816",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-en-urbanizacion-solana-ii-de-pedreguer-msx91bj6/",
+      "title": "Parcela urbana en Urbanización Solana II de Pedreguer",
+      "price": 85000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 85000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 664,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/14/019cb3d3-25c4-762f-b437-93ff54e8aa14.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-24T11:24:57.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-5a99566816.webp",
+        "thumb": "benimo-villas-5a99566816.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/14/019cb3d3-25c4-762f-b437-93ff54e8aa14.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:0d97ccf723",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/oportunidad-unica-parcela-urbana-de-1-047-m2-con-vistas-panoramicas-expansible-junto-a-1-280-m2-ms1b1m5vb/",
+      "title": "Oportunidad Única: Parcela Urbana de 1.047 m² con Vistas Panorámicas – Expansible Junto a 1.280 m²",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1047,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/6a/019f8f74-8c18-71ee-ab0a-d062de112e6a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-20T10:26:59.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-0d97ccf723.webp",
+        "thumb": "benimo-villas-0d97ccf723.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/6a/019f8f74-8c18-71ee-ab0a-d062de112e6a.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:ce501ab2b6",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/oportunidad-unica-parcela-de-1-280-m2-con-vistas-panoramicas-y-posibilidad-de-ampliacion-ms1uf5kjg/",
+      "title": "Oportunidad Única: Parcela de 1.280 m² con Vistas Panorámicas y Posibilidad de Ampliación",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1280,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/bd/019f8f74-8c18-71ee-ab0a-d6b2d577acbd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-20T10:01:59.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-ce501ab2b6.webp",
+        "thumb": "benimo-villas-ce501ab2b6.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/bd/019f8f74-8c18-71ee-ab0a-d6b2d577acbd.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:37d6e26a1e",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/espectacular-parcela-de-801-m2-con-vistas-panoramicas-inigualables-ms3cxt52/",
+      "title": "Espectacular Parcela de 801 m² con Vistas Panorámicas Inigualables",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 801,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/25/019f8f74-8c18-71ee-ab0a-d87e97100525.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-20T09:44:02.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-37d6e26a1e.webp",
+        "thumb": "benimo-villas-37d6e26a1e.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/25/019f8f74-8c18-71ee-ab0a-d87e97100525.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:da4fe42231",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/espectacular-parcela-urbana-con-vistas-panoramicas-y-gran-terreno-adyacente-ms1yi0zz9/",
+      "title": "Espectacular Parcela Urbana con Vistas Panorámicas y Gran Terreno Adyacente",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 160000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 831,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/fd/019f8f74-8c18-71ee-ab0a-e4805aec42fd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18T13:46:42.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-da4fe42231.webp",
+        "thumb": "benimo-villas-da4fe42231.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/fd/019f8f74-8c18-71ee-ab0a-e4805aec42fd.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:72093d62a2",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-cerca-de-todos-los-servicios-en-moraira-ms6bxwea/",
+      "title": "Parcela urbana cerca de todos los servicios en Moraira",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/94/019f8f74-8c18-71ee-ab0a-eba8b47aa394.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18T13:01:29.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-72093d62a2.webp",
+        "thumb": "benimo-villas-72093d62a2.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/94/019f8f74-8c18-71ee-ab0a-eba8b47aa394.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:c33f5f0134",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-en-venta-en-benimeit-moraira-ideal-para-construir-una-villa-independiente-ms1sk5fpu/",
+      "title": "Parcela urbana en venta en Benimeit, Moraira – Ideal para construir una villa independiente",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/87/019f8f74-8c18-71ee-ab0a-ec1b9e026287.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18T12:56:53.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-c33f5f0134.webp",
+        "thumb": "benimo-villas-c33f5f0134.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/87/019f8f74-8c18-71ee-ab0a-ec1b9e026287.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:0dde1135de",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-brea517ok/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2143,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/11/019f1d1d-2d59-70a8-a294-e26788fcdd11.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18T09:17:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-0dde1135de.webp",
+        "thumb": "benimo-villas-0dde1135de.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/11/019f1d1d-2d59-70a8-a294-e26788fcdd11.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:c6cfc315c2",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-en-venta-en-javea-jjqu8ywn/",
+      "title": "Parcela en venta en Javea",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 340000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 889,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/93/019e1684-3675-72ff-bbad-12d2ec7e0893.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-09T06:27:13.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-c6cfc315c2.webp",
+        "thumb": "benimo-villas-c6cfc315c2.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/93/019e1684-3675-72ff-bbad-12d2ec7e0893.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:576032d715",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-benissa-bre5sq8sv/",
+      "title": "Apartamento en venta en Benissa",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 295000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 250,
+      "plotM2": null,
+      "pricePerM2": 1180,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/18/019e5fd0-fe88-72ab-ad24-8018bedca218.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-13T14:38:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-576032d715.webp",
+        "thumb": "benimo-villas-576032d715.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/18/019e5fd0-fe88-72ab-ad24-8018bedca218.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:17a950f8ec",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/plot-en-venta-en-benissa-pd54/",
+      "title": "Plot en venta en Benissa",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 160000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 798,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/1a/019cb81c-87f5-728a-9214-8c2b3e86f61a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-13T10:29:15.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-17a950f8ec.webp",
+        "thumb": "benimo-villas-17a950f8ec.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/1a/019cb81c-87f5-728a-9214-8c2b3e86f61a.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:9ff2673439",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/plot-en-venta-en-benissa-pd53/",
+      "title": "Plot en venta en Benissa",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 165000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 802,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/c2/019cb81c-87f5-728a-9214-9145f85325c2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-13T10:26:34.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-9ff2673439.webp",
+        "thumb": "benimo-villas-9ff2673439.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/c2/019cb81c-87f5-728a-9214-9145f85325c2.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:d6a16471d4",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/terreno-rustico-con-vistas-panoramicas-al-mar-cerca-de-moraira-javea-y-el-colegio-lady-elisabeth-vb1b4y8fn/",
+      "title": "Terreno rústico con vistas panorámicas al mar cerca de Moraira, Javea y el Colegio Lady Elisabeth.",
+      "price": 291000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 291000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10823,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/64/019cb3d9-27d8-765a-a465-92dbd365df64.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-05T07:37:28.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-d6a16471d4.webp",
+        "thumb": "benimo-villas-d6a16471d4.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/64/019cb3d9-27d8-765a-a465-92dbd365df64.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:ac3a2b43a0",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/terreno-en-tosalet-5-himuagmbr/",
+      "title": "Terreno en Tosalet 5",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/e4/019cb81c-b5f7-76fb-829b-1d5777bd4be4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-29T15:15:12.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-ac3a2b43a0.webp",
+        "thumb": "benimo-villas-ac3a2b43a0.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/e4/019cb81c-b5f7-76fb-829b-1d5777bd4be4.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:dcbddad3d5",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-tosalet-5-n-deg-31-himl7ul0t/",
+      "title": "Parcela Tosalet 5 - N ° 31",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/98/019cb3ce-2dee-74cd-afb6-558491681398.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-28T14:40:13.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-dcbddad3d5.webp",
+        "thumb": "benimo-villas-dcbddad3d5.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/98/019cb3ce-2dee-74cd-afb6-558491681398.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:36540426e0",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-urbana-en-solana-ii-pedreguer-msq2ke6x/",
+      "title": "Parcela urbana en Solana II Pedreguer",
+      "price": 123000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 123000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 730,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/48/019cb3d3-25c4-762f-b437-96babf0bb848.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-28T14:14:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-36540426e0.webp",
+        "thumb": "benimo-villas-36540426e0.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/48/019cb3d3-25c4-762f-b437-96babf0bb848.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:1418d738fe",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-en-venta-en-costa-nova-de-1001-m2-hime5f0d9/",
+      "title": "Parcela en venta en Costa Nova de 1001 m².",
+      "price": 220220,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220220
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1001,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/72/019cb3ce-2dee-74cd-afb6-5b8b14577672.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-28T11:48:50.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-1418d738fe.webp",
+        "thumb": "benimo-villas-1418d738fe.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/72/019cb3ce-2dee-74cd-afb6-5b8b14577672.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:51f12cae7f",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-rustica-con-hermosa-vista-abierta-en-benissa-abq9rhh2/",
+      "title": "PARCELA RÚSTICA CON HERMOSA VISTA ABIERTA EN BENISSA",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 195000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10894,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019cb378-013a-71be-afe3-389567be89a3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-24T11:14:02.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-51f12cae7f.webp",
+        "thumb": "benimo-villas-51f12cae7f.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019cb378-013a-71be-afe3-389567be89a3.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:36e86d7b11",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartment-en-venta-en-calpe-calp-adx463/",
+      "title": "Apartment en venta en Calpe / Calp",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 330000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 3750,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/83/019a9738-fcf3-73d9-9a06-eab037e19c83.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-21T17:10:13.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-36e86d7b11.webp",
+        "thumb": "benimo-villas-36e86d7b11.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/83/019a9738-fcf3-73d9-9a06-eab037e19c83.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:004d641ae1",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-bre13x6j5w/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 315000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 124,
+      "plotM2": null,
+      "pricePerM2": 2540,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/1d/019cb3db-d392-7063-81e3-71632a3c101d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-11T13:04:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-004d641ae1.webp",
+        "thumb": "benimo-villas-004d641ae1.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/1d/019cb3db-d392-7063-81e3-71632a3c101d.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:9154bc667d",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-llana-en-venta-en-moraira-mt-g-176/",
+      "title": "Parcela llana en venta en Moraira",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 834,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/34/019a972a-edee-7569-9c17-a8f4ccd17134.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-25T08:24:35.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-9154bc667d.webp",
+        "thumb": "benimo-villas-9154bc667d.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/34/019a972a-edee-7569-9c17-a8f4ccd17134.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:b8f8c54abf",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/casa-de-pueblo-en-el-casco-antiguo-tz1rsb63y/",
+      "title": "CASA DE PUEBLO EN EL CASCO ANTIGUO",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "house",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 229,
+      "plotM2": null,
+      "pricePerM2": 1528,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019cb41c-0cc6-73ec-9995-212d70404fa3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21T15:31:30.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-b8f8c54abf.webp",
+        "thumb": "benimo-villas-b8f8c54abf.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/a3/019cb41c-0cc6-73ec-9995-212d70404fa3.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:23cb4fe671",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-el-centro-de-calpe-tz1173sau/",
+      "title": "Apartamento En el centro de Calpe",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 319000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 68,
+      "plotM2": null,
+      "pricePerM2": 4691,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/73/019cb41c-0cc6-73ec-9995-24823b906873.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21T15:29:31.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-23cb4fe671.webp",
+        "thumb": "benimo-villas-23cb4fe671.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/73/019cb41c-0cc6-73ec-9995-24823b906873.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:0b9950d578",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/piso-en-el-centro-de-calpe-al-lado-colegios-y-los-servicios-tz1y0nwbg/",
+      "title": "Piso en el Centro de Calpe al lado colegios y los servicios",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 299000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3322,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/af/019cb81d-a68a-722f-af32-620c2caa53af.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21T15:27:45.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-0b9950d578.webp",
+        "thumb": "benimo-villas-0b9950d578.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/af/019cb81d-a68a-722f-af32-620c2caa53af.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:ee0e2b5f2b",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-bre1xkhlsd/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 349000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2908,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/f7/019cb3db-f642-7770-ac41-d03235daf4f7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-13T16:48:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-ee0e2b5f2b.webp",
+        "thumb": "benimo-villas-ee0e2b5f2b.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/f7/019cb3db-f642-7770-ac41-d03235daf4f7.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:56a19e22a6",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-brec2uyhj/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 345000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 103,
+      "plotM2": null,
+      "pricePerM2": 3350,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/97/019cb3db-f642-7770-ac41-dd5b373fbc97.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-10T09:26:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-56a19e22a6.webp",
+        "thumb": "benimo-villas-56a19e22a6.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/97/019cb3db-f642-7770-ac41-dd5b373fbc97.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:76f02811fd",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/terreno-rustico-con-bonitas-vistas-en-venta-en-benissa-be-g-168/",
+      "title": "Terreno rústico con bonitas vistas en venta en Benissa",
+      "price": 325035,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325035
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 21669,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/b1/019a972a-edee-7569-9c17-c88332043fb1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-22T13:42:30.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-76f02811fd.webp",
+        "thumb": "benimo-villas-76f02811fd.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/b1/019a972a-edee-7569-9c17-c88332043fb1.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:2549f74626",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-llana-en-venta-en-moraira-mt-g-175/",
+      "title": "Parcela llana en venta en Moraira",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/aa/019a972a-edee-7569-9c17-acc60c9460aa.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-16T08:55:50.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-2549f74626.webp",
+        "thumb": "benimo-villas-2549f74626.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/aa/019a972a-edee-7569-9c17-acc60c9460aa.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:5b1f58a714",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/finca-rustica-con-buenas-vistas-en-pego-oi-vjfk6x/",
+      "title": "Finca rústica con buenas vistas en Pego",
+      "price": 290000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 290000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 83,
+      "plotM2": 7080,
+      "pricePerM2": 3494,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/0b/019fec1c-84a7-74ab-9e0b-038b051f3a0b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-09-02T11:42:42.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-5b1f58a714.webp",
+        "thumb": "benimo-villas-5b1f58a714.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/0b/019fec1c-84a7-74ab-9e0b-038b051f3a0b.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:b4976190d1",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/apartamento-en-venta-en-calpe-bre1eawbus/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 253000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 253000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 3833,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/24/019cb3dd-a4a5-773e-908f-82fc897f5924.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-09-02T07:33:00.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-b4976190d1.webp",
+        "thumb": "benimo-villas-b4976190d1.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/24/019cb3dd-a4a5-773e-908f-82fc897f5924.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:2c7c03a027",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-rural-cerca-del-pueblo-de-benissa-ab1c8nanq/",
+      "title": "PARCELA RURAL CERCA DEL PUEBLO DE BENISSA",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10374,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/d9/019cb37a-e80b-7508-9a68-9e157797c8d9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-07-17T15:04:32.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-2c7c03a027.webp",
+        "thumb": "benimo-villas-2c7c03a027.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/d9/019cb37a-e80b-7508-9a68-9e157797c8d9.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:ac94632a8e",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/casa-de-campo-en-xalo-con-35-000-m2-de-terreno-oi-1h3fhiv/",
+      "title": "Casa de campo en Xaló con 35.000 m2 de terreno",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "villa",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 100,
+      "plotM2": 35000,
+      "pricePerM2": 2500,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/4f/019feb7b-9fed-74d9-bd42-e091edaf784f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-05-05T08:53:17.000Z",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-ac94632a8e.webp",
+        "thumb": "benimo-villas-ac94632a8e.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/4f/019feb7b-9fed-74d9-bd42-e091edaf784f.jpg"
+      }
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:4ae908ec17",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/1130428",
+      "title": "Finca/Casa Rural de 4 habitaciones en Llíber en venta con garaje - 275.000 € (Ref: 1130428)",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 290000
+        },
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        }
+      ],
+      "municipality": "Llíber",
+      "type": "villa",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 165,
+      "plotM2": null,
+      "pricePerM2": 1667,
+      "image": "https://cdn.thinkwebcontent.com/property/5216/1130428/20260618112841/w8160h6144/s640x480/x-283812462.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "previousPrice": 290000,
+      "delta": -15000,
+      "deltaPct": -5.2,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:c785eead39",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9761003",
+      "title": "Chalet de 2 habitaciones en Orba en venta con piscina garaje - 320.000 € (Ref: 9761003)",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 340000
+        },
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "villa",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3556,
+      "image": "https://cdn.thinkwebcontent.com/property/27148/9761003/20260410114824/w1542h1028/s640x480/x-278246691.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "previousPrice": 340000,
+      "delta": -20000,
+      "deltaPct": -5.9,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [
+    {
+      "id": "thinkspain:789611423e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9349649",
+      "title": "Apartamento de 2 habitaciones en El Puerto, Dénia en venta con piscina garaje - 286.900 € (Ref: 9349649)",
+      "price": 286900,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 279900
+        },
+        {
+          "date": "2026-08-22",
+          "price": 286900
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 3298,
+      "image": "https://cdn.thinkwebcontent.com/property/28376/9349649/20251030063322/w1280h549/s640x480/x-265696793.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "previousPrice": 279900,
+      "delta": 7000,
+      "deltaPct": 2.5,
+      "direction": "rise"
+    }
+  ],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2548,
+      "status": "ok",
+      "requests": 550,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 8,
+      "status": "ok",
+      "requests": 46,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 13,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 25,
+      "status": "ok",
+      "requests": 50,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 28,
+      "status": "ok",
+      "requests": 56,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 27,
+      "status": "ok",
+      "requests": 74,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 7,
+      "status": "ok",
+      "requests": 41,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 89,
+      "status": "ok",
+      "requests": 349,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 10,
+      "status": "ok",
+      "requests": 20,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 9,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 20,
+      "status": "ok",
+      "requests": 35,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 110,
+      "status": "ok",
+      "requests": 286,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 2,
+      "status": "ok",
+      "requests": 10,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 2,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 5,
+      "status": "ok",
+      "requests": 13,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 11,
+      "status": "ok",
+      "requests": 185,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 11,
+      "status": "ok",
+      "requests": 2073,
+      "blocked": 0,
+      "errors": 667
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 21,
+      "status": "ok",
+      "requests": 97,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 413,
+      "blocked": 0,
+      "errors": 5
+    }
+  ],
+  "bootstrap": true
+}

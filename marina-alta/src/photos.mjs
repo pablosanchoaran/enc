@@ -19,7 +19,15 @@ import sharp from 'sharp'
 import { Fetcher } from './fetcher.mjs'
 
 const FULL_WIDTH = 640
-const THUMB_WIDTH = 320
+/**
+ * La miniatura se guardaba a 320 px, y con el inventario en tres mil anuncios
+ * seiscientas tarjetas se quedaban sin portada por falta de sitio en la
+ * página. A 240 px ocupa la mitad y caben todas; la tarjeta mide 272 px y la
+ * foto es para reconocer la casa de un vistazo, que para verla bien está el
+ * enlace a la ficha. La copia de archivo sigue siendo la de 640 px.
+ */
+const THUMB_WIDTH = 240
+const THUMB_QUALITY = 60
 const MAX_SOURCE_BYTES = 12 * 1024 * 1024
 
 async function exists(path) {
@@ -94,7 +102,7 @@ export async function capturePhotos(listings, { photosDir, budget = 120, log = (
         )
         await writeFile(
           join(photosDir, thumb),
-          await image.clone().resize({ width: THUMB_WIDTH, withoutEnlargement: true }).webp({ quality: 70 }).toBuffer(),
+          await image.clone().resize({ width: THUMB_WIDTH, withoutEnlargement: true }).webp({ quality: THUMB_QUALITY }).toBuffer(),
         )
       }
 

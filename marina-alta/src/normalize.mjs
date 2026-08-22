@@ -7,6 +7,13 @@ import { createHash } from 'node:crypto'
 import { detectMunicipality } from './municipalities.mjs'
 import { NON_RESIDENTIAL } from './parse.mjs'
 
+/**
+ * Superficie construida por encima de la cual el dato no se cree. Con el techo
+ * del extractor en 350.000 €, la casa más grande del inventario tiene 840 m²;
+ * lo que pase de aquí es una parcela puesta en la casilla equivocada.
+ */
+const MAX_CREDIBLE_BUILT_M2 = 2000
+
 export function listingId(sourceId, sourceRef) {
   return `${sourceId}:${createHash('sha1').update(String(sourceRef)).digest('hex').slice(0, 10)}`
 }
@@ -35,7 +42,15 @@ export function normalize(raw, source, today, { maxPrice = Infinity } = {}) {
   const isPlot = raw.type === 'plot'
   const beds = isPlot ? null : (raw.beds ?? null)
   const baths = isPlot ? null : (raw.baths ?? null)
-  const builtM2 = isPlot ? null : (raw.builtM2 ?? null)
+
+  // Hay agencias que meten la parcela en la casilla de la superficie
+  // construida. ThinkSpain publica así una finca de Pego de 100.000 € con
+  // 9.927 m² construidos, que salía la primera al ordenar por €/m² como si
+  // fuera una ganga de 10 €/m². No se puede adivinar el dato bueno, así que se
+  // deja sin superficie: el anuncio se publica igual y cae al final de las
+  // ordenaciones por metros, en vez de encabezarlas con un número falso.
+  const built = isPlot ? null : (raw.builtM2 ?? null)
+  const builtM2 = built && built > MAX_CREDIBLE_BUILT_M2 ? null : built
 
   const pricePerM2 = builtM2 ? Math.round(raw.price / builtM2) : null
 
