@@ -103,7 +103,7 @@ function cleanImageUrl(raw) {
   return embedded > 0 ? raw.slice(embedded) : raw
 }
 
-function parsePropertyPage(html, url) {
+export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
   const title = $('h1').first().text().trim() || metaContent(html, 'og:title') || null

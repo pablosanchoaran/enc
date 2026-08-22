@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T02:37:30.387Z",
+  "updatedAt": "2026-08-22T06:02:29.324Z",
   "maxPrice": 350000,
   "entries": [
     {
@@ -23408,6 +23408,20 @@
       "source": "benimo-villas",
       "price": 386400,
       "lastmod": "2024-02-20T08:55:04.000Z",
+      "seenOn": "2026-08-22"
+    },
+    {
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-finca-en-teulada-c449/",
+      "source": "llobell",
+      "price": 490000,
+      "lastmod": null,
+      "seenOn": "2026-08-22"
+    },
+    {
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-chalet-en-calpe-c627/",
+      "source": "llobell",
+      "price": 4000000,
+      "lastmod": null,
       "seenOn": "2026-08-22"
     }
   ]

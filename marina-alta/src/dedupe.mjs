@@ -25,9 +25,20 @@ const AREA_TOLERANCE_PCT = 0.03
  */
 const PRICE_TOLERANCE_PCT = 0.005
 
+/**
+ * La superficie con la que se compara: la construida en una vivienda y la del
+ * terreno en una parcela, que no tiene otra. Devuelve null cuando no hay dato,
+ * y entonces la ficha no se agrupa con nada.
+ */
+function comparableArea(item) {
+  return item.type === 'plot' ? item.plotM2 : item.builtM2
+}
+
 function sameProperty(a, b) {
-  const areaGap = Math.abs(a.builtM2 - b.builtM2)
-  const areaLimit = Math.max(AREA_TOLERANCE_M2, Math.min(a.builtM2, b.builtM2) * AREA_TOLERANCE_PCT)
+  const areaA = comparableArea(a)
+  const areaB = comparableArea(b)
+  const areaGap = Math.abs(areaA - areaB)
+  const areaLimit = Math.max(AREA_TOLERANCE_M2, Math.min(areaA, areaB) * AREA_TOLERANCE_PCT)
   if (areaGap > areaLimit) return false
 
   const priceGap = Math.abs(a.price - b.price)
@@ -57,13 +68,17 @@ function pickRepresentative(group) {
  *   de la misma vivienda) cuando había repeticiones.
  */
 export function dedupeForDisplay(listings) {
-  // Sin dormitorios o sin superficie no hay con qué comparar: esas fichas se
-  // dejan pasar tal cual antes que arriesgarse a esconder una casa distinta.
+  // Sin superficie no hay con qué comparar, y en una vivienda tampoco sin
+  // dormitorios: esas fichas se dejan pasar tal cual antes que arriesgarse a
+  // esconder una casa distinta. Una parcela no tiene dormitorios y se agrupa
+  // por su terreno.
   const buckets = new Map()
 
   for (const item of listings) {
-    if (item.beds == null || item.builtM2 == null) continue
-    const key = `${item.municipality}|${item.beds}`
+    if (comparableArea(item) == null) continue
+    const isPlot = item.type === 'plot'
+    if (!isPlot && item.beds == null) continue
+    const key = `${item.municipality}|${isPlot ? 'parcela' : item.beds}`
     if (!buckets.has(key)) buckets.set(key, [])
     buckets.get(key).push(item)
   }

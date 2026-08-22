@@ -1,9 +1,9 @@
 {
   "date": "2026-08-22",
-  "generatedAt": "2026-08-22T02:37:30.387Z",
+  "generatedAt": "2026-08-22T06:02:29.324Z",
   "totals": {
-    "inventory": 3177,
-    "additions": 167,
+    "inventory": 3181,
+    "additions": 171,
     "priceDrops": 2,
     "priceRises": 1,
     "removals": 0
@@ -5145,6 +5145,122 @@
         "capturedAt": "2026-08-22T02:37:30.388Z",
         "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/4f/019feb7b-9fed-74d9-bd42-e091edaf784f.jpg"
       }
+    },
+    {
+      "id": "llobell:6bfdf70389",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-rustico-de-12-780-m2-p208/",
+      "title": "Se Vende terreno rustico de 12.780 m2",
+      "price": 70000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 70000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 12780,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339868/4befbe6c-004b-48f9-9265-1cb3b85ca5c8.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "llobell:c4eebfbda8",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-en-benigembla-c629/",
+      "title": "Se vende casa de pueblo en Benigembla",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 140000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "house",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 218,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/08/361041/1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "llobell:d8f28a0014",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-p207/",
+      "title": "Se Vende espectacular parcela.",
+      "price": 174900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 174900
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 16800,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339813/foto1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "catorceinmo:28570666aa",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/villa-en-venta-en-gata-gata-residencial-piscina-comunitaria-13j0133/",
+      "title": "Villa en venta en Gata - Gata Residencial - piscina comunitaria",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 230000
+        }
+      ],
+      "municipality": "Gata de Gorgos",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": 319,
+      "pricePerM2": null,
+      "image": "https://www.catorceinmo.com/objetos/temp/source/lemon/326858/Image17.jpeg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 0,
+      "status": "active"
     }
   ],
   "priceDrops": [
@@ -5276,9 +5392,9 @@
     {
       "id": "ferrando-moraira",
       "agency": "Ferrando Inmobiliaria",
-      "listings": 8,
+      "listings": 47,
       "status": "ok",
-      "requests": 46,
+      "requests": 55,
       "blocked": 0,
       "errors": 0
     },
@@ -5303,7 +5419,7 @@
     {
       "id": "llobell",
       "agency": "Llobell Inmobiliaris",
-      "listings": 28,
+      "listings": 31,
       "status": "ok",
       "requests": 56,
       "blocked": 0,
@@ -5357,7 +5473,7 @@
     {
       "id": "catorceinmo",
       "agency": "Catorce Inmobiliaria",
-      "listings": 10,
+      "listings": 11,
       "status": "ok",
       "requests": 20,
       "blocked": 0,

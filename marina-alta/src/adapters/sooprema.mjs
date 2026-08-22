@@ -89,7 +89,7 @@ export function readIconFeatures($, target) {
   })
 }
 
-function parsePropertyPage(html, url) {
+export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
   const title =

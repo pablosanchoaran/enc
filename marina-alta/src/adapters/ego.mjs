@@ -31,7 +31,7 @@ async function collectPropertyUrls(fetcher, origin) {
   return parseSitemap(child ?? '').filter((entry) => entry.loc.includes(PROPERTY_PATH))
 }
 
-function parsePropertyPage(html, url) {
+export function parsePropertyPage(html, url) {
   const nodes = extractJsonLd(html)
   const listing = nodes.find((node) => node['@type'] === 'RealEstateListing')
   if (!listing) return null

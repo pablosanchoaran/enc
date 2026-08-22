@@ -274,6 +274,23 @@ test('no se agrupa lo que no se puede comparar ni lo que solo se parece', () => 
   assert.equal(rebaja.length, 2)
 })
 
+test('una parcela se compara por su terreno, que es lo único que tiene', () => {
+  const parcela = (id, price, plotM2, agency) => ({
+    id, price, plotM2, agency, source: agency, type: 'plot', municipality: 'Benissa',
+    beds: null, builtM2: null, url: `https://${agency}.test/${id}`, firstSeen: '2026-08-01',
+  })
+
+  const misma = dedupeForDisplay([parcela('a', 140000, 800, 'x'), parcela('b', 140000, 805, 'y')])
+  assert.equal(misma.length, 1, 'mismo terreno y mismo precio: una sola parcela')
+
+  const distintas = dedupeForDisplay([parcela('c', 140000, 800, 'x'), parcela('d', 140000, 1600, 'y')])
+  assert.equal(distintas.length, 2, 'el doble de terreno es otra parcela')
+
+  // Sin metros de terreno no hay con qué comparar.
+  const sinDato = dedupeForDisplay([parcela('e', 140000, null, 'x'), parcela('f', 140000, null, 'y')])
+  assert.equal(sinDato.length, 2)
+})
+
 test('el dominio de la agencia no dice dónde está la casa', () => {
   // `ferrando-moraira.com` colocaba en Teulada su catálogo entero, incluida
   // una casa señorial de Pego.
