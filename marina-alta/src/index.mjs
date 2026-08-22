@@ -33,6 +33,12 @@ const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
 const OVER_BUDGET_FILE = join(DATA_DIR, 'over-budget.json')
 const PHOTOS_DIR = join(DATA_DIR, 'photos')
 const REPORT_FILE = join(ROOT, 'report', 'index.html')
+/**
+ * Tope del informe. El artefacto publicado rechaza lo que pase de 16 MB; se
+ * deja margen porque el inventario crece a diario y quien regenera no siempre
+ * está mirando el tamaño.
+ */
+const REPORT_MAX_BYTES = 13 * 1024 * 1024
 
 const ADAPTERS = { thinkspain, sooprema, ego, listado }
 
@@ -69,6 +75,38 @@ function parseArgs(argv) {
   return args
 }
 
+/**
+ * Escribe el informe repartiendo el espacio disponible.
+ *
+ * El artefacto publicado no puede pasar de 16 MB y las fotos van empotradas en
+ * base64, así que no vale un presupuesto fijo: lo que ocupa el texto de la
+ * página depende del tamaño del inventario, que crece cada día. Se mide primero
+ * la página sin ninguna foto y ese hueco es lo que se les da.
+ */
+async function writeReport({ daily, listings, maxPrice, log }) {
+  await mkdir(dirname(REPORT_FILE), { recursive: true })
+
+  const sinFotos = renderReport({ daily, listings, thumbnails: new Map(), maxPrice })
+  const hueco = Math.max(0, REPORT_MAX_BYTES - Buffer.byteLength(sinFotos))
+
+  // Por precio ascendente: si las fotos no caben todas, las que se quedan sin
+  // portada son las más caras, que es donde menos se mira.
+  const byPrice = [...listings].sort((a, b) => a.price - b.price)
+  const thumbnails = await loadThumbnails(byPrice, PHOTOS_DIR, { maxBytes: hueco })
+
+  const html = renderReport({ daily, listings, thumbnails, maxPrice })
+  await writeFile(REPORT_FILE, html)
+
+  const conFoto = listings.filter((item) => item.photo?.thumb).length
+  const sinSitio = conFoto - thumbnails.size
+  log(
+    `Informe en ${REPORT_FILE}` +
+      ` (${(Buffer.byteLength(html) / 1024 / 1024).toFixed(1)} MB, ${thumbnails.size} portadas` +
+      (sinSitio > 0 ? `; ${sinSitio} no caben y salen sin foto` : '') +
+      ')',
+  )
+}
+
 async function readJson(path, fallback) {
   try {
     return JSON.parse(await readFile(path, 'utf8'))
@@ -99,9 +137,8 @@ async function run() {
       removals: [],
       sources: [],
     })
-    const thumbnails = await loadThumbnails(previousListings, PHOTOS_DIR)
-    await writeFile(REPORT_FILE, renderReport({ daily, listings: previousListings, thumbnails }))
-    log(`Informe regenerado en ${REPORT_FILE}`)
+    const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
+    await writeReport({ daily, listings: previousListings, maxPrice: catalog.config?.maxPrice, log })
     return
   }
 
@@ -335,13 +372,8 @@ async function run() {
   })
   await writeJson(ARCHIVE_FILE, { updatedAt: daily.generatedAt, entries: archive.entries })
   await writeJson(dailyFile, daily)
-  await mkdir(dirname(REPORT_FILE), { recursive: true })
-  // Por precio ascendente: si las fotos no caben todas, las que se quedan sin
-  // portada son las más caras, que es donde menos se mira.
-  const byPrice = [...listings].sort((a, b) => a.price - b.price)
-  const thumbnails = await loadThumbnails(byPrice, PHOTOS_DIR)
-  await writeFile(REPORT_FILE, renderReport({ daily, listings, thumbnails, maxPrice }))
-  log(`\nDatos en ${INVENTORY_FILE}\nInforme en ${REPORT_FILE}`)
+  log(`\nDatos en ${INVENTORY_FILE}`)
+  await writeReport({ daily, listings, maxPrice, log })
 }
 
 run().catch((error) => {

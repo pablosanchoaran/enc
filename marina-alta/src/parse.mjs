@@ -197,6 +197,10 @@ export function metaContent(html, property) {
  * Los selectores van del más específico al más genérico y **manda el primero
  * que exista en la página**: si la ficha muestra su precio ahí y dice
  * "CONSULTAR", el anuncio no tiene precio público y no se busca en otro sitio.
+ *
+ * "El primero" es el primero con texto. Benimo abre su bloque de precio con un
+ * `features-1__price-img`, que es el icono y no dice nada; quedarse con él a
+ * secas dejaba la web entera sin precios y, por tanto, sin un solo anuncio.
  */
 const PRICE_SELECTORS = [
   '.iconprecio',
@@ -217,13 +221,17 @@ export function readPrice($) {
         node.find('select, option, input, li').length === 0
       )
     })
-    if (candidates.length === 0) continue
+    // Solo el primero con texto: ese mismo selector casa también con las
+    // tarjetas de "propiedades similares" del pie, así que recorrerlos todos
+    // hasta dar con un número acaba publicando el precio de otra casa en las
+    // fichas que ponen "Consultar" — que suelen ser justo las ya vendidas.
+    const texts = candidates
+      .map((_, element) => $(element).text().trim())
+      .get()
+      .filter(Boolean)
+    if (texts.length === 0) continue
 
-    // Solo el primero: ese mismo selector casa también con las tarjetas de
-    // "propiedades similares" del pie, así que recorrerlos todos hasta dar con
-    // un número acaba publicando el precio de otra casa en las fichas que
-    // ponen "Consultar" — que suelen ser justo las ya vendidas.
-    return parsePrice(candidates.first().text().trim())
+    return parsePrice(texts[0])
   }
   return null
 }

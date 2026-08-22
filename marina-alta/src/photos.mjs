@@ -114,12 +114,12 @@ export async function capturePhotos(listings, { photosDir, budget = 120, log = (
 }
 
 /**
- * Presupuesto de miniaturas empotradas. El artefacto publicado no puede pasar
- * de 16 MB y las fotos van en base64, que abulta un tercio más que el fichero;
- * el resto de la página (HTML, estilos y guion) ronda 1 MB. Con 10 MB de fotos
- * quedan unos 2 MB de margen sobre el límite.
+ * Presupuesto de miniaturas por defecto, para quien llame sin decir nada. El
+ * informe pasa el suyo, calculado con lo que le sobra a la página: el
+ * artefacto publicado no puede pasar de 16 MB y las fotos van en base64, que
+ * abulta un tercio más que el fichero.
  */
-const THUMBNAIL_BYTES = 10 * 1024 * 1024
+const THUMBNAIL_BYTES = 8 * 1024 * 1024
 
 /**
  * Carga las miniaturas como data URI para empotrarlas en el informe: el

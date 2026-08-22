@@ -201,6 +201,24 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
   assert.equal(readPrice(normal), 235000)
 })
 
+test('un icono sin texto no cuenta como el precio de la ficha', () => {
+  // Benimo abre su bloque de precio con la imagen del icono, que casa con el
+  // mismo selector y va delante. Quedarse con ella dejaba la web sin precios
+  // y, en consecuencia, sin un solo anuncio en el informe.
+  const benimo = cheerio.load(`
+    <div class="features-1__price-img"><img src="/precio.svg" alt=""></div>
+    <span class="features-1__price">285.000 €</span>
+    <div class="property-1__price">750.000 €</div>`)
+  assert.equal(readPrice(benimo), 285000)
+
+  // Pero un "Consultar" sí es texto, y sigue mandando sobre lo que venga luego.
+  const consultar = cheerio.load(`
+    <div class="features-1__price-img"><img src="/precio.svg" alt=""></div>
+    <span class="features-1__price">Consultar</span>
+    <div class="property-1__price">750.000 €</div>`)
+  assert.equal(readPrice(consultar), null)
+})
+
 test('el barrido de zona recorre todas las páginas y para al dar la vuelta', async () => {
   // ThinkSpain sirve 16 tarjetas por página y las siguientes van en `numpag`.
   // Pasada la última no devuelve una página vacía: vuelve a servir la primera,
