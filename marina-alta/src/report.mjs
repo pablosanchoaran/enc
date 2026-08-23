@@ -536,7 +536,10 @@ export function renderReport({ daily, listings, thumbnails, maxPrice }) {
     outline: 2px solid var(--accent); outline-offset: 2px;
   }
 
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 14px; }
+  /* `align-items: start` para que cada tarjeta mida lo suyo: por defecto la
+     rejilla las estira a la altura de la más alta de su fila, y las que no
+     tienen foto quedaban con un palmo de hueco debajo. */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 14px; align-items: start; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
   .card { padding-top: 0; overflow: hidden; }
   .card__also { font-size: 0.78rem; color: var(--ink-muted); }
