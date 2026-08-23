@@ -1,0 +1,1700 @@
+{
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T17:22:35.530Z",
+  "totals": {
+    "inventory": 3235,
+    "additions": 39,
+    "priceDrops": 6,
+    "priceRises": 2,
+    "removals": 1
+  },
+  "additions": [
+    {
+      "id": "ferrando-moraira:8aa7b8eaeb",
+      "source": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "url": "https://www.ferrando-moraira.com/for-sale/villa-for-sale-in-moraira-near-el-portet-with-private-pool-ch3418/",
+      "title": "Villa for Sale in Moraira Near El Portet with Private Pool",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 299000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 73,
+      "plotM2": 444,
+      "pricePerM2": 4096,
+      "image": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/2f/01a02876-3396-7614-8d48-76eaed7f6f2f.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-22T08:56:26.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:34ec6579ca",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-benissa-pl1ovwme1/",
+      "title": "Parcela en venta en Benissa",
+      "price": 242000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 242000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 15051,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/ad/019c5c2c-e004-7538-93a7-7503fbf7cead.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:3fc6ff02e4",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-moraira-pl1n1u53r/",
+      "title": "Parcela en venta en Moraira",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 325000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 898,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/d9/019c5c2c-e004-7538-93a7-7a7c6bf4f8d9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:4d160638dc",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-benissa-pl1hovxcy/",
+      "title": "Parcela en venta en Benissa",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 80000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 505,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/d3/019c5c2c-e004-7538-93a7-7d3a35673dd3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:e1f101e7c4",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-benissa-plima54a/",
+      "title": "Parcela en venta en Benissa",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 135000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 400,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/7b/019c5c2d-4271-71e0-b7bb-64d734342a7b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:279fee6681",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-calpe-pl1v2a8lc/",
+      "title": "Parcela en venta en Calpe",
+      "price": 210000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 210000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1330,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/ad/019c5c2d-ec57-705e-87a3-f6ccbff204ad.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:5ff354383d",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-calpe-pl15wdetv/",
+      "title": "Parcela en venta en Calpe",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 250000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 980,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/6c/019c5c2d-ec57-705e-87a3-f862a82cc96c.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:f3bc309bba",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-calpe-pl1o80tel/",
+      "title": "Parcela en venta en Calpe",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 265000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/37/019c5c2e-e14c-77aa-a1b2-69ef66854d37.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01T08:24:28.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:041eaf5dcd",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/piso-reformado-en-zona-arenal-de-calpe-4o-con-ascensor-a444c/",
+      "title": "Piso reformado en zona Arenal de Calpe 4º con ascensor.",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 185000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 63,
+      "plotM2": null,
+      "pricePerM2": 2937,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/47/019dc578-855e-732e-b444-012e821b0f47.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-05-26T07:54:08.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:0d2c43885a",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-venta-en-calpe-con-piscina-in1xvg0hi/",
+      "title": "Apartamento en venta en Calpe con piscina",
+      "price": 212500,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 212500
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 3220,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/3c/019c5296-3d70-72c8-875c-4319bdb9c43c.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-05-19T07:49:43.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:1670a50f6a",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-pda-casamia-benissa-alicante-in1a9aqr9/",
+      "title": "Parcela en venta en Pda. Casamia, Benissa, Alicante",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 190000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 18000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/cd/019c5299-d424-729f-8a90-3840b73068cd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-19T07:49:43.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:102e199509",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-pinos-benissa-alicante-inbbouue/",
+      "title": "Parcela en venta en Pinos, Benissa, Alicante",
+      "price": 100000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 100000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 19723,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/d1/019c5299-d424-729f-8a90-56c6f83dddd1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-19T07:49:43.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:64cb2be476",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-calpe-a-150-m-de-la-playa-de-la-fossa-con-gran-terraza-y-vista-parcial-al-mar-in1tt6e4f/",
+      "title": "Apartamento en Calpe a 150 m de la Playa de la Fossa con gran terraza y vista parcial al mar",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 275000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 2750,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/b9/019c5c28-a502-7007-9bb5-6898df7d2db9.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2026-05-19T07:49:43.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:e8d16d3520",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/duplex-con-con-3-dormitorios-en-calpe-b361/",
+      "title": "Dúplex con con 3 dormitorios en Calpe",
+      "price": 349900,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 349900
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 116,
+      "plotM2": null,
+      "pricePerM2": 3016,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/14/019c421b-82a4-70a8-993f-42e0dac50e14.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-04-17T11:52:13.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:232eb70f78",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/luz-exclusividad-y-tranquilidad-en-pleno-centro-de-calpe-a434c/",
+      "title": "Luz, exclusividad y tranquilidad en pleno centro de Calpe",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 240000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 2892,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/fc/019c4216-026e-7421-bcf1-55afa6205afc.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-04-10T16:50:33.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:af873e45c1",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-calpe-p43/",
+      "title": "Parcela en Calpe",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 260000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1020,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/c3/019c421b-82a4-70a8-993f-1ea2a23f2bc3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-29T16:47:36.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:cd07261ccb",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/atico-de-2-dormitorios-en-el-centro-de-calpe-a385/",
+      "title": "Ático de 2 dormitorios en el centro de Calpe",
+      "price": 254900,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 254900
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 80,
+      "plotM2": null,
+      "pricePerM2": 3186,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/61/019c421d-2c07-728b-8238-9a6cc3d40c61.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2025-02-13T11:09:39.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:ab413ca584",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/terreno-amplio-en-benissa-p114/",
+      "title": "Terreno amplio en Benissa",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 180000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 15,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/9c/019c421f-a94e-734e-9fa4-e259270d439c.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-12-10T12:55:47.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:a220680e47",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/terreno-rustico-bien-situado-bastante-llano-en-zona-rural-cerca-de-calpe-p104/",
+      "title": "Terreno rústico bien situado, bastante llano, en zona rural cerca de Calpe.",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 230000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 17000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/f7/019c4221-3381-75fb-87a4-36f31f98f9f7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2024-11-11T11:37:00.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:5a231b48ff",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/preciosa-parcela-con-impresionantes-vistas-a-la-montana-de-olta-p111/",
+      "title": "Preciosa parcela con impresionantes vistas a la montaña de Oltá",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 215000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1010,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/2d/019c4221-3380-724e-9d75-dcbc9bed002d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2022-05-19T15:05:02.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "agenciamorato:bf6840e72d",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/parcela-en-venta-en-benissa-og17xxtuj/",
+      "title": "Parcela en venta en Benissa",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 345000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1500,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/1b/019eff2e-cb81-75b6-9f8d-91f46d69991b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2021-11-02T10:25:00.000Z",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:9b28fc6dfc",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-tosalet-5-33375/",
+      "title": "Parcela en Jávea | Tosalet 5",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 260000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-tosalet-5-60465.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:57+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:a8eba997e0",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-tosalet-5-33379/",
+      "title": "Parcela en Jávea | Tosalet 5",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 325000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-tosalet-5-60496.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:57+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:6284449e83",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-paichi-29456/",
+      "title": "Parcela en Moraira | Paichi",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-paichi-54857.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:45+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:0da7428b62",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-ambolo-29378/",
+      "title": "Parcela en Jávea | Ambolo",
+      "price": 185760,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 185760
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-ambolo-53471.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:44+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:926879f3e6",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-ambolo-29369/",
+      "title": "Parcela en Jávea | Ambolo",
+      "price": 259600,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 259600
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-ambolo-53427.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:43+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:a0e096ce5e",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-el-tesoro-28531/",
+      "title": "Parcela en Moraira | El Tesoro",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-el-tesoro-43141.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:20+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:096123218e",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-benimeit-28515/",
+      "title": "Parcela en Moraira | Benimeit",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-benimeit-43090.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:19+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:621b80e034",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-benimeit-28503/",
+      "title": "Parcela en Moraira | Benimeit",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-benimeit-43025.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:18+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:cfa7dfd540",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-benimeit-28491/",
+      "title": "Parcela en Moraira | Benimeit",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-benimeit-42933.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:17+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:9695c6daae",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-moraira-el-portet-28277/",
+      "title": "Parcela en Moraira | El Portet",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-moraira-el-portet-40362.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:21:14+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:731d0d9722",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-benissa-la-fustera-27687/",
+      "title": "Apartamento en Benissa | La Fustera",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 330000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/apartment-benissa-la-fustera-32449.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:20:58+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:b01b1c5e77",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-montgo-23553/",
+      "title": "Parcela en Jávea | Montgo",
+      "price": 169000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 169000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-montgo-65012.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:19:07+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:d077fcf888",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-rafalet-23187/",
+      "title": "Parcela en Jávea | Rafalet",
+      "price": 150000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 150000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-rafalet-64813.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:18:53+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:b828ce331a",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-tosalet-23130/",
+      "title": "Parcela en Jávea | Tosalet",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 250000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-tosalet-64782.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-20T11:18:50+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:dcc15b5ebb",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-la-cala-81298/",
+      "title": "Parcela en Jávea | La Cala",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 330000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/05/land-javea-la-cala-70024.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-31T11:02:37+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:8f3734bde9",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-la-cala-81302/",
+      "title": "Parcela en Jávea | La Cala",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 330000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/05/land-javea-la-cala-70018.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-31T11:02:37+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:5641eb1b1e",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-benitachell-cumbre-del-sol-47348/",
+      "title": "Apartamento en Benitachell | Cumbre del Sol",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 190000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/03/apartment-penthouse-benitachell-cumbre-del-sol-00080.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-31T10:56:38+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    },
+    {
+      "id": "deseohomes:dd9357d008",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/apartamento-en-el-verger-76215/",
+      "title": "Apartamento en El Verger",
+      "price": 242000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 242000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/04/appartement-el-verger-87291.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-13T12:33:21+00:00",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active"
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:dd30a6545f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9242178",
+      "title": "Terreno/Finca Rústica en Casco Urbano, Teulada-Moraira en venta - 314.300 € (Ref: 9242178)",
+      "price": 314300,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 314300
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/29054/9242178/20250918231810/w1920h1440/s640x480/x-262443614.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-dd30a6545f.webp",
+        "thumb": "thinkspain-dd30a6545f.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29054/9242178/20250918231810/w1920h1440/s640x480/x-262443614.jpg"
+      },
+      "previousPrice": 325000,
+      "delta": -10700,
+      "deltaPct": -3.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:7bce4b47ce",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/7652002",
+      "title": "Solar/Parcela en Casco Urbano, Teulada-Moraira en venta - 314.300 € (Ref: 7652002)",
+      "price": 314300,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 325000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 314300
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/30750/7652002/20230914141149/w1920h1440/s640x480/x-215464938.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-7bce4b47ce.webp",
+        "thumb": "thinkspain-7bce4b47ce.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30750/7652002/20230914141149/w1920h1440/s640x480/x-215464938.jpg"
+      },
+      "previousPrice": 325000,
+      "delta": -10700,
+      "deltaPct": -3.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:8df2491e82",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/3082871",
+      "title": "Solar/Parcela en Jalón / Xaló en venta - 99.000 € (Ref: 3082871)",
+      "price": 99000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 110000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 99000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/17980/3082871/20260612010434/w800h600/s640x480/x-283294340.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-8df2491e82.webp",
+        "thumb": "thinkspain-8df2491e82.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/17980/3082871/20260612010434/w800h600/s640x480/x-283294340.jpg"
+      },
+      "previousPrice": 110000,
+      "delta": -11000,
+      "deltaPct": -10,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:b2e8c3fcb6",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9618063",
+      "title": "Apartamento de 1 habitación en Calpe / Calp en venta con piscina garaje - 305.000 € (Ref: 9618063)",
+      "price": 305000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 315000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 305000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 3631,
+      "image": "https://cdn.thinkwebcontent.com/property/5673/9618063/20260220120120/w1400h1140/s640x480/x-273705438.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "previousPrice": 315000,
+      "delta": -10000,
+      "deltaPct": -3.2,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ee6fda5cf5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9584584",
+      "title": "Finca/Casa Rural de 3 habitaciones en Alcalalí / Alcanalí en venta con garaje - 279.000 € (Ref: 9584584)",
+      "price": 279000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 279000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "villa",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3875,
+      "image": "https://cdn.thinkwebcontent.com/property/38221/9584584/20260210135357/w1200h1197/s640x480/x-272761192.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "previousPrice": 285000,
+      "delta": -6000,
+      "deltaPct": -2.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:8c026f8e42",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9896383",
+      "title": "Piso de 3 habitaciones en Els Poblets en venta - 229.000 € (Ref: 9896383)",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 299000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 229000
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 156,
+      "plotM2": null,
+      "pricePerM2": 1468,
+      "image": "https://cdn.thinkwebcontent.com/property/27505/9896383/20260612011904/w1920h1280/s640x480/x-283300881.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "previousPrice": 299000,
+      "delta": -70000,
+      "deltaPct": -23.4,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [
+    {
+      "id": "thinkspain:ae403178c7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8489129",
+      "title": "Solar/Parcela en Benissa en venta - 300.000 € (Ref: 8489129)",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 300000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/30750/8489129/20240828071941/w1201h1600/s640x480/x-237745021.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "previousPrice": 275000,
+      "delta": 25000,
+      "deltaPct": 9.1,
+      "direction": "rise"
+    },
+    {
+      "id": "thinkspain:51d77d13fd",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9242206",
+      "title": "Terreno/Finca Rústica en Benissa en venta - 300.000 € (Ref: 9242206)",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 300000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/29054/9242206/20250918151902/w1201h1600/s640x480/x-262429425.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "previousPrice": 275000,
+      "delta": 25000,
+      "deltaPct": 9.1,
+      "direction": "rise"
+    }
+  ],
+  "removals": [
+    {
+      "id": "llobell:219f8e7b88",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-para-reformar-en-benissa-c602/",
+      "title": "Se Vende casa de pueblo para reformar en Benissa.",
+      "price": 229900,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 229900
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "house",
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 50,
+      "plotM2": 500,
+      "pricePerM2": 4598,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "llobell-219f8e7b88.webp",
+        "thumb": "llobell-219f8e7b88.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg"
+      },
+      "removedOn": "2026-08-23"
+    }
+  ],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2543,
+      "status": "ok",
+      "requests": 549,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 39,
+      "status": "ok",
+      "requests": 47,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 13,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 25,
+      "status": "ok",
+      "requests": 50,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 31,
+      "status": "ok",
+      "requests": 56,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 27,
+      "status": "ok",
+      "requests": 74,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 28,
+      "status": "ok",
+      "requests": 42,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 40,
+      "status": "ok",
+      "requests": 55,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 11,
+      "status": "ok",
+      "requests": 20,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 20,
+      "status": "ok",
+      "requests": 35,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 40,
+      "status": "ok",
+      "requests": 87,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 6,
+      "status": "ok",
+      "requests": 10,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 5,
+      "status": "ok",
+      "requests": 13,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 57,
+      "status": "ok",
+      "requests": 180,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 20,
+      "status": "ok",
+      "requests": 1468,
+      "blocked": 0,
+      "errors": 388
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 21,
+      "status": "ok",
+      "requests": 26,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5
+    }
+  ],
+  "bootstrap": true
+}

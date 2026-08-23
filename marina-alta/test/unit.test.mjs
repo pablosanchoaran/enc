@@ -9,6 +9,7 @@ import { readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
+import { renderReport } from '../src/report.mjs'
 import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
 import {
   detectSaleStatus,
@@ -201,6 +202,32 @@ test('el precio sale del anuncio, no de las propiedades similares del pie', () =
     <div class="features-2__price">235.000 €</div>
     <div class="property-3--landscape__price">890.000 €</div>`)
   assert.equal(readPrice(normal), 235000)
+})
+
+test('el informe se genera y sale una tarjeta por anuncio', () => {
+  // Esta prueba existe sobre todo para que `report.mjs` se importe: la página
+  // entera es una plantilla de texto de mil líneas, y una comilla invertida
+  // suelta dentro de un comentario del CSS la parte en dos. Pasó — el fichero
+  // dejó de compilar y los 25 tests siguieron en verde porque ninguno lo
+  // tocaba.
+  const anuncio = {
+    id: 'src:1', source: 'src', agency: 'Agencia', url: 'https://a.test/1',
+    title: 'Casa en Dénia', price: 200000, municipality: 'Dénia', type: 'house',
+    beds: 3, baths: 2, builtM2: 100, plotM2: null, pricePerM2: 2000,
+    saleStatus: 'available', firstSeen: '2026-08-01', lastSeen: '2026-08-01', status: 'active',
+  }
+  const daily = {
+    date: '2026-08-23', additions: [anuncio], priceDrops: [], priceRises: [], removals: [],
+    sources: [], totals: { additions: 1, priceDrops: 0, priceRises: 0, removals: 0 },
+  }
+
+  const html = renderReport({ daily, listings: [anuncio], thumbnails: new Map(), maxPrice: 350000 })
+  assert.match(html, /<meta charset="utf-8">/)
+  assert.equal((html.match(/class="card card--/g) ?? []).length, 2, 'una en altas y otra en el listado')
+  assert.match(html, /Casa en Dénia/)
+  // Una comilla invertida que se cuele parte la plantilla y deja `${...}` sin
+  // interpretar en la salida.
+  assert.doesNotMatch(html, /\$\{/, 'no puede quedar interpolación sin resolver')
 })
 
 test('la misma vivienda en varias agencias se enseña una sola vez', () => {
