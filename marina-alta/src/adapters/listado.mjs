@@ -162,7 +162,31 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
       urls.add(link)
     }
   }
-  log(`  fichas encontradas en los listados: ${urls.size}`)
+  const enElListado = urls.size
+
+  // El listado sirve para descubrir fichas nuevas, no para saber cuáles siguen
+  // en pie. Estas webs no devuelven siempre el mismo catálogo: Llobell sirve
+  // entre 51 y 56 de sus 65 fichas en cada petición, y las quince que rotan
+  // desaparecían del rastreo sin haberse retirado. Una casa de Benissa que
+  // seguía publicada y rebajada acabó dada de baja por eso.
+  //
+  // Así que lo ya conocido se comprueba en su propia URL: si responde, sigue a
+  // la venta; si da 404, entonces sí se ha retirado de verdad.
+  const conocidas = [...known.byUrl.keys()].filter((url) => url.startsWith(source.origin))
+  for (const url of conocidas) urls.add(url)
+
+  // Y también lo que en su día se dio por retirado de esta web: si la ficha
+  // vuelve a responder es que sigue a la venta y la baja fue un error nuestro.
+  // Así una equivocación no se queda para siempre; las vendidas de verdad dan
+  // 404 y se quedan donde están.
+  for (const url of known.removed ?? []) {
+    if (url.startsWith(source.origin)) urls.add(url)
+  }
+  const recuperadas = urls.size - enElListado
+  log(
+    `  fichas encontradas en los listados: ${enElListado}` +
+      (recuperadas > 0 ? ` (+${recuperadas} ya conocidas que hoy no salían)` : ''),
+  )
 
   // Sin lastmod que consultar, se refresca lo que no se conoce y una tanda
   // rotatoria de lo ya visto, para ir enterándose de los cambios de precio.
@@ -185,5 +209,9 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
     const item = parsePropertyPage(html, url)
     if (item) found.push(item)
   }
-  return found
+
+  // `checked` son las fichas que esta pasada ha abierto de verdad. Lo que se
+  // quedó fuera del presupuesto no se ha mirado, y no mirarlo no puede
+  // acercarlo a la baja.
+  return { items: found, checked: new Set(queue) }
 }

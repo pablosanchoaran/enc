@@ -10,7 +10,14 @@
  */
 const MISSING_RUNS_BEFORE_REMOVED = 7
 
-export function diffInventory(previousList, currentList, today) {
+/**
+ * @param {Set<string>|null} checkedUrls Direcciones que esta pasada ha
+ *   comprobado de verdad. Un anuncio solo puede empezar a contar como
+ *   desaparecido si se ha mirado su ficha: hay webs cuyo listado sirve un
+ *   subconjunto rotatorio, y no salir hoy no dice nada. `null` significa que la
+ *   fuente da un catálogo completo y que faltar sí es señal.
+ */
+export function diffInventory(previousList, currentList, today, { checkedUrls = null } = {}) {
   const previous = new Map(previousList.map((item) => [item.id, item]))
   const current = new Map(currentList.map((item) => [item.id, item]))
 
@@ -58,6 +65,14 @@ export function diffInventory(previousList, currentList, today) {
 
   for (const [id, old] of previous) {
     if (current.has(id)) continue
+
+    // Lo que no se ha llegado a mirar se queda como estaba: ni suma un fallo
+    // ni se acerca a la baja. Si no, un presupuesto de refresco corto acabaría
+    // retirando anuncios que siguen publicados.
+    if (checkedUrls && !checkedUrls.has(old.url)) {
+      inventory.push(old)
+      continue
+    }
 
     const missingRuns = (old.missingRuns ?? 0) + 1
     if (missingRuns >= MISSING_RUNS_BEFORE_REMOVED) {

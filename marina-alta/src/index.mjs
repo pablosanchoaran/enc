@@ -175,14 +175,25 @@ async function run() {
   const overBudgetFile = await readJson(OVER_BUDGET_FILE, { updatedAt: null, entries: [] })
   const overBudget = new Map((overBudgetFile.entries ?? []).map((item) => [item.url, item]))
 
+  // Lo que el archivo da por retirado se vuelve a comprobar: si la ficha
+  // responde, la baja fue nuestra y el anuncio sigue publicado.
+  const archiveFile = await readJson(ARCHIVE_FILE, { entries: [] })
+  const removedUrls = (archiveFile.entries ?? [])
+    .filter((item) => item.reason === 'retirado')
+    .map((item) => item.url)
+
   const known = {
     ids: new Set(previousListings.map((item) => item.id)),
     byUrl: new Map(previousListings.map((item) => [item.url, item])),
+    removed: removedUrls,
     overBudget,
   }
 
   const collected = []
   const sourceReports = []
+  /** Fichas abiertas esta pasada por las fuentes de catálogo incompleto. */
+  const checkedUrls = new Set()
+  const sourcesReportingChecked = new Set()
 
   for (const source of sources) {
     const adapter = ADAPTERS[source.adapter]
@@ -203,7 +214,7 @@ async function run() {
 
     let raws = []
     try {
-      raws = await adapter.collect({
+      const salida = await adapter.collect({
         fetcher,
         source,
         known,
@@ -213,6 +224,15 @@ async function run() {
         refreshBudget: args.refreshBudget,
         maxPrice,
       })
+      // Un adaptador puede devolver solo los anuncios, o además el conjunto de
+      // fichas que ha llegado a mirar. Lo segundo lo hacen las fuentes cuyo
+      // listado no es completo, para que lo no comprobado no cuente como
+      // desaparecido.
+      raws = Array.isArray(salida) ? salida : salida.items
+      if (!Array.isArray(salida) && salida.checked) {
+        for (const url of salida.checked) checkedUrls.add(url)
+        sourcesReportingChecked.add(source.id)
+      }
     } catch (error) {
       log(`  ✖ error del adaptador: ${error.message}`)
       sourceReports.push({
@@ -282,7 +302,14 @@ async function run() {
   const untouched = previousListings.filter((item) => !touchedSources.has(item.source))
   const comparable = previousListings.filter((item) => touchedSources.has(item.source))
 
-  const result = diffInventory(comparable, deduped, today)
+  // Las fuentes que informan de lo que han mirado solo pueden dar de baja lo
+  // que hayan mirado; las que dan un catálogo completo (un sitemap, un barrido
+  // exhaustivo) siguen tratando la ausencia como señal.
+  const catalogoCompleto = (item) => !sourcesReportingChecked.has(item.source)
+  const checked = sourcesReportingChecked.size === 0 ? null : new Set(checkedUrls)
+  if (checked) for (const item of comparable) if (catalogoCompleto(item)) checked.add(item.url)
+
+  const result = diffInventory(comparable, deduped, today, { checkedUrls: checked })
   const listings = [...result.inventory, ...untouched]
 
   // La primera vez que se rastrea una fuente, su catálogo entero aparecería

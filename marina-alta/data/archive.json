@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T17:22:35.530Z",
+  "updatedAt": "2026-08-23T22:09:47.980Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -4293,9 +4293,10 @@
       },
       "saleStatus": "available",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
       "archivedOn": "2026-08-23T17:22:35.530Z",
-      "reason": "retirado"
+      "reason": null,
+      "removedOn": null
     },
     {
       "id": "ferrando-moraira:8aa7b8eaeb",

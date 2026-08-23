@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T17:22:35.530Z",
+  "updatedAt": "2026-08-23T22:09:47.980Z",
   "maxPrice": 350000,
   "entries": [
     {
@@ -4634,7 +4634,7 @@
       "source": "llobell",
       "price": 697500,
       "lastmod": null,
-      "seenOn": "2026-08-04"
+      "seenOn": "2026-08-23"
     },
     {
       "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastica-oportunidad-en-benidoleig-c588/",
@@ -25711,6 +25711,13 @@
       "source": "deseohomes",
       "price": 475000,
       "lastmod": "2026-04-08T10:53:29+00:00",
+      "seenOn": "2026-08-23"
+    },
+    {
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-chalet-en-moraira-c605/",
+      "source": "llobell",
+      "price": 575000,
+      "lastmod": null,
       "seenOn": "2026-08-23"
     }
   ]

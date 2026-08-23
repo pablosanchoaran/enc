@@ -1,6 +1,1270 @@
 {
-  "updatedAt": "2026-08-23T17:22:35.530Z",
+  "updatedAt": "2026-08-23T22:09:47.980Z",
   "listings": [
+    {
+      "id": "llobell:cad05391e3",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-chalet-en-pedreguer-c598/",
+      "title": "Se Vende espectacular chalet en Pedreguer",
+      "price": 335000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 335000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": 1203,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/17/344073/55.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-cad05391e3.webp",
+        "thumb": "llobell-cad05391e3.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/17/344073/55.jpeg"
+      }
+    },
+    {
+      "id": "llobell:0cf17580f4",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-plana-en-benitachell-p197/",
+      "title": "Se vende parcela plana en Benitachell",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 320000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11500,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/332968/IMG-20250423-WA0001.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-0cf17580f4.webp",
+        "thumb": "llobell-0cf17580f4.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/332968/IMG-20250423-WA0001.jpeg"
+      }
+    },
+    {
+      "id": "llobell:6e3cfdf985",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p108/",
+      "title": "Se vende parcela en Teulada",
+      "price": 179000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 179000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11682,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c9cc85eb47e8-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-6e3cfdf985.webp",
+        "thumb": "llobell-6e3cfdf985.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c9cc85eb47e8-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:6d6f42e316",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-con-almacen-en-teulada-p223/",
+      "title": "Se vende espectacular parcela con almacén en Teulada",
+      "price": 299990,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 299990
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 13,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/08/07/362774/WhatsAppImage2026-08-06at14.38.35.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-6d6f42e316.webp",
+        "thumb": "llobell-6d6f42e316.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/08/07/362774/WhatsAppImage2026-08-06at14.38.35.jpeg"
+      }
+    },
+    {
+      "id": "llobell:992acb00f0",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a462/",
+      "title": "Se Vende apartamento en Teulada",
+      "price": 222000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 222000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/04/28/357111/20130128_171527.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-992acb00f0.webp",
+        "thumb": "llobell-992acb00f0.thumb.webp",
+        "capturedAt": "2026-08-04T21:28:00.120Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/04/28/357111/20130128_171527.jpeg"
+      }
+    },
+    {
+      "id": "llobell:36675af2ba",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-con-vistas-al-mar-y-montana-en-benitachell-p201/",
+      "title": "Se vende parcela con vistas al mar y montaña en Benitachell",
+      "price": 19500,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 19500
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1400,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/09/336689/ImagendeWhatsApp2025-07-04alas11.53.02_8f4d69ff.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-36675af2ba.webp",
+        "thumb": "llobell-36675af2ba.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/09/336689/ImagendeWhatsApp2025-07-04alas11.53.02_8f4d69ff.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:41258c54f5",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p116/",
+      "title": "Se vende parcela en Teulada",
+      "price": 69000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 69000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5500,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c782adb14105-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-41258c54f5.webp",
+        "thumb": "llobell-41258c54f5.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c782adb14105-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:6bfdf70389",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-rustico-de-12-780-m2-p208/",
+      "title": "Se Vende terreno rustico de 12.780 m2",
+      "price": 70000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 70000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 12780,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339868/4befbe6c-004b-48f9-9265-1cb3b85ca5c8.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-6bfdf70389.webp",
+        "thumb": "llobell-6bfdf70389.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339868/4befbe6c-004b-48f9-9265-1cb3b85ca5c8.jpeg"
+      }
+    },
+    {
+      "id": "llobell:f980ffeb47",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p165/",
+      "title": "Se vende parcela en Benissa",
+      "price": 72500,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 72500
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5919,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303802/11.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-f980ffeb47.webp",
+        "thumb": "llobell-f980ffeb47.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303802/11.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:70602760db",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-benissa-p216/",
+      "title": "Se vende solar en Benissa",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 80000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 504,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/28/347597/1.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-70602760db.webp",
+        "thumb": "llobell-70602760db.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/28/347597/1.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:835be64fbb",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-ondara-p220/",
+      "title": "Se vende parcela en Ondara",
+      "price": 89000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 89000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/06/03/358807/6.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-835be64fbb.webp",
+        "thumb": "llobell-835be64fbb.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/06/03/358807/6.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:dd44198c95",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-teulada-p131/",
+      "title": "Se vende solar en Teulada",
+      "price": 94450,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 94450
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 141,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_60953811a3063-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-dd44198c95.webp",
+        "thumb": "llobell-dd44198c95.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_60953811a3063-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:fdf4e986a0",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-pleno-centro-de-benissa-p164/",
+      "title": "Se vende parcela en pleno centro de Benissa",
+      "price": 100000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 100000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 504,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303444/03.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-fdf4e986a0.webp",
+        "thumb": "llobell-fdf4e986a0.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303444/03.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:cbe7263d41",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-rustico-en-teulada-con-manantial-de-agua-p219/",
+      "title": "Se Vende terreno rustico en Teulada con manantial de agua",
+      "price": 106000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 106000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 6,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/26/355044/1.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-cbe7263d41.webp",
+        "thumb": "llobell-cbe7263d41.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/26/355044/1.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:e7091fab2d",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p218/",
+      "title": "Se Vende parcela en Teulada",
+      "price": 127888,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 127888
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11786,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/02/13/349321/1.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-e7091fab2d.webp",
+        "thumb": "llobell-e7091fab2d.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/02/13/349321/1.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:62d3c546e1",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/casa-de-pueblo-en-ruinas-c279/",
+      "title": "Casa de pueblo en ruinas",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 130000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 200,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_5673fdd3df8b8-source.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-62d3c546e1.webp",
+        "thumb": "llobell-62d3c546e1.thumb.webp",
+        "capturedAt": "2026-08-04T21:28:00.120Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_5673fdd3df8b8-source.jpg"
+      }
+    },
+    {
+      "id": "llobell:5d28a06eb0",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/parcela-en-calpe-p095/",
+      "title": "Parcela en Calpe",
+      "price": 132900,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 132900
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 620,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_56506af388c89-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-5d28a06eb0.webp",
+        "thumb": "llobell-5d28a06eb0.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_56506af388c89-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:a7a8d67e66",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-edificable-en-teulada-p198/",
+      "title": "Se vende solar edificable en Teulada",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 135000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 160,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/04/336443/P102-0000-g.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-a7a8d67e66.webp",
+        "thumb": "llobell-a7a8d67e66.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/04/336443/P102-0000-g.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:d4c3fc9337",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-en-benissa-p209/",
+      "title": "Se Vende terreno en Benissa",
+      "price": 137000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 137000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10331,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/29/341562/1.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-d4c3fc9337.webp",
+        "thumb": "llobell-d4c3fc9337.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/29/341562/1.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:529cfd24a8",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p117/",
+      "title": "Se vende parcela en Benissa",
+      "price": 138900,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 138900
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10000,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd993b60981-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-529cfd24a8.webp",
+        "thumb": "llobell-529cfd24a8.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd993b60981-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:9dec61477a",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/increible-parcela-a-500-metros-de-benissa-con-vistas-al-mar-p174/",
+      "title": "INCREÍBLE PARCELA A 500 METROS DE BENISSA CON VISTAS AL MAR",
+      "price": 139000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 139000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10500,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308173/PHOTO-2023-10-13-22-44-06.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-9dec61477a.webp",
+        "thumb": "llobell-9dec61477a.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308173/PHOTO-2023-10-13-22-44-06.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:f27506a87f",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p128/",
+      "title": "Se vende parcela en Benissa",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 140000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_608c0849ab23b-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-f27506a87f.webp",
+        "thumb": "llobell-f27506a87f.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_608c0849ab23b-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:c4eebfbda8",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-en-benigembla-c629/",
+      "title": "Se vende casa de pueblo en Benigembla",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 140000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "house",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 218,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/08/361041/1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-c4eebfbda8.webp",
+        "thumb": "llobell-c4eebfbda8.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/08/361041/1.jpeg"
+      }
+    },
+    {
+      "id": "llobell:71fb456e89",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/estupenda-parcela-en-benissa-p173/",
+      "title": "ESTUPENDA PARCELA EN BENISSA",
+      "price": 149000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 149000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10200,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308171/PHOTO-2023-.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-71fb456e89.webp",
+        "thumb": "llobell-71fb456e89.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308171/PHOTO-2023-.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:c0df5f063e",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastico-parcela-rustica-en-benissa-p129/",
+      "title": "Se vende fantástico parcela rustica  en Benissa",
+      "price": 149468,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 149468
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10789,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_615c2fa71169e-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-c0df5f063e.webp",
+        "thumb": "llobell-c0df5f063e.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_615c2fa71169e-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:26284040e1",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/apartamento-en-ondara-con-vista-a-plaza-de-los-toros-en-venta-a463/",
+      "title": "Apartamento en Ondara con vista a plaza de los toros en venta.",
+      "price": 154900,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 154900
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/05/18/358262/16.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-26284040e1.webp",
+        "thumb": "llobell-26284040e1.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/05/18/358262/16.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:afe46c3367",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/parcela-en-venta-en-teulada-alicante-de-10-000-m-p149/",
+      "title": "Parcela en venta en Teulada, Alicante, de 10.000 m².",
+      "price": 159500,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 159500
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10000,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_614b52236437b-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-afe46c3367.webp",
+        "thumb": "llobell-afe46c3367.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_614b52236437b-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:62381721ef",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-con-impresionantes-vistas-al-penon-de-ifach-y-a-calpe-p217/",
+      "title": "Se vende parcela con impresionantes vistas al Peñón de Ifach y a Calpe",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 160000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 794,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/30/347836/3.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-62381721ef.webp",
+        "thumb": "llobell-62381721ef.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/30/347836/3.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:11efef8dcc",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-teulada-p214/",
+      "title": "Se Vende solar en Teulada",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 160000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 165,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/02/343253/4.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-11efef8dcc.webp",
+        "thumb": "llobell-11efef8dcc.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/02/343253/4.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:5ffb31cc37",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-raco-de-nadal-p182/",
+      "title": "Se vende parcela en Racó de Nadal",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 165000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 700,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/311624/parcela1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-5ffb31cc37.webp",
+        "thumb": "llobell-5ffb31cc37.thumb.webp",
+        "capturedAt": "2026-08-04T21:28:00.120Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/311624/parcela1.jpeg"
+      }
+    },
+    {
+      "id": "llobell:95197ecf8b",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a466/",
+      "title": "Se vende apartamento en Teulada",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 165000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/27/362102/WhatsAppImage2026-07-03at17.18.15.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-95197ecf8b.webp",
+        "thumb": "llobell-95197ecf8b.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/27/362102/WhatsAppImage2026-07-03at17.18.15.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:108332aa5e",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p118/",
+      "title": "Se vende parcela en Benissa",
+      "price": 169000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 139000
+        },
+        {
+          "date": "2026-08-21",
+          "price": 169000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11836,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd9e72e1745-source.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-108332aa5e.webp",
+        "thumb": "llobell-108332aa5e.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd9e72e1745-source.jpg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:be97ce1f94",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastica-parcela-con-casa-agricola-en-teulada-p188/",
+      "title": "Se vende fantástica parcela con casa agrícola en Teulada",
+      "price": 169888,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 169888
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 6700,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/318406/7.jpeg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-be97ce1f94.webp",
+        "thumb": "llobell-be97ce1f94.thumb.webp",
+        "capturedAt": "2026-08-04T21:24:55.062Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/318406/7.jpeg"
+      },
+      "fromFeed": false
+    },
+    {
+      "id": "llobell:49e1025338",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a145/",
+      "title": "Se vende apartamento en Teulada",
+      "price": 169990,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 169990
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/08/10/185115/1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-49e1025338.webp",
+        "thumb": "llobell-49e1025338.thumb.webp",
+        "capturedAt": "2026-08-04T21:28:00.120Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5ae42b1795672-source.jpg"
+      }
+    },
+    {
+      "id": "llobell:d8f28a0014",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-p207/",
+      "title": "Se Vende espectacular parcela.",
+      "price": 174900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 174900
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 16800,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339813/foto1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-d8f28a0014.webp",
+        "thumb": "llobell-d8f28a0014.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339813/foto1.jpeg"
+      }
+    },
+    {
+      "id": "llobell:5a07a69d26",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-venden-parcelas-en-benitachell-p049/",
+      "title": "Se venden parcelas en Benitachell",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 190000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 700,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5d236d43a9242-source.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-5a07a69d26.webp",
+        "thumb": "llobell-5a07a69d26.thumb.webp",
+        "capturedAt": "2026-08-21T22:37:53.623Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5d236d43a9242-source.jpg"
+      }
+    },
     {
       "id": "thinkspain:7326224100",
       "source": "thinkspain",
@@ -62956,7 +64220,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-0154f91515.webp",
+        "thumb": "thinkspain-0154f91515.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9714256/20260324182231/w1181h787/s640x480/x-276434639.jpg"
+      }
     },
     {
       "id": "thinkspain:2c6e6086b0",
@@ -62985,7 +64255,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-2c6e6086b0.webp",
+        "thumb": "thinkspain-2c6e6086b0.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25062/8727950/20250909033216/w1600h1200/s640x480/x-261614027.jpg"
+      }
     },
     {
       "id": "thinkspain:ee9780c85f",
@@ -63014,7 +64290,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ee9780c85f.webp",
+        "thumb": "thinkspain-ee9780c85f.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36408/8537869/20240920160532/w1600h1200/s640x480/x-239278424.jpg"
+      }
     },
     {
       "id": "thinkspain:8ba7360761",
@@ -63043,7 +64325,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-8ba7360761.webp",
+        "thumb": "thinkspain-8ba7360761.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4509/7074036/20220915033009/w2560h1440/s640x480/x-194370906.jpg"
+      }
     },
     {
       "id": "thinkspain:b21d2340b4",
@@ -63072,7 +64360,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-b21d2340b4.webp",
+        "thumb": "thinkspain-b21d2340b4.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9714240/20260324182128/w640h480/s640x480/x-276434336.jpg"
+      }
     },
     {
       "id": "thinkspain:298d68cd5b",
@@ -63101,7 +64395,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-298d68cd5b.webp",
+        "thumb": "thinkspain-298d68cd5b.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9867365/20260529091653/w4624h2134/s640x480/x-282316511.jpg"
+      }
     },
     {
       "id": "thinkspain:f62d633457",
@@ -63130,7 +64430,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-f62d633457.webp",
+        "thumb": "thinkspain-f62d633457.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4509/7074035/20220915033005/w2560h1440/s640x480/x-194370903.jpg"
+      }
     },
     {
       "id": "thinkspain:bf7042a4ee",
@@ -63159,7 +64465,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-bf7042a4ee.webp",
+        "thumb": "thinkspain-bf7042a4ee.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4509/8758705/20250123123028/w1464h1098/s640x480/x-246303102.jpg"
+      }
     },
     {
       "id": "thinkspain:311a0b75c5",
@@ -63188,7 +64500,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-311a0b75c5.webp",
+        "thumb": "thinkspain-311a0b75c5.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25810/8695480/20241216112115/w1200h900/s640x480/x-244336517.jpg"
+      }
     },
     {
       "id": "thinkspain:b134438d2b",
@@ -63217,7 +64535,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-b134438d2b.webp",
+        "thumb": "thinkspain-b134438d2b.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25810/8695545/20241216112243/w1400h645/s640x480/x-244337340.jpg"
+      }
     },
     {
       "id": "thinkspain:8e110010b1",
@@ -63281,7 +64605,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-db5bd80035.webp",
+        "thumb": "thinkspain-db5bd80035.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/18366/10004320/20260807090233/w1300h729/s640x480/x-286905642.jpg"
+      }
     },
     {
       "id": "thinkspain:75c3aaaed5",
@@ -63310,7 +64640,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-75c3aaaed5.webp",
+        "thumb": "thinkspain-75c3aaaed5.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30310/9079876/20250624122314/w1020h680/s640x480/x-256187683.jpg"
+      }
     },
     {
       "id": "thinkspain:893fd137ec",
@@ -63339,7 +64675,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-893fd137ec.webp",
+        "thumb": "thinkspain-893fd137ec.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/18366/7670350/20230704121820/w4608h3456/s640x480/x-211856922.jpg"
+      }
     },
     {
       "id": "thinkspain:9eabaeb3d4",
@@ -63368,7 +64710,13 @@
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
       "missingRuns": 0,
-      "status": "active"
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-9eabaeb3d4.webp",
+        "thumb": "thinkspain-9eabaeb3d4.thumb.webp",
+        "capturedAt": "2026-08-23T22:09:47.981Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/18366/4588734/20260108124623/w1600h897/s640x480/x-270108232.jpg"
+      }
     },
     {
       "id": "thinkspain:67d3c33575",
@@ -87406,1077 +88754,6 @@
       "fromFeed": false
     },
     {
-      "id": "llobell:5a07a69d26",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-venden-parcelas-en-benitachell-p049/",
-      "title": "Se venden parcelas en Benitachell",
-      "price": 190000,
-      "priceHistory": [
-        {
-          "date": "2026-08-21",
-          "price": 190000
-        }
-      ],
-      "municipality": "El Poble Nou de Benitatxell",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 700,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5d236d43a9242-source.jpg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-5a07a69d26.webp",
-        "thumb": "llobell-5a07a69d26.thumb.webp",
-        "capturedAt": "2026-08-21T22:37:53.623Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5d236d43a9242-source.jpg"
-      }
-    },
-    {
-      "id": "llobell:36675af2ba",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-con-vistas-al-mar-y-montana-en-benitachell-p201/",
-      "title": "Se vende parcela con vistas al mar y montaña en Benitachell",
-      "price": 19500,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 19500
-        }
-      ],
-      "municipality": "El Poble Nou de Benitatxell",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 1400,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/09/336689/ImagendeWhatsApp2025-07-04alas11.53.02_8f4d69ff.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-36675af2ba.webp",
-        "thumb": "llobell-36675af2ba.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/09/336689/ImagendeWhatsApp2025-07-04alas11.53.02_8f4d69ff.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:41258c54f5",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p116/",
-      "title": "Se vende parcela en Teulada",
-      "price": 69000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 69000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 5500,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c782adb14105-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-41258c54f5.webp",
-        "thumb": "llobell-41258c54f5.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c782adb14105-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:6bfdf70389",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-rustico-de-12-780-m2-p208/",
-      "title": "Se Vende terreno rustico de 12.780 m2",
-      "price": 70000,
-      "priceHistory": [
-        {
-          "date": "2026-08-22",
-          "price": 70000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 12780,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339868/4befbe6c-004b-48f9-9265-1cb3b85ca5c8.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "llobell:f980ffeb47",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p165/",
-      "title": "Se vende parcela en Benissa",
-      "price": 72500,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 72500
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 5919,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303802/11.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-f980ffeb47.webp",
-        "thumb": "llobell-f980ffeb47.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303802/11.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:70602760db",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-benissa-p216/",
-      "title": "Se vende solar en Benissa",
-      "price": 80000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 80000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 504,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/28/347597/1.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-70602760db.webp",
-        "thumb": "llobell-70602760db.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/28/347597/1.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:835be64fbb",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-ondara-p220/",
-      "title": "Se vende parcela en Ondara",
-      "price": 89000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 89000
-        }
-      ],
-      "municipality": "Ondara",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 5,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/06/03/358807/6.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-835be64fbb.webp",
-        "thumb": "llobell-835be64fbb.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/06/03/358807/6.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:dd44198c95",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-teulada-p131/",
-      "title": "Se vende solar en Teulada",
-      "price": 94450,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 94450
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 141,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_60953811a3063-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-dd44198c95.webp",
-        "thumb": "llobell-dd44198c95.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_60953811a3063-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:fdf4e986a0",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-pleno-centro-de-benissa-p164/",
-      "title": "Se vende parcela en pleno centro de Benissa",
-      "price": 100000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 100000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 504,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303444/03.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-fdf4e986a0.webp",
-        "thumb": "llobell-fdf4e986a0.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/303444/03.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:cbe7263d41",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-rustico-en-teulada-con-manantial-de-agua-p219/",
-      "title": "Se Vende terreno rustico en Teulada con manantial de agua",
-      "price": 106000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 106000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 6,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/26/355044/1.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-cbe7263d41.webp",
-        "thumb": "llobell-cbe7263d41.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/26/355044/1.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:e7091fab2d",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p218/",
-      "title": "Se Vende parcela en Teulada",
-      "price": 127888,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 127888
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 11786,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/02/13/349321/1.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-e7091fab2d.webp",
-        "thumb": "llobell-e7091fab2d.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/02/13/349321/1.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:62d3c546e1",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/casa-de-pueblo-en-ruinas-c279/",
-      "title": "Casa de pueblo en ruinas",
-      "price": 130000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 130000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "house",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 200,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_5673fdd3df8b8-source.jpg",
-      "saleStatus": "reserved",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-62d3c546e1.webp",
-        "thumb": "llobell-62d3c546e1.thumb.webp",
-        "capturedAt": "2026-08-04T21:28:00.120Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_5673fdd3df8b8-source.jpg"
-      }
-    },
-    {
-      "id": "llobell:5d28a06eb0",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/parcela-en-calpe-p095/",
-      "title": "Parcela en Calpe",
-      "price": 132900,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 132900
-        }
-      ],
-      "municipality": "Calp / Calpe",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 620,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_56506af388c89-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-5d28a06eb0.webp",
-        "thumb": "llobell-5d28a06eb0.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/inmobiliariamome-propiedades_56506af388c89-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:a7a8d67e66",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-edificable-en-teulada-p198/",
-      "title": "Se vende solar edificable en Teulada",
-      "price": 135000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 135000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 160,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/04/336443/P102-0000-g.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-a7a8d67e66.webp",
-        "thumb": "llobell-a7a8d67e66.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/07/04/336443/P102-0000-g.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:d4c3fc9337",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-terreno-en-benissa-p209/",
-      "title": "Se Vende terreno en Benissa",
-      "price": 137000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 137000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10331,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/29/341562/1.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-d4c3fc9337.webp",
-        "thumb": "llobell-d4c3fc9337.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/29/341562/1.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:529cfd24a8",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p117/",
-      "title": "Se vende parcela en Benissa",
-      "price": 138900,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 138900
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10000,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd993b60981-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-529cfd24a8.webp",
-        "thumb": "llobell-529cfd24a8.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd993b60981-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:9dec61477a",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/increible-parcela-a-500-metros-de-benissa-con-vistas-al-mar-p174/",
-      "title": "INCREÍBLE PARCELA A 500 METROS DE BENISSA CON VISTAS AL MAR",
-      "price": 139000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 139000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10500,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308173/PHOTO-2023-10-13-22-44-06.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-9dec61477a.webp",
-        "thumb": "llobell-9dec61477a.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308173/PHOTO-2023-10-13-22-44-06.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:c4eebfbda8",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-en-benigembla-c629/",
-      "title": "Se vende casa de pueblo en Benigembla",
-      "price": 140000,
-      "priceHistory": [
-        {
-          "date": "2026-08-22",
-          "price": 140000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "house",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 218,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/08/361041/1.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
-      "id": "llobell:f27506a87f",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p128/",
-      "title": "Se vende parcela en Benissa",
-      "price": 140000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 140000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_608c0849ab23b-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-f27506a87f.webp",
-        "thumb": "llobell-f27506a87f.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_608c0849ab23b-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:71fb456e89",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/estupenda-parcela-en-benissa-p173/",
-      "title": "ESTUPENDA PARCELA EN BENISSA",
-      "price": 149000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 149000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10200,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308171/PHOTO-2023-.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-71fb456e89.webp",
-        "thumb": "llobell-71fb456e89.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/308171/PHOTO-2023-.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:c0df5f063e",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastico-parcela-rustica-en-benissa-p129/",
-      "title": "Se vende fantástico parcela rustica  en Benissa",
-      "price": 149468,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 149468
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10789,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_615c2fa71169e-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-c0df5f063e.webp",
-        "thumb": "llobell-c0df5f063e.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_615c2fa71169e-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:26284040e1",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/apartamento-en-ondara-con-vista-a-plaza-de-los-toros-en-venta-a463/",
-      "title": "Apartamento en Ondara con vista a plaza de los toros en venta.",
-      "price": 154900,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 154900
-        }
-      ],
-      "municipality": "Ondara",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 1,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/05/18/358262/16.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-26284040e1.webp",
-        "thumb": "llobell-26284040e1.thumb.webp",
-        "capturedAt": "2026-08-04T18:37:43.871Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/05/18/358262/16.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:afe46c3367",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/parcela-en-venta-en-teulada-alicante-de-10-000-m-p149/",
-      "title": "Parcela en venta en Teulada, Alicante, de 10.000 m².",
-      "price": 159500,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 159500
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 10000,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_614b52236437b-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-afe46c3367.webp",
-        "thumb": "llobell-afe46c3367.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_614b52236437b-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:62381721ef",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-con-impresionantes-vistas-al-penon-de-ifach-y-a-calpe-p217/",
-      "title": "Se vende parcela con impresionantes vistas al Peñón de Ifach y a Calpe",
-      "price": 160000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 160000
-        }
-      ],
-      "municipality": "Calp / Calpe",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 794,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/30/347836/3.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-62381721ef.webp",
-        "thumb": "llobell-62381721ef.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/30/347836/3.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:11efef8dcc",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-solar-en-teulada-p214/",
-      "title": "Se Vende solar en Teulada",
-      "price": 160000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 160000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 165,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/02/343253/4.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-11efef8dcc.webp",
-        "thumb": "llobell-11efef8dcc.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/02/343253/4.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:5ffb31cc37",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-raco-de-nadal-p182/",
-      "title": "Se vende parcela en Racó de Nadal",
-      "price": 165000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 165000
-        }
-      ],
-      "municipality": "El Poble Nou de Benitatxell",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 700,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/311624/parcela1.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-5ffb31cc37.webp",
-        "thumb": "llobell-5ffb31cc37.thumb.webp",
-        "capturedAt": "2026-08-04T21:28:00.120Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/311624/parcela1.jpeg"
-      }
-    },
-    {
-      "id": "llobell:95197ecf8b",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a466/",
-      "title": "Se vende apartamento en Teulada",
-      "price": 165000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 165000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/27/362102/WhatsAppImage2026-07-03at17.18.15.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-95197ecf8b.webp",
-        "thumb": "llobell-95197ecf8b.thumb.webp",
-        "capturedAt": "2026-08-04T18:37:43.871Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/07/27/362102/WhatsAppImage2026-07-03at17.18.15.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:108332aa5e",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-benissa-p118/",
-      "title": "Se vende parcela en Benissa",
-      "price": 169000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 139000
-        },
-        {
-          "date": "2026-08-21",
-          "price": 169000
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 11836,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd9e72e1745-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-108332aa5e.webp",
-        "thumb": "llobell-108332aa5e.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5efd9e72e1745-source.jpg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:be97ce1f94",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastica-parcela-con-casa-agricola-en-teulada-p188/",
-      "title": "Se vende fantástica parcela con casa agrícola en Teulada",
-      "price": 169888,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 169888
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 6700,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/318406/7.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-be97ce1f94.webp",
-        "thumb": "llobell-be97ce1f94.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/318406/7.jpeg"
-      },
-      "fromFeed": false
-    },
-    {
-      "id": "llobell:49e1025338",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a145/",
-      "title": "Se vende apartamento en Teulada",
-      "price": 169990,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 169990
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "apartment",
-      "beds": 2,
-      "baths": 2,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/08/10/185115/1.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active",
-      "photo": {
-        "file": "llobell-49e1025338.webp",
-        "thumb": "llobell-49e1025338.thumb.webp",
-        "capturedAt": "2026-08-04T21:28:00.120Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5ae42b1795672-source.jpg"
-      }
-    },
-    {
-      "id": "llobell:d8f28a0014",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-p207/",
-      "title": "Se Vende espectacular parcela.",
-      "price": 174900,
-      "priceHistory": [
-        {
-          "date": "2026-08-22",
-          "price": 174900
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 16800,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/09/29/339813/foto1.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-23",
-      "missingRuns": 0,
-      "status": "active"
-    },
-    {
       "id": "lyt:f2b9a64669",
       "source": "lyt",
       "agency": "LYT Properties",
@@ -99961,162 +100238,6 @@
       "fromFeed": false
     },
     {
-      "id": "llobell:6d6f42e316",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-con-almacen-en-teulada-p223/",
-      "title": "Se vende espectacular parcela con almacén en Teulada",
-      "price": 299990,
-      "priceHistory": [
-        {
-          "date": "2026-08-21",
-          "price": 299990
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 13,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/08/07/362774/WhatsAppImage2026-08-06at14.38.35.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-22",
-      "missingRuns": 1,
-      "status": "stale"
-    },
-    {
-      "id": "llobell:992acb00f0",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-teulada-a462/",
-      "title": "Se Vende apartamento en Teulada",
-      "price": 222000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 222000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "apartment",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": null,
-      "plotM2": null,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/04/28/357111/20130128_171527.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-22",
-      "missingRuns": 2,
-      "status": "stale",
-      "photo": {
-        "file": "llobell-992acb00f0.webp",
-        "thumb": "llobell-992acb00f0.thumb.webp",
-        "capturedAt": "2026-08-04T21:28:00.120Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/04/28/357111/20130128_171527.jpeg"
-      }
-    },
-    {
-      "id": "llobell:cad05391e3",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-chalet-en-pedreguer-c598/",
-      "title": "Se Vende espectacular chalet en Pedreguer",
-      "price": 335000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 335000
-        }
-      ],
-      "municipality": "Pedreguer",
-      "type": "villa",
-      "beds": 3,
-      "baths": 2,
-      "builtM2": null,
-      "plotM2": 1203,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/17/344073/55.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
-      "missingRuns": 4,
-      "status": "stale"
-    },
-    {
-      "id": "llobell:0cf17580f4",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-plana-en-benitachell-p197/",
-      "title": "Se vende parcela plana en Benitachell",
-      "price": 320000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 320000
-        }
-      ],
-      "municipality": "El Poble Nou de Benitatxell",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 162,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/332968/IMG-20250423-WA0001.jpeg",
-      "saleStatus": "available",
-      "fromFeed": false,
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
-      "missingRuns": 5,
-      "status": "stale"
-    },
-    {
-      "id": "llobell:6e3cfdf985",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-parcela-en-teulada-p108/",
-      "title": "Se vende parcela en Teulada",
-      "price": 179000,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 179000
-        }
-      ],
-      "municipality": "Teulada-Moraira",
-      "type": "plot",
-      "beds": null,
-      "baths": null,
-      "builtM2": null,
-      "plotM2": 108,
-      "pricePerM2": null,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c9cc85eb47e8-source.jpg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
-      "missingRuns": 6,
-      "status": "stale",
-      "photo": {
-        "file": "llobell-6e3cfdf985.webp",
-        "thumb": "llobell-6e3cfdf985.thumb.webp",
-        "capturedAt": "2026-08-04T21:24:55.062Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/llobellinmobiliaris-propiedades_5c9cc85eb47e8-source.jpg"
-      }
-    },
-    {
       "id": "benimo-villas:855b86580d",
       "source": "benimo-villas",
       "agency": "Benimo Villas",
@@ -107065,6 +107186,41 @@
         "thumb": "deseohomes-6dae26a081.thumb.webp",
         "capturedAt": "2026-08-13T21:58:09.447Z",
         "sourceUrl": "https://deseohomes.com/wp-content/uploads/2026/02/land-javea-montgo-64621.jpg"
+      }
+    },
+    {
+      "id": "llobell:219f8e7b88",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-para-reformar-en-benissa-c602/",
+      "title": "Se Vende casa de pueblo para reformar en Benissa.",
+      "price": 229900,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 229900
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "house",
+      "beds": 5,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": 95,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-23",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-219f8e7b88.webp",
+        "thumb": "llobell-219f8e7b88.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg"
       }
     }
   ]

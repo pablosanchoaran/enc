@@ -1,12 +1,12 @@
 {
   "date": "2026-08-23",
-  "generatedAt": "2026-08-23T17:22:35.530Z",
+  "generatedAt": "2026-08-23T22:09:47.980Z",
   "totals": {
     "inventory": 3235,
     "additions": 39,
     "priceDrops": 6,
     "priceRises": 2,
-    "removals": 1
+    "removals": 0
   },
   "additions": [
     {
@@ -1459,43 +1459,7 @@
       "direction": "rise"
     }
   ],
-  "removals": [
-    {
-      "id": "llobell:219f8e7b88",
-      "source": "llobell",
-      "agency": "Llobell Inmobiliaris",
-      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-casa-de-pueblo-para-reformar-en-benissa-c602/",
-      "title": "Se Vende casa de pueblo para reformar en Benissa.",
-      "price": 229900,
-      "priceHistory": [
-        {
-          "date": "2026-08-04",
-          "price": 229900
-        }
-      ],
-      "municipality": "Benissa",
-      "type": "house",
-      "beds": 1,
-      "baths": 2,
-      "builtM2": 50,
-      "plotM2": 500,
-      "pricePerM2": 4598,
-      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg",
-      "saleStatus": "available",
-      "lastmod": null,
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04",
-      "missingRuns": 6,
-      "status": "stale",
-      "photo": {
-        "file": "llobell-219f8e7b88.webp",
-        "thumb": "llobell-219f8e7b88.thumb.webp",
-        "capturedAt": "2026-08-04T18:37:43.871Z",
-        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/03/09/353412/26.jpeg"
-      },
-      "removedOn": "2026-08-23"
-    }
-  ],
+  "removals": [],
   "sources": [
     {
       "id": "thinkspain",
@@ -1536,9 +1500,9 @@
     {
       "id": "llobell",
       "agency": "Llobell Inmobiliaris",
-      "listings": 31,
+      "listings": 36,
       "status": "ok",
-      "requests": 56,
+      "requests": 60,
       "blocked": 0,
       "errors": 0
     },

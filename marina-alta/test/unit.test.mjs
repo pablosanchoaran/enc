@@ -157,6 +157,36 @@ test('una baja solo se anota tras una semana sin verla', () => {
   assert.equal(final.inventory.length, 0)
 })
 
+test('lo que no se ha llegado a mirar no se acerca a la baja', () => {
+  // Llobell sirve un subconjunto rotatorio de su catálogo: entre 51 y 56 de
+  // sus 65 fichas por petición. Una casa de Benissa que seguía publicada
+  // —y rebajada— se dio de baja porque llevaba semanas sin salir en el
+  // listado, sin que nadie hubiera abierto su ficha ni una vez.
+  const otra = { ...base, id: 'src:otro', url: 'https://a.test/2' }
+
+  // Sin comprobar: se queda igual, ni fallo ni baja.
+  let inventario = [base, otra]
+  const retiradas = []
+  for (let dia = 2; dia <= 9; dia += 1) {
+    const r = diffInventory(inventario, [], `2026-08-${String(dia).padStart(2, '0')}`, {
+      checkedUrls: new Set(['https://a.test/2']),
+    })
+    inventario = r.inventory
+    retiradas.push(...r.removals)
+  }
+  assert.deepEqual(
+    retiradas.map((i) => i.id),
+    ['src:otro'],
+    'solo se retira la que se comprobó y no estaba',
+  )
+  const sinTocar = inventario.find((i) => i.id === base.id)
+  assert.equal(sinTocar.missingRuns ?? 0, 0, 'el que no se mira no acumula fallos')
+
+  // La que sí se comprobó y no estaba, esa sí se retira.
+  const mirada = inventario.find((i) => i.id === 'src:otro')
+  assert.equal(mirada, undefined, 'la comprobada y ausente ya se ha retirado')
+})
+
 test('un robots.txt que no se puede leer decide si se rastrea o no', async () => {
   const respond = (status, body = '') => async () => ({
     status,
