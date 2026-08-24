@@ -11,6 +11,7 @@
 import * as cheerio from 'cheerio'
 import {
   detectSaleStatus,
+  extractJsonLd,
   detectType,
   metaContent,
   parseArea,
@@ -89,13 +90,47 @@ export function readIconFeatures($, target) {
   })
 }
 
+/**
+ * Ficha con datos estructurados. La plataforma que hay detrás de varias de
+ * estas webs va renovando plantillas, y las nuevas ya no llevan ninguna clase
+ * con "price": el importe visible va en utilidades de Tailwind sin significado
+ * y en la misma página aparecen importes de propiedades relacionadas. Bindley
+ * migró así y se quedó en cero anuncios de un día para otro.
+ *
+ * Lo que sí publican es un `RealEstateListing` de schema.org con el precio y
+ * la localidad. Es el dato que la propia agencia da a leer a las máquinas, así
+ * que vale mucho más que rebuscar números en el maquetado — en esa ficha, el
+ * primer importe del DOM eran 749.000 € de otra casa y el precio real 386.400.
+ */
+function readStructured(html) {
+  for (const block of extractJsonLd(html)) {
+    for (const node of block['@graph'] ?? [block]) {
+      if (node['@type'] !== 'RealEstateListing' && node['@type'] !== 'Product') continue
+      const price = Number(node.offers?.price)
+      if (!Number.isFinite(price) || price <= 0) continue
+      return {
+        price,
+        locality: node.address?.addressLocality ?? null,
+        title: typeof node.name === 'string' ? node.name : null,
+        image: Array.isArray(node.image) ? node.image[0] : (node.image ?? null),
+      }
+    }
+  }
+  return null
+}
+
 export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
-  const title =
-    $('h1').first().text().trim() || metaContent(html, 'og:title') || null
+  const structured = readStructured(html)
 
-  const price = readPrice($)
+  const title =
+    $('h1').first().text().trim() || structured?.title || metaContent(html, 'og:title') || null
+
+  // Manda el precio del maquetado, que es el que está probado contra veinte
+  // agencias y sabe que un "Consultar" significa que no hay precio público. El
+  // dato estructurado entra cuando ahí no hay nada que leer.
+  const price = readPrice($) ?? structured?.price ?? null
 
   const reference =
     $('[class*="__ref"] span, [class*="__reference"] span').first().text().trim() ||
@@ -122,8 +157,13 @@ export function parsePropertyPage(html, url) {
     // convertiría un chalet en una parcela.
     type: detectType(title, slug.replace(/-/g, ' ')),
     saleStatus: detectSaleStatus($),
-    image: image ?? null,
-    locationHint: [city, title, description, slug.replace(/-/g, ' ')].filter(Boolean).join(' | '),
+    image: image ?? structured?.image ?? null,
+    // La localidad del dato estructurado va primero porque es la que la
+    // agencia declara, y manda sobre el título: "2 PLOTS OF LAND IN MORAIRA"
+    // está en Benitachell según su propia ficha.
+    locationHint: [structured?.locality, city, title, description, slug.replace(/-/g, ' ')]
+      .filter(Boolean)
+      .join(' | '),
   }
 }
 

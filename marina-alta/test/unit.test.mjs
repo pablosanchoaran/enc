@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
-import { readIconFeatures } from '../src/adapters/sooprema.mjs'
+import { parsePropertyPage, readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
@@ -477,6 +477,32 @@ test('sin página incompleta, el barrido para en cuanto se repiten las fichas', 
 
   assert.equal(recogidas.length, 32)
   assert.equal(peticiones, 3, 'la tercera detecta la vuelta y corta')
+})
+
+test('cuando la plantilla no marca el precio, mandan los datos estructurados', () => {
+  // Bindley cambió de plantilla y se quedó en cero anuncios: el importe pasó a
+  // ir en utilidades de Tailwind, sin ninguna clase con "price". En esa misma
+  // página el primer importe del maquetado eran 749.000 € de otra casa; el
+  // precio real, 386.400 €, solo estaba en el `RealEstateListing`.
+  const html = `<html><head><script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"WebPage","name":"no es la ficha"},
+      {"@type":"RealEstateListing","name":"2 PLOTS OF LAND IN MORAIRA",
+       "address":{"@type":"PostalAddress","addressLocality":"Benitachell"},
+       "offers":{"@type":"Offer","price":386400,"priceCurrency":"EUR"}}]}
+    </script></head><body>
+      <h1>2 PLOTS OF LAND IN MORAIRA</h1>
+      <div class="shrink-0 text-right"><p class="font-bold">749,000 €</p></div>
+    </body></html>`
+
+  const item = parsePropertyPage(html, 'https://a.test/property/for-sale/2-plots-bp320442/')
+  assert.equal(item.price, 386400, 'no el importe suelto del maquetado')
+  assert.match(item.locationHint, /^Benitachell/, 'la localidad declarada va primero')
+  assert.equal(
+    normalize(item, { id: 'bindley', agency: 'Bindley' }, '2026-08-24').listing.municipality,
+    'El Poble Nou de Benitatxell',
+    'aunque el título diga Moraira',
+  )
 })
 
 test('el icono se interpreta por su descripción, no por el nombre del fichero', () => {
