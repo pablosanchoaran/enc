@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T22:14:33.793Z",
+  "updatedAt": "2026-08-24T19:05:25.675Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -21,10 +21,15 @@
       "builtM2": 75,
       "plotM2": null,
       "pricePerM2": 4333,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-62c2f3cc71.webp",
+        "thumb": "ferrando-moraira-62c2f3cc71.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/83/019fafa5-e374-750b-a434-71f258916483.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -164,7 +169,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -215,10 +220,15 @@
       "builtM2": 150,
       "plotM2": null,
       "pricePerM2": 2120,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-c2f1cfd4d2.webp",
+        "thumb": "ferrando-moraira-c2f1cfd4d2.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/a2/019f7426-4cce-76bf-b7c7-5533605e00a2.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -242,10 +252,15 @@
       "builtM2": 106,
       "plotM2": 65,
       "pricePerM2": 3113,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-05f5335e40.webp",
+        "thumb": "ferrando-moraira-05f5335e40.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/df/019b2bf5-89c0-7267-aad5-da090c0bb6df.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -377,10 +392,15 @@
       "builtM2": 123,
       "plotM2": 132,
       "pricePerM2": 2236,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-c04c4bf114.webp",
+        "thumb": "ferrando-moraira-c04c4bf114.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/80/019b2bf5-89c0-7267-aad5-de585531c080.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -404,10 +424,15 @@
       "builtM2": 76,
       "plotM2": 72,
       "pricePerM2": 4329,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-407e7b79bf.webp",
+        "thumb": "ferrando-moraira-407e7b79bf.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/4d/019f0d53-71ef-7019-846b-8b157dcb064d.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -431,10 +456,15 @@
       "builtM2": 82,
       "plotM2": 230,
       "pricePerM2": 4085,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-b5817b2e6d.webp",
+        "thumb": "ferrando-moraira-b5817b2e6d.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/83/019b47ff-4189-76c9-b11d-29d9c0bdd883.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -493,7 +523,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -633,7 +663,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -692,7 +722,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -716,10 +746,15 @@
       "builtM2": 65,
       "plotM2": null,
       "pricePerM2": 4769,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-1213422254.webp",
+        "thumb": "ferrando-moraira-1213422254.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/fb/019b2bf5-89c0-7267-aad5-cd4f78534afb.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -967,7 +1002,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1045,10 +1080,15 @@
       "builtM2": 84,
       "plotM2": 182,
       "pricePerM2": 3452,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-29898eee1e.webp",
+        "thumb": "ferrando-moraira-29898eee1e.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/af/019f4586-6c85-7679-9744-f75be1400baf.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1099,7 +1139,12 @@
       "builtM2": 103,
       "plotM2": 290,
       "pricePerM2": 3388,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-56746b7b68.webp",
+        "thumb": "ferrando-moraira-56746b7b68.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/47/019f4589-8cbf-710d-82bd-189c00382a47.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-23",
@@ -1244,7 +1289,12 @@
       "builtM2": 114,
       "plotM2": 144,
       "pricePerM2": 2807,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-55cd5fc166.webp",
+        "thumb": "ferrando-moraira-55cd5fc166.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/ee/019b2bf6-d4c4-71aa-bce9-cfcf8c8d38ee.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-23",
@@ -1325,7 +1375,12 @@
       "builtM2": 130,
       "plotM2": 195,
       "pricePerM2": 2115,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-14efb99432.webp",
+        "thumb": "ferrando-moraira-14efb99432.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/37/019f4586-6c85-7679-9744-faeff58d4237.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-23",
@@ -1352,7 +1407,12 @@
       "builtM2": 85,
       "plotM2": 280,
       "pricePerM2": 3871,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-cd4c94ec2e.webp",
+        "thumb": "ferrando-moraira-cd4c94ec2e.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/40/019b2bf8-39d8-7159-a390-937b438b2c40.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-23",
@@ -1379,7 +1439,12 @@
       "builtM2": 190,
       "plotM2": 105,
       "pricePerM2": 1842,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-c9619ebe4c.webp",
+        "thumb": "ferrando-moraira-c9619ebe4c.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/dc/019b2bf6-d4c4-71aa-bce9-c2274973f4dc.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-23",
@@ -1608,7 +1673,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1667,7 +1732,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1726,7 +1791,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1750,10 +1815,15 @@
       "builtM2": 196,
       "plotM2": null,
       "pricePerM2": 1505,
-      "photo": null,
+      "photo": {
+        "file": "daniamed-f056924fc9.webp",
+        "thumb": "daniamed-f056924fc9.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/d6/019c9a4a-fd7f-703a-99aa-3aff1186b2d6.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -1777,10 +1847,15 @@
       "builtM2": 144,
       "plotM2": 124,
       "pricePerM2": 2424,
-      "photo": null,
+      "photo": {
+        "file": "mlsdenia-bdbaa5426b.webp",
+        "thumb": "mlsdenia-bdbaa5426b.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.mlsdenia.com/opi/296765"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -2455,7 +2530,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2487,7 +2562,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2519,7 +2594,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2575,10 +2650,15 @@
       "builtM2": null,
       "plotM2": null,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "catorceinmo-a52f81f8ce.webp",
+        "thumb": "catorceinmo-a52f81f8ce.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/01/31/347844/Image31.jpeg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2610,7 +2690,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2642,7 +2722,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2674,7 +2754,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2698,10 +2778,15 @@
       "builtM2": null,
       "plotM2": null,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "tododenia-07b36e4a2d.webp",
+        "thumb": "tododenia-07b36e4a2d.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.tododenia-inmo.com/opi/327587"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2784,10 +2869,15 @@
       "builtM2": 123,
       "plotM2": 1086,
       "pricePerM2": 2602,
-      "photo": null,
+      "photo": {
+        "file": "albadomus-80c199b2b5.webp",
+        "thumb": "albadomus-80c199b2b5.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.albadomus.com/opi/327310"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:35:55.509Z",
       "reason": "vendido"
     },
@@ -2838,10 +2928,15 @@
       "builtM2": null,
       "plotM2": 183,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-1f45e351a8.webp",
+        "thumb": "agenciamorato-1f45e351a8.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/e5/019c4216-026e-7421-bcf1-4d7b0963b5e5.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3000,10 +3095,15 @@
       "builtM2": 117,
       "plotM2": 117,
       "pricePerM2": 2479,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-20a41e6dac.webp",
+        "thumb": "agenciamorato-20a41e6dac.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/d6/019e1cc4-4598-7241-8d09-6ba7e7ccdfd6.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3035,7 +3135,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3121,7 +3221,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3153,7 +3253,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3177,10 +3277,15 @@
       "builtM2": 90,
       "plotM2": null,
       "pricePerM2": 3444,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-6f7d3f20bc.webp",
+        "thumb": "agenciamorato-6f7d3f20bc.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/aa/019c4219-aef7-73c6-af67-f9d9a0e8c7aa.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-04T20:58:56.395Z",
       "reason": "vendido"
     },
@@ -3212,7 +3317,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-13T21:34:03.851Z",
       "reason": "vendido"
     },
@@ -3384,7 +3489,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-13T21:34:03.851Z",
       "reason": "vendido"
     },
@@ -3610,7 +3715,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-13T21:39:41.463Z",
       "reason": "vendido"
     },
@@ -3922,7 +4027,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -4094,7 +4199,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-21T22:29:41.489Z",
       "reason": "vendido"
     },
@@ -4153,7 +4258,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-21T22:48:17.700Z",
       "reason": "vendido"
     },
@@ -4177,7 +4282,12 @@
       "builtM2": null,
       "plotM2": 853,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-3aa8cd2f62.webp",
+        "thumb": "agenciamorato-3aa8cd2f62.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/e1/019c421b-82a4-70a8-993f-502b7a3240e1.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
@@ -4204,7 +4314,12 @@
       "builtM2": null,
       "plotM2": 891,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-92741c19f9.webp",
+        "thumb": "agenciamorato-92741c19f9.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/06/019c421b-82a4-70a8-993f-54e94a556f06.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
@@ -4231,7 +4346,12 @@
       "builtM2": 75,
       "plotM2": null,
       "pricePerM2": 4653,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-601ec56cff.webp",
+        "thumb": "agenciamorato-601ec56cff.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/57/019c421d-2c07-728b-8238-dbd0de8e7b57.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-08-23",
@@ -4258,10 +4378,15 @@
       "builtM2": null,
       "plotM2": 319,
       "pricePerM2": null,
-      "photo": null,
+      "photo": {
+        "file": "catorceinmo-28570666aa.webp",
+        "thumb": "catorceinmo-28570666aa.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/326858/Image17.jpeg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-22T06:00:27.355Z",
       "reason": "vendido"
     },
@@ -4318,10 +4443,15 @@
       "builtM2": 73,
       "plotM2": 444,
       "pricePerM2": 4096,
-      "photo": null,
+      "photo": {
+        "file": "ferrando-moraira-8aa7b8eaeb.webp",
+        "thumb": "ferrando-moraira-8aa7b8eaeb.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b2bec-db16-75bb-a8aa-afd2057e9375/social-preview/2f/01a02876-3396-7614-8d48-76eaed7f6f2f.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-23T17:22:35.530Z",
       "reason": "vendido"
     },
@@ -4345,10 +4475,15 @@
       "builtM2": 63,
       "plotM2": null,
       "pricePerM2": 2937,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-041eaf5dcd.webp",
+        "thumb": "agenciamorato-041eaf5dcd.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/47/019dc578-855e-732e-b444-012e821b0f47.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-23T17:22:35.530Z",
       "reason": "vendido"
     },
@@ -4372,7 +4507,12 @@
       "builtM2": 66,
       "plotM2": null,
       "pricePerM2": 3220,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-0d2c43885a.webp",
+        "thumb": "agenciamorato-0d2c43885a.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/3c/019c5296-3d70-72c8-875c-4319bdb9c43c.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-23",
       "lastSeen": "2026-08-23",
@@ -4399,7 +4539,12 @@
       "builtM2": 116,
       "plotM2": null,
       "pricePerM2": 3016,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-e8d16d3520.webp",
+        "thumb": "agenciamorato-e8d16d3520.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/14/019c421b-82a4-70a8-993f-42e0dac50e14.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-23",
       "lastSeen": "2026-08-23",
@@ -4426,7 +4571,12 @@
       "builtM2": 83,
       "plotM2": null,
       "pricePerM2": 2892,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-232eb70f78.webp",
+        "thumb": "agenciamorato-232eb70f78.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/fc/019c4216-026e-7421-bcf1-55afa6205afc.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-23",
       "lastSeen": "2026-08-23",
@@ -4461,7 +4611,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-23T17:22:35.530Z",
       "reason": "vendido"
     },
@@ -4485,10 +4635,15 @@
       "builtM2": 119,
       "plotM2": 88,
       "pricePerM2": 2345,
-      "photo": null,
+      "photo": {
+        "file": "agenciamorato-69b45cccc6.webp",
+        "thumb": "agenciamorato-69b45cccc6.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/bd/019dd915-09b5-73cf-aae8-4cef16c143bd.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-23T17:22:35.530Z",
       "reason": "vendido"
     },
@@ -4520,8 +4675,168 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-23T17:22:35.530Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:a9b685e371",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/luminoso-apartamento-con-vistas-al-penon-de-ifach-a463c/",
+      "title": "Luminoso apartamento con vistas al Peñón de Ifach",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 250000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 105,
+      "plotM2": null,
+      "pricePerM2": 2381,
+      "photo": {
+        "file": "agenciamorato-a9b685e371.webp",
+        "thumb": "agenciamorato-a9b685e371.thumb.webp",
+        "capturedAt": "2026-08-13T21:34:03.852Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/5b/019ffaa2-27f5-723c-9421-8496b5ce135b.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:05:25.675Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:ee2eea39f6",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/luz-amplitud-y-ubicacion-perfecta-en-el-corazon-de-calpe-el-hogar-ideal-para-tu-familia-a454/",
+      "title": "Luz, amplitud y ubicación perfecta en el corazón de Calpe: el hogar ideal para tu familia",
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 265000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 105,
+      "plotM2": 87,
+      "pricePerM2": 2524,
+      "photo": {
+        "file": "agenciamorato-ee2eea39f6.webp",
+        "thumb": "agenciamorato-ee2eea39f6.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/f2/019e6e44-ec88-7476-bf62-ee9a540753f2.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:05:25.675Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:6cd8c50d22",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-en-venta-de-2-dormitorios-en-calpe-zona-playa-arenal-a432c/",
+      "title": "Apartamento en venta de 2 dormitorios en Calpe, Zona Playa Arenal",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-13",
+          "price": 265000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 58,
+      "plotM2": null,
+      "pricePerM2": 4569,
+      "photo": {
+        "file": "agenciamorato-6cd8c50d22.webp",
+        "thumb": "agenciamorato-6cd8c50d22.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/9e/019feb15-022b-76f2-8ea8-d155a1a3d99e.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:05:25.675Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:6e93662366",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/apartamento-luminoso-en-el-centro-de-calpe-listo-para-entrar-a-vivir-a441/",
+      "title": "Apartamento luminoso en el centro de Calpe – Listo para entrar a vivir",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 250000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "agenciamorato-6e93662366.webp",
+        "thumb": "agenciamorato-6e93662366.thumb.webp",
+        "capturedAt": "2026-08-04T20:58:56.396Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/bb/019d6c3d-28d4-7134-a636-897fc76d11bb.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:05:25.675Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "agenciamorato:e257eb9ec8",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/luminoso-apartamento-familiar-de-3-habitaciones-en-calpe-a451/",
+      "title": "Luminoso apartamento familiar de 3 habitaciones en Calpe",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 269000
+        }
+      ],
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 112,
+      "plotM2": 112,
+      "pricePerM2": 2402,
+      "photo": {
+        "file": "agenciamorato-e257eb9ec8.webp",
+        "thumb": "agenciamorato-e257eb9ec8.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/e1/019e4f46-5acc-760a-8367-184ab272bfe1.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:05:25.675Z",
       "reason": "vendido"
     }
   ]

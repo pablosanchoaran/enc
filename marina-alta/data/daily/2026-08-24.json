@@ -1,0 +1,533 @@
+{
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-24T19:05:25.675Z",
+  "totals": {
+    "inventory": 3249,
+    "additions": 3,
+    "priceDrops": 3,
+    "priceRises": 2,
+    "removals": 0
+  },
+  "additions": [
+    {
+      "id": "inmodemar:f46f5d30bc",
+      "source": "inmodemar",
+      "agency": "Inmodemar",
+      "url": "https://www.inmodemar.com/venta/adosado-esquinero-reformado-con-jardin-y-piscina-comunitaria-en-beniarbeig-cerca-de-denia-x-473/",
+      "title": "Adosado esquinero reformado con jardín y piscina comunitaria en Beniarbeig, cerca de Denia",
+      "price": 255000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 255000
+        }
+      ],
+      "municipality": "Beniarbeig",
+      "type": "townhouse",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 3072,
+      "image": "https://www.inmodemar.com/opi/361487",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-24",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "inmodemar-f46f5d30bc.webp",
+        "thumb": "inmodemar-f46f5d30bc.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.inmodemar.com/opi/361487"
+      }
+    },
+    {
+      "id": "deseohomes:d12b72c441",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/parcela-en-javea-pinosol-34431/",
+      "title": "Parcela en Jávea | | Pinosol",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 340000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/02/plot-javea-38994.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-24T09:23:27+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "deseohomes-d12b72c441.webp",
+        "thumb": "deseohomes-d12b72c441.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://deseohomes.com/wp-content/uploads/2026/02/plot-javea-38994.jpg"
+      }
+    },
+    {
+      "id": "deseohomes:6a6419eeb3",
+      "source": "deseohomes",
+      "agency": "Deseo Homes",
+      "url": "https://deseohomes.com/es/property/appartement-in-javea-cala-blanca-79076/",
+      "title": "Apartamento en Jávea | Cala Blanca",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 349000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://deseohomes.com/wp-content/uploads/2026/05/apartment-javea-40312.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-24T09:23:23+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "deseohomes-6a6419eeb3.webp",
+        "thumb": "deseohomes-6a6419eeb3.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://deseohomes.com/wp-content/uploads/2026/05/apartment-javea-40312.jpg"
+      }
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:3d024fa9c3",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10016755",
+      "title": "Apartamento de 3 habitaciones en Jalón / Xaló en venta - 160.000 € (Ref: 10016755)",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 199000
+        },
+        {
+          "date": "2026-08-24",
+          "price": 160000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 138,
+      "plotM2": null,
+      "pricePerM2": 1159,
+      "image": "https://cdn.thinkwebcontent.com/property/6210/10016755/20260814150202/w1624h1082/s640x480/x-287340380.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-3d024fa9c3.webp",
+        "thumb": "thinkspain-3d024fa9c3.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/6210/10016755/20260814150202/w1624h1082/s640x480/x-287340380.jpg"
+      },
+      "previousPrice": 199000,
+      "delta": -39000,
+      "deltaPct": -19.6,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:a2c301f50b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9841594",
+      "title": "Piso de 2 habitaciones en Arenal, Javea / Xàbia en venta con garaje - 265.000 € (Ref: 9841594)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        },
+        {
+          "date": "2026-08-24",
+          "price": 265000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3681,
+      "image": "https://cdn.thinkwebcontent.com/property/6244/9841594/20260518131738/w1600h1067/s640x480/x-281086090.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-a2c301f50b.webp",
+        "thumb": "thinkspain-a2c301f50b.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/6244/9841594/20260518131738/w1600h1067/s640x480/x-281086090.jpg"
+      },
+      "previousPrice": 285000,
+      "delta": -20000,
+      "deltaPct": -7,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:d7891e2f3e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9867382",
+      "title": "Apartamento de 2 habitaciones en Ondara en venta con garaje - 195.000 € (Ref: 9867382)",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 199000
+        },
+        {
+          "date": "2026-08-24",
+          "price": 195000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 93,
+      "plotM2": null,
+      "pricePerM2": 2097,
+      "image": "https://cdn.thinkwebcontent.com/property/28670/9867382/20260529093518/w1624h1083/s640x480/x-282317173.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-d7891e2f3e.webp",
+        "thumb": "thinkspain-d7891e2f3e.thumb.webp",
+        "capturedAt": "2026-08-21T22:52:49.118Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/28670/9867382/20260529093519/w1624h1083/s640x480/x-282317172.jpg"
+      },
+      "previousPrice": 199000,
+      "delta": -4000,
+      "deltaPct": -2,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [
+    {
+      "id": "thinkspain:e6f4c96507",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9010410",
+      "title": "Terreno/Finca Rústica en Alcalalí / Alcanalí en venta - 65.000 € (Ref: 9010410)",
+      "price": 65000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 55000
+        },
+        {
+          "date": "2026-08-24",
+          "price": 65000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/32207/9010410/20250526232215/w1920h1080/s640x480/x-253995064.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-e6f4c96507.webp",
+        "thumb": "thinkspain-e6f4c96507.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/32207/9010410/20250526232215/w1920h1080/s640x480/x-253995064.jpg"
+      },
+      "previousPrice": 55000,
+      "delta": 10000,
+      "deltaPct": 18.2,
+      "direction": "rise"
+    },
+    {
+      "id": "daniamed:51e75fcde0",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/atico-en-el-vergel-con-vistas-al-mar-superatico4/",
+      "title": "¡Ático en El Vergel con Vistas al Mar!",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 269000
+        },
+        {
+          "date": "2026-08-24",
+          "price": 300000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 99,
+      "plotM2": null,
+      "pricePerM2": 3030,
+      "image": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/a1/01a03331-1ad8-765a-b4b5-0dee3ed12aa1.jpg",
+      "lastmod": "2026-08-24T09:51:29.000Z",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "previousPrice": 269000,
+      "delta": 31000,
+      "deltaPct": 11.5,
+      "direction": "rise"
+    }
+  ],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2536,
+      "status": "ok",
+      "requests": 549,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 38,
+      "status": "ok",
+      "requests": 46,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 13,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 25,
+      "status": "ok",
+      "requests": 50,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 37,
+      "status": "ok",
+      "requests": 61,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 27,
+      "status": "ok",
+      "requests": 74,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 28,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 40,
+      "status": "ok",
+      "requests": 55,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 12,
+      "status": "ok",
+      "requests": 23,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 20,
+      "status": "ok",
+      "requests": 35,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 40,
+      "status": "ok",
+      "requests": 87,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 6,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 6,
+      "status": "ok",
+      "requests": 14,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 39,
+      "status": "ok",
+      "requests": 86,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 2,
+      "status": "ok",
+      "requests": 1134,
+      "blocked": 0,
+      "errors": 358
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 1611,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5
+    }
+  ],
+  "bootstrap": true
+}
