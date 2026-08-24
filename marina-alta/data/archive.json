@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T20:14:29.528Z",
+  "updatedAt": "2026-08-24T20:34:35.260Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -5132,6 +5132,38 @@
       "firstSeen": "2026-08-24",
       "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "giortola:a4a69f5254",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/s-evende-parcela-urbana-en-alcalali/",
+      "title": "S evende parcela urbana en Alcalalí",
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "price": 55000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 55000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "giortola-a4a69f5254.webp",
+        "thumb": "giortola-a4a69f5254.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-0020-1-Copy.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T20:31:47.376Z",
       "reason": "vendido"
     }
   ]

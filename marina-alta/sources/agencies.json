@@ -257,6 +257,23 @@
       "origin": "https://hispaniahomesmoraira.com",
       "enabled": false,
       "notes": "Moraira. Su servidor responde 406 a nuestro User-Agent y 200 al de un navegador: entrar exigiría hacerse pasar por uno, cosa que este extractor no hace. Mismo caso que InmoDalal."
+    },
+    {
+      "id": "giortola",
+      "adapter": "sooprema",
+      "agency": "GI Ortolá",
+      "origin": "https://giortola.com",
+      "enabled": true,
+      "notes": "Alcalalí y el Vall de Pop, que es donde menos agencias directas hay. Se entra por listing-sitemap.xml, sus 38 fichas en castellano bajo /listing/: la página de listado solo enseña 12 y no pagina. En las fichas inglesas el h1 dice 'Similars Properties', otra razón para ir por las castellanas."
+    },
+    {
+      "id": "grupogarcia",
+      "adapter": "wordpress",
+      "agency": "Grupo García",
+      "origin": "https://grupo-garcia.es",
+      "postType": "properties",
+      "enabled": true,
+      "notes": "Vall de Pop, Orba y costa. Se lee por su API pública de WordPress, que da precio, localidad y medidas ya como datos: rasparla no era viable porque el precio propio y los de las casas relacionadas van en divs iguales, separados solo por una clase aleatoria del maquetador. 273 fichas, de las que unas 21 bajan del techo."
     }
   ]
 }

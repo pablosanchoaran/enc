@@ -21,7 +21,7 @@ export const MUNICIPALITIES = [
   { name: 'Beniarbeig', aliases: ['beniarbeig'] },
   { name: 'Xaló / Jalón', aliases: ['jalon', 'jalón', 'xalo', 'xaló', 'valle del pop', 'vall del pop'] },
   { name: 'Llíber', aliases: ['lliber', 'llíber'] },
-  { name: 'Alcalalí', aliases: ['alcalali', 'alcalalí'] },
+  { name: 'Alcalalí', aliases: ['alcalali', 'alcalalí', 'llosa de camacho', 'llosa de camatxo', 'la llosa de camacho'] },
   { name: 'Orba', aliases: ['orba'] },
   { name: 'Pego', aliases: ['pego', 'monte pego', 'pego y su marjal'] },
   { name: 'Benidoleig', aliases: ['benidoleig'] },

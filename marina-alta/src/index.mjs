@@ -24,6 +24,7 @@ import * as ego from './adapters/ego.mjs'
 import * as listado from './adapters/listado.mjs'
 import * as sooprema from './adapters/sooprema.mjs'
 import * as thinkspain from './adapters/thinkspain.mjs'
+import * as wordpress from './adapters/wordpress.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
@@ -42,7 +43,7 @@ const SITE_DIR = join(ROOT, 'site')
  */
 const REPORT_MAX_BYTES = 13 * 1024 * 1024
 
-const ADAPTERS = { thinkspain, sooprema, ego, listado }
+const ADAPTERS = { thinkspain, sooprema, ego, listado, wordpress }
 
 function parseArgs(argv) {
   const args = {

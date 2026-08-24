@@ -34,6 +34,7 @@ const PROPERTY_SEGMENTS = [
   'zu-verkaufen',
   'a-vendre',
   'in-vendita',
+  'listing',
 ]
 
 /** Prefijo de idioma que algunas webs anteponen: `/es/propiedad/...`. */

@@ -1,8 +1,8 @@
 {
   "date": "2026-08-24",
-  "generatedAt": "2026-08-24T20:14:29.528Z",
+  "generatedAt": "2026-08-24T20:34:35.260Z",
   "totals": {
-    "inventory": 3364,
+    "inventory": 3405,
     "additions": 224,
     "priceDrops": 3,
     "priceRises": 2,
@@ -7345,6 +7345,24 @@
       "listings": 8,
       "status": "ok",
       "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "giortola",
+      "agency": "GI Ortolá",
+      "listings": 21,
+      "status": "ok",
+      "requests": 43,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "grupogarcia",
+      "agency": "Grupo García",
+      "listings": 20,
+      "status": "ok",
+      "requests": 28,
       "blocked": 0,
       "errors": 0
     }

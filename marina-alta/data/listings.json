@@ -1,6 +1,1441 @@
 {
-  "updatedAt": "2026-08-24T20:14:29.528Z",
+  "updatedAt": "2026-08-24T20:34:35.260Z",
   "listings": [
+    {
+      "id": "grupogarcia:f856895a40",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/encantador-adosado-a-la-venta-en-parcent-valle-de-jalon-27831086/",
+      "title": "Encantador adosado a la venta en Parcent, Valle de Jalón",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 199000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 105,
+      "plotM2": null,
+      "pricePerM2": 1895,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/06/5-1-3-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-22T03:06:24",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-f856895a40.webp",
+        "thumb": "grupogarcia-f856895a40.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/06/5-1-3-scaled.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:65715be6f6",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/piso-en-venta-cerca-del-centro-de-javea-29756291/",
+      "title": "Piso en venta cerca del centro de Jávea",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 239000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 79,
+      "plotM2": 80,
+      "pricePerM2": 3025,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/07/2-1-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-19T03:03:03",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-65715be6f6.webp",
+        "thumb": "grupogarcia-65715be6f6.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/07/2-1-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:03ccc986ab",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/elegante-casa-adosada-a-la-venta-de-tres-plantas-en-alcalali-con-terraza-y-vistas-a-la-montana-26782382/",
+      "title": "Elegante casa adosada a la venta de tres plantas en Alcalalí con terraza y vistas a la montaña",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 350000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "house",
+      "beds": 5,
+      "baths": 3,
+      "builtM2": 188,
+      "plotM2": null,
+      "pricePerM2": 1862,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/07/6-1-2-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-19T03:02:29",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-03ccc986ab.webp",
+        "thumb": "grupogarcia-03ccc986ab.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/07/6-1-2-scaled.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:24407de058",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/super-parcela-en-venta-en-javea-7224512/",
+      "title": "Super parcela en venta en javea con licencia",
+      "price": 154000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 154000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1086,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/08/15-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-18T03:02:05",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-24407de058.webp",
+        "thumb": "grupogarcia-24407de058.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/08/15-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:0b17a595fc",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/super-parcela-en-venta-en-javea-con-licencia-7224558/",
+      "title": "Magnífica parcela en venta en Jávea con licencia.",
+      "price": 150000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 150000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1181,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/08/20-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-18T03:02:08",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-0b17a595fc.webp",
+        "thumb": "grupogarcia-0b17a595fc.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/08/20-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:f4da3c7c5e",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/atico-con-vistas-al-mar-y-3-dormitorios-en-venta-en-javea-28558168/",
+      "title": "Ático con vistas al mar y 3 dormitorios en venta en Jávea",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 330000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 118,
+      "plotM2": 118,
+      "pricePerM2": 2797,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/06/3-1-7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-15T03:02:22",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-f4da3c7c5e.webp",
+        "thumb": "grupogarcia-f4da3c7c5e.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/06/3-1-7.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:cb3f5a42d6",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/parcela-industrial-en-venta-en-javea-puerta-fenicia-8253904/",
+      "title": "Parcela Industrial en venta en Javea, Puerta Fenicia",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 195000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/08/12-1-2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-13T03:00:06",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-cb3f5a42d6.webp",
+        "thumb": "grupogarcia-cb3f5a42d6.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/08/12-1-2.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:1fdd47cca8",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/fantastico-adosado-con-vistas-panoramicas-a-un-precio-brillante-en-pedreguer-28856179/",
+      "title": "Fantástico adosado con vistas panorámicas a un precio brillante en Pedreguer",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 249500
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2079,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/04/16-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-26T03:02:50",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-1fdd47cca8.webp",
+        "thumb": "grupogarcia-1fdd47cca8.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/04/16-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:a31311d1c4",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/svetla-village-nuevas-casas-adosadas-en-venta-en-els-poblets-a-precios-excelentes-29221915/",
+      "title": "Svetla Village. Nuevas casas adosadas en venta en Els Poblets a precios excelentes.",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 259000
+        }
+      ],
+      "municipality": "Els Poblets",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 109,
+      "plotM2": null,
+      "pricePerM2": 2376,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/05/2-1-7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-24T03:01:16",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-a31311d1c4.webp",
+        "thumb": "grupogarcia-a31311d1c4.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/05/2-1-7.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:8a1084d0b9",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/piso-reformado-cerca-de-la-playa-del-arenal-en-venta-en-javea-24237782/",
+      "title": "Piso reformado cerca de la playa del Arenal en venta en Javea",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 315000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 89,
+      "plotM2": 89,
+      "pricePerM2": 3539,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/06/3-1-6-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-14T03:02:20",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-8a1084d0b9.webp",
+        "thumb": "grupogarcia-8a1084d0b9.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/06/3-1-6-scaled.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:ef255aef09",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/nuevos-apartamentos-de-lujo-en-venta-en-denia-25849425/",
+      "title": "Nuevos apartamentos de lujo en venta en Denia",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 250000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 0,
+      "builtM2": 61,
+      "plotM2": null,
+      "pricePerM2": 4098,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2025/06/1-1-1-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-24T03:02:28",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-ef255aef09.webp",
+        "thumb": "grupogarcia-ef255aef09.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2025/06/1-1-1-scaled.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:54abd2d863",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/residencial-almadrava-nature-apartamento-de-dos-dormitorios-a-la-venta-en-vergel-junto-a-denia-22019109/",
+      "title": "Residencial Almadrava Nature, apartamento de dos dormitorios a la venta en Vergel, junto a Denia.",
+      "price": 334000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 334000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 3408,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2024/06/4-1-3-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:04:54",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-54abd2d863.webp",
+        "thumb": "grupogarcia-54abd2d863.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2024/06/4-1-3-scaled.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:40b6e8078f",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/posibilidad-de-chalet-o-adosados-parcela-urbana-a-la-venta-en-alcalali-valle-de-jalon-27442254/",
+      "title": "Posibilidad de chalet o adosados &#8211; Parcela urbana a la venta en Alcalalí, Valle de Jalón",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 185000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 709,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/02/1-1-5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:14:08",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-40b6e8078f.webp",
+        "thumb": "grupogarcia-40b6e8078f.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/02/1-1-5.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:61aa63929e",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/dos-estudios-en-venta-en-el-puerto-de-denia-27998582/",
+      "title": "Dos estudios en venta en el puerto de Denia",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 315000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 90,
+      "plotM2": 90,
+      "pricePerM2": 3500,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/02/2-1-8.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:17:27",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-61aa63929e.webp",
+        "thumb": "grupogarcia-61aa63929e.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/02/2-1-8.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:a23f44ed31",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/fantastica-parcela-de-16-152m-en-venta-en-lliber-el-valle-del-jalon-23624625/",
+      "title": "Fantástica parcela de 16.152m en venta en lliber. El Valle del Jalón",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 180000
+        }
+      ],
+      "municipality": "Llíber",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 16152,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2025/01/1-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:06:14",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-a23f44ed31.webp",
+        "thumb": "grupogarcia-a23f44ed31.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2025/01/1-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:d8b522fb80",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/parcela-comercial-en-alcalali-valle-del-pop-3947480/",
+      "title": "PARCELA COMERCIAL EN ALCALALI, VALLE DEL POP.",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 130000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 300,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2024/12/3-1-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:00:03",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-d8b522fb80.webp",
+        "thumb": "grupogarcia-d8b522fb80.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2024/12/3-1-1.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:ff5bfe5b4a",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/parcela-urbanizable-a-la-venta-en-alcalali-18093991/",
+      "title": "Parcela urbanizable a la venta en Alcalali.",
+      "price": 45000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 45000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 349,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2023/11/10-1-3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:02:32",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-ff5bfe5b4a.webp",
+        "thumb": "grupogarcia-ff5bfe5b4a.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2023/11/10-1-3.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:bfad02dcb6",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/se-vende-excelente-parcela-urbana-en-el-pueblo-de-el-vergel-alicante-17749707/",
+      "title": "Se vende excelente parcela urbana en el pueblo de El Vergel, Alicante.",
+      "price": 85000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 85000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 160,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2023/11/3-1-22.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:02:16",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-bfad02dcb6.webp",
+        "thumb": "grupogarcia-bfad02dcb6.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2023/11/3-1-22.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:0a5735fef5",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/parcela-rustica-a-la-venta-en-benissa-6379453/",
+      "title": "Parcela rústica a la venta en Benissa",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 260000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 14720,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2023/11/2-1-8.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:00:29",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-0a5735fef5.webp",
+        "thumb": "grupogarcia-0a5735fef5.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2023/11/2-1-8.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:8ab486f825",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/parcela-en-moraira-benimeit-en-venta-6342225/",
+      "title": "Parcela en Moraira Benimeit en venta",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 180000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 805,
+      "pricePerM2": null,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2023/11/1-1-30.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-13T03:00:28",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-8ab486f825.webp",
+        "thumb": "grupogarcia-8ab486f825.thumb.webp",
+        "capturedAt": "2026-08-24T20:34:35.263Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2023/11/1-1-30.jpg"
+      }
+    },
+    {
+      "id": "giortola:350a2bfcf4",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-en-la-llosa-de-camacho/",
+      "title": "Se vende parcela en la Llosa de Camacho",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 80000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1019-5-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:16:05+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-350a2bfcf4.webp",
+        "thumb": "giortola-350a2bfcf4.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1019-5-scaled.jpg"
+      }
+    },
+    {
+      "id": "giortola:5195212499",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-jalon/",
+      "title": "Se vende parcela urbana en Jalón",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 80000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/5-50-15880-11.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:17:25+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-5195212499.webp",
+        "thumb": "giortola-5195212499.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/5-50-15880-11.jpg"
+      }
+    },
+    {
+      "id": "giortola:31050cce5e",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-en-jalon/",
+      "title": "Se vende parcela en Jalón",
+      "price": 90000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 90000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/5-50-15879-8.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:18:28+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-31050cce5e.webp",
+        "thumb": "giortola-31050cce5e.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/5-50-15879-8.jpg"
+      }
+    },
+    {
+      "id": "giortola:83bc1f3477",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-apartamento-en-jalon-2/",
+      "title": "Se vende apartamento en Jalón",
+      "price": 175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 175000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/5-52-15873-15.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:19:47+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-83bc1f3477.webp",
+        "thumb": "giortola-83bc1f3477.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/5-52-15873-15.jpg"
+      }
+    },
+    {
+      "id": "giortola:38fefff6b3",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-la-llosa-de-camacho/",
+      "title": "Se vende parcela urbana en la Llosa de Camacho",
+      "price": 68000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 68000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1011-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:21:26+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-38fefff6b3.webp",
+        "thumb": "giortola-38fefff6b3.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1011-1.jpg"
+      }
+    },
+    {
+      "id": "giortola:a5fdf618e6",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-apartamento-en-jalon/",
+      "title": "Se vende apartamento en Jalón",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 225000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/LSX-105-4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:22:16+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-a5fdf618e6.webp",
+        "thumb": "giortola-a5fdf618e6.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/LSX-105-4.jpg"
+      }
+    },
+    {
+      "id": "giortola:7fe47d5fbd",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-casa-de-campo-en-orba/",
+      "title": "Se vende casa de campo en Orba",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 195000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/01999-9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:23:37+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-7fe47d5fbd.webp",
+        "thumb": "giortola-7fe47d5fbd.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/01999-9.jpg"
+      }
+    },
+    {
+      "id": "giortola:2661e83e89",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-casa-de-pueblo-en-jalon/",
+      "title": "Se vende casa de pueblo en Jalón",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 250000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "house",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/001639-16.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:24:58+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-2661e83e89.webp",
+        "thumb": "giortola-2661e83e89.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/001639-16.jpg"
+      }
+    },
+    {
+      "id": "giortola:7730301143",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-en-alcalali/",
+      "title": "Se vende parcela en Alcalalí",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 165000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-0021-16.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:28:53+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-7730301143.webp",
+        "thumb": "giortola-7730301143.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-0021-16.jpg"
+      }
+    },
+    {
+      "id": "giortola:929e8eeb22",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-alcalali-2/",
+      "title": "Se vende parcela urbana en Alcalalí",
+      "price": 50000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 50000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/1-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:35:08+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-929e8eeb22.webp",
+        "thumb": "giortola-929e8eeb22.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/1-1.jpg"
+      }
+    },
+    {
+      "id": "giortola:570e6abded",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-rustica-en-alcalali-4/",
+      "title": "Se vende parcela rústica en Alcalalí",
+      "price": 24000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 24000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1017-2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:37:24+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-570e6abded.webp",
+        "thumb": "giortola-570e6abded.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1017-2.jpg"
+      }
+    },
+    {
+      "id": "giortola:bb5769ab82",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-rustica-en-alcalali-3/",
+      "title": "Se vende parcela rústica en Alcalalí",
+      "price": 28000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 28000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1016-4.jpg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:37:53+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-bb5769ab82.webp",
+        "thumb": "giortola-bb5769ab82.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1016-4.jpg"
+      }
+    },
+    {
+      "id": "giortola:cd647be30c",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-rustica-en-jalon/",
+      "title": "Se vende parcela rústica en Jalón",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 350000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-00105-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09T08:39:14+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-cd647be30c.webp",
+        "thumb": "giortola-cd647be30c.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-00105-1.jpg"
+      }
+    },
+    {
+      "id": "giortola:690ffe68a5",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-alcalali-3/",
+      "title": "Se vende parcela urbana en Alcalalí",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 300000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1013-3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-16T09:33:21+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-690ffe68a5.webp",
+        "thumb": "giortola-690ffe68a5.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1013-3.jpg"
+      }
+    },
+    {
+      "id": "giortola:20ab4fabca",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-en-benissa/",
+      "title": "Se vende parcela en Benissa",
+      "price": 165000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 165000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-0029-15.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-17T10:02:46+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-20ab4fabca.webp",
+        "thumb": "giortola-20ab4fabca.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-0029-15.jpg"
+      }
+    },
+    {
+      "id": "giortola:86bf47b69b",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-jalon-2/",
+      "title": "Se vende parcela urbana en Jalón",
+      "price": 110000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 110000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1012-14.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-05T09:48:08+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-86bf47b69b.webp",
+        "thumb": "giortola-86bf47b69b.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1012-14.jpg"
+      }
+    },
+    {
+      "id": "giortola:9591cb6438",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-en-la-llosa-de-camacho-2/",
+      "title": "Se  vende parcela en la Llosa de Camacho",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 80000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1018-2-scaled.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-05T09:57:27+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-9591cb6438.webp",
+        "thumb": "giortola-9591cb6438.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1018-2-scaled.jpg"
+      }
+    },
+    {
+      "id": "giortola:4ea0655305",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-alcalali/",
+      "title": "Se vende parcela urbana en Alcalalí",
+      "price": 115000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 115000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/t-0011-2-Copy.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-10T09:53:24+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-4ea0655305.webp",
+        "thumb": "giortola-4ea0655305.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/t-0011-2-Copy.jpg"
+      }
+    },
+    {
+      "id": "giortola:294eb8009b",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-la-llosa-de-camacho-2/",
+      "title": "Se vende parcela urbana en La Llosa de Camacho",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 120000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-1020-2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-24T10:28:05+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-294eb8009b.webp",
+        "thumb": "giortola-294eb8009b.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-1020-2.jpg"
+      }
+    },
+    {
+      "id": "giortola:e5490afe39",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/se-vende-parcela-urbana-en-lliber/",
+      "title": "Se vende parcela urbana en Lliber",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 130000
+        }
+      ],
+      "municipality": "Llíber",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/t-0010_11.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-29T08:52:02+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-e5490afe39.webp",
+        "thumb": "giortola-e5490afe39.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/t-0010_11.jpg"
+      }
+    },
+    {
+      "id": "giortola:a4a69f5254",
+      "source": "giortola",
+      "agency": "GI Ortolá",
+      "url": "https://giortola.com/listing/s-evende-parcela-urbana-en-alcalali/",
+      "title": "S evende parcela urbana en Alcalalí",
+      "price": 55000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 55000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://giortola.com/wp-content/uploads/T-0020-1-Copy.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-21T08:59:38+00:00",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "giortola-a4a69f5254.webp",
+        "thumb": "giortola-a4a69f5254.thumb.webp",
+        "capturedAt": "2026-08-24T20:31:47.377Z",
+        "sourceUrl": "https://giortola.com/wp-content/uploads/T-0020-1-Copy.jpg"
+      }
+    },
     {
       "id": "vistamarinahome:7deef9a64a",
       "source": "vistamarinahome",
