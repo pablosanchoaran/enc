@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
-import { parsePropertyPage, readIconFeatures } from '../src/adapters/sooprema.mjs'
+import { parsePropertyPage, preferOneLanguage, readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
@@ -477,6 +477,29 @@ test('sin página incompleta, el barrido para en cuanto se repiten las fichas', 
 
   assert.equal(recogidas.length, 32)
   assert.equal(peticiones, 3, 'la tercera detecta la vuelta y corta')
+})
+
+test('sin prefijo de idioma no es neutro: es el idioma por defecto de la web', () => {
+  // Bindley publica cada casa dos veces, en inglés sin prefijo y en castellano
+  // bajo /es/. Tomar "sin prefijo" por neutro dejaba pasar las dos: 128 fichas
+  // inglesas y 107 españolas, con la misma referencia y distinto slug.
+  const entrada = [
+    { loc: 'https://a.test/property/for-sale/plot-in-benissa-bpc011092/' },
+    { loc: 'https://a.test/property/for-sale/villa-in-calpe-bpc011093/' },
+    { loc: 'https://a.test/property/for-sale/house-in-javea-bpc011094/' },
+    { loc: 'https://a.test/es/propiedad/venta/parcela-en-benissa-bpc011092/' },
+    { loc: 'https://a.test/es/propiedad/venta/villa-en-calpe-bpc011093/' },
+  ]
+  const salida = preferOneLanguage(entrada)
+  assert.equal(salida.length, 3, 'gana el idioma con más fichas, que es el catálogo completo')
+  assert.ok(salida.every((e) => !e.loc.includes('/es/')))
+
+  // Una web de un solo idioma se queda como está.
+  const unSoloIdioma = [
+    { loc: 'https://b.test/propiedad/casa-en-pego-c1/' },
+    { loc: 'https://b.test/propiedad/casa-en-orba-c2/' },
+  ]
+  assert.equal(preferOneLanguage(unSoloIdioma).length, 2)
 })
 
 test('cuando la plantilla no marca el precio, mandan los datos estructurados', () => {

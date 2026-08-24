@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T19:05:25.675Z",
+  "updatedAt": "2026-08-24T19:54:41.898Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -4837,6 +4837,301 @@
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-24",
       "archivedOn": "2026-08-24T19:05:25.675Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:43be46cd74",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/property/for-sale/apartment-for-sale-in-benissa-costa-blanca-bp3650/",
+      "title": "Apartment for sale in Benissa, Costa Blanca.",
+      "municipality": "Benissa",
+      "type": "apartment",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 229000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "bindley-43be46cd74.webp",
+        "thumb": "bindley-43be46cd74.thumb.webp",
+        "capturedAt": "2026-08-24T19:54:41.899Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fa/019d2e65-e4bf-7042-be0f-1515db0dbbfa.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:8ada8e4695",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/property/for-sale/apartment-for-sale-in-moraira-costa-blanca-bp3583/",
+      "title": "Apartment for sale in Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 285000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "bindley-8ada8e4695.webp",
+        "thumb": "bindley-8ada8e4695.thumb.webp",
+        "capturedAt": "2026-08-24T19:54:41.899Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019d2e84-1e54-73f9-8681-e375a061bc9f.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:e01edc4dd9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/property/for-sale/apartment-for-sale-in-moraira-costa-blanca-bp3683/",
+      "title": "Apartment for sale in Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 285000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "bindley-e01edc4dd9.webp",
+        "thumb": "bindley-e01edc4dd9.thumb.webp",
+        "capturedAt": "2026-08-24T19:54:41.899Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/0e/019e887c-8013-7437-bb6a-2a9a20374a0e.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:a381de23d2",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/property/for-sale/apartment-for-sale-in-moraira-costa-blanca-bp3695/",
+      "title": "Apartment for sale in Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 349000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "bindley-a381de23d2.webp",
+        "thumb": "bindley-a381de23d2.thumb.webp",
+        "capturedAt": "2026-08-24T19:54:41.899Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/92/019f3b74-f57b-70d9-be1b-13c440ea9f92.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:272c0e2984",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/property/for-sale/apartment-for-sale-in-moraira-costa-blanca-bpr3663/",
+      "title": "Apartment for sale in Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 275000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "bindley-272c0e2984.webp",
+        "thumb": "bindley-272c0e2984.thumb.webp",
+        "capturedAt": "2026-08-24T19:54:41.899Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/24/019d9bcb-3932-758b-8338-cb3cb5889524.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:0ddd3667cf",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benissa-costa-blanca-bp3650/",
+      "title": "Apartamento en venta en Benissa, Costa Blanca.",
+      "municipality": "Benissa",
+      "type": "apartment",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 229000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:7869d254c9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3583/",
+      "title": "Apartamento en venta en Moraira, costa blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 285000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:bc30379e55",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3683/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 285000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:00a05176b2",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3695/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 349000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
+      "reason": "vendido"
+    },
+    {
+      "id": "bindley:85a5080fb7",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bpr3663/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 275000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": null,
+      "saleStatus": "sold",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "archivedOn": "2026-08-24T19:54:41.898Z",
       "reason": "vendido"
     }
   ]

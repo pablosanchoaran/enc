@@ -173,25 +173,36 @@ export function parsePropertyPage(html, url) {
  * descargaría cuatro veces lo mismo y el inventario tendría cuatro anuncios
  * por casa, porque la referencia sale del slug.
  */
-function preferOneLanguage(entries) {
+/** El idioma del sitio que no lleva prefijo en la URL. */
+const DEFAULT_LANGUAGE = '\u0000sin-prefijo'
+
+export function preferOneLanguage(entries) {
+  // Sin prefijo no significa "neutro": es el idioma por defecto de la web, uno
+  // más. Tratarlo como neutro dejaba pasar las dos versiones — Bindley servía
+  // 128 fichas en inglés y 107 en castellano, la misma casa dos veces con la
+  // misma referencia (`bpc011092`) y distinto slug.
   const languageOf = (loc) => {
     const segments = new URL(loc).pathname.split('/').filter(Boolean)
     return segments.length > 2 && LANGUAGE_PREFIX.test(segments[0])
       ? segments[0].toLowerCase()
-      : null
+      : DEFAULT_LANGUAGE
   }
 
-  const languages = new Set(entries.map((entry) => languageOf(entry.loc)).filter(Boolean))
-  if (languages.size < 2) return entries
+  const counts = new Map()
+  for (const entry of entries) {
+    const language = languageOf(entry.loc)
+    counts.set(language, (counts.get(language) ?? 0) + 1)
+  }
+  if (counts.size < 2) return entries
 
   // No se puede agrupar por la ruta porque el slug también va traducido
   // (`/es/propiedad/villa-en-javea` frente a `/en/property/villa-in-javea`),
-  // así que se elige un idioma y se descarta el resto.
-  const preferred = ['es', 'en'].find((code) => languages.has(code)) ?? [...languages][0]
-  return entries.filter((entry) => {
-    const language = languageOf(entry.loc)
-    return language === null || language === preferred
-  })
+  // así que se elige un idioma y se descarta el resto. Gana el que más fichas
+  // trae, que es el catálogo más completo; a igualdad, el castellano.
+  const preferred = [...counts.entries()].sort(
+    (a, b) => b[1] - a[1] || Number(b[0] === 'es') - Number(a[0] === 'es'),
+  )[0][0]
+  return entries.filter((entry) => languageOf(entry.loc) === preferred)
 }
 
 export async function collect({ fetcher, source, known, log, limit = Infinity, refreshBudget = 40 }) {
