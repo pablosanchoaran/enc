@@ -235,3 +235,46 @@ export function readPrice($) {
   }
   return null
 }
+
+/**
+ * Ficha con datos estructurados. La plataforma que hay detrás de varias de
+ * estas webs va renovando plantillas, y las nuevas ya no llevan ninguna clase
+ * con "price": el importe visible va en utilidades de Tailwind sin significado
+ * y en la misma página aparecen importes de propiedades relacionadas. Bindley
+ * migró así y se quedó en cero anuncios de un día para otro.
+ *
+ * Lo que sí publican es un `RealEstateListing` de schema.org con el precio y
+ * la localidad. Es el dato que la propia agencia da a leer a las máquinas, así
+ * que vale mucho más que rebuscar números en el maquetado — en esa ficha, el
+ * primer importe del DOM eran 749.000 € de otra casa y el precio real 386.400.
+ */
+export function readStructured(html) {
+  for (const block of extractJsonLd(html)) {
+    for (const node of block['@graph'] ?? [block]) {
+      if (node['@type'] !== 'RealEstateListing' && node['@type'] !== 'Product') continue
+      const price = Number(node.offers?.price)
+      if (!Number.isFinite(price) || price <= 0) continue
+      return {
+        price,
+        locality: node.address?.addressLocality ?? null,
+        title: typeof node.name === 'string' ? node.name : null,
+        image: Array.isArray(node.image) ? node.image[0] : (node.image ?? null),
+      }
+    }
+  }
+  return null
+}
+
+/**
+ * Valor de una característica de la ficha, escrita como "Dormitorios: 3". Los
+ * dos puntos son obligatorios por el mismo motivo que en la localidad: el
+ * formulario de búsqueda de estas webs lista "Dormitorios 1+ 2+ 3+" y "Baños 1
+ * 2 3", y sin exigirlos toda parcela acababa con "1 habitación y 50 m²".
+ */
+export function readLabelled(text, ...labels) {
+  for (const label of labels) {
+    const match = text.match(new RegExp(`${label}\\s*:\\s*(\\d[\\d.,]*)`, 'iu'))
+    if (match) return match[1]
+  }
+  return null
+}

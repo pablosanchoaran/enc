@@ -16,7 +16,9 @@ import {
   metaContent,
   parseArea,
   parseCount,
+  readLabelled,
   readPrice,
+  readStructured,
 } from '../parse.mjs'
 
 /**
@@ -54,19 +56,6 @@ function extractPropertyLinks(html, origin, { propertyPath, propertyPattern }) {
   return [...links]
 }
 
-/**
- * Valor de una característica de la ficha, escrita como "Dormitorios: 3". Los
- * dos puntos son obligatorios por el mismo motivo que en la localidad: el
- * formulario de búsqueda de estas webs lista "Dormitorios 1+ 2+ 3+" y "Baños 1
- * 2 3", y sin exigirlos toda parcela acababa con "1 habitación y 50 m²".
- */
-function readLabelled(text, ...labels) {
-  for (const label of labels) {
-    const match = text.match(new RegExp(`${label}\\s*:\\s*(\\d[\\d.,]*)`, 'iu'))
-    if (match) return match[1]
-  }
-  return null
-}
 
 /**
  * Municipio declarado en la ficha ("Localidad: Teulada"). Se exigen los dos
@@ -106,9 +95,15 @@ function cleanImageUrl(raw) {
 export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
-  const title = $('h1').first().text().trim() || metaContent(html, 'og:title') || null
+  const structured = readStructured(html)
 
-  const price = readPrice($)
+  const title =
+    $('h1').first().text().trim() || structured?.title || metaContent(html, 'og:title') || null
+
+  // El precio del maquetado manda donde lo hay; el estructurado entra cuando
+  // no. Vista Marina Home pinta el importe sin ninguna clase que lo señale, y
+  // por eso estuvo desactivada: lo que sí publica es un `RealEstateListing`.
+  const price = readPrice($) ?? structured?.price ?? null
 
   if (!title || !price) return null
 
@@ -133,13 +128,15 @@ export function parsePropertyPage(html, url) {
     ),
     plotM2: parseArea(readLabelled(body, 'parcela', 'terreno', 'solar')),
     type: detectType(title, slug.replace(/-/g, ' ')),
-    image: cleanImageUrl(metaContent(html, 'og:image')),
+    image: cleanImageUrl(metaContent(html, 'og:image')) ?? structured?.image ?? null,
     saleStatus: detectSaleStatus($),
     // Cuando la ficha declara su localidad, esa manda y no se mezcla con nada
     // más: una descripción que diga "a diez minutos de Dénia" no debe mover la
     // casa de pueblo a Dénia.
-    municipality: locality ? detectMunicipality(locality) : null,
-    locationHint: [locality, title, slug.replace(/-/g, ' '), description]
+    municipality: locality
+      ? detectMunicipality(locality)
+      : (structured?.locality ? detectMunicipality(structured.locality) : null),
+    locationHint: [locality, structured?.locality, title, slug.replace(/-/g, ' '), description]
       .filter(Boolean)
       .join(' | '),
   }

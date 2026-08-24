@@ -1,9 +1,9 @@
 {
   "date": "2026-08-24",
-  "generatedAt": "2026-08-24T19:54:41.898Z",
+  "generatedAt": "2026-08-24T20:14:29.528Z",
   "totals": {
-    "inventory": 3463,
-    "additions": 217,
+    "inventory": 3364,
+    "additions": 224,
     "priceDrops": 3,
     "priceRises": 2,
     "removals": 0
@@ -6679,6 +6679,251 @@
       "lastSeen": "2026-08-24",
       "missingRuns": 0,
       "status": "active"
+    },
+    {
+      "id": "vistamarinahome:7deef9a64a",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/atico-a-la-venta-con-orientacion-sur-y-con-vistas-despejadas-al-parque-y-a-la-montana-gl115/",
+      "title": "Ático a la venta con orientación sur y con vistas despejadas al parque y a la montaña",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 310000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/65/019f197a-a326-73a5-ad6b-68849694ae65.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-08",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-7deef9a64a.webp",
+        "thumb": "vistamarinahome-7deef9a64a.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/65/019f197a-a326-73a5-ad6b-68849694ae65.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:68b669de23",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/atico-en-venta-en-ondara-3-dormitorios-2-banos-y-terraza-amplia-d814/",
+      "title": "Ático en venta en Ondara: 3 dormitorios, 2 baños y terraza amplia",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 250000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "penthouse",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/06/019fe85a-782e-731e-891c-cd666bb67606.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-09",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-68b669de23.webp",
+        "thumb": "vistamarinahome-68b669de23.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/06/019fe85a-782e-731e-891c-cd666bb67606.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:94c4b7c6fc",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/confort-y-sol-junto-al-mar-tu-refugio-en-las-marinas-km-3-5-5994/",
+      "title": "Confort y Sol junto al Mar: Tu Refugio en Las Marinas (Km 3,5)",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 325000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "other",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/a4/019e3f50-f8aa-7344-a256-9c0325fb5ca4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-29",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-94c4b7c6fc.webp",
+        "thumb": "vistamarinahome-94c4b7c6fc.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/a4/019e3f50-f8aa-7344-a256-9c0325fb5ca4.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:e1c4ac24a9",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/parcela-en-denia-con-vistas-al-mar-10275/",
+      "title": "Parcela en Denia con vistas al mar",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 125000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/45/019e3f52-febe-73e9-9da3-f08c2059a245.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-07-27",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-e1c4ac24a9.webp",
+        "thumb": "vistamarinahome-e1c4ac24a9.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/45/019e3f52-febe-73e9-9da3-f08c2059a245.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:dcaa143e5f",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/parcela-en-denia-con-vistas-al-mar-10276/",
+      "title": "Parcela en Denia con vistas al mar",
+      "price": 125000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 125000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/2a/019e3f52-febe-73e9-9da3-ee223f3a242a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2023-07-27",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-dcaa143e5f.webp",
+        "thumb": "vistamarinahome-dcaa143e5f.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/2a/019e3f52-febe-73e9-9da3-ee223f3a242a.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:ae979ab97a",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/piso-en-venta-de-2-habitaciones-en-las-marinas-denia-d818/",
+      "title": "Piso en venta de 2 habitaciones en Las Marinas, Denia",
+      "price": 175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 175000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/87/019d9046-470e-76fb-84fd-fb0fb9c01387.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-20",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-ae979ab97a.webp",
+        "thumb": "vistamarinahome-ae979ab97a.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/87/019d9046-470e-76fb-84fd-fb0fb9c01387.jpg"
+      }
+    },
+    {
+      "id": "vistamarinahome:00d5c645d0",
+      "source": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "url": "https://www.vistamarinahome.com/propiedad/venta/piso-reformado-y-con-ascensor-a-la-venta-en-el-centro-de-denia-gl118/",
+      "title": "Piso reformado y con ascensor a la venta, en el centro de Denia",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 230000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/1b/019f197a-cf56-731f-84cc-aa87b645471b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-10",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "vistamarinahome-00d5c645d0.webp",
+        "thumb": "vistamarinahome-00d5c645d0.thumb.webp",
+        "capturedAt": "2026-08-24T20:12:40.635Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d9044-1b52-7258-a156-e5d36de51c87/social-preview/1b/019f197a-cf56-731f-84cc-aa87b645471b.jpg"
+      }
     }
   ],
   "priceDrops": [
@@ -7093,6 +7338,15 @@
       "requests": 45,
       "blocked": 0,
       "errors": 5
+    },
+    {
+      "id": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "listings": 8,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
     }
   ],
   "bootstrap": true

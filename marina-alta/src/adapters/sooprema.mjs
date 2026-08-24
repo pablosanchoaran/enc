@@ -11,13 +11,14 @@
 import * as cheerio from 'cheerio'
 import {
   detectSaleStatus,
-  extractJsonLd,
   detectType,
   metaContent,
   parseArea,
   parseCount,
   parseSitemap,
+  readLabelled,
   readPrice,
+  readStructured,
 } from '../parse.mjs'
 
 /** Segmentos de URL que Sooprema usa para las fichas, según el idioma del sitio. */
@@ -91,32 +92,24 @@ export function readIconFeatures($, target) {
 }
 
 /**
- * Ficha con datos estructurados. La plataforma que hay detrás de varias de
- * estas webs va renovando plantillas, y las nuevas ya no llevan ninguna clase
- * con "price": el importe visible va en utilidades de Tailwind sin significado
- * y en la misma página aparecen importes de propiedades relacionadas. Bindley
- * migró así y se quedó en cero anuncios de un día para otro.
+ * Lo que los iconos no hayan dado, escrito con su etiqueta en el cuerpo de la
+ * ficha: "Habitaciones: 3●Baños: 2●Superficie construida: 131 m²". Vista
+ * Marina Home no usa iconos y sin esto sus anuncios salían sin dormitorios ni
+ * metros, que además es lo que necesita el agrupador de repetidos.
  *
- * Lo que sí publican es un `RealEstateListing` de schema.org con el precio y
- * la localidad. Es el dato que la propia agencia da a leer a las máquinas, así
- * que vale mucho más que rebuscar números en el maquetado — en esa ficha, el
- * primer importe del DOM eran 749.000 € de otra casa y el precio real 386.400.
+ * Los dos puntos son obligatorios, como en el otro adaptador: el formulario de
+ * búsqueda de estas webs lista "Dormitorios 1+ 2+ 3+" y sin exigirlos toda
+ * parcela acababa con tres habitaciones.
  */
-function readStructured(html) {
-  for (const block of extractJsonLd(html)) {
-    for (const node of block['@graph'] ?? [block]) {
-      if (node['@type'] !== 'RealEstateListing' && node['@type'] !== 'Product') continue
-      const price = Number(node.offers?.price)
-      if (!Number.isFinite(price) || price <= 0) continue
-      return {
-        price,
-        locality: node.address?.addressLocality ?? null,
-        title: typeof node.name === 'string' ? node.name : null,
-        image: Array.isArray(node.image) ? node.image[0] : (node.image ?? null),
-      }
-    }
-  }
-  return null
+function readLabelledFeatures($, target) {
+  const body = $('body').text().replace(/\s+/g, ' ')
+  target.beds ??= parseCount(readLabelled(body, 'dormitorios', 'habitaciones', 'bedrooms'))
+  target.baths ??= parseCount(readLabelled(body, 'baños', 'banos', 'bathrooms'))
+  // "Construido en: 1920" es el año, no la superficie.
+  target.builtM2 ??= parseArea(
+    readLabelled(body, 'superficie construida', 'm2 construidos', 'construidos', 'edificado'),
+  )
+  target.plotM2 ??= parseArea(readLabelled(body, 'parcela', 'terreno', 'solar'))
 }
 
 export function parsePropertyPage(html, url) {
@@ -143,6 +136,7 @@ export function parsePropertyPage(html, url) {
 
   const facts = { beds: null, baths: null, builtM2: null, plotM2: null }
   readIconFeatures($, facts)
+  readLabelledFeatures($, facts)
 
   if (!title || !price) return null
 
@@ -167,15 +161,15 @@ export function parsePropertyPage(html, url) {
   }
 }
 
+/** El idioma del sitio que no lleva prefijo en la URL. */
+const DEFAULT_LANGUAGE = '\u0000sin-prefijo'
+
 /**
  * Las webs multiidioma publican la misma ficha una vez por idioma
  * (`/es/property/x`, `/en/property/x`, `/de/property/x`…). Sin esto se
  * descargaría cuatro veces lo mismo y el inventario tendría cuatro anuncios
  * por casa, porque la referencia sale del slug.
  */
-/** El idioma del sitio que no lleva prefijo en la URL. */
-const DEFAULT_LANGUAGE = '\u0000sin-prefijo'
-
 export function preferOneLanguage(entries) {
   // Sin prefijo no significa "neutro": es el idioma por defecto de la web, uno
   // más. Tratarlo como neutro dejaba pasar las dos versiones — Bindley servía

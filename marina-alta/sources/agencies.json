@@ -206,15 +206,11 @@
     },
     {
       "id": "vistamarinahome",
-      "adapter": "listado",
+      "adapter": "sooprema",
       "agency": "Vista Marina Home",
       "origin": "https://www.vistamarinahome.com",
-      "listingUrls": [
-        "https://www.vistamarinahome.com/propiedades-en-venta-en-la-costa-blanca/"
-      ],
-      "propertyPath": "/propiedad/",
-      "enabled": false,
-      "notes": "Dénia. El precio aparece en el HTML pero sin ninguna clase ni JSON-LD que lo identifique, así que no hay forma fiable de distinguirlo de otros importes de la página."
+      "enabled": true,
+      "notes": "Dénia, Ondara y Jesús Pobre. Su ficha no marca el precio con ninguna clase, pero publica un RealEstateListing de schema.org con precio y localidad, que es de donde se lee. Estuvo desactivada hasta que el lector de datos estructurados entró en el adaptador. Su sitemap lista las 43 fichas; la página de listado solo enseñaba 6."
     },
     {
       "id": "oleahome",
