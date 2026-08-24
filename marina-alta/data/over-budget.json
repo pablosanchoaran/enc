@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T22:09:47.980Z",
+  "updatedAt": "2026-08-23T22:14:33.793Z",
   "maxPrice": 350000,
   "entries": [
     {
@@ -4662,7 +4662,7 @@
       "source": "llobell",
       "price": 3500000,
       "lastmod": null,
-      "seenOn": "2026-08-21"
+      "seenOn": "2026-08-23"
     },
     {
       "url": "https://www.renvida.com/665154/4-bedroom-villa-in-denia",
@@ -25717,6 +25717,13 @@
       "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-chalet-en-moraira-c605/",
       "source": "llobell",
       "price": 575000,
+      "lastmod": null,
+      "seenOn": "2026-08-23"
+    },
+    {
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-fantastico-chalet-con-vistas-al-mar-en-calpe-c608/",
+      "source": "llobell",
+      "price": 730000,
       "lastmod": null,
       "seenOn": "2026-08-23"
     }

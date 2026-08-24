@@ -1,8 +1,8 @@
 {
   "date": "2026-08-23",
-  "generatedAt": "2026-08-23T22:09:47.980Z",
+  "generatedAt": "2026-08-23T22:14:33.793Z",
   "totals": {
-    "inventory": 3235,
+    "inventory": 3236,
     "additions": 39,
     "priceDrops": 6,
     "priceRises": 2,
@@ -1500,9 +1500,9 @@
     {
       "id": "llobell",
       "agency": "Llobell Inmobiliaris",
-      "listings": 36,
+      "listings": 37,
       "status": "ok",
-      "requests": 60,
+      "requests": 62,
       "blocked": 0,
       "errors": 0
     },
