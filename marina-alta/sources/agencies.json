@@ -283,6 +283,14 @@
       "excludeUrlPattern": "/(alquiler|alquiler-vacacional|rental|vermietung)/",
       "enabled": true,
       "notes": "Moraira y Benissa, gama alta. 317 fichas en venta en su sitemap, en siete idiomas; se queda el castellano por ser el más completo. Cuelga el alquiler vacacional del mismo prefijo que la venta, por eso el patrón de exclusión."
+    },
+    {
+      "id": "candcproperties",
+      "adapter": "listado",
+      "agency": "C&C Properties",
+      "origin": "https://www.candcproperties.es",
+      "enabled": false,
+      "notes": "Moraira. Su robots.txt nos deja pasar —solo prohíbe rutas de administración y formularios—, pero el servidor interpone una verificación anti-bots: devuelve una página 'Security Check' de 5.882 bytes en vez del contenido. No es cosa de nuestro agente: contestan lo mismo un bot genérico, curl y una petición sin agente. Entrar exigiría fingir ser un navegador, que es la línea que no cruzamos (igual que con InmoDalal e Hispania Homes)."
     }
   ]
 }
