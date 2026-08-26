@@ -1,0 +1,5224 @@
+{
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T21:46:29.387Z",
+  "totals": {
+    "inventory": 3596,
+    "additions": 119,
+    "priceDrops": 13,
+    "priceRises": 4,
+    "removals": 2
+  },
+  "additions": [
+    {
+      "id": "mlsdenia:0f2aa26887",
+      "source": "mlsdenia",
+      "agency": "MLS Dénia",
+      "url": "https://www.mlsdenia.com/en-venta/parcela-urbana-llosa-de-camacho-dv67/",
+      "title": "PARCELA URBANA LLOSA DE CAMACHO",
+      "price": 130000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 130000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 522,
+      "pricePerM2": null,
+      "image": "https://www.mlsdenia.com/opi/245852",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "mlsdenia-0f2aa26887.webp",
+        "thumb": "mlsdenia-0f2aa26887.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://www.mlsdenia.com/opi/245852"
+      }
+    },
+    {
+      "id": "denialara:0f9da2e785",
+      "source": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "url": "https://www.denialara.com/propiedad/casa-de-pueblo-con-terraza-de-35-m-en-pedreguer-gran-potencial-para-reformar-9192/",
+      "title": "Casa de pueblo con terraza de 35 m² en Pedreguer – Gran potencial para reformar",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 180000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "house",
+      "beds": 5,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": 101,
+      "pricePerM2": null,
+      "image": "https://www.denialara.com/objetos/temp/source/denialara/2026/08/25/363438/20260820_112010Copiar.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "denialara-0f9da2e785.webp",
+        "thumb": "denialara-0f9da2e785.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://www.denialara.com/objetos/temp/source/denialara/2026/08/25/363438/20260820_112010Copiar.jpeg"
+      }
+    },
+    {
+      "id": "llobell:e917a15a98",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-finca-rustica-con-2-casas-c594/",
+      "title": "Se vende finca rustica con 2 casas",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 260000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5131,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/08/343017/16.jpeg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-e917a15a98.webp",
+        "thumb": "llobell-e917a15a98.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/01/08/343017/16.jpeg"
+      }
+    },
+    {
+      "id": "lyt:c001f8e3b3",
+      "source": "lyt",
+      "agency": "LYT Properties",
+      "url": "https://www.lytproperties.com/detalles-del-inmueble/solar-urbano-para-construccion-de-pisos-y-apartamentos-con-orientacion-sur-y-vistas-abiertas-al-rio-/23088294",
+      "title": "Solar urbano para construcción de pisos y apartamentos con orientación sur y vistas abiertas al río en Gata de Gorgos",
+      "price": 70000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 70000
+        }
+      ],
+      "municipality": "Gata de Gorgos",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 160,
+      "pricePerM2": null,
+      "image": "https://images.egorealestate.com/Z1280x960/OAYES/S5/C8126/P27022827/Tphoto/IDeb559c01-0000-0500-0000-000015ac17b0.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "lyt-c001f8e3b3.webp",
+        "thumb": "lyt-c001f8e3b3.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://images.egorealestate.com/Z1280x960/OAYES/S5/C8126/P27022827/Tphoto/IDeb559c01-0000-0500-0000-000015ac17b0.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:53bd8d42a7",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/parcela-en-venta-con-vistas-al-mar-en-cumbre-del-sol-benitachell-bx-g-012/",
+      "title": "Parcela en venta con vistas al mar en Cumbre del Sol, Benitachell",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1064,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/6e/01a03943-6a58-7318-a17d-529b4ce3a06e.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-25T14:26:48.000Z",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-53bd8d42a7.webp",
+        "thumb": "benimo-villas-53bd8d42a7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/6e/01a03943-6a58-7318-a17d-529b4ce3a06e.jpg"
+      }
+    },
+    {
+      "id": "benimo-villas:d4e18b66ee",
+      "source": "benimo-villas",
+      "agency": "Benimo Villas",
+      "url": "https://www.benimo-villas.com/venta/terreno-con-vista-al-mar-en-venta-en-la-llosa-de-camacho-hl-g-040/",
+      "title": "Terreno con vista al mar en venta en La Llosa de Camacho",
+      "price": 90500,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 90500
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 12066,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/85/019a972a-edee-7569-9c17-b4eb35d89585.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-09T17:04:25.000Z",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "benimo-villas-d4e18b66ee.webp",
+        "thumb": "benimo-villas-d4e18b66ee.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019a77fb-a464-774c-bf83-08a4fb54f355/social-preview/85/019a972a-edee-7569-9c17-b4eb35d89585.jpg"
+      }
+    },
+    {
+      "id": "inmovidal:7c6eb51736",
+      "source": "inmovidal",
+      "agency": "Inmovidal",
+      "url": "https://www.inmovidal.com/venta/atico-en-urbanizacion-el-cortijo-9580/",
+      "title": "Atico en Urbanización El Cortijo",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 3353,
+      "image": "https://app-api.paagees.com/uploads/019b6456-5f5f-76dc-a79e-7bed093b223c/social-preview/22/01a03d2a-4d2a-75ea-a6d5-f8f5f307b822.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-26T08:33:55.000Z",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "inmovidal-7c6eb51736.webp",
+        "thumb": "inmovidal-7c6eb51736.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019b6456-5f5f-76dc-a79e-7bed093b223c/social-preview/22/01a03d2a-4d2a-75ea-a6d5-f8f5f307b822.jpg"
+      }
+    },
+    {
+      "id": "inmodemar:13418b9e33",
+      "source": "inmodemar",
+      "agency": "Inmodemar",
+      "url": "https://www.inmodemar.com/venta/piso-luminoso-con-terraza-y-vistas-abiertas-en-el-centro-de-el-verger-w-476/",
+      "title": "Piso luminoso con terraza y vistas abiertas en el centro de El Verger",
+      "price": 179000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 179000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 99,
+      "plotM2": null,
+      "pricePerM2": 1808,
+      "image": "https://www.inmodemar.com/opi/363427",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-25",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "inmodemar-13418b9e33.webp",
+        "thumb": "inmodemar-13418b9e33.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://www.inmodemar.com/opi/363427"
+      }
+    },
+    {
+      "id": "gpereto:342402fbe8",
+      "source": "gpereto",
+      "agency": "Grupo Peretó",
+      "url": "https://www.gpereto.co.uk/property/terraced-house-murla--280800-ref001915pgi-362914/",
+      "title": "Terraced House - Murla -  - 280.800€ - Ref. 001915PGI",
+      "price": 280800,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280800
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.lowcostcostablanca.com/objetos/temp/source/lowcostcostablanca/2026/08/12/362914/20260805_125153-1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "gpereto-342402fbe8.webp",
+        "thumb": "gpereto-342402fbe8.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://www.lowcostcostablanca.com/objetos/temp/source/lowcostcostablanca/2026/08/12/362914/20260805_125153-1.jpeg"
+      }
+    },
+    {
+      "id": "agenciamorato:ff461ec677",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/atico-luminoso-en-el-centro-de-calpe-con-vistas-al-mar-y-al-penon-a465c/",
+      "title": "Ático luminoso en el centro de Calpe con vistas al mar y al Peñón",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 310000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 3523,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/44/01a034b2-d62c-75cb-9a00-7eace89be044.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-26T15:27:36.000Z",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "agenciamorato-ff461ec677.webp",
+        "thumb": "agenciamorato-ff461ec677.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/44/01a034b2-d62c-75cb-9a00-7eace89be044.jpg"
+      }
+    },
+    {
+      "id": "agenciamorato:adcec1e163",
+      "source": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "url": "https://www.agenciamorato.com/venta/tu-apartamento-junto-al-mar-en-calpe-3-dormitorios-y-terraza-a466/",
+      "title": "Tu apartamento junto al mar en Calpe | 3 dormitorios y terraza",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 220000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 74,
+      "plotM2": null,
+      "pricePerM2": 2973,
+      "image": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/53/01a03d79-0967-767c-a5b0-8071ba3f1353.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-26T15:09:41.000Z",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "agenciamorato-adcec1e163.webp",
+        "thumb": "agenciamorato-adcec1e163.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c4214-d914-7265-982a-7e648c1561c1/social-preview/53/01a03d79-0967-767c-a5b0-8071ba3f1353.jpg"
+      }
+    },
+    {
+      "id": "bindley:668f01885e",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/3-habitaciones-2-banos-piscina-vistas-abiertas-bpc659777/",
+      "title": "3 HABITACIONES, 2 BAÑOS, PISCINA, VISTAS ABIERTAS",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 350000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "other",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 140,
+      "plotM2": null,
+      "pricePerM2": 2500,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/cf/019e3b03-d3e7-7319-881e-a8c586ee94cf.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-20",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-668f01885e.webp",
+        "thumb": "bindley-668f01885e.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/cf/019e3b03-d3e7-7319-881e-a8c586ee94cf.jpg"
+      }
+    },
+    {
+      "id": "bindley:adf224bacf",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/amplia-parcela-en-calpe-con-vistas-abiertas-bp004085/",
+      "title": "Amplia Parcela en Calpe con vistas abiertas",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 135000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1062,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/31/019db095-7962-7087-92b0-ca1442105031.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-14",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-adf224bacf.webp",
+        "thumb": "bindley-adf224bacf.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/31/019db095-7962-7087-92b0-ca1442105031.jpg"
+      }
+    },
+    {
+      "id": "bindley:e25f410c78",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/amplio-apartamento-de-3-dormitorios-junto-al-casco-antiguo-bpc269160/",
+      "title": "Amplio apartamento de 3 dormitorios junto al casco antiguo",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 299000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 111,
+      "plotM2": null,
+      "pricePerM2": 2694,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8d/019eac31-f2fc-750d-a858-bc93b885238d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-30",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e25f410c78.webp",
+        "thumb": "bindley-e25f410c78.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8d/019eac31-f2fc-750d-a858-bc93b885238d.jpg"
+      }
+    },
+    {
+      "id": "bindley:f3946ce45d",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-de-2-dormitorios-con-vistas-panoramicas-en-cumbre-del-sol-bpc263013/",
+      "title": "APARTAMENTO DE 2 DORMITORIOS CON VISTAS PANORÁMICAS EN CUMBRE DEL SOL",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 78,
+      "plotM2": 78,
+      "pricePerM2": 2821,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1b/019ea6f7-0e0f-7739-b475-d21ae406671b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f3946ce45d.webp",
+        "thumb": "bindley-f3946ce45d.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1b/019ea6f7-0e0f-7739-b475-d21ae406671b.jpg"
+      }
+    },
+    {
+      "id": "bindley:73cbbb5e33",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-el-centro-de-calpe-a-un-paso-de-la-playa-y-al-lado-de-todos-los-comercios-bp572800/",
+      "title": "Apartamento en el centro de Calpe a un paso de la playa y al lado de todos los comercios",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 239000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 59,
+      "plotM2": null,
+      "pricePerM2": 4051,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/4a/019fdb7c-cea4-746c-b751-706af3476b4a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-73cbbb5e33.webp",
+        "thumb": "bindley-73cbbb5e33.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/4a/019fdb7c-cea4-746c-b751-706af3476b4a.jpg"
+      }
+    },
+    {
+      "id": "bindley:dd0835ae88",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-el-centro-de-calpe-bp182470/",
+      "title": "Apartamento En el centro de Calpe",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 319000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 68,
+      "plotM2": null,
+      "pricePerM2": 4691,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019db096-e112-710e-b10d-a6f045fc6bf5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-dd0835ae88.webp",
+        "thumb": "bindley-dd0835ae88.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019db096-e112-710e-b10d-a6f045fc6bf5.jpg"
+      }
+    },
+    {
+      "id": "bindley:fbb74371b5",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-las-marinas-denia-bpc315164/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 317000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 317000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 4803,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/56/019eac2d-ca6e-7134-ad15-baa9d4931456.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-09",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-fbb74371b5.webp",
+        "thumb": "bindley-fbb74371b5.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/56/019eac2d-ca6e-7134-ad15-baa9d4931456.jpg"
+      }
+    },
+    {
+      "id": "bindley:a49cd03898",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-las-marinas-denia-bpc705322/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 232000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 232000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 2275,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e6/019eac2d-2e65-70ad-9ae4-1e9d77ce4ee6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-a49cd03898.webp",
+        "thumb": "bindley-a49cd03898.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e6/019eac2d-2e65-70ad-9ae4-1e9d77ce4ee6.jpg"
+      }
+    },
+    {
+      "id": "bindley:6ae8f179e5",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-las-marinas-denia-bpc737054/",
+      "title": "Apartamento en Las Marinas, Denia",
+      "price": 341000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 341000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4316,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ed/019eac2d-1c31-730c-acdc-a7b97b0da5ed.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-06",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6ae8f179e5.webp",
+        "thumb": "bindley-6ae8f179e5.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ed/019eac2d-1c31-730c-acdc-a7b97b0da5ed.jpg"
+      }
+    },
+    {
+      "id": "bindley:3e8830bf5a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-planta-baja-en-el-mirador-caminando-hacia-benissa-bpc042933/",
+      "title": "Apartamento en planta baja en El Mirador, caminando hacia Benissa.",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 220000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 80,
+      "plotM2": 80,
+      "pricePerM2": 2750,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3f/019ea6ef-7187-734c-b113-d138d0dbee3f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-04",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-3e8830bf5a.webp",
+        "thumb": "bindley-3e8830bf5a.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3f/019ea6ef-7187-734c-b113-d138d0dbee3f.jpg"
+      }
+    },
+    {
+      "id": "bindley:621c964627",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-a-un-paseo-de-la-playa-de-la-fustera-benissa-costa-bp3515/",
+      "title": "Apartamento en venta a un paseo de la playa de la Fustera, Benissa costa.",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 249500
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 81,
+      "plotM2": null,
+      "pricePerM2": 3080,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/49/019d2e93-4363-7149-931b-9fcfa11e3e49.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-621c964627.webp",
+        "thumb": "bindley-621c964627.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/49/019d2e93-4363-7149-931b-9fcfa11e3e49.jpg"
+      }
+    },
+    {
+      "id": "bindley:a8b6d73ad8",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benissa-bpc124614/",
+      "title": "Apartamento en venta en Benissa",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 249500
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 81,
+      "plotM2": null,
+      "pricePerM2": 3080,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a9/019eac35-874b-708c-b654-406462f44da9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-02",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-a8b6d73ad8.webp",
+        "thumb": "bindley-a8b6d73ad8.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a9/019eac35-874b-708c-b654-406462f44da9.jpg"
+      }
+    },
+    {
+      "id": "bindley:0ddd3667cf",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benissa-costa-blanca-bp3650/",
+      "title": "Apartamento en venta en Benissa, Costa Blanca.",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 229000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 125,
+      "plotM2": null,
+      "pricePerM2": 1832,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fa/019d2e65-e4bf-7042-be0f-1515db0dbbfa.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-04-22",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-0ddd3667cf.webp",
+        "thumb": "bindley-0ddd3667cf.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fa/019d2e65-e4bf-7042-be0f-1515db0dbbfa.jpg"
+      }
+    },
+    {
+      "id": "bindley:f10f6c9044",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benitachell-bpc255673/",
+      "title": "Apartamento en venta en Benitachell",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 190000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 74,
+      "plotM2": null,
+      "pricePerM2": 2568,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d7/019eac33-506f-7398-8282-5fcb9c9086d7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f10f6c9044.webp",
+        "thumb": "bindley-f10f6c9044.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d7/019eac33-506f-7398-8282-5fcb9c9086d7.jpg"
+      }
+    },
+    {
+      "id": "bindley:42fe9b06a1",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benitachell-costa-blanca-bp3619/",
+      "title": "Apartamento en venta en Benitachell, costa blanca.",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 190000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 2235,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b7/019d2e7b-2fdd-738c-a204-d60b7c5ad9b7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-20",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-42fe9b06a1.webp",
+        "thumb": "bindley-42fe9b06a1.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b7/019d2e7b-2fdd-738c-a204-d60b7c5ad9b7.jpg"
+      }
+    },
+    {
+      "id": "bindley:33b7a356cb",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc109619/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 266000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 266000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 63,
+      "plotM2": null,
+      "pricePerM2": 4222,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/03/019e1b9a-f7fd-731d-9367-ed686d2e0503.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-33b7a356cb.webp",
+        "thumb": "bindley-33b7a356cb.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/03/019e1b9a-f7fd-731d-9367-ed686d2e0503.jpg"
+      }
+    },
+    {
+      "id": "bindley:8e9bc97818",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc489503/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 180000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a6/019eac39-b7a2-7333-95db-40ec2bf534a6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-8e9bc97818.webp",
+        "thumb": "bindley-8e9bc97818.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a6/019eac39-b7a2-7333-95db-40ec2bf534a6.jpg"
+      }
+    },
+    {
+      "id": "bindley:790817a926",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc607129/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 197000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 197000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 55,
+      "plotM2": null,
+      "pricePerM2": 3582,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/37/019eac37-b731-702f-ad60-23389adf8537.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-30",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-790817a926.webp",
+        "thumb": "bindley-790817a926.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/37/019eac37-b731-702f-ad60-23389adf8537.jpg"
+      }
+    },
+    {
+      "id": "bindley:4d3f3726fd",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc635061/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 210000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 210000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 2,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 2917,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/29/019e1b91-09c8-71d8-9775-7b9939bad329.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-28",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-4d3f3726fd.webp",
+        "thumb": "bindley-4d3f3726fd.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/29/019e1b91-09c8-71d8-9775-7b9939bad329.jpg"
+      }
+    },
+    {
+      "id": "bindley:fad52ab590",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc905327/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 134,
+      "plotM2": null,
+      "pricePerM2": 2090,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/11/019fdb65-a9f3-7373-af74-3ed17a8d9511.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-17",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-fad52ab590.webp",
+        "thumb": "bindley-fad52ab590.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/11/019fdb65-a9f3-7373-af74-3ed17a8d9511.jpg"
+      }
+    },
+    {
+      "id": "bindley:9a08ca90f9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-la-fustera-benisa-costa-blanca-bp3514/",
+      "title": "Apartamento en venta en la Fustera, Benisa, Costa Blanca.",
+      "price": 335000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 335000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 3641,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e4/019d2e93-4363-7149-931b-a207016c37e4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9a08ca90f9.webp",
+        "thumb": "bindley-9a08ca90f9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e4/019d2e93-4363-7149-931b-a207016c37e4.jpg"
+      }
+    },
+    {
+      "id": "bindley:2d3b479d3c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-la-fustera-benissa-costa-blanca-bp3516/",
+      "title": "Apartamento en venta en la Fustera, Benissa, Costa Blanca.",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 330000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 3750,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/92/019d2e93-4363-7149-931b-9b9af3c93b92.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-2d3b479d3c.webp",
+        "thumb": "bindley-2d3b479d3c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/92/019d2e93-4363-7149-931b-9b9af3c93b92.jpg"
+      }
+    },
+    {
+      "id": "bindley:b973137b80",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-bpc810099/",
+      "title": "Apartamento en venta en Moraira",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 199000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 50,
+      "plotM2": null,
+      "pricePerM2": 3980,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/09/019eac2c-f9ff-73ea-afd1-87793e458e09.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-28",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b973137b80.webp",
+        "thumb": "bindley-b973137b80.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/09/019eac2c-f9ff-73ea-afd1-87793e458e09.jpg"
+      }
+    },
+    {
+      "id": "bindley:7869d254c9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3583/",
+      "title": "Apartamento en venta en Moraira, costa blanca.",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019d2e84-1e54-73f9-8681-e375a061bc9f.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-7869d254c9.webp",
+        "thumb": "bindley-7869d254c9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019d2e84-1e54-73f9-8681-e375a061bc9f.jpg"
+      }
+    },
+    {
+      "id": "bindley:bc30379e55",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3683/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 63,
+      "plotM2": null,
+      "pricePerM2": 4524,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/0e/019e887c-8013-7437-bb6a-2a9a20374a0e.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-07-06",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-bc30379e55.webp",
+        "thumb": "bindley-bc30379e55.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/0e/019e887c-8013-7437-bb6a-2a9a20374a0e.jpg"
+      }
+    },
+    {
+      "id": "bindley:00a05176b2",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bp3695/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 349000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 73,
+      "plotM2": null,
+      "pricePerM2": 4781,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/92/019f3b74-f57b-70d9-be1b-13c440ea9f92.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-04",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-00a05176b2.webp",
+        "thumb": "bindley-00a05176b2.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/92/019f3b74-f57b-70d9-be1b-13c440ea9f92.jpg"
+      }
+    },
+    {
+      "id": "bindley:85a5080fb7",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-moraira-costa-blanca-bpr3663/",
+      "title": "Apartamento en venta en Moraira, Costa Blanca.",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 63,
+      "plotM2": null,
+      "pricePerM2": 4365,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/24/019d9bcb-3932-758b-8338-cb3cb5889524.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-07-06",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-85a5080fb7.webp",
+        "thumb": "bindley-85a5080fb7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/24/019d9bcb-3932-758b-8338-cb3cb5889524.jpg"
+      }
+    },
+    {
+      "id": "bindley:b5e8d8e409",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-teulada-bpc852775/",
+      "title": "Apartamento en venta en Teulada",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 225000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2123,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/62/019fdb74-892f-761b-84bd-dda696a9c262.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-11",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b5e8d8e409.webp",
+        "thumb": "bindley-b5e8d8e409.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/62/019fdb74-892f-761b-84bd-dda696a9c262.jpg"
+      }
+    },
+    {
+      "id": "bindley:f7711aa284",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-teulada-costa-blanca-bp3664/",
+      "title": "Apartamento en venta en Teulada, Costa Blanca.",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 269000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 152,
+      "plotM2": null,
+      "pricePerM2": 1770,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019daed3-7b25-708c-b854-93646c5149bc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-03",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f7711aa284.webp",
+        "thumb": "bindley-f7711aa284.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019daed3-7b25-708c-b854-93646c5149bc.jpg"
+      }
+    },
+    {
+      "id": "bindley:84f2181d33",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamentos-de-nueva-construccion-en-construccion-en-les-deveses-el-verger-bpc183493/",
+      "title": "Apartamentos de nueva construcción en construcción en Les Deveses, El Verger",
+      "price": 317000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 317000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 3235,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019eac1f-f55c-7380-9487-f1f16867a2f5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-84f2181d33.webp",
+        "thumb": "bindley-84f2181d33.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019eac1f-f55c-7380-9487-f1f16867a2f5.jpg"
+      }
+    },
+    {
+      "id": "bindley:24b2d6ed7c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamentos-de-obra-nueva-en-javea-bpc123945/",
+      "title": "Apartamentos de obra nueva en Jávea",
+      "price": 334000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 334000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 3839,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1f/019fdb65-846f-767c-a198-2266dee2ca1f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-26",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-24b2d6ed7c.webp",
+        "thumb": "bindley-24b2d6ed7c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1f/019fdb65-846f-767c-a198-2266dee2ca1f.jpg"
+      }
+    },
+    {
+      "id": "bindley:9f6b7cb34c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/atico-en-el-centro-de-calpe-bp705115/",
+      "title": "ÁTICO EN EL CENTRO DE CALPE",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 240000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 50,
+      "plotM2": null,
+      "pricePerM2": 4800,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3c/01a00efb-9e80-707e-9fc3-d22998d0db3c.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-14",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9f6b7cb34c.webp",
+        "thumb": "bindley-9f6b7cb34c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3c/01a00efb-9e80-707e-9fc3-d22998d0db3c.jpg"
+      }
+    },
+    {
+      "id": "bindley:f8e538a947",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/bungalow-en-venta-en-benissa-bpc353627/",
+      "title": "Bungalow en venta en Benissa",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 350000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 150,
+      "plotM2": null,
+      "pricePerM2": 2333,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/98/019eac2a-5025-7295-ae72-50ee6f28ac98.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-03",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f8e538a947.webp",
+        "thumb": "bindley-f8e538a947.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/98/019eac2a-5025-7295-ae72-50ee6f28ac98.jpg"
+      }
+    },
+    {
+      "id": "bindley:9ae0ccec78",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/bungalow-en-venta-en-calpe-bpc900640/",
+      "title": "Bungalow en venta en Calpe",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 330000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 120,
+      "plotM2": 80,
+      "pricePerM2": 2750,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/01/019e4ab3-35fa-746d-951b-68346bfb1501.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9ae0ccec78.webp",
+        "thumb": "bindley-9ae0ccec78.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/01/019e4ab3-35fa-746d-951b-68346bfb1501.jpg"
+      }
+    },
+    {
+      "id": "bindley:13ee0bc6e9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/bungalow-en-venta-en-moraira-bpc965959/",
+      "title": "Bungalow en venta en Moraira",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 349000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 112,
+      "plotM2": 290,
+      "pricePerM2": 3116,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9e/019eac35-874b-708c-b654-2c9aec7a6c9e.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-13ee0bc6e9.webp",
+        "thumb": "bindley-13ee0bc6e9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9e/019eac35-874b-708c-b654-2c9aec7a6c9e.jpg"
+      }
+    },
+    {
+      "id": "bindley:6de1bf1eed",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/casa-de-pueblo-en-el-casco-antiguo-bp919470/",
+      "title": "CASA DE PUEBLO EN EL CASCO ANTIGUO",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 350000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "house",
+      "beds": 4,
+      "baths": 1,
+      "builtM2": 229,
+      "plotM2": null,
+      "pricePerM2": 1528,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/4c/019fdb75-93d2-769c-a424-04d2a43b4e4c.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6de1bf1eed.webp",
+        "thumb": "bindley-6de1bf1eed.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/4c/019fdb75-93d2-769c-a424-04d2a43b4e4c.jpg"
+      }
+    },
+    {
+      "id": "bindley:7091f775d7",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/casa-de-pueblo-en-venta-en-benitachell-bpc353243/",
+      "title": "Casa de pueblo en venta en Benitachell",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "house",
+      "beds": 6,
+      "baths": 2,
+      "builtM2": 300,
+      "plotM2": null,
+      "pricePerM2": 1083,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ac/019eac35-874b-708c-b654-2bee73e207ac.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-23",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-7091f775d7.webp",
+        "thumb": "bindley-7091f775d7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ac/019eac35-874b-708c-b654-2bee73e207ac.jpg"
+      }
+    },
+    {
+      "id": "bindley:ddd1b03b14",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/casa-de-pueblo-en-venta-en-calpe-bpc947241/",
+      "title": "Casa de pueblo en venta en Calpe",
+      "price": 339000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 339000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "house",
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 130,
+      "plotM2": 232,
+      "pricePerM2": 2608,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/90/019eac47-4184-709e-ae65-cc7e1ba19b90.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-17",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-ddd1b03b14.webp",
+        "thumb": "bindley-ddd1b03b14.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/90/019eac47-4184-709e-ae65-cc7e1ba19b90.jpg"
+      }
+    },
+    {
+      "id": "bindley:afbd3d5f39",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/casa-en-venta-en-pueblo-historico-bp2079/",
+      "title": "Casa en venta en pueblo histórico.",
+      "price": 212500,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 212500
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 348,
+      "plotM2": null,
+      "pricePerM2": 611,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/97/019d2e9d-3409-73f6-b2f2-c5d8f08d0e97.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-afbd3d5f39.webp",
+        "thumb": "bindley-afbd3d5f39.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/97/019d2e9d-3409-73f6-b2f2-c5d8f08d0e97.jpg"
+      }
+    },
+    {
+      "id": "bindley:f73df0938d",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/casita-de-campo-en-calpe-bp130304/",
+      "title": "CASITA DE CAMPO EN CALPE",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 340000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "other",
+      "beds": 4,
+      "baths": 1,
+      "builtM2": 104,
+      "plotM2": 1445,
+      "pricePerM2": 3269,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a0/019db091-1dc9-732d-83da-0721a303d6a0.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f73df0938d.webp",
+        "thumb": "bindley-f73df0938d.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a0/019db091-1dc9-732d-83da-0721a303d6a0.jpg"
+      }
+    },
+    {
+      "id": "bindley:1bca35694d",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/chalet-adosado-en-venta-en-pedreguer-bpc690401/",
+      "title": "Chalet adosado en venta en Pedreguer",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 330000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 140,
+      "plotM2": null,
+      "pricePerM2": 2357,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c9/019ea6f0-5417-736a-afd7-8555ef8ecbc9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-06",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-1bca35694d.webp",
+        "thumb": "bindley-1bca35694d.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c9/019ea6f0-5417-736a-afd7-8555ef8ecbc9.jpg"
+      }
+    },
+    {
+      "id": "bindley:49b7fbf83e",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/chalet-villa-en-venta-en-benissa-bpc447034/",
+      "title": "Chalet/Villa en venta en Benissa",
+      "price": 138000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 138000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "villa",
+      "beds": null,
+      "baths": null,
+      "builtM2": 54,
+      "plotM2": 14414,
+      "pricePerM2": 2556,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3a/019eac2c-b462-722f-aedc-75311ad3cc3a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-02",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-49b7fbf83e.webp",
+        "thumb": "bindley-49b7fbf83e.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/3a/019eac2c-b462-722f-aedc-75311ad3cc3a.jpg"
+      }
+    },
+    {
+      "id": "bindley:018a90e3d4",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/chalet-villa-en-venta-en-lliber-bpc684320/",
+      "title": "Chalet/Villa en venta en Llíber",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 310000
+        }
+      ],
+      "municipality": "Llíber",
+      "type": "villa",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 100,
+      "plotM2": 500,
+      "pricePerM2": 3100,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/54/019e1b93-49e6-7679-bf9f-e2f3e2a07754.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-03",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-018a90e3d4.webp",
+        "thumb": "bindley-018a90e3d4.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/54/019e1b93-49e6-7679-bf9f-e2f3e2a07754.jpg"
+      }
+    },
+    {
+      "id": "bindley:a1922ee3b8",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/cumbre-del-sol-apartamento-con-vistas-abiertas-al-valle-de-moraira-costa-blanca-norte-bpc888523/",
+      "title": "Cumbre del sol apartamento con vistas abiertas al valle de moraira costa blanca norte",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 295000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 107,
+      "plotM2": null,
+      "pricePerM2": 2757,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/55/019fdb59-dcd5-741f-9f57-86643501f955.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-27",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-a1922ee3b8.webp",
+        "thumb": "bindley-a1922ee3b8.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/55/019fdb59-dcd5-741f-9f57-86643501f955.jpg"
+      }
+    },
+    {
+      "id": "bindley:c26fda8a6f",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/cumbre-del-sol-apartamento-con-vistas-espectaculares-al-mar-en-pueblo-panorama-bpc364464/",
+      "title": "Cumbre del Sol apartamento con vistas espectaculares al mar en Pueblo Panorama",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 89,
+      "plotM2": null,
+      "pricePerM2": 3146,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019e26a6-f5da-722c-9794-5e36d513a7f4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-29",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-c26fda8a6f.webp",
+        "thumb": "bindley-c26fda8a6f.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019e26a6-f5da-722c-9794-5e36d513a7f4.jpg"
+      }
+    },
+    {
+      "id": "bindley:e4f5d0d9c8",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/excelente-parcela-en-calpe-a-un-paso-del-centro-y-de-la-playa-bp132851/",
+      "title": "EXCELENTE PARCELA EN CALPE A UN PASO DEL CENTRO Y DE LA PLAYA",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/49/019db094-32c6-7023-b835-927199650c49.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-14",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e4f5d0d9c8.webp",
+        "thumb": "bindley-e4f5d0d9c8.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/49/019db094-32c6-7023-b835-927199650c49.jpg"
+      }
+    },
+    {
+      "id": "bindley:6dfd7129d5",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/fantastico-terreno-llano-ideal-para-cultivo-bp372570/",
+      "title": "FANTASTICO TERRENO LLANO IDEAL PARA CULTIVO",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 140000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 2800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ec/019fdb7c-d8b1-722d-8aad-d72e700fbbec.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6dfd7129d5.webp",
+        "thumb": "bindley-6dfd7129d5.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ec/019fdb7c-d8b1-722d-8aad-d72e700fbbec.jpg"
+      }
+    },
+    {
+      "id": "bindley:e05a5fa042",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/gran-apartamento-en-calpe-bp714707/",
+      "title": "GRAN APARTAMENTO EN CALPE",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 3,
+      "builtM2": 180,
+      "plotM2": null,
+      "pricePerM2": 1806,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/10/019db094-32c6-7023-b835-8f38add53a10.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-07",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e05a5fa042.webp",
+        "thumb": "bindley-e05a5fa042.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/10/019db094-32c6-7023-b835-8f38add53a10.jpg"
+      }
+    },
+    {
+      "id": "bindley:722c7acfcc",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/land-en-venta-en-benissa-bpc383730/",
+      "title": "Land en venta en Benissa",
+      "price": 150000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 150000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11223,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/51/019eac39-b7a2-7333-95db-61f796ae3f51.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-722c7acfcc.webp",
+        "thumb": "bindley-722c7acfcc.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/51/019eac39-b7a2-7333-95db-61f796ae3f51.jpg"
+      }
+    },
+    {
+      "id": "bindley:25b1dcfa80",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/land-en-venta-en-benitachell-bpc414774/",
+      "title": "Land en venta en Benitachell",
+      "price": 145000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 145000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 940,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b8/019eac39-b7a2-7333-95db-56ee264c78b8.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-25b1dcfa80.webp",
+        "thumb": "bindley-25b1dcfa80.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b8/019eac39-b7a2-7333-95db-56ee264c78b8.jpg"
+      }
+    },
+    {
+      "id": "bindley:a322d17129",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/land-en-venta-en-benitachell-bpc944766/",
+      "title": "Land en venta en Benitachell",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 195000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/87/019eac39-b7a2-7333-95db-4fa4e9c90b87.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-a322d17129.webp",
+        "thumb": "bindley-a322d17129.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/87/019eac39-b7a2-7333-95db-4fa4e9c90b87.jpg"
+      }
+    },
+    {
+      "id": "bindley:1c2631df7c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/luminoso-apartamento-de-2-dormitorios-y-2-banos-con-piscina-y-a-15-minutos-a-pie-de-la-playa-cumbre-del-sol-bpc940558/",
+      "title": "Luminoso apartamento de 2 dormitorios y 2 baños con piscina y a 15 minutos a pie de la playa Cumbre del Sol",
+      "price": 235000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 235000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": 2,
+      "builtM2": 68,
+      "plotM2": null,
+      "pricePerM2": 3456,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/99/019fdb6e-5aff-7762-afd3-28c9e4766d99.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-28",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-1c2631df7c.webp",
+        "thumb": "bindley-1c2631df7c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/99/019fdb6e-5aff-7762-afd3-28c9e4766d99.jpg"
+      }
+    },
+    {
+      "id": "bindley:293dd7d73e",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/magnifico-bungalow-con-vistas-abiertas-al-mar-y-penon-bp314228/",
+      "title": "Magnifico Bungalow con vistas abiertas al mar y peñon",
+      "price": 334000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 334000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 3340,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019db091-1dc9-732d-83d9-fdbf31c05cf4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-08",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-293dd7d73e.webp",
+        "thumb": "bindley-293dd7d73e.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019db091-1dc9-732d-83d9-fdbf31c05cf4.jpg"
+      }
+    },
+    {
+      "id": "bindley:5de96f8d1d",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/nuevo-apartamento-en-vergel-a-pocos-pasos-del-mar-bpc336169/",
+      "title": "Nuevo Apartamento en Vergel, a pocos pasos del mar",
+      "price": 333000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 333000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 3433,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ed/019fdb5d-f5eb-741a-88a2-26b475def5ed.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-03",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-5de96f8d1d.webp",
+        "thumb": "bindley-5de96f8d1d.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ed/019fdb5d-f5eb-741a-88a2-26b475def5ed.jpg"
+      }
+    },
+    {
+      "id": "bindley:cd2b1e09fd",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-con-vistas-al-mar-en-venta-en-benissa-costa-blanca-bp3412/",
+      "title": "Parcela con vistas al mar en Venta en Benissa, Costa Blanca.",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 239000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b7/019d2e9a-0323-7137-835a-d37cc97a03b7.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-cd2b1e09fd.webp",
+        "thumb": "bindley-cd2b1e09fd.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b7/019d2e9a-0323-7137-835a-d37cc97a03b7.jpg"
+      }
+    },
+    {
+      "id": "bindley:f808229da3",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-con-vistas-despejadas-en-benissa-costa-blanca-bp3260/",
+      "title": "Parcela con vistas despejadas en Benissa, Costa Blanca.",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 190000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10012,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fe/019ffa42-7c3a-742d-aa09-a5e322bd09fe.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-14",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f808229da3.webp",
+        "thumb": "bindley-f808229da3.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fe/019ffa42-7c3a-742d-aa09-a5e322bd09fe.jpg"
+      }
+    },
+    {
+      "id": "bindley:2ef4c09fbf",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-edificable-en-venta-para-construccion-de-pareados-en-empedrola-calpe-costa-blanca-bpc191663/",
+      "title": "Parcela edificable en venta para construcción de pareados en Empedrola Calpe, Costa Blanca",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ca/019d2e86-d382-725a-b155-4d4172afd2ca.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-2ef4c09fbf.webp",
+        "thumb": "bindley-2ef4c09fbf.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ca/019d2e86-d382-725a-b155-4d4172afd2ca.jpg"
+      }
+    },
+    {
+      "id": "bindley:2f4488fec9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-edificable-en-venta-para-construccion-de-pareados-en-empedrola-calpe-costa-blanca-bpc803229/",
+      "title": "Parcela edificable en venta para construcción de pareados en Empedrola Calpe, Costa Blanca",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/56/019d2e86-d382-725a-b155-50a2a8791956.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-2f4488fec9.webp",
+        "thumb": "bindley-2f4488fec9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/56/019d2e86-d382-725a-b155-50a2a8791956.jpg"
+      }
+    },
+    {
+      "id": "bindley:9467b4e46c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-edificables-con-vistas-al-mar-en-venta-en-cansalades-javea-bpc972665/",
+      "title": "Parcela edificables con vistas al mar en venta en Cansalades Javea",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ab/019fdb74-bf1b-712a-979b-b9c99b474fab.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9467b4e46c.webp",
+        "thumb": "bindley-9467b4e46c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ab/019fdb74-bf1b-712a-979b-b9c99b474fab.jpg"
+      }
+    },
+    {
+      "id": "bindley:3b630da2f7",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-calpe-con-vistas-a-la-montana-bp985100/",
+      "title": "Parcela en calpe con vistas a la montaña",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 135000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1186,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019db097-7427-725d-9327-6a7d0bb748f5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-14",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-3b630da2f7.webp",
+        "thumb": "bindley-3b630da2f7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f5/019db097-7427-725d-9327-6a7d0bb748f5.jpg"
+      }
+    },
+    {
+      "id": "bindley:196b9d6a21",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-calpe-con-vistas-abiertas-bp602818/",
+      "title": "PARCELA EN CALPE CON VISTAS ABIERTAS",
+      "price": 104990,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 104990
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 600,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9d/019db090-8ce9-727d-93d2-5ad46fab959d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-22",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-196b9d6a21.webp",
+        "thumb": "bindley-196b9d6a21.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9d/019db090-8ce9-727d-93d2-5ad46fab959d.jpg"
+      }
+    },
+    {
+      "id": "bindley:df62b7acc6",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-els-verger-bpc679476/",
+      "title": "Parcela en Els Verger",
+      "price": 198500,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 198500
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 5334,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ee/019fdb65-7a66-730f-b3ae-fd3f3899a6ee.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-18",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-df62b7acc6.webp",
+        "thumb": "bindley-df62b7acc6.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ee/019fdb65-7a66-730f-b3ae-fd3f3899a6ee.jpg"
+      }
+    },
+    {
+      "id": "bindley:6972eabf68",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc011092/",
+      "title": "Parcela en venta en Benissa",
+      "price": 69000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 69000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 90,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fc/019fdb6a-6b37-76ac-839f-f91f099b6dfc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6972eabf68.webp",
+        "thumb": "bindley-6972eabf68.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fc/019fdb6a-6b37-76ac-839f-f91f099b6dfc.jpg"
+      }
+    },
+    {
+      "id": "bindley:0f2e3a8a7f",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc312355/",
+      "title": "Parcela en venta en Benissa",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 195000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 825,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/09/019eac39-b7a2-7333-95db-666eaf0f0609.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-08",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-0f2e3a8a7f.webp",
+        "thumb": "bindley-0f2e3a8a7f.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/09/019eac39-b7a2-7333-95db-666eaf0f0609.jpg"
+      }
+    },
+    {
+      "id": "bindley:b53ff8400a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc507682/",
+      "title": "Parcela en venta en Benissa",
+      "price": 80000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 80000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 505,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e5/019fdb63-6c48-768d-b5c9-bc1db877b9e5.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b53ff8400a.webp",
+        "thumb": "bindley-b53ff8400a.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e5/019fdb63-6c48-768d-b5c9-bc1db877b9e5.jpg"
+      }
+    },
+    {
+      "id": "bindley:943fd6aff1",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc560665/",
+      "title": "Parcela en venta en Benissa",
+      "price": 242000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 242000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 15051,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/74/019fdb5c-d5b9-70b8-825e-3976c7ed5974.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-943fd6aff1.webp",
+        "thumb": "bindley-943fd6aff1.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/74/019fdb5c-d5b9-70b8-825e-3976c7ed5974.jpg"
+      }
+    },
+    {
+      "id": "bindley:00a432df47",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc609985/",
+      "title": "Parcela en venta en Benissa",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 325,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/35/019fdb63-6c48-768d-b5c9-9ac88970a635.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-00a432df47.webp",
+        "thumb": "bindley-00a432df47.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/35/019fdb63-6c48-768d-b5c9-9ac88970a635.jpg"
+      }
+    },
+    {
+      "id": "bindley:b03cbef358",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc645548/",
+      "title": "Parcela en venta en Benissa",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 199000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10478,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ef/019fdb63-6c48-768d-b5c9-a69e89e865ef.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b03cbef358.webp",
+        "thumb": "bindley-b03cbef358.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ef/019fdb63-6c48-768d-b5c9-a69e89e865ef.jpg"
+      }
+    },
+    {
+      "id": "bindley:b319f97834",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc691542/",
+      "title": "Parcela en venta en Benissa",
+      "price": 199000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 199000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 880,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb5d-f5eb-741a-88a2-1c73f4786a34.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b319f97834.webp",
+        "thumb": "bindley-b319f97834.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb5d-f5eb-741a-88a2-1c73f4786a34.jpg"
+      }
+    },
+    {
+      "id": "bindley:5ea0839d88",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc748002/",
+      "title": "Parcela en venta en Benissa",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 299000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 38500,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d4/019fdb5d-f5eb-741a-88a2-16327c6b95d4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-5ea0839d88.webp",
+        "thumb": "bindley-5ea0839d88.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d4/019fdb5d-f5eb-741a-88a2-16327c6b95d4.jpg"
+      }
+    },
+    {
+      "id": "bindley:637e8bb49f",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc811304/",
+      "title": "Parcela en venta en Benissa",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 195000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fb/019fdb63-6c48-768d-b5c9-ca9c21bf9efb.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-637e8bb49f.webp",
+        "thumb": "bindley-637e8bb49f.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fb/019fdb63-6c48-768d-b5c9-ca9c21bf9efb.jpg"
+      }
+    },
+    {
+      "id": "bindley:373e4bf0f9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc815914/",
+      "title": "Parcela en venta en Benissa",
+      "price": 135000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 135000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 400,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb63-6c48-768d-b5c9-aa950c1d5a34.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-373e4bf0f9.webp",
+        "thumb": "bindley-373e4bf0f9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb63-6c48-768d-b5c9-aa950c1d5a34.jpg"
+      }
+    },
+    {
+      "id": "bindley:9ede930e7c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc834624/",
+      "title": "Parcela en venta en Benissa",
+      "price": 340000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 340000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/75/019eac39-b7a2-7333-95db-247ffabc7475.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-30",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9ede930e7c.webp",
+        "thumb": "bindley-9ede930e7c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/75/019eac39-b7a2-7333-95db-247ffabc7475.jpg"
+      }
+    },
+    {
+      "id": "bindley:f8cef41d04",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-costa-blanca-bp2869/",
+      "title": "Parcela en venta en Benissa, Costa Blanca.",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11179,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/77/019d2e9d-3409-73f6-b2f2-a3f30bf70977.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f8cef41d04.webp",
+        "thumb": "bindley-f8cef41d04.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/77/019d2e9d-3409-73f6-b2f2-a3f30bf70977.jpg"
+      }
+    },
+    {
+      "id": "bindley:ac03506b26",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benitachell-costa-blanca-bp3299/",
+      "title": "Parcela en venta en Benitachell, Costa Blanca.",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 950,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/85/019d2e9b-d1eb-705b-8052-dd673380df85.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-ac03506b26.webp",
+        "thumb": "bindley-ac03506b26.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/85/019d2e9b-d1eb-705b-8052-dd673380df85.jpg"
+      }
+    },
+    {
+      "id": "bindley:ce4766e015",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc070720/",
+      "title": "Parcela en venta en Calpe",
+      "price": 210000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 210000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1330,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/7f/019fdb5d-0e5b-725c-85b6-b9db2095327f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-ce4766e015.webp",
+        "thumb": "bindley-ce4766e015.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/7f/019fdb5d-0e5b-725c-85b6-b9db2095327f.jpg"
+      }
+    },
+    {
+      "id": "bindley:b0a05e5a94",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc142790/",
+      "title": "Parcela en venta en Calpe",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 190000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 807,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1f/019d2e71-757a-70bb-a789-f896bfc3c81f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-24",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b0a05e5a94.webp",
+        "thumb": "bindley-b0a05e5a94.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/1f/019d2e71-757a-70bb-a789-f896bfc3c81f.jpg"
+      }
+    },
+    {
+      "id": "bindley:d046098068",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc275646/",
+      "title": "Parcela en venta en Calpe",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 803,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b3/019fdb74-0061-73c7-8766-cf4f1e887bb3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-d046098068.webp",
+        "thumb": "bindley-d046098068.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b3/019fdb74-0061-73c7-8766-cf4f1e887bb3.jpg"
+      }
+    },
+    {
+      "id": "bindley:d0b7234ef1",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc300620/",
+      "title": "Parcela en venta en Calpe",
+      "price": 186000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 186000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/87/019fdb5c-d5b9-70b8-825e-373f26d7a187.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-d0b7234ef1.webp",
+        "thumb": "bindley-d0b7234ef1.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/87/019fdb5c-d5b9-70b8-825e-373f26d7a187.jpg"
+      }
+    },
+    {
+      "id": "bindley:9bb9458557",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc408820/",
+      "title": "Parcela en venta en Calpe",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 350000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/11/019fdb5d-f5eb-741a-88a2-19cc65dc4511.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9bb9458557.webp",
+        "thumb": "bindley-9bb9458557.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/11/019fdb5d-f5eb-741a-88a2-19cc65dc4511.jpg"
+      }
+    },
+    {
+      "id": "bindley:bd72bf7467",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc445597/",
+      "title": "Parcela en venta en Calpe",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 265000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/33/019fdb63-6c48-768d-b5c9-969290ab3533.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-bd72bf7467.webp",
+        "thumb": "bindley-bd72bf7467.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/33/019fdb63-6c48-768d-b5c9-969290ab3533.jpg"
+      }
+    },
+    {
+      "id": "bindley:bb52923135",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc480589/",
+      "title": "Parcela en venta en Calpe",
+      "price": 160000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 160000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 800,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019fdb59-dcd5-741f-9f57-830ce3d8c5f4.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-bb52923135.webp",
+        "thumb": "bindley-bb52923135.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/f4/019fdb59-dcd5-741f-9f57-830ce3d8c5f4.jpg"
+      }
+    },
+    {
+      "id": "bindley:4c82b899ec",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc486675/",
+      "title": "Parcela en venta en Calpe",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 250000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 980,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/dc/019fdb63-6c48-768d-b5c9-e029297610dc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-4c82b899ec.webp",
+        "thumb": "bindley-4c82b899ec.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/dc/019fdb63-6c48-768d-b5c9-e029297610dc.jpg"
+      }
+    },
+    {
+      "id": "bindley:b4c2e04ddd",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc838266/",
+      "title": "Parcela en venta en Calpe",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/5b/019fdb74-0061-73c7-8766-d01a2c8c135b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b4c2e04ddd.webp",
+        "thumb": "bindley-b4c2e04ddd.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/5b/019fdb74-0061-73c7-8766-d01a2c8c135b.jpg"
+      }
+    },
+    {
+      "id": "bindley:6201fc2030",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-calpe-bpc993047/",
+      "title": "Parcela en venta en Calpe",
+      "price": 136000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 136000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b9/019fdb63-3efd-7179-b2c3-d9ac755244b9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6201fc2030.webp",
+        "thumb": "bindley-6201fc2030.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/b9/019fdb63-3efd-7179-b2c3-d9ac755244b9.jpg"
+      }
+    },
+    {
+      "id": "bindley:f8d1d7b20c",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-costa-nova-la-marina-javea-bpc559331/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 259600,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 259600
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1298,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8b/019fdb75-1dc9-75ad-85a7-7dcc81b3c08b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-f8d1d7b20c.webp",
+        "thumb": "bindley-f8d1d7b20c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8b/019fdb75-1dc9-75ad-85a7-7dcc81b3c08b.jpg"
+      }
+    },
+    {
+      "id": "bindley:538fe6e896",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-costa-nova-la-marina-javea-bpc601713/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 220220,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 220220
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1001,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/5a/019fdb75-1dc9-75ad-85a7-821fa575895a.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-538fe6e896.webp",
+        "thumb": "bindley-538fe6e896.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/5a/019fdb75-1dc9-75ad-85a7-821fa575895a.jpg"
+      }
+    },
+    {
+      "id": "bindley:58fc54ae3a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-costa-nova-la-marina-javea-bpc639165/",
+      "title": "Parcela en Venta en Costa Nova La Marina Jávea",
+      "price": 185760,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 185760
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1032,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019d2e75-0ca7-7070-bb17-b9b3ca4f9834.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-19",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-58fc54ae3a.webp",
+        "thumb": "bindley-58fc54ae3a.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019d2e75-0ca7-7070-bb17-b9b3ca4f9834.jpg"
+      }
+    },
+    {
+      "id": "bindley:debe1ba998",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-el-valle-del-portet-moraira-costa-blanca-bp3697/",
+      "title": "Parcela en venta en el Valle del Portet, Moraira, Costa Blanca.",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 835,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c2/019f6112-d328-77d1-8e14-f473817cabc2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-16",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-debe1ba998.webp",
+        "thumb": "bindley-debe1ba998.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c2/019f6112-d328-77d1-8e14-f473817cabc2.jpg"
+      }
+    },
+    {
+      "id": "bindley:0518bd1b2b",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-en-lomas-del-rey-javea-1030-m2-bpc270814/",
+      "title": "Parcela en venta en en Lomas Del Rey, Jávea - 1030 m²",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 320000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1030,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/0d/019fdb74-bf1b-712a-979b-b094cea47f0d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-13",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-0518bd1b2b.webp",
+        "thumb": "bindley-0518bd1b2b.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/0d/019fdb74-bf1b-712a-979b-b094cea47f0d.jpg"
+      }
+    },
+    {
+      "id": "bindley:e6b1ea51b8",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-jalon-xalo-bpc087712/",
+      "title": "Parcela en venta en Jalon - Xalo",
+      "price": 175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 175000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 34833,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/32/019eac3b-d050-70c5-be23-1754520c1932.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-09",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e6b1ea51b8.webp",
+        "thumb": "bindley-e6b1ea51b8.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/32/019eac3b-d050-70c5-be23-1754520c1932.jpg"
+      }
+    },
+    {
+      "id": "bindley:d4b973c32b",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-javea-bpc008489/",
+      "title": "Parcela en venta en Javea",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 285000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 752,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/12/019eac35-874b-708c-b654-0c83e18ecf12.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-d4b973c32b.webp",
+        "thumb": "bindley-d4b973c32b.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/12/019eac35-874b-708c-b654-0c83e18ecf12.jpg"
+      }
+    },
+    {
+      "id": "bindley:d4224d4a63",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-moraira-bpc299153/",
+      "title": "Parcela en venta en Moraira",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1180,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019eac3d-ecb3-72da-9264-3c9384ddc69f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-27",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-d4224d4a63.webp",
+        "thumb": "bindley-d4224d4a63.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019eac3d-ecb3-72da-9264-3c9384ddc69f.jpg"
+      }
+    },
+    {
+      "id": "bindley:b479a7e31a",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-moraira-bpc590295/",
+      "title": "Parcela en venta en Moraira",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 898,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a1/019e1b91-234b-7565-a2c2-f82f37cfaaa1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-01",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b479a7e31a.webp",
+        "thumb": "bindley-b479a7e31a.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a1/019e1b91-234b-7565-a2c2-f82f37cfaaa1.jpg"
+      }
+    },
+    {
+      "id": "bindley:dc920194ad",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-rustica-con-hermosa-vista-abierta-en-benissa-bpc519478/",
+      "title": "PARCELA RÚSTICA CON HERMOSA VISTA ABIERTA EN BENISSA",
+      "price": 195000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 195000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10894,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/16/019d2e78-60a1-7329-af82-1e342d00eb16.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-01-24",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-dc920194ad.webp",
+        "thumb": "bindley-dc920194ad.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/16/019d2e78-60a1-7329-af82-1e342d00eb16.jpg"
+      }
+    },
+    {
+      "id": "bindley:9956e7b04e",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-rustica-en-venta-con-vistas-al-mar-en-benisa-costa-blanca-bp3338/",
+      "title": "Parcela rustica en venta con vistas al mar en Benisa, Costa Blanca.",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 225000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11989,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d3/019d2e9a-0323-7137-835b-1ae702a4d9d3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-30",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-9956e7b04e.webp",
+        "thumb": "bindley-9956e7b04e.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d3/019d2e9a-0323-7137-835b-1ae702a4d9d3.jpg"
+      }
+    },
+    {
+      "id": "bindley:23efd137b3",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-rustica-en-venta-en-teulada-moraira-entorno-tranquilo-y-cerca-de-la-costa-bp3607/",
+      "title": "Parcela rústica en venta en Teulada-Moraira, entorno tranquilo y cerca de la costa.",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 120000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11786,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8c/019d2e7d-ab85-748d-b977-1d1493c6878c.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-12",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-23efd137b3.webp",
+        "thumb": "bindley-23efd137b3.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8c/019d2e7d-ab85-748d-b977-1d1493c6878c.jpg"
+      }
+    },
+    {
+      "id": "bindley:db5f788ca3",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-urbana-en-la-vina-benissa-bpc602345/",
+      "title": "PARCELA URBANA EN LA VIÑA, BENISSA",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 239000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019d2e7d-ab85-748d-b977-37913f420c9f.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-31",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-db5f788ca3.webp",
+        "thumb": "bindley-db5f788ca3.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/9f/019d2e7d-ab85-748d-b977-37913f420c9f.jpg"
+      }
+    },
+    {
+      "id": "bindley:19cff79899",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcelas-en-venta-en-jalon-costa-blanca-bp3707/",
+      "title": "Parcelas en venta en Jalón, Costa Blanca.",
+      "price": 75000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 75000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 608,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/14/019fc6d9-17b0-722b-aaa1-8100e2d67914.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-03",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-19cff79899.webp",
+        "thumb": "bindley-19cff79899.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/14/019fc6d9-17b0-722b-aaa1-8100e2d67914.jpg"
+      }
+    },
+    {
+      "id": "bindley:3b253d51a0",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/piso-duplex-en-venta-en-calpe-bpc563963/",
+      "title": "Piso dúplex en venta en Calpe",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 240,
+      "plotM2": null,
+      "pricePerM2": 1354,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fe/019d2e86-d382-725a-b155-386eefc6f5fe.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-02",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-3b253d51a0.webp",
+        "thumb": "bindley-3b253d51a0.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fe/019d2e86-d382-725a-b155-386eefc6f5fe.jpg"
+      }
+    },
+    {
+      "id": "bindley:8f1c4d0d75",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/piso-en-el-centro-de-calpe-al-lado-colegios-y-los-servicios-bp747292/",
+      "title": "Piso en el Centro de Calpe al lado colegios y los servicios",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 299000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3322,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e6/019db096-e112-710e-b10d-aa5398514fe6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-11-21",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-8f1c4d0d75.webp",
+        "thumb": "bindley-8f1c4d0d75.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/e6/019db096-e112-710e-b10d-aa5398514fe6.jpg"
+      }
+    },
+    {
+      "id": "bindley:efe9437984",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/piso-en-el-centro-de-denia-bpc340070/",
+      "title": "Piso en el Centro de Denia",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 6,
+      "baths": 2,
+      "builtM2": 200,
+      "plotM2": null,
+      "pricePerM2": 1400,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ba/019eac2d-0a86-76bc-a5c1-a7f7468429ba.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-18",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-efe9437984.webp",
+        "thumb": "bindley-efe9437984.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/ba/019eac2d-0a86-76bc-a5c1-a7f7468429ba.jpg"
+      }
+    },
+    {
+      "id": "bindley:084778587b",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/plot-land-en-venta-en-benissa-bpc714518/",
+      "title": "Plot/Land en venta en Benissa",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 810,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019ecb28-e3f8-71ff-8512-d458421e13bc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-29",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-084778587b.webp",
+        "thumb": "bindley-084778587b.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019ecb28-e3f8-71ff-8512-d458421e13bc.jpg"
+      }
+    },
+    {
+      "id": "bindley:fc096e13e9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/se-vende-casa-de-pueblo-con-caracter-en-el-centro-historico-de-teulada-bp3532/",
+      "title": "Se vende casa de pueblo con carácter en el centro histórico de Teulada.",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 280000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 160,
+      "plotM2": 76,
+      "pricePerM2": 1750,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/df/019d2e90-51ca-77a1-b41b-8ae69da7dfdf.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-20",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-fc096e13e9.webp",
+        "thumb": "bindley-fc096e13e9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/df/019d2e90-51ca-77a1-b41b-8ae69da7dfdf.jpg"
+      }
+    },
+    {
+      "id": "bindley:7dd1c56b11",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/se-vende-parcela-con-vistas-al-mar-urbana-en-moraira-para-construccion-villa-de-sueno-bpc019033/",
+      "title": "Se vende parcela con vistas al mar urbana en Moraira para construccion villa de sueno",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1000,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019f88d7-259f-70ee-8f62-a1694edb82bc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-12-29",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-7dd1c56b11.webp",
+        "thumb": "bindley-7dd1c56b11.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019f88d7-259f-70ee-8f62-a1694edb82bc.jpg"
+      }
+    },
+    {
+      "id": "bindley:e7ae4ffcc9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/terreno-en-venta-en-moraira-vistas-abiertas-bp2060/",
+      "title": "Terreno en venta en Moraira, vistas abiertas.",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 250000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 850,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c6/019d2e9d-3409-73f6-b2f2-caaf29b3b8c6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2025-10-08",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e7ae4ffcc9.webp",
+        "thumb": "bindley-e7ae4ffcc9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c6/019d2e9d-3409-73f6-b2f2-caaf29b3b8c6.jpg"
+      }
+    },
+    {
+      "id": "bindley:af3def14e7",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/terreno-rustico-con-vistas-panoramicas-al-mar-cerca-de-moraira-javea-y-el-colegio-lady-elisabeth-bpc225971/",
+      "title": "Terreno rústico con vistas panorámicas al mar cerca de Moraira, Javea y el Colegio Lady Elisabeth.",
+      "price": 291000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 291000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10823,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c6/019d2e75-0ca7-7070-bb17-a9a21833b7c6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-05",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-af3def14e7.webp",
+        "thumb": "bindley-af3def14e7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c6/019d2e75-0ca7-7070-bb17-a9a21833b7c6.jpg"
+      }
+    },
+    {
+      "id": "grupogarcia:95cbb1b379",
+      "source": "grupogarcia",
+      "agency": "Grupo García",
+      "url": "https://grupo-garcia.es/properties/ultimo-adosado-de-nueva-construccion-a-la-venta-en-parcent-valle-de-jalon-24213601/",
+      "title": "Estupendos adosados de nueva construcción a la venta en Parcent, Valle de Jalón",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 225000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "townhouse",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 173,
+      "plotM2": 200,
+      "pricePerM2": 1301,
+      "image": "https://grupo-garcia.es/wp-content/uploads/2026/08/9-1-1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-25T12:26:58",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "grupogarcia-95cbb1b379.webp",
+        "thumb": "grupogarcia-95cbb1b379.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://grupo-garcia.es/wp-content/uploads/2026/08/9-1-1.jpg"
+      }
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:fb0c8902d4",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9977675",
+      "title": "Pareado de 2 habitaciones en Beniarbeig en venta con piscina - 249.000 € (Ref: 9977675)",
+      "price": 249000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 255000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 249000
+        }
+      ],
+      "municipality": "Beniarbeig",
+      "type": "villa",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 83,
+      "plotM2": null,
+      "pricePerM2": 3000,
+      "image": "https://cdn.thinkwebcontent.com/property/13355/9977675/20260724092308/w1536h1024/s640x480/x-286004069.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "photo": {
+        "file": "thinkspain-fb0c8902d4.webp",
+        "thumb": "thinkspain-fb0c8902d4.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/13355/9977675/20260724092308/w1536h1024/s640x480/x-286004069.jpg"
+      },
+      "fromFeed": false,
+      "previousPrice": 255000,
+      "delta": -6000,
+      "deltaPct": -2.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:56a9a929a5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9633121",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina - 330.000 € (Ref: 9633121)",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 338500
+        },
+        {
+          "date": "2026-08-26",
+          "price": 330000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 80,
+      "plotM2": null,
+      "pricePerM2": 4125,
+      "image": "https://cdn.thinkwebcontent.com/property/32280/9633121/20260226203601/w800h640/s640x480/x-274181861.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-56a9a929a5.webp",
+        "thumb": "thinkspain-56a9a929a5.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/32280/9633121/20260226203601/w800h640/s640x480/x-274181861.jpg"
+      },
+      "previousPrice": 338500,
+      "delta": -8500,
+      "deltaPct": -2.5,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:56b756f9c7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9221731",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 330.000 € (Ref: 9221731)",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 338500
+        },
+        {
+          "date": "2026-08-26",
+          "price": 330000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 80,
+      "plotM2": null,
+      "pricePerM2": 4125,
+      "image": "https://cdn.thinkwebcontent.com/property/29054/9221731/20250917132809/w3006h2125/s640x480/x-262307262.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-56b756f9c7.webp",
+        "thumb": "thinkspain-56b756f9c7.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29054/9221731/20250917132809/w3006h2125/s640x480/x-262307262.jpg"
+      },
+      "previousPrice": 338500,
+      "delta": -8500,
+      "deltaPct": -2.5,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:1a3ea6b4db",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9893022",
+      "title": "Apartamento de 1 habitación en Teulada Pueblo, Teulada-Moraira en venta con garaje - 140.000 € (Ref: 9893022)",
+      "price": 140000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 150000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 140000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 86,
+      "plotM2": null,
+      "pricePerM2": 1628,
+      "image": "https://cdn.thinkwebcontent.com/property/33927/9893022/20260610112933/w1710h1140/s640x480/x-283188560.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-1a3ea6b4db.webp",
+        "thumb": "thinkspain-1a3ea6b4db.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33927/9893022/20260610112933/w1710h1140/s640x480/x-283188560.jpg"
+      },
+      "previousPrice": 150000,
+      "delta": -10000,
+      "deltaPct": -6.7,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:c713c6b12b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9452428",
+      "title": "Apartamento de 3 habitaciones en Teulada Pueblo, Teulada-Moraira en venta - 180.000 € (Ref: 9452428)",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 189500
+        },
+        {
+          "date": "2026-08-26",
+          "price": 180000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 2118,
+      "image": "https://cdn.thinkwebcontent.com/property/33927/9452428/20251213102316/w1542h1028/s640x480/x-268883176.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-c713c6b12b.webp",
+        "thumb": "thinkspain-c713c6b12b.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33927/9452428/20251213102316/w1542h1028/s640x480/x-268883176.jpg"
+      },
+      "previousPrice": 189500,
+      "delta": -9500,
+      "deltaPct": -5,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:0b3231235c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9628256",
+      "title": "Apartamento Playa de 1 habitación en Calpe / Calp en venta con piscina garaje - 305.000 € (Ref: 9628256)",
+      "price": 305000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 315000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 305000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 77,
+      "plotM2": null,
+      "pricePerM2": 3961,
+      "image": "https://cdn.thinkwebcontent.com/property/37821/9628256/20260225132026/w1284h841/s640x480/x-274047434.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-0b3231235c.webp",
+        "thumb": "thinkspain-0b3231235c.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/37821/9628256/20260225132026/w1284h841/s640x480/x-274047434.jpg"
+      },
+      "previousPrice": 315000,
+      "delta": -10000,
+      "deltaPct": -3.2,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:2cab37b5df",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9964364",
+      "title": "Casa de 1 habitación en Cometa - Carrió, Calpe / Calp en venta con piscina - 180.000 € (Ref: 9964364)",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 270000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 180000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 56,
+      "plotM2": null,
+      "pricePerM2": 3214,
+      "image": "https://cdn.thinkwebcontent.com/property/32280/9964364/20260716132049/w800h640/s640x480/x-285540085.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-2cab37b5df.webp",
+        "thumb": "thinkspain-2cab37b5df.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/32280/9964364/20260716132049/w800h640/s640x480/x-285540085.jpg"
+      },
+      "previousPrice": 270000,
+      "delta": -90000,
+      "deltaPct": -33.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:6b6b75410e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9914532",
+      "title": "Solar/Parcela en Pueblo, Calpe / Calp en venta - 132.000 € (Ref: 9914532)",
+      "price": 132000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 140000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 132000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/5947/9914532/20260619110129/w640h480/s640x480/x-283889984.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-6b6b75410e.webp",
+        "thumb": "thinkspain-6b6b75410e.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5947/9914532/20260619110129/w640h480/s640x480/x-283889984.jpg"
+      },
+      "previousPrice": 140000,
+      "delta": -8000,
+      "deltaPct": -5.7,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:5b08e88509",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9981108",
+      "title": "Piso de 3 habitaciones en Centro Urbano, Dénia en venta con garaje - 50.000 € (Ref: 9981108)",
+      "price": 50000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 140000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 50000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 127,
+      "plotM2": null,
+      "pricePerM2": 394,
+      "image": "https://cdn.thinkwebcontent.com/property/41001/9981108/20260821113002/w1920h1080/s640x480/x-287706227.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-5b08e88509.webp",
+        "thumb": "thinkspain-5b08e88509.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41001/9981108/20260821113002/w1920h1080/s640x480/x-287706227.jpg"
+      },
+      "previousPrice": 140000,
+      "delta": -90000,
+      "deltaPct": -64.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:200ae2644b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9849552",
+      "title": "Ático de 2 habitaciones en Les Bassetes - El Marjal, Dénia en venta - 215.000 € (Ref: 9849552)",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 249500
+        },
+        {
+          "date": "2026-08-26",
+          "price": 215000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 55,
+      "plotM2": null,
+      "pricePerM2": 3909,
+      "image": "https://cdn.thinkwebcontent.com/property/25062/9849552/20260808032518/w1920h1440/s640x480/x-286946828.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-200ae2644b.webp",
+        "thumb": "thinkspain-200ae2644b.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25062/9849552/20260722052633/w1920h1440/s640x480/x-285829817.jpg"
+      },
+      "fromFeed": false,
+      "previousPrice": 249500,
+      "delta": -34500,
+      "deltaPct": -13.8,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:d0d863d744",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9876916",
+      "title": "Piso de 4 habitaciones en Dénia en venta - 185.000 € (Ref: 9876916)",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 189000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 185000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 105,
+      "plotM2": null,
+      "pricePerM2": 1762,
+      "image": "https://cdn.thinkwebcontent.com/property/28788/9876916/20260603092633/w1440h1080/s640x480/x-282634905.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-d0d863d744.webp",
+        "thumb": "thinkspain-d0d863d744.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/28788/9876916/20260603092633/w1440h1080/s640x480/x-282634905.jpg"
+      },
+      "previousPrice": 189000,
+      "delta": -4000,
+      "deltaPct": -2.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:a38f690523",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9890081",
+      "title": "Apartamento de 3 habitaciones en Gata de Gorgos en venta - 229.000 € (Ref: 9890081)",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 249000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 229000
+        }
+      ],
+      "municipality": "Gata de Gorgos",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 140,
+      "plotM2": null,
+      "pricePerM2": 1636,
+      "image": "https://cdn.thinkwebcontent.com/property/26093/9890081/20260609032250/w1920h1440/s640x480/x-283081640.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "photo": {
+        "file": "thinkspain-a38f690523.webp",
+        "thumb": "thinkspain-a38f690523.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/26093/9890081/20260609032250/w1920h1440/s640x480/x-283081640.jpg"
+      },
+      "fromFeed": false,
+      "previousPrice": 249000,
+      "delta": -20000,
+      "deltaPct": -8,
+      "direction": "drop"
+    },
+    {
+      "id": "denialara:cac1855784",
+      "source": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "url": "https://www.denialara.com/propiedad/amplio-piso-de-4-dormitorios-en-el-centro-de-denia-gran-oportunidad-de-reforma-8036/",
+      "title": "Amplio piso de 4 dormitorios en el centro de Dénia – Gran oportunidad de reforma",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 189000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 185000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 4,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.denialara.com/objetos/temp/source/denialara/2026/06/03/358966/20260602_104127Copiar.jpeg",
+      "saleStatus": "reserved",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "denialara-cac1855784.webp",
+        "thumb": "denialara-cac1855784.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.denialara.com/objetos/temp/source/denialara/2026/06/03/358966/20260602_104127Copiar.jpeg"
+      },
+      "fromFeed": false,
+      "previousPrice": 189000,
+      "delta": -4000,
+      "deltaPct": -2.1,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [
+    {
+      "id": "thinkspain:d7e20f8e9b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9908952",
+      "title": "Solar/Parcela en Ondara en venta - 90.000 € (Ref: 9908952)",
+      "price": 90000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 75000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 90000
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/31660/9908952/20260617111205/w1600h1200/s640x480/x-283723525.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-d7e20f8e9b.webp",
+        "thumb": "thinkspain-d7e20f8e9b.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/31660/9908952/20260617111205/w1600h1200/s640x480/x-283723525.jpg"
+      },
+      "previousPrice": 75000,
+      "delta": 15000,
+      "deltaPct": 20,
+      "direction": "rise"
+    },
+    {
+      "id": "thinkspain:50322cd72b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9964363",
+      "title": "Casa de 1 habitación en Cometa - Carrió, Calpe / Calp en venta con piscina - 200.000 € (Ref: 9964363)",
+      "price": 200000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 180000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 200000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 78,
+      "plotM2": null,
+      "pricePerM2": 2564,
+      "image": "https://cdn.thinkwebcontent.com/property/32280/9964363/20260716132047/w800h640/s640x480/x-285540035.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-50322cd72b.webp",
+        "thumb": "thinkspain-50322cd72b.thumb.webp",
+        "capturedAt": "2026-08-21T22:52:49.118Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/32280/9964363/20260716132047/w800h640/s640x480/x-285540035.jpg"
+      },
+      "previousPrice": 180000,
+      "delta": 20000,
+      "deltaPct": 11.1,
+      "direction": "rise"
+    },
+    {
+      "id": "thinkspain:66f9f4dd4e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9964362",
+      "title": "Casa de 2 habitaciones en Cometa - Carrió, Calpe / Calp en venta con piscina - 270.000 € (Ref: 9964362)",
+      "price": 270000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 270000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 2700,
+      "image": "https://cdn.thinkwebcontent.com/property/32280/9964362/20260716132046/w800h640/s640x480/x-285539985.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-66f9f4dd4e.webp",
+        "thumb": "thinkspain-66f9f4dd4e.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/32280/9964362/20260716132046/w800h640/s640x480/x-285539985.jpg"
+      },
+      "previousPrice": 240000,
+      "delta": 30000,
+      "deltaPct": 12.5,
+      "direction": "rise"
+    },
+    {
+      "id": "thinkspain:5a1a73a9e0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9965885",
+      "title": "Solar/Parcela en Cometa - Carrió, Calpe / Calp en venta - 299.000 € (Ref: 9965885)",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 295000
+        },
+        {
+          "date": "2026-08-26",
+          "price": 299000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/23901/9965885/20260717151155/w1346h896/s640x480/x-285595866.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-26",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-5a1a73a9e0.webp",
+        "thumb": "thinkspain-5a1a73a9e0.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/23901/9965885/20260717151155/w1346h896/s640x480/x-285595866.jpg"
+      },
+      "previousPrice": 295000,
+      "delta": 4000,
+      "deltaPct": 1.4,
+      "direction": "rise"
+    }
+  ],
+  "removals": [
+    {
+      "id": "catorceinmo:cf3c2280e8",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-en-venta-en-residencial-la-sella-denia-20d0103/",
+      "title": "Apartamento en venta en Residencial La Sella · Dénia",
+      "price": 159000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 159000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/07/29/362494/imagen9.jpeg",
+      "saleStatus": "reserved",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "catorceinmo-cf3c2280e8.webp",
+        "thumb": "catorceinmo-cf3c2280e8.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/07/29/362494/imagen9.jpeg"
+      },
+      "removedOn": "2026-08-26"
+    },
+    {
+      "id": "catorceinmo:8dd9be7789",
+      "source": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "url": "https://www.catorceinmo.com/propiedad/apartamento-con-gran-terraza-y-piscina-cerca-del-mar-en-denia-23d0049/",
+      "title": "Apartamento con gran terraza y piscina cerca del mar en Dénia",
+      "price": 215000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 215000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/04/27/357083/1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "catorceinmo-8dd9be7789.webp",
+        "thumb": "catorceinmo-8dd9be7789.thumb.webp",
+        "capturedAt": "2026-08-04T20:30:43.272Z",
+        "sourceUrl": "https://www.catorceinmo.com/objetos/temp/source/lemon/2026/04/27/357083/1.jpeg"
+      },
+      "removedOn": "2026-08-26"
+    }
+  ],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2560,
+      "status": "ok",
+      "requests": 545,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 39,
+      "status": "ok",
+      "requests": 47,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 14,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 26,
+      "status": "ok",
+      "requests": 51,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 38,
+      "status": "ok",
+      "requests": 61,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 28,
+      "status": "ok",
+      "requests": 76,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 28,
+      "status": "ok",
+      "requests": 42,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 43,
+      "status": "ok",
+      "requests": 67,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 12,
+      "status": "ok",
+      "requests": 22,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 21,
+      "status": "ok",
+      "requests": 37,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 40,
+      "status": "ok",
+      "requests": 87,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 7,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 7,
+      "status": "ok",
+      "requests": 16,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 47,
+      "status": "ok",
+      "requests": 99,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 5,
+      "status": "ok",
+      "requests": 966,
+      "blocked": 0,
+      "errors": 299
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "listings": 8,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 107,
+      "status": "ok",
+      "requests": 129,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5
+    },
+    {
+      "id": "giortola",
+      "agency": "GI Ortolá",
+      "listings": 21,
+      "status": "ok",
+      "requests": 38,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "grupogarcia",
+      "agency": "Grupo García",
+      "listings": 21,
+      "status": "ok",
+      "requests": 29,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "listings": 21,
+      "status": "ok",
+      "requests": 318,
+      "blocked": 0,
+      "errors": 0
+    }
+  ],
+  "bootstrap": true
+}
