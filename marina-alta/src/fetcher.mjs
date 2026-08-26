@@ -7,8 +7,15 @@ import { gunzipSync } from 'node:zlib'
 
 import { crawlDelay, isAllowed, loadRobots } from './robots.mjs'
 
-export const USER_AGENT =
-  'MarinaAltaExtractor/1.0 (+https://github.com/pablosanchoaran/enc; uso personal, respeta robots.txt)'
+/**
+ * Nos identificamos con nombre y dirección de contacto, que es lo que pide la
+ * buena educación al rastrear. Acabado en "Bot" a propósito: es la convención
+ * que los robots.txt reconocen, y además la palabra "extractor" dispara el
+ * cortafuegos de algunas webs — Inmobiliaria C&C devolvía 403 a
+ * `MarinaAltaExtractor` y 200 a este mismo agente, con su robots.txt
+ * permitiéndonos el paso en los dos casos.
+ */
+export const USER_AGENT = 'MarinaAltaBot/1.0 (+https://github.com/pablosanchoaran/enc)'
 
 const RETRYABLE = new Set([408, 425, 429, 500, 502, 503, 504])
 const MAX_ATTEMPTS = 3

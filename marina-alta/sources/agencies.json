@@ -274,6 +274,15 @@
       "postType": "properties",
       "enabled": true,
       "notes": "Vall de Pop, Orba y costa. Se lee por su API pública de WordPress, que da precio, localidad y medidas ya como datos: rasparla no era viable porque el precio propio y los de las casas relacionadas van en divs iguales, separados solo por una clase aleatoria del maquetador. 273 fichas, de las que unas 21 bajan del techo."
+    },
+    {
+      "id": "uniquehomes",
+      "adapter": "sooprema",
+      "agency": "Unique Homes Spain",
+      "origin": "https://www.uniquehomesmoraira.com",
+      "excludeUrlPattern": "/(alquiler|alquiler-vacacional|rental|vermietung)/",
+      "enabled": true,
+      "notes": "Moraira y Benissa, gama alta. 317 fichas en venta en su sitemap, en siete idiomas; se queda el castellano por ser el más completo. Cuelga el alquiler vacacional del mismo prefijo que la venta, por eso el patrón de exclusión."
     }
   ]
 }

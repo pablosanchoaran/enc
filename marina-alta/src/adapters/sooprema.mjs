@@ -201,8 +201,12 @@ export function preferOneLanguage(entries) {
 }
 
 export async function collect({ fetcher, source, known, log, limit = Infinity, refreshBudget = 40 }) {
-  const all = (await collectSitemapEntries(fetcher, source.origin)).filter((entry) =>
-    isPropertyUrl(entry.loc),
+  // Algunas webs cuelgan el alquiler del mismo prefijo que la venta
+  // (`/propiedad/venta/x` y `/propiedad/alquiler-vacacional/x`). La fuente
+  // declara qué rutas no son venta en `excludeUrlPattern`.
+  const excluded = source.excludeUrlPattern ? new RegExp(source.excludeUrlPattern) : null
+  const all = (await collectSitemapEntries(fetcher, source.origin)).filter(
+    (entry) => isPropertyUrl(entry.loc) && !(excluded && excluded.test(new URL(entry.loc).pathname)),
   )
   const entries = preferOneLanguage(all)
   const duplicates = all.length - entries.length
