@@ -5,6 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
+import * as sooprema from '../src/adapters/sooprema.mjs'
 import { parsePropertyPage, preferOneLanguage, readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
@@ -155,6 +156,54 @@ test('una baja solo se anota tras una semana sin verla', () => {
   const final = diffInventory(inventory, [], '2026-08-08')
   assert.equal(final.removals.length, 1)
   assert.equal(final.inventory.length, 0)
+})
+
+test('una ficha que sigue en el sitemap no se da de baja por no abrirla', async () => {
+  // El presupuesto de refresco solo abre unas cuantas fichas por pasada. Las
+  // que no toca siguen en el sitemap, así que la agencia las mantiene
+  // publicadas: no saber nada nuevo de ellas no puede acercarlas a la baja.
+  // El 27/08 se retiraron tres anuncios de Ferrando y Morató que seguían vivos
+  // porque la rotación no las alcanzó antes de los siete fallos.
+  const origin = 'https://a.test'
+  const enSitemap = ['/venta/una-c1/', '/venta/otra-c2/', '/venta/tercera-c3/']
+  const sitemap =
+    '<urlset>' +
+    enSitemap.map((p) => `<url><loc>${origin}${p}</loc><lastmod>2026-08-01</lastmod></url>`).join('') +
+    '</urlset>'
+
+  const ficha = `<html><body><h1>Casa en Dénia</h1>
+    <div class="features-1__price">200.000 €</div></body></html>`
+
+  const fetcher = {
+    async get(url) {
+      if (url.endsWith('/sitemap.xml')) return sitemap
+      return ficha
+    },
+  }
+
+  // Se conocen las tres del sitemap y una cuarta que ya no está en él.
+  const conocida = (path) => [
+    `${origin}${path}`,
+    { url: `${origin}${path}`, lastmod: '2026-08-01', lastSeen: '2026-08-01' },
+  ]
+  const known = {
+    ids: new Set(),
+    byUrl: new Map([...enSitemap.map(conocida), conocida('/venta/desaparecida-c9/')]),
+    overBudget: new Map(),
+  }
+
+  // Presupuesto de 1: solo se abre una de las tres conocidas.
+  const salida = await sooprema.collect({
+    fetcher, source: { origin }, known, log: () => {}, refreshBudget: 1,
+  })
+
+  assert.ok(salida.checked, 'el adaptador informa de lo que ha comprobado')
+  assert.equal(salida.checked.size, 2, 'la que abrió y la que ya no está en el sitemap')
+  assert.ok(salida.checked.has(`${origin}/venta/desaparecida-c9/`), 'la que se cayó del sitemap sí')
+  const sinAbrir = enSitemap
+    .map((p) => `${origin}${p}`)
+    .filter((u) => !salida.checked.has(u))
+  assert.equal(sinAbrir.length, 2, 'las que siguen en el sitemap sin abrir quedan fuera')
 })
 
 test('lo que no se ha llegado a mirar no se acerca a la baja', () => {

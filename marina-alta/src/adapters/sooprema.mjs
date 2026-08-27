@@ -249,5 +249,21 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
     const item = parsePropertyPage(html, entry.loc)
     if (item) found.push({ ...item, lastmod: entry.lastmod })
   }
-  return found
+
+  // De lo que damos fe esta pasada: las fichas que hemos abierto, y las que ya
+  // conocíamos y han desaparecido del sitemap — ahí sí que la agencia dice que
+  // ya no están. De una que sigue en el sitemap pero no nos ha tocado abrir no
+  // sabemos nada nuevo, y no saber no puede acercarla a la baja.
+  //
+  // Sin esto, toda fuente con más anuncios que el presupuesto de refresco
+  // acababa inventándose retiradas: se salvaba solo mientras la rotación la
+  // alcanzara antes de los siete fallos. El 27/08 no llegó a tiempo y se
+  // dieron de baja tres anuncios que seguían publicados, de Ferrando y Morató.
+  const enElSitemap = new Set(entries.map((entry) => entry.loc))
+  const checked = new Set(queue.map((entry) => entry.loc))
+  for (const url of known.byUrl.keys()) {
+    if (url.startsWith(source.origin) && !enElSitemap.has(url)) checked.add(url)
+  }
+
+  return { items: found, checked }
 }
