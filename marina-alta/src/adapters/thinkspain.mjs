@@ -111,8 +111,18 @@ function parseListingCards(html, zoneSlug) {
     if (facts.offer && facts.offer !== 'for-sale') continue
     if (!facts.price) continue
 
-    const title = block.match(/<img[^>]+alt="([^"]{10,})"/)?.[1]
+    // El título sale del `alt` de la foto del anuncio, no del primer `alt` de
+    // la tarjeta: en algunas cae antes el distintivo de la tienda de apps y
+    // cinco anuncios acabaron titulados "Disponible en Google Play".
     const image = block.match(/src="(https:\/\/cdn\.thinkwebcontent\.com\/property\/[^"]+)"/)?.[1]
+    const title =
+      block.match(
+        /<img[^>]+alt="([^"]{10,})"[^>]*src="https:\/\/cdn\.thinkwebcontent\.com\/property\//,
+      )?.[1] ??
+      block.match(
+        /<img[^>]+src="https:\/\/cdn\.thinkwebcontent\.com\/property\/[^"]*"[^>]*alt="([^"]{10,})"/,
+      )?.[1] ??
+      null
     const locationId = block.match(/location_id\\?&quot;:\\?&quot;([a-z0-9-]+)/)?.[1]
 
     results.push({

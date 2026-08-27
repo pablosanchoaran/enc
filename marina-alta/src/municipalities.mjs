@@ -28,6 +28,37 @@ export const MUNICIPALITIES = [
   { name: 'Sanet y Negrals', aliases: ['sanet y negrals', 'sanet i negrals', 'sanet'] },
 ]
 
+/**
+ * Sitios que vetan la detección cuando aparecen antes que cualquier municipio
+ * nuestro. Son de dos clases:
+ *
+ *  · Pueblos vecinos que no están en el ámbito elegido. Un anuncio titulado
+ *    "Encantador adosado en Parcent, Valle de Jalón" acababa en Xaló porque
+ *    "jalón" salía después; y "Town Houses - Castell de Castells" y varios de
+ *    Murla y Benigembla, en municipios que no les tocan.
+ *  · Homónimos de otras provincias. "Solar en Jalón de Cameros" es La Rioja, y
+ *    entró en el inventario como si fuera Xaló. Es el tercer caso de este tipo
+ *    tras el Cabo de Gata y Las Marinas de Vera.
+ *
+ * Van en el mismo índice que los alias, con nombre nulo: gana igualmente el
+ * que aparece antes, y a igualdad de posición el más largo — que es lo que
+ * hace que "jalon de cameros" gane a "jalon".
+ */
+const EXCLUDED_PLACES = [
+  // Marina Alta, fuera del ámbito elegido.
+  'parcent',
+  'murla',
+  'benigembla',
+  'benichembla',
+  'castell de castells',
+  'tormos',
+  'benimeli',
+  'vall de laguar',
+  'rafol d almunia',
+  // Homónimos de otra provincia.
+  'jalon de cameros',
+]
+
 /** Quita acentos, signos y colapsa espacios para poder comparar textos. */
 export function fold(text) {
   return String(text ?? '')
@@ -39,9 +70,10 @@ export function fold(text) {
 }
 
 // Los alias más largos se prueban primero: "moraira alto" debe ganar a "moraira".
-const INDEX = MUNICIPALITIES.flatMap(({ name, aliases }) =>
-  aliases.map((alias) => ({ name, alias: fold(alias) })),
-).sort((a, b) => b.alias.length - a.alias.length)
+const INDEX = [
+  ...MUNICIPALITIES.flatMap(({ name, aliases }) => aliases.map((alias) => ({ name, alias: fold(alias) }))),
+  ...EXCLUDED_PLACES.map((place) => ({ name: null, alias: fold(place) })),
+].sort((a, b) => b.alias.length - a.alias.length)
 
 /**
  * Busca un municipio de la comarca dentro de un texto libre (título,
@@ -63,6 +95,7 @@ export function detectMunicipality(...texts) {
     const position = match.index + match[1].length
     if (!best || position < best.position) best = { name, position }
   }
+  // Un veto que gane deja el anuncio fuera: no es de ningún municipio nuestro.
   return best?.name ?? null
 }
 

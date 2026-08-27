@@ -85,6 +85,24 @@ test('el geo-filtro acepta la comarca y rechaza el resto', () => {
   assert.equal(detectMunicipality('Casa en Gata de Gorgos'), 'Gata de Gorgos')
 })
 
+test('un pueblo vecino que no está en el ámbito veta el anuncio', () => {
+  // Sin esto, el municipio se lo llevaba cualquier alias que apareciera más
+  // abajo: "Encantador adosado en Parcent, Valle de Jalón" acababa en Xaló, y
+  // varios de Murla, Benigembla y Castell de Castells en municipios ajenos.
+  assert.equal(detectMunicipality('Encantador adosado a la venta en Parcent, Valle de Jalón'), null)
+  assert.equal(detectMunicipality('Town Houses - Castell de Castells - 229.000€'), null)
+  assert.equal(detectMunicipality('Se vende casa de pueblo en Benigembla'), null)
+  assert.equal(detectMunicipality('Plot en venta en Murla'), null)
+
+  // Y el tercer homónimo de otra provincia, tras el Cabo de Gata y Las Marinas
+  // de Vera: Jalón de Cameros está en La Rioja.
+  assert.equal(detectMunicipality('Solar/Parcela en Jalón de Cameros en venta'), null)
+  assert.equal(detectMunicipality('Se vende parcela urbana en Jalón'), 'Xaló / Jalón')
+
+  // El veto no puede llevarse por delante una urbanización que sí es nuestra.
+  assert.equal(detectMunicipality('Parcela en La Solana Garden, Alcalalí'), 'Alcalalí')
+})
+
 test('en un slug de zona manda el municipio del final', () => {
   assert.equal(detectMunicipalityFromSlug('devessa-monte-pego-denia'), 'Dénia')
   assert.equal(detectMunicipalityFromSlug('oltamar-cucarres-calpe-calp'), 'Calp / Calpe')
