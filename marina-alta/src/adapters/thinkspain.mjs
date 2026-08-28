@@ -111,17 +111,15 @@ function parseListingCards(html, zoneSlug) {
     if (facts.offer && facts.offer !== 'for-sale') continue
     if (!facts.price) continue
 
-    // El título sale del `alt` de la foto del anuncio, no del primer `alt` de
-    // la tarjeta: en algunas cae antes el distintivo de la tienda de apps y
-    // cinco anuncios acabaron titulados "Disponible en Google Play".
+    // El título sale del `alt` que lleva dentro la referencia de esta ficha:
+    // se valida solo. Coger el primer `alt` de la tarjeta dejaba cinco
+    // anuncios titulados "Disponible en Google Play", y anclarlo al `src` de
+    // la foto fallaba porque la imagen va con carga diferida y el `src` real
+    // no está pegado al `alt`.
     const image = block.match(/src="(https:\/\/cdn\.thinkwebcontent\.com\/property\/[^"]+)"/)?.[1]
     const title =
-      block.match(
-        /<img[^>]+alt="([^"]{10,})"[^>]*src="https:\/\/cdn\.thinkwebcontent\.com\/property\//,
-      )?.[1] ??
-      block.match(
-        /<img[^>]+src="https:\/\/cdn\.thinkwebcontent\.com\/property\/[^"]*"[^>]*alt="([^"]{10,})"/,
-      )?.[1] ??
+      block.match(new RegExp(`<img[^>]+alt="([^"]{10,}\\(Ref: ${propertyId}\\))"`))?.[1] ??
+      block.match(new RegExp(`<img[^>]+alt="([^"]{10,})"[^>]*data-action-url="[^"]*/${propertyId}\\b`))?.[1] ??
       null
     const locationId = block.match(/location_id\\?&quot;:\\?&quot;([a-z0-9-]+)/)?.[1]
 

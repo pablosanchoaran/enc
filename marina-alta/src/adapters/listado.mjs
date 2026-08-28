@@ -92,6 +92,14 @@ function cleanImageUrl(raw) {
   return embedded > 0 ? raw.slice(embedded) : raw
 }
 
+/**
+ * El título nombra un sitio de fuera del ámbito. Se comprueba aparte de la
+ * localidad declarada porque una y otro pueden discrepar, y en esa discrepancia
+ * gana el título: la agencia rellena el desplegable de localidad con el pueblo
+ * más cercano de su lista, pero escribe el de verdad en el anuncio.
+ */
+const VETO = /\b(parcent|murla|benigembla|benich?embla|castell de castells|tormos|benimeli)\b/i
+
 export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
@@ -133,9 +141,16 @@ export function parsePropertyPage(html, url) {
     // Cuando la ficha declara su localidad, esa manda y no se mezcla con nada
     // más: una descripción que diga "a diez minutos de Dénia" no debe mover la
     // casa de pueblo a Dénia.
-    municipality: locality
-      ? detectMunicipality(locality)
-      : (structured?.locality ? detectMunicipality(structured.locality) : null),
+    //
+    // Pero el título puede vetarla: Llobell vendía una casa de Benigembla
+    // —pueblo que no está en el ámbito— con la localidad puesta en Benissa, y
+    // así se colaba. Si el título nombra un sitio vetado, no vale ninguna
+    // localidad.
+    municipality: detectMunicipality(title) === null && VETO.test(title ?? '')
+      ? null
+      : locality
+        ? detectMunicipality(locality)
+        : (structured?.locality ? detectMunicipality(structured.locality) : null),
     locationHint: [locality, structured?.locality, title, slug.replace(/-/g, ' '), description]
       .filter(Boolean)
       .join(' | '),

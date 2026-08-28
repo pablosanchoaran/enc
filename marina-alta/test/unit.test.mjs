@@ -5,6 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
+import * as listado from '../src/adapters/listado.mjs'
 import * as sooprema from '../src/adapters/sooprema.mjs'
 import { parsePropertyPage, preferOneLanguage, readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
@@ -434,6 +435,29 @@ test('una parcela se compara por su terreno, que es lo único que tiene', () => 
   // Sin metros de terreno no hay con qué comparar.
   const sinDato = dedupeForDisplay([parcela('e', 140000, null, 'x'), parcela('f', 140000, null, 'y')])
   assert.equal(sinDato.length, 2)
+})
+
+test('el título veta la localidad que declara la agencia', () => {
+  // Llobell vendía una casa de Benigembla —pueblo fuera del ámbito— con la
+  // localidad puesta en Benissa, y así entraba en el inventario. En esa
+  // discrepancia gana el título: la agencia rellena el desplegable con el
+  // pueblo más cercano de su lista, pero escribe el de verdad en el anuncio.
+  const ficha = (titulo, localidad) => `<html><body>
+    <h1>${titulo}</h1><div class="precio">140.000 €</div>
+    <p>Localidad: ${localidad}Zona: Centro</p></body></html>`
+
+  const vetada = listado.parsePropertyPage(
+    ficha('Se vende casa de pueblo en Benigembla', 'Benissa'),
+    'https://a.test/propiedad/casa-benigembla-c629/',
+  )
+  assert.equal(vetada.municipality, null, 'no es de ningún municipio nuestro')
+
+  // Sin veto, la localidad declarada sigue mandando sobre el título.
+  const normal = listado.parsePropertyPage(
+    ficha('Casa de pueblo a diez minutos de Dénia', 'Ondara'),
+    'https://a.test/propiedad/casa-ondara-c1/',
+  )
+  assert.equal(normal.municipality, 'Ondara')
 })
 
 test('el dominio de la agencia no dice dónde está la casa', () => {
