@@ -327,6 +327,27 @@ test('el informe se genera y sale una tarjeta por anuncio', () => {
   assert.doesNotMatch(html, /\$\{/, 'no puede quedar interpolación sin resolver')
 })
 
+test('el informe se genera aunque el parte del día venga sin cifras', () => {
+  // Regenerar en un día sin rastreo es normal: se pasó la medianoche, o solo
+  // se retoca la página. El generador reventaba leyendo `daily.totals`, que el
+  // parte vacío no traía, y eso tumbaba `--report-only` entero.
+  const anuncio = {
+    id: 'src:1', source: 'src', agency: 'Agencia', url: 'https://a.test/1',
+    title: 'Casa en Dénia', price: 200000, municipality: 'Dénia', type: 'house',
+    beds: 3, baths: 2, builtM2: 100, plotM2: null, pricePerM2: 2000,
+    saleStatus: 'available', firstSeen: '2026-08-01', lastSeen: '2026-08-01', status: 'active',
+  }
+  const sinCifras = {
+    date: '2026-08-28',
+    totals: { inventory: 1, additions: 0, priceDrops: 0, priceRises: 0, removals: 0 },
+    additions: [], priceDrops: [], priceRises: [], removals: [], sources: [],
+  }
+
+  const html = renderReport({ daily: sinCifras, listings: [anuncio], thumbnails: new Map(), maxPrice: 350000 })
+  assert.match(html, /Casa en Dénia/, 'el inventario se sigue publicando')
+  assert.doesNotMatch(html, /\$\{/)
+})
+
 test('la misma vivienda en varias agencias se enseña una sola vez', () => {
   // Caso real: la casa de 7 dormitorios y 529 m² de El Verger sale cinco veces
   // en el portal, cuatro a 190.000 € y una a 199.999 €. Las cuatro iguales son

@@ -10,7 +10,7 @@
  *   node src/index.mjs --report-only       regenera el informe con lo guardado
  */
 
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -148,14 +148,29 @@ async function run() {
   const previousListings = inventory.listings ?? []
 
   if (args.reportOnly) {
-    const daily = await readJson(join(DATA_DIR, 'daily', `${today}.json`), {
+    // Regenerar en un día sin rastreo es normal —se pasó la medianoche, o se
+    // retoca el informe— y no puede reventar. El sustituto tiene que traer la
+    // misma forma que un parte de verdad, `totals` incluido.
+    const vacio = {
       date: today,
+      totals: { inventory: previousListings.length, additions: 0, priceDrops: 0, priceRises: 0, removals: 0 },
       additions: [],
       priceDrops: [],
       priceRises: [],
       removals: [],
       sources: [],
-    })
+    }
+    // Si hoy no hay parte, se enseña el último que haya: el inventario sigue
+    // siendo el bueno y las novedades, las de la última pasada.
+    const ultimo = (await readdir(join(DATA_DIR, 'daily')).catch(() => []))
+      .filter((name) => name.endsWith('.json'))
+      .sort()
+      .pop()
+    const daily = {
+      ...vacio,
+      ...(await readJson(join(DATA_DIR, 'daily', `${today}.json`), null) ??
+        (ultimo ? await readJson(join(DATA_DIR, 'daily', ultimo), vacio) : vacio)),
+    }
     const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
     const techo = catalog.config?.maxPrice
     await writeReport({ daily, listings: previousListings, maxPrice: techo, log })
