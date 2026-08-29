@@ -1,0 +1,367 @@
+{
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-29T13:44:14.332Z",
+  "totals": {
+    "inventory": 3578,
+    "additions": 2,
+    "priceDrops": 1,
+    "priceRises": 0,
+    "removals": 0
+  },
+  "additions": [
+    {
+      "id": "llobell:2b9f9c6265",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-casa-de-campo-en-benitachell-c589/",
+      "title": "Se Vende espectacular casa de campo en Benitachell",
+      "price": 290000,
+      "priceHistory": [
+        {
+          "date": "2026-08-29",
+          "price": 290000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "beds": 5,
+      "baths": 2,
+      "builtM2": null,
+      "plotM2": 1601,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/27/341369/foto6.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-2b9f9c6265.webp",
+        "thumb": "llobell-2b9f9c6265.thumb.webp",
+        "capturedAt": "2026-08-29T13:44:14.333Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/10/27/341369/foto6.jpeg"
+      }
+    },
+    {
+      "id": "daniamed:6d21ff89a0",
+      "source": "daniamed",
+      "agency": "Daniamed",
+      "url": "https://www.daniamed.net/venta/adosado-en-primera-linea-de-playa-les-marines-denia-yolipb/",
+      "title": "Adosado en primera línea de Playa, Les Marines Denia",
+      "price": 179000,
+      "priceHistory": [
+        {
+          "date": "2026-08-29",
+          "price": 179000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 2712,
+      "image": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/79/01a04909-cc66-70af-936f-de1d8252b279.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-08-28T15:58:39.000Z",
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "daniamed-6d21ff89a0.webp",
+        "thumb": "daniamed-6d21ff89a0.thumb.webp",
+        "capturedAt": "2026-08-29T13:44:14.333Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019c8f36-30d3-769a-bf8e-7a645675dbe5/social-preview/79/01a04909-cc66-70af-936f-de1d8252b279.jpg"
+      }
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:f0d1ab9cc6",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9471909",
+      "title": "Solar/Parcela en El Montgó, Dénia en venta - 175.000 € (Ref: 9471909)",
+      "price": 175000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 198000
+        },
+        {
+          "date": "2026-08-29",
+          "price": 175000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/25420/9471909/20260604140527/w1600h900/s640x480/x-282737202.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-29",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-f0d1ab9cc6.webp",
+        "thumb": "thinkspain-f0d1ab9cc6.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25420/9471909/20260604140527/w1600h900/s640x480/x-282737202.jpg"
+      },
+      "previousPrice": 198000,
+      "delta": -23000,
+      "deltaPct": -11.6,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [],
+  "removals": [],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2548,
+      "status": "ok",
+      "requests": 547,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 42,
+      "status": "ok",
+      "requests": 50,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 12,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 26,
+      "status": "ok",
+      "requests": 51,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 39,
+      "status": "ok",
+      "requests": 63,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 28,
+      "status": "ok",
+      "requests": 76,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 29,
+      "status": "ok",
+      "requests": 41,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 41,
+      "status": "ok",
+      "requests": 60,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 12,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 12,
+      "status": "ok",
+      "requests": 22,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 21,
+      "status": "ok",
+      "requests": 37,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 40,
+      "status": "ok",
+      "requests": 88,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 6,
+      "status": "ok",
+      "requests": 10,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 3,
+      "status": "ok",
+      "requests": 14,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 40,
+      "status": "ok",
+      "requests": 87,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 37,
+      "status": "ok",
+      "requests": 49,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "listings": 8,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 40,
+      "status": "ok",
+      "requests": 60,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5
+    },
+    {
+      "id": "giortola",
+      "agency": "GI Ortolá",
+      "listings": 21,
+      "status": "ok",
+      "requests": 38,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "grupogarcia",
+      "agency": "Grupo García",
+      "listings": 19,
+      "status": "ok",
+      "requests": 29,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "listings": 21,
+      "status": "ok",
+      "requests": 37,
+      "blocked": 0,
+      "errors": 0
+    }
+  ],
+  "bootstrap": true
+}
