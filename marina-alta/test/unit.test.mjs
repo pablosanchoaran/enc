@@ -442,22 +442,39 @@ test('el título veta la localidad que declara la agencia', () => {
   // localidad puesta en Benissa, y así entraba en el inventario. En esa
   // discrepancia gana el título: la agencia rellena el desplegable con el
   // pueblo más cercano de su lista, pero escribe el de verdad en el anuncio.
+  //
+  // Se comprueba sobre `normalize` a propósito. El veto vivió un día dentro del
+  // adaptador, donde dejaba el municipio en `null`, y este test lo daba por
+  // bueno; pero `null` ahí significa "no lo sé", así que `normalize` volvía a
+  // deducirlo del texto libre y la casa reaparecía en Benissa a la mañana
+  // siguiente. Lo que hay que afirmar es que el anuncio no entra.
   const ficha = (titulo, localidad) => `<html><body>
     <h1>${titulo}</h1><div class="precio">140.000 €</div>
     <p>Localidad: ${localidad}Zona: Centro</p></body></html>`
+  const source = { id: 'llobell', agency: 'Llobell' }
 
   const vetada = listado.parsePropertyPage(
     ficha('Se vende casa de pueblo en Benigembla', 'Benissa'),
     'https://a.test/propiedad/casa-benigembla-c629/',
   )
-  assert.equal(vetada.municipality, null, 'no es de ningún municipio nuestro')
+  const descartada = normalize(vetada, source, '2026-08-29')
+  assert.equal(descartada.listing, null, 'no entra en el inventario')
+  assert.equal(descartada.reason, 'fuera de la comarca')
 
   // Sin veto, la localidad declarada sigue mandando sobre el título.
   const normal = listado.parsePropertyPage(
     ficha('Casa de pueblo a diez minutos de Dénia', 'Ondara'),
     'https://a.test/propiedad/casa-ondara-c1/',
   )
-  assert.equal(normal.municipality, 'Ondara')
+  assert.equal(normalize(normal, source, '2026-08-29').listing.municipality, 'Ondara')
+
+  // Y el veto solo pesa cuando el título no nombra ninguno de los nuestros:
+  // "Benissa, junto a Murla" es de Benissa.
+  const vecina = listado.parsePropertyPage(
+    ficha('Casa en Benissa, junto a Murla', 'Benissa'),
+    'https://a.test/propiedad/casa-benissa-c7/',
+  )
+  assert.equal(normalize(vecina, source, '2026-08-29').listing.municipality, 'Benissa')
 })
 
 test('el dominio de la agencia no dice dónde está la casa', () => {
@@ -652,4 +669,34 @@ test('el icono se interpreta por su descripción, no por el nombre del fichero',
   readIconFeatures($, facts)
   assert.equal(facts.plotM2, 14414)
   assert.equal(facts.builtM2, 54)
+})
+
+test('ocultar el precio no es retirar el anuncio', () => {
+  // MLS Dénia y Daniamed pasaron el importe de dos fichas a "Consultar". La
+  // ficha seguía publicada, pero sin precio no se podía normalizar, dejaba de
+  // aparecer en lo recogido y a los siete fallos se daba de baja. Es el mismo
+  // error de siempre: "hoy no la veo" no es "ya no está".
+  //
+  // Los importes del maquetado son los de otro anuncio, el del carrusel de
+  // propiedades similares que estas plantillas pintan al pie — por eso mirar
+  // "si hay algún precio en la página" tampoco sirve.
+  const html = `<html><body>
+    <h1 class="propertytitle-1__title">Chalet con 2 dormitorios en el Montgó</h1>
+    <div class="features-8__price">Consultar</div>
+    <div class="property-3--landscape">
+      <span class="property-3--landscape__title">Chalet independiente cerca del mar</span>
+      <span class="property-3--landscape__price-text">330.000 €</span>
+    </div></body></html>`
+
+  const item = parsePropertyPage(html, 'https://a.test/en-venta/chalet-montgo-9070/')
+  assert.equal(item.priceOnRequest, true)
+  assert.equal(item.price, undefined, 'no se hereda el precio del anuncio de al lado')
+
+  // Y una ficha con precio de verdad sigue leyéndose como siempre.
+  const conPrecio = parsePropertyPage(
+    html.replace('>Consultar<', '>245.000 €<'),
+    'https://a.test/en-venta/chalet-montgo-9070/',
+  )
+  assert.equal(conPrecio.priceOnRequest, undefined)
+  assert.equal(conPrecio.price, 245000)
 })

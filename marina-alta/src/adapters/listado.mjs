@@ -92,14 +92,6 @@ function cleanImageUrl(raw) {
   return embedded > 0 ? raw.slice(embedded) : raw
 }
 
-/**
- * El título nombra un sitio de fuera del ámbito. Se comprueba aparte de la
- * localidad declarada porque una y otro pueden discrepar, y en esa discrepancia
- * gana el título: la agencia rellena el desplegable de localidad con el pueblo
- * más cercano de su lista, pero escribe el de verdad en el anuncio.
- */
-const VETO = /\b(parcent|murla|benigembla|benich?embla|castell de castells|tormos|benimeli)\b/i
-
 export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
@@ -113,6 +105,9 @@ export function parsePropertyPage(html, url) {
   // por eso estuvo desactivada: lo que sí publica es un `RealEstateListing`.
   const price = readPrice($) ?? structured?.price ?? null
 
+  // Igual que en Sooprema: si la ficha responde con su título pero sin
+  // importe, la agencia lo ha pasado a "Consultar" y el anuncio sigue en pie.
+  if (title && !price) return { url, title, priceOnRequest: true }
   if (!title || !price) return null
 
   const reference =
@@ -140,17 +135,11 @@ export function parsePropertyPage(html, url) {
     saleStatus: detectSaleStatus($),
     // Cuando la ficha declara su localidad, esa manda y no se mezcla con nada
     // más: una descripción que diga "a diez minutos de Dénia" no debe mover la
-    // casa de pueblo a Dénia.
-    //
-    // Pero el título puede vetarla: Llobell vendía una casa de Benigembla
-    // —pueblo que no está en el ámbito— con la localidad puesta en Benissa, y
-    // así se colaba. Si el título nombra un sitio vetado, no vale ninguna
-    // localidad.
-    municipality: detectMunicipality(title) === null && VETO.test(title ?? '')
-      ? null
-      : locality
-        ? detectMunicipality(locality)
-        : (structured?.locality ? detectMunicipality(structured.locality) : null),
+    // casa de pueblo a Dénia. Los pueblos de fuera del ámbito los veta
+    // `normalize`, que lo hace para todos los adaptadores por igual.
+    municipality: locality
+      ? detectMunicipality(locality)
+      : (structured?.locality ? detectMunicipality(structured.locality) : null),
     locationHint: [locality, structured?.locality, title, slug.replace(/-/g, ' '), description]
       .filter(Boolean)
       .join(' | '),
@@ -215,15 +204,20 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   log(`  a descargar: ${queue.length} (${fresh.length} sin conocer)`)
 
   const found = []
+  const sinPrecio = new Set()
   for (const url of queue) {
     const html = await fetcher.get(url)
     if (!html) continue
     const item = parsePropertyPage(html, url)
-    if (item) found.push(item)
+    if (item?.priceOnRequest) sinPrecio.add(url)
+    else if (item) found.push(item)
   }
+  if (sinPrecio.size > 0) log(`  ${sinPrecio.size} siguen publicadas con el precio a consultar`)
 
   // `checked` son las fichas que esta pasada ha abierto de verdad. Lo que se
   // quedó fuera del presupuesto no se ha mirado, y no mirarlo no puede
   // acercarlo a la baja.
-  return { items: found, checked: new Set(queue) }
+  const checked = new Set(queue)
+  for (const url of sinPrecio) checked.delete(url)
+  return { items: found, checked, priceOnRequest: sinPrecio }
 }

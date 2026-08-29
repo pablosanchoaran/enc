@@ -139,6 +139,12 @@ export function parsePropertyPage(html, url) {
   readIconFeatures($, facts)
   readLabelledFeatures($, facts)
 
+  // La ficha responde y conserva su título, pero la agencia ha quitado el
+  // importe y ha puesto "Consultar". Sigue publicada, así que no puede contar
+  // como desaparecida: se devuelve marcada para que `collect` la deje fuera de
+  // lo que da por comprobado. Sin esto, dos anuncios de MLS Dénia y Daniamed
+  // que seguían a la venta acabaron dados de baja por ocultar el precio.
+  if (title && !price) return { url, title, priceOnRequest: true }
   if (!title || !price) return null
 
   const slug = new URL(url).pathname
@@ -243,11 +249,13 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   log(`  a descargar: ${queue.length} (${fresh.length} nuevas o modificadas)`)
 
   const found = []
+  const sinPrecio = new Set()
   for (const entry of queue) {
     const html = await fetcher.get(entry.loc)
     if (!html) continue
     const item = parsePropertyPage(html, entry.loc)
-    if (item) found.push({ ...item, lastmod: entry.lastmod })
+    if (item?.priceOnRequest) sinPrecio.add(entry.loc)
+    else if (item) found.push({ ...item, lastmod: entry.lastmod })
   }
 
   // De lo que damos fe esta pasada: las fichas que hemos abierto, y las que ya
@@ -264,6 +272,8 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   for (const url of known.byUrl.keys()) {
     if (url.startsWith(source.origin) && !enElSitemap.has(url)) checked.add(url)
   }
+  for (const url of sinPrecio) checked.delete(url)
+  if (sinPrecio.size > 0) log(`  ${sinPrecio.size} siguen publicadas con el precio a consultar`)
 
-  return { items: found, checked }
+  return { items: found, checked, priceOnRequest: sinPrecio }
 }

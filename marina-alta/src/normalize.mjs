@@ -4,7 +4,7 @@
  */
 
 import { createHash } from 'node:crypto'
-import { detectMunicipality } from './municipalities.mjs'
+import { detectMunicipality, namesExcludedPlace } from './municipalities.mjs'
 import { NON_RESIDENTIAL } from './parse.mjs'
 
 /**
@@ -43,6 +43,15 @@ export function normalize(raw, source, today, { maxPrice = Infinity } = {}) {
   // Por encima del techo no se guarda, pero sí se anota el precio: así una
   // bajada que lo cruce hacia abajo se detecta en la siguiente pasada.
   if (raw.price > maxPrice) return { listing: null, reason: 'por encima del techo' }
+
+  // El título nombra un pueblo de fuera del ámbito y ningún municipio nuestro:
+  // se descarta antes de mirar nada más. Va aquí y no en un adaptador porque la
+  // localidad que declara la agencia no es de fiar para desmentirlo — Llobell
+  // publicaba "Se vende casa de pueblo en Benigembla" con la localidad puesta
+  // en Benissa, y así la casa entraba en el inventario en el pueblo de al lado.
+  if (detectMunicipality(raw.title) === null && namesExcludedPlace(raw.title)) {
+    return { listing: null, reason: 'fuera de la comarca' }
+  }
 
   // Los adaptadores que conocen la zona con certeza la traen ya resuelta.
   const municipality =

@@ -18,6 +18,7 @@ import { Fetcher } from './fetcher.mjs'
 import { diffInventory } from './diff.mjs'
 import { updateArchive } from './archive.mjs'
 import { capturePhotos, copyPhotosToSite, loadThumbnails } from './photos.mjs'
+import { detectMunicipality, namesExcludedPlace } from './municipalities.mjs'
 import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
 import * as ego from './adapters/ego.mjs'
@@ -145,7 +146,18 @@ async function run() {
   const log = (message) => console.log(message)
 
   const inventory = await readJson(INVENTORY_FILE, { updatedAt: null, listings: [] })
-  const previousListings = inventory.listings ?? []
+
+  // El inventario guarda anuncios ya normalizados, así que un cambio en las
+  // reglas de ámbito no alcanza a lo que se guardó con las reglas viejas: se
+  // quedaría dentro para siempre, porque solo se vuelve a normalizar lo que se
+  // rastrea. Al cargar se repasa el ámbito con las reglas de hoy. Así, el día
+  // que se vetó Benigembla salieron también los seis anuncios de pueblos de
+  // fuera que ya estaban dentro, de cuatro agencias distintas.
+  const enAmbito = (item) =>
+    !(detectMunicipality(item.title) === null && namesExcludedPlace(item.title))
+  const previousListings = (inventory.listings ?? []).filter(enAmbito)
+  const expulsados = (inventory.listings ?? []).length - previousListings.length
+  if (expulsados > 0) log(`  ${expulsados} anuncios del inventario quedan fuera del ámbito actual`)
 
   if (args.reportOnly) {
     // Regenerar en un día sin rastreo es normal —se pasó la medianoche, o se

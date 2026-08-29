@@ -76,6 +76,21 @@ const INDEX = [
 ].sort((a, b) => b.alias.length - a.alias.length)
 
 /**
+ * ¿El texto nombra uno de esos sitios de fuera? Se usa para que un veto pese
+ * más que la localidad que declare la agencia: `detectMunicipality` solo
+ * descarta cuando el sitio vetado aparece antes que cualquier municipio
+ * nuestro, y en un título como "casa de pueblo en Benigembla" la agencia
+ * todavía puede haber escrito "Benissa" en la casilla de localidad.
+ */
+export function namesExcludedPlace(...texts) {
+  const haystack = fold(texts.filter(Boolean).join(' | '))
+  if (!haystack) return false
+  return EXCLUDED_PLACES.some((place) =>
+    new RegExp(`(^| )${fold(place)}( |$)`).test(haystack),
+  )
+}
+
+/**
  * Busca un municipio de la comarca dentro de un texto libre (título,
  * migas de pan, dirección). Devuelve el nombre canónico o null.
  */
