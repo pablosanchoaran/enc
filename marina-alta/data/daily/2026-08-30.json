@@ -1,0 +1,772 @@
+{
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30T15:46:50.112Z",
+  "totals": {
+    "inventory": 3570,
+    "additions": 0,
+    "priceDrops": 2,
+    "priceRises": 0,
+    "removals": 12
+  },
+  "additions": [],
+  "priceDrops": [
+    {
+      "id": "thinkspain:b37402b89d",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9987405",
+      "title": "Ático de 4 habitaciones en Pego en venta - 81.900 € (Ref: 9987405)",
+      "price": 81900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 86000
+        },
+        {
+          "date": "2026-08-30",
+          "price": 81900
+        }
+      ],
+      "municipality": "Pego",
+      "type": "penthouse",
+      "beds": 4,
+      "baths": null,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 803,
+      "image": "https://cdn.thinkwebcontent.com/property/40882/9987405/20260730120458/w5712h4284/s640x480/x-286334042.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-30",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-b37402b89d.webp",
+        "thumb": "thinkspain-b37402b89d.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40882/9987405/20260730120458/w5712h4284/s640x480/x-286334042.jpg"
+      },
+      "previousPrice": 86000,
+      "delta": -4100,
+      "deltaPct": -4.8,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:9bc48e1eaa",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9917615",
+      "title": "Solar/Parcela en Pego en venta - 16.000 € (Ref: 9917615)",
+      "price": 16000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 19000
+        },
+        {
+          "date": "2026-08-30",
+          "price": 16000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/39537/9917615/20260621152410/w1448h1086/s640x480/x-283997374.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-30",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-9bc48e1eaa.webp",
+        "thumb": "thinkspain-9bc48e1eaa.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/39537/9917615/20260621152410/w1448h1086/s640x480/x-283997374.jpg"
+      },
+      "previousPrice": 19000,
+      "delta": -3000,
+      "deltaPct": -15.8,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [],
+  "removals": [
+    {
+      "id": "thinkspain:e5d51d28a9",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10011078",
+      "title": "Bungalow de 1 habitación en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 200.000 € (Ref: 10011078)",
+      "price": 200000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 200000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 43,
+      "plotM2": null,
+      "pricePerM2": 4651,
+      "image": "https://cdn.thinkwebcontent.com/property/17233/10011078/20260812010539/w1400h933/s640x480/x-287131842.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-e5d51d28a9.webp",
+        "thumb": "thinkspain-e5d51d28a9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/17233/10011078/20260812010539/w1400h933/s640x480/x-287131842.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:62c44a2404",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10005043",
+      "title": "Apartamento de 1 habitación en Pueblo, Calpe / Calp en venta - 250.000 € (Ref: 10005043)",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 48,
+      "plotM2": null,
+      "pricePerM2": 5208,
+      "image": "https://cdn.thinkwebcontent.com/property/40637/10005043/20260807232324/w1920h1056/s640x480/x-286935139.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-62c44a2404.webp",
+        "thumb": "thinkspain-62c44a2404.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40637/10005043/20260807232324/w1920h1056/s640x480/x-286935139.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:2944345831",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9889216",
+      "title": "Apartamento de 1 habitación en Calpe / Calp en venta con piscina garaje - 180.000 € (Ref: 9889216)",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 180000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 56,
+      "plotM2": null,
+      "pricePerM2": 3214,
+      "image": "https://cdn.thinkwebcontent.com/property/38615/9889216/20260608092821/w800h533/s640x480/x-283040876.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-2944345831.webp",
+        "thumb": "thinkspain-2944345831.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/38615/9889216/20260608092821/w800h533/s640x480/x-283040876.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:2cc77999f9",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9509188",
+      "title": "Apartamento de 3 habitaciones en Pueblo, Calpe / Calp en venta con piscina - 240.000 € (Ref: 9509188)",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 240000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2143,
+      "image": "https://cdn.thinkwebcontent.com/property/30750/9509188/20260115083226/w640h480/s640x480/x-270598377.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-2cc77999f9.webp",
+        "thumb": "thinkspain-2cc77999f9.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30750/9509188/20260115083226/w640h480/s640x480/x-270598377.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:fc89c83e9d",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9242214",
+      "title": "Terreno/Finca Rústica en Gargasindi, Calpe / Calp en venta - 265.000 € (Ref: 9242214)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/29054/9242214/20250918151759/w1600h1200/s640x480/x-262428856.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-fc89c83e9d.webp",
+        "thumb": "thinkspain-fc89c83e9d.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29054/9242214/20250918151759/w1600h1200/s640x480/x-262428856.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:04b8d76771",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8625202",
+      "title": "Solar/Parcela en Gargasindi, Calpe / Calp en venta - 265.000 € (Ref: 8625202)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/30750/8625202/20241107084014/w1600h1200/s640x480/x-242118027.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-04b8d76771.webp",
+        "thumb": "thinkspain-04b8d76771.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30750/8625202/20241107084014/w1600h1200/s640x480/x-242118027.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:ee8a64f66c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9991026",
+      "title": "Terreno/Finca Rústica en Benidoleig en venta - 19.000 € (Ref: 9991026)",
+      "price": 19000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 19000
+        }
+      ],
+      "municipality": "Benidoleig",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/40882/9991026/20260731092154/w2048h2048/s640x480/x-286442742.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-ee8a64f66c.webp",
+        "thumb": "thinkspain-ee8a64f66c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40882/9991026/20260731092154/w2048h2048/s640x480/x-286442742.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:70f3b9f1a1",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9618887",
+      "title": "Terreno/Finca Rústica en La Granadella  - Costa Nova, Javea / Xàbia en venta - 220.000 € (Ref: 9618887)",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 220000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/29322/9618887/20260221000708/w1920h1022/s640x480/x-273731578.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-70f3b9f1a1.webp",
+        "thumb": "thinkspain-70f3b9f1a1.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29322/9618887/20260221000708/w1920h1022/s640x480/x-273731578.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:256c3825e7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9993145",
+      "title": "Apartamento de 2 habitaciones en Pego en venta con piscina - 214.680 € (Ref: 9993145)",
+      "price": 214680,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 214680
+        }
+      ],
+      "municipality": "Pego",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 2526,
+      "image": "https://cdn.thinkwebcontent.com/property/7781/9993145/20260819054146/w1101h758/s640x480/x-287565293.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-256c3825e7.webp",
+        "thumb": "thinkspain-256c3825e7.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/7781/9993145/20260819054146/w1101h758/s640x480/x-287565293.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:25d0b943c3",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9383176",
+      "title": "Chalet de 3 habitaciones en Pego en venta - 350.000 € (Ref: 9383176)",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "municipality": "Pego",
+      "type": "villa",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 281,
+      "plotM2": null,
+      "pricePerM2": 1246,
+      "image": "https://cdn.thinkwebcontent.com/property/35299/9383176/20251112082746/w1080h1080/s640x480/x-266682694.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-25d0b943c3.webp",
+        "thumb": "thinkspain-25d0b943c3.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/35299/9383176/20251112082746/w1080h1080/s640x480/x-266682694.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:c94df5ce20",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10008569",
+      "title": "Apartamento de 2 habitaciones en Centro ciudad, Javea / Xàbia en venta con piscina - 345.000 € (Ref: 10008569)",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 345000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 3557,
+      "image": "https://cdn.thinkwebcontent.com/property/4421/10008569/20260811011327/w1920h1080/s640x480/x-287066932.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-c94df5ce20.webp",
+        "thumb": "thinkspain-c94df5ce20.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4421/10008569/20260811011327/w1920h1080/s640x480/x-287066932.jpg"
+      },
+      "removedOn": "2026-08-30"
+    },
+    {
+      "id": "thinkspain:eb39fd57ae",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9845919",
+      "title": "Apartamento de 2 habitaciones en Centro ciudad, Javea / Xàbia en venta con piscina - 345.000 € (Ref: 9845919)",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 345000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 3557,
+      "image": "https://cdn.thinkwebcontent.com/property/35306/9845919/20260520033639/w1024h576/s640x480/x-281218503.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-eb39fd57ae.webp",
+        "thumb": "thinkspain-eb39fd57ae.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/35306/9845919/20260520033639/w1024h576/s640x480/x-281218503.jpg"
+      },
+      "removedOn": "2026-08-30"
+    }
+  ],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2545,
+      "status": "ok",
+      "requests": 548,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 12,
+      "status": "ok",
+      "requests": 19,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 26,
+      "status": "ok",
+      "requests": 51,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 39,
+      "status": "ok",
+      "requests": 64,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 28,
+      "status": "ok",
+      "requests": 76,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 15,
+      "status": "ok",
+      "requests": 53,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 12,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 12,
+      "status": "ok",
+      "requests": 23,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 22,
+      "status": "ok",
+      "requests": 30,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 6,
+      "status": "ok",
+      "requests": 10,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 4,
+      "status": "ok",
+      "requests": 8,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 3,
+      "status": "ok",
+      "requests": 14,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 37,
+      "status": "ok",
+      "requests": 49,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "listings": 8,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 40,
+      "status": "ok",
+      "requests": 60,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5
+    },
+    {
+      "id": "giortola",
+      "agency": "GI Ortolá",
+      "listings": 21,
+      "status": "ok",
+      "requests": 38,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "grupogarcia",
+      "agency": "Grupo García",
+      "listings": 19,
+      "status": "ok",
+      "requests": 28,
+      "blocked": 0,
+      "errors": 0
+    },
+    {
+      "id": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "listings": 21,
+      "status": "ok",
+      "requests": 34,
+      "blocked": 0,
+      "errors": 0
+    }
+  ],
+  "bootstrap": true
+}

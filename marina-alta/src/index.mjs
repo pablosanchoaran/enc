@@ -302,10 +302,14 @@ async function run() {
       id: source.id,
       agency: source.agency,
       listings: accepted,
-      status: accepted === 0 ? 'vacío' : 'ok',
+      // Un muro anti-bot no es una web vacía ni una web rota: es una puerta
+      // cerrada, y en el informe se dice así para que se vea que ahí faltan
+      // anuncios por una razón que no se arregla tocando el código.
+      status: fetcher.stats.walled > 0 && accepted === 0 ? 'muro' : accepted === 0 ? 'vacío' : 'ok',
       requests: fetcher.stats.requests,
       blocked: fetcher.stats.blocked,
       errors: fetcher.stats.errors,
+      walled: fetcher.stats.walled,
     })
   }
 
@@ -323,7 +327,13 @@ async function run() {
     if (report?.listings > 0 || !hadInventory) {
       touchedSources.add(source.id)
     } else {
-      log(`⚠ ${source.agency}: 0 anuncios teniendo inventario previo; se conserva sin tocar`)
+      log(
+        `⚠ ${source.agency}: ${
+          report?.status === 'muro'
+            ? 'muro anti-bot, no se puede entrar'
+            : '0 anuncios teniendo inventario previo'
+        }; se conserva sin tocar`,
+      )
     }
   }
 

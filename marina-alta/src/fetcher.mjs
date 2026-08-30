@@ -22,6 +22,16 @@ const MAX_ATTEMPTS = 3
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
+/**
+ * La página de reto que sirven los muros anti-bot en lugar del contenido. Se
+ * reconoce por la cookie que planta, que es lo propio del muro; el título
+ * "Security Check" lo comparten páginas legítimas de bancos y aseguradoras.
+ */
+export function isAntiBotChallenge(body) {
+  if (typeof body !== 'string' || body.length > 200_000) return false
+  return /__shield=|__cf_chl_|challenge-platform|DataDome/.test(body)
+}
+
 export class Fetcher {
   constructor({ origin, userAgent = USER_AGENT, minDelayMs = null } = {}) {
     this.origin = origin
@@ -29,7 +39,7 @@ export class Fetcher {
     this.minDelayMs = minDelayMs
     this.robots = null
     this.queue = Promise.resolve()
-    this.stats = { requests: 0, blocked: 0, errors: 0 }
+    this.stats = { requests: 0, blocked: 0, errors: 0, walled: 0 }
   }
 
   async init() {
@@ -87,7 +97,23 @@ export class Fetcher {
                 return body.toString('utf8')
               }
             }
-            return await response.text()
+            const body = await response.text()
+
+            // Un muro anti-bot no da un error: responde 200 con una página de
+            // reto en vez de lo pedido, así que sin mirarlo el rastreo cree que
+            // la agencia se ha quedado sin catálogo. El CMS de seis de las
+            // agencias empezó a servir un reto de prueba de trabajo el 30/08 y
+            // el rastreo lo leyó como "sitemap vacío", que es justo lo que no
+            // debe pasar desapercibido.
+            //
+            // No se intenta resolver: pasarlo exige ejecutar su JavaScript y
+            // hacerse pasar por un navegador, que es entrar donde nos han
+            // dicho que no.
+            if (isAntiBotChallenge(body)) {
+              this.stats.walled += 1
+              return null
+            }
+            return body
           }
           if (!RETRYABLE.has(response.status) || attempt === MAX_ATTEMPTS) {
             this.stats.errors += 1

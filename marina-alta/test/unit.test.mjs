@@ -9,6 +9,7 @@ import * as listado from '../src/adapters/listado.mjs'
 import * as sooprema from '../src/adapters/sooprema.mjs'
 import { parsePropertyPage, preferOneLanguage, readIconFeatures } from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
+import { isAntiBotChallenge } from '../src/fetcher.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
 import { renderReport } from '../src/report.mjs'
@@ -699,4 +700,20 @@ test('ocultar el precio no es retirar el anuncio', () => {
   )
   assert.equal(conPrecio.priceOnRequest, undefined)
   assert.equal(conPrecio.price, 245000)
+})
+
+test('un muro anti-bot no se confunde con una web sin anuncios', () => {
+  // El CMS de seis agencias empezó a servir una página de reto —una prueba de
+  // trabajo que planta la cookie `__shield`— con código 200 en lugar del
+  // sitemap. Sin reconocerla, el rastreo la parsea, no encuentra ninguna URL y
+  // concluye que la agencia se ha quedado sin catálogo.
+  const reto = `<!DOCTYPE html><html><head><title>Security Check</title></head>
+    <body><script>document.cookie="__shield="+B+"."+n+";path=/";</script></body></html>`
+  assert.equal(isAntiBotChallenge(reto), true)
+
+  // Y un sitemap de verdad no se confunde con uno, ni una ficha que hable de
+  // seguridad en el texto del anuncio.
+  assert.equal(isAntiBotChallenge('<urlset><url><loc>https://a.test/x</loc></url></urlset>'), false)
+  assert.equal(isAntiBotChallenge('<h1>Villa con puerta de seguridad</h1>'), false)
+  assert.equal(isAntiBotChallenge(null), false)
 })

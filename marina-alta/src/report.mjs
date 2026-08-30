@@ -290,6 +290,7 @@ function renderSources(sources) {
     'vacío': 'Sin resultados',
     error: 'Error',
     robots: 'Bloqueado por robots.txt',
+    muro: 'Muro anti-bot: se conserva lo último recogido',
   }
   return `
     <table class="sources">
