@@ -748,3 +748,45 @@ test('la identidad del anuncio es su referencia, no el slug traducido', () => {
   assert.equal(referenceFromSlug('https://a.test/venta/casa-2/'), null, 'demasiado corta')
   assert.equal(referenceFromSlug('no es una url'), null)
 })
+
+test('un listado que rota se pide hasta agotarlo', async () => {
+  // Llobell no sirve el mismo listado en cada petición: devuelve entre 51 y 56
+  // de sus 65 fichas, y las que rotan no se descubren nunca mirando una sola
+  // vez. El 31/08 se quedaron fuera dos parcelas recién publicadas.
+  const origin = 'https://a.test'
+  const todas = ['p1', 'p2', 'p3', 'p4']
+  const tandas = [
+    ['p1', 'p2'],
+    ['p1', 'p3'],
+    ['p2', 'p3', 'p4'],
+  ]
+  let pedidas = 0
+
+  const fetcher = {
+    async get(url) {
+      if (url === `${origin}/listado/`) {
+        const tanda = tandas[Math.min(pedidas, tandas.length - 1)]
+        pedidas += 1
+        return tanda.map((r) => `<a href="/propiedad/casa-${r}/">x</a>`).join('')
+      }
+      const ref = url.match(/casa-(p\d)/)[1]
+      return `<html><body><h1>Casa ${ref}</h1><div class="precio">200.000 €</div>
+        <p>Localidad: OndaraZona: Centro</p></body></html>`
+    },
+  }
+
+  const salida = await listado.collect({
+    fetcher,
+    source: { origin, listingUrls: [`${origin}/listado/`] },
+    known: { byUrl: new Map(), removed: [] },
+    log: () => {},
+  })
+
+  assert.deepEqual(
+    salida.items.map((i) => i.url.match(/casa-(p\d)/)[1]).sort(),
+    todas,
+    'las cuatro, aunque ninguna petición las trajo todas',
+  )
+  // Se para en cuanto una pasada no aporta nada: la cuarta repite la tercera.
+  assert.equal(pedidas, 4, 'una petición de más para comprobar que ya no hay')
+})

@@ -146,6 +146,9 @@ export function parsePropertyPage(html, url) {
   }
 }
 
+/** Veces que se pide cada listado antes de darlo por agotado. */
+const LISTING_PASSES = 5
+
 export async function collect({ fetcher, source, known, log, limit = Infinity, refreshBudget = 40 }) {
   const { propertyPattern } = source
   const propertyPath = source.propertyPath ?? '/propiedad/'
@@ -157,10 +160,22 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
 
   const urls = new Set()
   for (const listingUrl of listingUrls) {
-    const html = await fetcher.get(listingUrl)
-    if (!html) continue
-    for (const link of extractPropertyLinks(html, source.origin, { propertyPath, propertyPattern })) {
-      urls.add(link)
+    // Se pide varias veces a propósito. Estas webs no sirven el mismo listado
+    // en cada petición: Llobell devuelve entre 51 y 56 de sus 65 fichas, y las
+    // que rotan no se descubren nunca si solo se mira una vez. El 31/08 se
+    // quedaron fuera dos parcelas recién publicadas que estaban a la venta.
+    //
+    // Cuatro pasadas bastaron para juntar las 65; se para en cuanto una no
+    // aporta nada nuevo, así que a una web que sirva siempre lo mismo le cuesta
+    // una petición de más y no cinco.
+    for (let pass = 1; pass <= LISTING_PASSES; pass += 1) {
+      const html = await fetcher.get(listingUrl)
+      if (!html) break
+      const antes = urls.size
+      for (const link of extractPropertyLinks(html, source.origin, { propertyPath, propertyPattern })) {
+        urls.add(link)
+      }
+      if (urls.size === antes) break
     }
   }
   const enElListado = urls.size
