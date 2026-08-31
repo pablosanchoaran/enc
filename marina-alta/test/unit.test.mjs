@@ -7,7 +7,12 @@ import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
 import * as listado from '../src/adapters/listado.mjs'
 import * as sooprema from '../src/adapters/sooprema.mjs'
-import { parsePropertyPage, preferOneLanguage, readIconFeatures } from '../src/adapters/sooprema.mjs'
+import {
+  parsePropertyPage,
+  preferOneLanguage,
+  readIconFeatures,
+  referenceFromSlug,
+} from '../src/adapters/sooprema.mjs'
 import { zonePages } from '../src/adapters/thinkspain.mjs'
 import { isAntiBotChallenge } from '../src/fetcher.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
@@ -716,4 +721,30 @@ test('un muro anti-bot no se confunde con una web sin anuncios', () => {
   assert.equal(isAntiBotChallenge('<urlset><url><loc>https://a.test/x</loc></url></urlset>'), false)
   assert.equal(isAntiBotChallenge('<h1>Villa con puerta de seguridad</h1>'), false)
   assert.equal(isAntiBotChallenge(null), false)
+})
+
+test('la identidad del anuncio es su referencia, no el slug traducido', () => {
+  // El slug va traducido, así que la misma casa entraba una vez por idioma:
+  // 107 de las 108 de Bindley estaban duplicadas. Y cuando la web cambió
+  // `/for-sale/x/` por `/property/for-sale/x/`, las veintiuna URLs viejas
+  // dieron 404 con los anuncios a la venta en su dirección nueva, y se
+  // informaron como retiradas.
+  const mismaCasa = [
+    'https://a.test/property/for-sale/plots-for-sale-in-jalon-costa-blanca-bp3707/',
+    'https://a.test/es/propiedad/venta/parcelas-en-venta-en-jalon-costa-blanca-bp3707/',
+    'https://a.test/de/immobilie/verkauf/grundstucke-zu-verkaufen-in-jalon-bp3707/',
+    'https://a.test/for-sale/plots-for-sale-in-jalon-costa-blanca-bp3707/',
+  ]
+  const refs = new Set(mismaCasa.map(referenceFromSlug))
+  assert.deepEqual([...refs], ['bp3707'], 'una sola identidad para las cuatro rutas')
+
+  // Formas de referencia que usan estas webs.
+  assert.equal(referenceFromSlug('https://a.test/en-venta/chalet-montgo-9070/'), '9070')
+  assert.equal(referenceFromSlug('https://a.test/es/propiedad/venta/piso-bpc336169/'), 'bpc336169')
+
+  // Y lo que no parece una referencia no lo es: sin cifras es una palabra del
+  // slug, y tomarla juntaría casas distintas bajo la misma identidad.
+  assert.equal(referenceFromSlug('https://a.test/venta/adosado-en-les-marines-denia/'), null)
+  assert.equal(referenceFromSlug('https://a.test/venta/casa-2/'), null, 'demasiado corta')
+  assert.equal(referenceFromSlug('no es una url'), null)
 })

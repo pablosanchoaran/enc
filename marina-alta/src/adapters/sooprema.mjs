@@ -113,6 +113,31 @@ function readLabelledFeatures($, target) {
   target.plotM2 ??= parseArea(readLabelled(body, 'parcela', 'terreno', 'solar'))
 }
 
+/**
+ * La referencia que estas webs pegan al final del slug: `...-en-jalon-bp3707/`.
+ * Es la identidad estable del anuncio, y la única que aguanta dos cosas que sí
+ * cambian: el idioma —el slug va traducido, así que la misma casa entraba dos
+ * veces en el inventario, 107 de las 108 de Bindley— y una reforma de las
+ * rutas de la web. Bindley pasó `/for-sale/x/` a `/property/for-sale/x/` el
+ * 31/08 y las veintiuna URLs viejas dieron 404 estando los anuncios a la
+ * venta, cada uno en su dirección nueva.
+ *
+ * Se exige que parezca una referencia y no una palabra del slug: al menos tres
+ * caracteres y alguna cifra. `bp3707`, `bpc336169` y `9070` pasan; `denia` no,
+ * y una casa cuyo slug acabe en palabra se queda con el slug entero, que es
+ * como estaba.
+ */
+export function referenceFromSlug(url) {
+  let last
+  try {
+    last = new URL(url).pathname.replace(/\/$/, '').split('/').pop() ?? ''
+  } catch {
+    return null
+  }
+  const token = last.split('-').pop() ?? ''
+  return token.length >= 3 && /\d/.test(token) ? token.toLowerCase() : null
+}
+
 export function parsePropertyPage(html, url) {
   const $ = cheerio.load(html)
 
@@ -149,7 +174,9 @@ export function parsePropertyPage(html, url) {
 
   const slug = new URL(url).pathname
   return {
-    sourceRef: reference || slug.split('/').filter(Boolean).pop(),
+    // La referencia del slug manda sobre la que se lee del maquetado: es la
+    // misma en todos los idiomas y sobrevive a un cambio de rutas.
+    sourceRef: referenceFromSlug(url) ?? reference ?? slug.split('/').filter(Boolean).pop(),
     url,
     title,
     price,
