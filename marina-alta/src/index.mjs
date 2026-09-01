@@ -231,6 +231,7 @@ async function run() {
     }
 
     log(`\n▸ ${source.agency} (${source.id})`)
+    const empezada = Date.now()
     const fetcher = new Fetcher({ origin: source.origin })
     await fetcher.init()
 
@@ -297,7 +298,12 @@ async function run() {
     }
 
     const descartes = [...rejected].map(([reason, count]) => `${reason}: ${count}`).join(', ')
-    log(`  ✓ ${accepted} anuncios de la comarca${descartes ? ` (descartados — ${descartes})` : ''}`)
+    // El tiempo por fuente se anota para poder ver cuál se está comiendo el
+    // rastreo: casi todo es espera del crawl-delay que pide cada web, así que
+    // la lenta no es la que va mal, sino la que tiene mucho que abrir o pide ir
+    // despacio.
+    const segundos = Math.round((Date.now() - empezada) / 1000)
+    log(`  ✓ ${accepted} anuncios de la comarca${descartes ? ` (descartados — ${descartes})` : ''} · ${segundos}s`)
     sourceReports.push({
       id: source.id,
       agency: source.agency,
@@ -310,6 +316,8 @@ async function run() {
       blocked: fetcher.stats.blocked,
       errors: fetcher.stats.errors,
       walled: fetcher.stats.walled,
+      seconds: segundos,
+      delayMs: fetcher.delayMs,
     })
   }
 
