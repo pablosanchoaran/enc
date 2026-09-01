@@ -6,7 +6,7 @@
  */
 
 export const MUNICIPALITIES = [
-  { name: 'Dénia', aliases: ['denia', 'dénia', 'la xara', 'jesus pobre', 'jesús pobre', 'las marinas', 'les marines', 'las rotas', 'les rotes', 'montgo', 'montgó'] },
+  { name: 'Dénia', aliases: ['denia', 'dénia', 'la xara', 'jesus pobre', 'jesús pobre', 'las marinas', 'les marines', 'las rotas', 'les rotes', 'montgo', 'montgó', 'monte pego', 'devessa'] },
   { name: 'Xàbia / Jávea', aliases: ['javea', 'jávea', 'xabia', 'xàbia', 'el arenal javea', 'arenal javea', 'balcon al mar', 'balcón al mar', 'cabo de la nao', 'granadella', 'ambolo', 'ambolò', 'portichol', 'portitxol', 'la lluca', 'toscamar', 'cansalades'] },
   { name: 'Calp / Calpe', aliases: ['calpe', 'calp', 'ifach', 'ifac', 'la fossa', 'las salinas calpe', 'maryvilla'] },
   { name: 'Teulada-Moraira', aliases: ['moraira', 'teulada', 'teulada-moraira', 'el portet', 'portet', 'benimeit', 'moravit', 'pla del mar', 'san jaime moraira', 'cap blanc'] },
@@ -23,7 +23,6 @@ export const MUNICIPALITIES = [
   { name: 'Llíber', aliases: ['lliber', 'llíber'] },
   { name: 'Alcalalí', aliases: ['alcalali', 'alcalalí', 'llosa de camacho', 'llosa de camatxo', 'la llosa de camacho'] },
   { name: 'Orba', aliases: ['orba'] },
-  { name: 'Pego', aliases: ['pego', 'monte pego', 'pego y su marjal'] },
   { name: 'Benidoleig', aliases: ['benidoleig'] },
   { name: 'Sanet y Negrals', aliases: ['sanet y negrals', 'sanet i negrals', 'sanet'] },
 ]
@@ -46,6 +45,14 @@ export const MUNICIPALITIES = [
  */
 const EXCLUDED_PLACES = [
   // Marina Alta, fuera del ámbito elegido.
+  //
+  // Pego sale del ámbito el 01/09. Ojo con "Monte Pego": la urbanización está
+  // a caballo de los dos términos y ThinkSpain la publica bajo Dénia
+  // (`devessa-monte-pego-denia`), así que va como alias de Dénia más arriba.
+  // Como gana el nombre que aparece antes en el texto, "Devessa - Monte Pego,
+  // Dénia" se resuelve por "monte pego" y no por el "pego" que lleva dentro:
+  // sin eso, treinta y un anuncios de Dénia se irían con los de Pego.
+  'pego',
   'parcent',
   'murla',
   'benigembla',

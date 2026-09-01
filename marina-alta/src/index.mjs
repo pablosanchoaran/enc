@@ -18,7 +18,11 @@ import { Fetcher } from './fetcher.mjs'
 import { diffInventory } from './diff.mjs'
 import { updateArchive } from './archive.mjs'
 import { capturePhotos, copyPhotosToSite, loadThumbnails } from './photos.mjs'
-import { detectMunicipality, namesExcludedPlace } from './municipalities.mjs'
+import {
+  MUNICIPALITY_NAMES,
+  detectMunicipality,
+  namesExcludedPlace,
+} from './municipalities.mjs'
 import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
 import * as ego from './adapters/ego.mjs'
@@ -153,11 +157,21 @@ async function run() {
   // rastrea. Al cargar se repasa el ámbito con las reglas de hoy. Así, el día
   // que se vetó Benigembla salieron también los seis anuncios de pueblos de
   // fuera que ya estaban dentro, de cuatro agencias distintas.
+  // Dos motivos para quedar fuera: que el título nombre un pueblo vetado, o que
+  // el municipio con el que se guardó ya no esté en la lista. Lo segundo es lo
+  // que hace falta para retirar un municipio entero —Pego el 01/09—, porque el
+  // título de un anuncio de Pego no tiene por qué decir "Pego".
   const enAmbito = (item) =>
+    MUNICIPALITY_NAMES.includes(item.municipality) &&
     !(detectMunicipality(item.title) === null && namesExcludedPlace(item.title))
   const previousListings = (inventory.listings ?? []).filter(enAmbito)
   const expulsados = (inventory.listings ?? []).length - previousListings.length
-  if (expulsados > 0) log(`  ${expulsados} anuncios del inventario quedan fuera del ámbito actual`)
+  if (expulsados > 0) {
+    log(`  ${expulsados} anuncios del inventario quedan fuera del ámbito actual`)
+    // Se guarda ya podado: si no, el parte del día seguiría contándolos y
+    // habría que esperar a un rastreo completo para verlo limpio.
+    await writeJson(INVENTORY_FILE, { ...inventory, listings: previousListings })
+  }
 
   if (args.reportOnly) {
     // Regenerar en un día sin rastreo es normal —se pasó la medianoche, o se
@@ -178,10 +192,28 @@ async function run() {
       .filter((name) => name.endsWith('.json'))
       .sort()
       .pop()
-    const daily = {
+    const guardado = {
       ...vacio,
       ...(await readJson(join(DATA_DIR, 'daily', `${today}.json`), null) ??
         (ultimo ? await readJson(join(DATA_DIR, 'daily', ultimo), vacio) : vacio)),
+    }
+    // Las novedades de aquel día se filtran con el ámbito de hoy: al retirar un
+    // municipio, sus altas y sus bajadas de precio tienen que irse del informe
+    // igual que sus anuncios.
+    const daily = {
+      ...guardado,
+      additions: guardado.additions.filter(enAmbito),
+      priceDrops: guardado.priceDrops.filter(enAmbito),
+      priceRises: guardado.priceRises.filter(enAmbito),
+      removals: guardado.removals.filter(enAmbito),
+    }
+    daily.totals = {
+      ...daily.totals,
+      inventory: previousListings.length,
+      additions: daily.additions.length,
+      priceDrops: daily.priceDrops.length,
+      priceRises: daily.priceRises.length,
+      removals: daily.removals.length,
     }
     const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
     const techo = catalog.config?.maxPrice

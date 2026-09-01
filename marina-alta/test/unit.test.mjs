@@ -18,7 +18,11 @@ import { isAntiBotChallenge } from '../src/fetcher.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
 import { renderReport } from '../src/report.mjs'
-import { detectMunicipality, detectMunicipalityFromSlug } from '../src/municipalities.mjs'
+import {
+  MUNICIPALITY_NAMES,
+  detectMunicipality,
+  detectMunicipalityFromSlug,
+} from '../src/municipalities.mjs'
 import {
   detectSaleStatus,
   detectType,
@@ -113,7 +117,7 @@ test('un pueblo vecino que no está en el ámbito veta el anuncio', () => {
 test('en un slug de zona manda el municipio del final', () => {
   assert.equal(detectMunicipalityFromSlug('devessa-monte-pego-denia'), 'Dénia')
   assert.equal(detectMunicipalityFromSlug('oltamar-cucarres-calpe-calp'), 'Calp / Calpe')
-  assert.equal(detectMunicipalityFromSlug('pego'), 'Pego')
+  assert.equal(detectMunicipalityFromSlug('orba'), 'Orba')
 })
 
 test('anclado al final, un barrio homónimo de otra provincia no cuela', () => {
@@ -485,37 +489,37 @@ test('el título veta la localidad que declara la agencia', () => {
 
 test('el dominio de la agencia no dice dónde está la casa', () => {
   // `ferrando-moraira.com` colocaba en Teulada su catálogo entero, incluida
-  // una casa señorial de Pego.
+  // una casa señorial de Orba.
   const pego = normalize(
     {
       sourceRef: 'c0105',
-      url: 'https://www.ferrando-moraira.com/for-sale/manor-house-for-sale-in-pego-historic-centre-c0105/',
-      title: 'Manor House for Sale in Pego Historic Centre',
+      url: 'https://www.ferrando-moraira.com/for-sale/manor-house-for-sale-in-orba-historic-centre-c0105/',
+      title: 'Manor House for Sale in Orba Historic Centre',
       price: 295000,
       type: 'house',
-      locationHint: 'Manor House for Sale in Pego Historic Centre',
+      locationHint: 'Manor House for Sale in Orba Historic Centre',
     },
     { id: 'ferrando-moraira', agency: 'Ferrando' },
     '2026-08-22',
   )
-  assert.equal(pego.listing.municipality, 'Pego')
+  assert.equal(pego.listing.municipality, 'Orba')
 })
 
 test('manda el municipio que aparece antes, no el alias más largo', () => {
-  // "moraira" tiene más letras que "pego", y por eso ganaba aunque estuviera
+  // "moraira" tiene más letras que "orba", y por eso ganaba aunque estuviera
   // al final de la descripción.
-  assert.equal(detectMunicipality('Casa en Pego cerca de Moraira'), 'Pego')
-  assert.equal(detectMunicipality('Casa en Moraira cerca de Pego'), 'Teulada-Moraira')
+  assert.equal(detectMunicipality('Casa en Orba cerca de Moraira'), 'Orba')
+  assert.equal(detectMunicipality('Casa en Moraira cerca de Orba'), 'Teulada-Moraira')
   // A igualdad de posición sigue mandando el alias más específico.
   assert.equal(detectMunicipality('Moraira Alto, chalet'), 'El Poble Nou de Benitatxell')
 })
 
 test('una superficie construida imposible se deja en blanco', () => {
-  // Caso real: ThinkSpain publica una finca de Pego de 100.000 € declarando
+  // Caso real: ThinkSpain publica una finca de Orba de 100.000 € declarando
   // 9.927 m² construidos — es la parcela puesta en la casilla equivocada. Sin
   // esto encabeza la ordenación por €/m² como una ganga de 10 €/m².
   const finca = normalize(
-    { sourceRef: '6358143', url: 'https://a.test/1', title: 'Finca en Pego', price: 100000, builtM2: 9927, type: 'villa', municipality: 'Pego' },
+    { sourceRef: '6358143', url: 'https://a.test/1', title: 'Finca en Orba', price: 100000, builtM2: 9927, type: 'villa', municipality: 'Orba' },
     { id: 'thinkspain', agency: 'ThinkSpain' },
     '2026-08-22',
   )
@@ -524,7 +528,7 @@ test('una superficie construida imposible se deja en blanco', () => {
   assert.equal(finca.listing.price, 100000, 'el anuncio se publica igual')
 
   const casona = normalize(
-    { sourceRef: 'x', url: 'https://a.test/2', title: 'Casa en Pego', price: 320000, builtM2: 840, type: 'house', municipality: 'Pego' },
+    { sourceRef: 'x', url: 'https://a.test/2', title: 'Casa en Orba', price: 320000, builtM2: 840, type: 'house', municipality: 'Orba' },
     { id: 'src', agency: 'Agencia' },
     '2026-08-22',
   )
@@ -631,7 +635,7 @@ test('sin prefijo de idioma no es neutro: es el idioma por defecto de la web', (
 
   // Una web de un solo idioma se queda como está.
   const unSoloIdioma = [
-    { loc: 'https://b.test/propiedad/casa-en-pego-c1/' },
+    { loc: 'https://b.test/propiedad/casa-en-orba-c1/' },
     { loc: 'https://b.test/propiedad/casa-en-orba-c2/' },
   ]
   assert.equal(preferOneLanguage(unSoloIdioma).length, 2)
@@ -789,4 +793,21 @@ test('un listado que rota se pide hasta agotarlo', async () => {
   )
   // Se para en cuanto una pasada no aporta nada: la cuarta repite la tercera.
   assert.equal(pedidas, 4, 'una petición de más para comprobar que ya no hay')
+})
+
+test('quitar un municipio del ámbito no se lleva a los vecinos', () => {
+  // Pego sale del ámbito el 01/09. La trampa es "Monte Pego": la urbanización
+  // está a caballo de los dos términos y ThinkSpain la publica bajo Dénia, así
+  // que un veto sobre la palabra "pego" a secas se llevaba por delante treinta
+  // y un anuncios de Dénia.
+  assert.equal(detectMunicipality('Villa en Pego con vistas al marjal'), null)
+  assert.equal(
+    detectMunicipality('Apartamento de 2 habitaciones en Devessa - Monte Pego, Dénia'),
+    'Dénia',
+  )
+  // Y la zona de la que salen esos anuncios sigue leyéndose como Dénia.
+  assert.equal(detectMunicipalityFromSlug('devessa-monte-pego-denia', { anchored: true }), 'Dénia')
+  assert.equal(detectMunicipalityFromSlug('pego', { anchored: true }), null)
+
+  assert.equal(MUNICIPALITY_NAMES.includes('Pego'), false)
 })
