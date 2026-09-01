@@ -725,6 +725,13 @@ test('un muro anti-bot no se confunde con una web sin anuncios', () => {
   assert.equal(isAntiBotChallenge('<urlset><url><loc>https://a.test/x</loc></url></urlset>'), false)
   assert.equal(isAntiBotChallenge('<h1>Villa con puerta de seguridad</h1>'), false)
   assert.equal(isAntiBotChallenge(null), false)
+
+  // El reto de DataDome no dice "DataDome" en ninguna parte: lo reconocible es
+  // el host de su captcha. Es lo que sirve Yaencontre en todas sus rutas.
+  const dataDome =
+    `<html><body><p>Please enable JS and disable any ad blocker</p>` +
+    `<script src="https://ct.captcha-delivery.com/c.js"></script></body></html>`
+  assert.equal(isAntiBotChallenge(dataDome), true)
 })
 
 test('la identidad del anuncio es su referencia, no el slug traducido', () => {

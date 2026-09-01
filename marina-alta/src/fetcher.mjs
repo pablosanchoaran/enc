@@ -29,7 +29,10 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
  */
 export function isAntiBotChallenge(body) {
   if (typeof body !== 'string' || body.length > 200_000) return false
-  return /__shield=|__cf_chl_|challenge-platform|DataDome/.test(body)
+  // `captcha-delivery.com` es el host del captcha de DataDome, y es lo único
+  // reconocible de su página de reto: no lleva la palabra "DataDome" por
+  // ninguna parte. Yaencontre la sirve en todas sus rutas, robots.txt incluido.
+  return /__shield=|__cf_chl_|challenge-platform|DataDome|captcha-delivery\.com/.test(body)
 }
 
 export class Fetcher {
