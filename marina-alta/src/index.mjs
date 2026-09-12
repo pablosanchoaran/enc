@@ -268,7 +268,15 @@ async function run() {
     await fetcher.init()
 
     if (fetcher.disallowedEntirely) {
-      log('  robots.txt no permite el rastreo: se omite')
+      // Se distingue a propósito: "no se ha podido leer" es una caída de un
+      // rato y "no nos deja" es una decisión de la web. Con un solo mensaje
+      // para las dos, un fallo de red de treinta segundos parecía una puerta
+      // cerrada — le pasó a Catorce el 12/09.
+      log(
+        fetcher.robots?.reachable
+          ? '  robots.txt no permite el rastreo: se omite'
+          : '  no se ha podido leer su robots.txt: se omite por hoy',
+      )
       sourceReports.push({ id: source.id, agency: source.agency, listings: 0, status: 'robots' })
       continue
     }

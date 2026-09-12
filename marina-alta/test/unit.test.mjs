@@ -13,7 +13,8 @@ import {
   readIconFeatures,
   referenceFromSlug,
 } from '../src/adapters/sooprema.mjs'
-import { zonePages } from '../src/adapters/thinkspain.mjs'
+import * as thinkspain from '../src/adapters/thinkspain.mjs'
+import { readAnalytics, zonePages } from '../src/adapters/thinkspain.mjs'
 import { isAntiBotChallenge } from '../src/fetcher.mjs'
 import { crawlDelay, isAllowed, loadRobots } from '../src/robots.mjs'
 import { normalize } from '../src/normalize.mjs'
@@ -817,4 +818,73 @@ test('quitar un municipio del ámbito no se lleva a los vecinos', () => {
   assert.equal(detectMunicipalityFromSlug('pego', { anchored: true }), null)
 
   assert.equal(MUNICIPALITY_NAMES.includes('Pego'), false)
+})
+
+test('los datos de la tarjeta se leen con comillas simples y con dobles', () => {
+  // ThinkSpain cambió el atributo el 12/09: pasó de comillas simples con el
+  // JSON tal cual, a comillas dobles con las comillas escapadas y convertidas
+  // en entidades. El barrido por zonas se quedó en cero anuncios de los 2.415
+  // del día anterior.
+  const datos = { propertyID: 10016886, offer: 'for-sale', price: 299000, beds: 3, type: 'apartment' }
+
+  const comoAntes = `<div data-base-twc-analytic-event-parameters='${JSON.stringify(datos)}'></div>`
+  assert.deepEqual(readAnalytics(comoAntes), datos)
+
+  const comoAhora =
+    '<div data-base-twc-analytic-event-parameters="' +
+    JSON.stringify(datos).replace(/"/g, '\\&quot;') +
+    '"></div>'
+  assert.deepEqual(readAnalytics(comoAhora), datos, 'entidades y comillas escapadas')
+
+  // Un atributo que no está, o con la basura de dentro rota, no revienta.
+  assert.equal(readAnalytics('<div></div>'), null)
+  assert.equal(readAnalytics('<div data-base-twc-analytic-event-parameters="{roto"></div>'), null)
+})
+
+test('un barrido que no saca nada de sus zonas se declara roto', async () => {
+  // Devolver dos anuncios del feed nacional bastaba para que ThinkSpain pasara
+  // por fuente sana mientras el barrido de zonas estaba en cero. Tiene que
+  // fallar en voz alta: así cuenta como rota y su inventario se conserva.
+  const fetcher = {
+    async get(url) {
+      // El sitemap de búsqueda sí trae zonas de la comarca.
+      if (url.includes('search-1.xml')) {
+        return `<urlset><url><loc>https://www.thinkspain.com/es/venta-viviendas/denia</loc></url></urlset>`
+      }
+      // Y el listado responde, pero sin ninguna tarjeta reconocible.
+      return '<html><body><p>sin tarjetas</p></body></html>'
+    },
+  }
+
+  await assert.rejects(
+    () => thinkspain.collect({ fetcher, known: { ids: new Set() }, log: () => {} }),
+    /no ha sacado ni un anuncio/,
+  )
+})
+
+test('las reglas repetidas del mismo user-agent se juntan', async () => {
+  // Catorce declara `User-agent: *` al principio con sus rutas prohibidas y
+  // otra vez al final, ciento treinta líneas más abajo, solo con el
+  // Crawl-delay. Quedándonos con el primer grupo pedíamos una página por
+  // segundo donde nos piden una cada catorce.
+  const texto = [
+    'User-agent: *',
+    'Disallow: /admin/',
+    '',
+    'User-agent: HTTrack 3.0',
+    'Disallow: /',
+    '',
+    'User-agent: *',
+    'Crawl-delay: 14',
+  ].join('\n')
+
+  const robots = await loadRobots('https://catorce.test', {
+    userAgent: 'MarinaAltaBot/1.0 (+https://github.com/pablosanchoaran/enc)',
+    fetchImpl: async () => ({ status: 200, ok: true, text: async () => texto }),
+  })
+
+  assert.equal(crawlDelay(robots), 14_000, 'el Crawl-delay del segundo grupo cuenta')
+  assert.equal(isAllowed(robots, '/admin/'), false, 'y las reglas del primero siguen valiendo')
+  assert.equal(isAllowed(robots, '/propiedades/venta/todas/'), true)
+  assert.equal(robots.blockedAll, false, 'el Disallow de HTTrack no es nuestro')
 })

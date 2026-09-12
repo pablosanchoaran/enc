@@ -88,6 +88,29 @@ export async function* zonePages(fetcher, zoneUrl, maxPrice) {
 }
 
 /**
+ * Los datos del anuncio que ThinkSpain cuelga de cada tarjeta y de cada ficha,
+ * en un atributo con un JSON dentro.
+ *
+ * Se admiten las dos formas porque la web cambió de una a otra el 12/09: el
+ * atributo pasó de ir entre comillas simples con el JSON tal cual, a ir entre
+ * comillas dobles con las comillas escapadas y convertidas en entidades. El
+ * barrido por zonas se quedó en cero anuncios de los 2.415 del día anterior, y
+ * como la fuente devolvía dos del feed nacional no llegó a saltar el aviso de
+ * "fuente vacía".
+ */
+export function readAnalytics(html) {
+  const raw =
+    html.match(/data-base-twc-analytic-event-parameters='(\{[^']*)'/)?.[1] ??
+    html.match(/data-base-twc-analytic-event-parameters="(\{[^"]*)"/)?.[1]
+  if (!raw) return null
+  try {
+    return JSON.parse(decodeEntities(raw).replace(/\\"/g, '"'))
+  } catch {
+    return null
+  }
+}
+
+/**
  * Lee las tarjetas de un listado: cada una trae ya todos los datos. El bloque
  * de cada tarjeta va desde su `data-property-id` hasta el de la siguiente.
  */
@@ -99,15 +122,7 @@ function parseListingCards(html, zoneSlug) {
     const propertyId = block.match(/^(\d+)"/)?.[1]
     if (!propertyId) continue
 
-    const rawFacts = block.match(/data-base-twc-analytic-event-parameters='(\{"propertyID[^']*\})'/)
-    let facts = {}
-    if (rawFacts) {
-      try {
-        facts = JSON.parse(decodeEntities(rawFacts[1]))
-      } catch {
-        facts = {}
-      }
-    }
+    const facts = readAnalytics(block) ?? {}
     if (facts.offer && facts.offer !== 'for-sale') continue
     if (!facts.price) continue
 
@@ -174,15 +189,7 @@ function parsePropertyPage(html, url) {
     .map((item) => item.item?.name)
     .filter(Boolean)
 
-  const facts = html.match(/data-base-twc-analytic-event-parameters='(\{"propertyID[^']*\})'/)
-  let analytics = {}
-  if (facts) {
-    try {
-      analytics = JSON.parse(decodeEntities(facts[1]))
-    } catch {
-      analytics = {}
-    }
-  }
+  const analytics = readAnalytics(html) ?? {}
 
   const title = product?.name ?? null
   if (!title && !analytics.propertyID) return null
@@ -230,6 +237,20 @@ export async function collect({
     }
   }
   log(`  barrido por zonas: ${found.length} anuncios en ${pages} páginas`)
+
+  // Hay zonas pero ninguna ha dado una sola tarjeta: eso no es que la comarca
+  // se haya quedado sin casas, es que el maquetado ha cambiado. Se corta aquí
+  // para que la fuente cuente como rota y el inventario se conserve intacto.
+  //
+  // Hace falta decirlo desde dentro porque el aviso de "fuente vacía" mira si
+  // devuelve cero, y el feed nacional siempre cuela dos o tres anuncios de la
+  // comarca: el 12/09 el barrido se fue a cero, la fuente devolvió dos, y
+  // nadie se quejó de que faltaran 2.413.
+  if (zoneUrls.length > 0 && found.length === 0) {
+    throw new Error(
+      `el barrido no ha sacado ni un anuncio de ${zoneUrls.length} zonas: la web habrá cambiado`,
+    )
+  }
 
   // 2) Altas del día en toda España: solo abrimos las fichas desconocidas.
   const beforeLatest = found.length

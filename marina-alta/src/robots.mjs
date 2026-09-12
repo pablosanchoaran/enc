@@ -50,10 +50,29 @@ function patternToRegExp(pattern) {
   return new RegExp(`^${escaped}${anchored ? '$' : ''}`)
 }
 
+/**
+ * El grupo de reglas que nos toca. Si el fichero repite el mismo User-agent en
+ * varios sitios, sus reglas se juntan, como pide el RFC 9309: Catorce declara
+ * `User-agent: *` al principio con sus rutas prohibidas y otra vez al final,
+ * ciento treinta líneas más abajo, solo con `Crawl-delay: 14`. Quedándonos con
+ * el primero pedíamos una página por segundo donde nos piden una cada catorce.
+ */
 function selectGroup(groups, userAgent) {
   const ua = userAgent.toLowerCase()
-  const specific = groups.find((g) => g.agents.some((a) => a !== '*' && ua.includes(a)))
-  return specific ?? groups.find((g) => g.agents.includes('*')) ?? null
+  const propios = groups.filter((g) => g.agents.some((a) => a !== '*' && ua.includes(a)))
+  const elegidos = propios.length > 0 ? propios : groups.filter((g) => g.agents.includes('*'))
+  if (elegidos.length === 0) return null
+
+  return {
+    agents: elegidos[0].agents,
+    allow: elegidos.flatMap((g) => g.allow),
+    disallow: elegidos.flatMap((g) => g.disallow),
+    // Entre varios, manda la espera más larga: es la que respeta lo pedido.
+    crawlDelay: elegidos.reduce(
+      (max, g) => (g.crawlDelay !== null && (max === null || g.crawlDelay > max) ? g.crawlDelay : max),
+      null,
+    ),
+  }
 }
 
 /**
