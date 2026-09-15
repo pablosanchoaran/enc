@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T18:33:01.361Z",
+  "updatedAt": "2026-09-15T19:15:59.642Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -1860,7 +1860,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -2535,7 +2535,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2567,7 +2567,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2599,7 +2599,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2663,7 +2663,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2695,7 +2695,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2727,7 +2727,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2759,7 +2759,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2791,7 +2791,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -4032,7 +4032,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -4396,7 +4396,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-22T06:00:27.355Z",
       "reason": "vendido"
     },
@@ -5197,7 +5197,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-24T20:31:47.376Z",
       "reason": "vendido"
     },
@@ -5484,10 +5484,15 @@
       "builtM2": 68,
       "plotM2": null,
       "pricePerM2": 3132,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-2290f18590.webp",
+        "thumb": "uniquehomes-2290f18590.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/2f/019ad8d7-e214-739f-8cbf-9623b440de2f.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -5511,10 +5516,15 @@
       "builtM2": 103,
       "plotM2": null,
       "pricePerM2": 2515,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-e074beb529.webp",
+        "thumb": "uniquehomes-e074beb529.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/59/019ad8de-4617-707e-902d-d6af133a8459.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -6614,7 +6624,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-27",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-28T20:20:04.356Z",
       "reason": "vendido"
     },
@@ -7478,7 +7488,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7502,10 +7512,15 @@
       "builtM2": 145,
       "plotM2": 312,
       "pricePerM2": 1655,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-0d3fec3c87.webp",
+        "thumb": "uniquehomes-0d3fec3c87.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/71/019ad8db-f9b2-743a-adc2-52c748176e71.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7529,10 +7544,15 @@
       "builtM2": 114,
       "plotM2": 847,
       "pricePerM2": 2895,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-9cf0d621e7.webp",
+        "thumb": "uniquehomes-9cf0d621e7.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/59/019ad8d6-70e6-7629-b2ba-0bfd09ff5d59.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7556,10 +7576,15 @@
       "builtM2": 133,
       "plotM2": null,
       "pricePerM2": 1992,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-6b29a26246.webp",
+        "thumb": "uniquehomes-6b29a26246.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/f5/019ad8db-f9b2-743a-adc2-77cd6fa01cf5.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7586,7 +7611,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7610,10 +7635,15 @@
       "builtM2": 72,
       "plotM2": null,
       "pricePerM2": 3111,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-804c1d0c87.webp",
+        "thumb": "uniquehomes-804c1d0c87.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/26/019ad8de-4617-707e-902d-db2b67c5ae26.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7637,10 +7667,15 @@
       "builtM2": 100,
       "plotM2": 267,
       "pricePerM2": 2450,
-      "photo": null,
+      "photo": {
+        "file": "uniquehomes-71aa1a6f20.webp",
+        "thumb": "uniquehomes-71aa1a6f20.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/0d/019ad8d7-e214-739f-8cbf-5e011a9ed20d.jpg"
+      },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7672,7 +7707,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7768,7 +7803,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-02",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7800,7 +7835,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-02",
+      "lastSeen": "2026-09-15",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -11765,6 +11800,294 @@
       "lastSeen": "2026-08-27",
       "archivedOn": "2026-09-12T18:33:01.361Z",
       "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:7f25399393",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9990272",
+      "title": "Chalet de 3 habitaciones en Monte Pedreguer, Pedreguer en venta - 330.000 € (Ref: 9990272)",
+      "municipality": "Pedreguer",
+      "type": "villa",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 330000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 193,
+      "plotM2": null,
+      "pricePerM2": 1710,
+      "photo": {
+        "file": "thinkspain-7f25399393.webp",
+        "thumb": "thinkspain-7f25399393.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41127/9990272/20260730233859/w1280h960/s640x480/x-286411453.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:33eba713b5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9941097",
+      "title": "Apartamento de 2 habitaciones en Centro ciudad, Javea / Xàbia en venta con piscina - 345.000 € (Ref: 9941097)",
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 345000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 3382,
+      "photo": {
+        "file": "thinkspain-33eba713b5.webp",
+        "thumb": "thinkspain-33eba713b5.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33784/9941097/20260810092723/w1200h675/s640x480/x-287037422.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:0d8ae421b0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9675100",
+      "title": "Apartamento de 3 habitaciones en Manzanera - Tosal, Calpe / Calp en venta - 269.000 € (Ref: 9675100)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 269000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2402,
+      "photo": {
+        "file": "thinkspain-0d8ae421b0.webp",
+        "thumb": "thinkspain-0d8ae421b0.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15372/9675100/20260701114526/w1448h1086/s640x480/x-284604775.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:3f1fba0099",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9850039",
+      "title": "Apartamento de 3 habitaciones en Manzanera - Tosal, Calpe / Calp en venta - 259.000 € (Ref: 9850039)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 259000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2313,
+      "photo": {
+        "file": "thinkspain-3f1fba0099.webp",
+        "thumb": "thinkspain-3f1fba0099.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5673/9850039/20260703110120/w1448h1086/s640x480/x-284735063.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:2b65d2a697",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8982633",
+      "title": "Casa de 7 habitaciones en Pedreguer en venta con garaje - 212.000 € (Ref: 8982633)",
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "price": 212000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 212000
+        }
+      ],
+      "beds": 7,
+      "baths": null,
+      "builtM2": 200,
+      "plotM2": null,
+      "pricePerM2": 1060,
+      "photo": {
+        "file": "thinkspain-2b65d2a697.webp",
+        "thumb": "thinkspain-2b65d2a697.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30675/8982633/20250513051339/w800h600/s640x480/x-253126063.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:84de22ffe8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9659640",
+      "title": "Apartamento de 1 habitación en Levante - Playa Fossa, Calpe / Calp en venta con piscina garaje - 289.000 € (Ref: 9659640)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 289000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4446,
+      "photo": {
+        "file": "thinkspain-84de22ffe8.webp",
+        "thumb": "thinkspain-84de22ffe8.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27803/9659640/20260307064335/w1920h1440/s640x480/x-274927860.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:5063544bb2",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9956783",
+      "title": "Apartamento de 1 habitación en Calpe / Calp en venta con piscina - 209.000 € (Ref: 9956783)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 209000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 209000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 53,
+      "plotM2": null,
+      "pricePerM2": 3943,
+      "photo": {
+        "file": "thinkspain-5063544bb2.webp",
+        "thumb": "thinkspain-5063544bb2.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40833/9956783/20260713233323/w1600h993/s640x480/x-285307866.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:702add5140",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9680013",
+      "title": "Ático de 2 habitaciones en Calpe / Calp en venta con piscina garaje - 320.000 € (Ref: 9680013)",
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 91,
+      "plotM2": null,
+      "pricePerM2": 3516,
+      "photo": {
+        "file": "thinkspain-702add5140.webp",
+        "thumb": "thinkspain-702add5140.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27803/9680013/20260314064339/w1920h1440/s640x480/x-275500825.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "uniquehomes:a230be3a02",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/casa-en-venta-en-pueblo-historico-bp2079/",
+      "title": "Casa en venta en pueblo histórico.",
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "price": 212500,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 212500
+        }
+      ],
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 348,
+      "plotM2": null,
+      "pricePerM2": 611,
+      "photo": {
+        "file": "uniquehomes-a230be3a02.webp",
+        "thumb": "uniquehomes-a230be3a02.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/eb/01a09fc1-54d8-717d-980a-0716054713eb.jpg"
+      },
+      "saleStatus": "sold",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "archivedOn": "2026-09-15T19:15:59.642Z",
+      "reason": "vendido"
     }
   ]
 }

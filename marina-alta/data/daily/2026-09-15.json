@@ -1,0 +1,2902 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T19:15:59.642Z",
+  "totals": {
+    "inventory": 3576,
+    "additions": 17,
+    "priceDrops": 36,
+    "priceRises": 3,
+    "removals": 8
+  },
+  "additions": [
+    {
+      "id": "llobell:47c07066b4",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-apartamento-en-benissa-a467/",
+      "title": "Se Vende apartamento en Benissa",
+      "price": 179000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 179000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/09/15/364052/7.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-47c07066b4.webp",
+        "thumb": "llobell-47c07066b4.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2026/09/15/364052/7.jpeg"
+      }
+    },
+    {
+      "id": "llobell:dad58b3fcc",
+      "source": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "url": "https://www.llobellinmobiliaris.com/propiedad/se-vende-espectacular-parcela-p213/",
+      "title": "Se Vende espectacular parcela",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 350000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1040,
+      "pricePerM2": null,
+      "image": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/01/343159/1.jpeg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "llobell-dad58b3fcc.webp",
+        "thumb": "llobell-dad58b3fcc.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://www.llobellinmobiliaris.com/objetos/temp/source/llobellinmo/2025/12/01/343159/1.jpeg"
+      }
+    },
+    {
+      "id": "bindley:7ac42a761f",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-con-amplia-terraza-garaje-y-trastero-cerca-del-puerto-de-javea-bpc053505/",
+      "title": "Apartamento con amplia terraza, garaje y trastero cerca del Puerto de Javea",
+      "price": 279000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 279000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 1,
+      "baths": 1,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 3321,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/39/01a0a071-fd0e-753c-a5fa-0944e4410239.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-10",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-7ac42a761f.webp",
+        "thumb": "bindley-7ac42a761f.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/39/01a0a071-fd0e-753c-a5fa-0944e4410239.jpg"
+      }
+    },
+    {
+      "id": "bindley:886cf71f58",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-benitachell-bpc885526/",
+      "title": "Apartamento en venta en Benitachell",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 310000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 4,
+      "baths": 1,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2925,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/dd/01a0a074-abf5-74fb-9abd-6e24ac939bdd.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-03",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-886cf71f58.webp",
+        "thumb": "bindley-886cf71f58.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/dd/01a0a074-abf5-74fb-9abd-6e24ac939bdd.jpg"
+      }
+    },
+    {
+      "id": "bindley:2148b7a8b4",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/apartamento-en-venta-en-calpe-bpc235693/",
+      "title": "Apartamento en venta en Calpe",
+      "price": 270000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 270000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 2700,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c9/01a0a06e-9994-77cf-ae6b-b4aa1dc4d0c9.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-16",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-2148b7a8b4.webp",
+        "thumb": "bindley-2148b7a8b4.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/c9/01a0a06e-9994-77cf-ae6b-b4aa1dc4d0c9.jpg"
+      }
+    },
+    {
+      "id": "bindley:bd36fc3392",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/bonita-villa-adosada-reformada-en-benitachell-bpc055236/",
+      "title": "Bonita villa adosada reformada en Benitachell",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 350000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "villa",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 96,
+      "plotM2": 140,
+      "pricePerM2": 3646,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d6/01a09f92-debc-76ed-8278-f393b52909d6.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-14",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-bd36fc3392.webp",
+        "thumb": "bindley-bd36fc3392.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/d6/01a09f92-debc-76ed-8278-f393b52909d6.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:fd25937feb",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/apartamento-en-venta-en-benitachell-costa-blanca-bp3619/",
+      "title": "Apartamento en venta en Benitachell, costa blanca.",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 190000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 2235,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/66/01a09fc5-4bc4-7468-bdd3-304a0ada2966.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-20",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-fd25937feb.webp",
+        "thumb": "uniquehomes-fd25937feb.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/66/01a09fc5-4bc4-7468-bdd3-304a0ada2966.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:e35f2b3593",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/apartamento-en-venta-en-teulada-costa-blanca-bp3664/",
+      "title": "Apartamento en venta en Teulada, Costa Blanca.",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 269000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 152,
+      "plotM2": null,
+      "pricePerM2": 1770,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/f2/01a09fc3-cc6a-773f-b7e9-342d3d1f69f2.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-06-03",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-e35f2b3593.webp",
+        "thumb": "uniquehomes-e35f2b3593.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/f2/01a09fc3-cc6a-773f-b7e9-342d3d1f69f2.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:a230be3a02",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/casa-en-venta-en-pueblo-historico-bp2079/",
+      "title": "Casa en venta en pueblo histórico.",
+      "price": 212500,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 212500
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": 3,
+      "baths": 1,
+      "builtM2": 348,
+      "plotM2": null,
+      "pricePerM2": 611,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/eb/01a09fc1-54d8-717d-980a-0716054713eb.jpg",
+      "saleStatus": "sold",
+      "fromFeed": false,
+      "lastmod": "2026-03-12",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-a230be3a02.webp",
+        "thumb": "uniquehomes-a230be3a02.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/eb/01a09fc1-54d8-717d-980a-0716054713eb.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:167f8d94a6",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-con-vistas-al-mar-en-venta-en-benissa-costa-blanca-bp3412/",
+      "title": "Parcela con vistas al mar en Venta en Benissa, Costa Blanca.",
+      "price": 239000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 239000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 1100,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/4b/01a09fc5-4bc4-7468-bdd3-29a319c73d4b.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-04-13",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-167f8d94a6.webp",
+        "thumb": "uniquehomes-167f8d94a6.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/4b/01a09fc5-4bc4-7468-bdd3-29a319c73d4b.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:3a86ff1645",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-con-vistas-despejadas-en-benissa-costa-blanca-bp3260/",
+      "title": "Parcela con vistas despejadas en Benissa, Costa Blanca.",
+      "price": 190000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 190000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 10012,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/26/01a09fc1-54d8-717d-980a-0b77ecf6a926.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-14",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-3a86ff1645.webp",
+        "thumb": "uniquehomes-3a86ff1645.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/26/01a09fc1-54d8-717d-980a-0b77ecf6a926.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:bd72c32b46",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-en-venta-en-el-valle-del-portet-moraira-costa-blanca-bp3697/",
+      "title": "Parcela en venta en el Valle del Portet, Moraira, Costa Blanca.",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 240000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 835,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/d3/01a09fc2-9324-70bd-b9d8-315cbf543bd3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-07-16",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-bd72c32b46.webp",
+        "thumb": "uniquehomes-bd72c32b46.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/d3/01a09fc2-9324-70bd-b9d8-315cbf543bd3.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:2689228d57",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-en-venta-en-teulada-de-13-000-m2-cerca-de-moraira-costa-blanca-bp3713/",
+      "title": "Parcela en venta en Teulada de 13.000 m² cerca de Moraira, Costa blanca.",
+      "price": 294000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 294000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 13059,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/ce/01a09fc1-91d2-719c-ae46-dc2e45b890ce.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-09",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-2689228d57.webp",
+        "thumb": "uniquehomes-2689228d57.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/ce/01a09fc1-91d2-719c-ae46-dc2e45b890ce.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:92bebd752a",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-rustica-en-venta-con-vistas-al-mar-en-benisa-costa-blanca-bp3338/",
+      "title": "Parcela rustica en venta con vistas al mar en Benisa, Costa Blanca.",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 225000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11989,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/e1/01a09fc5-4bc4-7468-bdd3-2cef66ea40e1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-03-30",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-92bebd752a.webp",
+        "thumb": "uniquehomes-92bebd752a.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/e1/01a09fc5-4bc4-7468-bdd3-2cef66ea40e1.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:4eac3aaac5",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcela-rustica-en-venta-en-teulada-moraira-entorno-tranquilo-y-cerca-de-la-costa-bp3607/",
+      "title": "Parcela rústica en venta en Teulada-Moraira, entorno tranquilo y cerca de la costa.",
+      "price": 120000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 120000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 11786,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/93/01a09fc5-4bc4-7468-bdd3-352bb9f79793.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-02-12",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-4eac3aaac5.webp",
+        "thumb": "uniquehomes-4eac3aaac5.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/93/01a09fc5-4bc4-7468-bdd3-352bb9f79793.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:caf2ea7c14",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/parcelas-en-venta-en-jalon-con-vistas-al-valle-la-almazara-uhm2252/",
+      "title": "Parcelas en venta en Jalón con vistas al valle | La Almazara",
+      "price": 75000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 75000
+        }
+      ],
+      "municipality": "Xaló / Jalón",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 652,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/a3/01a0a0dd-36c0-71dd-9dd5-4752a2ae0aa3.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-14",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-caf2ea7c14.webp",
+        "thumb": "uniquehomes-caf2ea7c14.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/a3/01a0a0dd-36c0-71dd-9dd5-4752a2ae0aa3.jpg"
+      }
+    },
+    {
+      "id": "uniquehomes:55823f5afb",
+      "source": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "url": "https://www.uniquehomesmoraira.com/propiedad/venta/se-vende-casa-de-pueblo-con-caracter-en-el-centro-historico-de-teulada-bp3532/",
+      "title": "Se vende casa de pueblo con carácter en el centro histórico de Teulada.",
+      "price": 280000,
+      "priceHistory": [
+        {
+          "date": "2026-09-15",
+          "price": 280000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "house",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 160,
+      "plotM2": 76,
+      "pricePerM2": 1750,
+      "image": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/31/01a09fc5-1c97-71ab-b179-4494b8ae3231.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-05-20",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "uniquehomes-55823f5afb.webp",
+        "thumb": "uniquehomes-55823f5afb.thumb.webp",
+        "capturedAt": "2026-09-15T19:15:59.644Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019ad8cd-0ffc-72fb-892f-7891af76a1cb/social-preview/31/01a09fc5-1c97-71ab-b179-4494b8ae3231.jpg"
+      }
+    }
+  ],
+  "priceDrops": [
+    {
+      "id": "thinkspain:30864431bd",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9233280",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 327.000 € (Ref: 9233280)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/27573/9233280/20250916091946/w1280h960/s640x480/x-262140618.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-30864431bd.webp",
+        "thumb": "thinkspain-30864431bd.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27573/9233280/20250916091946/w1280h960/s640x480/x-262140618.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:4a62c1238e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/7851845",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 327.000 € (Ref: 7851845)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/36995/7851845/20240613071012/w1920h1080/s640x480/x-233610184.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-4a62c1238e.webp",
+        "thumb": "thinkspain-4a62c1238e.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36995/7851845/20240613071012/w1920h1080/s640x480/x-233610184.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:e46b1a1176",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10039549",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina - 327.000 € (Ref: 10039549)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-31",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/29421/10039549/20260831164546/w1920h1080/s640x480/x-288235927.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-e46b1a1176.webp",
+        "thumb": "thinkspain-e46b1a1176.thumb.webp",
+        "capturedAt": "2026-08-31T20:34:23.299Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29421/10039549/20260831164546/w1920h1080/s640x480/x-288235927.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ce99b5e8c4",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10039551",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina - 254.000 € (Ref: 10039551)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-31",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 3908,
+      "image": "https://cdn.thinkwebcontent.com/property/29421/10039551/20260831164554/w1920h1560/s640x480/x-288235987.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ce99b5e8c4.webp",
+        "thumb": "thinkspain-ce99b5e8c4.thumb.webp",
+        "capturedAt": "2026-08-31T20:34:23.299Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29421/10039551/20260831164554/w1920h1560/s640x480/x-288235987.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:110db784ce",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9587350",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina - 254.000 € (Ref: 9587350)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 51,
+      "plotM2": null,
+      "pricePerM2": 4980,
+      "image": "https://cdn.thinkwebcontent.com/property/38036/9587350/20260211101106/w1920h1560/s640x480/x-272841855.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-110db784ce.webp",
+        "thumb": "thinkspain-110db784ce.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/38036/9587350/20260211101106/w1920h1560/s640x480/x-272841855.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:4a2e76fc8b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9640077",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina - 327.000 € (Ref: 9640077)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/11302/9640077/20260302001957/w1920h1080/s640x480/x-274382820.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-4a2e76fc8b.webp",
+        "thumb": "thinkspain-4a2e76fc8b.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/11302/9640077/20260302001957/w1920h1080/s640x480/x-274382820.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:0fe0cd2810",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9430933",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 254.000 € (Ref: 9430933)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 3908,
+      "image": "https://cdn.thinkwebcontent.com/property/36995/9430933/20251203023451/w1920h1560/s640x480/x-268189440.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-0fe0cd2810.webp",
+        "thumb": "thinkspain-0fe0cd2810.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36995/9430933/20251203023451/w1920h1560/s640x480/x-268189440.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:46f6b944c2",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10062021",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 327.000 € (Ref: 10062021)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/5418/10062021/20260910050318/w1920h1080/s640x480/x-289104917.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-46f6b944c2.webp",
+        "thumb": "thinkspain-46f6b944c2.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5418/10062021/20260910050318/w1920h1080/s640x480/x-289104917.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ccbadc0b02",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9616259",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina - 254.000 € (Ref: 9616259)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 3908,
+      "image": "https://cdn.thinkwebcontent.com/property/15866/9616259/20260220080427/w1920h1560/s640x480/x-273660060.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ccbadc0b02.webp",
+        "thumb": "thinkspain-ccbadc0b02.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15866/9616259/20260220080427/w1920h1560/s640x480/x-273660060.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:9bcb50d68f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9233275",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 254.000 € (Ref: 9233275)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 3908,
+      "image": "https://cdn.thinkwebcontent.com/property/27573/9233275/20250916091929/w1280h960/s640x480/x-262140486.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-9bcb50d68f.webp",
+        "thumb": "thinkspain-9bcb50d68f.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27573/9233275/20250916091929/w1280h960/s640x480/x-262140486.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:44cbecd62f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9807322",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 254.000 € (Ref: 9807322)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "El Verger",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 3908,
+      "image": "https://cdn.thinkwebcontent.com/property/33813/9807322/20260429154959/w1920h1560/s640x480/x-279874421.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-44cbecd62f.webp",
+        "thumb": "thinkspain-44cbecd62f.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33813/9807322/20260429154959/w1920h1560/s640x480/x-279874421.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:140cdbb4b6",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9956370",
+      "title": "Apartamento de 2 habitaciones en Cumbre del Sol, Benitachell / Benitatxell en venta con piscina garaje - 220.000 € (Ref: 9956370)",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 235000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 92,
+      "plotM2": null,
+      "pricePerM2": 2391,
+      "image": "https://cdn.thinkwebcontent.com/property/23821/9956370/20260713132348/w1542h866/s640x480/x-285295762.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-140cdbb4b6.webp",
+        "thumb": "thinkspain-140cdbb4b6.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/23821/9956370/20260713132348/w1542h866/s640x480/x-285295762.jpg"
+      },
+      "previousPrice": 235000,
+      "delta": -15000,
+      "deltaPct": -6.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:1d8a1f5782",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9936521",
+      "title": "Apartamento de 2 habitaciones en Les Bassetes - El Marjal, Dénia en venta con piscina - 295.000 € (Ref: 9936521)",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 299000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 295000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3278,
+      "image": "https://cdn.thinkwebcontent.com/property/25062/9936521/20260912052253/w1195h896/s640x480/x-289304219.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-1d8a1f5782.webp",
+        "thumb": "thinkspain-1d8a1f5782.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25062/9936521/20260807032727/w1920h1440/s640x480/x-286878875.jpg"
+      },
+      "previousPrice": 299000,
+      "delta": -4000,
+      "deltaPct": -1.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:d1b5b75baa",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9714231",
+      "title": "Apartamento de 3 habitaciones en Centro Urbano, Dénia en venta con garaje - 265.000 € (Ref: 9714231)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 272000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 265000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 95,
+      "plotM2": null,
+      "pricePerM2": 2789,
+      "image": "https://cdn.thinkwebcontent.com/property/15199/9714231/20260324182133/w1440h1080/s640x480/x-276434102.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-d1b5b75baa.webp",
+        "thumb": "thinkspain-d1b5b75baa.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9714231/20260324182133/w1440h1080/s640x480/x-276434102.jpg"
+      },
+      "previousPrice": 272000,
+      "delta": -7000,
+      "deltaPct": -2.6,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:655dba24fd",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9868601",
+      "title": "Chalet de 3 habitaciones en Orba en venta con garaje - 250.000 € (Ref: 9868601)",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 279000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 250000
+        }
+      ],
+      "municipality": "Orba",
+      "type": "villa",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 126,
+      "plotM2": null,
+      "pricePerM2": 1984,
+      "image": "https://cdn.thinkwebcontent.com/property/39032/9868601/20260530051846/w1550h1033/s640x480/x-282360818.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "photo": {
+        "file": "thinkspain-655dba24fd.webp",
+        "thumb": "thinkspain-655dba24fd.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/39032/9868601/20260530051846/w1550h1033/s640x480/x-282360818.jpg"
+      },
+      "previousPrice": 279000,
+      "delta": -29000,
+      "deltaPct": -10.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:1362283e1f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9165462",
+      "title": "Apartamento de 3 habitaciones en Centro ciudad, Javea / Xàbia en venta - 229.000 € (Ref: 9165462)",
+      "price": 229000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 229000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 76,
+      "plotM2": null,
+      "pricePerM2": 3013,
+      "image": "https://cdn.thinkwebcontent.com/property/26093/9165462/20260506032348/w1920h1440/s640x480/x-280239646.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-1362283e1f.webp",
+        "thumb": "thinkspain-1362283e1f.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/26093/9165462/20260506032348/w1920h1440/s640x480/x-280239646.jpg"
+      },
+      "previousPrice": 250000,
+      "delta": -21000,
+      "deltaPct": -8.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:a46bf9c4de",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10030933",
+      "title": "Apartamento de 1 habitación en Javea / Xàbia en venta con piscina garaje - 275.000 € (Ref: 10030933)",
+      "price": 275000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 295000
+        },
+        {
+          "date": "2026-09-12",
+          "price": 287575
+        },
+        {
+          "date": "2026-09-15",
+          "price": 275000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/25076/10030933/20260825093100/w1448h1086/s640x480/x-287927637.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-a46bf9c4de.webp",
+        "thumb": "thinkspain-a46bf9c4de.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25076/10030933/20260825112632/w1464h1098/s640x480/x-287931337.jpg"
+      },
+      "previousPrice": 287575,
+      "delta": -12575,
+      "deltaPct": -4.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:23dae2e750",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9978091",
+      "title": "Piso de 2 habitaciones en Ondara en venta - 149.900 € (Ref: 9978091)",
+      "price": 149900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 154900
+        },
+        {
+          "date": "2026-09-15",
+          "price": 149900
+        }
+      ],
+      "municipality": "Ondara",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 96,
+      "plotM2": null,
+      "pricePerM2": 1561,
+      "image": "https://cdn.thinkwebcontent.com/property/40920/9978091/20260724192612/w1500h844/s640x480/x-286018307.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-23dae2e750.webp",
+        "thumb": "thinkspain-23dae2e750.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40920/9978091/20260724192612/w1500h844/s640x480/x-286018307.jpg"
+      },
+      "previousPrice": 154900,
+      "delta": -5000,
+      "deltaPct": -3.2,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:39559fab6a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9996681",
+      "title": "Piso de 3 habitaciones en Dénia en venta - 288.000 € (Ref: 9996681)",
+      "price": 288000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 289000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 288000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3200,
+      "image": "https://cdn.thinkwebcontent.com/property/41013/9996681/20260803232818/w1448h1086/s640x480/x-286636515.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-39559fab6a.webp",
+        "thumb": "thinkspain-39559fab6a.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41013/9996681/20260803232818/w1448h1086/s640x480/x-286636515.jpg"
+      },
+      "previousPrice": 289000,
+      "delta": -1000,
+      "deltaPct": -0.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:40c590a9eb",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9332514",
+      "title": "Apartamento de 2 habitaciones en Devessa - Monte Pego, Dénia en venta con piscina - 327.000 € (Ref: 9332514)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 67,
+      "plotM2": null,
+      "pricePerM2": 4881,
+      "image": "https://cdn.thinkwebcontent.com/property/15252/9332514/20251205142145/w1200h675/s640x480/x-268434982.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-40c590a9eb.webp",
+        "thumb": "thinkspain-40c590a9eb.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15252/9332514/20251205142145/w1200h675/s640x480/x-268434982.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:9ff0782bd0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8964564",
+      "title": "Piso de 2 habitaciones en Dénia en venta con piscina - 330.000 € (Ref: 8964564)",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 339000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 330000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 5000,
+      "image": "https://cdn.thinkwebcontent.com/property/7691/8964564/20250505083156/w1600h1094/s640x480/x-252565726.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-9ff0782bd0.webp",
+        "thumb": "thinkspain-9ff0782bd0.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/7691/8964564/20250505083156/w1600h1094/s640x480/x-252565726.jpg"
+      },
+      "previousPrice": 339000,
+      "delta": -9000,
+      "deltaPct": -2.7,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ade1b2720c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9438542",
+      "title": "Apartamento de 1 habitación en Devessa - Monte Pego, Dénia en venta con piscina - 254.000 € (Ref: 9438542)",
+      "price": 254000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 254000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 44,
+      "plotM2": null,
+      "pricePerM2": 5773,
+      "image": "https://cdn.thinkwebcontent.com/property/15252/9438542/20251205162131/w1200h675/s640x480/x-268442542.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ade1b2720c.webp",
+        "thumb": "thinkspain-ade1b2720c.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15252/9438542/20251205162131/w1200h675/s640x480/x-268442542.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": -6000,
+      "deltaPct": -2.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:0ce36d98ee",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/7987720",
+      "title": "Apartamento de 2 habitaciones en Dénia en venta con piscina garaje - 327.000 € (Ref: 7987720)",
+      "price": 327000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 341000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 327000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4139,
+      "image": "https://cdn.thinkwebcontent.com/property/25334/7987720/20260903181443/w1024h660/s640x480/x-288553057.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-0ce36d98ee.webp",
+        "thumb": "thinkspain-0ce36d98ee.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25334/7987720/20240704052515/w1024h660/s640x480/x-235018963.jpg"
+      },
+      "previousPrice": 341000,
+      "delta": -14000,
+      "deltaPct": -4.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:c78395574d",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9999662",
+      "title": "Piso en Dénia en venta - 110.900 € (Ref: 9999662)",
+      "price": 110900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 125000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 110900
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": null,
+      "baths": null,
+      "builtM2": 28,
+      "plotM2": null,
+      "pricePerM2": 3961,
+      "image": "https://cdn.thinkwebcontent.com/property/27505/9999662/20260806051817/w1920h1280/s640x480/x-286762961.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-c78395574d.webp",
+        "thumb": "thinkspain-c78395574d.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27505/9999662/20260806051817/w1920h1280/s640x480/x-286762961.jpg"
+      },
+      "previousPrice": 125000,
+      "delta": -14100,
+      "deltaPct": -11.3,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:51fcf269ab",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9500736",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta - 255.000 € (Ref: 9500736)",
+      "price": 255000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 265000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 255000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 58,
+      "plotM2": null,
+      "pricePerM2": 4397,
+      "image": "https://cdn.thinkwebcontent.com/property/5673/9500736/20260112180137/w1304h675/s640x480/x-270347495.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-51fcf269ab.webp",
+        "thumb": "thinkspain-51fcf269ab.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5673/9500736/20260112180137/w1304h675/s640x480/x-270347495.jpg"
+      },
+      "previousPrice": 265000,
+      "delta": -10000,
+      "deltaPct": -3.8,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:93c94c759b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9709078",
+      "title": "Apartamento de 2 habitaciones en Pueblo, Calpe / Calp en venta - 285.000 € (Ref: 9709078)",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 295000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 285000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 91,
+      "plotM2": null,
+      "pricePerM2": 3132,
+      "image": "https://cdn.thinkwebcontent.com/property/23901/9709078/20260911091442/w1624h1217/s640x480/x-289211115.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-93c94c759b.webp",
+        "thumb": "thinkspain-93c94c759b.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/23901/9709078/20260402171041/w1624h1217/s640x480/x-277473306.jpg"
+      },
+      "previousPrice": 295000,
+      "delta": -10000,
+      "deltaPct": -3.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:4ba660e4e6",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9922648",
+      "title": "Apartamento de 2 habitaciones en Pueblo, Calpe / Calp en venta - 250.000 € (Ref: 9922648)",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 275000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 250000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 122,
+      "plotM2": null,
+      "pricePerM2": 2049,
+      "image": "https://cdn.thinkwebcontent.com/property/30750/9922648/20260624073045/w1600h1200/s640x480/x-284151946.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-4ba660e4e6.webp",
+        "thumb": "thinkspain-4ba660e4e6.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30750/9922648/20260624073045/w1600h1200/s640x480/x-284151946.jpg"
+      },
+      "previousPrice": 275000,
+      "delta": -25000,
+      "deltaPct": -9.1,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ac084d5a85",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10055591",
+      "title": "Apartamento de 3 habitaciones en Teulada Pueblo, Teulada-Moraira en venta con garaje - 196.000 € (Ref: 10055591)",
+      "price": 196000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 199000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 196000
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/34542/10055591/20260908072343/w1594h1200/s640x480/x-288908093.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ac084d5a85.webp",
+        "thumb": "thinkspain-ac084d5a85.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/34542/10055591/20260908072343/w1594h1200/s640x480/x-288908093.jpg"
+      },
+      "previousPrice": 199000,
+      "delta": -3000,
+      "deltaPct": -1.5,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:cf2c7584be",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9673410",
+      "title": "Apartamento de 2 habitaciones en Benitachell / Benitatxell en venta con piscina - 220.000 € (Ref: 9673410)",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 235000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/34542/9673410/20260311183109/w1280h853/s640x480/x-275287696.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-cf2c7584be.webp",
+        "thumb": "thinkspain-cf2c7584be.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/34542/9673410/20260311183108/w640h960/s640x480/x-275287713.jpg"
+      },
+      "previousPrice": 235000,
+      "delta": -15000,
+      "deltaPct": -6.4,
+      "direction": "drop"
+    },
+    {
+      "id": "thinkspain:ee6fda5cf5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9584584",
+      "title": "Finca/Casa Rural de 3 habitaciones en Alcalalí / Alcanalí en venta con garaje - 240.000 € (Ref: 9584584)",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        },
+        {
+          "date": "2026-08-23",
+          "price": 279000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 240000
+        }
+      ],
+      "municipality": "Alcalalí",
+      "type": "villa",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3333,
+      "image": "https://cdn.thinkwebcontent.com/property/38221/9584584/20260210135357/w1200h1197/s640x480/x-272761192.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-ee6fda5cf5.webp",
+        "thumb": "thinkspain-ee6fda5cf5.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/38221/9584584/20260210135357/w1200h1197/s640x480/x-272761192.jpg"
+      },
+      "previousPrice": 279000,
+      "delta": -39000,
+      "deltaPct": -14,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:18ae4b7be4",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/amplio-apartamento-de-3-dormitorios-junto-al-casco-antiguo-bpc269160/",
+      "title": "Amplio apartamento de 3 dormitorios junto al casco antiguo",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 299000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 285000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 3,
+      "baths": 2,
+      "builtM2": 111,
+      "plotM2": null,
+      "pricePerM2": 2568,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8d/019eac31-f2fc-750d-a858-bc93b885238d.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-21",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-e25f410c78.webp",
+        "thumb": "bindley-e25f410c78.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/8d/019eac31-f2fc-750d-a858-bc93b885238d.jpg"
+      },
+      "previousPrice": 299000,
+      "delta": -14000,
+      "deltaPct": -4.7,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:7e8aece2bc",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/luminoso-apartamento-de-2-dormitorios-y-2-banos-con-piscina-y-a-15-minutos-a-pie-de-la-playa-cumbre-del-sol-bpc940558/",
+      "title": "Luminoso apartamento de 2 dormitorios y 2 baños con piscina y a 15 minutos a pie de la playa Cumbre del Sol",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 235000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 220000
+        }
+      ],
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "beds": null,
+      "baths": 2,
+      "builtM2": 68,
+      "plotM2": null,
+      "pricePerM2": 3235,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/99/019fdb6e-5aff-7762-afd3-28c9e4766d99.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-11",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-1c2631df7c.webp",
+        "thumb": "bindley-1c2631df7c.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/99/019fdb6e-5aff-7762-afd3-28c9e4766d99.jpg"
+      },
+      "previousPrice": 235000,
+      "delta": -15000,
+      "deltaPct": -6.4,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:44af0c64b3",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc011092/",
+      "title": "Parcela en venta en Benissa",
+      "price": 59000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 69000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 59000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 90,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fc/019fdb6a-6b37-76ac-839f-f91f099b6dfc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-13",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-6972eabf68.webp",
+        "thumb": "bindley-6972eabf68.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/fc/019fdb6a-6b37-76ac-839f-f91f099b6dfc.jpg"
+      },
+      "previousPrice": 69000,
+      "delta": -10000,
+      "deltaPct": -14.5,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:95b7fa3297",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc691542/",
+      "title": "Parcela en venta en Benissa",
+      "price": 170000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 199000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 170000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 880,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb5d-f5eb-741a-88a2-1c73f4786a34.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-13",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b319f97834.webp",
+        "thumb": "bindley-b319f97834.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/34/019fdb5d-f5eb-741a-88a2-1c73f4786a34.jpg"
+      },
+      "previousPrice": 199000,
+      "delta": -29000,
+      "deltaPct": -14.6,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:6af7df80a9",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc714518/",
+      "title": "Parcela en venta en Benissa",
+      "price": 245000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 245000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 810,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019ecb28-e3f8-71ff-8512-d458421e13bc.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-09-03",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-084778587b.webp",
+        "thumb": "bindley-084778587b.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/bc/019ecb28-e3f8-71ff-8512-d458421e13bc.jpg"
+      },
+      "previousPrice": 275000,
+      "delta": -30000,
+      "deltaPct": -10.9,
+      "direction": "drop"
+    },
+    {
+      "id": "bindley:3bbbe4fa18",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-moraira-bpc590295/",
+      "title": "Parcela en venta en Moraira",
+      "price": 314300,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 325000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 314300
+        }
+      ],
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 898,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a1/019e1b91-234b-7565-a2c2-f82f37cfaaa1.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-21",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-b479a7e31a.webp",
+        "thumb": "bindley-b479a7e31a.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/a1/019e1b91-234b-7565-a2c2-f82f37cfaaa1.jpg"
+      },
+      "previousPrice": 325000,
+      "delta": -10700,
+      "deltaPct": -3.3,
+      "direction": "drop"
+    }
+  ],
+  "priceRises": [
+    {
+      "id": "thinkspain:a3ecbbea83",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8903983",
+      "title": "Solar/Parcela en Calpe / Calp en venta - 265.000 € (Ref: 8903983)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 260000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 265000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/5673/8903983/20250331110321/w1600h1063/s640x480/x-250719480.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-a3ecbbea83.webp",
+        "thumb": "thinkspain-a3ecbbea83.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5673/8903983/20250331110321/w1600h1063/s640x480/x-250719480.jpg"
+      },
+      "previousPrice": 260000,
+      "delta": 5000,
+      "deltaPct": 1.9,
+      "direction": "rise"
+    },
+    {
+      "id": "thinkspain:9665f7602a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9860860",
+      "title": "Apartamento de 1 habitación en Benissa en venta - 249.500 € (Ref: 9860860)",
+      "price": 249500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 249000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 249500
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/40947/9860860/20260526111916/w1280h853/s640x480/x-281783278.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-9665f7602a.webp",
+        "thumb": "thinkspain-9665f7602a.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40947/9860860/20260526111916/w1280h853/s640x480/x-281783278.jpg"
+      },
+      "previousPrice": 249000,
+      "delta": 500,
+      "deltaPct": 0.2,
+      "direction": "rise"
+    },
+    {
+      "id": "bindley:0070c057d4",
+      "source": "bindley",
+      "agency": "Bindley Properties",
+      "url": "https://www.bindleyproperties.com/es/propiedad/venta/parcela-en-venta-en-benissa-bpc609985/",
+      "title": "Parcela en venta en Benissa",
+      "price": 300000,
+      "priceHistory": [
+        {
+          "date": "2026-08-26",
+          "price": 275000
+        },
+        {
+          "date": "2026-09-15",
+          "price": 300000
+        }
+      ],
+      "municipality": "Benissa",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": 325,
+      "pricePerM2": null,
+      "image": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/35/019fdb63-6c48-768d-b5c9-9ac88970a635.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": "2026-08-21",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-15",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "bindley-00a432df47.webp",
+        "thumb": "bindley-00a432df47.thumb.webp",
+        "capturedAt": "2026-08-26T21:46:29.390Z",
+        "sourceUrl": "https://app-api.paagees.com/uploads/019d2e3b-6e03-71b8-b48d-c251ed047187/social-preview/35/019fdb63-6c48-768d-b5c9-9ac88970a635.jpg"
+      },
+      "previousPrice": 275000,
+      "delta": 25000,
+      "deltaPct": 9.1,
+      "direction": "rise"
+    }
+  ],
+  "removals": [
+    {
+      "id": "thinkspain:7f25399393",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9990272",
+      "title": "Chalet de 3 habitaciones en Monte Pedreguer, Pedreguer en venta - 330.000 € (Ref: 9990272)",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 330000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "villa",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 193,
+      "plotM2": null,
+      "pricePerM2": 1710,
+      "image": "https://cdn.thinkwebcontent.com/property/41127/9990272/20260730233859/w1280h960/s640x480/x-286411453.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-7f25399393.webp",
+        "thumb": "thinkspain-7f25399393.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41127/9990272/20260730233859/w1280h960/s640x480/x-286411453.jpg"
+      },
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:33eba713b5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9941097",
+      "title": "Apartamento de 2 habitaciones en Centro ciudad, Javea / Xàbia en venta con piscina - 345.000 € (Ref: 9941097)",
+      "price": 345000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 345000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 3382,
+      "image": "https://cdn.thinkwebcontent.com/property/33784/9941097/20260810092723/w1200h675/s640x480/x-287037422.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-33eba713b5.webp",
+        "thumb": "thinkspain-33eba713b5.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33784/9941097/20260810092723/w1200h675/s640x480/x-287037422.jpg"
+      },
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:0d8ae421b0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9675100",
+      "title": "Apartamento de 3 habitaciones en Manzanera - Tosal, Calpe / Calp en venta - 269.000 € (Ref: 9675100)",
+      "price": 269000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 269000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2402,
+      "image": "https://cdn.thinkwebcontent.com/property/15372/9675100/20260701114526/w1448h1086/s640x480/x-284604775.jpg",
+      "lastmod": null,
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "photo": {
+        "file": "thinkspain-0d8ae421b0.webp",
+        "thumb": "thinkspain-0d8ae421b0.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15372/9675100/20260701114526/w1448h1086/s640x480/x-284604775.jpg"
+      },
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:3f1fba0099",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9850039",
+      "title": "Apartamento de 3 habitaciones en Manzanera - Tosal, Calpe / Calp en venta - 259.000 € (Ref: 9850039)",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 259000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 3,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2313,
+      "image": "https://cdn.thinkwebcontent.com/property/5673/9850039/20260703110120/w1448h1086/s640x480/x-284735063.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-3f1fba0099.webp",
+        "thumb": "thinkspain-3f1fba0099.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5673/9850039/20260703110120/w1448h1086/s640x480/x-284735063.jpg"
+      },
+      "fromFeed": false,
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:2b65d2a697",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8982633",
+      "title": "Casa de 7 habitaciones en Pedreguer en venta con garaje - 212.000 € (Ref: 8982633)",
+      "price": 212000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 212000
+        }
+      ],
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "beds": 7,
+      "baths": null,
+      "builtM2": 200,
+      "plotM2": null,
+      "pricePerM2": 1060,
+      "image": "https://cdn.thinkwebcontent.com/property/30675/8982633/20250513051339/w800h600/s640x480/x-253126063.jpg",
+      "saleStatus": "available",
+      "lastmod": null,
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-2b65d2a697.webp",
+        "thumb": "thinkspain-2b65d2a697.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30675/8982633/20250513051339/w800h600/s640x480/x-253126063.jpg"
+      },
+      "fromFeed": false,
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:84de22ffe8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9659640",
+      "title": "Apartamento de 1 habitación en Levante - Playa Fossa, Calpe / Calp en venta con piscina garaje - 289.000 € (Ref: 9659640)",
+      "price": 289000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 289000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4446,
+      "image": "https://cdn.thinkwebcontent.com/property/27803/9659640/20260307064335/w1920h1440/s640x480/x-274927860.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-84de22ffe8.webp",
+        "thumb": "thinkspain-84de22ffe8.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27803/9659640/20260307064335/w1920h1440/s640x480/x-274927860.jpg"
+      },
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:5063544bb2",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9956783",
+      "title": "Apartamento de 1 habitación en Calpe / Calp en venta con piscina - 209.000 € (Ref: 9956783)",
+      "price": 209000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 209000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "beds": 1,
+      "baths": null,
+      "builtM2": 53,
+      "plotM2": null,
+      "pricePerM2": 3943,
+      "image": "https://cdn.thinkwebcontent.com/property/40833/9956783/20260713233323/w1600h993/s640x480/x-285307866.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-5063544bb2.webp",
+        "thumb": "thinkspain-5063544bb2.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40833/9956783/20260713233323/w1600h993/s640x480/x-285307866.jpg"
+      },
+      "removedOn": "2026-09-15"
+    },
+    {
+      "id": "thinkspain:702add5140",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9680013",
+      "title": "Ático de 2 habitaciones en Calpe / Calp en venta con piscina garaje - 320.000 € (Ref: 9680013)",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 320000
+        }
+      ],
+      "municipality": "Calp / Calpe",
+      "type": "penthouse",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 91,
+      "plotM2": null,
+      "pricePerM2": 3516,
+      "image": "https://cdn.thinkwebcontent.com/property/27803/9680013/20260314064339/w1920h1440/s640x480/x-275500825.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-28",
+      "missingRuns": 6,
+      "status": "stale",
+      "photo": {
+        "file": "thinkspain-702add5140.webp",
+        "thumb": "thinkspain-702add5140.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27803/9680013/20260314064339/w1920h1440/s640x480/x-275500825.jpg"
+      },
+      "removedOn": "2026-09-15"
+    }
+  ],
+  "sources": [
+    {
+      "id": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "listings": 2447,
+      "status": "ok",
+      "requests": 540,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 743,
+      "delayMs": 1000
+    },
+    {
+      "id": "ferrando-moraira",
+      "agency": "Ferrando Inmobiliaria",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 2,
+      "delayMs": 1000
+    },
+    {
+      "id": "mlsdenia",
+      "agency": "MLS Dénia",
+      "listings": 11,
+      "status": "ok",
+      "requests": 20,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 304,
+      "delayMs": 14000
+    },
+    {
+      "id": "denialara",
+      "agency": "Denialara Servicios Inmobiliarios",
+      "listings": 20,
+      "status": "ok",
+      "requests": 52,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 812,
+      "delayMs": 14000
+    },
+    {
+      "id": "llobell",
+      "agency": "Llobell Inmobiliaris",
+      "listings": 41,
+      "status": "ok",
+      "requests": 82,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 1311,
+      "delayMs": 14000
+    },
+    {
+      "id": "lyt",
+      "agency": "LYT Properties",
+      "listings": 28,
+      "status": "ok",
+      "requests": 77,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 99,
+      "delayMs": 1000
+    },
+    {
+      "id": "inmoxara",
+      "agency": "InmoXara",
+      "listings": 12,
+      "status": "ok",
+      "requests": 56,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 857,
+      "delayMs": 14000
+    },
+    {
+      "id": "daniamed",
+      "agency": "Daniamed",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 2,
+      "delayMs": 1000
+    },
+    {
+      "id": "benimo-villas",
+      "agency": "Benimo Villas",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 2,
+      "delayMs": 1000
+    },
+    {
+      "id": "calablanca",
+      "agency": "Inmobiliaria Calablanca",
+      "listings": 2,
+      "status": "ok",
+      "requests": 13,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 194,
+      "delayMs": 14000
+    },
+    {
+      "id": "catorceinmo",
+      "agency": "Catorce Inmobiliaria",
+      "listings": 12,
+      "status": "ok",
+      "requests": 26,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 407,
+      "delayMs": 14000
+    },
+    {
+      "id": "tododenia",
+      "agency": "Tododenia-inmo",
+      "listings": 23,
+      "status": "ok",
+      "requests": 31,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 465,
+      "delayMs": 14000
+    },
+    {
+      "id": "inmovidal",
+      "agency": "Inmovidal",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 3,
+      "delayMs": 1000
+    },
+    {
+      "id": "ortola",
+      "agency": "Ortolá Inmobiliaria",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 2,
+      "delayMs": 1000
+    },
+    {
+      "id": "inmodemar",
+      "agency": "Inmodemar",
+      "listings": 4,
+      "status": "ok",
+      "requests": 11,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 156,
+      "delayMs": 14000
+    },
+    {
+      "id": "albadomus",
+      "agency": "Albadomus",
+      "listings": 2,
+      "status": "ok",
+      "requests": 7,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 95,
+      "delayMs": 14000
+    },
+    {
+      "id": "gpereto",
+      "agency": "Grupo Peretó",
+      "listings": 5,
+      "status": "ok",
+      "requests": 16,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 63,
+      "delayMs": 1000
+    },
+    {
+      "id": "agenciamorato",
+      "agency": "Agencia Inmobiliaria Morató",
+      "listings": 0,
+      "status": "muro",
+      "requests": 1,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 1,
+      "seconds": 3,
+      "delayMs": 1000
+    },
+    {
+      "id": "deseohomes",
+      "agency": "Deseo Homes",
+      "listings": 6,
+      "status": "ok",
+      "requests": 439,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 227,
+      "seconds": 1131,
+      "delayMs": 1000
+    },
+    {
+      "id": "renvida",
+      "agency": "Renvida",
+      "listings": 0,
+      "status": "vacío",
+      "requests": 2,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 4,
+      "delayMs": 1000
+    },
+    {
+      "id": "vistamarinahome",
+      "agency": "Vista Marina Home",
+      "listings": 8,
+      "status": "ok",
+      "requests": 16,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 21,
+      "delayMs": 1000
+    },
+    {
+      "id": "bindley",
+      "agency": "Bindley Properties",
+      "listings": 63,
+      "status": "ok",
+      "requests": 220,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 290,
+      "delayMs": 1000
+    },
+    {
+      "id": "selectvillas",
+      "agency": "Select Villas of Moraira",
+      "listings": 26,
+      "status": "ok",
+      "requests": 45,
+      "blocked": 0,
+      "errors": 5,
+      "walled": 0,
+      "seconds": 106,
+      "delayMs": 1000
+    },
+    {
+      "id": "giortola",
+      "agency": "GI Ortolá",
+      "listings": 19,
+      "status": "ok",
+      "requests": 40,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 69,
+      "delayMs": 1000
+    },
+    {
+      "id": "grupogarcia",
+      "agency": "Grupo García",
+      "listings": 21,
+      "status": "ok",
+      "requests": 31,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 42,
+      "delayMs": 1000
+    },
+    {
+      "id": "uniquehomes",
+      "agency": "Unique Homes Spain",
+      "listings": 32,
+      "status": "ok",
+      "requests": 269,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 386,
+      "delayMs": 1000
+    }
+  ],
+  "bootstrap": true
+}
