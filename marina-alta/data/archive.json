@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T19:15:59.642Z",
+  "updatedAt": "2026-09-16T14:04:33.915Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -1860,7 +1860,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -2535,7 +2535,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2567,7 +2567,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2599,7 +2599,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2663,7 +2663,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2695,7 +2695,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2727,7 +2727,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2759,7 +2759,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2791,7 +2791,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -4032,7 +4032,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -4396,7 +4396,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-22T06:00:27.355Z",
       "reason": "vendido"
     },
@@ -5197,7 +5197,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-24T20:31:47.376Z",
       "reason": "vendido"
     },
@@ -5492,7 +5492,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -5524,7 +5524,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -6624,7 +6624,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-27",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-28T20:20:04.356Z",
       "reason": "vendido"
     },
@@ -7488,7 +7488,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7520,7 +7520,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7552,7 +7552,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7584,7 +7584,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7611,7 +7611,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7643,7 +7643,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7675,7 +7675,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7707,7 +7707,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7739,7 +7739,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7771,7 +7771,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7867,7 +7867,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-12",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -12085,9 +12085,169 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-15",
+      "lastSeen": "2026-09-16",
       "archivedOn": "2026-09-15T19:15:59.642Z",
       "reason": "vendido"
+    },
+    {
+      "id": "thinkspain:cee0559532",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9790232",
+      "title": "Apartamento de 1 habitación en Calpe / Calp en venta - 189.000 € (Ref: 9790232)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 189000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 189000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 56,
+      "plotM2": null,
+      "pricePerM2": 3375,
+      "photo": {
+        "file": "thinkspain-cee0559532.webp",
+        "thumb": "thinkspain-cee0559532.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25748/9790232/20260421231122/w1920h1279/s640x480/x-279305955.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-29",
+      "archivedOn": "2026-09-16T14:04:33.915Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ac98bd2061",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10027638",
+      "title": "Chalet de 2 habitaciones en Moraira, Teulada-Moraira en venta con piscina garaje - 299.000 € (Ref: 10027638)",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-23",
+          "price": 299000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 73,
+      "plotM2": null,
+      "pricePerM2": 4096,
+      "photo": {
+        "file": "thinkspain-ac98bd2061.webp",
+        "thumb": "thinkspain-ac98bd2061.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/2151/10027638/20260822170207/w1542h1156/s640x480/x-287789331.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-29",
+      "archivedOn": "2026-09-16T14:04:33.915Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:dfa8748cd7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9626136",
+      "title": "Apartamento de 2 habitaciones en Pedreguer en venta con piscina - 349.000 € (Ref: 9626136)",
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "price": 349000,
+      "priceHistory": [
+        {
+          "date": "2026-08-27",
+          "price": 349000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 82,
+      "plotM2": null,
+      "pricePerM2": 4256,
+      "photo": {
+        "file": "thinkspain-dfa8748cd7.webp",
+        "thumb": "thinkspain-dfa8748cd7.thumb.webp",
+        "capturedAt": "2026-08-27T19:01:11.574Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25165/9626136/20260224102320/w1920h1081/s640x480/x-273973862.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-29",
+      "archivedOn": "2026-09-16T14:04:33.915Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:64ce67f292",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10025113",
+      "title": "Chalet de 4 habitaciones en Ondara en venta con garaje - 350.000 € (Ref: 10025113)",
+      "municipality": "Ondara",
+      "type": "villa",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 350000
+        }
+      ],
+      "beds": 4,
+      "baths": null,
+      "builtM2": 208,
+      "plotM2": null,
+      "pricePerM2": 1683,
+      "photo": {
+        "file": "thinkspain-64ce67f292.webp",
+        "thumb": "thinkspain-64ce67f292.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41013/10025113/20260820232903/w1448h1086/s640x480/x-287659797.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-29",
+      "archivedOn": "2026-09-16T14:04:33.915Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:06a0e82ee5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10006662",
+      "title": "Pareado de 2 habitaciones en El Vergel / Verger en venta con piscina - 259.000 € (Ref: 10006662)",
+      "municipality": "El Verger",
+      "type": "villa",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-27",
+          "price": 259000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 62,
+      "plotM2": null,
+      "pricePerM2": 4177,
+      "photo": {
+        "file": "thinkspain-06a0e82ee5.webp",
+        "thumb": "thinkspain-06a0e82ee5.thumb.webp",
+        "capturedAt": "2026-08-27T19:01:11.574Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25625/10006662/20260809033855/w800h600/s640x480/x-286998407.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-29",
+      "archivedOn": "2026-09-16T14:04:33.915Z",
+      "reason": "retirado"
     }
   ]
 }
