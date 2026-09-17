@@ -220,9 +220,14 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
 
   const found = []
   const sinPrecio = new Set()
+  // Igual que en Sooprema: lo que no se ha podido leer no está comprobado.
+  const ilegibles = new Set()
   for (const url of queue) {
     const html = await fetcher.get(url)
-    if (!html) continue
+    if (!html) {
+      ilegibles.add(url)
+      continue
+    }
     const item = parsePropertyPage(html, url)
     if (item?.priceOnRequest) sinPrecio.add(url)
     else if (item) found.push(item)
@@ -234,5 +239,7 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
   // acercarlo a la baja.
   const checked = new Set(queue)
   for (const url of sinPrecio) checked.delete(url)
+  for (const url of ilegibles) checked.delete(url)
+  if (ilegibles.size > 0) log(`  ${ilegibles.size} no se han podido leer: no cuentan como ausentes`)
   return { items: found, checked, priceOnRequest: sinPrecio }
 }

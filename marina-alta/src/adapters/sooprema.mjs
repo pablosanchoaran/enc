@@ -277,9 +277,16 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
 
   const found = []
   const sinPrecio = new Set()
+  // Fichas que esta pasada no se han podido leer: la petición falló, o llegó un
+  // muro. No saber qué hay detrás no es saber que no hay nada, así que quedan
+  // fuera de lo comprobado.
+  const ilegibles = new Set()
   for (const entry of queue) {
     const html = await fetcher.get(entry.loc)
-    if (!html) continue
+    if (!html) {
+      ilegibles.add(entry.loc)
+      continue
+    }
     const item = parsePropertyPage(html, entry.loc)
     if (item?.priceOnRequest) sinPrecio.add(entry.loc)
     else if (item) found.push({ ...item, lastmod: entry.lastmod })
@@ -300,7 +307,9 @@ export async function collect({ fetcher, source, known, log, limit = Infinity, r
     if (url.startsWith(source.origin) && !enElSitemap.has(url)) checked.add(url)
   }
   for (const url of sinPrecio) checked.delete(url)
+  for (const url of ilegibles) checked.delete(url)
   if (sinPrecio.size > 0) log(`  ${sinPrecio.size} siguen publicadas con el precio a consultar`)
+  if (ilegibles.size > 0) log(`  ${ilegibles.size} no se han podido leer: no cuentan como ausentes`)
 
   return { items: found, checked, priceOnRequest: sinPrecio }
 }

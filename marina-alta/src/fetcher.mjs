@@ -23,16 +23,30 @@ const MAX_ATTEMPTS = 3
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 /**
+ * Tope de tamaño de una página de reto. Un muro no sirve contenido: planta su
+ * cookie y poco más, y cabe de sobra en cuarenta kilobytes. La ficha de Deseo
+ * Homes que nos hizo falta distinguir pesa casi doscientos.
+ */
+const MAX_CHALLENGE_BYTES = 40_000
+
+/**
  * La página de reto que sirven los muros anti-bot en lugar del contenido. Se
  * reconoce por la cookie que planta, que es lo propio del muro; el título
  * "Security Check" lo comparten páginas legítimas de bancos y aseguradoras.
+ *
+ * Se piden las dos cosas, la marca y el tamaño, porque la marca sola no basta:
+ * `/cdn-cgi/challenge-platform/scripts/jsd/main.js` es un script que Cloudflare
+ * cuela en páginas perfectamente normales, y buscarlo daba por muro fichas
+ * enteras con su precio y sus fotos. Quince anuncios de Deseo Homes que seguían
+ * a la venta se dieron de baja por eso, siete pasadas después de que yo metiera
+ * esta comprobación.
+ *
+ * `captcha-delivery.com` es el host del captcha de DataDome, y es lo único
+ * reconocible de su reto: no lleva la palabra "DataDome" por ninguna parte.
  */
 export function isAntiBotChallenge(body) {
-  if (typeof body !== 'string' || body.length > 200_000) return false
-  // `captcha-delivery.com` es el host del captcha de DataDome, y es lo único
-  // reconocible de su página de reto: no lleva la palabra "DataDome" por
-  // ninguna parte. Yaencontre la sirve en todas sus rutas, robots.txt incluido.
-  return /__shield=|__cf_chl_|challenge-platform|DataDome|captcha-delivery\.com/.test(body)
+  if (typeof body !== 'string' || body.length > MAX_CHALLENGE_BYTES) return false
+  return /__shield=|__cf_chl_|cf_chl_opt|captcha-delivery\.com/.test(body)
 }
 
 export class Fetcher {

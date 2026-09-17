@@ -733,6 +733,17 @@ test('un muro anti-bot no se confunde con una web sin anuncios', () => {
     `<html><body><p>Please enable JS and disable any ad blocker</p>` +
     `<script src="https://ct.captcha-delivery.com/c.js"></script></body></html>`
   assert.equal(isAntiBotChallenge(dataDome), true)
+
+  // Y una ficha de verdad que carga el script pasivo de Cloudflare no es un
+  // muro. Buscar "challenge-platform" a secas daba por reto páginas enteras con
+  // su precio y sus fotos: quince anuncios de Deseo Homes que seguían a la
+  // venta se dieron de baja por eso. Un muro no sirve doscientos kilobytes de
+  // contenido, así que se exige la marca y el tamaño.
+  const fichaReal =
+    `<html><body><h1>Apartamento en Dénia</h1><p>275.000 €</p>` +
+    `<script>a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';</script>` +
+    `<div>${'x'.repeat(60_000)}</div></body></html>`
+  assert.equal(isAntiBotChallenge(fichaReal), false)
 })
 
 test('la identidad del anuncio es su referencia, no el slug traducido', () => {
