@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T18:03:34.080Z",
+  "updatedAt": "2026-09-18T19:34:12.517Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -1860,7 +1860,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T18:41:16.805Z",
       "reason": "vendido"
     },
@@ -2535,7 +2535,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2567,7 +2567,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2599,7 +2599,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2663,7 +2663,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2695,7 +2695,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2727,7 +2727,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2759,7 +2759,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -2791,7 +2791,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -4032,7 +4032,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -4396,7 +4396,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-22T06:00:27.355Z",
       "reason": "vendido"
     },
@@ -5197,7 +5197,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-24T20:31:47.376Z",
       "reason": "vendido"
     },
@@ -5492,7 +5492,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -5524,7 +5524,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -6624,7 +6624,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-27",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-28T20:20:04.356Z",
       "reason": "vendido"
     },
@@ -7488,7 +7488,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7520,7 +7520,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7552,7 +7552,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7584,7 +7584,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7611,7 +7611,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7643,7 +7643,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7675,7 +7675,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7707,7 +7707,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7867,7 +7867,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-16",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -12085,7 +12085,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "archivedOn": "2026-09-15T19:15:59.642Z",
       "reason": "vendido"
     },
@@ -13819,6 +13819,326 @@
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-30",
       "archivedOn": "2026-09-17T18:03:34.080Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ac67be4c4d",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9995574",
+      "title": "Casa de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 259.000 € (Ref: 9995574)",
+      "municipality": "El Verger",
+      "type": "townhouse",
+      "price": 259000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 259000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 62,
+      "plotM2": null,
+      "pricePerM2": 4177,
+      "photo": {
+        "file": "thinkspain-ac67be4c4d.webp",
+        "thumb": "thinkspain-ac67be4c4d.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/33784/9995574/20260810052131/w1200h669/s640x480/x-287028029.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:6b9315665f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10039022",
+      "title": "Bungalow de 2 habitaciones en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 270.000 € (Ref: 10039022)",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 270000,
+      "priceHistory": [
+        {
+          "date": "2026-08-31",
+          "price": 270000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 53,
+      "plotM2": null,
+      "pricePerM2": 5094,
+      "photo": {
+        "file": "thinkspain-6b9315665f.webp",
+        "thumb": "thinkspain-6b9315665f.thumb.webp",
+        "capturedAt": "2026-08-31T20:34:23.299Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30788/10039022/20260831090955/w1400h933/s640x480/x-288220373.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:8f9e4136f7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10037503",
+      "title": "Ático de 3 habitaciones en La Xara, Dénia en venta con garaje - 239.575 € (Ref: 10037503)",
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "price": 239575,
+      "priceHistory": [
+        {
+          "date": "2026-08-29",
+          "price": 239575
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 110,
+      "plotM2": null,
+      "pricePerM2": 2178,
+      "photo": {
+        "file": "thinkspain-8f9e4136f7.webp",
+        "thumb": "thinkspain-8f9e4136f7.thumb.webp",
+        "capturedAt": "2026-08-29T13:44:14.333Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27505/10037503/20260829051714/w1920h1280/s640x480/x-288149295.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ca0c66ca9a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10019767",
+      "title": "Solar/Parcela en Montgó - Ermita, Javea / Xàbia en venta - 245.000 € (Ref: 10019767)",
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "price": 245000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 245000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-ca0c66ca9a.webp",
+        "thumb": "thinkspain-ca0c66ca9a.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41318/10019767/20260817143915/w1950h2600/s640x480/x-287457717.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:bb175fe3e0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10017304",
+      "title": "Apartamento de 2 habitaciones en Las Marinas / Les Marines, Dénia en venta con piscina garaje - 235.000 € (Ref: 10017304)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 235000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 235000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 47,
+      "plotM2": null,
+      "pricePerM2": 5000,
+      "photo": {
+        "file": "thinkspain-bb175fe3e0.webp",
+        "thumb": "thinkspain-bb175fe3e0.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36712/10017304/20260815031709/w800h600/s640x480/x-287358596.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:9f691eba41",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9938189",
+      "title": "Adosado de 1 habitación en El Montgó, Dénia en venta con piscina - 180.000 € (Ref: 9938189)",
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 180000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 50,
+      "plotM2": null,
+      "pricePerM2": 3600,
+      "photo": {
+        "file": "thinkspain-9f691eba41.webp",
+        "thumb": "thinkspain-9f691eba41.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/26314/9938189/20260702051155/w1920h1440/s640x480/x-284640267.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:3369312c85",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10037506",
+      "title": "Piso de 3 habitaciones en Centro Urbano, Dénia en venta - 167.000 € (Ref: 10037506)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 167000,
+      "priceHistory": [
+        {
+          "date": "2026-08-29",
+          "price": 167000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 86,
+      "plotM2": null,
+      "pricePerM2": 1942,
+      "photo": {
+        "file": "thinkspain-3369312c85.webp",
+        "thumb": "thinkspain-3369312c85.thumb.webp",
+        "capturedAt": "2026-08-29T13:44:14.333Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27505/10037506/20260829051716/w1920h1280/s640x480/x-288149429.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:c8eca438ca",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9789985",
+      "title": "Apartamento de 2 habitaciones en Dénia en venta con garaje - 179.500 € (Ref: 9789985)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 179500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 179500
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-c8eca438ca.webp",
+        "thumb": "thinkspain-c8eca438ca.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9789985/20260421191933/w1440h1080/s640x480/x-279297966.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:a492e6bd4c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/3486634",
+      "title": "Casa de 3 habitaciones en Teulada Pueblo, Teulada-Moraira en venta - 279.000 € (Ref: 3486634)",
+      "municipality": "Teulada-Moraira",
+      "type": "townhouse",
+      "price": 279000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 279000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 180,
+      "plotM2": null,
+      "pricePerM2": 1550,
+      "photo": {
+        "file": "thinkspain-a492e6bd4c.webp",
+        "thumb": "thinkspain-a492e6bd4c.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4453/3486634/20251126122554/w1600h1200/s640x480/x-267681972.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:7606bf029c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9606440",
+      "title": "Casa de 3 habitaciones en Pedreguer en venta con garaje - 299.000 € (Ref: 9606440)",
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 299000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 125,
+      "plotM2": null,
+      "pricePerM2": 2392,
+      "photo": {
+        "file": "thinkspain-7606bf029c.webp",
+        "thumb": "thinkspain-7606bf029c.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/21358/9606440/20260217123817/w1087h821/s640x480/x-273371011.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-31",
+      "archivedOn": "2026-09-18T19:34:12.517Z",
       "reason": "retirado"
     }
   ]
