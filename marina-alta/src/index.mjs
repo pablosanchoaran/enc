@@ -10,7 +10,7 @@
  *   node src/index.mjs --report-only       regenera el informe con lo guardado
  */
 
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -34,6 +34,17 @@ import * as wordpress from './adapters/wordpress.mjs'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
 const INVENTORY_FILE = join(DATA_DIR, 'listings.json')
+
+/**
+ * Recogida de cada fuente, guardada en cuanto termina. El rastreo completo son
+ * dos horas —cuatro webs piden catorce segundos entre peticiones— y el
+ * contenedor donde corre no siempre aguanta tanto: dos veces el 07/10 se
+ * reinició a mitad y hubo que empezar de cero. Con esto, volver a lanzarlo
+ * reaprovecha lo ya recogido hoy y sigue por donde iba.
+ *
+ * Se borra al cerrar el día, así que no se arrastra de una fecha a otra.
+ */
+const CACHE_DIR = join(DATA_DIR, 'cache')
 const ARCHIVE_FILE = join(DATA_DIR, 'archive.json')
 /** Lo que supera el techo de precio: solo url, precio y lastmod. */
 const OVER_BUDGET_FILE = join(DATA_DIR, 'over-budget.json')
@@ -255,6 +266,59 @@ async function run() {
   const checkedUrls = new Set()
   const sourcesReportingChecked = new Set()
 
+  /**
+   * Pasa lo recogido por una fuente al esquema común y anota su línea del
+   * informe. Vive aparte porque hay dos caminos que llegan aquí: el rastreo
+   * normal y la recogida que ya estaba guardada de un intento anterior del
+   * mismo día. Los dos tienen que contar igual.
+   */
+  const registrar = (source, raws, stats, segundos, delayMs) => {
+    const rejected = new Map()
+    let accepted = 0
+    for (const raw of raws) {
+      const { listing, reason } = normalize(raw, source, today, { maxPrice })
+      if (!listing) {
+        rejected.set(reason, (rejected.get(reason) ?? 0) + 1)
+        if (reason === 'por encima del techo') {
+          overBudget.set(raw.url, {
+            url: raw.url,
+            source: source.id,
+            price: raw.price,
+            lastmod: raw.lastmod ?? null,
+            seenOn: today,
+          })
+        }
+        continue
+      }
+      // Si estaba anotado como caro y ahora entra, ha bajado de precio.
+      overBudget.delete(raw.url)
+      collected.push(listing)
+      accepted += 1
+    }
+
+    const descartes = [...rejected].map(([reason, count]) => `${reason}: ${count}`).join(', ')
+    // El tiempo por fuente se anota para poder ver cuál se está comiendo el
+    // rastreo: casi todo es espera del crawl-delay que pide cada web, así que
+    // la lenta no es la que va mal, sino la que tiene mucho que abrir o pide ir
+    // despacio.
+    log(`  ✓ ${accepted} anuncios de la comarca${descartes ? ` (descartados — ${descartes})` : ''} · ${segundos}s`)
+    sourceReports.push({
+      id: source.id,
+      agency: source.agency,
+      listings: accepted,
+      // Un muro anti-bot no es una web vacía ni una web rota: es una puerta
+      // cerrada, y en el informe se dice así para que se vea que ahí faltan
+      // anuncios por una razón que no se arregla tocando el código.
+      status: stats.walled > 0 && accepted === 0 ? 'muro' : accepted === 0 ? 'vacío' : 'ok',
+      requests: stats.requests,
+      blocked: stats.blocked,
+      errors: stats.errors,
+      walled: stats.walled,
+      seconds: segundos,
+      delayMs,
+    })
+  }
+
   for (const source of sources) {
     const adapter = ADAPTERS[source.adapter]
     if (!adapter) {
@@ -264,6 +328,18 @@ async function run() {
 
     log(`\n▸ ${source.agency} (${source.id})`)
     const empezada = Date.now()
+
+    // ¿Se recogió ya hoy? Entonces no se vuelve a pedir nada a la web.
+    const cacheFile = join(CACHE_DIR, today, `${source.id}.json`)
+    const guardada = await readJson(cacheFile, null)
+    if (guardada) {
+      log(`  ya recogida hoy: se reutiliza (${guardada.raws.length} anuncios, ${guardada.seconds}s)`)
+      for (const url of guardada.checked ?? []) checkedUrls.add(url)
+      if (guardada.reportsChecked) sourcesReportingChecked.add(source.id)
+      registrar(source, guardada.raws, guardada.stats, guardada.seconds, guardada.delayMs)
+      continue
+    }
+
     const fetcher = new Fetcher({ origin: source.origin })
     await fetcher.init()
 
@@ -298,10 +374,19 @@ async function run() {
       // listado no es completo, para que lo no comprobado no cuente como
       // desaparecido.
       raws = Array.isArray(salida) ? salida : salida.items
-      if (!Array.isArray(salida) && salida.checked) {
-        for (const url of salida.checked) checkedUrls.add(url)
+      const checked = !Array.isArray(salida) && salida.checked ? [...salida.checked] : null
+      if (checked) {
+        for (const url of checked) checkedUrls.add(url)
         sourcesReportingChecked.add(source.id)
       }
+      await writeJson(cacheFile, {
+        raws,
+        checked,
+        reportsChecked: Boolean(checked),
+        stats: { ...fetcher.stats },
+        seconds: Math.round((Date.now() - empezada) / 1000),
+        delayMs: fetcher.delayMs,
+      })
     } catch (error) {
       log(`  ✖ error del adaptador: ${error.message}`)
       sourceReports.push({
@@ -314,51 +399,7 @@ async function run() {
       continue
     }
 
-    const rejected = new Map()
-    let accepted = 0
-    for (const raw of raws) {
-      const { listing, reason } = normalize(raw, source, today, { maxPrice })
-      if (!listing) {
-        rejected.set(reason, (rejected.get(reason) ?? 0) + 1)
-        if (reason === 'por encima del techo') {
-          overBudget.set(raw.url, {
-            url: raw.url,
-            source: source.id,
-            price: raw.price,
-            lastmod: raw.lastmod ?? null,
-            seenOn: today,
-          })
-        }
-        continue
-      }
-      // Si estaba anotado como caro y ahora entra, ha bajado de precio.
-      overBudget.delete(raw.url)
-      collected.push(listing)
-      accepted += 1
-    }
-
-    const descartes = [...rejected].map(([reason, count]) => `${reason}: ${count}`).join(', ')
-    // El tiempo por fuente se anota para poder ver cuál se está comiendo el
-    // rastreo: casi todo es espera del crawl-delay que pide cada web, así que
-    // la lenta no es la que va mal, sino la que tiene mucho que abrir o pide ir
-    // despacio.
-    const segundos = Math.round((Date.now() - empezada) / 1000)
-    log(`  ✓ ${accepted} anuncios de la comarca${descartes ? ` (descartados — ${descartes})` : ''} · ${segundos}s`)
-    sourceReports.push({
-      id: source.id,
-      agency: source.agency,
-      listings: accepted,
-      // Un muro anti-bot no es una web vacía ni una web rota: es una puerta
-      // cerrada, y en el informe se dice así para que se vea que ahí faltan
-      // anuncios por una razón que no se arregla tocando el código.
-      status: fetcher.stats.walled > 0 && accepted === 0 ? 'muro' : accepted === 0 ? 'vacío' : 'ok',
-      requests: fetcher.stats.requests,
-      blocked: fetcher.stats.blocked,
-      errors: fetcher.stats.errors,
-      walled: fetcher.stats.walled,
-      seconds: segundos,
-      delayMs: fetcher.delayMs,
-    })
+    registrar(source, raws, fetcher.stats, Math.round((Date.now() - empezada) / 1000), fetcher.delayMs)
   }
 
   // Un mismo anuncio puede llegar por dos vías dentro de la misma fuente.
@@ -496,6 +537,10 @@ async function run() {
     `   archivo histórico: ${archive.entries.length} anuncios` +
       ` (${archive.added} nuevos, ${archive.updated} actualizados)`,
   )
+
+  // El día queda cerrado: el punto de guardado ya no hace falta y no debe
+  // arrastrarse a mañana.
+  await rm(join(CACHE_DIR, today), { recursive: true, force: true })
 
   await writeJson(INVENTORY_FILE, { updatedAt: daily.generatedAt, listings })
   await writeJson(OVER_BUDGET_FILE, {
