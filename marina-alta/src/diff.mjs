@@ -63,6 +63,10 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
     inventory.push(merged)
   }
 
+  // Direcciones que esta pasada sí ha visto, para no dar por retirado un
+  // anuncio que sigue ahí con otra identidad.
+  const vivasPorUrl = new Set(currentList.map((item) => item.url))
+
   for (const [id, old] of previous) {
     if (current.has(id)) continue
 
@@ -77,7 +81,17 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
     const missingRuns = (old.missingRuns ?? 0) + 1
     if (missingRuns >= MISSING_RUNS_BEFORE_REMOVED) {
       // Se anota la baja una sola vez y deja de arrastrarse el inventario.
-      if (old.status !== 'removed') removals.push({ ...old, removedOn: today })
+      //
+      // Salvo que la misma dirección siga en el inventario con otra identidad:
+      // entonces no se ha retirado nada, es una copia que se queda sin usar.
+      // Pasa cuando una agencia reescribe la referencia de la que sale el
+      // identificador —Grupo García lo hizo dos veces— y la misma parcela
+      // acaba entrando varias veces. La copia vieja se va en silencio; decir
+      // que el anuncio se ha retirado sería falso, y además aparecería a la vez
+      // como retirado y a la venta.
+      if (old.status !== 'removed' && !vivasPorUrl.has(old.url)) {
+        removals.push({ ...old, removedOn: today })
+      }
       continue
     }
     inventory.push({ ...old, missingRuns, status: 'stale' })

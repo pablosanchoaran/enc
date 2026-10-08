@@ -34,6 +34,24 @@ function decimalArea(value) {
   return Number.isFinite(number) && number > 0 ? Math.round(number) : null
 }
 
+/**
+ * El identificador que estas webs pegan al final de la URL
+ * (`.../super-parcela-en-venta-en-javea-7224512/`). Es la identidad estable de
+ * la ficha, y hace falta porque `property_ref` no lo es: Grupo García lo
+ * reescribe cada pocas semanas, y con él la misma parcela entró tres veces en
+ * el inventario —una por cada referencia que tuvo— y las copias viejas se
+ * fueron dando de baja solas como si se hubieran retirado.
+ */
+export function idFromUrl(url) {
+  try {
+    const last = new URL(url).pathname.replace(/\/$/, '').split('/').pop() ?? ''
+    const token = last.split('-').pop() ?? ''
+    return /^\d{4,}$/.test(token) ? token : null
+  } catch {
+    return null
+  }
+}
+
 function toListing(record) {
   const price = parsePrice(meta(record, 'property_price'))
   const title = record.title?.rendered?.trim() || null
@@ -43,7 +61,8 @@ function toListing(record) {
   const type = meta(record, 'property_type')
 
   return {
-    sourceRef: meta(record, 'property_ref') ?? String(record.id),
+    // La URL manda: `property_ref` cambia, la dirección de la ficha no.
+    sourceRef: idFromUrl(record.link) ?? meta(record, 'property_ref') ?? String(record.id),
     url: record.link,
     title,
     price,

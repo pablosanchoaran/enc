@@ -175,12 +175,36 @@ async function run() {
   const enAmbito = (item) =>
     MUNICIPALITY_NAMES.includes(item.municipality) &&
     !(detectMunicipality(item.title) === null && namesExcludedPlace(item.title))
-  const previousListings = (inventory.listings ?? []).filter(enAmbito)
-  const expulsados = (inventory.listings ?? []).length - previousListings.length
-  if (expulsados > 0) {
-    log(`  ${expulsados} anuncios del inventario quedan fuera del ámbito actual`)
-    // Se guarda ya podado: si no, el parte del día seguiría contándolos y
-    // habría que esperar a un rastreo completo para verlo limpio.
+  const enAmbitoListings = (inventory.listings ?? []).filter(enAmbito)
+
+  // Una dirección, un anuncio. Si hay dos entradas con la misma URL es que la
+  // agencia cambió la referencia de la que sale el identificador y la misma
+  // casa entró otra vez: se conserva la que más historia tiene y se tira la
+  // copia. Grupo García lo hizo dos veces y la misma parcela de Jávea llegó a
+  // estar tres veces contada.
+  const porUrl = new Map()
+  for (const item of enAmbitoListings) {
+    const previo = porUrl.get(item.url)
+    if (!previo) {
+      porUrl.set(item.url, item)
+      continue
+    }
+    const gana =
+      (previo.priceHistory?.length ?? 0) >= (item.priceHistory?.length ?? 0) ? previo : item
+    porUrl.set(item.url, {
+      ...gana,
+      firstSeen: [previo.firstSeen, item.firstSeen].filter(Boolean).sort()[0] ?? gana.firstSeen,
+    })
+  }
+  const duplicadas = enAmbitoListings.length - porUrl.size
+  if (duplicadas > 0) log(`  ${duplicadas} copias de la misma dirección se funden en una`)
+
+  const previousListings = [...porUrl.values()]
+  const expulsados = (inventory.listings ?? []).length - enAmbitoListings.length
+  if (expulsados > 0) log(`  ${expulsados} anuncios del inventario quedan fuera del ámbito actual`)
+  // Se guarda ya podado y sin copias: si no, el parte del día seguiría
+  // contándolas y habría que esperar a un rastreo completo para verlo limpio.
+  if (expulsados > 0 || duplicadas > 0) {
     await writeJson(INVENTORY_FILE, { ...inventory, listings: previousListings })
   }
 
@@ -216,7 +240,11 @@ async function run() {
       additions: guardado.additions.filter(enAmbito),
       priceDrops: guardado.priceDrops.filter(enAmbito),
       priceRises: guardado.priceRises.filter(enAmbito),
-      removals: guardado.removals.filter(enAmbito),
+      // Y una retirada cuya dirección sigue en el inventario no era una
+      // retirada: era una copia que se quedó sin usar.
+      removals: guardado.removals
+        .filter(enAmbito)
+        .filter((item) => !previousListings.some((vivo) => vivo.url === item.url)),
     }
     daily.totals = {
       ...daily.totals,

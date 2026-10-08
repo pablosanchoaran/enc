@@ -5,6 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { diffInventory } from '../src/diff.mjs'
+import { idFromUrl } from '../src/adapters/wordpress.mjs'
 import * as listado from '../src/adapters/listado.mjs'
 import * as sooprema from '../src/adapters/sooprema.mjs'
 import {
@@ -898,4 +899,42 @@ test('las reglas repetidas del mismo user-agent se juntan', async () => {
   assert.equal(isAllowed(robots, '/admin/'), false, 'y las reglas del primero siguen valiendo')
   assert.equal(isAllowed(robots, '/propiedades/venta/todas/'), true)
   assert.equal(robots.blockedAll, false, 'el Disallow de HTTrack no es nuestro')
+})
+
+test('un anuncio que sigue a la venta no se retira por cambiar de referencia', () => {
+  // Grupo García reescribe su `property_ref`, de donde salía el identificador,
+  // así que la misma parcela de Jávea llegó a estar tres veces en el
+  // inventario. Las copias viejas dejaron de recogerse y a los siete fallos se
+  // informaron como retiradas, estando el anuncio a la venta y en el inventario
+  // bajo otra identidad: habría salido a la vez como retirado y disponible.
+  const url = 'https://a.test/properties/parcela-en-javea-7224512/'
+  const vieja = {
+    id: 'gg:referencia-vieja',
+    url,
+    price: 150000,
+    firstSeen: '2026-09-01',
+    lastSeen: '2026-09-01',
+    missingRuns: 6,
+    status: 'stale',
+  }
+  const nueva = { ...vieja, id: 'gg:referencia-nueva', firstSeen: '2026-10-05' }
+
+  const r = diffInventory([vieja, nueva], [nueva], '2026-10-08')
+  assert.deepEqual(r.removals, [], 'la dirección sigue viva: no hay retirada')
+
+  // Y cuando de verdad desaparece, sí se informa.
+  const otra = { ...vieja, id: 'gg:otra', url: 'https://a.test/properties/casa-9999/' }
+  const r2 = diffInventory([otra], [], '2026-10-08')
+  assert.deepEqual(r2.removals.map((i) => i.id), ['gg:otra'])
+})
+
+test('la identidad de una ficha de WordPress sale de su URL', () => {
+  // `property_ref` no vale: la agencia lo reescribe. El número del final de la
+  // URL no cambia.
+  assert.equal(idFromUrl('https://a.test/properties/super-parcela-en-javea-7224512/'), '7224512')
+  assert.equal(idFromUrl('https://a.test/properties/bungalow-en-jalon-23393872/'), '23393872')
+  // Sin número al final no hay identidad que sacar de aquí.
+  assert.equal(idFromUrl('https://a.test/properties/casa-en-denia/'), null)
+  assert.equal(idFromUrl('https://a.test/properties/piso-2/'), null, 'demasiado corto')
+  assert.equal(idFromUrl('no es una url'), null)
 })
