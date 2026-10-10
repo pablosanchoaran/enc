@@ -21,6 +21,16 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
   const previous = new Map(previousList.map((item) => [item.id, item]))
   const current = new Map(currentList.map((item) => [item.id, item]))
 
+  // Direcciones que ya estaban en el inventario. Sirven para no confundir un
+  // cambio de identidad con una novedad del mercado: cuando una agencia
+  // reescribe la referencia de la que sale el identificador, la misma casa
+  // vuelve a entrar con otro id, y el 10/10 las diecinueve de Grupo García
+  // salieron como altas del día. Un anuncio que ya conocíamos por su dirección
+  // no es una alta por mucho que haya cambiado de nombre.
+  const conocidasPorUrl = new Set(previousList.map((item) => item.url))
+  /** Entradas viejas a las que una identidad nueva ha relevado. */
+  const relevadas = new Set()
+
   const additions = []
   const priceChanges = []
   const removals = []
@@ -30,6 +40,24 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
     const old = previous.get(id)
 
     if (!old) {
+      // Lo nuevo de verdad va al parte del día; lo que solo ha cambiado de
+      // identidad entra en el inventario sin anunciarse, y hereda la fecha en
+      // que se vio por primera vez para no parecer recién publicado.
+      const antigua = conocidasPorUrl.has(fresh.url)
+        ? previousList.find((item) => item.url === fresh.url)
+        : null
+      if (antigua) {
+        inventory.push({
+          ...fresh,
+          firstSeen: antigua.firstSeen ?? fresh.firstSeen,
+          priceHistory: antigua.priceHistory ?? fresh.priceHistory ?? [],
+        })
+        // La entrada vieja queda relevada: se va sin dar de baja nada, porque
+        // el anuncio sigue ahí con la identidad nueva. Si se quedara, el
+        // inventario contaría dos veces la misma casa para siempre.
+        relevadas.add(antigua.id)
+        continue
+      }
       additions.push(fresh)
       inventory.push(fresh)
       continue
@@ -69,6 +97,7 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
 
   for (const [id, old] of previous) {
     if (current.has(id)) continue
+    if (relevadas.has(id)) continue
 
     // Lo que no se ha llegado a mirar se queda como estaba: ni suma un fallo
     // ni se acerca a la baja. Si no, un presupuesto de refresco corto acabaría

@@ -938,3 +938,32 @@ test('la identidad de una ficha de WordPress sale de su URL', () => {
   assert.equal(idFromUrl('https://a.test/properties/piso-2/'), null, 'demasiado corto')
   assert.equal(idFromUrl('no es una url'), null)
 })
+
+test('cambiar de referencia no es una alta ni deja un duplicado', () => {
+  // Al arreglar la identidad de Grupo García, sus diecinueve anuncios entraron
+  // con un id nuevo: el parte del 10/10 los dio como altas del día y el
+  // inventario se quedó con la casa contada dos veces. Un anuncio que ya
+  // conocíamos por su dirección no es nuevo por haber cambiado de nombre.
+  const url = 'https://a.test/properties/parcela-en-javea-7224512/'
+  const antigua = {
+    id: 'gg:ref-vieja',
+    url,
+    price: 150000,
+    firstSeen: '2026-09-01',
+    lastSeen: '2026-10-08',
+    priceHistory: [{ date: '2026-09-01', price: 154000 }],
+  }
+  const nueva = { id: 'gg:ref-nueva', url, price: 150000, firstSeen: '2026-10-10' }
+
+  const r = diffInventory([antigua], [nueva], '2026-10-10')
+  assert.deepEqual(r.additions, [], 'no es una alta: ya lo conocíamos')
+  assert.deepEqual(r.removals, [], 'ni una retirada: el anuncio sigue ahí')
+  assert.equal(r.inventory.length, 1, 'una casa, una entrada')
+  assert.equal(r.inventory[0].id, 'gg:ref-nueva', 'manda la identidad nueva')
+  assert.equal(r.inventory[0].firstSeen, '2026-09-01', 'conserva cuándo se vio por primera vez')
+  assert.equal(r.inventory[0].priceHistory.length, 1, 'y su historia de precios')
+
+  // Una dirección que no conocíamos sí es una alta.
+  const otra = { id: 'gg:otra', url: 'https://a.test/properties/casa-9999/', price: 200000 }
+  assert.deepEqual(diffInventory([], [otra], '2026-10-10').additions.map((i) => i.id), ['gg:otra'])
+})
