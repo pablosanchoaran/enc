@@ -1,8 +1,11 @@
 name: Novedades inmobiliarias Marina Alta
 
 on:
+  # El cron queda documentado, pero no dispara: GitHub solo ejecuta
+  # `schedule` desde la rama por defecto y este fichero vive en la rama de
+  # trabajo. La actualización diaria la hace una Routine de Claude a las 8:00,
+  # que además publica el artefacto —cosa que Actions no puede hacer—.
   schedule:
-    # 05:00 UTC = 07:00 en horario de verano peninsular, 06:00 en invierno.
     - cron: '0 5 * * *'
   workflow_dispatch:
 
@@ -16,7 +19,9 @@ concurrency:
 jobs:
   extract:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Dos horas y media: el rastreo completo ronda las dos, casi todo espera
+    # del crawl-delay de 14 segundos que piden cuatro de las webs.
+    timeout-minutes: 150
     defaults:
       run:
         working-directory: marina-alta
