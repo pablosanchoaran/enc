@@ -9,6 +9,7 @@ const DEFAULT_DELAY_MS = 1000
 
 function parseRobots(text) {
   const groups = []
+  const sitemaps = []
   let current = null
   let lastWasAgent = false
 
@@ -18,6 +19,17 @@ function parseRobots(text) {
     const [rawField, ...rest] = line.split(':')
     const field = rawField.trim().toLowerCase()
     const value = rest.join(':').trim()
+
+    // `Sitemap` no pertenece a ningún grupo: vale para todos y puede aparecer
+    // en cualquier punto del fichero. Es la forma estándar de decir dónde está
+    // el índice, y hace falta porque no todas las webs lo ponen en
+    // `/sitemap.xml`: Casas Ambiente lo publica en `/sitemap-index.xml` y ahí
+    // el camino por defecto da 404.
+    if (field === 'sitemap' && value) {
+      sitemaps.push(value)
+      lastWasAgent = false
+      continue
+    }
 
     if (field === 'user-agent') {
       // Varios User-agent seguidos comparten el mismo bloque de reglas.
@@ -39,7 +51,7 @@ function parseRobots(text) {
       if (Number.isFinite(seconds)) current.crawlDelay = seconds * 1000
     }
   }
-  return groups
+  return { groups, sitemaps }
 }
 
 /** Convierte un patrón de robots.txt (con * y $) en expresión regular. */
@@ -85,7 +97,7 @@ function selectGroup(groups, userAgent) {
 export async function loadRobots(origin, { userAgent, fetchImpl = fetch } = {}) {
   if (CACHE.has(origin)) return CACHE.get(origin)
 
-  const entry = { groups: [], group: null, reachable: false, blockedAll: false }
+  const entry = { groups: [], group: null, sitemaps: [], reachable: false, blockedAll: false }
   try {
     const response = await fetchImpl(`${origin}/robots.txt`, {
       headers: { 'user-agent': userAgent, accept: 'text/plain' },
@@ -94,7 +106,9 @@ export async function loadRobots(origin, { userAgent, fetchImpl = fetch } = {}) 
     if (response.status >= 400 && response.status < 500 && response.status !== 429) {
       entry.reachable = true
     } else if (response.ok) {
-      entry.groups = parseRobots(await response.text())
+      const parsed = parseRobots(await response.text())
+      entry.groups = parsed.groups
+      entry.sitemaps = parsed.sitemaps
       entry.group = selectGroup(entry.groups, userAgent)
       entry.reachable = true
       entry.blockedAll = Boolean(

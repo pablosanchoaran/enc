@@ -54,7 +54,13 @@ function isPropertyUrl(url) {
 /** Recorre el sitemap, siguiendo un nivel de índice si lo hubiera. */
 async function collectSitemapEntries(fetcher, origin) {
   const entries = []
-  const root = await fetcher.get(`${origin}/sitemap.xml`, { accept: 'application/xml' })
+  // Primero donde la web dice que está, y `/sitemap.xml` como respaldo.
+  const candidatos = [...(fetcher.declaredSitemaps ?? []), `${origin}/sitemap.xml`]
+  let root = null
+  for (const candidato of candidatos) {
+    root = await fetcher.get(candidato, { accept: 'application/xml' })
+    if (root) break
+  }
   if (!root) return entries
 
   for (const entry of parseSitemap(root)) {
@@ -128,13 +134,22 @@ function readLabelledFeatures($, target) {
  * como estaba.
  */
 export function referenceFromSlug(url) {
-  let last
+  let segments
   try {
-    last = new URL(url).pathname.replace(/\/$/, '').split('/').pop() ?? ''
+    segments = new URL(url).pathname.replace(/\/$/, '').split('/').filter(Boolean)
   } catch {
     return null
   }
-  const token = last.split('-').pop() ?? ''
+
+  // Hay webs que ponen el identificador en su propia carpeta, antes del slug:
+  // Casas Ambiente publica `/property/15179/terraced-house-.../` y
+  // `/es/propiedad/15179/adosado-.../`. Es mejor referencia que el final del
+  // slug, porque es la misma en los cinco idiomas y aguanta que reescriban el
+  // texto de la dirección.
+  const enLaRuta = segments.slice(0, -1).find((segment) => /^\d{3,}$/.test(segment))
+  if (enLaRuta) return enLaRuta
+
+  const token = (segments.at(-1) ?? '').split('-').pop() ?? ''
   return token.length >= 3 && /\d/.test(token) ? token.toLowerCase() : null
 }
 

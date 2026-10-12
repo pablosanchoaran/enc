@@ -15,6 +15,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { Fetcher } from './fetcher.mjs'
+import { confirmRemovals } from './confirm-removals.mjs'
 import { diffInventory } from './diff.mjs'
 import { updateArchive } from './archive.mjs'
 import { capturePhotos, copyPhotosToSite, loadThumbnails } from './photos.mjs'
@@ -76,6 +77,7 @@ function parseArgs(argv) {
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i]
     if (arg === '--dry-run') args.dryRun = true
+    else if (arg === '--skip-confirm') args.skipConfirm = true
     else if (arg === '--report-only') args.reportOnly = true
     else if (arg === '--source') args.source = argv[++i]
     // Vuelve a descargar todas las fichas conocidas, sin fiarse del lastmod.
@@ -407,7 +409,10 @@ async function run() {
         for (const url of checked) checkedUrls.add(url)
         sourcesReportingChecked.add(source.id)
       }
-      await writeJson(cacheFile, {
+      // Una pasada en seco no deja punto de guardado: es para probar, y si lo
+      // escribiera, el rastreo de verdad daría por hecha una fuente que solo
+      // se miró a medias — o con `--limit`, a una fracción.
+      if (!args.dryRun && args.limit === undefined) await writeJson(cacheFile, {
         raws,
         checked,
         reportsChecked: Boolean(checked),
@@ -465,6 +470,38 @@ async function run() {
   if (checked) for (const item of comparable) if (catalogoCompleto(item)) checked.add(item.url)
 
   const result = diffInventory(comparable, deduped, today, { checkedUrls: checked })
+
+  // Antes de dar nada por retirado, se llama a su propia ficha. Es la
+  // comprobación que se venía haciendo a mano todos los días, y la que ha
+  // cazado las bajas falsas de este mes: precios ocultos tras un "Consultar",
+  // rutas que cambiaron, copias con otra identidad y una ficha que el barrido
+  // se saltó siete pasadas. Lo que siga respondiendo y a la venta vuelve al
+  // inventario.
+  const fetchersPorOrigen = new Map()
+  const fetcherFor = async (origin) => {
+    if (!fetchersPorOrigen.has(origin)) {
+      const nuevo = new Fetcher({ origin })
+      await nuevo.init()
+      fetchersPorOrigen.set(origin, nuevo.disallowedEntirely ? null : nuevo)
+    }
+    return fetchersPorOrigen.get(origin)
+  }
+
+  if (result.removals.length > 0 && !args.skipConfirm) {
+    log(`\ncomprobando ${result.removals.length} bajas contra su propia ficha`)
+    const { confirmed, alive } = await confirmRemovals(result.removals, fetcherFor, {
+      adapters: ADAPTERS,
+      sourceById: Object.fromEntries(catalog.sources.map((item) => [item.id, item])),
+      maxPrice,
+      log,
+    })
+    result.removals = confirmed
+    // Vuelven con el contador a cero: hoy se ha visto que siguen en pie.
+    for (const item of alive) {
+      result.inventory.push({ ...item, lastSeen: today, missingRuns: 0, status: 'active' })
+    }
+  }
+
   const listings = [...result.inventory, ...untouched]
 
   // La primera vez que se rastrea una fuente, su catálogo entero aparecería

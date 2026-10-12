@@ -4,6 +4,7 @@ import test from 'node:test'
 import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
+import { confirmRemovals } from '../src/confirm-removals.mjs'
 import { diffInventory } from '../src/diff.mjs'
 import { idFromUrl } from '../src/adapters/wordpress.mjs'
 import * as listado from '../src/adapters/listado.mjs'
@@ -966,4 +967,47 @@ test('cambiar de referencia no es una alta ni deja un duplicado', () => {
   // Una dirección que no conocíamos sí es una alta.
   const otra = { id: 'gg:otra', url: 'https://a.test/properties/casa-9999/', price: 200000 }
   assert.deepEqual(diffInventory([], [otra], '2026-10-10').additions.map((i) => i.id), ['gg:otra'])
+})
+
+test('antes de dar de baja un anuncio se llama a su ficha', async () => {
+  // Es la comprobación que se hacía a mano cada día. En un mes ha hecho falta
+  // cuatro veces: fichas que ocultaron el precio tras un "Consultar", URLs que
+  // cambiaron de ruta, copias con otra identidad y una ficha que el barrido se
+  // saltó siete pasadas seguidas.
+  const baja = (id, url, price = 200000) => ({ id, url, price, source: 'agencia' })
+  const paginas = {
+    'https://a.test/venta/viva-c1/': '<h1>Casa en Ondara</h1><div class="precio">195.000 €</div>',
+    'https://a.test/venta/consultar-c2/': '<h1>Casa en Ondara</h1><div class="precio">Consultar</div>',
+    'https://a.test/venta/cara-c3/': '<h1>Casa en Ondara</h1><div class="precio">480.000 €</div>',
+  }
+  const fetcher = { get: async (url) => paginas[url] ?? null }
+
+  const { confirmed, alive } = await confirmRemovals(
+    [
+      baja('a', 'https://a.test/venta/viva-c1/'),
+      baja('b', 'https://a.test/venta/consultar-c2/'),
+      baja('c', 'https://a.test/venta/cara-c3/'),
+      baja('d', 'https://a.test/venta/404-c4/'),
+    ],
+    async () => fetcher,
+    {
+      adapters: { listado },
+      sourceById: { agencia: { id: 'agencia', adapter: 'listado' } },
+      maxPrice: 350000,
+      log: () => {},
+    },
+  )
+
+  assert.deepEqual(confirmed.map((i) => i.id), ['c', 'd'], 'la cara y la que no responde')
+  assert.deepEqual(alive.map((i) => i.id), ['a', 'b'], 'la viva y la de precio a consultar')
+  assert.equal(alive[0].price, 195000, 'y de paso se recoge su precio de hoy')
+
+  // Sin fetcher para ese dominio —robots.txt lo prohíbe— no se inventa nada:
+  // la baja se confirma, que es lo que hacía antes de existir esto.
+  const sinAcceso = await confirmRemovals([baja('e', 'https://b.test/x/')], async () => null, {
+    adapters: { listado },
+    sourceById: { agencia: { id: 'agencia', adapter: 'listado' } },
+    log: () => {},
+  })
+  assert.deepEqual(sinAcceso.confirmed.map((i) => i.id), ['e'])
 })

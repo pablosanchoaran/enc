@@ -65,6 +65,11 @@ export class Fetcher {
     return this.robots
   }
 
+  /** Los sitemaps que declara su robots.txt, si declara alguno. */
+  get declaredSitemaps() {
+    return this.robots?.sitemaps ?? []
+  }
+
   get disallowedEntirely() {
     return !this.robots?.reachable || this.robots.blockedAll
   }
