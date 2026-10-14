@@ -162,6 +162,10 @@ async function run() {
   const today = new Date().toISOString().slice(0, 10)
   const log = (message) => console.log(message)
 
+  const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
+  const maxPrice = catalog.config?.maxPrice ?? Infinity
+  const catalogoPorId = new Map(catalog.sources.map((source) => [source.id, source]))
+
   const inventory = await readJson(INVENTORY_FILE, { updatedAt: null, listings: [] })
 
   // El inventario guarda anuncios ya normalizados, así que un cambio en las
@@ -177,7 +181,24 @@ async function run() {
   const enAmbito = (item) =>
     MUNICIPALITY_NAMES.includes(item.municipality) &&
     !(detectMunicipality(item.title) === null && namesExcludedPlace(item.title))
-  const enAmbitoListings = (inventory.listings ?? []).filter(enAmbito)
+  // Lo que su propia fuente ya no considera una ficha tampoco pinta nada en el
+  // inventario. Hace falta porque `excludeUrlPattern` solo filtra lo que se
+  // rastrea hoy, y lo que entró antes de declararlo se quedaría dentro: el
+  // sitemap de Casas Ambiente mezcla fichas con páginas de categoría, y esas
+  // traen un precio que no es de ninguna vivienda.
+  const excluidaPorSuFuente = (item) => {
+    const pattern = catalogoPorId.get(item.source)?.excludeUrlPattern
+    if (!pattern) return false
+    try {
+      return new RegExp(pattern).test(new URL(item.url).pathname)
+    } catch {
+      return false
+    }
+  }
+
+  const enAmbitoListings = (inventory.listings ?? []).filter(
+    (item) => enAmbito(item) && !excluidaPorSuFuente(item),
+  )
 
   // Una dirección, un anuncio. Si hay dos entradas con la misma URL es que la
   // agencia cambió la referencia de la que sale el identificador y la misma
@@ -237,15 +258,18 @@ async function run() {
     // Las novedades de aquel día se filtran con el ámbito de hoy: al retirar un
     // municipio, sus altas y sus bajadas de precio tienen que irse del informe
     // igual que sus anuncios.
+    // Se filtra con las reglas de hoy, las mismas que el inventario: lo que ya
+    // no cuenta como anuncio tampoco cuenta como novedad del día.
+    const vigente = (item) => enAmbito(item) && !excluidaPorSuFuente(item)
     const daily = {
       ...guardado,
-      additions: guardado.additions.filter(enAmbito),
-      priceDrops: guardado.priceDrops.filter(enAmbito),
-      priceRises: guardado.priceRises.filter(enAmbito),
+      additions: guardado.additions.filter(vigente),
+      priceDrops: guardado.priceDrops.filter(vigente),
+      priceRises: guardado.priceRises.filter(vigente),
       // Y una retirada cuya dirección sigue en el inventario no era una
       // retirada: era una copia que se quedó sin usar.
       removals: guardado.removals
-        .filter(enAmbito)
+        .filter(vigente)
         .filter((item) => !previousListings.some((vivo) => vivo.url === item.url)),
     }
     daily.totals = {
@@ -256,15 +280,12 @@ async function run() {
       priceRises: daily.priceRises.length,
       removals: daily.removals.length,
     }
-    const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
     const techo = catalog.config?.maxPrice
     await writeReport({ daily, listings: previousListings, maxPrice: techo, log })
     await writeSite({ daily, listings: previousListings, maxPrice: techo, log })
     return
   }
 
-  const catalog = await readJson(join(ROOT, 'sources', 'agencies.json'), { sources: [] })
-  const maxPrice = catalog.config?.maxPrice ?? Infinity
   const sources = catalog.sources.filter((source) => {
     if (!source.enabled) return false
     if (!args.source) return true

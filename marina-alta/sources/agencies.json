@@ -298,7 +298,8 @@
       "agency": "Casas Ambiente",
       "origin": "https://casas-ambiente.com",
       "enabled": true,
-      "notes": "Moraira y Jávea. 397 fichas, casi todas villas de precio alto; su identificador va en la ruta."
+      "notes": "Moraira y Jávea. Su identificador va en la ruta. El sitemap mezcla fichas con páginas de categoría (`/propiedad/15417/villas-chalets/reventas/espana/...`), que traen un precio que no es de ninguna vivienda: una ficha no lleva nada detrás de su slug, y eso es lo que distingue excludeUrlPattern.",
+      "excludeUrlPattern": "^/(?:[a-z]{2}/)?[^/]+/[0-9]+/[^/]+/[^/]"
     }
   ]
 }
