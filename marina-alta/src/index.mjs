@@ -370,14 +370,28 @@ async function run() {
     })
   }
 
-  for (const source of sources) {
+  /**
+   * Recoge una fuente. Se escribe como función y no como cuerpo de un bucle
+   * porque las fuentes se rastrean varias a la vez: así el rastreo dura lo que
+   * la más lenta y no la suma de todas.
+   *
+   * El log de cada fuente se junta en un búfer y se vuelca de golpe al acabar.
+   * Si cada línea saliera cuando toca, cuatro fuentes a la vez dejarían el log
+   * entrelazado e ilegible, y ese log es lo primero que se mira cuando algo
+   * falla.
+   */
+  const recogerFuente = async (source) => {
+    const lineas = []
+    const log = (message) => lineas.push(message)
+    const volcar = () => console.log([`\n▸ ${source.agency} (${source.id})`, ...lineas].join('\n'))
+
     const adapter = ADAPTERS[source.adapter]
     if (!adapter) {
-      log(`⚠ fuente ${source.id}: adaptador "${source.adapter}" desconocido`)
-      continue
+      log(`⚠ adaptador "${source.adapter}" desconocido`)
+      volcar()
+      return
     }
 
-    log(`\n▸ ${source.agency} (${source.id})`)
     const empezada = Date.now()
 
     // ¿Se recogió ya hoy? Entonces no se vuelve a pedir nada a la web.
@@ -388,7 +402,8 @@ async function run() {
       for (const url of guardada.checked ?? []) checkedUrls.add(url)
       if (guardada.reportsChecked) sourcesReportingChecked.add(source.id)
       registrar(source, guardada.raws, guardada.stats, guardada.seconds, guardada.delayMs)
-      continue
+      volcar()
+      return
     }
 
     const fetcher = new Fetcher({ origin: source.origin })
@@ -405,7 +420,8 @@ async function run() {
           : '  no se ha podido leer su robots.txt: se omite por hoy',
       )
       sourceReports.push({ id: source.id, agency: source.agency, listings: 0, status: 'robots' })
-      continue
+      volcar()
+      return
     }
 
     let raws = []
@@ -417,7 +433,11 @@ async function run() {
         log,
         limit: args.limit,
         feedLimit: args.feedLimit,
-        refreshBudget: args.refreshBudget,
+        // Una fuente puede pedir un presupuesto de refresco más corto. Lo
+        // hacen las que exigen catorce segundos entre peticiones: refrescar su
+        // catálogo entero cada día cuesta más de lo que vale, y repartido en
+        // una semana se enteran igual de las bajadas de precio.
+        refreshBudget: source.refreshBudget ?? args.refreshBudget,
         maxPrice,
       })
       // Un adaptador puede devolver solo los anuncios, o además el conjunto de
@@ -450,11 +470,29 @@ async function run() {
         status: 'error',
         error: error.message,
       })
-      continue
+      volcar()
+      return
     }
 
     registrar(source, raws, fetcher.stats, Math.round((Date.now() - empezada) / 1000), fetcher.delayMs)
+    volcar()
   }
+
+  /**
+   * Cuántas fuentes se rastrean a la vez. Cada web tiene su propia cola y su
+   * propio crawl-delay, así que ninguna recibe nada más rápido de lo que pide:
+   * lo que desaparece es el tiempo que se pasaba esperando a una web con el
+   * resto paradas. Secuencialmente el rastreo eran 111 minutos, y nueve de las
+   * webs piden catorce segundos entre peticiones.
+   */
+  const A_LA_VEZ = 6
+
+  const pendientes = [...sources]
+  await Promise.all(
+    Array.from({ length: Math.min(A_LA_VEZ, pendientes.length) }, async () => {
+      while (pendientes.length > 0) await recogerFuente(pendientes.shift())
+    }),
+  )
 
   // Un mismo anuncio puede llegar por dos vías dentro de la misma fuente.
   const deduped = [...new Map(collected.map((item) => [item.id, item])).values()]

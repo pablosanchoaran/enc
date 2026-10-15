@@ -26,7 +26,8 @@
       "adapter": "sooprema",
       "agency": "MLS Dénia",
       "origin": "https://www.mlsdenia.com",
-      "enabled": true
+      "enabled": true,
+      "refreshBudget": 10
     },
     {
       "id": "denialara",
@@ -37,7 +38,8 @@
         "https://www.denialara.com/propiedades/venta/todas/"
       ],
       "enabled": true,
-      "notes": "Sin sitemap.xml y con la paginación prohibida en su robots.txt: se recoge la primera página del listado de venta."
+      "notes": "Sin sitemap.xml y con la paginación prohibida en su robots.txt: se recoge la primera página del listado de venta.",
+      "refreshBudget": 10
     },
     {
       "id": "llobell",
@@ -47,7 +49,8 @@
       "listingUrls": [
         "https://www.llobellinmobiliaris.com/propiedades/venta/todas/"
       ],
-      "enabled": true
+      "enabled": true,
+      "refreshBudget": 10
     },
     {
       "id": "lyt",
@@ -73,7 +76,8 @@
       "adapter": "sooprema",
       "agency": "InmoXara",
       "origin": "https://www.inmoxara.es",
-      "enabled": true
+      "enabled": true,
+      "refreshBudget": 10
     },
     {
       "id": "daniamed",
@@ -98,7 +102,8 @@
         "https://www.calablanca.com/propiedades/venta/todas/"
       ],
       "enabled": true,
-      "notes": "Mismo caso que Denialara."
+      "notes": "Mismo caso que Denialara.",
+      "refreshBudget": 10
     },
     {
       "id": "catorceinmo",
@@ -109,7 +114,8 @@
         "https://www.catorceinmo.com/propiedades/venta/todas/"
       ],
       "enabled": true,
-      "notes": "Dénia, Jávea y La Sella. Segunda mano: la que más vivienda por debajo de 260.000 € tiene."
+      "notes": "Dénia, Jávea y La Sella. Segunda mano: la que más vivienda por debajo de 260.000 € tiene.",
+      "refreshBudget": 10
     },
     {
       "id": "tododenia",
@@ -117,7 +123,8 @@
       "agency": "Tododenia-inmo",
       "origin": "https://www.tododenia-inmo.com",
       "enabled": true,
-      "notes": "Dénia."
+      "notes": "Dénia.",
+      "refreshBudget": 10
     },
     {
       "id": "inmovidal",
@@ -141,7 +148,8 @@
       "agency": "Inmodemar",
       "origin": "https://www.inmodemar.com",
       "enabled": true,
-      "notes": "Dénia y Pedreguer."
+      "notes": "Dénia y Pedreguer.",
+      "refreshBudget": 10
     },
     {
       "id": "albadomus",
@@ -149,7 +157,8 @@
       "agency": "Albadomus",
       "origin": "https://www.albadomus.com",
       "enabled": true,
-      "notes": "Dénia."
+      "notes": "Dénia.",
+      "refreshBudget": 10
     },
     {
       "id": "gpereto",
