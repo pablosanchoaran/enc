@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T19:46:07.796Z",
+  "updatedAt": "2026-10-17T21:27:23.381Z",
   "entries": [
     {
       "id": "ferrando-moraira:62c2f3cc71",
@@ -1862,7 +1862,7 @@
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-10-05",
       "archivedOn": "2026-08-04T18:41:16.805Z",
-      "reason": "vendido"
+      "reason": "retirado"
     },
     {
       "id": "inmoxara:b8ce422921",
@@ -2535,7 +2535,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2567,7 +2567,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2599,7 +2599,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-04T20:30:43.271Z",
       "reason": "vendido"
     },
@@ -2791,7 +2791,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-04T20:32:06.914Z",
       "reason": "vendido"
     },
@@ -4032,7 +4032,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-21T21:16:18.971Z",
       "reason": "vendido"
     },
@@ -5197,7 +5197,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-24T20:31:47.376Z",
       "reason": "vendido"
     },
@@ -5492,7 +5492,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -5524,7 +5524,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-26T21:46:29.387Z",
       "reason": "vendido"
     },
@@ -7490,7 +7490,7 @@
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-10-05",
       "archivedOn": "2026-08-31T20:34:23.298Z",
-      "reason": "vendido"
+      "reason": "retirado"
     },
     {
       "id": "uniquehomes:0d3fec3c87",
@@ -7520,7 +7520,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7552,7 +7552,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7584,7 +7584,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7611,7 +7611,7 @@
       "photo": null,
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7643,7 +7643,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7675,7 +7675,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7707,7 +7707,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -7867,7 +7867,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-08-31T20:34:23.298Z",
       "reason": "vendido"
     },
@@ -12085,7 +12085,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-09-15T19:15:59.642Z",
       "reason": "vendido"
     },
@@ -16709,7 +16709,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-05T21:45:02.960Z",
       "reason": "vendido"
     },
@@ -24569,7 +24569,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24601,7 +24601,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24633,7 +24633,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24665,7 +24665,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24697,7 +24697,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24729,7 +24729,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -24761,7 +24761,7 @@
       },
       "saleStatus": "sold",
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "archivedOn": "2026-10-12T17:40:40.905Z",
       "reason": "vendido"
     },
@@ -37726,6 +37726,1954 @@
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-31",
       "archivedOn": "2026-10-16T19:46:07.796Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:d967ffe56b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9928175",
+      "title": "Apartamento de 1 habitación en Las Marinas / Les Marines, Dénia en venta con piscina garaje - 149.500 € (Ref: 9928175)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 149500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 149500
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 40,
+      "plotM2": null,
+      "pricePerM2": 3738,
+      "photo": {
+        "file": "thinkspain-d967ffe56b.webp",
+        "thumb": "thinkspain-d967ffe56b.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9928175/20260626111816/w1600h720/s640x480/x-284326736.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:dfbff8a8c7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8672131",
+      "title": "Apartamento de 2 habitaciones en Portichol - Balcón al Mar, Javea / Xàbia en venta con piscina - 260.000 € (Ref: 8672131)",
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 260000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3611,
+      "photo": {
+        "file": "thinkspain-dfbff8a8c7.webp",
+        "thumb": "thinkspain-dfbff8a8c7.thumb.webp",
+        "capturedAt": "2026-08-21T22:52:49.118Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25035/8672131/20260115083414/w1920h1440/s640x480/x-270599087.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:6c06bc5b79",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10095632",
+      "title": "Apartamento de 1 habitación en Javea / Xàbia en venta con piscina garaje - 279.000 € (Ref: 10095632)",
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "price": 279000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 279000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 84,
+      "plotM2": null,
+      "pricePerM2": 3321,
+      "photo": {
+        "file": "thinkspain-6c06bc5b79.webp",
+        "thumb": "thinkspain-6c06bc5b79.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/9441/10095632/20260922144838/w725h510/s640x480/x-290212543.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:bab93d72e7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9977663",
+      "title": "Apartamento de 1 habitación en Centro ciudad, Javea / Xàbia en venta con piscina garaje - 295.000 € (Ref: 9977663)",
+      "municipality": "Xàbia / Jávea",
+      "type": "apartment",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-09-17",
+          "price": 295000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-bab93d72e7.webp",
+        "thumb": "thinkspain-bab93d72e7.thumb.webp",
+        "capturedAt": "2026-09-17T18:03:34.082Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40050/9977663/20260724091733/w1152h768/s640x480/x-286003596.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-17",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:eb3522572c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8707611",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta con piscina garaje - 240.000 € (Ref: 8707611)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 240000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 240000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 81,
+      "plotM2": null,
+      "pricePerM2": 2963,
+      "photo": {
+        "file": "thinkspain-eb3522572c.webp",
+        "thumb": "thinkspain-eb3522572c.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36578/8707611/20241227000756/w1400h933/s640x480/x-244715279.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:406e3dd68b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9930498",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta - 248.000 € (Ref: 9930498)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 248000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 248000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3444,
+      "photo": {
+        "file": "thinkspain-406e3dd68b.webp",
+        "thumb": "thinkspain-406e3dd68b.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/11302/9930498/20260628031431/w1600h1200/s640x480/x-284406982.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:b6075ead8a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9816047",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta con piscina - 258.000 € (Ref: 9816047)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 258000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 279000
+        },
+        {
+          "date": "2026-08-27",
+          "price": 258000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 106,
+      "plotM2": null,
+      "pricePerM2": 2434,
+      "photo": {
+        "file": "thinkspain-b6075ead8a.webp",
+        "thumb": "thinkspain-b6075ead8a.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27803/9816047/20260506033455/w1920h1280/s640x480/x-280247013.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:12b680b32a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9895764",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta con garaje - 250.000 € (Ref: 9895764)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 2874,
+      "photo": {
+        "file": "thinkspain-12b680b32a.webp",
+        "thumb": "thinkspain-12b680b32a.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40833/9895764/20260611231838/w1920h1440/s640x480/x-283286813.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:9ff8c71789",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10133434",
+      "title": "Piso de 1 habitación en Levante - Playa Fossa, Calpe / Calp en venta con piscina garaje - 235.000 € (Ref: 10133434)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 235000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 235000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 55,
+      "plotM2": null,
+      "pricePerM2": 4273,
+      "photo": {
+        "file": "thinkspain-9ff8c71789.webp",
+        "thumb": "thinkspain-9ff8c71789.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/41490/10133434/20261005072433/w1206h667/s640x480/x-291408277.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:f13bcc3fb2",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10077362",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta - 269.999 € (Ref: 10077362)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 269999,
+      "priceHistory": [
+        {
+          "date": "2026-09-16",
+          "price": 269999
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 85,
+      "plotM2": null,
+      "pricePerM2": 3176,
+      "photo": {
+        "file": "thinkspain-f13bcc3fb2.webp",
+        "thumb": "thinkspain-f13bcc3fb2.thumb.webp",
+        "capturedAt": "2026-09-17T18:03:34.082Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5175/10077362/20260915210331/w1280h960/s640x480/x-289608255.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:706749e86e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10043573",
+      "title": "Bungalow de 3 habitaciones en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 339.000 € (Ref: 10043573)",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 339000,
+      "priceHistory": [
+        {
+          "date": "2026-09-02",
+          "price": 339000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2825,
+      "photo": {
+        "file": "thinkspain-706749e86e.webp",
+        "thumb": "thinkspain-706749e86e.thumb.webp",
+        "capturedAt": "2026-09-02T21:05:19.320Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/37233/10043573/20260902114321/w1448h1086/s640x480/x-288447348.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:48ebe340e5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9614776",
+      "title": "Apartamento de 4 habitaciones en Pueblo, Calpe / Calp en venta con piscina garaje - 245.000 € (Ref: 9614776)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 245000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 245000
+        }
+      ],
+      "beds": 4,
+      "baths": null,
+      "builtM2": 108,
+      "plotM2": null,
+      "pricePerM2": 2269,
+      "photo": {
+        "file": "thinkspain-48ebe340e5.webp",
+        "thumb": "thinkspain-48ebe340e5.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30775/9614776/20260220003816/w1600h1200/s640x480/x-273613938.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:62faeba1e8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10095994",
+      "title": "Bungalow de 1 habitación en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 200.000 € (Ref: 10095994)",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 200000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 200000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 43,
+      "plotM2": null,
+      "pricePerM2": 4651,
+      "photo": {
+        "file": "thinkspain-62faeba1e8.webp",
+        "thumb": "thinkspain-62faeba1e8.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10095994/20260922172834/w1400h933/s640x480/x-290222080.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:a4d61a766f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9930497",
+      "title": "Apartamento de 2 habitaciones en Calpe / Calp en venta con piscina garaje - 330.000 € (Ref: 9930497)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 330000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 82,
+      "plotM2": null,
+      "pricePerM2": 4024,
+      "photo": {
+        "file": "thinkspain-a4d61a766f.webp",
+        "thumb": "thinkspain-a4d61a766f.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/11302/9930497/20260628031431/w1400h1050/s640x480/x-284406962.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ab6baa6861",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10045623",
+      "title": "Chalet de 3 habitaciones en Pueblo, Calpe / Calp en venta con piscina garaje - 299.000 € (Ref: 10045623)",
+      "municipality": "Calp / Calpe",
+      "type": "villa",
+      "price": 299000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 340000
+        },
+        {
+          "date": "2026-10-05",
+          "price": 299000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 120,
+      "plotM2": null,
+      "pricePerM2": 2492,
+      "photo": {
+        "file": "thinkspain-ab6baa6861.webp",
+        "thumb": "thinkspain-ab6baa6861.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/29264/10045623/20260903092527/w1920h1280/s640x480/x-288514328.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:f2433df939",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9928441",
+      "title": "Apartamento de 1 habitación en Levante - Playa Fossa, Calpe / Calp en venta con piscina garaje - 235.000 € (Ref: 9928441)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 235000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 235000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 55,
+      "plotM2": null,
+      "pricePerM2": 4273,
+      "photo": {
+        "file": "thinkspain-f2433df939.webp",
+        "thumb": "thinkspain-f2433df939.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30912/9928441/20260626133910/w1206h667/s640x480/x-284334339.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:01b61073f9",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10095938",
+      "title": "Bungalow de 2 habitaciones en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 270.000 € (Ref: 10095938)",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 270000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 270000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 53,
+      "plotM2": null,
+      "pricePerM2": 5094,
+      "photo": {
+        "file": "thinkspain-01b61073f9.webp",
+        "thumb": "thinkspain-01b61073f9.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10095938/20260922172423/w1400h933/s640x480/x-290220978.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:1f5df8a9ea",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10029566",
+      "title": "Apartamento de 2 habitaciones en Pueblo, Calpe / Calp en venta - 310.000 € (Ref: 10029566)",
+      "municipality": "Calp / Calpe",
+      "type": "apartment",
+      "price": 310000,
+      "priceHistory": [
+        {
+          "date": "2026-08-24",
+          "price": 310000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 3523,
+      "photo": {
+        "file": "thinkspain-1f5df8a9ea.webp",
+        "thumb": "thinkspain-1f5df8a9ea.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/5673/10029566/20260824130102/w1448h1086/s640x480/x-287869443.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:0737df19da",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096165",
+      "title": "Bungalow de 1 habitación en Cometa - Carrió, Calpe / Calp en venta con piscina garaje - 180.000 € (Ref: 10096165)",
+      "municipality": "Calp / Calpe",
+      "type": "townhouse",
+      "price": 180000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 180000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 43,
+      "plotM2": null,
+      "pricePerM2": 4186,
+      "photo": {
+        "file": "thinkspain-0737df19da.webp",
+        "thumb": "thinkspain-0737df19da.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096165/20260922173919/w700h467/s640x480/x-290225369.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:3fe15270c6",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10135079",
+      "title": "Pareado de 2 habitaciones en Moraira, Teulada-Moraira en venta con piscina - 320.000 € (Ref: 10135079)",
+      "municipality": "Teulada-Moraira",
+      "type": "villa",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 320000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 138,
+      "plotM2": null,
+      "pricePerM2": 2319,
+      "photo": {
+        "file": "thinkspain-3fe15270c6.webp",
+        "thumb": "thinkspain-3fe15270c6.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27148/10135079/20261005134124/w1536h1024/s640x480/x-291468371.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:21c468490a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/5285904",
+      "title": "Solar/Parcela en Moraira, Teulada-Moraira en venta - 350.000 € (Ref: 5285904)",
+      "municipality": "Teulada-Moraira",
+      "type": "plot",
+      "price": 350000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 350000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-21c468490a.webp",
+        "thumb": "thinkspain-21c468490a.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/2151/5285904/20240807131814/w1464h1098/s640x480/x-236849956.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:357cbe9aa2",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9983979",
+      "title": "Apartamento de 2 habitaciones en Teulada Pueblo, Teulada-Moraira en venta - 220.000 € (Ref: 9983979)",
+      "municipality": "Teulada-Moraira",
+      "type": "apartment",
+      "price": 220000,
+      "priceHistory": [
+        {
+          "date": "2026-09-01",
+          "price": 220000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 3056,
+      "photo": {
+        "file": "thinkspain-357cbe9aa2.webp",
+        "thumb": "thinkspain-357cbe9aa2.thumb.webp",
+        "capturedAt": "2026-09-01T13:22:29.273Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4306/9983979/20260728150547/w800h640/s640x480/x-286210310.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ffbb0e46d8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10081483",
+      "title": "Apartamento de 3 habitaciones en Jalón / Xaló en venta - 225.000 € (Ref: 10081483)",
+      "municipality": "Xaló / Jalón",
+      "type": "apartment",
+      "price": 225000,
+      "priceHistory": [
+        {
+          "date": "2026-09-17",
+          "price": 275000
+        },
+        {
+          "date": "2026-10-05",
+          "price": 225000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 161,
+      "plotM2": null,
+      "pricePerM2": 1398,
+      "photo": {
+        "file": "thinkspain-ffbb0e46d8.webp",
+        "thumb": "thinkspain-ffbb0e46d8.thumb.webp",
+        "capturedAt": "2026-09-17T18:03:34.082Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30750/10081483/20260917073806/w1710h1140/s640x480/x-289756188.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-17",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:126691358a",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10132085",
+      "title": "Piso de 3 habitaciones en Ondara en venta - 235.000 € (Ref: 10132085)",
+      "municipality": "Ondara",
+      "type": "apartment",
+      "price": 235000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 235000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 132,
+      "plotM2": null,
+      "pricePerM2": 1780,
+      "photo": {
+        "file": "thinkspain-126691358a.webp",
+        "thumb": "thinkspain-126691358a.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27505/10132085/20261003074536/w1872h1248/s640x480/x-291350426.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:4a64a64ca0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9988804",
+      "title": "Solar/Parcela en Ondara en venta - 129.000 € (Ref: 9988804)",
+      "municipality": "Ondara",
+      "type": "plot",
+      "price": 129000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 129000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-4a64a64ca0.webp",
+        "thumb": "thinkspain-4a64a64ca0.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40882/9988804/20260730124752/w4032h3024/s640x480/x-286369705.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:558c7f8d14",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9436520",
+      "title": "Piso de 3 habitaciones en Dénia en venta - 285.000 € (Ref: 9436520)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 2908,
+      "photo": {
+        "file": "thinkspain-558c7f8d14.webp",
+        "thumb": "thinkspain-558c7f8d14.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/28788/9436520/20251204182318/w1440h1080/s640x480/x-268369990.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:3f15ef7b56",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9562605",
+      "title": "Piso de 3 habitaciones en Saladar, Dénia en venta - 285.000 € (Ref: 9562605)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 2938,
+      "photo": {
+        "file": "thinkspain-3f15ef7b56.webp",
+        "thumb": "thinkspain-3f15ef7b56.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25810/9562605/20260203121909/w1200h900/s640x480/x-272150410.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:a115faae31",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9851217",
+      "title": "Chalet de 2 habitaciones en Dénia en venta con piscina garaje - 295.000 € (Ref: 9851217)",
+      "municipality": "Dénia",
+      "type": "villa",
+      "price": 295000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 295000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 90,
+      "plotM2": null,
+      "pricePerM2": 3278,
+      "photo": {
+        "file": "thinkspain-a115faae31.webp",
+        "thumb": "thinkspain-a115faae31.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/11302/9851217/20260522031904/w1280h960/s640x480/x-281416188.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:2cb7e451d0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10085078",
+      "title": "Piso de 3 habitaciones en Saladar, Dénia en venta - 185.000 € (Ref: 10085078)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-09-17",
+          "price": 185000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 88,
+      "plotM2": null,
+      "pricePerM2": 2102,
+      "photo": {
+        "file": "thinkspain-2cb7e451d0.webp",
+        "thumb": "thinkspain-2cb7e451d0.thumb.webp",
+        "capturedAt": "2026-09-17T18:03:34.082Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/10853/10085078/20260917152143/w1600h1200/s640x480/x-289853216.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-17",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:2d05c0a148",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9897580",
+      "title": "Piso de 3 habitaciones en Saladar, Dénia en venta - 285.000 € (Ref: 9897580)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-21",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 2938,
+      "photo": {
+        "file": "thinkspain-2d05c0a148.webp",
+        "thumb": "thinkspain-2d05c0a148.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30310/9897580/20260612133336/w1500h1000/s640x480/x-283349028.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:23ecb2de9e",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10014331",
+      "title": "Apartamento de 3 habitaciones en Dénia en venta - 285.000 € (Ref: 10014331)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 2938,
+      "photo": {
+        "file": "thinkspain-23ecb2de9e.webp",
+        "thumb": "thinkspain-23ecb2de9e.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/7787/10014331/20260813112919/w1600h1200/s640x480/x-287266636.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:cda9264c9f",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9939228",
+      "title": "Apartamento de 3 habitaciones en Saladar, Dénia en venta - 285.000 € (Ref: 9939228)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 97,
+      "plotM2": null,
+      "pricePerM2": 2938,
+      "photo": {
+        "file": "thinkspain-cda9264c9f.webp",
+        "thumb": "thinkspain-cda9264c9f.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30912/9939228/20260702192156/w1600h1200/s640x480/x-284682419.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:b1e09ba870",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10044342",
+      "title": "Apartamento de 2 habitaciones en Centro Urbano, Dénia en venta - 339.000 € (Ref: 10044342)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 339000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 339000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 100,
+      "plotM2": null,
+      "pricePerM2": 3390,
+      "photo": {
+        "file": "thinkspain-b1e09ba870.webp",
+        "thumb": "thinkspain-b1e09ba870.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40882/10044342/20260903073858/w2000h1125/s640x480/x-288468382.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:d33b72186c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9939230",
+      "title": "Apartamento de 3 habitaciones en Centro Urbano, Dénia en venta - 269.900 € (Ref: 9939230)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 269900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 269900
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 93,
+      "plotM2": null,
+      "pricePerM2": 2902,
+      "photo": {
+        "file": "thinkspain-d33b72186c.webp",
+        "thumb": "thinkspain-d33b72186c.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30912/9939230/20260702192158/w1637h1200/s640x480/x-284682442.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:405518f4ee",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10049460",
+      "title": "Casa de 2 habitaciones en La Pedrera - Vessanes, Dénia en venta con piscina garaje - 336.000 € (Ref: 10049460)",
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "price": 370000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 336000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 99,
+      "plotM2": null,
+      "pricePerM2": 3394,
+      "photo": {
+        "file": "thinkspain-405518f4ee.webp",
+        "thumb": "thinkspain-405518f4ee.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/14767/10049460/20260905053734/w2000h1333/s640x480/x-288716228.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:d1293ed46b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9787950",
+      "title": "Apartamento de 3 habitaciones en Dénia en venta - 185.000 € (Ref: 9787950)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 185000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 2126,
+      "photo": {
+        "file": "thinkspain-d1293ed46b.webp",
+        "thumb": "thinkspain-d1293ed46b.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25528/9787950/20260420190903/w1024h768/s640x480/x-279216046.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:4f840da0e8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8828828",
+      "title": "Casa de 2 habitaciones en Dénia en venta con piscina garaje - 317.000 € (Ref: 8828828)",
+      "municipality": "Dénia",
+      "type": "townhouse",
+      "price": 317000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 317000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 112,
+      "plotM2": null,
+      "pricePerM2": 2830,
+      "photo": {
+        "file": "thinkspain-4f840da0e8.webp",
+        "thumb": "thinkspain-4f840da0e8.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/35340/8828828/20250223144106/w1500h749/s640x480/x-248439770.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:6f80d36e70",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9215988",
+      "title": "Apartamento de 3 habitaciones en Centro Urbano, Dénia en venta - 291.500 € (Ref: 9215988)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 291500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 291500
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 2974,
+      "photo": {
+        "file": "thinkspain-6f80d36e70.webp",
+        "thumb": "thinkspain-6f80d36e70.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9215988/20250909112700/w974h830/s640x480/x-261640567.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ab52b63bdb",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9158370",
+      "title": "Piso de 3 habitaciones en Centro Urbano, Dénia en venta - 285.000 € (Ref: 9158370)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 285000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 291500
+        },
+        {
+          "date": "2026-10-05",
+          "price": 285000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 98,
+      "plotM2": null,
+      "pricePerM2": 2908,
+      "photo": {
+        "file": "thinkspain-ab52b63bdb.webp",
+        "thumb": "thinkspain-ab52b63bdb.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/4509/9158370/20250804130207/w974h830/s640x480/x-259675833.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:0f1612b755",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9939227",
+      "title": "Ático de 2 habitaciones en La Pedrera - Vessanes, Dénia en venta con piscina garaje - 297.000 € (Ref: 9939227)",
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "price": 297000,
+      "priceHistory": [
+        {
+          "date": "2026-08-04",
+          "price": 295000
+        },
+        {
+          "date": "2026-10-05",
+          "price": 297000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 113,
+      "plotM2": null,
+      "pricePerM2": 2628,
+      "photo": {
+        "file": "thinkspain-0f1612b755.webp",
+        "thumb": "thinkspain-0f1612b755.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30912/9939227/20260702192157/w1600h1200/s640x480/x-284682402.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:efa0df064b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10014338",
+      "title": "Apartamento de 3 habitaciones en Dénia en venta - 269.900 € (Ref: 10014338)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 269900,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 269900
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 93,
+      "plotM2": null,
+      "pricePerM2": 2902,
+      "photo": {
+        "file": "thinkspain-efa0df064b.webp",
+        "thumb": "thinkspain-efa0df064b.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/7787/10014338/20260813112955/w1637h1200/s640x480/x-287266813.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:7c0fe71fc1",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10055380",
+      "title": "Apartamento de 3 habitaciones en Centro Urbano, Dénia en venta - 315.000 € (Ref: 10055380)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 315000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 330000
+        },
+        {
+          "date": "2026-10-05",
+          "price": 315000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 115,
+      "plotM2": null,
+      "pricePerM2": 2739,
+      "photo": {
+        "file": "thinkspain-7c0fe71fc1.webp",
+        "thumb": "thinkspain-7c0fe71fc1.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/27505/10055380/20260908052806/w1920h1280/s640x480/x-288896555.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:59cabcd976",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9753635",
+      "title": "Piso de 3 habitaciones en Centro Urbano, Dénia en venta - 185.000 € (Ref: 9753635)",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 185000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 185000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 87,
+      "plotM2": null,
+      "pricePerM2": 2126,
+      "photo": {
+        "file": "thinkspain-59cabcd976.webp",
+        "thumb": "thinkspain-59cabcd976.thumb.webp",
+        "capturedAt": "2026-08-23T17:22:35.531Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/15199/9753635/20260408152339/w1440h1080/s640x480/x-277864691.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:1c5a133d3b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9930511",
+      "title": "Ático de 2 habitaciones en Dénia en venta con piscina garaje - 349.950 € (Ref: 9930511)",
+      "municipality": "Dénia",
+      "type": "penthouse",
+      "price": 349950,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 349950
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 132,
+      "plotM2": null,
+      "pricePerM2": 2651,
+      "photo": {
+        "file": "thinkspain-1c5a133d3b.webp",
+        "thumb": "thinkspain-1c5a133d3b.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/11302/9930511/20260628031537/w900h680/s640x480/x-284407253.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:99e1b67ff7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/8635028",
+      "title": "Solar/Parcela en Dénia en venta - 255.000 € (Ref: 8635028)",
+      "municipality": "Dénia",
+      "type": "plot",
+      "price": 255000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 255000
+        }
+      ],
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "photo": {
+        "file": "thinkspain-99e1b67ff7.webp",
+        "thumb": "thinkspain-99e1b67ff7.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/37391/8635028/20250618211712/w1152h768/s640x480/x-255777497.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:22b5987526",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9858969",
+      "title": "Apartamento de 2 habitaciones en Cumbre del Sol, Benitachell / Benitatxell en venta con piscina - 228.000 € (Ref: 9858969)",
+      "municipality": "El Poble Nou de Benitatxell",
+      "type": "apartment",
+      "price": 228000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 250000
+        },
+        {
+          "date": "2026-10-05",
+          "price": 228000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 75,
+      "plotM2": null,
+      "pricePerM2": 3040,
+      "photo": {
+        "file": "thinkspain-22b5987526.webp",
+        "thumb": "thinkspain-22b5987526.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30912/9858969/20260525192126/w1548h994/s640x480/x-281718873.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:abb86c309d",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9965829",
+      "title": "Apartamento de 3 habitaciones en Pedreguer en venta con garaje - 208.500 € (Ref: 9965829)",
+      "municipality": "Pedreguer",
+      "type": "apartment",
+      "price": 208500,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 208500
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 102,
+      "plotM2": null,
+      "pricePerM2": 2044,
+      "photo": {
+        "file": "thinkspain-abb86c309d.webp",
+        "thumb": "thinkspain-abb86c309d.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/21358/9965829/20260717132157/w1624h913/s640x480/x-285593929.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:d257126711",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9058633",
+      "title": "Casa de 4 habitaciones en Pedreguer en venta - 145.000 € (Ref: 9058633)",
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "price": 145000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 145000
+        }
+      ],
+      "beds": 4,
+      "baths": null,
+      "builtM2": 163,
+      "plotM2": null,
+      "pricePerM2": 890,
+      "photo": {
+        "file": "thinkspain-d257126711.webp",
+        "thumb": "thinkspain-d257126711.thumb.webp",
+        "capturedAt": "2026-08-22T02:37:30.388Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25810/9058633/20250613171916/w1200h900/s640x480/x-255420089.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:a0ef71a55b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10046645",
+      "title": "Casa de 8 habitaciones en Pedreguer en venta - 320.000 € (Ref: 10046645)",
+      "municipality": "Pedreguer",
+      "type": "townhouse",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-09-12",
+          "price": 320000
+        }
+      ],
+      "beds": 8,
+      "baths": null,
+      "builtM2": 354,
+      "plotM2": null,
+      "pricePerM2": 904,
+      "photo": {
+        "file": "thinkspain-a0ef71a55b.webp",
+        "thumb": "thinkspain-a0ef71a55b.thumb.webp",
+        "capturedAt": "2026-09-12T18:33:01.363Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/14767/10046645/20260903193354/w3200h2400/s640x480/x-288561453.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:5639b00f4b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9918854",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 234.000 € (Ref: 9918854)",
+      "municipality": "El Verger",
+      "type": "apartment",
+      "price": 234000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 234000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 78,
+      "plotM2": null,
+      "pricePerM2": 3000,
+      "photo": {
+        "file": "thinkspain-5639b00f4b.webp",
+        "thumb": "thinkspain-5639b00f4b.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/40983/9918854/20260622115742/w2211h1658/s640x480/x-284029616.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:7967e049a7",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096185",
+      "title": "Casa de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 249.000 € (Ref: 10096185)",
+      "municipality": "El Verger",
+      "type": "townhouse",
+      "price": 249000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 249000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 57,
+      "plotM2": null,
+      "pricePerM2": 4368,
+      "photo": {
+        "file": "thinkspain-7967e049a7.webp",
+        "thumb": "thinkspain-7967e049a7.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096185/20260922174035/w1920h1042/s640x480/x-290225765.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:2989381599",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096014",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 330.000 € (Ref: 10096014)",
+      "municipality": "El Verger",
+      "type": "apartment",
+      "price": 330000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 330000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 66,
+      "plotM2": null,
+      "pricePerM2": 5000,
+      "photo": {
+        "file": "thinkspain-2989381599.webp",
+        "thumb": "thinkspain-2989381599.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096014/20260922172915/w1920h1279/s640x480/x-290222489.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:9d62db2c3c",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096477",
+      "title": "Apartamento de 1 habitación en El Vergel / Verger en venta con piscina garaje - 260.000 € (Ref: 10096477)",
+      "municipality": "El Verger",
+      "type": "apartment",
+      "price": 260000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 260000
+        }
+      ],
+      "beds": 1,
+      "baths": null,
+      "builtM2": 65,
+      "plotM2": null,
+      "pricePerM2": 4000,
+      "photo": {
+        "file": "thinkspain-9d62db2c3c.webp",
+        "thumb": "thinkspain-9d62db2c3c.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096477/20260922174827/w1920h1560/s640x480/x-290231570.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:518133a6f5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096184",
+      "title": "Chalet de 3 habitaciones en El Vergel / Verger en venta con piscina garaje - 319.000 € (Ref: 10096184)",
+      "municipality": "El Verger",
+      "type": "villa",
+      "price": 319000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 319000
+        }
+      ],
+      "beds": 3,
+      "baths": null,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 4493,
+      "photo": {
+        "file": "thinkspain-518133a6f5.webp",
+        "thumb": "thinkspain-518133a6f5.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096184/20260922174035/w1920h1042/s640x480/x-290225759.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:ab54157fb8",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10006678",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 333.000 € (Ref: 10006678)",
+      "municipality": "El Verger",
+      "type": "apartment",
+      "price": 333000,
+      "priceHistory": [
+        {
+          "date": "2026-08-27",
+          "price": 333000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 95,
+      "plotM2": null,
+      "pricePerM2": 3505,
+      "photo": {
+        "file": "thinkspain-ab54157fb8.webp",
+        "thumb": "thinkspain-ab54157fb8.thumb.webp",
+        "capturedAt": "2026-08-27T19:01:11.574Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25625/10006678/20260809033924/w800h600/s640x480/x-286998827.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:3a9aebc8c5",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/9672303",
+      "title": "Casa de 7 habitaciones en El Vergel / Verger en venta - 200.000 € (Ref: 9672303)",
+      "municipality": "El Verger",
+      "type": "townhouse",
+      "price": 200000,
+      "priceHistory": [
+        {
+          "date": "2026-08-22",
+          "price": 200000
+        }
+      ],
+      "beds": 7,
+      "baths": null,
+      "builtM2": 216,
+      "plotM2": null,
+      "pricePerM2": 926,
+      "photo": {
+        "file": "thinkspain-3a9aebc8c5.webp",
+        "thumb": "thinkspain-3a9aebc8c5.thumb.webp",
+        "capturedAt": "2026-08-22T02:24:46.296Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25448/9672303/20260617151109/w1624h1217/s640x480/x-283735081.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "thinkspain:6e1d2c1e3b",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10096478",
+      "title": "Apartamento de 2 habitaciones en El Vergel / Verger en venta con piscina garaje - 341.000 € (Ref: 10096478)",
+      "municipality": "El Verger",
+      "type": "apartment",
+      "price": 341000,
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "price": 341000
+        }
+      ],
+      "beds": 2,
+      "baths": null,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 4316,
+      "photo": {
+        "file": "thinkspain-6e1d2c1e3b.webp",
+        "thumb": "thinkspain-6e1d2c1e3b.thumb.webp",
+        "capturedAt": "2026-10-05T21:45:02.961Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/30346/10096478/20260922174833/w1920h1080/s640x480/x-290231592.jpg"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "inmoxara:e85883a429",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-playasol-mediterranea-ii-ap5994m/",
+      "title": "Apartamento en venta Dénia - Urb. Playasol Mediterránea II",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 325000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 325000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 72,
+      "plotM2": null,
+      "pricePerM2": 4514,
+      "photo": {
+        "file": "inmoxara-781287cbbc.webp",
+        "thumb": "inmoxara-781287cbbc.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/358746"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-09-18",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "inmoxara:51fd44e0ab",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-en-venta-denia-playa-de-les-deveses-ap0044m/",
+      "title": "Apartamento en venta Denia - Playa de Les Deveses",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 230000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 230000
+        }
+      ],
+      "beds": 2,
+      "baths": 2,
+      "builtM2": 79,
+      "plotM2": null,
+      "pricePerM2": 2911,
+      "photo": {
+        "file": "inmoxara-537c4d65de.webp",
+        "thumb": "inmoxara-537c4d65de.thumb.webp",
+        "capturedAt": "2026-08-04T18:37:43.871Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/356131"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-09-18",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
+      "reason": "retirado"
+    },
+    {
+      "id": "inmoxara:f263ea0e07",
+      "source": "inmoxara",
+      "agency": "InmoXara",
+      "url": "https://www.inmoxara.es/venta/apartamento-frontal-al-mar-en-venta-denia-urb-nereidas-ap3707m/",
+      "title": "Apartamento frontal al mar en venta Dénia - Urb. Nereidas",
+      "municipality": "Dénia",
+      "type": "apartment",
+      "price": 320000,
+      "priceHistory": [
+        {
+          "date": "2026-08-03",
+          "price": 320000
+        }
+      ],
+      "beds": 2,
+      "baths": 1,
+      "builtM2": 70,
+      "plotM2": null,
+      "pricePerM2": 4571,
+      "photo": {
+        "file": "inmoxara-b151ab4e7f.webp",
+        "thumb": "inmoxara-b151ab4e7f.thumb.webp",
+        "capturedAt": "2026-08-24T19:05:25.676Z",
+        "sourceUrl": "https://www.inmoxara.es/opi/349260"
+      },
+      "saleStatus": "available",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-09-18",
+      "archivedOn": "2026-10-17T21:27:23.381Z",
       "reason": "retirado"
     }
   ]
