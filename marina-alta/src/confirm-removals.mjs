@@ -22,6 +22,7 @@ function leerFicha(adapter, html, url) {
   }
   if (typeof adapter?.parsePropertyPage === 'function') {
     const item = adapter.parsePropertyPage(html, url)
+    if (item?.forRent) return { price: null, forSale: false }
     if (item?.priceOnRequest) return { price: null, forSale: true }
     if (item?.price) return { price: item.price, forSale: true }
   }

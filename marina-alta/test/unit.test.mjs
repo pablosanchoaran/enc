@@ -8,6 +8,8 @@ import { confirmRemovals } from '../src/confirm-removals.mjs'
 import { diffInventory } from '../src/diff.mjs'
 import { idFromUrl } from '../src/adapters/wordpress.mjs'
 import * as listado from '../src/adapters/listado.mjs'
+import * as pisoscom from '../src/adapters/pisoscom.mjs'
+import * as habitaclia from '../src/adapters/habitaclia.mjs'
 import * as sooprema from '../src/adapters/sooprema.mjs'
 import {
   parsePropertyPage,
@@ -1010,4 +1012,146 @@ test('antes de dar de baja un anuncio se llama a su ficha', async () => {
     log: () => {},
   })
   assert.deepEqual(sinAcceso.confirmed.map((i) => i.id), ['e'])
+})
+
+test('pisos.com: las tarjetas traen todo lo necesario y el municipio va entre paréntesis', () => {
+  const tarjeta = (id, precio, zona, chars, titulo = 'Piso en Les Marines') => `
+    <div id="${id}.108900" class="ad-preview" data-lnk-href="/comprar/piso-denia-${id}_108900/">
+      <img src="https://fotos.test/${id}.jpg">
+      <div class="ad-preview__info">
+        <span class="ad-preview__price">${precio}</span>
+        <a class="ad-preview__title">${titulo}</a>
+        <p class="p-sm">${zona}</p>
+        ${chars.map((c) => `<span class="ad-preview__char">${c}</span>`).join('')}
+      </div>
+    </div>`
+  const html =
+    tarjeta('111', '269.000 €', 'Les Marines (Dénia)', ['2 habs.', '1 baño', '89 m²']) +
+    tarjeta('222', '210.000 €', 'El Montgó (Dénia)', []) +
+    // Sin precio no es un anuncio que podamos contar.
+    tarjeta('333', 'Consultar', 'Puerto (Dénia)', [])
+
+  const items = pisoscom.parseCards(html)
+  assert.equal(items.length, 2, 'la de precio a consultar no entra')
+  assert.deepEqual(
+    { ref: items[0].sourceRef, price: items[0].price, mun: items[0].municipality, beds: items[0].beds, baths: items[0].baths, m2: items[0].builtM2 },
+    { ref: '111', price: 269000, mun: 'Dénia', beds: 2, baths: 1, m2: 89 },
+  )
+  assert.equal(items[0].url, 'https://www.pisos.com/comprar/piso-denia-111_108900/')
+  assert.equal(items[0].image, 'https://fotos.test/111.jpg')
+})
+
+test('pisos.com: el listado se recorre hasta que deja de traer anuncios nuevos', async () => {
+  // Pasada la última página el portal sigue sirviendo tarjetas, como
+  // ThinkSpain: hay que pararse cuando no llega nada nuevo.
+  const pagina = (desde, n) =>
+    Array.from({ length: n }, (_, i) => {
+      const id = desde + i
+      return `<div id="${id}.1" class="ad-preview" data-lnk-href="/comprar/piso-${id}_1/">
+        <div class="ad-preview__info"><span class="ad-preview__price">200.000 €</span>
+        <a class="ad-preview__title">Piso</a><p class="p-sm">Centro (Dénia)</p></div></div>`
+    }).join('')
+  const pedidas = []
+  const fetcher = {
+    async get(url) {
+      pedidas.push(url)
+      if (url.endsWith('/hasta-350000/')) return pagina(1, 30)
+      if (url.endsWith('/hasta-350000/2/')) return pagina(31, 30)
+      return pagina(1, 30) // más allá del final, vuelve a servir la primera
+    },
+  }
+  const vistos = []
+  for await (const cards of pisoscom.paginas(fetcher, 'denia', 350000)) vistos.push(...cards)
+  assert.equal(vistos.length, 60, 'las dos páginas reales, sin repetir')
+  assert.equal(pedidas.length, 3, 'una petición de más para ver que ya no hay')
+  assert.ok(pedidas[0].includes('/venta/pisos-denia/hasta-350000/'), 'el techo va en la ruta')
+})
+
+test('pisos.com: Jalón no es Jalón', () => {
+  // `jalon` en pisos.com es Jalón de Cangas del Narcea, en Asturias. Si se
+  // colara en la lista, sus anuncios entrarían como si fueran de Xaló.
+  assert.ok(pisoscom.ZONAS.includes('jalon_xalo'))
+  assert.ok(!pisoscom.ZONAS.includes('jalon'))
+})
+
+/** Una página de listado de habitaclia, con el JSON escapado como lo sirve. */
+function paginaHabitaclia({ layer = 'municipality', name = 'Dénia', totalPages = 1, items = [] } = {}) {
+  const props = {
+    initialSearchResultsPage: {
+      initialSearchContext: {
+        geography: { layer, name, slug: 'denia' },
+        results: { pagination: { page: 1, pageSize: 29, totalPages }, items },
+      },
+    },
+  }
+  return `<script>window.__INITIAL_PROPS__ = JSON.parse(${JSON.stringify(JSON.stringify(props))});</script>`
+}
+
+function anuncioHabitaclia(id, { amount = 250000, hidden = false, municipio = 'Dénia' } = {}) {
+  return {
+    id,
+    urls: { canonical: `/comprar/chalet/el-montgo/denia/${id}/d` },
+    summary: {
+      title: 'Chalet con piscina',
+      location: { displayZoneLine: `El Montgó, ${municipio}`, layers: [{ type: 'municipality', value: municipio }] },
+      multimedia: { images: [{ url: `https://fotos.test/${id}.jpg` }] },
+    },
+    property: { rooms: 3, bathrooms: 2, builtSurface: 140, landArea: 800 },
+    transaction: { type: 'buy', price: { amount, hidden } },
+  }
+}
+
+test('habitaclia: los anuncios salen del JSON del listado, sin los de precio oculto', () => {
+  const page = habitaclia.parseListPage(
+    paginaHabitaclia({ items: [anuncioHabitaclia('a-1'), anuncioHabitaclia('a-2', { hidden: true })] }),
+  )
+  assert.equal(page.items.length, 1)
+  const [item] = page.items
+  assert.deepEqual(
+    { ref: item.sourceRef, price: item.price, mun: item.municipality, beds: item.beds, m2: item.builtM2, plot: item.plotM2 },
+    { ref: 'a-1', price: 250000, mun: 'Dénia', beds: 3, m2: 140, plot: 800 },
+  )
+  assert.equal(item.url, 'https://www.habitaclia.com/comprar/chalet/el-montgo/denia/a-1/d')
+  assert.equal(item.image, 'https://fotos.test/a-1.jpg')
+})
+
+test('habitaclia: si no reconoce el municipio y sirve la provincia, se salta', async () => {
+  // Con un nombre que no conoce, habitaclia no da un 404: sirve los casi
+  // 40.000 anuncios de la provincia. No puede colarse ni uno.
+  const fetcher = {
+    async get() {
+      return paginaHabitaclia({ layer: 'province', name: 'Alicante provincia', totalPages: 1338, items: [anuncioHabitaclia('x')] })
+    },
+  }
+  const vistos = []
+  for await (const items of habitaclia.paginas(fetcher, 'calp', 350000)) vistos.push(...items)
+  assert.equal(vistos.length, 0)
+})
+
+test('habitaclia: el listado se recorre hasta la última página que anuncia', async () => {
+  const pedidas = []
+  const fetcher = {
+    async get(url) {
+      pedidas.push(url)
+      const n = Number(url.match(/\/s\/(\d+)/)?.[1] ?? 1)
+      return paginaHabitaclia({ totalPages: 2, items: [anuncioHabitaclia(`p${n}`)] })
+    },
+  }
+  const vistos = []
+  for await (const items of habitaclia.paginas(fetcher, 'denia', 350000)) vistos.push(...items)
+  assert.deepEqual(vistos.map((item) => item.sourceRef), ['p1', 'p2'])
+  assert.deepEqual(pedidas, [
+    'https://www.habitaclia.com/comprar/viviendas/alicante-provincia/denia/s?maxPrice=350000',
+    'https://www.habitaclia.com/comprar/viviendas/alicante-provincia/denia/s/2?maxPrice=350000',
+  ])
+})
+
+test('habitaclia: la ficha da precio, precio oculto o alquiler', () => {
+  const ficha = (transaction) =>
+    `<script>window.__INITIAL_PROPS__ = JSON.parse(${JSON.stringify(
+      JSON.stringify({ listing: { summary: { title: 'Piso' }, transaction } }),
+    )});</script>`
+  assert.equal(habitaclia.parsePropertyPage(ficha({ type: 'buy', price: { amount: 300000 } }), 'u').price, 300000)
+  assert.ok(habitaclia.parsePropertyPage(ficha({ type: 'buy', price: { amount: 0, hidden: true } }), 'u').priceOnRequest)
+  assert.ok(habitaclia.parsePropertyPage(ficha({ type: 'rent', price: { amount: 900 } }), 'u').forRent)
 })

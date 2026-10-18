@@ -28,6 +28,8 @@ import { normalize } from './normalize.mjs'
 import { renderReport } from './report.mjs'
 import * as ego from './adapters/ego.mjs'
 import * as listado from './adapters/listado.mjs'
+import * as pisoscom from './adapters/pisoscom.mjs'
+import * as habitaclia from './adapters/habitaclia.mjs'
 import * as sooprema from './adapters/sooprema.mjs'
 import * as thinkspain from './adapters/thinkspain.mjs'
 import * as wordpress from './adapters/wordpress.mjs'
@@ -60,7 +62,7 @@ const SITE_DIR = join(ROOT, 'site')
  */
 const REPORT_MAX_BYTES = 13 * 1024 * 1024
 
-const ADAPTERS = { thinkspain, sooprema, ego, listado, wordpress }
+const ADAPTERS = { thinkspain, sooprema, ego, listado, wordpress, pisoscom, habitaclia }
 
 function parseArgs(argv) {
   const args = {

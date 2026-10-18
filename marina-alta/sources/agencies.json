@@ -15,6 +15,22 @@
       "sweepOnly": true
     },
     {
+      "id": "pisoscom",
+      "adapter": "pisoscom",
+      "agency": "pisos.com (portal)",
+      "origin": "https://www.pisos.com",
+      "enabled": true,
+      "notes": "Portal de agencias españolas de comprador local, el público que ThinkSpain cubre peor. Unos 2.550 anuncios bajo el techo en nuestros municipios. Listado por municipio con el techo en la ruta; su robots.txt permite listados, paginación y fichas. Entra por decisión del usuario del 18/10: al principio se dejaron fuera los portales grandes, pero estos no tienen muro anti-bot."
+    },
+    {
+      "id": "habitaclia",
+      "adapter": "habitaclia",
+      "agency": "habitaclia (portal)",
+      "origin": "https://www.habitaclia.com",
+      "enabled": true,
+      "notes": "Portal de agencias de comprador local, como pisos.com. Unos 2.000 anuncios bajo el techo en nuestros municipios. Los datos van en un JSON dentro de cada listado; techo en ?maxPrice= y paginación en la ruta, ambas permitidas por su robots.txt. Si no reconoce un municipio sirve la provincia entera, así que el adaptador comprueba la geografía. Entra por decisión del usuario del 18/10."
+    },
+    {
       "id": "ferrando-moraira",
       "adapter": "sooprema",
       "agency": "Ferrando Inmobiliaria",
