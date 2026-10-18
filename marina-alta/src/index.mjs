@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url'
 
 import { Fetcher } from './fetcher.mjs'
 import { confirmRemovals } from './confirm-removals.mjs'
-import { diffInventory } from './diff.mjs'
+import { diffInventory, separarAltas } from './diff.mjs'
 import { updateArchive } from './archive.mjs'
 import { capturePhotos, copyPhotosToSite, loadThumbnails } from './photos.mjs'
 import {
@@ -573,26 +573,19 @@ async function run() {
       .filter((source) => !previousListings.some((item) => item.source === source.id))
       .map((source) => source.id),
   )
-  // El barrido de ThinkSpain solo ve los primeros resultados de cada zona y
-  // esa selección rota entre peticiones, así que "no estaba ayer" no significa
-  // "se ha publicado hoy". En esas fuentes las altas salen solo de su feed de
-  // novedades, que sí va por fecha.
-  const sweepOnly = new Set(
-    sources.filter((source) => source.sweepOnly).map((source) => source.id),
-  )
-  const initialLoad = result.additions.filter((item) => bootstrapped.has(item.source))
-  const swept = result.additions.filter(
-    (item) => !bootstrapped.has(item.source) && sweepOnly.has(item.source) && !item.fromFeed,
-  )
-  const additions = result.additions.filter(
-    (item) => !initialLoad.includes(item) && !swept.includes(item),
-  )
+  const { initialLoad, swept, additions } = separarAltas(result.additions, {
+    bootstrapped,
+    sweepOnly: new Set(sources.filter((source) => source.sweepOnly).map((source) => source.id)),
+    // Cuentan también las caras y las retiradas: la referencia más alta vista
+    // marca, en la práctica, la hora de la pasada anterior.
+    conocidas: [...previousListings, ...(archiveFile.entries ?? []), ...overBudget.values()],
+  })
 
   if (initialLoad.length > 0) {
     log(`  (carga inicial de ${[...bootstrapped].join(', ')}: ${initialLoad.length} anuncios)`)
   }
   if (swept.length > 0) {
-    log(`  (${swept.length} hallazgos del barrido, no publicaciones de hoy)`)
+    log(`  (${swept.length} anuncios antiguos que reaparecen en el barrido; no cuentan como altas)`)
   }
 
   // Varias ejecuciones parciales el mismo día se suman en el informe del día

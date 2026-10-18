@@ -3,12 +3,83 @@
   "generatedAt": "2026-10-18T07:20:51.105Z",
   "totals": {
     "inventory": 7377,
-    "additions": 0,
+    "additions": 2,
     "priceDrops": 2,
     "priceRises": 0,
     "removals": 23
   },
-  "additions": [],
+  "additions": [
+    {
+      "id": "thinkspain:1da1d6c5cf",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10162168",
+      "title": "Solar/Parcela en Cap Martí - El Tossalet - Pinomar, Javea / Xàbia en venta - 250.000 € (Ref: 10162168)",
+      "price": 250000,
+      "priceHistory": [
+        {
+          "date": "2026-10-18",
+          "price": 250000
+        }
+      ],
+      "municipality": "Xàbia / Jávea",
+      "type": "plot",
+      "beds": null,
+      "baths": null,
+      "builtM2": null,
+      "plotM2": null,
+      "pricePerM2": null,
+      "image": "https://cdn.thinkwebcontent.com/property/36684/10162168/20261018010704/w1152h768/s640x480/x-292418128.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-1da1d6c5cf.webp",
+        "thumb": "thinkspain-1da1d6c5cf.thumb.webp",
+        "capturedAt": "2026-10-18T06:26:16.926Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/36684/10162168/20261018010704/w1152h768/s640x480/x-292418128.jpg"
+      }
+    },
+    {
+      "id": "thinkspain:15e48d6ed0",
+      "source": "thinkspain",
+      "agency": "ThinkSpain (portal)",
+      "url": "https://www.thinkspain.com/es/venta-viviendas/10162167",
+      "title": "Apartamento de 2 habitaciones en Les Bassetes - El Marjal, Dénia en venta con piscina garaje - 265.000 € (Ref: 10162167)",
+      "price": 265000,
+      "priceHistory": [
+        {
+          "date": "2026-10-18",
+          "price": 265000
+        }
+      ],
+      "municipality": "Dénia",
+      "type": "apartment",
+      "beds": 2,
+      "baths": null,
+      "builtM2": 71,
+      "plotM2": null,
+      "pricePerM2": 3732,
+      "image": "https://cdn.thinkwebcontent.com/property/25912/10162167/20261018010508/w1448h1086/s640x480/x-292418116.jpg",
+      "saleStatus": "available",
+      "fromFeed": false,
+      "lastmod": null,
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "missingRuns": 0,
+      "status": "active",
+      "photo": {
+        "file": "thinkspain-15e48d6ed0.webp",
+        "thumb": "thinkspain-15e48d6ed0.thumb.webp",
+        "capturedAt": "2026-10-18T06:26:16.926Z",
+        "sourceUrl": "https://cdn.thinkwebcontent.com/property/25912/10162167/20261018010508/w1448h1086/s640x480/x-292418116.jpg"
+      }
+    }
+  ],
   "priceDrops": [
     {
       "id": "thinkspain:9ab62cd4fa",

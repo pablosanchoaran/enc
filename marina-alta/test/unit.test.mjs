@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio'
 
 import { dedupeForDisplay } from '../src/dedupe.mjs'
 import { confirmRemovals } from '../src/confirm-removals.mjs'
-import { diffInventory } from '../src/diff.mjs'
+import { diffInventory, separarAltas } from '../src/diff.mjs'
 import { idFromUrl } from '../src/adapters/wordpress.mjs'
 import * as listado from '../src/adapters/listado.mjs'
 import * as pisoscom from '../src/adapters/pisoscom.mjs'
@@ -1171,4 +1171,17 @@ test('una calle con nombre de pueblo de fuera no veta el anuncio', () => {
   assert.ok(normalize(casa("Casa adosada en calle calle Rafol D'almunia, 14 A"), source, '2026-10-18').listing)
   // El pueblo a secas sigue vetando.
   assert.equal(normalize(casa('Casa en Benimeli'), source, '2026-10-18').listing, null)
+})
+
+test('ThinkSpain: el barrido da altas solo con referencias nuevas', () => {
+  const ts = (ref, extra = {}) => ({ id: `thinkspain:${ref}`, source: 'thinkspain', url: `https://www.thinkspain.com/es/venta-viviendas/${ref}`, ...extra })
+  const conocidas = [ts(100), { ...ts(150), price: 900000 }]
+  const { additions, swept } = separarAltas([ts(151), ts(90), ts(80, { fromFeed: true })], {
+    sweepOnly: new Set(['thinkspain']),
+    conocidas,
+  })
+  // 151 se ha publicado después de la pasada anterior; 90 es viejo y vuelve;
+  // lo del feed va siempre por fecha.
+  assert.deepEqual(additions.map((item) => item.id), ['thinkspain:151', 'thinkspain:80'])
+  assert.deepEqual(swept.map((item) => item.id), ['thinkspain:90'])
 })

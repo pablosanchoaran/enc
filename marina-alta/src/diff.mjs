@@ -135,3 +135,42 @@ export function diffInventory(previousList, currentList, today, { checkedUrls = 
     removals,
   }
 }
+
+/** La referencia numérica al final de la URL, o 0 si no la hay. */
+function refNumerica(url) {
+  return Number(String(url).replace(/\/+$/, '').split('/').pop()) || 0
+}
+
+/**
+ * Separa lo que el diff da por nuevo en tres montones: la carga inicial de una
+ * fuente que se rastrea por primera vez, los anuncios antiguos que el barrido
+ * de una fuente `sweepOnly` vuelve a encontrar, y las altas de verdad.
+ *
+ * En ThinkSpain "no estaba ayer" no basta para decir "se ha publicado hoy": el
+ * barrido también recoge anuncios viejos que vuelven (bajan del techo,
+ * reaparecen tras una baja). Pero su referencia es un número que crece con
+ * cada publicación, así que lo que trae con una referencia más alta que
+ * cualquiera ya conocida sí es nuevo. Hasta el 18/10 esas altas se callaban
+ * todas, y ThinkSpain llevaba un mes sin dar ni una.
+ */
+export function separarAltas(additions, { bootstrapped = new Set(), sweepOnly = new Set(), conocidas = [] } = {}) {
+  const refMaxima = new Map()
+  for (const item of conocidas) {
+    if (!sweepOnly.has(item.source)) continue
+    refMaxima.set(item.source, Math.max(refMaxima.get(item.source) ?? 0, refNumerica(item.url)))
+  }
+
+  const initialLoad = additions.filter((item) => bootstrapped.has(item.source))
+  const swept = additions.filter(
+    (item) =>
+      !bootstrapped.has(item.source) &&
+      sweepOnly.has(item.source) &&
+      !item.fromFeed &&
+      refNumerica(item.url) <= (refMaxima.get(item.source) ?? Infinity),
+  )
+  return {
+    initialLoad,
+    swept,
+    additions: additions.filter((item) => !initialLoad.includes(item) && !swept.includes(item)),
+  }
+}

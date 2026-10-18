@@ -11,7 +11,7 @@
       "agency": "ThinkSpain (portal)",
       "origin": "https://www.thinkspain.com",
       "enabled": true,
-      "notes": "Feed de últimas altas de toda España + barrido por municipio de la comarca. sweepOnly: el barrido solo ve los primeros resultados de cada zona y rotan, así que las altas se cuentan solo desde el feed.",
+      "notes": "Feed de últimas altas de toda España + barrido completo por municipio de la comarca. sweepOnly: el barrido también recoge anuncios viejos que reaparecen, así que de él solo cuentan como altas las referencias más altas que cualquiera ya conocida (la referencia crece con cada publicación).",
       "sweepOnly": true
     },
     {

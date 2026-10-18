@@ -314,7 +314,7 @@
   </header>
 
   <div class="tiles">
-    <div class="tile tile--accent tile--empty"><span class="tile__value">0</span><span class="tile__label">altas nuevas</span></div>
+    <a class="tile tile--accent" href="#altas"><span class="tile__value">2</span><span class="tile__label">altas nuevas</span></a>
     <a class="tile tile--drop" href="#cambios" data-movement="drop"><span class="tile__value">2</span><span class="tile__label">bajadas de precio</span></a>
     <div class="tile tile--rise tile--empty"><span class="tile__value">0</span><span class="tile__label">subidas de precio</span></div>
     <a class="tile" href="#retirados"><span class="tile__value">23</span><span class="tile__label">retiradas</span></a>
@@ -327,12 +327,160 @@
       <button type="button" class="section__toggle" aria-expanded="true" aria-controls="altas-body">
         <span class="section__titles">
           <span class="section__title">Altas de hoy</span>
-          <span class="section__note" id="count">0 anuncios</span>
+          <span class="section__note" id="count">2 anuncios</span>
         </span>
         <span class="section__chevron" aria-hidden="true">▼</span>
       </button>
     </h2>
-    <div class="section__body" id="altas-body"><p class="empty">Primera carga: se ha registrado el inventario de partida, así que hoy no hay altas que comparar. A partir de mañana aparecerá aquí lo que se publique cada día.</p></div>
+    <div class="section__body" id="altas-body"><div class="filters">
+      
+    <details class="multi" id="f-municipality" data-all="Todos">
+      <summary><span class="multi__label">Municipio</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="Alcalalí">
+          <span>Alcalalí</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Beniarbeig">
+          <span>Beniarbeig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benidoleig">
+          <span>Benidoleig</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Benissa">
+          <span>Benissa</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Calp / Calpe">
+          <span>Calp / Calpe</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Dénia">
+          <span>Dénia</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Poble Nou de Benitatxell">
+          <span>El Poble Nou de Benitatxell</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="El Verger">
+          <span>El Verger</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Els Poblets">
+          <span>Els Poblets</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Gata de Gorgos">
+          <span>Gata de Gorgos</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Llíber">
+          <span>Llíber</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Ondara">
+          <span>Ondara</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Orba">
+          <span>Orba</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Pedreguer">
+          <span>Pedreguer</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Sanet y Negrals">
+          <span>Sanet y Negrals</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Teulada-Moraira">
+          <span>Teulada-Moraira</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xàbia / Jávea">
+          <span>Xàbia / Jávea</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="Xaló / Jalón">
+          <span>Xaló / Jalón</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-type" data-all="Todos">
+      <summary><span class="multi__label">Tipo</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="apartment">
+          <span>Piso</span>
+        </label>
+        <label class="multi__option">
+          <input type="checkbox" value="plot">
+          <span>Parcela</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-agency" data-all="Todas">
+      <summary><span class="multi__label">Agencia</span><span class="multi__value">Todas</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="ThinkSpain (portal)">
+          <span>ThinkSpain (portal)</span>
+        </label></div>
+    </details>
+      
+    <details class="multi" id="f-status" data-all="Todos">
+      <summary><span class="multi__label">Estado</span><span class="multi__value">Todos</span></summary>
+      <div class="multi__panel">
+        <label class="multi__option">
+          <input type="checkbox" value="available" checked>
+          <span>Disponible (2)</span>
+        </label></div>
+    </details>
+      <label class="filters__price">Precio máximo<input id="f-max" type="number" inputmode="numeric" step="25000" placeholder="sin límite"></label>
+      <label class="filters__sort">Ordenar por<select id="f-sort"><option value="price-asc">Precio: de menor a mayor</option><option value="price-desc">Precio: de mayor a menor</option><option value="unit-asc">Precio por m²: de menor a mayor</option><option value="built-desc">Superficie construida: de mayor a menor</option><option value="plot-desc">Parcela: de mayor a menor</option><option value="municipality-asc">Municipio: A–Z</option><option value="seen-desc">Novedad: visto por primera vez</option></select></label>
+      <button type="button" class="filters__clear" id="f-clear" hidden>Quitar filtros</button>
+    </div>
+    <div class="grid" id="grid">
+    <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="ThinkSpain (portal)" data-price="265000" data-status="available" data-unit="3732" data-built="71" data-plot="" data-seen="2026-10-18">
+      
+      <div class="card__head">
+        <span class="chip">Piso</span>
+        
+        <span class="card__place">Dénia</span>
+      </div>
+      <p class="card__price">265.000 €</p>
+      <p class="card__unit">3732 €/m²</p>
+      <h3 class="card__title">Apartamento de 2 habitaciones en Les Bassetes - El Marjal, Dénia en venta con piscina garaje - 265.000 € (Ref: 10162167)</h3>
+      <ul class="card__facts"><li>2 hab.</li><li>71 m² const.</li></ul>
+      
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/10162167" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article>
+    <article class="card card--available" data-municipality="Xàbia / Jávea" data-type="plot" data-agency="ThinkSpain (portal)" data-price="250000" data-status="available" data-unit="" data-built="" data-plot="" data-seen="2026-10-18">
+      
+      <div class="card__head">
+        <span class="chip">Parcela</span>
+        
+        <span class="card__place">Xàbia / Jávea</span>
+      </div>
+      <p class="card__price">250.000 €</p>
+      
+      <h3 class="card__title">Solar/Parcela en Cap Martí - El Tossalet - Pinomar, Javea / Xàbia en venta - 250.000 € (Ref: 10162168)</h3>
+      
+      
+      <footer class="card__foot">
+        <span class="card__agency">ThinkSpain (portal)</span>
+        <a class="card__link" href="https://www.thinkspain.com/es/venta-viviendas/10162168" target="_blank" rel="noopener noreferrer">Ver ficha →</a>
+      </footer>
+    </article></div>
+    <p class="empty" id="no-match" hidden>Ningún anuncio de hoy encaja con estos filtros.</p></div>
   </section>
 
   
@@ -22830,7 +22978,7 @@
       </footer>
     </article>
     <article class="card card--available" data-municipality="Dénia" data-type="apartment" data-agency="InmoXara" data-price="214000" data-status="available" data-unit="3101" data-built="69" data-plot="" data-seen="2026-08-03">
-      <a class="card__photo" href="https://www.inmoxara.es/venta/apartamento-en-venta-denia-urb-golden-park-ap0366m/" target="_blank" rel="noopener noreferrer"><img src="data:image/webp;base64,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" alt="" loading="lazy" width="240" height="160"></a>
+      
       <div class="card__head">
         <span class="chip">Piso</span>
         
