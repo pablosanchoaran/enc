@@ -82,6 +82,9 @@ const INDEX = [
   ...EXCLUDED_PLACES.map((place) => ({ name: null, alias: fold(place) })),
 ].sort((a, b) => b.alias.length - a.alias.length)
 
+/** Palabras que abren el nombre de una calle. */
+const CALLE = '(?:calle|carrer|c|avenida|avinguda|avda|av|cami|camino|plaza|placa|travesia)'
+
 /**
  * ¿El texto nombra uno de esos sitios de fuera? Se usa para que un veto pese
  * más que la localidad que declare la agencia: `detectMunicipality` solo
@@ -92,8 +95,10 @@ const INDEX = [
 export function namesExcludedPlace(...texts) {
   const haystack = fold(texts.filter(Boolean).join(' | '))
   if (!haystack) return false
+  // Detrás de "calle" o "carrer" es el nombre de una calle, no el pueblo: en
+  // El Verger hay un Carrer Benimeli y una calle Ràfol d'Almúnia.
   return EXCLUDED_PLACES.some((place) =>
-    new RegExp(`(^| )${fold(place)}( |$)`).test(haystack),
+    new RegExp(`(^| )(?<!${CALLE} )${fold(place)}( |$)`).test(haystack),
   )
 }
 

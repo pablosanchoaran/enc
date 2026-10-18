@@ -51,9 +51,11 @@ function sameProperty(a, b) {
  * y, entre iguales, la que tenga foto y la que se vio antes, para que la
  * tarjeta no baile de un día para otro.
  */
+const PORTALES = new Set(['thinkspain', 'pisoscom', 'habitaclia'])
+
 function pickRepresentative(group) {
   return [...group].sort((a, b) => {
-    const portal = Number(a.source === 'thinkspain') - Number(b.source === 'thinkspain')
+    const portal = Number(PORTALES.has(a.source)) - Number(PORTALES.has(b.source))
     if (portal !== 0) return portal
     const photo = Number(Boolean(b.photo?.thumb)) - Number(Boolean(a.photo?.thumb))
     if (photo !== 0) return photo

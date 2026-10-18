@@ -1,8 +1,8 @@
 {
   "date": "2026-10-18",
-  "generatedAt": "2026-10-18T06:26:16.924Z",
+  "generatedAt": "2026-10-18T07:20:51.105Z",
   "totals": {
-    "inventory": 3407,
+    "inventory": 7377,
     "additions": 0,
     "priceDrops": 2,
     "priceRises": 0,
@@ -1260,6 +1260,30 @@
       "walled": 0,
       "seconds": 1417,
       "delayMs": 14000
+    },
+    {
+      "id": "habitaclia",
+      "agency": "habitaclia (portal)",
+      "listings": 1870,
+      "status": "ok",
+      "requests": 75,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 91,
+      "delayMs": 1000
+    },
+    {
+      "id": "pisoscom",
+      "agency": "pisos.com (portal)",
+      "listings": 2100,
+      "status": "ok",
+      "requests": 118,
+      "blocked": 0,
+      "errors": 0,
+      "walled": 0,
+      "seconds": 232,
+      "delayMs": 1000
     }
   ],
   "bootstrap": true

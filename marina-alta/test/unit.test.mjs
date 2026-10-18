@@ -1155,3 +1155,20 @@ test('habitaclia: la ficha da precio, precio oculto o alquiler', () => {
   assert.ok(habitaclia.parsePropertyPage(ficha({ type: 'buy', price: { amount: 0, hidden: true } }), 'u').priceOnRequest)
   assert.ok(habitaclia.parsePropertyPage(ficha({ type: 'rent', price: { amount: 900 } }), 'u').forRent)
 })
+
+test('una calle con nombre de pueblo de fuera no veta el anuncio', () => {
+  // En El Verger hay un Carrer Benimeli y una calle Ràfol d'Almúnia; pisos.com
+  // pone la dirección en el título y el veto tiraba seis casas de El Verger.
+  const source = { id: 'pisoscom', agency: 'pisos.com (portal)' }
+  const casa = (title) => ({
+    url: `https://www.pisos.com/comprar/${title.length}/`,
+    title,
+    price: 275000,
+    municipality: 'El Verger',
+    type: 'townhouse',
+  })
+  assert.ok(normalize(casa('Casa adosada en Carrer Benimeli, 6'), source, '2026-10-18').listing)
+  assert.ok(normalize(casa("Casa adosada en calle calle Rafol D'almunia, 14 A"), source, '2026-10-18').listing)
+  // El pueblo a secas sigue vetando.
+  assert.equal(normalize(casa('Casa en Benimeli'), source, '2026-10-18').listing, null)
+})

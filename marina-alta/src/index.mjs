@@ -291,7 +291,8 @@ async function run() {
   const sources = catalog.sources.filter((source) => {
     if (!source.enabled) return false
     if (!args.source) return true
-    return source.id === args.source || source.adapter === args.source
+    // Admite varias separadas por comas: --source pisoscom,habitaclia
+    return args.source.split(',').some((id) => source.id === id || source.adapter === id)
   })
 
   // Lo que ya se sabe que está por encima del techo no hace falta volver a
